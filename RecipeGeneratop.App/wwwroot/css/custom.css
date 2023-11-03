@@ -1,0 +1,28 @@
+﻿#loading-gif {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+}
+
+.bottom-menu {
+    position: fixed;
+    bottom: 0px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(228,4,4,1) 50%, rgba(0,0,0,1) 100%);
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.bottom-menu-item {
+    margin: 5px 5px 5px 5px;
+    padding: 2px 2px 2px 2px;
+    color: azure;
+}
