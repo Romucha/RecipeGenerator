@@ -53,4 +53,8 @@
       <Folder Include="wwwroot\images\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\RecipeGenerator.RazorPages\RecipeGenerator.RazorPages.csproj" />
+    </ItemGroup>
+
 </Project>
