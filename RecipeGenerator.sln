@@ -4,7 +4,7 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.App", "RecipeGeneratop.App\RecipeGenerator.App.csproj", "{0986BBD7-727A-4AD9-BC23-02DA9259E98A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.RazorPages", "RecipeGenerator.RazorPages\RecipeGenerator.RazorPages.csproj", "{96306632-1D4E-4289-9EC8-08B5DB03DFFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.RazorPages", "RecipeGenerator.RazorPages\RecipeGenerator.RazorPages.csproj", "{96306632-1D4E-4289-9EC8-08B5DB03DFFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
