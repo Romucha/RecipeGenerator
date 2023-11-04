@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components.WebView.Maui;
-using RecipeGeneratop.App.Data;
+using RecipeGenerator.App.Data;
 
-namespace RecipeGeneratop.App
+namespace RecipeGenerator.App
 {
  public static class MauiProgram
  {

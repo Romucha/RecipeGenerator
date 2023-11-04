@@ -1,4 +1,4 @@
-namespace RecipeGeneratop.App.Data
+namespace RecipeGenerator.App.Data
 {
  public class WeatherForecastService
  {

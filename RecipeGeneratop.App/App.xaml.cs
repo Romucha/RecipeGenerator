@@ -1,4 +1,4 @@
-﻿namespace RecipeGeneratop.App
+﻿namespace RecipeGenerator.App
 {
  public partial class App : Application
  {

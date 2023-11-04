@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace RecipeGeneratop.App
+namespace RecipeGenerator.App
 {
  [Application]
  public class MainApplication : MauiApplication

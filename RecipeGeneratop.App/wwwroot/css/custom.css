@@ -31,6 +31,8 @@
     justify-content: center;
     flex-direction: row;
     text-decoration: none;
+    width: 3rem;
+    height: inherit;
 }
 
     .bottom-menu-item:hover {

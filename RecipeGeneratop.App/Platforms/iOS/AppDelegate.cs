@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace RecipeGeneratop.App
+namespace RecipeGenerator.App
 {
  [Register("AppDelegate")]
  public class AppDelegate : MauiUIApplicationDelegate
