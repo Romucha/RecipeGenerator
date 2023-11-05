@@ -61,9 +61,42 @@
     }
 
 .home-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     width: 100%;
+}
+
+.home-page-start-button {
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    display: flex;
+    background-color: red;
+    margin: 2rem;
+}
+
+.home-page-history-button {
+    position: fixed;
+    top: 25%;
+    right: 25%;
+    display: flex;
+    background-color: blue;
+    margin: 2rem;
+}
+
+.home-page-settings-button {
+    position: fixed;
+    bottom: 25%;
+    left: 25%;
+    display: flex;
+    background-color: green;
+    margin: 2rem;
+}
+
+.home-page-about-button {
+    position: fixed;
+    bottom: 25%;
+    right: 25%;
+    display: flex;
+    background-color: yellow;
+    margin: 2rem;
 }
