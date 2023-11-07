@@ -1,15 +1,15 @@
 ﻿@page "/"
 <div class="home-page">
-    <div class="home-page-start-button">
-        Start
-    </div>
-    <div class="home-page-history-button">
-        History
-    </div>
-    <div class="home-page-settings-button">
-        Settings
-    </div>
-    <div class="home-page-about-button">
-        About
-    </div>
+ <div class="home-page-button home-page-button-start">
+  <NavComponent NavPath="history" OiIcon="oi-script" OiTitle="History" IsBig="true" />
+ </div>
+ <div class="home-page-button home-page-button-history">
+  <NavComponent NavPath="start" OiIcon="oi-media-play" OiTitle="Start" IsBig="true" />
+ </div>
+ <div class="home-page-button home-page-button-settings">
+  <NavComponent NavPath="settings" OiIcon="oi-cog" OiTitle="Settings" IsBig="true" />
+ </div>
+ <div class="home-page-button home-page-button-about">
+  <NavComponent NavPath="about" OiIcon="oi-question-mark" OiTitle="About" IsBig="true" />
+ </div>
 </div>

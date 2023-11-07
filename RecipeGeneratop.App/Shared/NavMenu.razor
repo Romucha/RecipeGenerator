@@ -1,21 +1,12 @@
 ﻿@using RecipeGenerator.RazorPages
+@using RecipeGenerator.RazorPages.Components
 
 <nav class="bottom-menu">
- <NavLink class="bottom-menu-item" href="" Match="NavLinkMatch.All">
-  <div class="oi oi-home" title="Home" />
- </NavLink>
- <NavLink class="bottom-menu-item" href="history" Match="NavLinkMatch.All">
-  <div class="oi oi-script" title="History" />
- </NavLink>
- <NavLink class="bottom-menu-item" href="start">
-  <div class="oi oi-media-play" title="Start" />
- </NavLink>
- <NavLink class="bottom-menu-item" href="settings">
-  <div class="oi oi-cog" title="Settings" />
- </NavLink>
- <NavLink class="bottom-menu-item" href="about">
-  <div class="oi oi-question-mark" title="About" />
- </NavLink>
+ <NavComponent NavPath="" OiIcon="oi-home" OiTitle="Home" />
+ <NavComponent NavPath="history" OiIcon="oi-script" OiTitle="History" />
+ <NavComponent NavPath="start" OiIcon="oi-media-play" OiTitle="Start" />
+ <NavComponent NavPath="settings" OiIcon="oi-cog" OiTitle="Settings" />
+ <NavComponent NavPath="about" OiIcon="oi-question-mark" OiTitle="About" />
 </nav>
 
 @code {
