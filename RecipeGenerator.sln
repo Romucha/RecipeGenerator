@@ -6,6 +6,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.App", "Reci
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.RazorPages", "RecipeGenerator.RazorPages\RecipeGenerator.RazorPages.csproj", "{96306632-1D4E-4289-9EC8-08B5DB03DFFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.API", "RecipeGenerator.API\RecipeGenerator.API.csproj", "{062C1824-DE85-4127-BEBF-0EFC2D96E05C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{96306632-1D4E-4289-9EC8-08B5DB03DFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96306632-1D4E-4289-9EC8-08B5DB03DFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96306632-1D4E-4289-9EC8-08B5DB03DFFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{062C1824-DE85-4127-BEBF-0EFC2D96E05C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{062C1824-DE85-4127-BEBF-0EFC2D96E05C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{062C1824-DE85-4127-BEBF-0EFC2D96E05C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{062C1824-DE85-4127-BEBF-0EFC2D96E05C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
