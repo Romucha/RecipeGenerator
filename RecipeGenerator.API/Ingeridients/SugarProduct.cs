@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.Ingeridients
 {
-    public class Sugar : IIngredient
+    public class SugarProduct : IIngredient
     {
         public string Name
         {

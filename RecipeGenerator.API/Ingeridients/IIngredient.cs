@@ -7,23 +7,16 @@ using System.Threading.Tasks;
 namespace RecipeGenerator.API.Ingeridients
 {
     /*
-        Accrording to the internet:
-        Spices
-        Dairy
-        Eggs
-        Fats
-        Flour
-        Fruits
+        Vegetables
+        Spices and Herbs
+        Cereals and Pulses
         Meat
-        Nuts
-        Salt
-        Sauces
+        Dairy Products
+        Fruits
         Seafood
-        Sugar
-        Food additive
-        Oils
-        Soy sauce
-        Vinegar
+        Sugar and Sugar Products
+        Nuts and Oilseeds
+        Other Ingredients
      */
     public interface IIngredient
     {
