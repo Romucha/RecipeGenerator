@@ -1,15 +1,24 @@
 ﻿@page "/"
 <div class="home-page">
- <div class="home-page-button home-page-button-start">
-  <NavComponent NavPath="history" OiIcon="oi-script" OiTitle="History" IsBig="true" />
- </div>
- <div class="home-page-button home-page-button-history">
-  <NavComponent NavPath="start" OiIcon="oi-media-play" OiTitle="Start" IsBig="true" />
- </div>
- <div class="home-page-button home-page-button-settings">
-  <NavComponent NavPath="settings" OiIcon="oi-cog" OiTitle="Settings" IsBig="true" />
- </div>
- <div class="home-page-button home-page-button-about">
-  <NavComponent NavPath="about" OiIcon="oi-question-mark" OiTitle="About" IsBig="true" />
- </div>
+    <div class="home-page-button home-page-button-start">
+        <NavComponent NavPath="start" OiIcon="oi-media-play" OiTitle="Start" IsBig="true" />
+    </div>
+    <div class="home-page-button home-page-button-settings">
+        <NavComponent NavPath="settings" OiIcon="oi-cog" OiTitle="Settings" IsBig="true" />
+    </div>
+    <div class="home-page-list-history">
+        @if (mainVM.Recipes != null && mainVM.Recipes.Count > 0)
+        {
+            foreach (var recipe in mainVM.Recipes)
+            {
+                <div>Recipe placeholder</div>
+            }
+        }
+        else
+        {
+            <div>
+                You haven't generated any recipes yet...
+            </div>
+        }
+    </div>
 </div>

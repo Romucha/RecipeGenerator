@@ -101,21 +101,21 @@
 }
 
 .home-page-button-start {
-    top: 0%;
+    top: 10%;
     right: 0%;
-}
-
-.home-page-button-history {
-    top: 0%;
-    left: 0%;
 }
 
 .home-page-button-settings {
-    bottom: 0%;
+    top: 10%;
     left: 0%;
 }
 
-.home-page-button-about {
-    bottom: 0%;
-    right: 0%;
+.home-page-list-history {
+    position: fixed;
+    display: flex;
+    top: 50%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    vertical-align: top;
 }

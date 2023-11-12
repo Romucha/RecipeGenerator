@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API
 {
-    public class Step : IStep
+    public class Step
     {
+        
     }
 }

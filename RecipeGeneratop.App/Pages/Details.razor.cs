@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.App.Pages
 {
-    public class Details
+    public partial class Details
     {
     }
 }

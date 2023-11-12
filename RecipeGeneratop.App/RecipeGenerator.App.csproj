@@ -59,6 +59,11 @@
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\RecipeGenerator.API\RecipeGenerator.API.csproj" />
       <ProjectReference Include="..\RecipeGenerator.RazorPages\RecipeGenerator.RazorPages.csproj" />
     </ItemGroup>
 
