@@ -11,6 +11,6 @@
 
         public Course CourseType { get; set; }
 
-        public IEnumerable<IStep> Steps { get; set; }
+        public IEnumerable<Step> Steps { get; set; }
     }
 }
