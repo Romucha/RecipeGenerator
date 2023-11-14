@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.Models.Ingeridients
 {
-    internal interface IIngredientFactory
+    public interface IIngredientFactory
     {
-        IIngredient Create(string Name, string Description, Uri Link);
+        IIngredient Create(string name, string description, Uri link, byte[] image, IngredientType ingredientType);
     }
 }

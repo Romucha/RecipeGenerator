@@ -27,5 +27,7 @@ namespace RecipeGenerator.API.Models.Ingeridients
         Uri Link { get; set; }
 
         IngredientType IngredientType { get; set; }
+
+        byte[] Image { get; set; }
     }
 }

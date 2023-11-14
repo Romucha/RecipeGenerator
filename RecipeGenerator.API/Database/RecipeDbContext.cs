@@ -32,10 +32,5 @@ namespace RecipeGenerator.API.Database
         {
             
         }
-
-        private void seedCereal(ModelBuilder modelBuilder) 
-        {
-            
-        }
     }
 }
