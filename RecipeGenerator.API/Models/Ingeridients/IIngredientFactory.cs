@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.Models.Ingeridients
 {
-    public class Vegetable : IIngredient
+    internal interface IIngredientFactory
     {
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public Uri Link { get; set; }
+        IIngredient Create(string Name, string Description, Uri Link);
     }
 }

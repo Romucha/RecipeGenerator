@@ -25,5 +25,7 @@ namespace RecipeGenerator.API.Models.Ingeridients
         string Description { get; set; }
 
         Uri Link { get; set; }
+
+        IngredientType IngredientType { get; set; }
     }
 }
