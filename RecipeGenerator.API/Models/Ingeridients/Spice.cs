@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.API.Ingeridients
+namespace RecipeGenerator.API.Models.Ingeridients
 {
-    public class Vegetable : IIngredient
+    public class Spice : IIngredient
     {
         public string Name { get; set; }
         public string Description { get; set; }

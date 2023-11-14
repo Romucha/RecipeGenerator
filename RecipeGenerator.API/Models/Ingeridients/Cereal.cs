@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.API.Ingeridients
+namespace RecipeGenerator.API.Models.Ingeridients
 {
-    public class Dairy : IIngredient
+    public class Cereal : IIngredient
     {
         public string Name
         {

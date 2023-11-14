@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components.WebView.Maui;
+using RecipeGenerator.API;
+using RecipeGenerator.API.Database;
 using RecipeGenerator.App.Data;
 using RecipeGenerator.App.ViewModels;
 
@@ -22,6 +24,7 @@ namespace RecipeGenerator.App
 #endif
             builder.Services.AddSingleton<MainVM>();
 
+            builder.Services.AddDatabase();
 
             builder.Services.AddSingleton<WeatherForecastService>();
 

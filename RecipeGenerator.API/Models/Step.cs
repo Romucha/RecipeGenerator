@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.API
+namespace RecipeGenerator.API.Models
 {
     public class Step
     {
-        
+
     }
 }

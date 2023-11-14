@@ -1,4 +1,4 @@
-﻿namespace RecipeGenerator.API
+﻿namespace RecipeGenerator.API.Models
 {
     /// <summary>
     /// Contains basic information about recipe
@@ -12,5 +12,7 @@
         public Course CourseType { get; set; }
 
         public IEnumerable<Step> Steps { get; set; }
+
+        public DateTime CreatedAt { get; set; }
     }
 }
