@@ -61,146 +61,3395 @@ namespace RecipeGenerator.API.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на All Purpose Flour.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_All_Purpose_Flour {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_All_Purpose_Flour", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Amaranth.
         /// </summary>
-        internal static string Cereal_Name_Amaranth {
+        internal static string Cereals_And_Pulses_Name_Amaranth {
             get {
-                return ResourceManager.GetString("Cereal_Name_Amaranth", resourceCulture);
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Amaranth", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Ищет локализованную строку, похожую на Arborio Rice.
         /// </summary>
-        internal static string Cereal_Name_Arborio_Rice {
+        internal static string Cereals_And_Pulses_Name_Arborio_Rice {
             get {
-                return ResourceManager.GetString("Cereal_Name_Arborio_Rice", resourceCulture);
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Arborio_Rice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Barley.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Barley {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Barley", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Ищет локализованную строку, похожую на Barnyard Millet.
         /// </summary>
-        internal static string Cereal_Name_Barnyard_Millet {
+        internal static string Cereals_And_Pulses_Name_Barnyard_Millet {
             get {
-                return ResourceManager.GetString("Cereal_Name_Barnyard_Millet", resourceCulture);
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Barnyard_Millet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Basmati Rice.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Basmati_Rice {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Basmati_Rice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Bean Sprouts.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Bean_Sprouts {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Bean_Sprouts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Bengal Gram (Split).
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Bengal_Gram__Split_ {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Bengal_Gram_(Split)", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Black Beans.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Black_Beans {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Black_Beans", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Black-eyed Beans.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Black_eyed_Beans {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Black-eyed_Beans", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Black Gram.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Black_Gram {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Black_Gram", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Bread.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Bread {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Bread", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Breadcrumbs.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Breadcrumbs {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Breadcrumbs", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Ищет локализованную строку, похожую на Brown Rice.
         /// </summary>
-        internal static string Cereal_Name_Brown_Rice {
+        internal static string Cereals_And_Pulses_Name_Brown_Rice {
             get {
-                return ResourceManager.GetString("Cereal_Name_Brown_Rice", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Finger Millet.
-        /// </summary>
-        internal static string Cereal_Name_Finger_Millet {
-            get {
-                return ResourceManager.GetString("Cereal_Name_Finger_Millet", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Jowar.
-        /// </summary>
-        internal static string Cereal_Name_Jowar {
-            get {
-                return ResourceManager.GetString("Cereal_Name_Jowar", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Kidney Beans.
-        /// </summary>
-        internal static string Cereal_Name_Kidney_Beans {
-            get {
-                return ResourceManager.GetString("Cereal_Name_Kidney_Beans", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Muesli.
-        /// </summary>
-        internal static string Cereal_Name_Muesli {
-            get {
-                return ResourceManager.GetString("Cereal_Name_Muesli", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Oats.
-        /// </summary>
-        internal static string Cereal_Name_Oats {
-            get {
-                return ResourceManager.GetString("Cereal_Name_Oats", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Puffed Rice.
-        /// </summary>
-        internal static string Cereal_Name_Puffed_Rice {
-            get {
-                return ResourceManager.GetString("Cereal_Name_Puffed_Rice", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Tapioca.
-        /// </summary>
-        internal static string Cereal_Name_Tapioca {
-            get {
-                return ResourceManager.GetString("Cereal_Name_Tapioca", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Whole Bengal Gram.
-        /// </summary>
-        internal static string Cereal_Name_Whole_Bengal_Gram {
-            get {
-                return ResourceManager.GetString("Cereal_Name_Whole_Bengal_Gram", resourceCulture);
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Brown_Rice", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Ищет локализованную строку, похожую на Buckwheat.
         /// </summary>
-        internal static string Pulse_Name_Buckwheat {
+        internal static string Cereals_And_Pulses_Name_Buckwheat {
             get {
-                return ResourceManager.GetString("Pulse_Name_Buckwheat", resourceCulture);
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Buckwheat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Chickpeas.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Chickpeas {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Chickpeas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cornmeal.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Cornmeal {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Cornmeal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Couscous.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Couscous {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Couscous", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Finger Millet.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Finger_Millet {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Finger_Millet", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Ищет локализованную строку, похожую на Flour.
         /// </summary>
-        internal static string Pulse_Name_Flour {
+        internal static string Cereals_And_Pulses_Name_Flour {
             get {
-                return ResourceManager.GetString("Pulse_Name_Flour", resourceCulture);
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Flour", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Gram flour.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Gram_flour {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Gram_flour", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Green Gram.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Green_Gram {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Green_Gram", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Husked Black Gram.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Husked_Black_Gram {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Husked_Black_Gram", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Husked Green Gram.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Husked_Green_Gram {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Husked_Green_Gram", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Jowar.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Jowar {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Jowar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Kidney Beans.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Kidney_Beans {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Kidney_Beans", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Muesli.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Muesli {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Muesli", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Oats.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Oats {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Oats", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Pearl Millet.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Pearl_Millet {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Pearl_Millet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Pigeon Pea.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Pigeon_Pea {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Pigeon_Pea", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Pressed Rice.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Pressed_Rice {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Pressed_Rice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Puffed Rice.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Puffed_Rice {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Puffed_Rice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Rice.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Rice {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Rice", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Ищет локализованную строку, похожую на Semolina.
         /// </summary>
-        internal static string Pulse_Name_Semolina {
+        internal static string Cereals_And_Pulses_Name_Semolina {
             get {
-                return ResourceManager.GetString("Pulse_Name_Semolina", resourceCulture);
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Semolina", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Tapioca.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Tapioca {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Tapioca", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Ищет локализованную строку, похожую на Water Chestnut flour.
         /// </summary>
-        internal static string Pulse_Name_Water_Chestnut_Flour {
+        internal static string Cereals_And_Pulses_Name_Water_Chestnut_flour {
             get {
-                return ResourceManager.GetString("Pulse_Name_Water_Chestnut_Flour", resourceCulture);
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Water_Chestnut_flour", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Whole Bengal Gram.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Whole_Bengal_Gram {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Whole_Bengal_Gram", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Whole Brown Lentils.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Whole_Brown_Lentils {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Whole_Brown_Lentils", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Whole Wheat Flour.
+        /// </summary>
+        internal static string Cereals_And_Pulses_Name_Whole_Wheat_Flour {
+            get {
+                return ResourceManager.GetString("Cereals_And_Pulses_Name_Whole_Wheat_Flour", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Blue Cheese.
+        /// </summary>
+        internal static string Dairy_Products_Name_Blue_Cheese {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Blue_Cheese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Brie Cheese.
+        /// </summary>
+        internal static string Dairy_Products_Name_Brie_Cheese {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Brie_Cheese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Butter.
+        /// </summary>
+        internal static string Dairy_Products_Name_Butter {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Butter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Buttermilk.
+        /// </summary>
+        internal static string Dairy_Products_Name_Buttermilk {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Buttermilk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cheddar Cheese.
+        /// </summary>
+        internal static string Dairy_Products_Name_Cheddar_Cheese {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Cheddar_Cheese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Clarified Butter.
+        /// </summary>
+        internal static string Dairy_Products_Name_Clarified_Butter {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Clarified_Butter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Condensed Milk.
+        /// </summary>
+        internal static string Dairy_Products_Name_Condensed_Milk {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Condensed_Milk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cottage Cheese.
+        /// </summary>
+        internal static string Dairy_Products_Name_Cottage_Cheese {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Cottage_Cheese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cream.
+        /// </summary>
+        internal static string Dairy_Products_Name_Cream {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Cream", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cream Cheese.
+        /// </summary>
+        internal static string Dairy_Products_Name_Cream_Cheese {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Cream_Cheese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Feta Cheese.
+        /// </summary>
+        internal static string Dairy_Products_Name_Feta_Cheese {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Feta_Cheese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Gouda Cheese.
+        /// </summary>
+        internal static string Dairy_Products_Name_Gouda_Cheese {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Gouda_Cheese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Gruyere Cheese.
+        /// </summary>
+        internal static string Dairy_Products_Name_Gruyere_Cheese {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Gruyere_Cheese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Hung Curd.
+        /// </summary>
+        internal static string Dairy_Products_Name_Hung_Curd {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Hung_Curd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Khoya.
+        /// </summary>
+        internal static string Dairy_Products_Name_Khoya {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Khoya", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Mascarpone Cheese.
+        /// </summary>
+        internal static string Dairy_Products_Name_Mascarpone_Cheese {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Mascarpone_Cheese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Milk.
+        /// </summary>
+        internal static string Dairy_Products_Name_Milk {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Milk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Mozzarella Cheese.
+        /// </summary>
+        internal static string Dairy_Products_Name_Mozzarella_Cheese {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Mozzarella_Cheese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Parmesan Cheese.
+        /// </summary>
+        internal static string Dairy_Products_Name_Parmesan_Cheese {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Parmesan_Cheese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Provolone Cheese.
+        /// </summary>
+        internal static string Dairy_Products_Name_Provolone_Cheese {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Provolone_Cheese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Ricotta Cheese.
+        /// </summary>
+        internal static string Dairy_Products_Name_Ricotta_Cheese {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Ricotta_Cheese", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Yogurt.
+        /// </summary>
+        internal static string Dairy_Products_Name_Yogurt {
+            get {
+                return ResourceManager.GetString("Dairy_Products_Name_Yogurt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Apples.
+        /// </summary>
+        internal static string Fruits_Name_Apples {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Apples", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Apricots.
+        /// </summary>
+        internal static string Fruits_Name_Apricots {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Apricots", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Banana.
+        /// </summary>
+        internal static string Fruits_Name_Banana {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Banana", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Blueberries.
+        /// </summary>
+        internal static string Fruits_Name_Blueberries {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Blueberries", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cape Gooseberry.
+        /// </summary>
+        internal static string Fruits_Name_Cape_Gooseberry {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Cape_Gooseberry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cherry.
+        /// </summary>
+        internal static string Fruits_Name_Cherry {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Cherry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Coconut.
+        /// </summary>
+        internal static string Fruits_Name_Coconut {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Coconut", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cooking Apples.
+        /// </summary>
+        internal static string Fruits_Name_Cooking_Apples {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Cooking_Apples", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cranberry.
+        /// </summary>
+        internal static string Fruits_Name_Cranberry {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Cranberry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Currant.
+        /// </summary>
+        internal static string Fruits_Name_Currant {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Currant", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Custard Apple.
+        /// </summary>
+        internal static string Fruits_Name_Custard_Apple {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Custard_Apple", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Dates.
+        /// </summary>
+        internal static string Fruits_Name_Dates {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Dates", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Dried Fruit.
+        /// </summary>
+        internal static string Fruits_Name_Dried_Fruit {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Dried_Fruit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Figs.
+        /// </summary>
+        internal static string Fruits_Name_Figs {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Figs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Grapefruit.
+        /// </summary>
+        internal static string Fruits_Name_Grapefruit {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Grapefruit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Grapes.
+        /// </summary>
+        internal static string Fruits_Name_Grapes {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Grapes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Guava.
+        /// </summary>
+        internal static string Fruits_Name_Guava {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Guava", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Indian Gooseberry.
+        /// </summary>
+        internal static string Fruits_Name_Indian_Gooseberry {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Indian_Gooseberry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Jamun.
+        /// </summary>
+        internal static string Fruits_Name_Jamun {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Jamun", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Kiwi.
+        /// </summary>
+        internal static string Fruits_Name_Kiwi {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Kiwi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Lemon.
+        /// </summary>
+        internal static string Fruits_Name_Lemon {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Lemon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Lemon Juice.
+        /// </summary>
+        internal static string Fruits_Name_Lemon_Juice {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Lemon_Juice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Lemon Rind.
+        /// </summary>
+        internal static string Fruits_Name_Lemon_Rind {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Lemon_Rind", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Lychee.
+        /// </summary>
+        internal static string Fruits_Name_Lychee {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Lychee", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Mango.
+        /// </summary>
+        internal static string Fruits_Name_Mango {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Mango", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Mulberry.
+        /// </summary>
+        internal static string Fruits_Name_Mulberry {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Mulberry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Olives.
+        /// </summary>
+        internal static string Fruits_Name_Olives {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Olives", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Orange.
+        /// </summary>
+        internal static string Fruits_Name_Orange {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Orange", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Orange Rind.
+        /// </summary>
+        internal static string Fruits_Name_Orange_Rind {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Orange_Rind", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Papaya.
+        /// </summary>
+        internal static string Fruits_Name_Papaya {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Papaya", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Peach.
+        /// </summary>
+        internal static string Fruits_Name_Peach {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Peach", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Pear.
+        /// </summary>
+        internal static string Fruits_Name_Pear {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Pear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Pineapple.
+        /// </summary>
+        internal static string Fruits_Name_Pineapple {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Pineapple", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Plum.
+        /// </summary>
+        internal static string Fruits_Name_Plum {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Plum", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Pomegranate.
+        /// </summary>
+        internal static string Fruits_Name_Pomegranate {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Pomegranate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Raisins.
+        /// </summary>
+        internal static string Fruits_Name_Raisins {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Raisins", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Strawberry.
+        /// </summary>
+        internal static string Fruits_Name_Strawberry {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Strawberry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Sultana.
+        /// </summary>
+        internal static string Fruits_Name_Sultana {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Sultana", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Tamarind.
+        /// </summary>
+        internal static string Fruits_Name_Tamarind {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Tamarind", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Tomato.
+        /// </summary>
+        internal static string Fruits_Name_Tomato {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Tomato", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Water Chestnut.
+        /// </summary>
+        internal static string Fruits_Name_Water_Chestnut {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Water_Chestnut", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Watermelon.
+        /// </summary>
+        internal static string Fruits_Name_Watermelon {
+            get {
+                return ResourceManager.GetString("Fruits_Name_Watermelon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Bacon.
+        /// </summary>
+        internal static string Meat_Name_Bacon {
+            get {
+                return ResourceManager.GetString("Meat_Name_Bacon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Beef.
+        /// </summary>
+        internal static string Meat_Name_Beef {
+            get {
+                return ResourceManager.GetString("Meat_Name_Beef", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Chicken.
+        /// </summary>
+        internal static string Meat_Name_Chicken {
+            get {
+                return ResourceManager.GetString("Meat_Name_Chicken", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Chicken Liver.
+        /// </summary>
+        internal static string Meat_Name_Chicken_Liver {
+            get {
+                return ResourceManager.GetString("Meat_Name_Chicken_Liver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Chicken Stock.
+        /// </summary>
+        internal static string Meat_Name_Chicken_Stock {
+            get {
+                return ResourceManager.GetString("Meat_Name_Chicken_Stock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Chops.
+        /// </summary>
+        internal static string Meat_Name_Chops {
+            get {
+                return ResourceManager.GetString("Meat_Name_Chops", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Crab.
+        /// </summary>
+        internal static string Meat_Name_Crab {
+            get {
+                return ResourceManager.GetString("Meat_Name_Crab", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Free Range Chicken.
+        /// </summary>
+        internal static string Meat_Name_Free_Range_Chicken {
+            get {
+                return ResourceManager.GetString("Meat_Name_Free_Range_Chicken", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Grass Fed Chicken.
+        /// </summary>
+        internal static string Meat_Name_Grass_Fed_Chicken {
+            get {
+                return ResourceManager.GetString("Meat_Name_Grass_Fed_Chicken", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Ham.
+        /// </summary>
+        internal static string Meat_Name_Ham {
+            get {
+                return ResourceManager.GetString("Meat_Name_Ham", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Keema.
+        /// </summary>
+        internal static string Meat_Name_Keema {
+            get {
+                return ResourceManager.GetString("Meat_Name_Keema", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Kidney Meat.
+        /// </summary>
+        internal static string Meat_Name_Kidney_Meat {
+            get {
+                return ResourceManager.GetString("Meat_Name_Kidney_Meat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Lamb Meat.
+        /// </summary>
+        internal static string Meat_Name_Lamb_Meat {
+            get {
+                return ResourceManager.GetString("Meat_Name_Lamb_Meat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Meat Stock.
+        /// </summary>
+        internal static string Meat_Name_Meat_Stock {
+            get {
+                return ResourceManager.GetString("Meat_Name_Meat_Stock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Mutton.
+        /// </summary>
+        internal static string Meat_Name_Mutton {
+            get {
+                return ResourceManager.GetString("Meat_Name_Mutton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Mutton Liver.
+        /// </summary>
+        internal static string Meat_Name_Mutton_Liver {
+            get {
+                return ResourceManager.GetString("Meat_Name_Mutton_Liver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Organic Chicken.
+        /// </summary>
+        internal static string Meat_Name_Organic_Chicken {
+            get {
+                return ResourceManager.GetString("Meat_Name_Organic_Chicken", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Partridge.
+        /// </summary>
+        internal static string Meat_Name_Partridge {
+            get {
+                return ResourceManager.GetString("Meat_Name_Partridge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Pork.
+        /// </summary>
+        internal static string Meat_Name_Pork {
+            get {
+                return ResourceManager.GetString("Meat_Name_Pork", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Quail.
+        /// </summary>
+        internal static string Meat_Name_Quail {
+            get {
+                return ResourceManager.GetString("Meat_Name_Quail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Skinned Chicken.
+        /// </summary>
+        internal static string Meat_Name_Skinned_Chicken {
+            get {
+                return ResourceManager.GetString("Meat_Name_Skinned_Chicken", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Turkey.
+        /// </summary>
+        internal static string Meat_Name_Turkey {
+            get {
+                return ResourceManager.GetString("Meat_Name_Turkey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Almonds.
+        /// </summary>
+        internal static string Nuts_And_Oilseeds_Name_Almonds {
+            get {
+                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Almonds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Blanched Almonds.
+        /// </summary>
+        internal static string Nuts_And_Oilseeds_Name_Blanched_Almonds {
+            get {
+                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Blanched_Almonds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Canola Oil.
+        /// </summary>
+        internal static string Nuts_And_Oilseeds_Name_Canola_Oil {
+            get {
+                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Canola_Oil", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cashew Nuts.
+        /// </summary>
+        internal static string Nuts_And_Oilseeds_Name_Cashew_Nuts {
+            get {
+                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Cashew_Nuts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Chia Seeds.
+        /// </summary>
+        internal static string Nuts_And_Oilseeds_Name_Chia_Seeds {
+            get {
+                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Chia_Seeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Chironji.
+        /// </summary>
+        internal static string Nuts_And_Oilseeds_Name_Chironji {
+            get {
+                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Chironji", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Hazelnut.
+        /// </summary>
+        internal static string Nuts_And_Oilseeds_Name_Hazelnut {
+            get {
+                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Hazelnut", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Mustard Oil.
+        /// </summary>
+        internal static string Nuts_And_Oilseeds_Name_Mustard_Oil {
+            get {
+                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Mustard_Oil", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Mustard Seeds.
+        /// </summary>
+        internal static string Nuts_And_Oilseeds_Name_Mustard_Seeds {
+            get {
+                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Mustard_Seeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Olive Oil.
+        /// </summary>
+        internal static string Nuts_And_Oilseeds_Name_Olive_Oil {
+            get {
+                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Olive_Oil", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Peanuts.
+        /// </summary>
+        internal static string Nuts_And_Oilseeds_Name_Peanuts {
+            get {
+                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Peanuts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Pine Nuts.
+        /// </summary>
+        internal static string Nuts_And_Oilseeds_Name_Pine_Nuts {
+            get {
+                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Pine_Nuts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Pistachio.
+        /// </summary>
+        internal static string Nuts_And_Oilseeds_Name_Pistachio {
+            get {
+                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Pistachio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Poppy Seeds.
+        /// </summary>
+        internal static string Nuts_And_Oilseeds_Name_Poppy_Seeds {
+            get {
+                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Poppy_Seeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Sesame Oil.
+        /// </summary>
+        internal static string Nuts_And_Oilseeds_Name_Sesame_Oil {
+            get {
+                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Sesame_Oil", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Sesame Seeds.
+        /// </summary>
+        internal static string Nuts_And_Oilseeds_Name_Sesame_Seeds {
+            get {
+                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Sesame_Seeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Sunflower Seeds.
+        /// </summary>
+        internal static string Nuts_And_Oilseeds_Name_Sunflower_Seeds {
+            get {
+                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Sunflower_Seeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Walnuts.
+        /// </summary>
+        internal static string Nuts_And_Oilseeds_Name_Walnuts {
+            get {
+                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Walnuts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Walnuts.
+        /// </summary>
+        internal static string Nuts_And_Oilseeds_Name_Walnuts1 {
+            get {
+                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Walnuts1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Agar.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Agar {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Agar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Agar.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Agar1 {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Agar1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Ajinomoto.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Ajinomoto {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Ajinomoto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Ajinomoto.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Ajinomoto1 {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Ajinomoto1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Almond Milk.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Almond_Milk {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Almond_Milk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Alum.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Alum {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Alum", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Arrowroot.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Arrowroot {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Arrowroot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Baking Powder.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Baking_Powder {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Baking_Powder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Baking Soda.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Baking_Soda {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Baking_Soda", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Balsamic Vinegar.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Balsamic_Vinegar {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Balsamic_Vinegar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Barfi.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Barfi {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Barfi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Beer.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Beer {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Beer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Brown Sauce.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Brown_Sauce {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Brown_Sauce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Chocolate.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Chocolate {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Chocolate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Chocolate Chips.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Chocolate_Chips {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Chocolate_Chips", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cocoa.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Cocoa {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Cocoa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Coconut Milk.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Coconut_Milk {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Coconut_Milk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Coconut Oil.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Coconut_Oil {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Coconut_Oil", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Coconut Water.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Coconut_Water {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Coconut_Water", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Coffee.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Coffee {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Coffee", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cognac.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Cognac {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Cognac", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cornflour.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Cornflour {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Cornflour", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cranberry Sauce.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Cranberry_Sauce {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Cranberry_Sauce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Desiccated Coconut.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Desiccated_Coconut {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Desiccated_Coconut", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Egg.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Egg {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Egg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Fish Sauce.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Fish_Sauce {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Fish_Sauce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Flat Noodles.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Flat_Noodles {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Flat_Noodles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Gelatin.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Gelatin {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Gelatin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Glycerine.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Glycerine {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Glycerine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Gold Leaves.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Gold_Leaves {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Gold_Leaves", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Guchchi.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Guchchi {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Guchchi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Hoisin Sauce.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Hoisin_Sauce {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Hoisin_Sauce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Jelly.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Jelly {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Jelly", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Jus.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Jus {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Jus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Lotus Seeds.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Lotus_Seeds {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Lotus_Seeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Malt Vinegar.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Malt_Vinegar {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Malt_Vinegar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Margarine.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Margarine {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Margarine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Marzipan.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Marzipan {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Marzipan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Mayonnaise.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Mayonnaise {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Mayonnaise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Melon Seeds.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Melon_Seeds {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Melon_Seeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Meringue.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Meringue {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Meringue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Oyster Sauce.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Oyster_Sauce {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Oyster_Sauce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Paan.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Paan {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Paan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Papad.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Papad {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Papad", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Pasta.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Pasta {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Pasta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Petha.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Petha {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Petha", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Polenta.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Polenta {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Polenta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Quinoa.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Quinoa {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Quinoa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Red Wine.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Red_Wine {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Red_Wine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Red Wine Vinegar.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Red_Wine_Vinegar {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Red_Wine_Vinegar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Rice Flour.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Rice_Flour {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Rice_Flour", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Rice Noodles.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Rice_Noodles {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Rice_Noodles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Rice Vinegar.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Rice_Vinegar {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Rice_Vinegar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Rose Water.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Rose_Water {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Rose_Water", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Roux.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Roux {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Roux", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Rum.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Rum {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Rum", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Sake.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Sake {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Sake", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Screw Pine.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Screw_Pine {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Screw_Pine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Sea Salt.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Sea_Salt {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Sea_Salt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Sev.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Sev {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Sev", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Sharbat.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Sharbat {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Sharbat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Soy Milk.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Soy_Milk {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Soy_Milk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Soya Sauce.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Soya_Sauce {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Soya_Sauce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Tartaric Acid.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Tartaric_Acid {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Tartaric_Acid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Tea.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Tea {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Tea", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Tofu.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Tofu {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Tofu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Tomato Puree.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Tomato_Puree {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Tomato_Puree", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Tortilla.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Tortilla {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Tortilla", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Vanilla Essence.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Vanilla_Essence {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Vanilla_Essence", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Vegetable Oil.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Vegetable_Oil {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Vegetable_Oil", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Vermicelli.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Vermicelli {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Vermicelli", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Vetiver.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Vetiver {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Vetiver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Vinaigrette.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Vinaigrette {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Vinaigrette", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Vinegar.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Vinegar {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Vinegar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на White Pepper.
+        /// </summary>
+        internal static string Other_Ingredients_Name_White_Pepper {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_White_Pepper", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на White Wine.
+        /// </summary>
+        internal static string Other_Ingredients_Name_White_Wine {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_White_Wine", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Yeast.
+        /// </summary>
+        internal static string Other_Ingredients_Name_Yeast {
+            get {
+                return ResourceManager.GetString("Other_Ingredients_Name_Yeast", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Anchovies.
+        /// </summary>
+        internal static string Seafood_Name_Anchovies {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Anchovies", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cat fish.
+        /// </summary>
+        internal static string Seafood_Name_Cat_fish {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Cat_fish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Clams.
+        /// </summary>
+        internal static string Seafood_Name_Clams {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Clams", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cod.
+        /// </summary>
+        internal static string Seafood_Name_Cod {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Cod", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cuttle fish.
+        /// </summary>
+        internal static string Seafood_Name_Cuttle_fish {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Cuttle_fish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Fish.
+        /// </summary>
+        internal static string Seafood_Name_Fish {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Fish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Fish Fillet.
+        /// </summary>
+        internal static string Seafood_Name_Fish_Fillet {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Fish_Fillet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Fish Stock.
+        /// </summary>
+        internal static string Seafood_Name_Fish_Stock {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Fish_Stock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Flounder.
+        /// </summary>
+        internal static string Seafood_Name_Flounder {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Flounder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Haddock.
+        /// </summary>
+        internal static string Seafood_Name_Haddock {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Haddock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Hilsa.
+        /// </summary>
+        internal static string Seafood_Name_Hilsa {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Hilsa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Mackerel.
+        /// </summary>
+        internal static string Seafood_Name_Mackerel {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Mackerel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Mullet.
+        /// </summary>
+        internal static string Seafood_Name_Mullet {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Mullet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Mussels.
+        /// </summary>
+        internal static string Seafood_Name_Mussels {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Mussels", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Pearl spot.
+        /// </summary>
+        internal static string Seafood_Name_Pearl_spot {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Pearl_spot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Perch.
+        /// </summary>
+        internal static string Seafood_Name_Perch {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Perch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Pomfret.
+        /// </summary>
+        internal static string Seafood_Name_Pomfret {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Pomfret", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Prawns.
+        /// </summary>
+        internal static string Seafood_Name_Prawns {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Prawns", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Salmon.
+        /// </summary>
+        internal static string Seafood_Name_Salmon {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Salmon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Sardines.
+        /// </summary>
+        internal static string Seafood_Name_Sardines {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Sardines", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Shark.
+        /// </summary>
+        internal static string Seafood_Name_Shark {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Shark", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Shellfish.
+        /// </summary>
+        internal static string Seafood_Name_Shellfish {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Shellfish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Shrimp.
+        /// </summary>
+        internal static string Seafood_Name_Shrimp {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Shrimp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Squids.
+        /// </summary>
+        internal static string Seafood_Name_Squids {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Squids", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Tuna Fish.
+        /// </summary>
+        internal static string Seafood_Name_Tuna_Fish {
+            get {
+                return ResourceManager.GetString("Seafood_Name_Tuna_Fish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Acacia.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Acacia {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Acacia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Acacia.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Acacia1 {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Acacia1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Allspice.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Allspice {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Allspice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Aniseed.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Aniseed {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Aniseed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Asafoetida.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Asafoetida {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Asafoetida", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Basil.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Basil {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Basil", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Bay Leaf.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Bay_Leaf {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Bay_Leaf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Black Cardamom.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Black_Cardamom {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Black_Cardamom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Black Cumin.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Black_Cumin {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Black_Cumin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Black Pepper.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Black_Pepper {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Black_Pepper", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cajun Spices.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Cajun_Spices {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Cajun_Spices", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Caraway Seeds.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Caraway_Seeds {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Caraway_Seeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Carom Seeds.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Carom_Seeds {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Carom_Seeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Carom Seeds.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Carom_Seeds1 {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Carom_Seeds1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cayenne.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Cayenne {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Cayenne", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Chives.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Chives {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Chives", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cinnamon.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Cinnamon {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Cinnamon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cloves.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Cloves {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Cloves", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Coriander Leaves.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Coriander_Leaves {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Coriander_Leaves", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Coriander Powder.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Coriander_Powder {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Coriander_Powder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Coriander Seeds.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Coriander_Seeds {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Coriander_Seeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cumin Seeds.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Cumin_Seeds {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Cumin_Seeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Curry Leaves.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Curry_Leaves {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Curry_Leaves", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Dill.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Dill {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Dill", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Dried Fenugreek Leaves.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Dried_Fenugreek_Leaves {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Dried_Fenugreek_Leaves", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Dry Ginger Powder.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Dry_Ginger_Powder {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Dry_Ginger_Powder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Fennel.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Fennel {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Fennel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Fenugreek Seeds.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Fenugreek_Seeds {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Fenugreek_Seeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Five Spice Powder.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Five_Spice_Powder {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Five_Spice_Powder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Galangal.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Galangal {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Galangal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Garam Masala.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Garam_Masala {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Garam_Masala", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Green Cardamom.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Green_Cardamom {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Green_Cardamom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Herbs.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Herbs {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Herbs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Kashmiri Mirch.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Kashmiri_Mirch {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Kashmiri_Mirch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Lemongrass.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Lemongrass {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Lemongrass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Mace.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Mace {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Mace", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Marjoram.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Marjoram {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Marjoram", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Mint Leaves.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Mint_Leaves {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Mint_Leaves", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Mustard Powder.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Mustard_Powder {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Mustard_Powder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Nasturtium.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Nasturtium {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Nasturtium", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Nutmeg.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Nutmeg {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Nutmeg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Onion Seeds.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Onion_Seeds {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Onion_Seeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Oregano.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Oregano {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Oregano", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Paprika.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Paprika {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Paprika", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Parsley.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Parsley {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Parsley", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Parsley.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Parsley1 {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Parsley1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Raw Mango Powder.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Raw_Mango_Powder {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Raw_Mango_Powder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Red Chilli.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Red_Chilli {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Red_Chilli", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Rock Salt.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Rock_Salt {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Rock_Salt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Rosemary.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Rosemary {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Rosemary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Saffron.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Saffron {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Saffron", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Sage.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Sage {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Sage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Salt.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Salt {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Salt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Star Anise.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Star_Anise {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Star_Anise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Thyme.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Thyme {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Thyme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Tulsi.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Tulsi {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Tulsi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Turmeric.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Turmeric {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Turmeric", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Yellow Chillies.
+        /// </summary>
+        internal static string Spices_And_Herbs_Name_Yellow_Chillies {
+            get {
+                return ResourceManager.GetString("Spices_And_Herbs_Name_Yellow_Chillies", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Brown Sugar.
+        /// </summary>
+        internal static string Sugar_And_Sugar_Products_Name_Brown_Sugar {
+            get {
+                return ResourceManager.GetString("Sugar_And_Sugar_Products_Name_Brown_Sugar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cane Sugar.
+        /// </summary>
+        internal static string Sugar_And_Sugar_Products_Name_Cane_Sugar {
+            get {
+                return ResourceManager.GetString("Sugar_And_Sugar_Products_Name_Cane_Sugar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Caramel.
+        /// </summary>
+        internal static string Sugar_And_Sugar_Products_Name_Caramel {
+            get {
+                return ResourceManager.GetString("Sugar_And_Sugar_Products_Name_Caramel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Castor Sugar.
+        /// </summary>
+        internal static string Sugar_And_Sugar_Products_Name_Castor_Sugar {
+            get {
+                return ResourceManager.GetString("Sugar_And_Sugar_Products_Name_Castor_Sugar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Golden Syrup.
+        /// </summary>
+        internal static string Sugar_And_Sugar_Products_Name_Golden_Syrup {
+            get {
+                return ResourceManager.GetString("Sugar_And_Sugar_Products_Name_Golden_Syrup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Honey.
+        /// </summary>
+        internal static string Sugar_And_Sugar_Products_Name_Honey {
+            get {
+                return ResourceManager.GetString("Sugar_And_Sugar_Products_Name_Honey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Icing Sugar.
+        /// </summary>
+        internal static string Sugar_And_Sugar_Products_Name_Icing_Sugar {
+            get {
+                return ResourceManager.GetString("Sugar_And_Sugar_Products_Name_Icing_Sugar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Jaggery.
+        /// </summary>
+        internal static string Sugar_And_Sugar_Products_Name_Jaggery {
+            get {
+                return ResourceManager.GetString("Sugar_And_Sugar_Products_Name_Jaggery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Sugar.
+        /// </summary>
+        internal static string Sugar_And_Sugar_Products_Name_Sugar {
+            get {
+                return ResourceManager.GetString("Sugar_And_Sugar_Products_Name_Sugar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Sugar Candy.
+        /// </summary>
+        internal static string Sugar_And_Sugar_Products_Name_Sugar_Candy {
+            get {
+                return ResourceManager.GetString("Sugar_And_Sugar_Products_Name_Sugar_Candy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Artichoke.
+        /// </summary>
+        internal static string Vegetables_Name_Artichoke {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Artichoke", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Ash Gourd.
+        /// </summary>
+        internal static string Vegetables_Name_Ash_Gourd {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Ash_Gourd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Asparagus.
+        /// </summary>
+        internal static string Vegetables_Name_Asparagus {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Asparagus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Avocado.
+        /// </summary>
+        internal static string Vegetables_Name_Avocado {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Avocado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Baby Corn.
+        /// </summary>
+        internal static string Vegetables_Name_Baby_Corn {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Baby_Corn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Bamboo Shoot.
+        /// </summary>
+        internal static string Vegetables_Name_Bamboo_Shoot {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Bamboo_Shoot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Beetroot.
+        /// </summary>
+        internal static string Vegetables_Name_Beetroot {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Beetroot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Bell Pepper.
+        /// </summary>
+        internal static string Vegetables_Name_Bell_Pepper {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Bell_Pepper", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Bitter Gourd.
+        /// </summary>
+        internal static string Vegetables_Name_Bitter_Gourd {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Bitter_Gourd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Bok Choy.
+        /// </summary>
+        internal static string Vegetables_Name_Bok_Choy {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Bok_Choy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Bottle Gourd.
+        /// </summary>
+        internal static string Vegetables_Name_Bottle_Gourd {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Bottle_Gourd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Broad Beans.
+        /// </summary>
+        internal static string Vegetables_Name_Broad_Beans {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Broad_Beans", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Broccoli.
+        /// </summary>
+        internal static string Vegetables_Name_Broccoli {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Broccoli", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cabbage.
+        /// </summary>
+        internal static string Vegetables_Name_Cabbage {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Cabbage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Capers.
+        /// </summary>
+        internal static string Vegetables_Name_Capers {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Capers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Capsicum.
+        /// </summary>
+        internal static string Vegetables_Name_Capsicum {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Capsicum", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Carrot.
+        /// </summary>
+        internal static string Vegetables_Name_Carrot {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Carrot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cauliflower.
+        /// </summary>
+        internal static string Vegetables_Name_Cauliflower {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Cauliflower", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Celery.
+        /// </summary>
+        internal static string Vegetables_Name_Celery {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Celery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cherry Tomatoes.
+        /// </summary>
+        internal static string Vegetables_Name_Cherry_Tomatoes {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Cherry_Tomatoes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cluster Beans.
+        /// </summary>
+        internal static string Vegetables_Name_Cluster_Beans {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Cluster_Beans", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Colocasia.
+        /// </summary>
+        internal static string Vegetables_Name_Colocasia {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Colocasia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Corn.
+        /// </summary>
+        internal static string Vegetables_Name_Corn {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Corn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Cucumber.
+        /// </summary>
+        internal static string Vegetables_Name_Cucumber {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Cucumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Drumstick.
+        /// </summary>
+        internal static string Vegetables_Name_Drumstick {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Drumstick", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Eggplant.
+        /// </summary>
+        internal static string Vegetables_Name_Eggplant {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Eggplant", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Fenugreek.
+        /// </summary>
+        internal static string Vegetables_Name_Fenugreek {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Fenugreek", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на French Beans.
+        /// </summary>
+        internal static string Vegetables_Name_French_Beans {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_French_Beans", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Garlic.
+        /// </summary>
+        internal static string Vegetables_Name_Garlic {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Garlic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Gherkins.
+        /// </summary>
+        internal static string Vegetables_Name_Gherkins {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Gherkins", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Ginger.
+        /// </summary>
+        internal static string Vegetables_Name_Ginger {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Ginger", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Green Chillies.
+        /// </summary>
+        internal static string Vegetables_Name_Green_Chillies {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Green_Chillies", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Green Peas.
+        /// </summary>
+        internal static string Vegetables_Name_Green_Peas {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Green_Peas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Horseradish.
+        /// </summary>
+        internal static string Vegetables_Name_Horseradish {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Horseradish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Jackfruit.
+        /// </summary>
+        internal static string Vegetables_Name_Jackfruit {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Jackfruit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Jalapeno.
+        /// </summary>
+        internal static string Vegetables_Name_Jalapeno {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Jalapeno", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Kaffir Lime.
+        /// </summary>
+        internal static string Vegetables_Name_Kaffir_Lime {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Kaffir_Lime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Lady Finger.
+        /// </summary>
+        internal static string Vegetables_Name_Lady_Finger {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Lady_Finger", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Leek.
+        /// </summary>
+        internal static string Vegetables_Name_Leek {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Leek", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Lettuce.
+        /// </summary>
+        internal static string Vegetables_Name_Lettuce {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Lettuce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Lotus Stem.
+        /// </summary>
+        internal static string Vegetables_Name_Lotus_Stem {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Lotus_Stem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Mushroom.
+        /// </summary>
+        internal static string Vegetables_Name_Mushroom {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Mushroom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Mustard Leaves.
+        /// </summary>
+        internal static string Vegetables_Name_Mustard_Leaves {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Mustard_Leaves", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Onion.
+        /// </summary>
+        internal static string Vegetables_Name_Onion {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Onion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Pigweed.
+        /// </summary>
+        internal static string Vegetables_Name_Pigweed {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Pigweed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Pimiento.
+        /// </summary>
+        internal static string Vegetables_Name_Pimiento {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Pimiento", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Plantain.
+        /// </summary>
+        internal static string Vegetables_Name_Plantain {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Plantain", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Potatoes.
+        /// </summary>
+        internal static string Vegetables_Name_Potatoes {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Potatoes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Pumpkin.
+        /// </summary>
+        internal static string Vegetables_Name_Pumpkin {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Pumpkin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Radish.
+        /// </summary>
+        internal static string Vegetables_Name_Radish {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Radish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Ridge Gourd.
+        /// </summary>
+        internal static string Vegetables_Name_Ridge_Gourd {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Ridge_Gourd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Rocket Leaves.
+        /// </summary>
+        internal static string Vegetables_Name_Rocket_Leaves {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Rocket_Leaves", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Round Gourd.
+        /// </summary>
+        internal static string Vegetables_Name_Round_Gourd {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Round_Gourd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Shallots.
+        /// </summary>
+        internal static string Vegetables_Name_Shallots {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Shallots", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Shiitake Mushroom.
+        /// </summary>
+        internal static string Vegetables_Name_Shiitake_Mushroom {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Shiitake_Mushroom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Snake Beans.
+        /// </summary>
+        internal static string Vegetables_Name_Snake_Beans {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Snake_Beans", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Sorrel Leaves.
+        /// </summary>
+        internal static string Vegetables_Name_Sorrel_Leaves {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Sorrel_Leaves", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Spinach.
+        /// </summary>
+        internal static string Vegetables_Name_Spinach {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Spinach", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Spring Onion.
+        /// </summary>
+        internal static string Vegetables_Name_Spring_Onion {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Spring_Onion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Sweet Potatoes.
+        /// </summary>
+        internal static string Vegetables_Name_Sweet_Potatoes {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Sweet_Potatoes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Turnip.
+        /// </summary>
+        internal static string Vegetables_Name_Turnip {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Turnip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Yam.
+        /// </summary>
+        internal static string Vegetables_Name_Yam {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Yam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Zucchini.
+        /// </summary>
+        internal static string Vegetables_Name_Zucchini {
+            get {
+                return ResourceManager.GetString("Vegetables_Name_Zucchini", resourceCulture);
             }
         }
     }
