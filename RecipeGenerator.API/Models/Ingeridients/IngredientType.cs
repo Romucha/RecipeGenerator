@@ -9,19 +9,15 @@ namespace RecipeGenerator.API.Models.Ingeridients
     public enum IngredientType
     {
         None = 0,
-        Cereal,
-        Dairy,
-        Fruit,
-        Herb,
+        Cereals_And_Pulses,
+        Dairy_Products,
+        Fruits,
         Meat,
-        Nut,
-        Oilseed,
-        Other,
-        Pulse,
+        Nuts_And_Oilseeds,
+        Other_Ingredients,
         Seafood,
-        Spice,
-        Sugar,
-        SugarProduct,
-        Vegetable,
+        Spices_And_Herbs,
+        Sugar_And_Sugar_Products,
+        Vegetables,
     }
 }

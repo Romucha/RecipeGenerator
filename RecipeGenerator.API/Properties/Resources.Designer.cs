@@ -1348,15 +1348,6 @@ namespace RecipeGenerator.API.Properties {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Walnuts.
-        /// </summary>
-        internal static string Nuts_And_Oilseeds_Name_Walnuts1 {
-            get {
-                return ResourceManager.GetString("Nuts_And_Oilseeds_Name_Walnuts1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Ищет локализованную строку, похожую на Agar.
         /// </summary>
         internal static string Other_Ingredients_Name_Agar {
@@ -1366,29 +1357,11 @@ namespace RecipeGenerator.API.Properties {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Agar.
-        /// </summary>
-        internal static string Other_Ingredients_Name_Agar1 {
-            get {
-                return ResourceManager.GetString("Other_Ingredients_Name_Agar1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Ищет локализованную строку, похожую на Ajinomoto.
         /// </summary>
         internal static string Other_Ingredients_Name_Ajinomoto {
             get {
                 return ResourceManager.GetString("Other_Ingredients_Name_Ajinomoto", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Ajinomoto.
-        /// </summary>
-        internal static string Other_Ingredients_Name_Ajinomoto1 {
-            get {
-                return ResourceManager.GetString("Other_Ingredients_Name_Ajinomoto1", resourceCulture);
             }
         }
         

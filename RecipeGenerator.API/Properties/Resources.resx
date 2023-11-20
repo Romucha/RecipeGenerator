@@ -546,19 +546,10 @@
   <data name="Nuts_And_Oilseeds_Name_Walnuts" xml:space="preserve">
     <value>Walnuts</value>
   </data>
-  <data name="Nuts_And_Oilseeds_Name_Walnuts1" xml:space="preserve">
-    <value>Walnuts</value>
-  </data>
   <data name="Other_Ingredients_Name_Agar" xml:space="preserve">
     <value>Agar</value>
   </data>
-  <data name="Other_Ingredients_Name_Agar1" xml:space="preserve">
-    <value>Agar</value>
-  </data>
   <data name="Other_Ingredients_Name_Ajinomoto" xml:space="preserve">
-    <value>Ajinomoto</value>
-  </data>
-  <data name="Other_Ingredients_Name_Ajinomoto1" xml:space="preserve">
     <value>Ajinomoto</value>
   </data>
   <data name="Other_Ingredients_Name_Almond_Milk" xml:space="preserve">
