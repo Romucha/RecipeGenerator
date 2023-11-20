@@ -17,9 +17,12 @@ namespace RecipeGenerator.API.Database
         public DbSet<IIngredient> Ingredients { get; set; }
 
         private readonly IConfiguration configuration;
-        public RecipeDbContext(IConfiguration configuration)
+        private readonly IIngredientGetter ingredientGetter;
+
+        public RecipeDbContext(IConfiguration configuration, IIngredientGetter ingredientGetter)
         {
             this.configuration = configuration;
+            this.ingredientGetter = ingredientGetter;
             Database.EnsureCreated();
         }
 
@@ -30,7 +33,7 @@ namespace RecipeGenerator.API.Database
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            
+            modelBuilder.Entity<IIngredient>().HasData(ingredientGetter.Get());
         }
     }
 }

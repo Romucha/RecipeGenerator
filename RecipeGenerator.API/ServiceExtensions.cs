@@ -14,7 +14,9 @@ namespace RecipeGenerator.API
         public static IServiceCollection AddDatabase(this IServiceCollection services) 
         {
             services.AddTransient<IIngredientFactory, IngredientFactory>();
+            services.AddTransient<IIngredientGetter, IngredientGetter>();
             services.AddSqlite<RecipeDbContext>("Data Source=Recipe.db;Cache=Shared");
+
             return services;
         }
     }

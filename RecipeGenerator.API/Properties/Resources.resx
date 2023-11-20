@@ -117,1126 +117,1120 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Cereals_And_Pulses_Name_All_Purpose_Flour" xml:space="preserve">
+  <data name="CerealsAndPulses_All_Purpose_Flour_Name" xml:space="preserve">
     <value>All Purpose Flour</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Amaranth" xml:space="preserve">
+  <data name="CerealsAndPulses_Amaranth_Name" xml:space="preserve">
     <value>Amaranth</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Arborio_Rice" xml:space="preserve">
+  <data name="CerealsAndPulses_Arborio_Rice_Name" xml:space="preserve">
     <value>Arborio Rice</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Barley" xml:space="preserve">
+  <data name="CerealsAndPulses_Barley_Name" xml:space="preserve">
     <value>Barley</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Barnyard_Millet" xml:space="preserve">
+  <data name="CerealsAndPulses_Barnyard_Millet_Name" xml:space="preserve">
     <value>Barnyard Millet</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Basmati_Rice" xml:space="preserve">
+  <data name="CerealsAndPulses_Basmati_Rice_Name" xml:space="preserve">
     <value>Basmati Rice</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Bean_Sprouts" xml:space="preserve">
+  <data name="CerealsAndPulses_Bean_Sprouts_Name" xml:space="preserve">
     <value>Bean Sprouts</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Bengal_Gram_(Split)" xml:space="preserve">
+  <data name="CerealsAndPulses_Bengal_Gram_(Split)_Name" xml:space="preserve">
     <value>Bengal Gram (Split)</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Black-eyed_Beans" xml:space="preserve">
+  <data name="CerealsAndPulses_Black-eyed_Beans_Name" xml:space="preserve">
     <value>Black-eyed Beans</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Black_Beans" xml:space="preserve">
+  <data name="CerealsAndPulses_Black_Beans_Name" xml:space="preserve">
     <value>Black Beans</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Black_Gram" xml:space="preserve">
+  <data name="CerealsAndPulses_Black_Gram_Name" xml:space="preserve">
     <value>Black Gram</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Bread" xml:space="preserve">
-    <value>Bread</value>
-  </data>
-  <data name="Cereals_And_Pulses_Name_Breadcrumbs" xml:space="preserve">
+  <data name="CerealsAndPulses_Breadcrumbs_Name" xml:space="preserve">
     <value>Breadcrumbs</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Brown_Rice" xml:space="preserve">
+  <data name="CerealsAndPulses_Bread_Name" xml:space="preserve">
+    <value>Bread</value>
+  </data>
+  <data name="CerealsAndPulses_Brown_Rice_Name" xml:space="preserve">
     <value>Brown Rice</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Buckwheat" xml:space="preserve">
+  <data name="CerealsAndPulses_Buckwheat_Name" xml:space="preserve">
     <value>Buckwheat</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Chickpeas" xml:space="preserve">
+  <data name="CerealsAndPulses_Chickpeas_Name" xml:space="preserve">
     <value>Chickpeas</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Cornmeal" xml:space="preserve">
+  <data name="CerealsAndPulses_Cornmeal_Name" xml:space="preserve">
     <value>Cornmeal</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Couscous" xml:space="preserve">
+  <data name="CerealsAndPulses_Couscous_Name" xml:space="preserve">
     <value>Couscous</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Finger_Millet" xml:space="preserve">
+  <data name="CerealsAndPulses_Finger_Millet_Name" xml:space="preserve">
     <value>Finger Millet</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Flour" xml:space="preserve">
+  <data name="CerealsAndPulses_Flour_Name" xml:space="preserve">
     <value>Flour</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Gram_flour" xml:space="preserve">
+  <data name="CerealsAndPulses_Gram_flour_Name" xml:space="preserve">
     <value>Gram flour</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Green_Gram" xml:space="preserve">
+  <data name="CerealsAndPulses_Green_Gram_Name" xml:space="preserve">
     <value>Green Gram</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Husked_Black_Gram" xml:space="preserve">
+  <data name="CerealsAndPulses_Husked_Black_Gram_Name" xml:space="preserve">
     <value>Husked Black Gram</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Husked_Green_Gram" xml:space="preserve">
+  <data name="CerealsAndPulses_Husked_Green_Gram_Name" xml:space="preserve">
     <value>Husked Green Gram</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Jowar" xml:space="preserve">
+  <data name="CerealsAndPulses_Jowar_Name" xml:space="preserve">
     <value>Jowar</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Kidney_Beans" xml:space="preserve">
+  <data name="CerealsAndPulses_Kidney_Beans_Name" xml:space="preserve">
     <value>Kidney Beans</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Muesli" xml:space="preserve">
+  <data name="CerealsAndPulses_Muesli_Name" xml:space="preserve">
     <value>Muesli</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Oats" xml:space="preserve">
+  <data name="CerealsAndPulses_Oats_Name" xml:space="preserve">
     <value>Oats</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Pearl_Millet" xml:space="preserve">
+  <data name="CerealsAndPulses_Pearl_Millet_Name" xml:space="preserve">
     <value>Pearl Millet</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Pigeon_Pea" xml:space="preserve">
+  <data name="CerealsAndPulses_Pigeon_Pea_Name" xml:space="preserve">
     <value>Pigeon Pea</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Pressed_Rice" xml:space="preserve">
+  <data name="CerealsAndPulses_Pressed_Rice_Name" xml:space="preserve">
     <value>Pressed Rice</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Puffed_Rice" xml:space="preserve">
+  <data name="CerealsAndPulses_Puffed_Rice_Name" xml:space="preserve">
     <value>Puffed Rice</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Rice" xml:space="preserve">
+  <data name="CerealsAndPulses_Rice_Name" xml:space="preserve">
     <value>Rice</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Semolina" xml:space="preserve">
+  <data name="CerealsAndPulses_Semolina_Name" xml:space="preserve">
     <value>Semolina</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Tapioca" xml:space="preserve">
+  <data name="CerealsAndPulses_Tapioca_Name" xml:space="preserve">
     <value>Tapioca</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Water_Chestnut_flour" xml:space="preserve">
+  <data name="CerealsAndPulses_Water_Chestnut_flour_Name" xml:space="preserve">
     <value>Water Chestnut flour</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Whole_Bengal_Gram" xml:space="preserve">
+  <data name="CerealsAndPulses_Whole_Bengal_Gram_Name" xml:space="preserve">
     <value>Whole Bengal Gram</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Whole_Brown_Lentils" xml:space="preserve">
+  <data name="CerealsAndPulses_Whole_Brown_Lentils_Name" xml:space="preserve">
     <value>Whole Brown Lentils</value>
   </data>
-  <data name="Cereals_And_Pulses_Name_Whole_Wheat_Flour" xml:space="preserve">
+  <data name="CerealsAndPulses_Whole_Wheat_Flour_Name" xml:space="preserve">
     <value>Whole Wheat Flour</value>
   </data>
-  <data name="Dairy_Products_Name_Blue_Cheese" xml:space="preserve">
+  <data name="DairyProducts_Blue_Cheese_Name" xml:space="preserve">
     <value>Blue Cheese</value>
   </data>
-  <data name="Dairy_Products_Name_Brie_Cheese" xml:space="preserve">
+  <data name="DairyProducts_Brie_Cheese_Name" xml:space="preserve">
     <value>Brie Cheese</value>
   </data>
-  <data name="Dairy_Products_Name_Butter" xml:space="preserve">
-    <value>Butter</value>
-  </data>
-  <data name="Dairy_Products_Name_Buttermilk" xml:space="preserve">
+  <data name="DairyProducts_Buttermilk_Name" xml:space="preserve">
     <value>Buttermilk</value>
   </data>
-  <data name="Dairy_Products_Name_Cheddar_Cheese" xml:space="preserve">
+  <data name="DairyProducts_Butter_Name" xml:space="preserve">
+    <value>Butter</value>
+  </data>
+  <data name="DairyProducts_Cheddar_Cheese_Name" xml:space="preserve">
     <value>Cheddar Cheese</value>
   </data>
-  <data name="Dairy_Products_Name_Clarified_Butter" xml:space="preserve">
+  <data name="DairyProducts_Clarified_Butter_Name" xml:space="preserve">
     <value>Clarified Butter</value>
   </data>
-  <data name="Dairy_Products_Name_Condensed_Milk" xml:space="preserve">
+  <data name="DairyProducts_Condensed_Milk_Name" xml:space="preserve">
     <value>Condensed Milk</value>
   </data>
-  <data name="Dairy_Products_Name_Cottage_Cheese" xml:space="preserve">
+  <data name="DairyProducts_Cottage_Cheese_Name" xml:space="preserve">
     <value>Cottage Cheese</value>
   </data>
-  <data name="Dairy_Products_Name_Cream" xml:space="preserve">
-    <value>Cream</value>
-  </data>
-  <data name="Dairy_Products_Name_Cream_Cheese" xml:space="preserve">
+  <data name="DairyProducts_Cream_Cheese_Name" xml:space="preserve">
     <value>Cream Cheese</value>
   </data>
-  <data name="Dairy_Products_Name_Feta_Cheese" xml:space="preserve">
+  <data name="DairyProducts_Cream_Name" xml:space="preserve">
+    <value>Cream</value>
+  </data>
+  <data name="DairyProducts_Feta_Cheese_Name" xml:space="preserve">
     <value>Feta Cheese</value>
   </data>
-  <data name="Dairy_Products_Name_Gouda_Cheese" xml:space="preserve">
+  <data name="DairyProducts_Gouda_Cheese_Name" xml:space="preserve">
     <value>Gouda Cheese</value>
   </data>
-  <data name="Dairy_Products_Name_Gruyere_Cheese" xml:space="preserve">
+  <data name="DairyProducts_Gruyere_Cheese_Name" xml:space="preserve">
     <value>Gruyere Cheese</value>
   </data>
-  <data name="Dairy_Products_Name_Hung_Curd" xml:space="preserve">
+  <data name="DairyProducts_Hung_Curd_Name" xml:space="preserve">
     <value>Hung Curd</value>
   </data>
-  <data name="Dairy_Products_Name_Khoya" xml:space="preserve">
+  <data name="DairyProducts_Khoya_Name" xml:space="preserve">
     <value>Khoya</value>
   </data>
-  <data name="Dairy_Products_Name_Mascarpone_Cheese" xml:space="preserve">
+  <data name="DairyProducts_Mascarpone_Cheese_Name" xml:space="preserve">
     <value>Mascarpone Cheese</value>
   </data>
-  <data name="Dairy_Products_Name_Milk" xml:space="preserve">
+  <data name="DairyProducts_Milk_Name" xml:space="preserve">
     <value>Milk</value>
   </data>
-  <data name="Dairy_Products_Name_Mozzarella_Cheese" xml:space="preserve">
+  <data name="DairyProducts_Mozzarella_Cheese_Name" xml:space="preserve">
     <value>Mozzarella Cheese</value>
   </data>
-  <data name="Dairy_Products_Name_Parmesan_Cheese" xml:space="preserve">
+  <data name="DairyProducts_Parmesan_Cheese_Name" xml:space="preserve">
     <value>Parmesan Cheese</value>
   </data>
-  <data name="Dairy_Products_Name_Provolone_Cheese" xml:space="preserve">
+  <data name="DairyProducts_Provolone_Cheese_Name" xml:space="preserve">
     <value>Provolone Cheese</value>
   </data>
-  <data name="Dairy_Products_Name_Ricotta_Cheese" xml:space="preserve">
+  <data name="DairyProducts_Ricotta_Cheese_Name" xml:space="preserve">
     <value>Ricotta Cheese</value>
   </data>
-  <data name="Dairy_Products_Name_Yogurt" xml:space="preserve">
+  <data name="DairyProducts_Yogurt_Name" xml:space="preserve">
     <value>Yogurt</value>
   </data>
-  <data name="Fruits_Name_Apples" xml:space="preserve">
+  <data name="Fruits_Apples_Name" xml:space="preserve">
     <value>Apples</value>
   </data>
-  <data name="Fruits_Name_Apricots" xml:space="preserve">
+  <data name="Fruits_Apricots_Name" xml:space="preserve">
     <value>Apricots</value>
   </data>
-  <data name="Fruits_Name_Banana" xml:space="preserve">
+  <data name="Fruits_Banana_Name" xml:space="preserve">
     <value>Banana</value>
   </data>
-  <data name="Fruits_Name_Blueberries" xml:space="preserve">
+  <data name="Fruits_Blueberries_Name" xml:space="preserve">
     <value>Blueberries</value>
   </data>
-  <data name="Fruits_Name_Cape_Gooseberry" xml:space="preserve">
+  <data name="Fruits_Cape_Gooseberry_Name" xml:space="preserve">
     <value>Cape Gooseberry</value>
   </data>
-  <data name="Fruits_Name_Cherry" xml:space="preserve">
+  <data name="Fruits_Cherry_Name" xml:space="preserve">
     <value>Cherry</value>
   </data>
-  <data name="Fruits_Name_Coconut" xml:space="preserve">
+  <data name="Fruits_Coconut_Name" xml:space="preserve">
     <value>Coconut</value>
   </data>
-  <data name="Fruits_Name_Cooking_Apples" xml:space="preserve">
+  <data name="Fruits_Cooking_Apples_Name" xml:space="preserve">
     <value>Cooking Apples</value>
   </data>
-  <data name="Fruits_Name_Cranberry" xml:space="preserve">
+  <data name="Fruits_Cranberry_Name" xml:space="preserve">
     <value>Cranberry</value>
   </data>
-  <data name="Fruits_Name_Currant" xml:space="preserve">
+  <data name="Fruits_Currant_Name" xml:space="preserve">
     <value>Currant</value>
   </data>
-  <data name="Fruits_Name_Custard_Apple" xml:space="preserve">
+  <data name="Fruits_Custard_Apple_Name" xml:space="preserve">
     <value>Custard Apple</value>
   </data>
-  <data name="Fruits_Name_Dates" xml:space="preserve">
+  <data name="Fruits_Dates_Name" xml:space="preserve">
     <value>Dates</value>
   </data>
-  <data name="Fruits_Name_Dried_Fruit" xml:space="preserve">
+  <data name="Fruits_Dried_Fruit_Name" xml:space="preserve">
     <value>Dried Fruit</value>
   </data>
-  <data name="Fruits_Name_Figs" xml:space="preserve">
+  <data name="Fruits_Figs_Name" xml:space="preserve">
     <value>Figs</value>
   </data>
-  <data name="Fruits_Name_Grapefruit" xml:space="preserve">
+  <data name="Fruits_Grapefruit_Name" xml:space="preserve">
     <value>Grapefruit</value>
   </data>
-  <data name="Fruits_Name_Grapes" xml:space="preserve">
+  <data name="Fruits_Grapes_Name" xml:space="preserve">
     <value>Grapes</value>
   </data>
-  <data name="Fruits_Name_Guava" xml:space="preserve">
+  <data name="Fruits_Guava_Name" xml:space="preserve">
     <value>Guava</value>
   </data>
-  <data name="Fruits_Name_Indian_Gooseberry" xml:space="preserve">
+  <data name="Fruits_Indian_Gooseberry_Name" xml:space="preserve">
     <value>Indian Gooseberry</value>
   </data>
-  <data name="Fruits_Name_Jamun" xml:space="preserve">
+  <data name="Fruits_Jamun_Name" xml:space="preserve">
     <value>Jamun</value>
   </data>
-  <data name="Fruits_Name_Kiwi" xml:space="preserve">
+  <data name="Fruits_Kiwi_Name" xml:space="preserve">
     <value>Kiwi</value>
   </data>
-  <data name="Fruits_Name_Lemon" xml:space="preserve">
-    <value>Lemon</value>
-  </data>
-  <data name="Fruits_Name_Lemon_Juice" xml:space="preserve">
+  <data name="Fruits_Lemon_Juice_Name" xml:space="preserve">
     <value>Lemon Juice</value>
   </data>
-  <data name="Fruits_Name_Lemon_Rind" xml:space="preserve">
+  <data name="Fruits_Lemon_Name" xml:space="preserve">
+    <value>Lemon</value>
+  </data>
+  <data name="Fruits_Lemon_Rind_Name" xml:space="preserve">
     <value>Lemon Rind</value>
   </data>
-  <data name="Fruits_Name_Lychee" xml:space="preserve">
+  <data name="Fruits_Lychee_Name" xml:space="preserve">
     <value>Lychee</value>
   </data>
-  <data name="Fruits_Name_Mango" xml:space="preserve">
+  <data name="Fruits_Mango_Name" xml:space="preserve">
     <value>Mango</value>
   </data>
-  <data name="Fruits_Name_Mulberry" xml:space="preserve">
+  <data name="Fruits_Mulberry_Name" xml:space="preserve">
     <value>Mulberry</value>
   </data>
-  <data name="Fruits_Name_Olives" xml:space="preserve">
+  <data name="Fruits_Olives_Name" xml:space="preserve">
     <value>Olives</value>
   </data>
-  <data name="Fruits_Name_Orange" xml:space="preserve">
+  <data name="Fruits_Orange_Name" xml:space="preserve">
     <value>Orange</value>
   </data>
-  <data name="Fruits_Name_Orange_Rind" xml:space="preserve">
+  <data name="Fruits_Orange_Rind_Name" xml:space="preserve">
     <value>Orange Rind</value>
   </data>
-  <data name="Fruits_Name_Papaya" xml:space="preserve">
+  <data name="Fruits_Papaya_Name" xml:space="preserve">
     <value>Papaya</value>
   </data>
-  <data name="Fruits_Name_Peach" xml:space="preserve">
+  <data name="Fruits_Peach_Name" xml:space="preserve">
     <value>Peach</value>
   </data>
-  <data name="Fruits_Name_Pear" xml:space="preserve">
+  <data name="Fruits_Pear_Name" xml:space="preserve">
     <value>Pear</value>
   </data>
-  <data name="Fruits_Name_Pineapple" xml:space="preserve">
+  <data name="Fruits_Pineapple_Name" xml:space="preserve">
     <value>Pineapple</value>
   </data>
-  <data name="Fruits_Name_Plum" xml:space="preserve">
+  <data name="Fruits_Plum_Name" xml:space="preserve">
     <value>Plum</value>
   </data>
-  <data name="Fruits_Name_Pomegranate" xml:space="preserve">
+  <data name="Fruits_Pomegranate_Name" xml:space="preserve">
     <value>Pomegranate</value>
   </data>
-  <data name="Fruits_Name_Raisins" xml:space="preserve">
+  <data name="Fruits_Raisins_Name" xml:space="preserve">
     <value>Raisins</value>
   </data>
-  <data name="Fruits_Name_Strawberry" xml:space="preserve">
+  <data name="Fruits_Strawberry_Name" xml:space="preserve">
     <value>Strawberry</value>
   </data>
-  <data name="Fruits_Name_Sultana" xml:space="preserve">
+  <data name="Fruits_Sultana_Name" xml:space="preserve">
     <value>Sultana</value>
   </data>
-  <data name="Fruits_Name_Tamarind" xml:space="preserve">
+  <data name="Fruits_Tamarind_Name" xml:space="preserve">
     <value>Tamarind</value>
   </data>
-  <data name="Fruits_Name_Tomato" xml:space="preserve">
+  <data name="Fruits_Tomato_Name" xml:space="preserve">
     <value>Tomato</value>
   </data>
-  <data name="Fruits_Name_Watermelon" xml:space="preserve">
+  <data name="Fruits_Watermelon_Name" xml:space="preserve">
     <value>Watermelon</value>
   </data>
-  <data name="Fruits_Name_Water_Chestnut" xml:space="preserve">
+  <data name="Fruits_Water_Chestnut_Name" xml:space="preserve">
     <value>Water Chestnut</value>
   </data>
-  <data name="Meat_Name_Bacon" xml:space="preserve">
+  <data name="Meat_Bacon_Name" xml:space="preserve">
     <value>Bacon</value>
   </data>
-  <data name="Meat_Name_Beef" xml:space="preserve">
+  <data name="Meat_Beef_Name" xml:space="preserve">
     <value>Beef</value>
   </data>
-  <data name="Meat_Name_Chicken" xml:space="preserve">
-    <value>Chicken</value>
-  </data>
-  <data name="Meat_Name_Chicken_Liver" xml:space="preserve">
+  <data name="Meat_Chicken_Liver_Name" xml:space="preserve">
     <value>Chicken Liver</value>
   </data>
-  <data name="Meat_Name_Chicken_Stock" xml:space="preserve">
+  <data name="Meat_Chicken_Name" xml:space="preserve">
+    <value>Chicken</value>
+  </data>
+  <data name="Meat_Chicken_Stock_Name" xml:space="preserve">
     <value>Chicken Stock</value>
   </data>
-  <data name="Meat_Name_Chops" xml:space="preserve">
+  <data name="Meat_Chops_Name" xml:space="preserve">
     <value>Chops</value>
   </data>
-  <data name="Meat_Name_Crab" xml:space="preserve">
+  <data name="Meat_Crab_Name" xml:space="preserve">
     <value>Crab</value>
   </data>
-  <data name="Meat_Name_Free_Range_Chicken" xml:space="preserve">
+  <data name="Meat_Free_Range_Chicken_Name" xml:space="preserve">
     <value>Free Range Chicken</value>
   </data>
-  <data name="Meat_Name_Grass_Fed_Chicken" xml:space="preserve">
+  <data name="Meat_Grass_Fed_Chicken_Name" xml:space="preserve">
     <value>Grass Fed Chicken</value>
   </data>
-  <data name="Meat_Name_Ham" xml:space="preserve">
+  <data name="Meat_Ham_Name" xml:space="preserve">
     <value>Ham</value>
   </data>
-  <data name="Meat_Name_Keema" xml:space="preserve">
+  <data name="Meat_Keema_Name" xml:space="preserve">
     <value>Keema</value>
   </data>
-  <data name="Meat_Name_Kidney_Meat" xml:space="preserve">
+  <data name="Meat_Kidney_Meat_Name" xml:space="preserve">
     <value>Kidney Meat</value>
   </data>
-  <data name="Meat_Name_Lamb_Meat" xml:space="preserve">
+  <data name="Meat_Lamb_Meat_Name" xml:space="preserve">
     <value>Lamb Meat</value>
   </data>
-  <data name="Meat_Name_Meat_Stock" xml:space="preserve">
+  <data name="Meat_Meat_Stock_Name" xml:space="preserve">
     <value>Meat Stock</value>
   </data>
-  <data name="Meat_Name_Mutton" xml:space="preserve">
-    <value>Mutton</value>
-  </data>
-  <data name="Meat_Name_Mutton_Liver" xml:space="preserve">
+  <data name="Meat_Mutton_Liver_Name" xml:space="preserve">
     <value>Mutton Liver</value>
   </data>
-  <data name="Meat_Name_Organic_Chicken" xml:space="preserve">
+  <data name="Meat_Mutton_Name" xml:space="preserve">
+    <value>Mutton</value>
+  </data>
+  <data name="Meat_Organic_Chicken_Name" xml:space="preserve">
     <value>Organic Chicken</value>
   </data>
-  <data name="Meat_Name_Partridge" xml:space="preserve">
+  <data name="Meat_Partridge_Name" xml:space="preserve">
     <value>Partridge</value>
   </data>
-  <data name="Meat_Name_Pork" xml:space="preserve">
+  <data name="Meat_Pork_Name" xml:space="preserve">
     <value>Pork</value>
   </data>
-  <data name="Meat_Name_Quail" xml:space="preserve">
+  <data name="Meat_Quail_Name" xml:space="preserve">
     <value>Quail</value>
   </data>
-  <data name="Meat_Name_Skinned_Chicken" xml:space="preserve">
+  <data name="Meat_Skinned_Chicken_Name" xml:space="preserve">
     <value>Skinned Chicken</value>
   </data>
-  <data name="Meat_Name_Turkey" xml:space="preserve">
+  <data name="Meat_Turkey_Name" xml:space="preserve">
     <value>Turkey</value>
   </data>
-  <data name="Nuts_And_Oilseeds_Name_Almonds" xml:space="preserve">
+  <data name="NutsAndOilseeds_Almonds_Name" xml:space="preserve">
     <value>Almonds</value>
   </data>
-  <data name="Nuts_And_Oilseeds_Name_Blanched_Almonds" xml:space="preserve">
+  <data name="NutsAndOilseeds_Blanched_Almonds_Name" xml:space="preserve">
     <value>Blanched Almonds</value>
   </data>
-  <data name="Nuts_And_Oilseeds_Name_Canola_Oil" xml:space="preserve">
+  <data name="NutsAndOilseeds_Canola_Oil_Name" xml:space="preserve">
     <value>Canola Oil</value>
   </data>
-  <data name="Nuts_And_Oilseeds_Name_Cashew_Nuts" xml:space="preserve">
+  <data name="NutsAndOilseeds_Cashew_Nuts_Name" xml:space="preserve">
     <value>Cashew Nuts</value>
   </data>
-  <data name="Nuts_And_Oilseeds_Name_Chia_Seeds" xml:space="preserve">
+  <data name="NutsAndOilseeds_Chia_Seeds_Name" xml:space="preserve">
     <value>Chia Seeds</value>
   </data>
-  <data name="Nuts_And_Oilseeds_Name_Chironji" xml:space="preserve">
+  <data name="NutsAndOilseeds_Chironji_Name" xml:space="preserve">
     <value>Chironji</value>
   </data>
-  <data name="Nuts_And_Oilseeds_Name_Hazelnut" xml:space="preserve">
+  <data name="NutsAndOilseeds_Hazelnut_Name" xml:space="preserve">
     <value>Hazelnut</value>
   </data>
-  <data name="Nuts_And_Oilseeds_Name_Mustard_Oil" xml:space="preserve">
+  <data name="NutsAndOilseeds_Mustard_Oil_Name" xml:space="preserve">
     <value>Mustard Oil</value>
   </data>
-  <data name="Nuts_And_Oilseeds_Name_Mustard_Seeds" xml:space="preserve">
+  <data name="NutsAndOilseeds_Mustard_Seeds_Name" xml:space="preserve">
     <value>Mustard Seeds</value>
   </data>
-  <data name="Nuts_And_Oilseeds_Name_Olive_Oil" xml:space="preserve">
+  <data name="NutsAndOilseeds_Olive_Oil_Name" xml:space="preserve">
     <value>Olive Oil</value>
   </data>
-  <data name="Nuts_And_Oilseeds_Name_Peanuts" xml:space="preserve">
+  <data name="NutsAndOilseeds_Peanuts_Name" xml:space="preserve">
     <value>Peanuts</value>
   </data>
-  <data name="Nuts_And_Oilseeds_Name_Pine_Nuts" xml:space="preserve">
+  <data name="NutsAndOilseeds_Pine_Nuts_Name" xml:space="preserve">
     <value>Pine Nuts</value>
   </data>
-  <data name="Nuts_And_Oilseeds_Name_Pistachio" xml:space="preserve">
+  <data name="NutsAndOilseeds_Pistachio_Name" xml:space="preserve">
     <value>Pistachio</value>
   </data>
-  <data name="Nuts_And_Oilseeds_Name_Poppy_Seeds" xml:space="preserve">
+  <data name="NutsAndOilseeds_Poppy_Seeds_Name" xml:space="preserve">
     <value>Poppy Seeds</value>
   </data>
-  <data name="Nuts_And_Oilseeds_Name_Sesame_Oil" xml:space="preserve">
+  <data name="NutsAndOilseeds_Sesame_Oil_Name" xml:space="preserve">
     <value>Sesame Oil</value>
   </data>
-  <data name="Nuts_And_Oilseeds_Name_Sesame_Seeds" xml:space="preserve">
+  <data name="NutsAndOilseeds_Sesame_Seeds_Name" xml:space="preserve">
     <value>Sesame Seeds</value>
   </data>
-  <data name="Nuts_And_Oilseeds_Name_Sunflower_Seeds" xml:space="preserve">
+  <data name="NutsAndOilseeds_Sunflower_Seeds_Name" xml:space="preserve">
     <value>Sunflower Seeds</value>
   </data>
-  <data name="Nuts_And_Oilseeds_Name_Walnuts" xml:space="preserve">
+  <data name="NutsAndOilseeds_Walnuts_Name" xml:space="preserve">
     <value>Walnuts</value>
   </data>
-  <data name="Other_Ingredients_Name_Agar" xml:space="preserve">
+  <data name="NutsAndOilseeds_Walnuts_Name1" xml:space="preserve">
+    <value>Walnuts</value>
+  </data>
+  <data name="OtherIngredients_Agar_Name" xml:space="preserve">
     <value>Agar</value>
   </data>
-  <data name="Other_Ingredients_Name_Ajinomoto" xml:space="preserve">
+  <data name="OtherIngredients_Ajinomoto_Name" xml:space="preserve">
     <value>Ajinomoto</value>
   </data>
-  <data name="Other_Ingredients_Name_Almond_Milk" xml:space="preserve">
+  <data name="OtherIngredients_Almond_Milk_Name" xml:space="preserve">
     <value>Almond Milk</value>
   </data>
-  <data name="Other_Ingredients_Name_Alum" xml:space="preserve">
+  <data name="OtherIngredients_Alum_Name" xml:space="preserve">
     <value>Alum</value>
   </data>
-  <data name="Other_Ingredients_Name_Arrowroot" xml:space="preserve">
+  <data name="OtherIngredients_Arrowroot_Name" xml:space="preserve">
     <value>Arrowroot</value>
   </data>
-  <data name="Other_Ingredients_Name_Baking_Powder" xml:space="preserve">
+  <data name="OtherIngredients_Baking_Powder_Name" xml:space="preserve">
     <value>Baking Powder</value>
   </data>
-  <data name="Other_Ingredients_Name_Baking_Soda" xml:space="preserve">
+  <data name="OtherIngredients_Baking_Soda_Name" xml:space="preserve">
     <value>Baking Soda</value>
   </data>
-  <data name="Other_Ingredients_Name_Balsamic_Vinegar" xml:space="preserve">
+  <data name="OtherIngredients_Balsamic_Vinegar_Name" xml:space="preserve">
     <value>Balsamic Vinegar</value>
   </data>
-  <data name="Other_Ingredients_Name_Barfi" xml:space="preserve">
+  <data name="OtherIngredients_Barfi_Name" xml:space="preserve">
     <value>Barfi</value>
   </data>
-  <data name="Other_Ingredients_Name_Beer" xml:space="preserve">
+  <data name="OtherIngredients_Beer_Name" xml:space="preserve">
     <value>Beer</value>
   </data>
-  <data name="Other_Ingredients_Name_Brown_Sauce" xml:space="preserve">
+  <data name="OtherIngredients_Brown_Sauce_Name" xml:space="preserve">
     <value>Brown Sauce</value>
   </data>
-  <data name="Other_Ingredients_Name_Chocolate" xml:space="preserve">
-    <value>Chocolate</value>
-  </data>
-  <data name="Other_Ingredients_Name_Chocolate_Chips" xml:space="preserve">
+  <data name="OtherIngredients_Chocolate_Chips_Name" xml:space="preserve">
     <value>Chocolate Chips</value>
   </data>
-  <data name="Other_Ingredients_Name_Cocoa" xml:space="preserve">
+  <data name="OtherIngredients_Chocolate_Name" xml:space="preserve">
+    <value>Chocolate</value>
+  </data>
+  <data name="OtherIngredients_Cocoa_Name" xml:space="preserve">
     <value>Cocoa</value>
   </data>
-  <data name="Other_Ingredients_Name_Coconut_Milk" xml:space="preserve">
+  <data name="OtherIngredients_Coconut_Milk_Name" xml:space="preserve">
     <value>Coconut Milk</value>
   </data>
-  <data name="Other_Ingredients_Name_Coconut_Oil" xml:space="preserve">
+  <data name="OtherIngredients_Coconut_Oil_Name" xml:space="preserve">
     <value>Coconut Oil</value>
   </data>
-  <data name="Other_Ingredients_Name_Coconut_Water" xml:space="preserve">
+  <data name="OtherIngredients_Coconut_Water_Name" xml:space="preserve">
     <value>Coconut Water</value>
   </data>
-  <data name="Other_Ingredients_Name_Coffee" xml:space="preserve">
+  <data name="OtherIngredients_Coffee_Name" xml:space="preserve">
     <value>Coffee</value>
   </data>
-  <data name="Other_Ingredients_Name_Cognac" xml:space="preserve">
+  <data name="OtherIngredients_Cognac_Name" xml:space="preserve">
     <value>Cognac</value>
   </data>
-  <data name="Other_Ingredients_Name_Cornflour" xml:space="preserve">
+  <data name="OtherIngredients_Cornflour_Name" xml:space="preserve">
     <value>Cornflour</value>
   </data>
-  <data name="Other_Ingredients_Name_Cranberry_Sauce" xml:space="preserve">
+  <data name="OtherIngredients_Cranberry_Sauce_Name" xml:space="preserve">
     <value>Cranberry Sauce</value>
   </data>
-  <data name="Other_Ingredients_Name_Desiccated_Coconut" xml:space="preserve">
+  <data name="OtherIngredients_Desiccated_Coconut_Name" xml:space="preserve">
     <value>Desiccated Coconut</value>
   </data>
-  <data name="Other_Ingredients_Name_Egg" xml:space="preserve">
+  <data name="OtherIngredients_Egg_Name" xml:space="preserve">
     <value>Egg</value>
   </data>
-  <data name="Other_Ingredients_Name_Fish_Sauce" xml:space="preserve">
+  <data name="OtherIngredients_Fish_Sauce_Name" xml:space="preserve">
     <value>Fish Sauce</value>
   </data>
-  <data name="Other_Ingredients_Name_Flat_Noodles" xml:space="preserve">
+  <data name="OtherIngredients_Flat_Noodles_Name" xml:space="preserve">
     <value>Flat Noodles</value>
   </data>
-  <data name="Other_Ingredients_Name_Gelatin" xml:space="preserve">
+  <data name="OtherIngredients_Gelatin_Name" xml:space="preserve">
     <value>Gelatin</value>
   </data>
-  <data name="Other_Ingredients_Name_Glycerine" xml:space="preserve">
+  <data name="OtherIngredients_Glycerine_Name" xml:space="preserve">
     <value>Glycerine</value>
   </data>
-  <data name="Other_Ingredients_Name_Gold_Leaves" xml:space="preserve">
+  <data name="OtherIngredients_Gold_Leaves_Name" xml:space="preserve">
     <value>Gold Leaves</value>
   </data>
-  <data name="Other_Ingredients_Name_Guchchi" xml:space="preserve">
+  <data name="OtherIngredients_Guchchi_Name" xml:space="preserve">
     <value>Guchchi</value>
   </data>
-  <data name="Other_Ingredients_Name_Hoisin_Sauce" xml:space="preserve">
+  <data name="OtherIngredients_Hoisin_Sauce_Name" xml:space="preserve">
     <value>Hoisin Sauce</value>
   </data>
-  <data name="Other_Ingredients_Name_Jelly" xml:space="preserve">
+  <data name="OtherIngredients_Jelly_Name" xml:space="preserve">
     <value>Jelly</value>
   </data>
-  <data name="Other_Ingredients_Name_Jus" xml:space="preserve">
+  <data name="OtherIngredients_Jus_Name" xml:space="preserve">
     <value>Jus</value>
   </data>
-  <data name="Other_Ingredients_Name_Lotus_Seeds" xml:space="preserve">
+  <data name="OtherIngredients_Lotus_Seeds_Name" xml:space="preserve">
     <value>Lotus Seeds</value>
   </data>
-  <data name="Other_Ingredients_Name_Malt_Vinegar" xml:space="preserve">
+  <data name="OtherIngredients_Malt_Vinegar_Name" xml:space="preserve">
     <value>Malt Vinegar</value>
   </data>
-  <data name="Other_Ingredients_Name_Margarine" xml:space="preserve">
+  <data name="OtherIngredients_Margarine_Name" xml:space="preserve">
     <value>Margarine</value>
   </data>
-  <data name="Other_Ingredients_Name_Marzipan" xml:space="preserve">
+  <data name="OtherIngredients_Marzipan_Name" xml:space="preserve">
     <value>Marzipan</value>
   </data>
-  <data name="Other_Ingredients_Name_Mayonnaise" xml:space="preserve">
+  <data name="OtherIngredients_Mayonnaise_Name" xml:space="preserve">
     <value>Mayonnaise</value>
   </data>
-  <data name="Other_Ingredients_Name_Melon_Seeds" xml:space="preserve">
+  <data name="OtherIngredients_Melon_Seeds_Name" xml:space="preserve">
     <value>Melon Seeds</value>
   </data>
-  <data name="Other_Ingredients_Name_Meringue" xml:space="preserve">
+  <data name="OtherIngredients_Meringue_Name" xml:space="preserve">
     <value>Meringue</value>
   </data>
-  <data name="Other_Ingredients_Name_Oyster_Sauce" xml:space="preserve">
+  <data name="OtherIngredients_Oyster_Sauce_Name" xml:space="preserve">
     <value>Oyster Sauce</value>
   </data>
-  <data name="Other_Ingredients_Name_Paan" xml:space="preserve">
+  <data name="OtherIngredients_Paan_Name" xml:space="preserve">
     <value>Paan</value>
   </data>
-  <data name="Other_Ingredients_Name_Papad" xml:space="preserve">
+  <data name="OtherIngredients_Papad_Name" xml:space="preserve">
     <value>Papad</value>
   </data>
-  <data name="Other_Ingredients_Name_Pasta" xml:space="preserve">
+  <data name="OtherIngredients_Pasta_Name" xml:space="preserve">
     <value>Pasta</value>
   </data>
-  <data name="Other_Ingredients_Name_Petha" xml:space="preserve">
+  <data name="OtherIngredients_Petha_Name" xml:space="preserve">
     <value>Petha</value>
   </data>
-  <data name="Other_Ingredients_Name_Polenta" xml:space="preserve">
+  <data name="OtherIngredients_Polenta_Name" xml:space="preserve">
     <value>Polenta</value>
   </data>
-  <data name="Other_Ingredients_Name_Quinoa" xml:space="preserve">
+  <data name="OtherIngredients_Quinoa_Name" xml:space="preserve">
     <value>Quinoa</value>
   </data>
-  <data name="Other_Ingredients_Name_Red_Wine" xml:space="preserve">
+  <data name="OtherIngredients_Red_Wine_Name" xml:space="preserve">
     <value>Red Wine</value>
   </data>
-  <data name="Other_Ingredients_Name_Red_Wine_Vinegar" xml:space="preserve">
+  <data name="OtherIngredients_Red_Wine_Vinegar_Name" xml:space="preserve">
     <value>Red Wine Vinegar</value>
   </data>
-  <data name="Other_Ingredients_Name_Rice_Flour" xml:space="preserve">
+  <data name="OtherIngredients_Rice_Flour_Name" xml:space="preserve">
     <value>Rice Flour</value>
   </data>
-  <data name="Other_Ingredients_Name_Rice_Noodles" xml:space="preserve">
+  <data name="OtherIngredients_Rice_Noodles_Name" xml:space="preserve">
     <value>Rice Noodles</value>
   </data>
-  <data name="Other_Ingredients_Name_Rice_Vinegar" xml:space="preserve">
+  <data name="OtherIngredients_Rice_Vinegar_Name" xml:space="preserve">
     <value>Rice Vinegar</value>
   </data>
-  <data name="Other_Ingredients_Name_Rose_Water" xml:space="preserve">
+  <data name="OtherIngredients_Rose_Water_Name" xml:space="preserve">
     <value>Rose Water</value>
   </data>
-  <data name="Other_Ingredients_Name_Roux" xml:space="preserve">
+  <data name="OtherIngredients_Roux_Name" xml:space="preserve">
     <value>Roux</value>
   </data>
-  <data name="Other_Ingredients_Name_Rum" xml:space="preserve">
+  <data name="OtherIngredients_Rum_Name" xml:space="preserve">
     <value>Rum</value>
   </data>
-  <data name="Other_Ingredients_Name_Sake" xml:space="preserve">
+  <data name="OtherIngredients_Sake_Name" xml:space="preserve">
     <value>Sake</value>
   </data>
-  <data name="Other_Ingredients_Name_Screw_Pine" xml:space="preserve">
+  <data name="OtherIngredients_Screw_Pine_Name" xml:space="preserve">
     <value>Screw Pine</value>
   </data>
-  <data name="Other_Ingredients_Name_Sea_Salt" xml:space="preserve">
+  <data name="OtherIngredients_Sea_Salt_Name" xml:space="preserve">
     <value>Sea Salt</value>
   </data>
-  <data name="Other_Ingredients_Name_Sev" xml:space="preserve">
+  <data name="OtherIngredients_Sev_Name" xml:space="preserve">
     <value>Sev</value>
   </data>
-  <data name="Other_Ingredients_Name_Sharbat" xml:space="preserve">
+  <data name="OtherIngredients_Sharbat_Name" xml:space="preserve">
     <value>Sharbat</value>
   </data>
-  <data name="Other_Ingredients_Name_Soya_Sauce" xml:space="preserve">
+  <data name="OtherIngredients_Soya_Sauce_Name" xml:space="preserve">
     <value>Soya Sauce</value>
   </data>
-  <data name="Other_Ingredients_Name_Soy_Milk" xml:space="preserve">
+  <data name="OtherIngredients_Soy_Milk_Name" xml:space="preserve">
     <value>Soy Milk</value>
   </data>
-  <data name="Other_Ingredients_Name_Tartaric_Acid" xml:space="preserve">
+  <data name="OtherIngredients_Tartaric_Acid_Name" xml:space="preserve">
     <value>Tartaric Acid</value>
   </data>
-  <data name="Other_Ingredients_Name_Tea" xml:space="preserve">
+  <data name="OtherIngredients_Tea_Name" xml:space="preserve">
     <value>Tea</value>
   </data>
-  <data name="Other_Ingredients_Name_Tofu" xml:space="preserve">
+  <data name="OtherIngredients_Tofu_Name" xml:space="preserve">
     <value>Tofu</value>
   </data>
-  <data name="Other_Ingredients_Name_Tomato_Puree" xml:space="preserve">
+  <data name="OtherIngredients_Tomato_Puree_Name" xml:space="preserve">
     <value>Tomato Puree</value>
   </data>
-  <data name="Other_Ingredients_Name_Tortilla" xml:space="preserve">
+  <data name="OtherIngredients_Tortilla_Name" xml:space="preserve">
     <value>Tortilla</value>
   </data>
-  <data name="Other_Ingredients_Name_Vanilla_Essence" xml:space="preserve">
+  <data name="OtherIngredients_Vanilla_Essence_Name" xml:space="preserve">
     <value>Vanilla Essence</value>
   </data>
-  <data name="Other_Ingredients_Name_Vegetable_Oil" xml:space="preserve">
+  <data name="OtherIngredients_Vegetable_Oil_Name" xml:space="preserve">
     <value>Vegetable Oil</value>
   </data>
-  <data name="Other_Ingredients_Name_Vermicelli" xml:space="preserve">
+  <data name="OtherIngredients_Vermicelli_Name" xml:space="preserve">
     <value>Vermicelli</value>
   </data>
-  <data name="Other_Ingredients_Name_Vetiver" xml:space="preserve">
+  <data name="OtherIngredients_Vetiver_Name" xml:space="preserve">
     <value>Vetiver</value>
   </data>
-  <data name="Other_Ingredients_Name_Vinaigrette" xml:space="preserve">
+  <data name="OtherIngredients_Vinaigrette_Name" xml:space="preserve">
     <value>Vinaigrette</value>
   </data>
-  <data name="Other_Ingredients_Name_Vinegar" xml:space="preserve">
+  <data name="OtherIngredients_Vinegar_Name" xml:space="preserve">
     <value>Vinegar</value>
   </data>
-  <data name="Other_Ingredients_Name_White_Pepper" xml:space="preserve">
+  <data name="OtherIngredients_White_Pepper_Name" xml:space="preserve">
     <value>White Pepper</value>
   </data>
-  <data name="Other_Ingredients_Name_White_Wine" xml:space="preserve">
+  <data name="OtherIngredients_White_Wine_Name" xml:space="preserve">
     <value>White Wine</value>
   </data>
-  <data name="Other_Ingredients_Name_Yeast" xml:space="preserve">
+  <data name="OtherIngredients_Yeast_Name" xml:space="preserve">
     <value>Yeast</value>
   </data>
-  <data name="Seafood_Name_Anchovies" xml:space="preserve">
+  <data name="Seafood_Anchovies_Name" xml:space="preserve">
     <value>Anchovies</value>
   </data>
-  <data name="Seafood_Name_Cat_fish" xml:space="preserve">
+  <data name="Seafood_Cat_fish_Name" xml:space="preserve">
     <value>Cat fish</value>
   </data>
-  <data name="Seafood_Name_Clams" xml:space="preserve">
+  <data name="Seafood_Clams_Name" xml:space="preserve">
     <value>Clams</value>
   </data>
-  <data name="Seafood_Name_Cod" xml:space="preserve">
+  <data name="Seafood_Cod_Name" xml:space="preserve">
     <value>Cod</value>
   </data>
-  <data name="Seafood_Name_Cuttle_fish" xml:space="preserve">
+  <data name="Seafood_Cuttle_fish_Name" xml:space="preserve">
     <value>Cuttle fish</value>
   </data>
-  <data name="Seafood_Name_Fish" xml:space="preserve">
-    <value>Fish</value>
-  </data>
-  <data name="Seafood_Name_Fish_Fillet" xml:space="preserve">
+  <data name="Seafood_Fish_Fillet_Name" xml:space="preserve">
     <value>Fish Fillet</value>
   </data>
-  <data name="Seafood_Name_Fish_Stock" xml:space="preserve">
+  <data name="Seafood_Fish_Name" xml:space="preserve">
+    <value>Fish</value>
+  </data>
+  <data name="Seafood_Fish_Stock_Name" xml:space="preserve">
     <value>Fish Stock</value>
   </data>
-  <data name="Seafood_Name_Flounder" xml:space="preserve">
+  <data name="Seafood_Flounder_Name" xml:space="preserve">
     <value>Flounder</value>
   </data>
-  <data name="Seafood_Name_Haddock" xml:space="preserve">
+  <data name="Seafood_Haddock_Name" xml:space="preserve">
     <value>Haddock</value>
   </data>
-  <data name="Seafood_Name_Hilsa" xml:space="preserve">
+  <data name="Seafood_Hilsa_Name" xml:space="preserve">
     <value>Hilsa</value>
   </data>
-  <data name="Seafood_Name_Mackerel" xml:space="preserve">
+  <data name="Seafood_Mackerel_Name" xml:space="preserve">
     <value>Mackerel</value>
   </data>
-  <data name="Seafood_Name_Mullet" xml:space="preserve">
+  <data name="Seafood_Mullet_Name" xml:space="preserve">
     <value>Mullet</value>
   </data>
-  <data name="Seafood_Name_Mussels" xml:space="preserve">
+  <data name="Seafood_Mussels_Name" xml:space="preserve">
     <value>Mussels</value>
   </data>
-  <data name="Seafood_Name_Pearl_spot" xml:space="preserve">
+  <data name="Seafood_Pearl_spot_Name" xml:space="preserve">
     <value>Pearl spot</value>
   </data>
-  <data name="Seafood_Name_Perch" xml:space="preserve">
+  <data name="Seafood_Perch_Name" xml:space="preserve">
     <value>Perch</value>
   </data>
-  <data name="Seafood_Name_Pomfret" xml:space="preserve">
+  <data name="Seafood_Pomfret_Name" xml:space="preserve">
     <value>Pomfret</value>
   </data>
-  <data name="Seafood_Name_Prawns" xml:space="preserve">
+  <data name="Seafood_Prawns_Name" xml:space="preserve">
     <value>Prawns</value>
   </data>
-  <data name="Seafood_Name_Salmon" xml:space="preserve">
+  <data name="Seafood_Salmon_Name" xml:space="preserve">
     <value>Salmon</value>
   </data>
-  <data name="Seafood_Name_Sardines" xml:space="preserve">
+  <data name="Seafood_Sardines_Name" xml:space="preserve">
     <value>Sardines</value>
   </data>
-  <data name="Seafood_Name_Shark" xml:space="preserve">
+  <data name="Seafood_Shark_Name" xml:space="preserve">
     <value>Shark</value>
   </data>
-  <data name="Seafood_Name_Shellfish" xml:space="preserve">
+  <data name="Seafood_Shellfish_Name" xml:space="preserve">
     <value>Shellfish</value>
   </data>
-  <data name="Seafood_Name_Shrimp" xml:space="preserve">
+  <data name="Seafood_Shrimp_Name" xml:space="preserve">
     <value>Shrimp</value>
   </data>
-  <data name="Seafood_Name_Squids" xml:space="preserve">
+  <data name="Seafood_Squids_Name" xml:space="preserve">
     <value>Squids</value>
   </data>
-  <data name="Seafood_Name_Tuna_Fish" xml:space="preserve">
+  <data name="Seafood_Tuna_Fish_Name" xml:space="preserve">
     <value>Tuna Fish</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Acacia" xml:space="preserve">
+  <data name="SpicesAndHerbs_Acacia_Name" xml:space="preserve">
     <value>Acacia</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Acacia1" xml:space="preserve">
-    <value>Acacia</value>
-  </data>
-  <data name="Spices_And_Herbs_Name_Allspice" xml:space="preserve">
+  <data name="SpicesAndHerbs_Allspice_Name" xml:space="preserve">
     <value>Allspice</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Aniseed" xml:space="preserve">
+  <data name="SpicesAndHerbs_Aniseed_Name" xml:space="preserve">
     <value>Aniseed</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Asafoetida" xml:space="preserve">
+  <data name="SpicesAndHerbs_Asafoetida_Name" xml:space="preserve">
     <value>Asafoetida</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Basil" xml:space="preserve">
+  <data name="SpicesAndHerbs_Basil_Name" xml:space="preserve">
     <value>Basil</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Bay_Leaf" xml:space="preserve">
+  <data name="SpicesAndHerbs_Bay_Leaf_Name" xml:space="preserve">
     <value>Bay Leaf</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Black_Cardamom" xml:space="preserve">
+  <data name="SpicesAndHerbs_Black_Cardamom_Name" xml:space="preserve">
     <value>Black Cardamom</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Black_Cumin" xml:space="preserve">
+  <data name="SpicesAndHerbs_Black_Cumin_Name" xml:space="preserve">
     <value>Black Cumin</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Black_Pepper" xml:space="preserve">
+  <data name="SpicesAndHerbs_Black_Pepper_Name" xml:space="preserve">
     <value>Black Pepper</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Cajun_Spices" xml:space="preserve">
+  <data name="SpicesAndHerbs_Cajun_Spices_Name" xml:space="preserve">
     <value>Cajun Spices</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Caraway_Seeds" xml:space="preserve">
+  <data name="SpicesAndHerbs_Caraway_Seeds_Name" xml:space="preserve">
     <value>Caraway Seeds</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Carom_Seeds" xml:space="preserve">
+  <data name="SpicesAndHerbs_Carom_Seeds_Name" xml:space="preserve">
     <value>Carom Seeds</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Carom_Seeds1" xml:space="preserve">
-    <value>Carom Seeds</value>
-  </data>
-  <data name="Spices_And_Herbs_Name_Cayenne" xml:space="preserve">
+  <data name="SpicesAndHerbs_Cayenne_Name" xml:space="preserve">
     <value>Cayenne</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Chives" xml:space="preserve">
+  <data name="SpicesAndHerbs_Chives_Name" xml:space="preserve">
     <value>Chives</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Cinnamon" xml:space="preserve">
+  <data name="SpicesAndHerbs_Cinnamon_Name" xml:space="preserve">
     <value>Cinnamon</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Cloves" xml:space="preserve">
+  <data name="SpicesAndHerbs_Cloves_Name" xml:space="preserve">
     <value>Cloves</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Coriander_Leaves" xml:space="preserve">
+  <data name="SpicesAndHerbs_Coriander_Leaves_Name" xml:space="preserve">
     <value>Coriander Leaves</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Coriander_Powder" xml:space="preserve">
+  <data name="SpicesAndHerbs_Coriander_Powder_Name" xml:space="preserve">
     <value>Coriander Powder</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Coriander_Seeds" xml:space="preserve">
+  <data name="SpicesAndHerbs_Coriander_Seeds_Name" xml:space="preserve">
     <value>Coriander Seeds</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Cumin_Seeds" xml:space="preserve">
+  <data name="SpicesAndHerbs_Cumin_Seeds_Name" xml:space="preserve">
     <value>Cumin Seeds</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Curry_Leaves" xml:space="preserve">
+  <data name="SpicesAndHerbs_Curry_Leaves_Name" xml:space="preserve">
     <value>Curry Leaves</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Dill" xml:space="preserve">
+  <data name="SpicesAndHerbs_Dill_Name" xml:space="preserve">
     <value>Dill</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Dried_Fenugreek_Leaves" xml:space="preserve">
+  <data name="SpicesAndHerbs_Dried_Fenugreek_Leaves_Name" xml:space="preserve">
     <value>Dried Fenugreek Leaves</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Dry_Ginger_Powder" xml:space="preserve">
+  <data name="SpicesAndHerbs_Dry_Ginger_Powder_Name" xml:space="preserve">
     <value>Dry Ginger Powder</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Fennel" xml:space="preserve">
+  <data name="SpicesAndHerbs_Fennel_Name" xml:space="preserve">
     <value>Fennel</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Fenugreek_Seeds" xml:space="preserve">
+  <data name="SpicesAndHerbs_Fenugreek_Seeds_Name" xml:space="preserve">
     <value>Fenugreek Seeds</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Five_Spice_Powder" xml:space="preserve">
+  <data name="SpicesAndHerbs_Five_Spice_Powder_Name" xml:space="preserve">
     <value>Five Spice Powder</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Galangal" xml:space="preserve">
+  <data name="SpicesAndHerbs_Galangal_Name" xml:space="preserve">
     <value>Galangal</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Garam_Masala" xml:space="preserve">
+  <data name="SpicesAndHerbs_Garam_Masala_Name" xml:space="preserve">
     <value>Garam Masala</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Green_Cardamom" xml:space="preserve">
+  <data name="SpicesAndHerbs_Green_Cardamom_Name" xml:space="preserve">
     <value>Green Cardamom</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Herbs" xml:space="preserve">
+  <data name="SpicesAndHerbs_Herbs_Name" xml:space="preserve">
     <value>Herbs</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Kashmiri_Mirch" xml:space="preserve">
+  <data name="SpicesAndHerbs_Kashmiri_Mirch_Name" xml:space="preserve">
     <value>Kashmiri Mirch</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Lemongrass" xml:space="preserve">
+  <data name="SpicesAndHerbs_Lemongrass_Name" xml:space="preserve">
     <value>Lemongrass</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Mace" xml:space="preserve">
+  <data name="SpicesAndHerbs_Mace_Name" xml:space="preserve">
     <value>Mace</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Marjoram" xml:space="preserve">
+  <data name="SpicesAndHerbs_Marjoram_Name" xml:space="preserve">
     <value>Marjoram</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Mint_Leaves" xml:space="preserve">
+  <data name="SpicesAndHerbs_Mint_Leaves_Name" xml:space="preserve">
     <value>Mint Leaves</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Mustard_Powder" xml:space="preserve">
+  <data name="SpicesAndHerbs_Mustard_Powder_Name" xml:space="preserve">
     <value>Mustard Powder</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Nasturtium" xml:space="preserve">
+  <data name="SpicesAndHerbs_Nasturtium_Name" xml:space="preserve">
     <value>Nasturtium</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Nutmeg" xml:space="preserve">
+  <data name="SpicesAndHerbs_Nutmeg_Name" xml:space="preserve">
     <value>Nutmeg</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Onion_Seeds" xml:space="preserve">
+  <data name="SpicesAndHerbs_Onion_Seeds_Name" xml:space="preserve">
     <value>Onion Seeds</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Oregano" xml:space="preserve">
+  <data name="SpicesAndHerbs_Oregano_Name" xml:space="preserve">
     <value>Oregano</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Paprika" xml:space="preserve">
+  <data name="SpicesAndHerbs_Paprika_Name" xml:space="preserve">
     <value>Paprika</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Parsley" xml:space="preserve">
+  <data name="SpicesAndHerbs_Parsley_Name" xml:space="preserve">
     <value>Parsley</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Parsley1" xml:space="preserve">
-    <value>Parsley</value>
-  </data>
-  <data name="Spices_And_Herbs_Name_Raw_Mango_Powder" xml:space="preserve">
+  <data name="SpicesAndHerbs_Raw_Mango_Powder_Name" xml:space="preserve">
     <value>Raw Mango Powder</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Red_Chilli" xml:space="preserve">
+  <data name="SpicesAndHerbs_Red_Chilli_Name" xml:space="preserve">
     <value>Red Chilli</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Rock_Salt" xml:space="preserve">
+  <data name="SpicesAndHerbs_Rock_Salt_Name" xml:space="preserve">
     <value>Rock Salt</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Rosemary" xml:space="preserve">
+  <data name="SpicesAndHerbs_Rosemary_Name" xml:space="preserve">
     <value>Rosemary</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Saffron" xml:space="preserve">
+  <data name="SpicesAndHerbs_Saffron_Name" xml:space="preserve">
     <value>Saffron</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Sage" xml:space="preserve">
+  <data name="SpicesAndHerbs_Sage_Name" xml:space="preserve">
     <value>Sage</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Salt" xml:space="preserve">
+  <data name="SpicesAndHerbs_Salt_Name" xml:space="preserve">
     <value>Salt</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Star_Anise" xml:space="preserve">
+  <data name="SpicesAndHerbs_Star_Anise_Name" xml:space="preserve">
     <value>Star Anise</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Thyme" xml:space="preserve">
+  <data name="SpicesAndHerbs_Thyme_Name" xml:space="preserve">
     <value>Thyme</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Tulsi" xml:space="preserve">
+  <data name="SpicesAndHerbs_Tulsi_Name" xml:space="preserve">
     <value>Tulsi</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Turmeric" xml:space="preserve">
+  <data name="SpicesAndHerbs_Turmeric_Name" xml:space="preserve">
     <value>Turmeric</value>
   </data>
-  <data name="Spices_And_Herbs_Name_Yellow_Chillies" xml:space="preserve">
+  <data name="SpicesAndHerbs_Yellow_Chillies_Name" xml:space="preserve">
     <value>Yellow Chillies</value>
   </data>
-  <data name="Sugar_And_Sugar_Products_Name_Brown_Sugar" xml:space="preserve">
+  <data name="SugarAndSugarProducts_Brown_Sugar_Name" xml:space="preserve">
     <value>Brown Sugar</value>
   </data>
-  <data name="Sugar_And_Sugar_Products_Name_Cane_Sugar" xml:space="preserve">
+  <data name="SugarAndSugarProducts_Cane_Sugar_Name" xml:space="preserve">
     <value>Cane Sugar</value>
   </data>
-  <data name="Sugar_And_Sugar_Products_Name_Caramel" xml:space="preserve">
+  <data name="SugarAndSugarProducts_Caramel_Name" xml:space="preserve">
     <value>Caramel</value>
   </data>
-  <data name="Sugar_And_Sugar_Products_Name_Castor_Sugar" xml:space="preserve">
+  <data name="SugarAndSugarProducts_Castor_Sugar_Name" xml:space="preserve">
     <value>Castor Sugar</value>
   </data>
-  <data name="Sugar_And_Sugar_Products_Name_Golden_Syrup" xml:space="preserve">
+  <data name="SugarAndSugarProducts_Golden_Syrup_Name" xml:space="preserve">
     <value>Golden Syrup</value>
   </data>
-  <data name="Sugar_And_Sugar_Products_Name_Honey" xml:space="preserve">
+  <data name="SugarAndSugarProducts_Honey_Name" xml:space="preserve">
     <value>Honey</value>
   </data>
-  <data name="Sugar_And_Sugar_Products_Name_Icing_Sugar" xml:space="preserve">
+  <data name="SugarAndSugarProducts_Icing_Sugar_Name" xml:space="preserve">
     <value>Icing Sugar</value>
   </data>
-  <data name="Sugar_And_Sugar_Products_Name_Jaggery" xml:space="preserve">
+  <data name="SugarAndSugarProducts_Jaggery_Name" xml:space="preserve">
     <value>Jaggery</value>
   </data>
-  <data name="Sugar_And_Sugar_Products_Name_Sugar" xml:space="preserve">
-    <value>Sugar</value>
-  </data>
-  <data name="Sugar_And_Sugar_Products_Name_Sugar_Candy" xml:space="preserve">
+  <data name="SugarAndSugarProducts_Sugar_Candy_Name" xml:space="preserve">
     <value>Sugar Candy</value>
   </data>
-  <data name="Vegetables_Name_Artichoke" xml:space="preserve">
+  <data name="SugarAndSugarProducts_Sugar_Name" xml:space="preserve">
+    <value>Sugar</value>
+  </data>
+  <data name="Vegetables_Artichoke_Name" xml:space="preserve">
     <value>Artichoke</value>
   </data>
-  <data name="Vegetables_Name_Ash_Gourd" xml:space="preserve">
+  <data name="Vegetables_Ash_Gourd_Name" xml:space="preserve">
     <value>Ash Gourd</value>
   </data>
-  <data name="Vegetables_Name_Asparagus" xml:space="preserve">
+  <data name="Vegetables_Asparagus_Name" xml:space="preserve">
     <value>Asparagus</value>
   </data>
-  <data name="Vegetables_Name_Avocado" xml:space="preserve">
+  <data name="Vegetables_Avocado_Name" xml:space="preserve">
     <value>Avocado</value>
   </data>
-  <data name="Vegetables_Name_Baby_Corn" xml:space="preserve">
+  <data name="Vegetables_Baby_Corn_Name" xml:space="preserve">
     <value>Baby Corn</value>
   </data>
-  <data name="Vegetables_Name_Bamboo_Shoot" xml:space="preserve">
+  <data name="Vegetables_Bamboo_Shoot_Name" xml:space="preserve">
     <value>Bamboo Shoot</value>
   </data>
-  <data name="Vegetables_Name_Beetroot" xml:space="preserve">
+  <data name="Vegetables_Beetroot_Name" xml:space="preserve">
     <value>Beetroot</value>
   </data>
-  <data name="Vegetables_Name_Bell_Pepper" xml:space="preserve">
+  <data name="Vegetables_Bell_Pepper_Name" xml:space="preserve">
     <value>Bell Pepper</value>
   </data>
-  <data name="Vegetables_Name_Bitter_Gourd" xml:space="preserve">
+  <data name="Vegetables_Bitter_Gourd_Name" xml:space="preserve">
     <value>Bitter Gourd</value>
   </data>
-  <data name="Vegetables_Name_Bok_Choy" xml:space="preserve">
+  <data name="Vegetables_Bok_Choy_Name" xml:space="preserve">
     <value>Bok Choy</value>
   </data>
-  <data name="Vegetables_Name_Bottle_Gourd" xml:space="preserve">
+  <data name="Vegetables_Bottle_Gourd_Name" xml:space="preserve">
     <value>Bottle Gourd</value>
   </data>
-  <data name="Vegetables_Name_Broad_Beans" xml:space="preserve">
+  <data name="Vegetables_Broad_Beans_Name" xml:space="preserve">
     <value>Broad Beans</value>
   </data>
-  <data name="Vegetables_Name_Broccoli" xml:space="preserve">
+  <data name="Vegetables_Broccoli_Name" xml:space="preserve">
     <value>Broccoli</value>
   </data>
-  <data name="Vegetables_Name_Cabbage" xml:space="preserve">
+  <data name="Vegetables_Cabbage_Name" xml:space="preserve">
     <value>Cabbage</value>
   </data>
-  <data name="Vegetables_Name_Capers" xml:space="preserve">
+  <data name="Vegetables_Capers_Name" xml:space="preserve">
     <value>Capers</value>
   </data>
-  <data name="Vegetables_Name_Capsicum" xml:space="preserve">
+  <data name="Vegetables_Capsicum_Name" xml:space="preserve">
     <value>Capsicum</value>
   </data>
-  <data name="Vegetables_Name_Carrot" xml:space="preserve">
+  <data name="Vegetables_Carrot_Name" xml:space="preserve">
     <value>Carrot</value>
   </data>
-  <data name="Vegetables_Name_Cauliflower" xml:space="preserve">
+  <data name="Vegetables_Cauliflower_Name" xml:space="preserve">
     <value>Cauliflower</value>
   </data>
-  <data name="Vegetables_Name_Celery" xml:space="preserve">
+  <data name="Vegetables_Celery_Name" xml:space="preserve">
     <value>Celery</value>
   </data>
-  <data name="Vegetables_Name_Cherry_Tomatoes" xml:space="preserve">
+  <data name="Vegetables_Cherry_Tomatoes_Name" xml:space="preserve">
     <value>Cherry Tomatoes</value>
   </data>
-  <data name="Vegetables_Name_Cluster_Beans" xml:space="preserve">
+  <data name="Vegetables_Cluster_Beans_Name" xml:space="preserve">
     <value>Cluster Beans</value>
   </data>
-  <data name="Vegetables_Name_Colocasia" xml:space="preserve">
+  <data name="Vegetables_Colocasia_Name" xml:space="preserve">
     <value>Colocasia</value>
   </data>
-  <data name="Vegetables_Name_Corn" xml:space="preserve">
+  <data name="Vegetables_Corn_Name" xml:space="preserve">
     <value>Corn</value>
   </data>
-  <data name="Vegetables_Name_Cucumber" xml:space="preserve">
+  <data name="Vegetables_Cucumber_Name" xml:space="preserve">
     <value>Cucumber</value>
   </data>
-  <data name="Vegetables_Name_Drumstick" xml:space="preserve">
+  <data name="Vegetables_Drumstick_Name" xml:space="preserve">
     <value>Drumstick</value>
   </data>
-  <data name="Vegetables_Name_Eggplant" xml:space="preserve">
+  <data name="Vegetables_Eggplant_Name" xml:space="preserve">
     <value>Eggplant</value>
   </data>
-  <data name="Vegetables_Name_Fenugreek" xml:space="preserve">
+  <data name="Vegetables_Fenugreek_Name" xml:space="preserve">
     <value>Fenugreek</value>
   </data>
-  <data name="Vegetables_Name_French_Beans" xml:space="preserve">
+  <data name="Vegetables_French_Beans_Name" xml:space="preserve">
     <value>French Beans</value>
   </data>
-  <data name="Vegetables_Name_Garlic" xml:space="preserve">
+  <data name="Vegetables_Garlic_Name" xml:space="preserve">
     <value>Garlic</value>
   </data>
-  <data name="Vegetables_Name_Gherkins" xml:space="preserve">
+  <data name="Vegetables_Gherkins_Name" xml:space="preserve">
     <value>Gherkins</value>
   </data>
-  <data name="Vegetables_Name_Ginger" xml:space="preserve">
+  <data name="Vegetables_Ginger_Name" xml:space="preserve">
     <value>Ginger</value>
   </data>
-  <data name="Vegetables_Name_Green_Chillies" xml:space="preserve">
+  <data name="Vegetables_Green_Chillies_Name" xml:space="preserve">
     <value>Green Chillies</value>
   </data>
-  <data name="Vegetables_Name_Green_Peas" xml:space="preserve">
+  <data name="Vegetables_Green_Peas_Name" xml:space="preserve">
     <value>Green Peas</value>
   </data>
-  <data name="Vegetables_Name_Horseradish" xml:space="preserve">
+  <data name="Vegetables_Horseradish_Name" xml:space="preserve">
     <value>Horseradish</value>
   </data>
-  <data name="Vegetables_Name_Jackfruit" xml:space="preserve">
+  <data name="Vegetables_Jackfruit_Name" xml:space="preserve">
     <value>Jackfruit</value>
   </data>
-  <data name="Vegetables_Name_Jalapeno" xml:space="preserve">
+  <data name="Vegetables_Jalapeno_Name" xml:space="preserve">
     <value>Jalapeno</value>
   </data>
-  <data name="Vegetables_Name_Kaffir_Lime" xml:space="preserve">
+  <data name="Vegetables_Kaffir_Lime_Name" xml:space="preserve">
     <value>Kaffir Lime</value>
   </data>
-  <data name="Vegetables_Name_Lady_Finger" xml:space="preserve">
+  <data name="Vegetables_Lady_Finger_Name" xml:space="preserve">
     <value>Lady Finger</value>
   </data>
-  <data name="Vegetables_Name_Leek" xml:space="preserve">
+  <data name="Vegetables_Leek_Name" xml:space="preserve">
     <value>Leek</value>
   </data>
-  <data name="Vegetables_Name_Lettuce" xml:space="preserve">
+  <data name="Vegetables_Lettuce_Name" xml:space="preserve">
     <value>Lettuce</value>
   </data>
-  <data name="Vegetables_Name_Lotus_Stem" xml:space="preserve">
+  <data name="Vegetables_Lotus_Stem_Name" xml:space="preserve">
     <value>Lotus Stem</value>
   </data>
-  <data name="Vegetables_Name_Mushroom" xml:space="preserve">
+  <data name="Vegetables_Mushroom_Name" xml:space="preserve">
     <value>Mushroom</value>
   </data>
-  <data name="Vegetables_Name_Mustard_Leaves" xml:space="preserve">
+  <data name="Vegetables_Mustard_Leaves_Name" xml:space="preserve">
     <value>Mustard Leaves</value>
   </data>
-  <data name="Vegetables_Name_Onion" xml:space="preserve">
+  <data name="Vegetables_Onion_Name" xml:space="preserve">
     <value>Onion</value>
   </data>
-  <data name="Vegetables_Name_Pigweed" xml:space="preserve">
+  <data name="Vegetables_Pigweed_Name" xml:space="preserve">
     <value>Pigweed</value>
   </data>
-  <data name="Vegetables_Name_Pimiento" xml:space="preserve">
+  <data name="Vegetables_Pimiento_Name" xml:space="preserve">
     <value>Pimiento</value>
   </data>
-  <data name="Vegetables_Name_Plantain" xml:space="preserve">
+  <data name="Vegetables_Plantain_Name" xml:space="preserve">
     <value>Plantain</value>
   </data>
-  <data name="Vegetables_Name_Potatoes" xml:space="preserve">
+  <data name="Vegetables_Potatoes_Name" xml:space="preserve">
     <value>Potatoes</value>
   </data>
-  <data name="Vegetables_Name_Pumpkin" xml:space="preserve">
+  <data name="Vegetables_Pumpkin_Name" xml:space="preserve">
     <value>Pumpkin</value>
   </data>
-  <data name="Vegetables_Name_Radish" xml:space="preserve">
+  <data name="Vegetables_Radish_Name" xml:space="preserve">
     <value>Radish</value>
   </data>
-  <data name="Vegetables_Name_Ridge_Gourd" xml:space="preserve">
+  <data name="Vegetables_Ridge_Gourd_Name" xml:space="preserve">
     <value>Ridge Gourd</value>
   </data>
-  <data name="Vegetables_Name_Rocket_Leaves" xml:space="preserve">
+  <data name="Vegetables_Rocket_Leaves_Name" xml:space="preserve">
     <value>Rocket Leaves</value>
   </data>
-  <data name="Vegetables_Name_Round_Gourd" xml:space="preserve">
+  <data name="Vegetables_Round_Gourd_Name" xml:space="preserve">
     <value>Round Gourd</value>
   </data>
-  <data name="Vegetables_Name_Shallots" xml:space="preserve">
+  <data name="Vegetables_Shallots_Name" xml:space="preserve">
     <value>Shallots</value>
   </data>
-  <data name="Vegetables_Name_Shiitake_Mushroom" xml:space="preserve">
+  <data name="Vegetables_Shiitake_Mushroom_Name" xml:space="preserve">
     <value>Shiitake Mushroom</value>
   </data>
-  <data name="Vegetables_Name_Snake_Beans" xml:space="preserve">
+  <data name="Vegetables_Snake_Beans_Name" xml:space="preserve">
     <value>Snake Beans</value>
   </data>
-  <data name="Vegetables_Name_Sorrel_Leaves" xml:space="preserve">
+  <data name="Vegetables_Sorrel_Leaves_Name" xml:space="preserve">
     <value>Sorrel Leaves</value>
   </data>
-  <data name="Vegetables_Name_Spinach" xml:space="preserve">
+  <data name="Vegetables_Spinach_Name" xml:space="preserve">
     <value>Spinach</value>
   </data>
-  <data name="Vegetables_Name_Spring_Onion" xml:space="preserve">
+  <data name="Vegetables_Spring_Onion_Name" xml:space="preserve">
     <value>Spring Onion</value>
   </data>
-  <data name="Vegetables_Name_Sweet_Potatoes" xml:space="preserve">
+  <data name="Vegetables_Sweet_Potatoes_Name" xml:space="preserve">
     <value>Sweet Potatoes</value>
   </data>
-  <data name="Vegetables_Name_Turnip" xml:space="preserve">
+  <data name="Vegetables_Turnip_Name" xml:space="preserve">
     <value>Turnip</value>
   </data>
-  <data name="Vegetables_Name_Yam" xml:space="preserve">
+  <data name="Vegetables_Yam_Name" xml:space="preserve">
     <value>Yam</value>
   </data>
-  <data name="Vegetables_Name_Zucchini" xml:space="preserve">
+  <data name="Vegetables_Zucchini_Name" xml:space="preserve">
     <value>Zucchini</value>
   </data>
 </root>
