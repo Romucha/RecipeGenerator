@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.Database
 {
-    internal class IngredientGetter : IIngredientGetter
+    public class IngredientGetter : IIngredientGetter
     {
         private readonly IIngredientFactory ingredientFactory;
         public IngredientGetter(IIngredientFactory ingredientFactory) 

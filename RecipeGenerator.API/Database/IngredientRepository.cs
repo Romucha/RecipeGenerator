@@ -9,6 +9,12 @@ namespace RecipeGenerator.API.Database
 {
     public class IngredientRepository : IIngredientRepository
     {
+        private readonly RecipeDbContext dbContext;
+        public IngredientRepository(RecipeDbContext dbContext)
+        {
+            this.dbContext = dbContext;
+        }
+
         public Task Add(IIngredient ingredient)
         {
             throw new NotImplementedException();
@@ -19,9 +25,9 @@ namespace RecipeGenerator.API.Database
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<IIngredient>> GetAll()
+        public async Task<IEnumerable<IIngredient>> GetAll()
         {
-            throw new NotImplementedException();
+            return await Task.FromResult(dbContext.Ingredients);
         }
 
         public Task<IIngredient> GetByName()

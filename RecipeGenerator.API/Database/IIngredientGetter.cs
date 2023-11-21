@@ -7,7 +7,7 @@ using RecipeGenerator.API.Models.Ingeridients;
 
 namespace RecipeGenerator.API.Database
 {
-    internal interface IIngredientGetter
+    public interface IIngredientGetter
     {
         IEnumerable<IIngredient> Get();
     }

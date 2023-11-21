@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.Database
 {
-    internal class RecipeDbContext : DbContext
+    public class RecipeDbContext : DbContext
     {
         public DbSet<Recipe> Recipes { get; set; }
 
