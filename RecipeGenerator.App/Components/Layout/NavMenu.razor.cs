@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.App.Components.Pages
+namespace RecipeGenerator.App.Components.Layout
 {
- public partial class Start
- {
- }
+    public partial class NavMenu
+    {
+    }
 }

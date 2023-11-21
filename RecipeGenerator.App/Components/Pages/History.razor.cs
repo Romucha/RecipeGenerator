@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.App.Pages
+namespace RecipeGenerator.App.Components.Pages
 {
  public partial class History
  {
