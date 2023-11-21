@@ -6,7 +6,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.RazorPages"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.API", "RecipeGenerator.API\RecipeGenerator.API.csproj", "{062C1824-DE85-4127-BEBF-0EFC2D96E05C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.App", "RecipeGenerator.App\RecipeGenerator.App.csproj", "{D9F7C0C1-5113-4240-9D30-19233CFEB266}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.App", "RecipeGenerator.App\RecipeGenerator.App.csproj", "{D9F7C0C1-5113-4240-9D30-19233CFEB266}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -9,14 +9,3 @@
  <NavComponent NavPath="about" OiIcon="oi-question-mark" OiTitle="About" />
 </nav>
 
-@code {
- private bool collapseNavMenu = true;
-
- private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
- private void ToggleNavMenu()
- {
-  collapseNavMenu = !collapseNavMenu;
- }
-}
-
