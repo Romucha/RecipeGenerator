@@ -1,0 +1,24 @@
+﻿@page "/"
+<div class="home-page">
+    <div class="home-page-button home-page-button-start">
+        <NavButton NavPath="start" OiIcon="oi-media-play" OiTitle="Start" OiDescription="Start" />
+    </div>
+    <div class="home-page-button home-page-button-about">
+        <NavButton NavPath="about" OiIcon="oi-script" OiTitle="About" OiDescription="Explore" />
+    </div>
+    <div class="home-page-list-history">
+        @if (mainVM.Recipes != null && mainVM.Recipes.Count > 0)
+        {
+            foreach (var recipe in mainVM.Recipes)
+            {
+                <div>Recipe placeholder</div>
+            }
+        }
+        else
+        {
+            <div>
+                You haven't generated any recipes yet...
+            </div>
+        }
+    </div>
+</div>
