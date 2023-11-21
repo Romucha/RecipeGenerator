@@ -2,11 +2,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.App", "RecipeGeneratop.App\RecipeGenerator.App.csproj", "{0986BBD7-727A-4AD9-BC23-02DA9259E98A}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.RazorPages", "RecipeGenerator.RazorPages\RecipeGenerator.RazorPages.csproj", "{96306632-1D4E-4289-9EC8-08B5DB03DFFF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.API", "RecipeGenerator.API\RecipeGenerator.API.csproj", "{062C1824-DE85-4127-BEBF-0EFC2D96E05C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.App", "RecipeGenerator.App\RecipeGenerator.App.csproj", "{D9F7C0C1-5113-4240-9D30-19233CFEB266}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,11 +14,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0986BBD7-727A-4AD9-BC23-02DA9259E98A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0986BBD7-727A-4AD9-BC23-02DA9259E98A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0986BBD7-727A-4AD9-BC23-02DA9259E98A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{0986BBD7-727A-4AD9-BC23-02DA9259E98A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0986BBD7-727A-4AD9-BC23-02DA9259E98A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{96306632-1D4E-4289-9EC8-08B5DB03DFFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{96306632-1D4E-4289-9EC8-08B5DB03DFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96306632-1D4E-4289-9EC8-08B5DB03DFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +22,12 @@ Global
 		{062C1824-DE85-4127-BEBF-0EFC2D96E05C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{062C1824-DE85-4127-BEBF-0EFC2D96E05C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{062C1824-DE85-4127-BEBF-0EFC2D96E05C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9F7C0C1-5113-4240-9D30-19233CFEB266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9F7C0C1-5113-4240-9D30-19233CFEB266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9F7C0C1-5113-4240-9D30-19233CFEB266}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D9F7C0C1-5113-4240-9D30-19233CFEB266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9F7C0C1-5113-4240-9D30-19233CFEB266}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9F7C0C1-5113-4240-9D30-19233CFEB266}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
