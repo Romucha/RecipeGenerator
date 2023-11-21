@@ -16,6 +16,7 @@ namespace RecipeGenerator.API
             services.AddTransient<IIngredientFactory, IngredientFactory>();
             services.AddTransient<IIngredientGetter, IngredientGetter>();
             services.AddSqlite<RecipeDbContext>("Data Source=Recipe.db;Cache=Shared");
+            services.AddTransient<IIngredientRepository, IngredientRepository>();
 
             return services;
         }
