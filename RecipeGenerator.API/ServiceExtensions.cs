@@ -15,7 +15,11 @@ namespace RecipeGenerator.API
         {
             services.AddTransient<IIngredientFactory, IngredientFactory>();
             services.AddTransient<IIngredientGetter, IngredientGetter>();
-            services.AddSqlite<RecipeDbContext>("Data Source=Recipe.db;Cache=Shared");
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "RecipeGenerator");
+            if (!Directory.Exists(dbPath)) {
+                Directory.CreateDirectory(dbPath);
+            }
+            services.AddSqlite<RecipeDbContext>($"Data Source={dbPath}\\Recipe.db");
             services.AddTransient<IIngredientRepository, IngredientRepository>();
 
             return services;
