@@ -1,10 +1,12 @@
 ﻿@page "/about"
-<h3>About</h3>
 
-@if (IngredientRepository != null)
+@foreach (var ingredientGroup in aboutVM.Ingredients.OrderBy(c => c.Key))
 {
-    foreach (var ingredient in Ingredients.OrderBy(c => c.Name))
+    <h1>@ingredientGroup.Key.ToString()</h1>
+    @foreach (var ingredient in ingredientGroup.Value)
     {
-        <div>@ingredient.Name</div>
+        <div>
+            <a href="@ingredient.Link">@ingredient.Name</a>
+        </div>
     }
 }

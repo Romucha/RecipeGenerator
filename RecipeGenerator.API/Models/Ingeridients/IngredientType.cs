@@ -8,8 +8,7 @@ namespace RecipeGenerator.API.Models.Ingeridients
 {
     public enum IngredientType
     {
-        None = 0,
-        CerealsAndPulses,
+        CerealsAndPulses = 0,
         DairyProducts,
         Fruits,
         Meat,

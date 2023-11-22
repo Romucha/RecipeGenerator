@@ -30,9 +30,14 @@ namespace RecipeGenerator.API.Database
             return await Task.FromResult(dbContext.Ingredients);
         }
 
-        public async Task<IIngredient> GetByName()
+        public async Task<IIngredient> GetByName(string name)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<IEnumerable<IIngredient>> GetByType(IngredientType type)
+        {
+            return await Task.FromResult(dbContext.Ingredients.Where(c => c.IngredientType == type));
         }
 
         public async Task Update(IIngredient ingredient)

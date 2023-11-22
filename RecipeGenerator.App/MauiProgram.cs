@@ -24,6 +24,7 @@ namespace RecipeGenerator.App
 #endif
    builder.Services.AddDatabase();
    builder.Services.AddTransient<MainVM>();
+   builder.Services.AddTransient<AboutVM>();
 
    return builder.Build();
   }
