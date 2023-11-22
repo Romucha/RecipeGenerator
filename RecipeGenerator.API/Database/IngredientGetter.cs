@@ -13,6 +13,14 @@ namespace RecipeGenerator.API.Database
 {
     public class IngredientGetter : IIngredientGetter
     {
+        private class DictionaryEntryDTO
+        {
+            public IngredientType type { get; set; }
+            public string keyName { get; set; }
+            public string propertyName { get; set; }
+            public object propertyValue { get; set; }
+        }
+
         private readonly IIngredientFactory ingredientFactory;
         public IngredientGetter(IIngredientFactory ingredientFactory) 
         {
@@ -32,21 +40,27 @@ namespace RecipeGenerator.API.Database
              */
 
             var resources = resourceSet.Cast<DictionaryEntry>()
-                                       .Select(c => parseResourceDictionaryEntry(c))
+                                       .Select(parseResourceDictionaryEntry)
                                        .GroupBy(c => c.keyName);
             foreach (var resource in resources) 
             {
                 IngredientType type = resource.FirstOrDefault().type;
-                string name = resource.FirstOrDefault(c => c.propertyName == "Name").propertyValue?.ToString();
-                string description = resource.FirstOrDefault(c => c.propertyName == "Description").propertyValue?.ToString();
-                Uri.TryCreate(resource.FirstOrDefault(c => c.propertyName == "Uri").propertyValue?.ToString(), UriKind.Absolute, out Uri uri);
-                byte[] image = resource.FirstOrDefault(c => c.propertyName == "Image").propertyValue as byte[];
+                var nameres = resource.FirstOrDefault(c => c.propertyName == "Name");
+                string name = nameres == null ? string.Empty : nameres.propertyValue?.ToString();
+                var descres = resource.FirstOrDefault(c => c.propertyName == "Description");
+                string description = descres == null ? string.Empty : descres.propertyValue?.ToString();
+                var urires = resource.FirstOrDefault(c => c.propertyName == "Uri");
+                Uri uri = null;
+                if (urires != null)
+                    Uri.TryCreate(urires.propertyValue?.ToString(), UriKind.Absolute, out uri);
+                var imageres = resource.FirstOrDefault(c => c.propertyName == "Image");
+                byte[] image = imageres == null ? null : descres.propertyValue as byte[];
 
                 yield return ingredientFactory.Create(name, description, uri, image, type);
             }
         }
 
-        private (IngredientType type, string keyName, string propertyName, object propertyValue) parseResourceDictionaryEntry(DictionaryEntry entry)
+        private DictionaryEntryDTO parseResourceDictionaryEntry(DictionaryEntry entry)
         {
             string resourceKey = entry.Key.ToString();
             object resource = entry.Value;
@@ -57,7 +71,13 @@ namespace RecipeGenerator.API.Database
             object propertyValue = resource;
             string keyName = string.Join("_", resKeySplit.Skip(1).Take(resKeySplit.Length - 2));
 
-            return (ingredientType, keyName, propertyName, propertyValue);
+            return new DictionaryEntryDTO
+            {
+                propertyName = propertyName,
+                propertyValue = propertyValue,
+                keyName = keyName,
+                type = ingredientType
+            };
         }
     }
 }
