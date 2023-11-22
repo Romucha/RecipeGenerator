@@ -12,6 +12,7 @@ namespace RecipeGenerator.API.Models.Ingeridients
         {
             return new Ingredient()
             { 
+                Id = Guid.NewGuid(),
                 Name = name, 
                 Description = description, 
                 Link = link, 

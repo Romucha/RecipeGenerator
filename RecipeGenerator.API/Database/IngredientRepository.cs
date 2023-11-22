@@ -15,12 +15,12 @@ namespace RecipeGenerator.API.Database
             this.dbContext = dbContext;
         }
 
-        public Task Add(IIngredient ingredient)
+        public async Task Add(IIngredient ingredient)
         {
             throw new NotImplementedException();
         }
 
-        public Task Delete(IIngredient ingredient)
+        public async Task Delete(IIngredient ingredient)
         {
             throw new NotImplementedException();
         }
@@ -30,12 +30,12 @@ namespace RecipeGenerator.API.Database
             return await Task.FromResult(dbContext.Ingredients);
         }
 
-        public Task<IIngredient> GetByName()
+        public async Task<IIngredient> GetByName()
         {
             throw new NotImplementedException();
         }
 
-        public Task Update(IIngredient ingredient)
+        public async Task Update(IIngredient ingredient)
         {
             throw new NotImplementedException();
         }

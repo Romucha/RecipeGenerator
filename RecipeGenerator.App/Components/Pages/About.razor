@@ -1,6 +1,10 @@
 ﻿@page "/about"
 <h3>About</h3>
 
-@code {
-
+@if (IngredientRepository != null)
+{
+    foreach (var ingredient in Ingredients.OrderBy(c => c.Name))
+    {
+        <div>@ingredient.Name</div>
+    }
 }

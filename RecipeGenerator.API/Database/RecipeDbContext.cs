@@ -14,12 +14,12 @@ namespace RecipeGenerator.API.Database
     {
         public DbSet<Recipe> Recipes { get; set; }
 
-        public DbSet<IIngredient> Ingredients { get; set; }
+        public DbSet<Ingredient> Ingredients { get; set; }
 
         private readonly IConfiguration configuration;
         private readonly IIngredientGetter ingredientGetter;
 
-        public RecipeDbContext(IConfiguration configuration, IIngredientGetter ingredientGetter)
+        public RecipeDbContext(IConfiguration configuration, IIngredientGetter ingredientGetter, DbContextOptions dbContextOptions) : base(dbContextOptions)
         {
             this.configuration = configuration;
             this.ingredientGetter = ingredientGetter;
@@ -33,7 +33,7 @@ namespace RecipeGenerator.API.Database
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<IIngredient>().HasData(ingredientGetter.Get());
+            modelBuilder.Entity<Ingredient>().HasData(ingredientGetter.Get());
         }
     }
 }
