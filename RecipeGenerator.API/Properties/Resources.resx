@@ -222,6 +222,9 @@
   <data name="CerealsAndPulses_Tapioca_Name" xml:space="preserve">
     <value>Tapioca</value>
   </data>
+  <data name="CerealsAndPulses_TypeName" xml:space="preserve">
+    <value>Cereals and Pulses</value>
+  </data>
   <data name="CerealsAndPulses_Water_Chestnut_flour_Name" xml:space="preserve">
     <value>Water Chestnut flour</value>
   </data>
@@ -296,6 +299,9 @@
   </data>
   <data name="DairyProducts_Ricotta_Cheese_Name" xml:space="preserve">
     <value>Ricotta Cheese</value>
+  </data>
+  <data name="DairyProducts_TypeName" xml:space="preserve">
+    <value>Dairy Products</value>
   </data>
   <data name="DairyProducts_Yogurt_Name" xml:space="preserve">
     <value>Yogurt</value>
@@ -420,6 +426,9 @@
   <data name="Fruits_Tomato_Name" xml:space="preserve">
     <value>Tomato</value>
   </data>
+  <data name="Fruits_TypeName" xml:space="preserve">
+    <value>Fruits</value>
+  </data>
   <data name="Fruits_Watermelon_Name" xml:space="preserve">
     <value>Watermelon</value>
   </data>
@@ -492,6 +501,9 @@
   <data name="Meat_Turkey_Name" xml:space="preserve">
     <value>Turkey</value>
   </data>
+  <data name="Meat_TypeName" xml:space="preserve">
+    <value>Meat</value>
+  </data>
   <data name="NutsAndOilseeds_Almonds_Name" xml:space="preserve">
     <value>Almonds</value>
   </data>
@@ -542,6 +554,9 @@
   </data>
   <data name="NutsAndOilseeds_Sunflower_Seeds_Name" xml:space="preserve">
     <value>Sunflower Seeds</value>
+  </data>
+  <data name="NutsAndOilseeds_TypeName" xml:space="preserve">
+    <value>Nuts and Oilseeds</value>
   </data>
   <data name="NutsAndOilseeds_Walnuts_Name" xml:space="preserve">
     <value>Walnuts</value>
@@ -747,6 +762,9 @@
   <data name="OtherIngredients_Tortilla_Name" xml:space="preserve">
     <value>Tortilla</value>
   </data>
+  <data name="OtherIngredients_TypeName" xml:space="preserve">
+    <value>Other Ingredients</value>
+  </data>
   <data name="OtherIngredients_Vanilla_Essence_Name" xml:space="preserve">
     <value>Vanilla Essence</value>
   </data>
@@ -848,6 +866,9 @@
   </data>
   <data name="Seafood_Tuna_Fish_Name" xml:space="preserve">
     <value>Tuna Fish</value>
+  </data>
+  <data name="Seafood_TypeName" xml:space="preserve">
+    <value>Seafood</value>
   </data>
   <data name="SpicesAndHerbs_Acacia_Name" xml:space="preserve">
     <value>Acacia</value>
@@ -1011,6 +1032,9 @@
   <data name="SpicesAndHerbs_Turmeric_Name" xml:space="preserve">
     <value>Turmeric</value>
   </data>
+  <data name="SpicesAndHerbs_TypeName" xml:space="preserve">
+    <value>Spices and Herbs</value>
+  </data>
   <data name="SpicesAndHerbs_Yellow_Chillies_Name" xml:space="preserve">
     <value>Yellow Chillies</value>
   </data>
@@ -1043,6 +1067,9 @@
   </data>
   <data name="SugarAndSugarProducts_Sugar_Name" xml:space="preserve">
     <value>Sugar</value>
+  </data>
+  <data name="SugarAndSugarProducts_TypeName" xml:space="preserve">
+    <value>Sugar andSugar Products</value>
   </data>
   <data name="Vegetables_Artichoke_Name" xml:space="preserve">
     <value>Artichoke</value>
@@ -1226,6 +1253,9 @@
   </data>
   <data name="Vegetables_Turnip_Name" xml:space="preserve">
     <value>Turnip</value>
+  </data>
+  <data name="Vegetables_TypeName" xml:space="preserve">
+    <value>Vegetables</value>
   </data>
   <data name="Vegetables_Yam_Name" xml:space="preserve">
     <value>Yam</value>

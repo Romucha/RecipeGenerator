@@ -1,0 +1,8 @@
+﻿<h3>@IngredientsGroupVM.DisplayName</h3>
+
+@foreach (var ingredient in IngredientsGroupVM.Ingredients)
+{
+    <div>
+        <a href="@ingredient.Link">@ingredient.Name</a>
+    </div>
+}

@@ -1,23 +1,23 @@
 ﻿using Microsoft.AspNetCore.Components;
-using RecipeGenerator.API.Database;
 using RecipeGenerator.API.Models.Ingeridients;
 using RecipeGenerator.RazorPages.ViewModels.About;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.App.Components.Pages
+namespace RecipeGenerator.RazorPages.Components.About
 {
-    public partial class About
+    public partial class IngredientsGroup
     {
-        [Inject]
-        private AboutVM aboutVM { get; set; }
+        [Parameter]
+        public IngredientGroupVM IngredientsGroupVM { get; set; }
 
         protected override async Task OnInitializedAsync()
         {
-            await aboutVM.GetIngredientsCommand.ExecuteAsync(null);
+            await base.OnInitializedAsync();
         }
     }
 }

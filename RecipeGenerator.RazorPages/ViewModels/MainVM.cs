@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.App.ViewModels
 {
-    internal class MainVM : ObservableObject
+    public class MainVM : ObservableObject
     {
         public MainVM() { }
 

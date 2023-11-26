@@ -376,6 +376,15 @@ namespace RecipeGenerator.API.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Cereals and Pulses.
+        /// </summary>
+        internal static string CerealsAndPulses_TypeName {
+            get {
+                return ResourceManager.GetString("CerealsAndPulses_TypeName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Water Chestnut flour.
         /// </summary>
         internal static string CerealsAndPulses_Water_Chestnut_flour_Name {
@@ -597,6 +606,15 @@ namespace RecipeGenerator.API.Properties {
         internal static string DairyProducts_Ricotta_Cheese_Name {
             get {
                 return ResourceManager.GetString("DairyProducts_Ricotta_Cheese_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Dairy Products.
+        /// </summary>
+        internal static string DairyProducts_TypeName {
+            get {
+                return ResourceManager.GetString("DairyProducts_TypeName", resourceCulture);
             }
         }
         
@@ -970,6 +988,15 @@ namespace RecipeGenerator.API.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Fruits.
+        /// </summary>
+        internal static string Fruits_TypeName {
+            get {
+                return ResourceManager.GetString("Fruits_TypeName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Water Chestnut.
         /// </summary>
         internal static string Fruits_Water_Chestnut_Name {
@@ -1186,6 +1213,15 @@ namespace RecipeGenerator.API.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Meat.
+        /// </summary>
+        internal static string Meat_TypeName {
+            get {
+                return ResourceManager.GetString("Meat_TypeName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Almonds.
         /// </summary>
         internal static string NutsAndOilseeds_Almonds_Name {
@@ -1335,6 +1371,15 @@ namespace RecipeGenerator.API.Properties {
         internal static string NutsAndOilseeds_Sunflower_Seeds_Name {
             get {
                 return ResourceManager.GetString("NutsAndOilseeds_Sunflower_Seeds_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Nuts and Oilseeds.
+        /// </summary>
+        internal static string NutsAndOilseeds_TypeName {
+            get {
+                return ResourceManager.GetString("NutsAndOilseeds_TypeName", resourceCulture);
             }
         }
         
@@ -1951,6 +1996,15 @@ namespace RecipeGenerator.API.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Other Ingredients.
+        /// </summary>
+        internal static string OtherIngredients_TypeName {
+            get {
+                return ResourceManager.GetString("OtherIngredients_TypeName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Vanilla Essence.
         /// </summary>
         internal static string OtherIngredients_Vanilla_Essence_Name {
@@ -2253,6 +2307,15 @@ namespace RecipeGenerator.API.Properties {
         internal static string Seafood_Tuna_Fish_Name {
             get {
                 return ResourceManager.GetString("Seafood_Tuna_Fish_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Seafood.
+        /// </summary>
+        internal static string Seafood_TypeName {
+            get {
+                return ResourceManager.GetString("Seafood_TypeName", resourceCulture);
             }
         }
         
@@ -2743,6 +2806,15 @@ namespace RecipeGenerator.API.Properties {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Spices and Herbs.
+        /// </summary>
+        internal static string SpicesAndHerbs_TypeName {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_TypeName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Yellow Chillies.
         /// </summary>
         internal static string SpicesAndHerbs_Yellow_Chillies_Name {
@@ -2838,6 +2910,15 @@ namespace RecipeGenerator.API.Properties {
         internal static string SugarAndSugarProducts_Sugar_Name {
             get {
                 return ResourceManager.GetString("SugarAndSugarProducts_Sugar_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Sugar andSugar Products.
+        /// </summary>
+        internal static string SugarAndSugarProducts_TypeName {
+            get {
+                return ResourceManager.GetString("SugarAndSugarProducts_TypeName", resourceCulture);
             }
         }
         
@@ -3387,6 +3468,15 @@ namespace RecipeGenerator.API.Properties {
         internal static string Vegetables_Turnip_Name {
             get {
                 return ResourceManager.GetString("Vegetables_Turnip_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Vegetables.
+        /// </summary>
+        internal static string Vegetables_TypeName {
+            get {
+                return ResourceManager.GetString("Vegetables_TypeName", resourceCulture);
             }
         }
         

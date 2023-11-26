@@ -1,10 +1,11 @@
 ﻿using Microsoft.Extensions.Logging;
 using RecipeGenerator.API;
 using RecipeGenerator.App.ViewModels;
+using RecipeGenerator.RazorPages.ViewModels.About;
 
 namespace RecipeGenerator.App
 {
- public static class MauiProgram
+    public static class MauiProgram
  {
   public static MauiApp CreateMauiApp()
   {

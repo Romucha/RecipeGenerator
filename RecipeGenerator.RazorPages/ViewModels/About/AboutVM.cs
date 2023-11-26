@@ -1,0 +1,53 @@
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using RecipeGenerator.API.Database;
+using RecipeGenerator.API.Models.Ingeridients;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RecipeGenerator.RazorPages.ViewModels.About
+{
+    public class AboutVM : ObservableObject
+    {
+        private readonly IIngredientRepository ingredientRepository;
+
+        public IAsyncRelayCommand GetIngredientsCommand { get; set; }
+
+        public AboutVM(IIngredientRepository ingredientRepository)
+        {
+            this.ingredientRepository = ingredientRepository;
+            ingredients = new();
+
+            GetIngredientsCommand = new AsyncRelayCommand(getIngredientsAsync);
+        }
+
+        private ObservableCollection<IngredientGroupVM> ingredients;
+
+        public ObservableCollection<IngredientGroupVM> Ingredients
+        {
+            get => ingredients;
+            set => SetProperty(ref ingredients, value);
+        }
+
+        private async Task getIngredientsAsync()
+        {
+            var ingredientTypes = Enum.GetValues<IngredientType>();
+            List<IngredientGroupVM> ingredients = new();
+            foreach (var ing in ingredientTypes) 
+            {
+                ingredients.Add(new IngredientGroupVM()
+                {
+                    Ingredients = new ObservableCollection<IIngredient>(await ingredientRepository.GetByType(ing)),
+                    IngredientType = ing,
+                    IsExpanded = false,
+                    DisplayName = ing.ToString()
+                });
+            }
+            Ingredients = new ObservableCollection<IngredientGroupVM>(ingredients.OrderBy(c => c.DisplayName));
+        }
+    }
+}

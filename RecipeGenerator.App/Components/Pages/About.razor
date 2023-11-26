@@ -1,12 +1,8 @@
-﻿@page "/about"
+﻿@using RecipeGenerator.RazorPages.Components.About
 
-@foreach (var ingredientGroup in aboutVM.Ingredients.OrderBy(c => c.Key))
+@page "/about"
+
+@foreach (var ingredientGroup in aboutVM.Ingredients)
 {
-    <h1>@ingredientGroup.Key.ToString()</h1>
-    @foreach (var ingredient in ingredientGroup.Value)
-    {
-        <div>
-            <a href="@ingredient.Link">@ingredient.Name</a>
-        </div>
-    }
+    <IngredientsGroup IngredientsGroupVM="@ingredientGroup"/>
 }
