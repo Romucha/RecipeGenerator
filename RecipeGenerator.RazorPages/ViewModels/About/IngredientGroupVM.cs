@@ -38,5 +38,13 @@ namespace RecipeGenerator.RazorPages.ViewModels.About
             get => isExpanded;
             set => SetProperty(ref isExpanded, value);
         }
+
+        public IngredientGroupVM(IEnumerable<IIngredient> ingredients, IngredientType ingredientType)
+        {
+            Ingredients = new ObservableCollection<IIngredient>(ingredients);
+            IngredientType = ingredientType;
+            DisplayName = ingredientType.ToDisplayName();
+            IsExpanded = false;
+        }
     }
 }
