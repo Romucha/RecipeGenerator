@@ -16,7 +16,7 @@ namespace RecipeGenerator.API.Models.Ingeridients
         {
             try
             {
-                ResourceManager resourceManager = new ResourceManager(typeof(Resources));
+                ResourceManager resourceManager = new ResourceManager(typeof(Properties.Resources));
 
                 ResourceSet resourceSet = resourceManager.GetResourceSet(CultureInfo.CurrentUICulture, true, true);
                 return resourceSet.Cast<DictionaryEntry>()
