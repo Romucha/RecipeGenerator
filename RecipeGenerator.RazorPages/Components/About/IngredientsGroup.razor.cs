@@ -19,5 +19,10 @@ namespace RecipeGenerator.RazorPages.Components.About
         {
             await base.OnInitializedAsync();
         }
+
+        private void ToggleVisibility()
+        {
+            IngredientsGroupVM.IsExpanded = !IngredientsGroupVM.IsExpanded;
+        }
     }
 }

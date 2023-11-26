@@ -1,8 +1,10 @@
-﻿<h3>@IngredientsGroupVM.DisplayName</h3>
+﻿<h3 @onclick="ToggleVisibility">@IngredientsGroupVM.DisplayName</h3>
 
+<div style="display: @(IngredientsGroupVM.IsExpanded ? "block" : "none")">
 @foreach (var ingredient in IngredientsGroupVM.Ingredients)
 {
     <div>
         <a href="@ingredient.Link">@ingredient.Name</a>
     </div>
 }
+</div>
