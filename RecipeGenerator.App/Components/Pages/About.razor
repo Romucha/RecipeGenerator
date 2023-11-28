@@ -2,7 +2,9 @@
 
 @page "/about"
 
-@foreach (var ingredientGroup in aboutVM.Ingredients)
-{
-    <IngredientsGroup IngredientsGroupVM="@ingredientGroup"/>
-}
+<div class="about-page">
+    @foreach (var ingredientGroup in aboutVM.Ingredients)
+    {
+        <IngredientsGroup IngredientsGroupVM="@ingredientGroup"/>
+    }
+</div>

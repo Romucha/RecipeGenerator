@@ -1,6 +1,6 @@
-﻿<h3 @onclick="ToggleVisibility">@IngredientsGroupVM.DisplayName</h3>
+﻿<div class="about-page-item-header-button" @onclick="ToggleVisibility">@IngredientsGroupVM.DisplayName</div>
 
-<div style="display: @(IngredientsGroupVM.IsExpanded ? "block" : "none")">
+<div class="about-page-item-header-button-display-name" style="display: @(IngredientsGroupVM.IsExpanded ? "block" : "none")">
 @foreach (var ingredient in IngredientsGroupVM.Ingredients)
 {
     <div>
