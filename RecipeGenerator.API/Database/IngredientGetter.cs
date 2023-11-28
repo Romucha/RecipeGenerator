@@ -53,6 +53,9 @@ namespace RecipeGenerator.API.Database
                 Uri uri = null;
                 if (urires != null)
                     Uri.TryCreate(urires.propertyValue?.ToString(), UriKind.Absolute, out uri);
+                else
+                    //rick roll for now
+                    Uri.TryCreate("https://www.youtube.com/watch?v=dQw4w9WgXcQ", UriKind.Absolute, out uri);                    
                 var imageres = resource.FirstOrDefault(c => c.propertyName == "Image");
                 byte[] image = imageres == null ? null : descres.propertyValue as byte[];
 
