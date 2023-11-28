@@ -133,6 +133,12 @@
     font-size: 2rem;
 }
 
+    .nav-button:hover {
+        color: azure;
+        background-color: gold;
+        box-shadow: 10px 10px 5px rgba(181, 148, 16,1);
+    }
+
 .nav-button-container {
     display: flex;
     flex-direction: column;
@@ -145,12 +151,13 @@
 
 .nav-button-icon {
     display: flex;
-    font-size: 4rem;
+    font-size: 3.5rem;
     top: 10%;
+    margin: 0.1rem 0.5rem 1rem 0.5rem;
 }
 
 .nav-button-description {
     position: relative;
     display: flex;
-    bottom: 10%;
+    margin: 0.1rem 0.5rem 0.5rem 0.5rem;
 }
