@@ -301,7 +301,7 @@
     <value>Сыр рикотта</value>
   </data>
   <data name="DairyProducts_TypeName" xml:space="preserve">
-    <value>молочные продукты</value>
+    <value>Молочные продукты</value>
   </data>
   <data name="DairyProducts_Yogurt_Name" xml:space="preserve">
     <value>Йогурт</value>
@@ -322,7 +322,7 @@
     <value>Мыс Крыжовник</value>
   </data>
   <data name="Fruits_Cherry_Name" xml:space="preserve">
-    <value>вишня</value>
+    <value>Вишня</value>
   </data>
   <data name="Fruits_Coconut_Name" xml:space="preserve">
     <value>Кокос</value>
@@ -364,7 +364,7 @@
     <value>Джамун</value>
   </data>
   <data name="Fruits_Kiwi_Name" xml:space="preserve">
-    <value>киви</value>
+    <value>Киви</value>
   </data>
   <data name="Fruits_Lemon_Juice_Name" xml:space="preserve">
     <value>Лимонный сок</value>
@@ -379,7 +379,7 @@
     <value>Личи</value>
   </data>
   <data name="Fruits_Mango_Name" xml:space="preserve">
-    <value>манго</value>
+    <value>Манго</value>
   </data>
   <data name="Fruits_Mulberry_Name" xml:space="preserve">
     <value>Шелковица</value>
@@ -406,7 +406,7 @@
     <value>Ананас</value>
   </data>
   <data name="Fruits_Plum_Name" xml:space="preserve">
-    <value>слива</value>
+    <value>Слива</value>
   </data>
   <data name="Fruits_Pomegranate_Name" xml:space="preserve">
     <value>Гранат</value>
@@ -463,7 +463,7 @@
     <value>Курица травяного откорма</value>
   </data>
   <data name="Meat_Ham_Name" xml:space="preserve">
-    <value>ветчина</value>
+    <value>Ветчина</value>
   </data>
   <data name="Meat_Keema_Name" xml:space="preserve">
     <value>Кима</value>
@@ -574,7 +574,7 @@
     <value>Миндальное молоко</value>
   </data>
   <data name="OtherIngredients_Alum_Name" xml:space="preserve">
-    <value>квасцы</value>
+    <value>Квасцы</value>
   </data>
   <data name="OtherIngredients_Arrowroot_Name" xml:space="preserve">
     <value>Эррорут</value>
@@ -619,7 +619,7 @@
     <value>Кофе</value>
   </data>
   <data name="OtherIngredients_Cognac_Name" xml:space="preserve">
-    <value>коньяк</value>
+    <value>Коньяк</value>
   </data>
   <data name="OtherIngredients_Cornflour_Name" xml:space="preserve">
     <value>Кукурузная мука</value>
@@ -874,7 +874,7 @@
     <value>Акация</value>
   </data>
   <data name="SpicesAndHerbs_Allspice_Name" xml:space="preserve">
-    <value>душистый перец</value>
+    <value>Душистый перец</value>
   </data>
   <data name="SpicesAndHerbs_Aniseed_Name" xml:space="preserve">
     <value>Анисовое семя</value>
@@ -1117,7 +1117,7 @@
     <value>Каперсы</value>
   </data>
   <data name="Vegetables_Capsicum_Name" xml:space="preserve">
-    <value>стручковый перец</value>
+    <value>Стручковый перец</value>
   </data>
   <data name="Vegetables_Carrot_Name" xml:space="preserve">
     <value>Морковь</value>
@@ -1150,7 +1150,7 @@
     <value>Баклажан</value>
   </data>
   <data name="Vegetables_Fenugreek_Name" xml:space="preserve">
-    <value>пажитник</value>
+    <value>Пажитник</value>
   </data>
   <data name="Vegetables_French_Beans_Name" xml:space="preserve">
     <value>Фасоль</value>
@@ -1186,7 +1186,7 @@
     <value>Женский палец</value>
   </data>
   <data name="Vegetables_Leek_Name" xml:space="preserve">
-    <value>лук-порей</value>
+    <value>Лук-порей</value>
   </data>
   <data name="Vegetables_Lettuce_Name" xml:space="preserve">
     <value>Латук</value>
@@ -1258,7 +1258,7 @@
     <value>Овощи</value>
   </data>
   <data name="Vegetables_Yam_Name" xml:space="preserve">
-    <value>сладкий картофель</value>
+    <value>Сладкий картофель</value>
   </data>
   <data name="Vegetables_Zucchini_Name" xml:space="preserve">
     <value>Цуккини</value>
