@@ -54,6 +54,8 @@
       <AndroidSigningStorePass>Rr290494Rr</AndroidSigningStorePass>
       <AndroidSigningKeyAlias>romucha</AndroidSigningKeyAlias>
       <AndroidSigningKeyPass>Rr290494Rr</AndroidSigningKeyPass>
+      <DebugSymbols>True</DebugSymbols>
+      <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
     </PropertyGroup>
 
     <ItemGroup>
