@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 using RecipeGenerator.API.Models.Ingeridients;
-using RecipeGenerator.RazorPages.ViewModels.About;
+using RecipeGenerator.RazorPages.ViewModels.Explore;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.RazorPages.Components.About
+namespace RecipeGenerator.RazorPages.Components.Explore
 {
     public partial class IngredientsGroup
     {

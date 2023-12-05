@@ -13,35 +13,6 @@ namespace RecipeGenerator.RazorPages.ViewModels.About
 {
     public class AboutVM : ObservableObject
     {
-        private readonly IIngredientRepository ingredientRepository;
-
-        public IAsyncRelayCommand GetIngredientsCommand { get; set; }
-
-        public AboutVM(IIngredientRepository ingredientRepository)
-        {
-            this.ingredientRepository = ingredientRepository;
-            ingredients = new();
-
-            GetIngredientsCommand = new AsyncRelayCommand(getIngredientsAsync);
-        }
-
-        private ObservableCollection<IngredientGroupVM> ingredients;
-
-        public ObservableCollection<IngredientGroupVM> Ingredients
-        {
-            get => ingredients;
-            set => SetProperty(ref ingredients, value);
-        }
-
-        private async Task getIngredientsAsync()
-        {
-            var ingredientTypes = Enum.GetValues<IngredientType>();
-            List<IngredientGroupVM> ingredients = new();
-            foreach (var ingType in ingredientTypes) 
-            {
-                ingredients.Add(new IngredientGroupVM((await ingredientRepository.GetByType(ingType)).OrderBy(c => c.Name), ingType));
-            }
-            Ingredients = new ObservableCollection<IngredientGroupVM>(ingredients.OrderBy(c => c.DisplayName));
-        }
+        
     }
 }

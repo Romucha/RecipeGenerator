@@ -2,6 +2,7 @@
 using RecipeGenerator.API;
 using RecipeGenerator.App.ViewModels;
 using RecipeGenerator.RazorPages.ViewModels.About;
+using RecipeGenerator.RazorPages.ViewModels.Explore;
 
 namespace RecipeGenerator.App
 {
@@ -26,6 +27,7 @@ namespace RecipeGenerator.App
    builder.Services.AddDatabase();
    builder.Services.AddTransient<MainVM>();
    builder.Services.AddTransient<AboutVM>();
+   builder.Services.AddTransient<ExploreVM>();
 
    return builder.Build();
   }

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.RazorPages.ViewModels.About
+namespace RecipeGenerator.RazorPages.ViewModels.Explore
 {
     public class IngredientGroupVM : ObservableObject
     {

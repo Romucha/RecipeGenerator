@@ -20,4 +20,8 @@
     <ProjectReference Include="..\RecipeGenerator.API\RecipeGenerator.API.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Components\About\" />
+  </ItemGroup>
+
 </Project>

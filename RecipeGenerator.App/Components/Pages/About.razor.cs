@@ -12,12 +12,6 @@ namespace RecipeGenerator.App.Components.Pages
 {
     public partial class About
     {
-        [Inject]
-        private AboutVM aboutVM { get; set; }
-
-        protected override async Task OnInitializedAsync()
-        {
-            await aboutVM.GetIngredientsCommand.ExecuteAsync(null);
-        }
+        
     }
 }
