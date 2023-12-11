@@ -1,4 +1,9 @@
 ﻿<div class="explore-page-item-list-item">
-    <img src="@imageURL" />
-    <a href="@Ingredient.Link">@Ingredient.Name</a>
+    <img src="@imageURL" class="explore-page-item-list-item-image" />
+    <div class="explore-page-item-list-item-column">
+        <div class="explore-page-item-list-item-header">@Ingredient.Name</div>
+        <div class="explore-page-item-list-item-description">
+            @desc <a href="@Ingredient.Link" title="@Ingredient.Link" class="explore-page-item-list-item-link">More...</a>
+        </div>
+    </div>
 </div>

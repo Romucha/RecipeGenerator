@@ -215,4 +215,26 @@
     border: 0.1rem solid rgba(228,4,4,0.5);
     margin: 0.1rem 0rem 0.1rem 0rem;
     padding: 0.1rem;
+    flex-direction: row;
+    display: flex;
+}
+
+.explore-page-item-list-item-image {
+
+}
+
+.explore-page-item-list-item-column {
+
+}
+
+.explore-page-item-list-item-header {
+
+}
+
+.explore-page-item-list-item-description {
+
+}
+
+.explore-page-item-list-item-link {
+
 }
