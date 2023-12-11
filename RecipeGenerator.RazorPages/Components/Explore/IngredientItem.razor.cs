@@ -13,5 +13,16 @@ namespace RecipeGenerator.RazorPages.Components.Explore
     {
         [Parameter]
         public IIngredient Ingredient { get; set; }
+
+        private string imageURL { get; set; } = "/images/apple.png";
+
+        protected override async Task OnInitializedAsync()
+        {
+            if (Ingredient != null && Ingredient.Image != null)
+            {
+                imageURL = string.Format("data:image/svg+xml;base64,{0}", Ingredient.Image);
+            }
+            await base.OnInitializedAsync();
+        }
     }
 }
