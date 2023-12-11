@@ -4,9 +4,7 @@
     <div class="explore-page-item-list">
         @foreach (var ingredient in IngredientsGroupVM.Ingredients)
         {
-            <div class="explore-page-item-list-item">
-                <a href="@ingredient.Link">@ingredient.Name</a>
-            </div> 
+            <IngredientItem Ingredient="@ingredient"/> 
         }
     </div>
 </div>
