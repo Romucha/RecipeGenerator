@@ -172,13 +172,13 @@
     margin: 0.1rem 0.5rem 0.5rem 0.5rem;
 }
 
-.about-page {
-    height: 10rem;
+.explore-page {
+    height: 90%;
 }
 
-.about-page-item-header-button {
+.explore-page-item-header-button {
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(150,4,4,1) 50%, rgba(0,0,0,1) 100%);
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: azure;
     position: relative;
     display: flex;
@@ -188,15 +188,15 @@
     justify-content: center;
 }
 
-    .about-page-item-header-button:hover {
+    .explore-page-item-header-button:hover {
         cursor: pointer;
     }
 
-.about-page-item-header-button-display-name {
+.explore-page-item-header-button-display-name {
     display: flex;
 }
 
-.about-page-item-list {
+.explore-page-item-list {
     display: flex;
     flex-flow: column;
     position: relative;
@@ -208,7 +208,7 @@
     align-items: baseline;
 }
 
-.about-page-item-list-item {
+.explore-page-item-list-item {
     border-radius: 0.5rem;
     box-shadow: 2px 2px 5px rgba(228,4,4,1);
     border-radius: 0.5rem;

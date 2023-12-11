@@ -1,10 +1,10 @@
-﻿<div class="about-page-item-header-button" @onclick="ToggleVisibility">@IngredientsGroupVM.DisplayName</div>
+﻿<div class="explore-page-item-header-button" @onclick="ToggleVisibility">@IngredientsGroupVM.DisplayName</div>
 
-<div class="about-page-item-header-button-display-name" style="display: @(IngredientsGroupVM.IsExpanded ? "block" : "none")">
-    <div class="about-page-item-list">
+<div class="explore-page-item-header-button-display-name" style="display: @(IngredientsGroupVM.IsExpanded ? "block" : "none")">
+    <div class="explore-page-item-list">
         @foreach (var ingredient in IngredientsGroupVM.Ingredients)
         {
-            <div class="about-page-item-list-item">
+            <div class="explore-page-item-list-item">
                 <a href="@ingredient.Link">@ingredient.Name</a>
             </div> 
         }
