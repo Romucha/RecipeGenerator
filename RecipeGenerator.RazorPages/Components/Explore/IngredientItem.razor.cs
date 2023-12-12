@@ -28,7 +28,7 @@ namespace RecipeGenerator.RazorPages.Components.Explore
                 }
                 if (!string.IsNullOrEmpty(Ingredient.Description))
                 {
-                    desc = Ingredient.Description;
+                    desc = $"{Ingredient.Description.Substring(0,50)}...";
                 }
             }
             await base.OnInitializedAsync();

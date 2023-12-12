@@ -213,22 +213,26 @@
     box-shadow: 2px 2px 5px rgba(228,4,4,1);
     border-radius: 0.5rem;
     border: 0.1rem solid rgba(228,4,4,0.5);
-    margin: 0.1rem 0rem 0.1rem 0rem;
+    margin: 0.5rem 0.25rem 0.5rem 0.25rem;
     padding: 0.1rem;
     flex-direction: row;
     display: flex;
 }
 
 .explore-page-item-list-item-image {
-
+    height: 4rem;
+    width: 4rem;
 }
 
 .explore-page-item-list-item-column {
-
+    display: flex;
+    flex-direction: column;
+    margin: 0.25rem;
 }
 
 .explore-page-item-list-item-header {
-
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .explore-page-item-list-item-description {
