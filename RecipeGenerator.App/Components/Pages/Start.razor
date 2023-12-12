@@ -1,6 +1,16 @@
 ﻿@page "/start"
-<h3>Start</h3>
-
-@code {
-
-}
+<div>
+    <form>
+        <div>
+            <div>Title:</div>
+            <InputText @bind-Value="@text"/>
+        </div>
+        <div>
+            <div>Steps:</div>
+            <div></div>
+        </div>
+        <div>
+            <button title="Add step">Add step</button>
+        </div>
+    </form>
+</div>
