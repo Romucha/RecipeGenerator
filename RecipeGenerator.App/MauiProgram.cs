@@ -3,6 +3,7 @@ using RecipeGenerator.API;
 using RecipeGenerator.App.ViewModels;
 using RecipeGenerator.RazorPages.ViewModels.About;
 using RecipeGenerator.RazorPages.ViewModels.Explore;
+using RecipeGenerator.RazorPages.ViewModels.Start;
 
 namespace RecipeGenerator.App
 {
@@ -28,6 +29,7 @@ namespace RecipeGenerator.App
    builder.Services.AddTransient<MainVM>();
    builder.Services.AddTransient<AboutVM>();
    builder.Services.AddTransient<ExploreVM>();
+   builder.Services.AddTransient<StartVM>();
 
    return builder.Build();
   }

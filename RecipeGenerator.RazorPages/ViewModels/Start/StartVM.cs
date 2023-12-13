@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using RecipeGenerator.API.Database;
 using RecipeGenerator.API.Models;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,8 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
 {
     public class StartVM : ObservableObject
     {
+        private readonly IRecipeRepository recipeRepository;
+
         private Recipe recipe;
 
         public Recipe Recipe
@@ -19,9 +22,11 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
             set => SetProperty(ref recipe, value);
         }
 
-        public StartVM()
+        public StartVM(IRecipeRepository recipeRepository)
         {
+            this.recipeRepository = recipeRepository;
             ResetRecipeCommand = new RelayCommand(resetRecipe);
+            AddRecipeCommand = new AsyncRelayCommand(addRecipe);
         }
 
         private void resetRecipe()
@@ -30,5 +35,12 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
         }
 
         public IRelayCommand ResetRecipeCommand { get; private set; }
+
+        private async Task addRecipe()
+        {
+            await recipeRepository.Add(recipe);
+        }
+
+        public IAsyncRelayCommand AddRecipeCommand { get; private set; }
     }
 }
