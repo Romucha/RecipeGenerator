@@ -21,6 +21,7 @@ namespace RecipeGenerator.API
             }
             services.AddSqlite<RecipeDbContext>($"Data Source={dbPath}\\Recipe.db");
             services.AddTransient<IIngredientRepository, IngredientRepository>();
+            services.AddTransient<IRecipeRepository, RecipeRepository>();
 
             return services;
         }
