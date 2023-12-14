@@ -23,11 +23,20 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
             set => SetProperty(ref recipe, value);
         }
 
+        private IEnumerable<CourseListItem> courseList;
+
+        public IEnumerable<CourseListItem> CourseList
+        {
+            get => courseList;
+            set => SetProperty(ref courseList, value);
+        }
+
         public StartVM(IRecipeRepository recipeRepository, IRecipeFactory recipeFactory)
         {
             this.recipeRepository = recipeRepository;
             ResetRecipeCommand = new AsyncRelayCommand(resetRecipe);
             AddRecipeCommand = new AsyncRelayCommand(addRecipe);
+            SetCourseListCommand = new RelayCommand(setCourseList);
             this.recipeFactory = recipeFactory;
         }
 
@@ -45,5 +54,12 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
         }
 
         public IAsyncRelayCommand AddRecipeCommand { get; private set; }
+
+        private void setCourseList()
+        {
+            CourseList = Enum.GetValues<Course>().Select(CourseListItem.FromCourse);
+        }
+
+        public IRelayCommand SetCourseListCommand { get; private set; }
     }
 }

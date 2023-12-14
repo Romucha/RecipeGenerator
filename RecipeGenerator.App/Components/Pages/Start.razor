@@ -7,9 +7,9 @@
         <div>Title:</div>
         <InputText @bind-Value="@startVM.Recipe.Name"/>
         <InputSelect @bind-Value="@startVM.Recipe.CourseType" class="form-control">
-            @foreach (var course in Enum.GetValues(typeof(Course)))
+            @foreach (var course in startVM.CourseList)
             {
-                <option value="@course">@course.ToString()</option>
+                <option value="@course.Value" title="@course.Description">@course.DisplayName</option>
             }
         </InputSelect>
         <input type="submit" class="btn btn-primary" value="Add" />
