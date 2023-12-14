@@ -13,6 +13,7 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
     public class StartVM : ObservableObject
     {
         private readonly IRecipeRepository recipeRepository;
+        private readonly IRecipeFactory recipeFactory;
 
         private Recipe recipe;
 
@@ -22,19 +23,21 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
             set => SetProperty(ref recipe, value);
         }
 
-        public StartVM(IRecipeRepository recipeRepository)
+        public StartVM(IRecipeRepository recipeRepository, IRecipeFactory recipeFactory)
         {
             this.recipeRepository = recipeRepository;
-            ResetRecipeCommand = new RelayCommand(resetRecipe);
+            ResetRecipeCommand = new AsyncRelayCommand(resetRecipe);
             AddRecipeCommand = new AsyncRelayCommand(addRecipe);
+            this.recipeFactory = recipeFactory;
         }
 
-        private void resetRecipe()
+        private async Task resetRecipe()
         {
-            Recipe = new Recipe();
+            Recipe = await recipeFactory.DefaultRecipe();
         }
 
-        public IRelayCommand ResetRecipeCommand { get; private set; }
+        public IAsyncRelayCommand ResetRecipeCommand { get; private set; }
+
 
         private async Task addRecipe()
         {

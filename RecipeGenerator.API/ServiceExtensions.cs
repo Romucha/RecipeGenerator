@@ -3,6 +3,7 @@ using RecipeGenerator.API.Database;
 using RecipeGenerator.API.Database.Ingredients;
 using RecipeGenerator.API.Database.Recipes;
 using RecipeGenerator.API.Models.Ingeridients;
+using RecipeGenerator.API.Models.Recipes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,7 @@ namespace RecipeGenerator.API
         {
             services.AddTransient<IIngredientFactory, IngredientFactory>();
             services.AddTransient<IIngredientGetter, IngredientGetter>();
+            services.AddTransient<IRecipeFactory, RecipeFactory>();
             string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "RecipeGenerator");
             if (!Directory.Exists(dbPath)) {
                 Directory.CreateDirectory(dbPath);
