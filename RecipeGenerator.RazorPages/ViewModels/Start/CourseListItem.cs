@@ -14,5 +14,14 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
         public string Description { get; set; }
 
         public Course Value { get; set; }
+
+        public static CourseListItem FromCourse(Course course)
+        {
+            var courseItem = new CourseListItem();
+
+
+
+            return courseItem;
+        }
     }
 }

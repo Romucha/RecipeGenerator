@@ -11,26 +11,35 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Properties\Recipes\CourseTypes.Designer.cs">
+    <Compile Update="Properties\Recipes\CourseNames.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>CourseTypes.resx</DependentUpon>
+      <DependentUpon>CourseNames.resx</DependentUpon>
     </Compile>
     <Compile Update="Properties\Ingredients\IngredientNames.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>IngredientNames.resx</DependentUpon>
     </Compile>
+    <Compile Update="Properties\Recipes\CourseDescriptions.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CourseDescriptions.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Properties\Recipes\CourseTypes.resx">
+    <EmbeddedResource Update="Properties\Recipes\CourseNames.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>CourseTypes.Designer.cs</LastGenOutput>
+      <LastGenOutput>CourseNames.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Properties\Ingredients\IngredientNames.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>IngredientNames.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Recipes\CourseDescriptions.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CourseDescriptions.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 
