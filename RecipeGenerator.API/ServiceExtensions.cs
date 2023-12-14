@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using RecipeGenerator.API.Database;
+using RecipeGenerator.API.Database.Ingredients;
+using RecipeGenerator.API.Database.Recipes;
 using RecipeGenerator.API.Models.Ingeridients;
 using System;
 using System.Collections.Generic;

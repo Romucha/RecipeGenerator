@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using RecipeGenerator.API.Models.Steps;
 
-namespace RecipeGenerator.API.Models
+namespace RecipeGenerator.API.Models.Recipes
 {
     /// <summary>
     /// Contains basic information about recipe

@@ -9,7 +9,7 @@ using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.API.Database
+namespace RecipeGenerator.API.Database.Ingredients
 {
     public class IngredientGetter : IIngredientGetter
     {
@@ -22,7 +22,7 @@ namespace RecipeGenerator.API.Database
         }
 
         private readonly IIngredientFactory ingredientFactory;
-        public IngredientGetter(IIngredientFactory ingredientFactory) 
+        public IngredientGetter(IIngredientFactory ingredientFactory)
         {
             this.ingredientFactory = ingredientFactory;
         }
@@ -42,7 +42,7 @@ namespace RecipeGenerator.API.Database
             var resources = resourceSet.Cast<DictionaryEntry>()
                                        .Select(parseResourceDictionaryEntry)
                                        .GroupBy(c => c.keyName);
-            foreach (var resource in resources) 
+            foreach (var resource in resources)
             {
                 IngredientType type = resource.FirstOrDefault().type;
                 var nameres = resource.FirstOrDefault(c => c.propertyName == "Name");
@@ -55,7 +55,7 @@ namespace RecipeGenerator.API.Database
                     Uri.TryCreate(urires.propertyValue?.ToString(), UriKind.Absolute, out uri);
                 else
                     //rick roll for now
-                    Uri.TryCreate("https://www.youtube.com/watch?v=dQw4w9WgXcQ", UriKind.Absolute, out uri);                    
+                    Uri.TryCreate("https://www.youtube.com/watch?v=dQw4w9WgXcQ", UriKind.Absolute, out uri);
                 var imageres = resource.FirstOrDefault(c => c.propertyName == "Image");
                 byte[] image = imageres == null ? null : descres.propertyValue as byte[];
 

@@ -1,5 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using RecipeGenerator.API.Models;
+using RecipeGenerator.API.Models.Recipes;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;

@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using RecipeGenerator.API.Database;
+using RecipeGenerator.API.Database.Ingredients;
 using RecipeGenerator.API.Models.Ingeridients;
 using System;
 using System.Collections.Generic;

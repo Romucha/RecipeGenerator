@@ -1,12 +1,12 @@
-﻿using RecipeGenerator.API.Models;
-using RecipeGenerator.API.Models.Ingeridients;
+﻿using RecipeGenerator.API.Models.Ingeridients;
+using RecipeGenerator.API.Models.Recipes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.API.Database
+namespace RecipeGenerator.API.Database.Recipes
 {
     public interface IRecipeRepository
     {

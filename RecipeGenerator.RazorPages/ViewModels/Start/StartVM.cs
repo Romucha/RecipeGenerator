@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using RecipeGenerator.API.Database;
-using RecipeGenerator.API.Models;
+using RecipeGenerator.API.Database.Recipes;
+using RecipeGenerator.API.Models.Recipes;
 using System;
 using System.Collections.Generic;
 using System.Linq;

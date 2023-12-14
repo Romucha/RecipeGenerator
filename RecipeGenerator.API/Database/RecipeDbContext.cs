@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using RecipeGenerator.API.Models;
+using RecipeGenerator.API.Database.Ingredients;
 using RecipeGenerator.API.Models.Ingeridients;
+using RecipeGenerator.API.Models.Recipes;
 using System;
 using System.Collections.Generic;
 using System.Linq;

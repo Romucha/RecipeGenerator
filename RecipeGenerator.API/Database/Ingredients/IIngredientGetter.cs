@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RecipeGenerator.API.Models.Ingeridients;
 
-namespace RecipeGenerator.API.Database
+namespace RecipeGenerator.API.Database.Ingredients
 {
     public interface IIngredientGetter
     {
