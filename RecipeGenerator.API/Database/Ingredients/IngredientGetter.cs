@@ -1,5 +1,6 @@
 ﻿using RecipeGenerator.API.Models.Ingeridients;
 using RecipeGenerator.API.Properties;
+using RecipeGenerator.API.Properties.Ingredients;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -29,7 +30,7 @@ namespace RecipeGenerator.API.Database.Ingredients
 
         public IEnumerable<IIngredient> Get()
         {
-            ResourceManager resourceManager = new ResourceManager(typeof(Resources));
+            ResourceManager resourceManager = new ResourceManager(typeof(IngredientNames));
 
             ResourceSet resourceSet = resourceManager.GetResourceSet(CultureInfo.CurrentUICulture, true, true);
             /*

@@ -1,9 +1,17 @@
 ﻿@page "/start"
+@using RecipeGenerator.API.Models.Recipes
+
 <div>
     <EditForm Model="@startVM.Recipe" OnSubmit="@RecipeSubmitted">
         <DataAnnotationsValidator/>
         <div>Title:</div>
         <InputText @bind-Value="@startVM.Recipe.Name"/>
+        <InputSelect @bind-Value="@startVM.Recipe.CourseType" class="form-control">
+            @foreach (var course in Enum.GetValues(typeof(Course)))
+            {
+                <option value="@course">@course.ToString()</option>
+            }
+        </InputSelect>
         <input type="submit" class="btn btn-primary" value="Add" />
     </EditForm>
 </div>

@@ -1,4 +1,5 @@
 ﻿using RecipeGenerator.API.Properties;
+using RecipeGenerator.API.Properties.Ingredients;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,13 +11,13 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.Models.Ingeridients
 {
-    public static class IngredienTypeDisplayNameExtension
+    public static class IngredientTypeDisplayNameExtension
     {
         public static string ToDisplayName(this IngredientType ingredientType)
         {
             try
             {
-                ResourceManager resourceManager = new ResourceManager(typeof(Properties.Resources));
+                ResourceManager resourceManager = new ResourceManager(typeof(IngredientNames));
 
                 ResourceSet resourceSet = resourceManager.GetResourceSet(CultureInfo.CurrentUICulture, true, true);
                 return resourceSet.Cast<DictionaryEntry>()
