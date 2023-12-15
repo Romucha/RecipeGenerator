@@ -9,31 +9,33 @@ using RecipeGenerator.RazorPages.ViewModels.Start;
 namespace RecipeGenerator.App
 {
     public static class MauiProgram
- {
-  public static MauiApp CreateMauiApp()
-  {
-   var builder = MauiApp.CreateBuilder();
-   builder
-    .UseMauiApp<App>()
-    .ConfigureFonts(fonts =>
     {
-     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-    });
+        public static MauiApp CreateMauiApp()
+        {
+            var builder = MauiApp.CreateBuilder();
+            builder
+             .UseMauiApp<App>()
+             .ConfigureFonts(fonts =>
+             {
+                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+             });
+            
+            builder.Services.AddQuickGridEntityFrameworkAdapter();
 
-   builder.Services.AddMauiBlazorWebView();
+            builder.Services.AddMauiBlazorWebView();
 
 #if DEBUG
- 		builder.Services.AddBlazorWebViewDeveloperTools();
- 		builder.Logging.AddDebug();
+            builder.Services.AddBlazorWebViewDeveloperTools();
+            builder.Logging.AddDebug();
 #endif
-   builder.Services.AddDatabase();
-   builder.Services.AddTransient<MainVM>();
-   builder.Services.AddTransient<AboutVM>();
-   builder.Services.AddTransient<ExploreVM>();
-   builder.Services.AddTransient<StartVM>();
-   builder.Services.AddTransient<HomeVM>();
+            builder.Services.AddDatabase();
+            builder.Services.AddTransient<MainVM>();
+            builder.Services.AddTransient<AboutVM>();
+            builder.Services.AddTransient<ExploreVM>();
+            builder.Services.AddTransient<StartVM>();
+            builder.Services.AddTransient<HomeVM>();
 
-   return builder.Build();
-  }
- }
+            return builder.Build();
+        }
+    }
 }

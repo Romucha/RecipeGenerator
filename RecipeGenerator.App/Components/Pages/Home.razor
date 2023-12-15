@@ -7,12 +7,14 @@
         <NavButton NavPath="explore" OiIcon="oi-script" OiTitle="Explore" OiDescription="Explore" />
     </div>
     <div class="home-page-list-history">
-        @if (mainVM.Recipes != null && mainVM.Recipes.Count > 0)
-        {
-            foreach (var recipe in mainVM.Recipes)
-            {
-                <div>Recipe placeholder</div>
-            }
+        @if (homeVM.Recipes?.Count() > 0)
+        {            
+            <QuickGrid Items="@homeVM.Recipes">
+                <PropertyColumn Property="@(p => p.Name)" Sortable="true" />
+                <PropertyColumn Property="@(p => p.CourseType)" Sortable="true" />
+                <PropertyColumn Property="@(p => p.CreatedAt)" Format="yyyy-MM-dd" Sortable="true" />
+                <PropertyColumn Property="@(p => p.UpdatedAt)" Format="yyyy-MM-dd" Sortable="true" />
+            </QuickGrid>
         }
         else
         {
