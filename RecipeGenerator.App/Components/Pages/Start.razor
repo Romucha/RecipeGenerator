@@ -5,15 +5,31 @@
     <EditForm Model="@startVM.Recipe" OnSubmit="@RecipeSubmitted" onreset="">
         <DataAnnotationsValidator/>
         <div>Title:</div>
-        <InputText @bind-Value="@startVM.Recipe.Name"/>
+        <InputText DisplayName="Title" @bind-Value="@startVM.Recipe.Name"/>
         <InputSelect @bind-Value="@startVM.Recipe.CourseType" class="form-control">
             @foreach (var course in startVM.CourseList)
             {
                 <option value="@course.Value" title="@course.Description">@course.DisplayName</option>
             }
         </InputSelect>
-        <button type="button">Add step</button>
-        <input type="submit" class="btn btn-primary" value="Save" />
-        <button type="reset" class="btn btn-close" value="Cancel" onclick="@startVM.ResetRecipeCommand" />
+        <div style="display: flex; flex-direction: column">
+            <div style="display: flex; flex-direction: column">
+                <button type="button" class="btn btn-primary" onclick="@(() => {startVM.AddStepCommand.Execute(null); this.StateHasChanged(); })" value="Add step"/>
+                @if (startVM.Recipe.Steps?.Count > 0)
+                {
+                    foreach (var step in startVM.Recipe.Steps)
+                    {
+                        <div style="display: flex; flex-direction: column">
+                            <InputText @bind-Value="@step.Name"/>
+                            <InputTextArea @bind-Value="@step.Description" />
+                        </div>
+                    }
+                }
+            </div>
+            <div style="display: flex; flex-direction: row">
+                <input type="submit" class="btn btn-primary" value="Save" />
+                <button type="reset" class="btn btn-primary" value="Cancel" onclick="@startVM.ResetRecipeCommand" />
+            </div>
+        </div>
     </EditForm>
 </div>
