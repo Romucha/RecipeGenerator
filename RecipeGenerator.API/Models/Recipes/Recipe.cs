@@ -16,7 +16,7 @@ namespace RecipeGenerator.API.Models.Recipes
 
         public Course CourseType { get; set; }
 
-        public IEnumerable<Step> Steps { get; set; }
+        public List<Step> Steps { get; set; }
 
         public DateTime CreatedAt { get; set; }
 

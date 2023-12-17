@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using RecipeGenerator.API.Database.Recipes;
 using RecipeGenerator.API.Models.Recipes;
+using RecipeGenerator.API.Models.Steps;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,7 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
     {
         private readonly IRecipeRepository recipeRepository;
         private readonly IRecipeFactory recipeFactory;
+        private readonly IStepFactory stepFactory;
 
         private Recipe recipe;
 
@@ -31,13 +33,15 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
             set => SetProperty(ref courseList, value);
         }
 
-        public StartVM(IRecipeRepository recipeRepository, IRecipeFactory recipeFactory)
+        public StartVM(IRecipeRepository recipeRepository, IRecipeFactory recipeFactory, IStepFactory stepFactory)
         {
-            this.recipeRepository = recipeRepository;
+            this.recipeRepository = recipeRepository; ;
+            this.recipeFactory = recipeFactory;
+            this.stepFactory = stepFactory;
             ResetRecipeCommand = new AsyncRelayCommand(resetRecipe);
             AddRecipeCommand = new AsyncRelayCommand(addRecipe);
             SetCourseListCommand = new RelayCommand(setCourseList);
-            this.recipeFactory = recipeFactory;
+            AddStepCommand = new RelayCommand(addStep);
         }
 
         private async Task resetRecipe()
@@ -61,5 +65,12 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
         }
 
         public IRelayCommand SetCourseListCommand { get; private set; }
+
+        private void addStep()
+        {
+            Recipe.Steps?.Add(stepFactory.DefaultStep());
+        }
+
+        public IRelayCommand AddStepCommand { get; private set; }
     }
 }
