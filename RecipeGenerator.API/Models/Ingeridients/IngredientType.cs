@@ -18,6 +18,6 @@ namespace RecipeGenerator.API.Models.Ingeridients
         Seafood,
         SpicesAndHerbs,
         SugarAndSugarProducts,
-        Vegetables,
+        Vegetables
     }
 }

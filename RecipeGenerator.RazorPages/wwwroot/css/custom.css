@@ -242,3 +242,13 @@
 .explore-page-item-list-item-link {
 
 }
+
+.start-page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem;
+}

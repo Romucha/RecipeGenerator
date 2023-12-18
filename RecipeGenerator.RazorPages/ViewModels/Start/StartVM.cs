@@ -41,6 +41,16 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
             set => SetProperty(ref courseList, value);
         }
 
+        private IEnumerable<IngredientTypeListItem> ingredientTypeList;
+        /// <summary>
+        /// List of possible types of an ingredient
+        /// </summary>
+        public IEnumerable<IngredientTypeListItem> IngredientTypeList
+        {
+            get => ingredientTypeList;
+            set => SetProperty(ref ingredientTypeList, value);
+        }
+
         private IEnumerable<Ingredient> allIngredientList;
         /// <summary>
         /// List of all ingredients
@@ -71,6 +81,16 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
             set => SetProperty(ref ingredientList, value);
         }
 
+        private Ingredient ingredientToAdd;
+        /// <summary>
+        /// Ingredient to add to list of ingredients
+        /// </summary>
+        public Ingredient IngredientToAdd
+        {
+            get => ingredientToAdd;
+            set => SetProperty(ref ingredientToAdd, value);
+        }
+
         public StartVM(IRecipeRepository recipeRepository, IIngredientRepository ingredientRepository, IRecipeFactory recipeFactory, IStepFactory stepFactory)
         {
             this.recipeRepository = recipeRepository;
@@ -86,7 +106,7 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
             AddStepCommand = new RelayCommand(addStep);
             DeleteStepCommand = new RelayCommand<Step>(deleteStep);
 
-            AddIngredientCommand = new RelayCommand<Ingredient>(addIngredient);
+            AddIngredientCommand = new RelayCommand(addIngredient);
             DeleteIngredientCommand = new RelayCommand<Ingredient>(deleteIngredient);
         }
         #region Preparations
@@ -148,14 +168,19 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
         #endregion
 
         #region Ingredients
-        private void addIngredient(Ingredient ingredient)
+        private void addIngredient()
         {
-            IngredientList.Add(ingredient);
+            if (IngredientToAdd != null)
+            {
+                IngredientList.Add(IngredientToAdd);
+            }
+            //reset after adding
+            IngredientToAdd = null;
         }
         /// <summary>
         /// Adds a new ingredient to recipe
         /// </summary>
-        public IRelayCommand<Ingredient> AddIngredientCommand { get; private set; }
+        public IRelayCommand AddIngredientCommand { get; private set; }
 
         private void deleteIngredient(Ingredient ingredient)
         {
