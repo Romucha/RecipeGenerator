@@ -40,11 +40,11 @@
 
   <ItemGroup>
     <EmbeddedResource Update="Properties\Ingredients\IngredientTypeDescriptions.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>IngredientTypeDescriptions.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Properties\Ingredients\IngredientTypeNames.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>IngredientTypeNames.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Properties\Recipes\CourseNames.resx">

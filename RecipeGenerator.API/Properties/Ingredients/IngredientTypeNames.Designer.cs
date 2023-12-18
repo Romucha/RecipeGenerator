@@ -22,7 +22,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class IngredientTypeNames {
+    public class IngredientTypeNames {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         ///   Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RecipeGenerator.API.Properties.Ingredients.IngredientTypeNames", typeof(IngredientTypeNames).Assembly);
@@ -51,7 +51,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         ///   обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Ищет локализованную строку, похожую на Cereals and Pulses.
         /// </summary>
-        internal static string CerealsAndPulses {
+        public static string CerealsAndPulses {
             get {
                 return ResourceManager.GetString("CerealsAndPulses", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Ищет локализованную строку, похожую на Dairy Products.
         /// </summary>
-        internal static string DairyProducts {
+        public static string DairyProducts {
             get {
                 return ResourceManager.GetString("DairyProducts", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Ищет локализованную строку, похожую на Fruits.
         /// </summary>
-        internal static string Fruits {
+        public static string Fruits {
             get {
                 return ResourceManager.GetString("Fruits", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Ищет локализованную строку, похожую на Meat.
         /// </summary>
-        internal static string Meat {
+        public static string Meat {
             get {
                 return ResourceManager.GetString("Meat", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Ищет локализованную строку, похожую на Nuts and Oilseeds.
         /// </summary>
-        internal static string NutsAndOilseeds {
+        public static string NutsAndOilseeds {
             get {
                 return ResourceManager.GetString("NutsAndOilseeds", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Ищет локализованную строку, похожую на Other Ingredients.
         /// </summary>
-        internal static string OtherIngredient {
+        public static string OtherIngredient {
             get {
                 return ResourceManager.GetString("OtherIngredient", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Ищет локализованную строку, похожую на Seafood.
         /// </summary>
-        internal static string Seafood {
+        public static string Seafood {
             get {
                 return ResourceManager.GetString("Seafood", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Ищет локализованную строку, похожую на Spices and Herbs.
         /// </summary>
-        internal static string SpicesAndHerbs {
+        public static string SpicesAndHerbs {
             get {
                 return ResourceManager.GetString("SpicesAndHerbs", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Ищет локализованную строку, похожую на Sugar and Sugar Products.
         /// </summary>
-        internal static string SugarAndSugarProducts {
+        public static string SugarAndSugarProducts {
             get {
                 return ResourceManager.GetString("SugarAndSugarProducts", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Ищет локализованную строку, похожую на Vegetables.
         /// </summary>
-        internal static string Vegetables {
+        public static string Vegetables {
             get {
                 return ResourceManager.GetString("Vegetables", resourceCulture);
             }
