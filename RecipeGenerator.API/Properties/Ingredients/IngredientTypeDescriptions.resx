@@ -140,7 +140,7 @@ In common language usage, fruit normally means the seed-associated fleshy struct
   <data name="NutsAndOilseeds" xml:space="preserve">
     <value>With "nuts" we mean all shelled fruits (such as walnuts, hazelnuts, almonds, etc.). Examples of oil seeds are pumpkin seeds, sesame, sunflower, flax, which have nutritional characteristics to similar nuts, so the two types of food are brought together in the same group.</value>
   </data>
-  <data name="OtherIngredient" xml:space="preserve">
+  <data name="OtherIngredients" xml:space="preserve">
     <value>Other ingredients.</value>
   </data>
   <data name="Seafood" xml:space="preserve">

@@ -21,12 +21,12 @@
         </div>
         <div>
             <label for="Ingredients">Ingredients</label>
-            @* <InputSelect >
-                @foreach (var ingredient in startVM.AllIngredientList)
+            <InputSelect @bind-Value="@startVM.SelectedIngredientType">
+                @foreach (var ingredient in startVM.IngredientTypeList)
                 {
-                    
+                    <option value="@ingredient.Value" title="@ingredient.Description">@ingredient.DisplayName</option>
                 }
-            </InputSelect> *@
+            </InputSelect>
         </div>
         <div>
             <label for="Steps">Steps</label>

@@ -112,9 +112,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Ищет локализованную строку, похожую на Other ingredients..
         /// </summary>
-        public static string OtherIngredient {
+        public static string OtherIngredients {
             get {
-                return ResourceManager.GetString("OtherIngredient", resourceCulture);
+                return ResourceManager.GetString("OtherIngredients", resourceCulture);
             }
         }
         

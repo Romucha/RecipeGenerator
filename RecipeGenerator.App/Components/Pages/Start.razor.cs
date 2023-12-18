@@ -19,8 +19,12 @@ namespace RecipeGenerator.App.Components.Pages
         protected override async Task OnInitializedAsync()
         {
             startVM.PropertyChanged += StartVM_PropertyChanged;
+
             startVM.ResetRecipeCommand.Execute(null);
             startVM.GetCourseListCommand.Execute(null);
+            startVM.GetIngredientTypesListCommand.Execute(null);
+            startVM.GetAllIngredientListCommand.Execute(null);
+
             await base.OnInitializedAsync();
         }
 
