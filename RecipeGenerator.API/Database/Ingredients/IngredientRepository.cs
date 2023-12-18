@@ -15,32 +15,32 @@ namespace RecipeGenerator.API.Database.Ingredients
             this.dbContext = dbContext;
         }
 
-        public async Task Add(IIngredient ingredient)
+        public async Task Add(Ingredient ingredient)
         {
             throw new NotImplementedException();
         }
 
-        public async Task Delete(IIngredient ingredient)
+        public async Task Delete(Ingredient ingredient)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<IEnumerable<IIngredient>> GetAll()
+        public async Task<IEnumerable<Ingredient>> GetAll()
         {
             return await Task.FromResult(dbContext.Ingredients);
         }
 
-        public async Task<IIngredient> GetByName(string name)
+        public async Task<Ingredient> GetByName(string name)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<IEnumerable<IIngredient>> GetByType(IngredientType type)
+        public async Task<IEnumerable<Ingredient>> GetByType(IngredientType type)
         {
             return await Task.FromResult(dbContext.Ingredients.Where(c => c.IngredientType == type));
         }
 
-        public async Task Update(IIngredient ingredient)
+        public async Task Update(Ingredient ingredient)
         {
             throw new NotImplementedException();
         }

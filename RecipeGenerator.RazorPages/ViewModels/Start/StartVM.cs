@@ -36,9 +36,9 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
             set => SetProperty(ref courseList, value);
         }
 
-        private IEnumerable<IIngredient> ingredientList;
+        private IEnumerable<Ingredient> ingredientList;
 
-        public IEnumerable<IIngredient> IngredientList
+        public IEnumerable<Ingredient> IngredientList
         {
             get => ingredientList;
             set => SetProperty(ref ingredientList, value);
@@ -59,8 +59,8 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
             DeleteStepCommand = new RelayCommand<Step>(deleteStep);
 
             GetIngredientListCommand = new AsyncRelayCommand(getIngedientList);
-            AddIngredientCommand = new RelayCommand<IIngredient>(addIngredient);
-            DeleteIngredientCommand = new RelayCommand<IIngredient>(deleteIngredient);
+            AddIngredientCommand = new RelayCommand<Ingredient>(addIngredient);
+            DeleteIngredientCommand = new RelayCommand<Ingredient>(deleteIngredient);
         }
         #region Preparations
         private void setCourseList()
@@ -117,23 +117,23 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
         }
         public IAsyncRelayCommand GetIngredientListCommand { get; private set; }
 
-        private void addIngredient(IIngredient ingredient)
+        private void addIngredient(Ingredient ingredient)
         {
             Recipe.Ingredients?.Add(ingredient);
         }
         /// <summary>
         /// Adds a new ingredient to recipe
         /// </summary>
-        public IRelayCommand<IIngredient> AddIngredientCommand { get; private set; }
+        public IRelayCommand<Ingredient> AddIngredientCommand { get; private set; }
 
-        private void deleteIngredient(IIngredient ingredient)
+        private void deleteIngredient(Ingredient ingredient)
         {
             Recipe.Ingredients?.Remove(ingredient);
         }
         /// <summary>
         /// Deletes ingredient from recipe
         /// </summary>
-        public IRelayCommand<IIngredient> DeleteIngredientCommand { get; private set; }
+        public IRelayCommand<Ingredient> DeleteIngredientCommand { get; private set; }
         #endregion
     }
 }

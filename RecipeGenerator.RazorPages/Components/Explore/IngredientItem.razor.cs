@@ -12,7 +12,7 @@ namespace RecipeGenerator.RazorPages.Components.Explore
     public partial class IngredientItem
     {
         [Parameter]
-        public IIngredient Ingredient { get; set; }
+        public Ingredient Ingredient { get; set; }
 
         private string imageURL { get; set; } = "/images/apple.png";
 

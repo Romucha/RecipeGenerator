@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.Models.Ingeridients
 {
-    public class Ingredient : IIngredient
+    public class Ingredient
     {
         [Key]
         public Guid Id { get; set; }

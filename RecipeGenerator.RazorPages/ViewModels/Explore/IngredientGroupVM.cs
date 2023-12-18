@@ -11,8 +11,8 @@ namespace RecipeGenerator.RazorPages.ViewModels.Explore
 {
     public class IngredientGroupVM : ObservableObject
     {
-        private ObservableCollection<IIngredient> ingredients;
-        public ObservableCollection<IIngredient> Ingredients
+        private ObservableCollection<Ingredient> ingredients;
+        public ObservableCollection<Ingredient> Ingredients
         {
             get => ingredients;
             set => SetProperty(ref ingredients, value);
@@ -39,9 +39,9 @@ namespace RecipeGenerator.RazorPages.ViewModels.Explore
             set => SetProperty(ref isExpanded, value);
         }
 
-        public IngredientGroupVM(IEnumerable<IIngredient> ingredients, IngredientType ingredientType)
+        public IngredientGroupVM(IEnumerable<Ingredient> ingredients, IngredientType ingredientType)
         {
-            Ingredients = new ObservableCollection<IIngredient>(ingredients);
+            Ingredients = new ObservableCollection<Ingredient>(ingredients);
             IngredientType = ingredientType;
             DisplayName = ingredientType.ToDisplayName();
             IsExpanded = false;

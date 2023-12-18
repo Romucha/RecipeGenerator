@@ -8,6 +8,6 @@ namespace RecipeGenerator.API.Models.Ingeridients
 {
     public interface IIngredientFactory
     {
-        IIngredient Create(string name, string description, Uri link, byte[] image, IngredientType ingredientType);
+        Ingredient Create(string name, string description, Uri link, byte[] image, IngredientType ingredientType);
     }
 }

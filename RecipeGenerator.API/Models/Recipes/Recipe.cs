@@ -19,7 +19,7 @@ namespace RecipeGenerator.API.Models.Recipes
 
         public List<Step> Steps { get; set; }
 
-        public List<IIngredient> Ingredients { get; set; }
+        public List<Ingredient> Ingredients { get; set; }
 
         public DateTime CreatedAt { get; set; }
 

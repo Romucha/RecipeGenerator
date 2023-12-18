@@ -9,16 +9,16 @@ namespace RecipeGenerator.API.Database.Ingredients
 {
     public interface IIngredientRepository
     {
-        Task<IIngredient> GetByName(string name);
+        Task<Ingredient> GetByName(string name);
 
-        Task<IEnumerable<IIngredient>> GetAll();
+        Task<IEnumerable<Ingredient>> GetAll();
 
-        Task<IEnumerable<IIngredient>> GetByType(IngredientType type);
+        Task<IEnumerable<Ingredient>> GetByType(IngredientType type);
 
-        Task Add(IIngredient ingredient);
+        Task Add(Ingredient ingredient);
 
-        Task Update(IIngredient ingredient);
+        Task Update(Ingredient ingredient);
 
-        Task Delete(IIngredient ingredient);
+        Task Delete(Ingredient ingredient);
     }
 }

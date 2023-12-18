@@ -22,13 +22,13 @@ namespace RecipeGenerator.API.Database.Ingredients
             public object propertyValue { get; set; }
         }
 
-        private readonly IIngredientFactory ingredientFactory;
-        public IngredientGetter(IIngredientFactory ingredientFactory)
+        private readonly IngredientFactory ingredientFactory;
+        public IngredientGetter(IngredientFactory ingredientFactory)
         {
             this.ingredientFactory = ingredientFactory;
         }
 
-        public IEnumerable<IIngredient> Get()
+        public IEnumerable<Ingredient> Get()
         {
             ResourceManager resourceManager = new ResourceManager(typeof(IngredientNames));
 

@@ -8,7 +8,7 @@ namespace RecipeGenerator.API.Models.Ingeridients
 {
     public class IngredientFactory : IIngredientFactory
     {
-        public IIngredient Create(string name, string description, Uri link, byte[] image, IngredientType ingredientType)
+        public Ingredient Create(string name, string description, Uri link, byte[] image, IngredientType ingredientType)
         {
             return new Ingredient()
             { 

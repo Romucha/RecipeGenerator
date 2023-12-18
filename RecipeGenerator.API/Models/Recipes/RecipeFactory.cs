@@ -15,7 +15,7 @@ namespace RecipeGenerator.API.Models.Recipes
             return await Task.FromResult<Recipe>(new Recipe()
             {
                 Steps = new List<Step>(),
-                Ingredients = new List<IIngredient>(),
+                Ingredients = new List<Ingredient>(),
                 CreatedAt = DateTime.Now,
                 UpdatedAt = DateTime.Now,
                 Id = Guid.NewGuid(),

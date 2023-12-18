@@ -9,6 +9,6 @@ namespace RecipeGenerator.API.Database.Ingredients
 {
     public interface IIngredientGetter
     {
-        IEnumerable<IIngredient> Get();
+        IEnumerable<Ingredient> Get();
     }
 }
