@@ -7,6 +7,7 @@ using RecipeGenerator.API.Models.Recipes;
 using RecipeGenerator.API.Models.Steps;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,7 +22,9 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
         private readonly IStepFactory stepFactory;
 
         private Recipe recipe;
-
+        /// <summary>
+        /// A recipe to be added
+        /// </summary>
         public Recipe Recipe
         {
             get => recipe;
@@ -29,16 +32,40 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
         }
 
         private IEnumerable<CourseListItem> courseList;
-
+        /// <summary>
+        /// List of possible course types of a new recipe
+        /// </summary>
         public IEnumerable<CourseListItem> CourseList
         {
             get => courseList;
             set => SetProperty(ref courseList, value);
         }
 
-        private IEnumerable<Ingredient> ingredientList;
+        private IEnumerable<Ingredient> allIngredientList;
+        /// <summary>
+        /// List of all ingredients
+        /// </summary>
+        public IEnumerable<Ingredient> AllIngredientList
+        {
+            get => allIngredientList;
+            set => SetProperty(ref allIngredientList, value);
+        }
 
-        public IEnumerable<Ingredient> IngredientList
+        private ObservableCollection<Step> stepList;
+        /// <summary>
+        /// List of steps of a new recipe
+        /// </summary>
+        public ObservableCollection<Step> StepList
+        {
+            get => stepList;
+            set => SetProperty(ref stepList, value);
+        }
+
+        private ObservableCollection<Ingredient> ingredientList;
+        /// <summary>
+        /// List of ingredients of a new recipe
+        /// </summary>
+        public ObservableCollection<Ingredient> IngredientList
         {
             get => ingredientList;
             set => SetProperty(ref ingredientList, value);
@@ -50,53 +77,63 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
             this.ingredientRepository = ingredientRepository;
             this.recipeFactory = recipeFactory;
             this.stepFactory = stepFactory;
-            SetCourseListCommand = new RelayCommand(setCourseList);
+            GetCourseListCommand = new RelayCommand(getCourseList);
+            GetAllIngredientListCommand = new AsyncRelayCommand(getAllIngedientList);
 
             ResetRecipeCommand = new AsyncRelayCommand(resetRecipe);
-            AddRecipeCommand = new AsyncRelayCommand(addRecipe);
+            SaveRecipeCommand = new AsyncRelayCommand(saveRecipe);
 
             AddStepCommand = new RelayCommand(addStep);
             DeleteStepCommand = new RelayCommand<Step>(deleteStep);
 
-            GetIngredientListCommand = new AsyncRelayCommand(getIngedientList);
             AddIngredientCommand = new RelayCommand<Ingredient>(addIngredient);
             DeleteIngredientCommand = new RelayCommand<Ingredient>(deleteIngredient);
         }
         #region Preparations
-        private void setCourseList()
+        private void getCourseList()
         {
             CourseList = Enum.GetValues<Course>().Select(CourseListItem.FromCourse);
         }
         /// <summary>
         /// Sets up list of possible courses for the recipe
         /// </summary>
-        public IRelayCommand SetCourseListCommand { get; private set; }
+        public IRelayCommand GetCourseListCommand { get; private set; }
+
+        private async Task getAllIngedientList()
+        {
+            AllIngredientList = await ingredientRepository.GetAll();
+        }
+        public IAsyncRelayCommand GetAllIngredientListCommand { get; private set; }
         #endregion
 
         #region Recipes
         private async Task resetRecipe()
         {
             Recipe = await recipeFactory.DefaultRecipe();
+            StepList = [];
+            IngredientList = [];
         }
         /// <summary>
         /// Resets recipe to a default state
         /// </summary>
         public IAsyncRelayCommand ResetRecipeCommand { get; private set; }
 
-        private async Task addRecipe()
+        private async Task saveRecipe()
         {
-            await recipeRepository.Add(recipe);
+            Recipe.Ingredients = IngredientList;
+            Recipe.Steps = StepList;
+            await recipeRepository.Add(Recipe);
         }
         /// <summary>
         /// Adds recipe to database
         /// </summary>
-        public IAsyncRelayCommand AddRecipeCommand { get; private set; }
+        public IAsyncRelayCommand SaveRecipeCommand { get; private set; }
         #endregion
 
         #region Steps
         private void addStep()
         {
-            Recipe.Steps?.Add(stepFactory.DefaultStep());
+            StepList.Add(stepFactory.DefaultStep());
         }
         /// <summary>
         /// Adds a new step to recipe
@@ -105,21 +142,15 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
 
         private void deleteStep(Step step)
         {
-            Recipe.Steps?.Remove(step);
+            StepList.Remove(step);
         }
         public IRelayCommand<Step> DeleteStepCommand { get; private set; }
         #endregion
 
         #region Ingredients
-        private async Task getIngedientList()
-        {
-            IngredientList = await ingredientRepository.GetAll();
-        }
-        public IAsyncRelayCommand GetIngredientListCommand { get; private set; }
-
         private void addIngredient(Ingredient ingredient)
         {
-            Recipe.Ingredients?.Add(ingredient);
+            IngredientList.Add(ingredient);
         }
         /// <summary>
         /// Adds a new ingredient to recipe
@@ -128,7 +159,7 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
 
         private void deleteIngredient(Ingredient ingredient)
         {
-            Recipe.Ingredients?.Remove(ingredient);
+            IngredientList.Remove(ingredient);
         }
         /// <summary>
         /// Deletes ingredient from recipe

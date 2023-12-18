@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace RecipeGenerator.App.Components.Pages
 {
@@ -19,11 +20,11 @@ namespace RecipeGenerator.App.Components.Pages
         {
             startVM.PropertyChanged += StartVM_PropertyChanged;
             startVM.ResetRecipeCommand.Execute(null);
-            startVM.SetCourseListCommand.Execute(null);
+            startVM.GetCourseListCommand.Execute(null);
             await base.OnInitializedAsync();
         }
 
-        private void StartVM_PropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
+        private void StartVM_PropertyChanged(object? sender, PropertyChangedEventArgs e)
         {
             this.StateHasChanged();
         }
@@ -34,7 +35,7 @@ namespace RecipeGenerator.App.Components.Pages
             {
                 try
                 {
-                    await startVM.AddRecipeCommand.ExecuteAsync(null);
+                    await startVM.SaveRecipeCommand.ExecuteAsync(null);
                     startVM.ResetRecipeCommand.Execute(null);
                 }
                 catch (Exception ex) 

@@ -2,7 +2,7 @@
 @using RecipeGenerator.API.Models.Recipes
 
 <div>
-    <EditForm Model="@startVM.Recipe" OnSubmit="@RecipeSubmitted" onreset="">
+    <EditForm Model="@startVM.Recipe" OnSubmit="@RecipeSubmitted">
         <DataAnnotationsValidator/>
         <div>Title:</div>
         <InputText DisplayName="Title" @bind-Value="@startVM.Recipe.Name"/>
@@ -14,10 +14,10 @@
         </InputSelect>
         <div style="display: flex; flex-direction: column">
             <div style="display: flex; flex-direction: column">
-                <div class="btn btn-primary" onclick="@startVM.AddStepCommand" >Add step</div>
-                @if (startVM.Recipe.Steps?.Count > 0)
+                <div class="btn btn-primary" @onclick="startVM.AddStepCommand.Execute" >Add step</div>
+                @if (startVM.StepList?.Count > 0)
                 {
-                    foreach (var step in startVM.Recipe.Steps)
+     foreach (var step in startVM.StepList)
                     {
                         <div style="display: flex; flex-direction: column">
                             <InputText @bind-Value="@step.Name"/>
@@ -28,7 +28,7 @@
             </div>
             <div style="display: flex; flex-direction: row">
                 <input type="submit" class="btn btn-primary" value="Save" />
-                <div class="btn btn-cancel" onclick="@startVM.ResetRecipeCommand">Cancel</div>
+                <div class="btn btn-cancel" @onclick="startVM.ResetRecipeCommand.ExecuteAsync">Cancel</div>
             </div>
         </div>
     </EditForm>

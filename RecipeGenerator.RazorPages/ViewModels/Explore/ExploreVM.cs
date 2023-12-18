@@ -13,11 +13,11 @@ namespace RecipeGenerator.RazorPages.ViewModels.Explore
 {
     public class ExploreVM : ObservableObject
     {
-        private readonly IngredientRepository ingredientRepository;
+        private readonly IIngredientRepository ingredientRepository;
 
         public IAsyncRelayCommand GetIngredientsCommand { get; set; }
 
-        public ExploreVM(IngredientRepository ingredientRepository)
+        public ExploreVM(IIngredientRepository ingredientRepository)
         {
             this.ingredientRepository = ingredientRepository;
             ingredients = new();

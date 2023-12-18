@@ -18,9 +18,9 @@ namespace RecipeGenerator.API.Database
         public DbSet<Ingredient> Ingredients { get; set; }
 
         private readonly IConfiguration configuration;
-        private readonly IngredientGetter ingredientGetter;
+        private readonly IIngredientGetter ingredientGetter;
 
-        public RecipeDbContext(IConfiguration configuration, IngredientGetter ingredientGetter, DbContextOptions dbContextOptions) : base(dbContextOptions)
+        public RecipeDbContext(IConfiguration configuration, IIngredientGetter ingredientGetter, DbContextOptions dbContextOptions) : base(dbContextOptions)
         {
             this.configuration = configuration;
             this.ingredientGetter = ingredientGetter;

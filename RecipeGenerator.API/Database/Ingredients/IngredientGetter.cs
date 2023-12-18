@@ -22,8 +22,8 @@ namespace RecipeGenerator.API.Database.Ingredients
             public object propertyValue { get; set; }
         }
 
-        private readonly IngredientFactory ingredientFactory;
-        public IngredientGetter(IngredientFactory ingredientFactory)
+        private readonly IIngredientFactory ingredientFactory;
+        public IngredientGetter(IIngredientFactory ingredientFactory)
         {
             this.ingredientFactory = ingredientFactory;
         }

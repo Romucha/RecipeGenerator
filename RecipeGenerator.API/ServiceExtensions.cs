@@ -17,17 +17,20 @@ namespace RecipeGenerator.API
     {
         public static IServiceCollection AddDatabase(this IServiceCollection services) 
         {
-            services.AddTransient<IngredientFactory, IngredientFactory>();
-            services.AddTransient<IngredientGetter, IngredientGetter>();
+            services.AddTransient<IIngredientFactory, IngredientFactory>();
+            services.AddTransient<IIngredientGetter, IngredientGetter>();
+            services.AddTransient<IIngredientRepository, IngredientRepository>();
+
             services.AddTransient<IRecipeFactory, RecipeFactory>();
+            services.AddTransient<IRecipeRepository, RecipeRepository>();
+
             services.AddTransient<IStepFactory, StepFactory>();
+
             string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "RecipeGenerator");
             if (!Directory.Exists(dbPath)) {
                 Directory.CreateDirectory(dbPath);
             }
             services.AddSqlite<RecipeDbContext>($"Data Source={dbPath}\\Recipe.db");
-            services.AddTransient<IngredientRepository, IngredientRepository>();
-            services.AddTransient<IRecipeRepository, RecipeRepository>();
 
             return services;
         }
