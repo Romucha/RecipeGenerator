@@ -51,11 +51,11 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
             set => SetProperty(ref ingredientTypeList, value);
         }
 
-        private IngredientTypeListItem selectedIngredientType;
+        private IngredientType selectedIngredientType;
         /// <summary>
         /// Selected type of future ingredient
         /// </summary>
-        public IngredientTypeListItem SelectedIngredientType
+        public IngredientType SelectedIngredientType
         {
             get => selectedIngredientType;
             set => SetProperty(ref selectedIngredientType, value);
