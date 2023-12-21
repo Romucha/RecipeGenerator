@@ -24,6 +24,7 @@ namespace RecipeGenerator.App.Components.Pages
             startVM.ResetRecipeCommand.Execute(null);
             startVM.GetCourseListCommand.Execute(null);
             startVM.GetIngredientTypesListCommand.Execute(null);
+            startVM.SelectedIngredientType = default;
 
             await base.OnInitializedAsync();
         }
