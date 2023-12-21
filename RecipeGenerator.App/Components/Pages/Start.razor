@@ -40,6 +40,15 @@
                 }
             </InputSelect>
             <div @onclick="startVM.AddIngredientCommand.Execute" class="form-check">Add</div>
+            <label for="Ingredients">Selected ingredients</label>
+            <div>
+                @foreach (var ingredient in startVM.IngredientList)
+                {
+                    <div>
+                        @ingredient.Name
+                    </div>
+                }
+            </div>
         </div>
         <div>
             <label for="Steps">Steps</label>

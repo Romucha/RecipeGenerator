@@ -147,6 +147,7 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
         {
             AllIngredientList = new ObservableCollection<string>(ingredientRepository.GetByType(ingredientType)
                                                                                      .Select(c => c.Name));
+            SelectedIngredientName = AllIngredientList.FirstOrDefault();
         }
         #endregion
 
