@@ -1,4 +1,5 @@
-﻿using RecipeGenerator.API.Models.Ingeridients;
+﻿using Microsoft.EntityFrameworkCore;
+using RecipeGenerator.API.Models.Ingeridients;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,12 +33,12 @@ namespace RecipeGenerator.API.Database.Ingredients
 
         public async Task<Ingredient> GetByName(string name)
         {
-            throw new NotImplementedException();
+            return await dbContext.Ingredients.FirstOrDefaultAsync(x => x.Name == name);
         }
 
-        public async Task<IEnumerable<Ingredient>> GetByType(IngredientType type)
+        public IEnumerable<Ingredient> GetByType(IngredientType type)
         {
-            return await Task.FromResult(dbContext.Ingredients.Where(c => c.IngredientType == type));
+            return dbContext.Ingredients.Where(c => c.IngredientType == type);
         }
 
         public async Task Update(Ingredient ingredient)

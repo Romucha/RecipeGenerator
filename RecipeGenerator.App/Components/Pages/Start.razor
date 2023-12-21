@@ -12,7 +12,7 @@
         </div>
         <div>
             <label for="CourseTypes">Choose course type</label>
-   <InputSelect @bind-Value="@startVM.Recipe.CourseType" class="form-select">
+            <InputSelect @bind-Value="@startVM.Recipe.CourseType" class="form-select">
                 @foreach (var course in startVM.CourseList)
                 {
                     <option value="@course.Value" title="@course.Description">@course.DisplayName</option>
@@ -21,19 +21,25 @@
         </div>
         <div>
             <label for="IngredientTypes">Select ingredient type</label>
-            <InputSelect @bind-Value="@startVM.SelectedIngredientType" class="form-select">
+            <InputSelect 
+                class="form-select"
+                @bind-Value="@startVM.SelectedIngredientType">
                 @foreach (var ingredientType in startVM.IngredientTypeList)
                 {
                     <option value="@ingredientType.Value" title="@ingredientType.Description">@ingredientType.DisplayName</option>
                 }
             </InputSelect>
             <label for="Ingredients">Select ingredient of chosen type</label>
-            <InputSelect @bind-Value="@startVM.SelectedIngredient" class="form-select">
-                @foreach (var ingredient in startVM.AllIngredientList.Where(c => c.IngredientType == startVM.SelectedIngredientType))
+            <InputSelect @bind-Value="@startVM.SelectedIngredientName" class="form-select">
+                @if (startVM.AllIngredientList != null)
                 {
-                     <option value="@ingredient" title="@ingredient.Description">@ingredient.Name</option>
+                    @foreach (var ingredient in startVM.AllIngredientList)
+                    {
+                         <option value="@ingredient">@ingredient</option>
+                    }
                 }
             </InputSelect>
+            <div @onclick="startVM.AddIngredientCommand.Execute" class="form-check">Add</div>
         </div>
         <div>
             <label for="Steps">Steps</label>

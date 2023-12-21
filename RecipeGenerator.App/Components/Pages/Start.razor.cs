@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
+using RecipeGenerator.API.Models.Ingeridients;
 
 namespace RecipeGenerator.App.Components.Pages
 {
@@ -23,7 +24,6 @@ namespace RecipeGenerator.App.Components.Pages
             startVM.ResetRecipeCommand.Execute(null);
             startVM.GetCourseListCommand.Execute(null);
             startVM.GetIngredientTypesListCommand.Execute(null);
-            startVM.GetAllIngredientListCommand.Execute(null);
 
             await base.OnInitializedAsync();
         }

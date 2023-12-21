@@ -15,14 +15,14 @@ namespace RecipeGenerator.RazorPages.ViewModels.Explore
     {
         private readonly IIngredientRepository ingredientRepository;
 
-        public IAsyncRelayCommand GetIngredientsCommand { get; set; }
+        public IRelayCommand GetIngredientsCommand { get; set; }
 
         public ExploreVM(IIngredientRepository ingredientRepository)
         {
             this.ingredientRepository = ingredientRepository;
             ingredients = new();
 
-            GetIngredientsCommand = new AsyncRelayCommand(getIngredientsAsync);
+            GetIngredientsCommand = new RelayCommand(getIngredients);
         }
 
         private ObservableCollection<IngredientGroupVM> ingredients;
@@ -33,13 +33,13 @@ namespace RecipeGenerator.RazorPages.ViewModels.Explore
             set => SetProperty(ref ingredients, value);
         }
 
-        private async Task getIngredientsAsync()
+        private void getIngredients()
         {
             var ingredientTypes = Enum.GetValues<IngredientType>();
             List<IngredientGroupVM> ingredients = new();
             foreach (var ingType in ingredientTypes)
             {
-                ingredients.Add(new IngredientGroupVM((await ingredientRepository.GetByType(ingType)).OrderBy(c => c.Name), ingType));
+                ingredients.Add(new IngredientGroupVM((ingredientRepository.GetByType(ingType)).OrderBy(c => c.Name), ingType));
             }
             Ingredients = new ObservableCollection<IngredientGroupVM>(ingredients.OrderBy(c => c.DisplayName));
         }

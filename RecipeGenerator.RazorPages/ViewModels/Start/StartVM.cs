@@ -58,14 +58,18 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
         public IngredientType SelectedIngredientType
         {
             get => selectedIngredientType;
-            set => SetProperty(ref selectedIngredientType, value);
+            set
+            { 
+                SetProperty(ref selectedIngredientType, value);
+                updateAllIngedientList(value); 
+            }
         }
 
-        private IEnumerable<Ingredient> allIngredientList;
+        private IEnumerable<string> allIngredientList;
         /// <summary>
-        /// List of all ingredients
+        /// List of names of all avaliable ingredients
         /// </summary>
-        public IEnumerable<Ingredient> AllIngredientList
+        public IEnumerable<string> AllIngredientList
         {
             get => allIngredientList;
             set => SetProperty(ref allIngredientList, value);
@@ -91,14 +95,14 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
             set => SetProperty(ref ingredientList, value);
         }
 
-        private Ingredient selectedIngredient;
+        private string selectedIngredientName;
         /// <summary>
         /// Ingredient to add to list of ingredients
         /// </summary>
-        public Ingredient SelectedIngredient
+        public string SelectedIngredientName
         {
-            get => selectedIngredient;
-            set => SetProperty(ref selectedIngredient, value);
+            get => selectedIngredientName;
+            set => SetProperty(ref selectedIngredientName, value);
         }
 
         public StartVM(IRecipeRepository recipeRepository, IIngredientRepository ingredientRepository, IRecipeFactory recipeFactory, IStepFactory stepFactory)
@@ -110,7 +114,6 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
 
             GetCourseListCommand = new RelayCommand(getCourseList);
             GetIngredientTypesListCommand = new RelayCommand(getIngredientTypesList);
-            GetAllIngredientListCommand = new AsyncRelayCommand(getAllIngedientList);
 
             ResetRecipeCommand = new AsyncRelayCommand(resetRecipe);
             SaveRecipeCommand = new AsyncRelayCommand(saveRecipe);
@@ -118,14 +121,15 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
             AddStepCommand = new RelayCommand(addStep);
             DeleteStepCommand = new RelayCommand<Step>(deleteStep);
 
-            AddIngredientCommand = new RelayCommand(addIngredient);
+            AddIngredientCommand = new AsyncRelayCommand(addIngredient);
             DeleteIngredientCommand = new RelayCommand<Ingredient>(deleteIngredient);
         }
 
         #region Preparations
         private void getCourseList()
         {
-            CourseList = Enum.GetValues<Course>().Select(CourseListItem.FromCourse);
+            CourseList = Enum.GetValues<Course>()
+                             .Select(CourseListItem.FromCourse);
         }
         /// <summary>
         /// Sets up list of possible courses for the recipe
@@ -134,15 +138,16 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
 
         private void getIngredientTypesList()
         {
-            IngredientTypeList = Enum.GetValues<IngredientType>().Select(IngredientTypeListItem.FromIngredientType);
+            IngredientTypeList = Enum.GetValues<IngredientType>()
+                                     .Select(IngredientTypeListItem.FromIngredientType);
         }
         public IRelayCommand GetIngredientTypesListCommand { get; private set; }
 
-        private async Task getAllIngedientList()
+        private void updateAllIngedientList(IngredientType ingredientType)
         {
-            AllIngredientList = await ingredientRepository.GetAll();
+            AllIngredientList = new ObservableCollection<string>(ingredientRepository.GetByType(ingredientType)
+                                                                                     .Select(c => c.Name));
         }
-        public IAsyncRelayCommand GetAllIngredientListCommand { get; private set; }
         #endregion
 
         #region Recipes
@@ -187,19 +192,19 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
         #endregion
 
         #region Ingredients
-        private void addIngredient()
+        private async Task addIngredient()
         {
-            if (SelectedIngredient != null)
+            if (!string.IsNullOrEmpty(SelectedIngredientName))
             {
-                IngredientList.Add(SelectedIngredient);
+                IngredientList.Add(await ingredientRepository.GetByName(SelectedIngredientName));
             }
             //reset after adding
-            SelectedIngredient = null;
+            SelectedIngredientName = null;
         }
         /// <summary>
         /// Adds a new ingredient to recipe
         /// </summary>
-        public IRelayCommand AddIngredientCommand { get; private set; }
+        public IAsyncRelayCommand AddIngredientCommand { get; private set; }
 
         private void deleteIngredient(Ingredient ingredient)
         {

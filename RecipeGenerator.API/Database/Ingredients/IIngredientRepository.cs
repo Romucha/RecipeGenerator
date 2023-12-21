@@ -13,7 +13,7 @@ namespace RecipeGenerator.API.Database.Ingredients
 
         Task<IEnumerable<Ingredient>> GetAll();
 
-        Task<IEnumerable<Ingredient>> GetByType(IngredientType type);
+        IEnumerable<Ingredient> GetByType(IngredientType type);
 
         Task Add(Ingredient ingredient);
 

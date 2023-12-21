@@ -16,7 +16,8 @@ namespace RecipeGenerator.App.Components.Pages
 
         protected override async Task OnInitializedAsync()
         {
-            await exploreVM.GetIngredientsCommand.ExecuteAsync(null);
+            exploreVM.GetIngredientsCommand.Execute(null);
+            await base.OnInitializedAsync();
         }
     }
 }
