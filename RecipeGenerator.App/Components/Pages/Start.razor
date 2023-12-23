@@ -2,6 +2,20 @@
 @using RecipeGenerator.API.Models.Ingeridients
 @using RecipeGenerator.API.Models.Recipes
 
+
+<ContextMenu Id="myMenu">
+ <Item>Item 1</Item>
+ <Item>Item 2</Item>
+ <Item Enabled="false">Item 3 (disabled)</Item>
+ <Seperator />
+ <Item>
+  Submenu
+  <SubMenu>
+   <Item>Submenu Item 1</Item>
+   <Item>Submenu Item 2</Item>
+  </SubMenu>
+ </Item>
+</ContextMenu>
 <div class="start-page">
     <EditForm Model="@startVM.Recipe" OnSubmit="@RecipeSubmitted">
         <DataAnnotationsValidator/>
@@ -60,8 +74,10 @@
                         foreach (var step in startVM.StepList)
                         {
                             <div style="display: flex; flex-direction: column">
-                                <InputText @bind-Value="@step.Name"/>
-                                <InputTextArea @bind-Value="@step.Description" />
+                                <InputText @bind-Value="@step.Name" />
+                                <ContextMenuTrigger MenuId="myMenu">
+                                    <InputTextArea @bind-Value="@step.Description"/>
+                                </ContextMenuTrigger>
                             </div>
                         }
                     }

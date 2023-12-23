@@ -23,6 +23,7 @@ namespace RecipeGenerator.App
             builder.Services.AddQuickGridEntityFrameworkAdapter();
 
             builder.Services.AddMauiBlazorWebView();
+            builder.Services.AddBlazorContextMenu();
 
 #if DEBUG
             builder.Services.AddBlazorWebViewDeveloperTools();
