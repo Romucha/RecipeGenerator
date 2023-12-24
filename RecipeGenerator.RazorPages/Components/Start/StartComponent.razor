@@ -1,0 +1,13 @@
+﻿<div class="start-page">
+    <EditForm Model="@StartVM.Recipe" OnSubmit="@RecipeSubmitted">
+        <DataAnnotationsValidator/>
+        <ValidationSummary/>
+
+        <CascadingValue Value="StartVM">
+            <TitleComponent/>
+            <CourseTypeComponent/>
+            <IngredientsComponent/>
+            <StepsComponent/>
+        </CascadingValue>
+    </EditForm>
+</div>
