@@ -15,7 +15,8 @@ namespace RecipeGenerator.API.Models.Steps
                 Id = Guid.NewGuid(),
                 Name = string.Empty,
                 Description = string.Empty,
-                Ptotos = []
+                Photos = [],
+                Ingredients = [],
             };
         }
     }

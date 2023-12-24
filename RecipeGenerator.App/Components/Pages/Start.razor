@@ -69,16 +69,17 @@
             <div style="display: flex; flex-direction: column">
                 <div style="display: flex; flex-direction: column">
                     <div class="btn btn-primary" @onclick="startVM.AddStepCommand.Execute">Add step</div>
-                    @if (startVM.StepList?.Count > 0)
+                    @if (startVM.StepList?.Any() == true)
                     {
                         foreach (var step in startVM.StepList)
                         {
-                            <div style="display: flex; flex-direction: column">
+                            <StepComponent SelectedIngredients="@startVM.IngredientList" Step="@step"/>
+                            @* <div style="display: flex; flex-direction: column">
                                 <InputText @bind-Value="@step.Name" />
                                 <ContextMenuTrigger MenuId="myMenu">
                                     <InputTextArea @bind-Value="@step.Description"/>
                                 </ContextMenuTrigger>
-                            </div>
+                            </div> *@
                         }
                     }
                 </div>

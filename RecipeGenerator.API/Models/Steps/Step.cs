@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RecipeGenerator.API.Models.Ingeridients;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -16,6 +17,8 @@ namespace RecipeGenerator.API.Models.Steps
 
         public string Description { get; set; }
 
-        public List<byte[]> Ptotos { get; set; }
+        public List<byte[]> Photos { get; set; }
+
+        public IEnumerable<Ingredient> Ingredients { get; set; }
     }
 }

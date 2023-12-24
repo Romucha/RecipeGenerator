@@ -1,0 +1,19 @@
+﻿<ContextMenu Id="StepMenu">
+    <Item>
+        Add an ingredient to this step...
+        <SubMenu>
+            @if (SelectedIngredients?.Any() == true)
+            {
+                @foreach (var ingredient in SelectedIngredients)
+                {
+                    <Item OnClick="AddIngredient">@ingredient.Name</Item>
+                }
+            }
+        </SubMenu>
+    </Item>
+</ContextMenu>
+<ContextMenuTrigger MenuId="StepMenu" Data="@SelectedIngredients">
+    <div contenteditable="true">
+        @Step.Description
+    </div>
+</ContextMenuTrigger>
