@@ -14,6 +14,10 @@
     height: 85%;
 }
 
+form {
+    width: 100%;
+}
+
 
 .main-page {
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(231,231,231,1) 50%, rgba(255,255,255,1) 100%);
@@ -241,14 +245,4 @@
 
 .explore-page-item-list-item-link {
 
-}
-
-.start-page {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 1rem;
 }
