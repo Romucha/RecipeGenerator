@@ -18,9 +18,13 @@ namespace RecipeGenerator.RazorPages.Components.Start
         [Parameter]
         public Step Step { get; set; }
 
-        private void AddIngredient(ItemClickEventArgs e)
+        private void AddIngredient(Ingredient ingredient)
         {
-            //Step.Ingredients.Append(ingredient);
+            if (Step.Ingredients.Contains(ingredient)) return;
+
+            Step.Ingredients.Append(ingredient);
+
+            string.Concat(Step.Description, $" {ingredient.Name.ToLower()}");
         }
     }
 }

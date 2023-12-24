@@ -1,4 +1,5 @@
-﻿<ContextMenu Id="StepMenu">
+﻿@using Microsoft.AspNetCore.Components.Forms
+<ContextMenu Id="@Step.Id.ToString()">
     <Item>
         Add an ingredient to this step...
         <SubMenu>
@@ -6,14 +7,12 @@
             {
                 @foreach (var ingredient in SelectedIngredients)
                 {
-                    <Item OnClick="AddIngredient">@ingredient.Name</Item>
+                    <Item OnClick="((e) => { Step.AddIngredient(ingredient); })" title="@ingredient.Description">@ingredient.Name</Item>
                 }
             }
         </SubMenu>
     </Item>
 </ContextMenu>
-<ContextMenuTrigger MenuId="StepMenu" Data="@SelectedIngredients">
-    <div contenteditable="true">
-        @Step.Description
-    </div>
+<ContextMenuTrigger MenuId="@Step.Id.ToString()">
+    <InputTextArea @bind-Value="@Step.Description"/>
 </ContextMenuTrigger>
