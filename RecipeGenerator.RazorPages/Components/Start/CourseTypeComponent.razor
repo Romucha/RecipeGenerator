@@ -1,9 +1,12 @@
-﻿<div>
-    <label for="CourseTypes">Choose course type</label>
+﻿<fieldset>
+ <legend>Course Type</legend>
+    <div class="start-page-course">
+        <label for="CourseTypes">Select course type</label>
         <InputSelect @bind-Value="@StartVM.Recipe.CourseType" class="form-select">
             @foreach (var course in StartVM.CourseList)
             {
                 <option value="@course.Value" title="@course.Description">@course.DisplayName</option>
             }
         </InputSelect>
-</div>
+    </div>
+</fieldset>

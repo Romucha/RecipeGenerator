@@ -1,4 +1,10 @@
-﻿<div class="start-page-title">
- <label for="title-input-text">Choose title</label>
-    <InputText id="title-input-text" DisplayName="Title" @bind-Value="StartVM.Recipe.Name" class="form-text"/>
-</div>
+﻿<fieldset>
+    <legend>Title</legend>
+    <div class="start-page-title">
+    
+        <div class="start-page-title-input">
+            <label for="title-input-text">Name your recipe</label>
+                <InputText id="title-input-text" DisplayName="Title" @bind-Value="StartVM.Recipe.Name" class="form-text"/>
+        </div>
+    </div>
+</fieldset>

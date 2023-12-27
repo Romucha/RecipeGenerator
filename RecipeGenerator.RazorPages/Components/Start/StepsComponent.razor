@@ -1,20 +1,19 @@
-﻿<div>
-    <label for="Steps">Steps</label>
-    <div style="display: flex; flex-direction: column">
+﻿<fieldset>
+    <legend>Steps</legend>
+    <div>
+        <label for="Steps">Add steps</label>
         <div style="display: flex; flex-direction: column">
-            <div class="btn btn-primary" @onclick="StartVM.AddStepCommand.Execute">Add step</div>
-            @if (StartVM.StepList?.Any() == true)
-            {
-                foreach (var step in StartVM.StepList)
+            <div style="display: flex; flex-direction: column">
+                <div class="btn btn-primary" @onclick="StartVM.AddStepCommand.Execute">Add step</div>
+                @if (StartVM.StepList?.Any() == true)
                 {
-                    <StepComponent SelectedIngredients="@StartVM.IngredientList" Step="@step"/>
+                    foreach (var step in StartVM.StepList)
+                    {
+                        <StepComponent SelectedIngredients="@StartVM.IngredientList" Step="@step"/>
                             
+                    }
                 }
-            }
-        </div>
-        <div style="display: flex; flex-direction: row">
-            <input type="submit" class="btn btn-primary" value="Save" />
-            <div class="btn btn-cancel" @onclick="StartVM.ResetRecipeCommand.ExecuteAsync">Cancel</div>
+            </div>
         </div>
     </div>
-</div>
+</fieldset>
