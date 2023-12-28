@@ -1,7 +1,7 @@
 ﻿<fieldset>
- <legend>Course Type</legend>
+ <legend>Select Course Type</legend>
     <div class="start-page-course">
-        <label for="CourseTypes">Select course type</label>
+        <label for="CourseTypes">Course type</label>
         <InputSelect @bind-Value="@StartVM.Recipe.CourseType" class="form-select">
             @foreach (var course in StartVM.CourseList)
             {
