@@ -19,7 +19,7 @@ form {
 }
 
 fieldset {
-    border: 2px solid crimson;
+    border: 2px solid darkgray;
     display: flex;
     flex-direction: column;
     margin: 0.5rem;
@@ -32,6 +32,29 @@ legend {
     font-size: 1.5rem;
     font-weight: bold;
 }
+
+button {
+    align-self: flex-start;
+}
+
+/*button {
+    align-self: flex-start;
+    color: azure;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    width: 3rem;
+    height: inherit;
+    align-items: center;
+}
+
+    button:hover {
+        color: azure;
+        background-color: gold;
+        border-radius: 1rem;
+    }*/
 
 .main-page {
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(231,231,231,1) 50%, rgba(255,255,255,1) 100%);

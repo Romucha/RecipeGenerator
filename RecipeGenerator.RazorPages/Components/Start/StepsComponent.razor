@@ -3,7 +3,7 @@
     <div>
         <div style="display: flex; flex-direction: column">
             <div style="display: flex; flex-direction: column">
-                <div class="btn btn-primary" @onclick="StartVM.AddStepCommand.Execute">Add step</div>
+                <button class="btn btn-primary" @onclick="StartVM.AddStepCommand.Execute">Add step</button>
                 @if (StartVM.StepList?.Any() == true)
                 {
                     foreach (var step in StartVM.StepList)
