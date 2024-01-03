@@ -14,16 +14,12 @@
   <ItemGroup>
     <PackageReference Include="Blazor.ContextMenu" Version="1.17.0" />
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\RecipeGenerator.API\RecipeGenerator.API.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Components\About\" />
-    <Folder Include="Components\Home\" />
   </ItemGroup>
 
 </Project>

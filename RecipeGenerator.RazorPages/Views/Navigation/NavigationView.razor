@@ -1,0 +1,18 @@
+﻿<nav class="bottom-menu">
+ <NavView NavPath="" OiIcon="oi-home" OiTitle="Home" />
+ <NavView NavPath="explore" OiIcon="oi-script" OiTitle="Explore" />
+ <NavView NavPath="start" OiIcon="oi-media-play" OiTitle="Start" />
+ <NavView NavPath="settings" OiIcon="oi-cog" OiTitle="Settings" />
+ <NavView NavPath="about" OiIcon="oi-question-mark" OiTitle="About" />
+</nav>
+
+@code {
+ private bool collapseNavMenu = true;
+
+ private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+ private void ToggleNavMenu()
+ {
+  collapseNavMenu = !collapseNavMenu;
+ }
+}

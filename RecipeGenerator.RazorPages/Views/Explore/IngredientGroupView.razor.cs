@@ -8,9 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.RazorPages.Components.Explore
+namespace RecipeGenerator.RazorPages.Views.Explore
 {
-    public partial class IngredientsGroup
+    public partial class IngredientGroupView
     {
         [Parameter]
         public IngredientGroupVM IngredientsGroupVM { get; set; }

@@ -8,9 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.RazorPages.Components.Start
+namespace RecipeGenerator.RazorPages.Views.Start
 {
-    public partial class StartComponent
+    public partial class StartView
     {
         [Parameter]
         public StartVM StartVM { get; set; }

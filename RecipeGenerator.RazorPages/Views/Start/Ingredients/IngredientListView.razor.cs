@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.RazorPages.Components.Start
+namespace RecipeGenerator.RazorPages.Views.Start.Ingredients
 {
-    public partial class CourseTypeComponent
+    public partial class IngredientListView
     {
         [CascadingParameter]
         public StartVM StartVM { get; set; }

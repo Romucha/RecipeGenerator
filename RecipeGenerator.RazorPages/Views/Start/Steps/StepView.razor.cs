@@ -8,9 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.RazorPages.Components.Start
+namespace RecipeGenerator.RazorPages.Views.Start.Steps
 {
-    public partial class StepComponent
+    public partial class StepView
     {
         [Parameter]
         public IEnumerable<Ingredient> SelectedIngredients { get; set; }

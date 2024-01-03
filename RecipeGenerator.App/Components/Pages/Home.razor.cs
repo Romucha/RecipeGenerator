@@ -12,13 +12,6 @@ namespace RecipeGenerator.App.Components.Pages
     public partial class Home
     {
         [Inject]
-        private HomeVM homeVM { get; set; }
-
-        protected override async Task OnInitializedAsync()
-        {
-            homeVM.GetRecipesCommand.Execute(null);
-            
-            await base.OnInitializedAsync();
-        }
+        private HomeVM HomeVM { get; set; }
     }
 }

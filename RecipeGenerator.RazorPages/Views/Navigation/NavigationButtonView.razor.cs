@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.RazorPages.Components
+namespace RecipeGenerator.RazorPages.Views.Navigation
 {
-    public partial class NavComponent
+    public partial class NavigationButtonView
     {
         [Parameter]
         public string NavPath { get; set; }
@@ -19,6 +19,6 @@ namespace RecipeGenerator.RazorPages.Components
         public string OiTitle { get; set; }
 
         [Parameter]
-        public bool IsBig { get; set; } = false;
+        public string OiDescription { get; set; }
     }
 }

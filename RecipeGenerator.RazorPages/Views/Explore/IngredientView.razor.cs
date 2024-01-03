@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.RazorPages.Components.Explore
+namespace RecipeGenerator.RazorPages.Views.Explore
 {
-    public partial class IngredientItem
+    public partial class IngredientView
     {
         [Parameter]
         public Ingredient Ingredient { get; set; }

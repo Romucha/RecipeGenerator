@@ -1,0 +1,28 @@
+﻿@using RecipeGenerator.RazorPages.Views.Navigation
+@using RecipeGenerator.RazorPages.ViewModels.Home
+
+<div class="home-page">
+    <div class="home-page-button home-page-button-start">
+        <NavigationButtonView NavPath="start" OiIcon="oi-media-play" OiTitle="Start" OiDescription="Start" />
+    </div>
+    <div class="home-page-button home-page-button-explore">
+        <NavigationButtonView NavPath="explore" OiIcon="oi-script" OiTitle="Explore" OiDescription="Explore" />
+    </div>
+    <div class="home-page-list-history">
+        @if (HomeVM.Recipes?.Count() > 0)
+        {            
+            <QuickGrid Items="@HomeVM.Recipes">
+                <PropertyColumn Property="@(p => p.Name)" Sortable="true" />
+                <PropertyColumn Property="@(p => p.CourseType)" Sortable="true" />
+                <PropertyColumn Property="@(p => p.CreatedAt)" Format="yyyy-MM-dd" Sortable="true" />
+                <PropertyColumn Property="@(p => p.UpdatedAt)" Format="yyyy-MM-dd" Sortable="true" />
+            </QuickGrid>
+        }
+        else
+        {
+            <div>
+                You haven't generated any recipes yet...
+            </div>
+        }
+    </div>
+</div>
