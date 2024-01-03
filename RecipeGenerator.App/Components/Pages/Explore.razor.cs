@@ -12,12 +12,6 @@ namespace RecipeGenerator.App.Components.Pages
     public partial class Explore
     {
         [Inject]
-        private ExploreVM exploreVM { get; set; }
-
-        protected override async Task OnInitializedAsync()
-        {
-            exploreVM.GetIngredientsCommand.Execute(null);
-            await base.OnInitializedAsync();
-        }
+        private ExploreVM ExploreVM { get; set; }
     }
 }

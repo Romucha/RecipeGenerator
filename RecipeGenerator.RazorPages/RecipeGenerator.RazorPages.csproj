@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <Folder Include="Components\About\" />
+    <Folder Include="Components\Home\" />
   </ItemGroup>
 
 </Project>

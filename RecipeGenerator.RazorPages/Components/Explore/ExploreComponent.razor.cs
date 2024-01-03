@@ -1,23 +1,21 @@
 ﻿using Microsoft.AspNetCore.Components;
-using RecipeGenerator.App.ViewModels;
-using RecipeGenerator.RazorPages.ViewModels.Home;
+using RecipeGenerator.RazorPages.ViewModels.Explore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.App.Components.Pages
+namespace RecipeGenerator.RazorPages.Components.Explore
 {
-    public partial class Home
+    public partial class ExploreComponent
     {
-        [Inject]
-        private HomeVM homeVM { get; set; }
+        [Parameter]
+        public ExploreVM ExploreVM { get; set; }
 
         protected override async Task OnInitializedAsync()
         {
-            homeVM.GetRecipesCommand.Execute(null);
-            
+            ExploreVM.GetIngredientsCommand.Execute(null);
             await base.OnInitializedAsync();
         }
     }

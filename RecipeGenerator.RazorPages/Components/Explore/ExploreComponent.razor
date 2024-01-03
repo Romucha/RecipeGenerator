@@ -1,0 +1,6 @@
+﻿<div class="explore-page">
+    @foreach (var ingredientGroup in ExploreVM.Ingredients)
+    {
+        <IngredientsGroup IngredientsGroupVM="@ingredientGroup" />
+    }
+</div>

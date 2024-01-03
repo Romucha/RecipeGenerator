@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.RazorPages.Components.Home
+namespace RecipeGenerator.RazorPages.ViewModels.Home
 {
     public class HomeVM : ObservableObject
     {
@@ -26,7 +26,7 @@ namespace RecipeGenerator.RazorPages.Components.Home
         public HomeVM(IRecipeRepository recipeRepository)
         {
             this.recipeRepository = recipeRepository;
-            this.GetRecipesCommand = new RelayCommand(getRecipes);
+            GetRecipesCommand = new RelayCommand(getRecipes);
         }
 
         private void getRecipes()
