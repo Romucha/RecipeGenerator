@@ -1,6 +1,6 @@
-﻿@* <NavLink class="btn btn-nav" ActiveClass="btn btn-nav active" href="@NavPath" Match="NavLinkMatch.All">
+﻿<NavLink class="btn btn-nav" ActiveClass="active" href="@NavPath" Match="NavLinkMatch.All">
     <div class="oi @OiIcon" title="@OiTitle" />
-</NavLink> *@
-<a class="btn btn-nav" ActiveClass="btn btn-nav active" href="@NavPath">
+</NavLink>
+@* <a class="@activeClass" href="@NavPath" @onactivate="changeActiveClass">
     <div class="oi @OiIcon" title="@OiTitle" />
-</a>
+</a> *@
