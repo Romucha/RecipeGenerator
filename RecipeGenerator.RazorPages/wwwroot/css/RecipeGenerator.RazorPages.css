@@ -1,8 +1,10 @@
-﻿colors {
-    --primary-color: #FFAD84;
-    --primary-color-shaded: #FFC47E;
-    --secondary-color: #FFF78A;
-    --secondary-color-shaded: #FFE382;
+﻿:root {
+    --primary-color: #EFB495;
+    --primary-color-shaded: #EF9595;
+    --secondary-color: #EFD595;
+    --secondary-color-shaded: #EBEF95;
+    --font-color: #7C4545;
+    color: var(--font-color);
 }
 
 form {
@@ -27,6 +29,18 @@ legend {
 button {
     align-self: flex-start;
 }
+
+.btn {
+    background-color: var(--primary-color);
+    margin: 2px;
+    padding: 2px;
+    color: var(--font-color);
+}
+
+    .btn:hover, .btn.active {
+        background-color: var(--primary-color-shaded);
+        color: var(--secondary-color);
+    }
 
 /*button {
     align-self: flex-start;

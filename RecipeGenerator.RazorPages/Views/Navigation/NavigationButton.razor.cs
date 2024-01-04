@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.RazorPages.Views.Navigation
 {
-    public partial class NavView
+    public partial class NavigationButton
     {
         [Parameter]
         public string NavPath { get; set; }

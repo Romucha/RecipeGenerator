@@ -1,12 +1,15 @@
 ﻿/*@import url('../../wwwroot/css//RecipeGenerator.RazorPages.css');*/
 
-.navigation-view {
+#navigation-view {
     display: flex;
-    height: 10%;
-    background-color: #FFAD84;
+    background-color: var(--secondary-color);
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.navbar-toggler {
+/*.navbar-toggler {
     appearance: none;
     cursor: pointer;
     width: 3.5rem;
@@ -99,11 +102,11 @@
         display: none;
     }
 
-    .nav-scrollable {
+    .nav-scrollable {*/
         /* Never collapse the sidebar for wide screens */
-        display: block;
+        /*display: block;*/
         /* Allow sidebar to scroll for tall menus */
-        height: calc(100vh - 3.5rem);
+        /*height: calc(100vh - 3.5rem);
         overflow-y: auto;
     }
-}
+}*/
