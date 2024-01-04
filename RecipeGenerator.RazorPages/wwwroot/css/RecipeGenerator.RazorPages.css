@@ -3,8 +3,10 @@
     --primary-color-shaded: #EF9595;
     --secondary-color: #EFD595;
     --secondary-color-shaded: #EBEF95;
+    --secondary-color-lightened: #fcfed1;
     --font-color: #7C4545;
     color: var(--font-color);
+    background-color: var(--secondary-color-lightened);
 }
 
 form {
@@ -32,8 +34,9 @@ button {
 
 .btn {
     background-color: var(--primary-color);
-    margin: 2px;
-    padding: 2px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 1rem;
     color: var(--font-color);
 }
 
