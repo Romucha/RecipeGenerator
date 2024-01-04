@@ -1,14 +1,30 @@
 .page {
-    position: relative;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
 }
 
-main {
-    flex: 1;
+#page-body {
+    display: flex;
+    position: relative;
+    top: 0px;
+    width: -webkit-fill-available;
+    height: 90%;
 }
 
-.sidebar {
+#page-nav {
+    display: flex;
+    position: relative;
+    bottom: 0;
+    width: -webkit-fill-available;
+    height: 10%;
+}
+
+/*.sidebar {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
 }
 
@@ -74,4 +90,4 @@ main {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
-}
+}*/

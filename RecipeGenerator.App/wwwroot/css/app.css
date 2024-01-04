@@ -2,9 +2,16 @@
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
 }
 
-a, .btn-link {
+#app {
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+}
+
+/*a, .btn-link {
     color: #006bb7;
 }
 
@@ -36,7 +43,7 @@ h1:focus {
 
 .validation-message {
     color: #e50000;
-}
+}*/
 
 #blazor-error-ui {
     background: lightyellow;
@@ -71,7 +78,7 @@ h1:focus {
     display: none;
 }
 
-@supports (-webkit-touch-callout: none) {
+/*@supports (-webkit-touch-callout: none) {
     .status-bar-safe-area {
         display: flex;
         position: sticky;
@@ -85,4 +92,4 @@ h1:focus {
     .flex-column, .navbar-brand {
         padding-left: env(safe-area-inset-left);
     }
-}
+}*/

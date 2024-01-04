@@ -1,4 +1,9 @@
-﻿<div class="start-page">
+﻿@using RecipeGenerator.RazorPages.Views.Start.CourseType
+@using RecipeGenerator.RazorPages.Views.Start.Title
+@using RecipeGenerator.RazorPages.Views.Start.Ingredients
+@using RecipeGenerator.RazorPages.Views.Start.Steps
+@using RecipeGenerator.RazorPages.Views.Start.Save
+<div class="start-page">
     <EditForm Model="@StartVM.Recipe" OnSubmit="@RecipeSubmitted">
         <DataAnnotationsValidator/>
         <ValidationSummary/>
@@ -6,7 +11,7 @@
         <CascadingValue Value="StartVM">
             <TitleView/>
             <CourseTypeView/>
-            <IngredientsView/>
+            <IngredientListView/>
             <StepListView/>
             <SaveView />
         </CascadingValue>

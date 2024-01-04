@@ -1,11 +1,10 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="main-page height-100">
- <main class="main-display">
-  <div>
-   @Body
-  </div>
- </main>
-
- <NavMenu />
+<div class="page">
+    <div id="page-body">
+        @Body
+    </div>
+    <div id="page-nav">
+        <NavigationView />
+    </div>
 </div>
