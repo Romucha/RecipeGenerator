@@ -1,14 +1,13 @@
 ﻿using Microsoft.AspNetCore.Components;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.RazorPages.Views.Navigation
+namespace RecipeGenerator.RazorPages.Views.Home.Buttons
 {
-    public partial class NavigationButton
+    public partial class HomeButton
     {
         [Parameter]
         public string NavPath { get; set; }
@@ -18,5 +17,8 @@ namespace RecipeGenerator.RazorPages.Views.Navigation
 
         [Parameter]
         public string OiTitle { get; set; }
+
+        [Parameter]
+        public string OiDescription { get; set; }
     }
 }

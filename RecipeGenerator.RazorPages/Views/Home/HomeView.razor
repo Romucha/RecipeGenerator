@@ -1,7 +1,9 @@
 ﻿@using RecipeGenerator.RazorPages.Views.Navigation
 @using RecipeGenerator.RazorPages.ViewModels.Home
+@using RecipeGenerator.RazorPages.Views.Home.Buttons
+@using RecipeGenerator.RazorPages.Views.Home.Table
 
-<div class="home-page">
+@* <div class="home-page">
     <div class="home-page-button home-page-button-start">
         <NavigationButtonView NavPath="start" OiIcon="oi-media-play" OiTitle="Start" OiDescription="Start" />
     </div>
@@ -24,5 +26,23 @@
                 You haven't generated any recipes yet...
             </div>
         }
+    </div>
+</div> *@
+
+<div class="home-view">
+    <div class="home-view-table">
+        <div class="home-view-table-row">
+            <div class="home-view-table-column">
+                <HomeButton NavPath="start" OiIcon="oi-media-play" OiTitle="Start" OiDescription="Start"/>
+            </div>
+            <div class="home-view-table-column">
+                <HomeButton NavPath="explore" OiIcon="oi-script" OiTitle="Explore" OiDescription="Explore"/>
+            </div>
+        </div>
+        <div class="home-view-table-row">
+            <div class="home-view-table-column">
+                <HomeRecipeTable />
+            </div>
+        </div>
     </div>
 </div>
