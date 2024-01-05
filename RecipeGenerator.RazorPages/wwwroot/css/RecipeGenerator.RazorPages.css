@@ -9,6 +9,17 @@
     background-color: var(--secondary-color-lightened);
 }
 
+a {
+    text-decoration: none;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    color: var(--font-color);
+}
+
+a:hover {
+    color: var(--secondary-color-lightened);
+}
+
 form {
     width: 100%;
 }
