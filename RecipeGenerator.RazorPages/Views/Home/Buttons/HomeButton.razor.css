@@ -6,9 +6,9 @@
     align-items: center;
     text-decoration: none;
     font-size: 3rem;
-    height: -webkit-fill-available;
+    height: 9rem;
     aspect-ratio: 1/1;
-    margin: 2px;
+    margin: 2rem 0 0 0;
     padding: 2px;
 }
 
