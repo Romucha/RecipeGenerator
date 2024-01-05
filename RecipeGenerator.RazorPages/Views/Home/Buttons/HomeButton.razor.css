@@ -12,17 +12,6 @@
     padding: 2px;
 }
 
-.home-button-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 2px;
-    padding: 4px;
-}
-
-home-button-container-icon {
-    display: flex;
-    font-size: inherit;
-    font-size: 8rem;
-}
+    .btn-home-nav:hover {
+        color: var(--secondary-color-lightened);
+    }
