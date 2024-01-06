@@ -1,0 +1,25 @@
+﻿<div class="table-item" title="@Recipe.Description">
+    <div class="row">
+        <div class="column">
+            <img class="recipe-image" src="@(Recipe.Image == null ? "/images/apple.png" : "")"/>
+        </div>
+        <div class="column">
+            <div class="row">
+                <div class="recipe-name">
+                    @Recipe.Name
+                </div>
+            </div>            
+            <div class="row">
+                <div>Last modified at: @(Recipe.CreatedAt > Recipe.UpdatedAt ? Recipe.CreatedAt : Recipe.UpdatedAt)</div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="row">
+                <div class="btn btn-view-recipe oi oi-spreadsheet" title="Details" />
+            </div>
+            <div class="row">
+                <div class="btn btn-delete-recipe oi oi-x" title="Delete" />
+            </div>
+        </div>
+    </div>
+</div>

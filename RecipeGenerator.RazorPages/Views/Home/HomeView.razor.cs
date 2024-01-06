@@ -10,7 +10,7 @@ namespace RecipeGenerator.RazorPages.Views.Home
 {
     public partial class HomeView
     {
-        [Parameter]
+        [Inject]
         public HomeVM HomeVM { get; set; }
 
         protected override async Task OnInitializedAsync()
