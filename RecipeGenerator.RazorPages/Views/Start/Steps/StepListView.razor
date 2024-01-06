@@ -3,13 +3,12 @@
     <div>
         <div style="display: flex; flex-direction: column">
             <div style="display: flex; flex-direction: column">
-                <button class="btn btn-primary" @onclick="StartVM.AddStepCommand.Execute">Add step</button>
+                <div class="btn btn-primary" @onclick="StartVM.AddStepCommand.Execute">Add step</div>
                 @if (StartVM.StepList?.Any() == true)
                 {
                     foreach (var step in StartVM.StepList)
                     {
                         <StepView SelectedIngredients="@StartVM.IngredientList" Step="@step"/>
-                            
                     }
                 }
             </div>

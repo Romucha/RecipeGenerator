@@ -1,5 +1,7 @@
 ﻿.table-item {
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--primary-color-shaded);
+    background-color: var(--primary-color);
+    border-radius: 1rem;
     margin: 4px;
     padding: 4px;
 }
