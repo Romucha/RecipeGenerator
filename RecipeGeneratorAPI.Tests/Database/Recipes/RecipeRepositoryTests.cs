@@ -13,6 +13,7 @@ using RecipeGenerator.API.Database.Recipes;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using RecipeGenerator.API.Models.Recipes;
 using RecipeGenerator.API.Models.Steps;
+using RecipeGeneratorAPI.Tests.Samples;
 
 namespace RecipeGeneratorAPI.Tests.Database.Recipes
 {
@@ -35,7 +36,11 @@ namespace RecipeGeneratorAPI.Tests.Database.Recipes
         }
 
         #region Get Recipe Tests
-
+        [Fact]
+        public async Task GetAllRecipes_Normal()
+        {
+            recipeRepository.GetAll();
+        }
         #endregion
 
         #region Add Recipe Tests
@@ -43,64 +48,7 @@ namespace RecipeGeneratorAPI.Tests.Database.Recipes
         public async Task AddRecipe_Normal()
         {
             //arrange
-            List<Ingredient> ingredients = new List<Ingredient>()
-            {
-                new Ingredient()
-                {
-                    Id = Guid.NewGuid(),
-                    Name = "Test Ingredient 1",
-                    Description = "Test Ingredient Description 1",
-                    Image = Properties.Resources.apple,
-                    IngredientType = IngredientType.CerealsAndPulses
-                },
-                new Ingredient()
-                {
-                    Id = Guid.NewGuid(),
-                    Name = "Test Ingredient 2",
-                    Description = "Test Ingredient Description 2",
-                    Image = Properties.Resources.apple,
-                    IngredientType = IngredientType.CerealsAndPulses
-                }
-            };
-
-            Recipe recipe = new Recipe()
-            {
-                Id = Guid.NewGuid(),
-                Name = "Test Name",
-                Description = "Test Description",
-                CourseType = Course.Soup,
-                CreatedAt = DateTime.Now,
-                UpdatedAt = DateTime.Now,
-                Image = Properties.Resources.apple,
-                Steps = new List<Step>
-                {
-                    new Step()
-                    {
-                        Id = Guid.NewGuid(),
-                        Name = "Step Name 1",
-                        Description = "Step Description 1",
-                        Photos = new List<byte[]>()
-                        {
-                            Properties.Resources.apple,
-                            Properties.Resources.apple,
-                        },
-                        Ingredients = ingredients,
-                    },
-                    new Step()
-                    {
-                        Id = Guid.NewGuid(),
-                        Name = "Step Name 2",
-                        Description = "Step Description 2",
-                        Photos = new List<byte[]>()
-                        {
-                            Properties.Resources.apple,
-                            Properties.Resources.apple,
-                        },
-                        Ingredients = ingredients,
-                    }
-                },
-                Ingredients = ingredients
-            };
+            var recipe = RecipeSamples.NormalRecipe;
             //act
             await recipeRepository.Add(recipe);
             //assert
@@ -111,8 +59,7 @@ namespace RecipeGeneratorAPI.Tests.Database.Recipes
         public async Task AddRecipe_Default()
         {
             //arrange
-            IRecipeFactory factory = new RecipeFactory();
-            Recipe recipe = await factory.DefaultRecipe();
+            var recipe = RecipeSamples.DefaultRecipe;
             //act
             await recipeRepository.Add(recipe);
             //assert
@@ -123,7 +70,7 @@ namespace RecipeGeneratorAPI.Tests.Database.Recipes
         public async Task AddRecipe_Empty()
         {
             //arrange
-            Recipe recipe = new Recipe();
+            var recipe = RecipeSamples.EmptyRecipe;
             //act
             await recipeRepository.Add(recipe);
             //assert
@@ -134,7 +81,7 @@ namespace RecipeGeneratorAPI.Tests.Database.Recipes
         public async Task AddRecipe_Null()
         {
             //arrange
-            Recipe? recipe = null;
+            var recipe = RecipeSamples.NullRecipe;
             //act && assert
             await Assert.ThrowsAsync<ArgumentNullException>(async () => await recipeRepository.Add(recipe));
         }
