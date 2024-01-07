@@ -22,6 +22,7 @@ namespace RecipeGenerator.API.Models.Steps
         public List<byte[]> Photos { get; set; }
 
         public List<Ingredient> Ingredients { get; set; }
+
         [ForeignKey(nameof(Recipe))]
         public Guid RecipeId { get; set; }
         public Recipe Recipe { get; set; }
