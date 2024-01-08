@@ -18,9 +18,9 @@ namespace RecipeGeneratorAPI.Tests.Database.Recipes
             await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
             await recipeDbContext.SaveChangesAsync();
             //act
-            await recipeRepository.Delete(recipeDbContext.Recipes.FirstOrDefault());
+            await recipeRepository.Delete(RecipeSamples.NormalRecipes.FirstOrDefault());
             //assert
-            Assert.Single(recipeDbContext.Recipes);
+            Assert.False(recipeDbContext.Recipes.Contains(RecipeSamples.NormalRecipes.FirstOrDefault()));
         }
 
         [Fact]
