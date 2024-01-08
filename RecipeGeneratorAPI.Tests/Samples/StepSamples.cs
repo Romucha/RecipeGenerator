@@ -17,13 +17,13 @@ namespace RecipeGeneratorAPI.Tests.Samples
 
         public static Step NullStep { get; }
 
-        public static Step[] NormalSteps { get; }
+        public static ICollection<Step> NormalSteps { get; }
 
-        public static Step[] DefaultSteps { get; }
+        public static ICollection<Step> DefaultSteps { get; }
 
-        public static Step[] EmptySteps { get; }
+        public static ICollection<Step> EmptySteps { get; }
 
-        public static Step[] NullSteps { get; }
+        public static ICollection<Step> NullSteps { get; }
 
         static StepSamples()
         {

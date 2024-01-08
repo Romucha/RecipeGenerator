@@ -29,7 +29,8 @@ namespace RecipeGeneratorAPI.Tests.Database.Recipes
             IIngredientFactory ingredientFactory = new IngredientFactory();
             IIngredientGetter ingredientgetter = new IngredientGetter(ingredientFactory);
             DbContextOptions<RecipeDbContext> dbContextOptions = new DbContextOptionsBuilder<RecipeDbContext>().UseInMemoryDatabase(Guid.NewGuid().ToString())
-                                                                                                               .ConfigureWarnings(b => b.Ignore(InMemoryEventId.TransactionIgnoredWarning)).Options; ;
+                                                                                                               .ConfigureWarnings(b => b.Ignore(InMemoryEventId.TransactionIgnoredWarning))
+                                                                                                               .Options;
             recipeDbContext = new RecipeDbContext(configuration, ingredientgetter, dbContextOptions);
 
             recipeRepository = new RecipeRepository(recipeDbContext);
@@ -39,9 +40,54 @@ namespace RecipeGeneratorAPI.Tests.Database.Recipes
         [Fact]
         public async Task GetAllRecipes_Normal()
         {
-            recipeRepository.GetAll();
+            //arrange
+            await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
+            await recipeDbContext.SaveChangesAsync();
+            //act
+            var recipes = recipeRepository.GetAll();
+            //assert
+            Assert.NotNull(recipes);
+            Assert.NotEmpty(recipes);
+        }
+
+        [Fact]
+        public async Task GetRecipeById_Normal()
+        {
+            //arrange
+            await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
+            await recipeDbContext.SaveChangesAsync();
+            //act
+            var recipe = await recipeRepository.GetById(RecipeSamples.NormalRecipes.FirstOrDefault().Id);
+            //assert
+            Assert.NotNull(recipe);
+        }
+
+        [Fact]
+        public async Task GetRecipeById_IncorrectId()
+        {
+            //arrange
+            await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
+            await recipeDbContext.SaveChangesAsync();
+
+            var id = Guid.NewGuid();
+            //act
+            var recipe = await recipeRepository.GetById(id);
+            //assert
+            Assert.Null(recipe);
+        }
+
+        [Fact]
+        public async Task GetRecipeById_EmptyDatabase()
+        {
+            //arrange
+            var guid = RecipeSamples.NormalRecipe.Id;
+            //act
+            var recipe = await recipeRepository.GetById(guid);
+            //assert
+            Assert.Null(recipe);
         }
         #endregion
+
 
         #region Add Recipe Tests
         [Fact]
@@ -84,6 +130,18 @@ namespace RecipeGeneratorAPI.Tests.Database.Recipes
             var recipe = RecipeSamples.NullRecipe;
             //act && assert
             await Assert.ThrowsAsync<ArgumentNullException>(async () => await recipeRepository.Add(recipe));
+        }
+
+        [Fact]
+        public async Task AddRecipe_ExistingOne()
+        {
+            //arrange
+            recipeDbContext.Recipes.Add(RecipeSamples.NormalRecipe);
+            await recipeDbContext.SaveChangesAsync();
+            var recipeCount = recipeDbContext.Recipes.Count();
+            //act && assert
+            await Assert.ThrowsAnyAsync<ArgumentException>(async () => await recipeRepository.Add(RecipeSamples.NormalRecipe));
+
         }
         #endregion
 

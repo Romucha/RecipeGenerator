@@ -19,6 +19,14 @@ namespace RecipeGeneratorAPI.Tests.Samples
 
         public static Recipe NullRecipe { get; }
 
+        public static ICollection<Recipe> NormalRecipes { get; }
+
+        public static ICollection<Recipe> DefaultRecipes { get; }
+
+        public static ICollection<Recipe> EmptyRecipes { get; }
+
+        public static ICollection<Recipe> NullRecipes { get; }
+
         static RecipeSamples()
         {
             NormalRecipe = new Recipe()
@@ -40,6 +48,44 @@ namespace RecipeGeneratorAPI.Tests.Samples
             EmptyRecipe = new Recipe();
 
             NullRecipe = null;
+
+            NormalRecipes =
+            [
+                new Recipe()
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Test Name 1",
+                    Description = "Test Description 1",
+                    CourseType = Course.Soup,
+                    CreatedAt = DateTime.Now,
+                    UpdatedAt = DateTime.Now,
+                    Image = Properties.Resources.apple,
+                    Steps = StepSamples.NormalSteps,
+                    Ingredients = IngredientSamples.NormalIngredients
+                },
+                new Recipe()
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Test Name 2",
+                    Description = "Test Description 2",
+                    CourseType = Course.Soup,
+                    CreatedAt = DateTime.Now,
+                    UpdatedAt = DateTime.Now,
+                    Image = Properties.Resources.apple,
+                    Steps = StepSamples.NormalSteps,
+                    Ingredients = IngredientSamples.NormalIngredients
+                }
+            ];
+
+            DefaultRecipes =
+            [
+                recipeFactory.DefaultRecipe().Result,
+                recipeFactory.DefaultRecipe().Result
+            ];
+
+            EmptyRecipes = [];
+
+            NullRecipes = null;
         }
     }
 }
