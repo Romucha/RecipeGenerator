@@ -17,13 +17,14 @@ using RecipeGeneratorAPI.Tests.Samples;
 
 namespace RecipeGeneratorAPI.Tests.Database.Recipes
 {
-    public class RecipeRepositoryTests
+    [Collection("RecipeRepository")]
+    public class RecipeRepository_Add_Tests : IDisposable
     {
         private readonly IRecipeRepository recipeRepository;
 
         private readonly RecipeDbContext recipeDbContext;
 
-        public RecipeRepositoryTests()
+        public RecipeRepository_Add_Tests()
         {
             IConfiguration configuration = new Mock<IConfiguration>().Object;
             IIngredientFactory ingredientFactory = new IngredientFactory();
@@ -36,62 +37,8 @@ namespace RecipeGeneratorAPI.Tests.Database.Recipes
             recipeRepository = new RecipeRepository(recipeDbContext);
         }
 
-        #region Get Recipe Tests
         [Fact]
-        public async Task GetAllRecipes_Normal()
-        {
-            //arrange
-            await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
-            await recipeDbContext.SaveChangesAsync();
-            //act
-            var recipes = recipeRepository.GetAll();
-            //assert
-            Assert.NotNull(recipes);
-            Assert.NotEmpty(recipes);
-        }
-
-        [Fact]
-        public async Task GetRecipeById_Normal()
-        {
-            //arrange
-            await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
-            await recipeDbContext.SaveChangesAsync();
-            //act
-            var recipe = await recipeRepository.GetById(RecipeSamples.NormalRecipes.FirstOrDefault().Id);
-            //assert
-            Assert.NotNull(recipe);
-        }
-
-        [Fact]
-        public async Task GetRecipeById_IncorrectId()
-        {
-            //arrange
-            await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
-            await recipeDbContext.SaveChangesAsync();
-
-            var id = Guid.NewGuid();
-            //act
-            var recipe = await recipeRepository.GetById(id);
-            //assert
-            Assert.Null(recipe);
-        }
-
-        [Fact]
-        public async Task GetRecipeById_EmptyDatabase()
-        {
-            //arrange
-            var guid = RecipeSamples.NormalRecipe.Id;
-            //act
-            var recipe = await recipeRepository.GetById(guid);
-            //assert
-            Assert.Null(recipe);
-        }
-        #endregion
-
-
-        #region Add Recipe Tests
-        [Fact]
-        public async Task AddRecipe_Normal()
+        public async Task Add_Normal()
         {
             //arrange
             var recipe = RecipeSamples.NormalRecipe;
@@ -102,7 +49,7 @@ namespace RecipeGeneratorAPI.Tests.Database.Recipes
         }
 
         [Fact]
-        public async Task AddRecipe_Default()
+        public async Task Add_Default()
         {
             //arrange
             var recipe = RecipeSamples.DefaultRecipe;
@@ -113,7 +60,7 @@ namespace RecipeGeneratorAPI.Tests.Database.Recipes
         }
 
         [Fact]
-        public async Task AddRecipe_Empty()
+        public async Task Add_Empty()
         {
             //arrange
             var recipe = RecipeSamples.EmptyRecipe;
@@ -124,7 +71,7 @@ namespace RecipeGeneratorAPI.Tests.Database.Recipes
         }
 
         [Fact]
-        public async Task AddRecipe_Null()
+        public async Task Add_Null()
         {
             //arrange
             var recipe = RecipeSamples.NullRecipe;
@@ -133,7 +80,7 @@ namespace RecipeGeneratorAPI.Tests.Database.Recipes
         }
 
         [Fact]
-        public async Task AddRecipe_ExistingOne()
+        public async Task Add_ExistingId()
         {
             //arrange
             recipeDbContext.Recipes.Add(RecipeSamples.NormalRecipe);
@@ -143,14 +90,11 @@ namespace RecipeGeneratorAPI.Tests.Database.Recipes
             await Assert.ThrowsAnyAsync<ArgumentException>(async () => await recipeRepository.Add(RecipeSamples.NormalRecipe));
 
         }
-        #endregion
 
-        #region Detele Recipe Tests
-
-        #endregion
-
-        #region Update Recipe Tests
-
-        #endregion
+        public void Dispose()
+        {
+            recipeDbContext.Database.EnsureDeleted();
+            recipeDbContext.Dispose();
+        }
     }
 }
