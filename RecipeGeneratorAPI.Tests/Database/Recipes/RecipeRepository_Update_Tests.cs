@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RecipeGenerator.API.Models.Recipes;
 using RecipeGeneratorAPI.Tests.Samples;
 using System;
 using System.Collections.Generic;
@@ -12,45 +11,39 @@ namespace RecipeGeneratorAPI.Tests.Database.Recipes
     public partial class RecipeRepository_Tests
     {
         [Fact]
-        public async Task Delete_Normal()
+        public async Task Update_Normal()
         {
             //arrange
             await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
             await recipeDbContext.SaveChangesAsync();
+            string alteredName = Guid.NewGuid().ToString();
             //act
-            await recipeRepository.Delete(RecipeSamples.NormalRecipes.FirstOrDefault());
+            RecipeSamples.NormalRecipes.FirstOrDefault().Name = alteredName;
+            await recipeRepository.Update(RecipeSamples.NormalRecipes.FirstOrDefault());
             //assert
-            Assert.False(recipeDbContext.Recipes.Contains(RecipeSamples.NormalRecipes.FirstOrDefault()));
+            Assert.Equal(alteredName, recipeDbContext.Recipes.FirstOrDefault().Name);
         }
 
         [Fact]
-        public async Task Delete_NonExistent()
+        public async Task Update_NonExistent()
+        {
+            //arrange
+            await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
+            await recipeDbContext.SaveChangesAsync();
+            string alteredName = Guid.NewGuid().ToString();
+            //act & assert
+            RecipeSamples.DefaultRecipe.Name = alteredName;
+            await Assert.ThrowsAsync<DbUpdateConcurrencyException>(async () => await recipeRepository.Update(RecipeSamples.DefaultRecipe));
+        }
+
+        [Fact]
+        public async Task Update_Null()
         {
             //arrange
             await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
             await recipeDbContext.SaveChangesAsync();
             //act & assert
-            await Assert.ThrowsAnyAsync<DbUpdateConcurrencyException>(async () => await recipeRepository.Delete(RecipeSamples.DefaultRecipe));
-        }
-
-        [Fact]
-        public async Task Delete_EmptyDatabase()
-        {
-            //arrange
-
-            //act & assert
-            await Assert.ThrowsAnyAsync<DbUpdateConcurrencyException>(async () => await recipeRepository.Delete(RecipeSamples.NormalRecipe));
-        }
-
-        [Fact]
-        public async Task Delete_Null()
-        {
-            //arrange
-            await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
-            await recipeDbContext.SaveChangesAsync();
-            //act & assert
-            await Assert.ThrowsAnyAsync<ArgumentNullException>(async () => await recipeRepository.Delete(RecipeSamples.NullRecipe));
-
+            await Assert.ThrowsAsync<NullReferenceException>(async () => await recipeRepository.Update(null));
         }
     }
 }
