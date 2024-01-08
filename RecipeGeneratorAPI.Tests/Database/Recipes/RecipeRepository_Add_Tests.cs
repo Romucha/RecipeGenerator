@@ -17,26 +17,8 @@ using RecipeGeneratorAPI.Tests.Samples;
 
 namespace RecipeGeneratorAPI.Tests.Database.Recipes
 {
-    [Collection("RecipeRepository")]
-    public class RecipeRepository_Add_Tests : IDisposable
+    public partial class RecipeRepository_Tests
     {
-        private readonly IRecipeRepository recipeRepository;
-
-        private readonly RecipeDbContext recipeDbContext;
-
-        public RecipeRepository_Add_Tests()
-        {
-            IConfiguration configuration = new Mock<IConfiguration>().Object;
-            IIngredientFactory ingredientFactory = new IngredientFactory();
-            IIngredientGetter ingredientgetter = new IngredientGetter(ingredientFactory);
-            DbContextOptions<RecipeDbContext> dbContextOptions = new DbContextOptionsBuilder<RecipeDbContext>().UseInMemoryDatabase(Guid.NewGuid().ToString())
-                                                                                                               .ConfigureWarnings(b => b.Ignore(InMemoryEventId.TransactionIgnoredWarning))
-                                                                                                               .Options;
-            recipeDbContext = new RecipeDbContext(configuration, ingredientgetter, dbContextOptions);
-
-            recipeRepository = new RecipeRepository(recipeDbContext);
-        }
-
         [Fact]
         public async Task Add_Normal()
         {
@@ -89,12 +71,6 @@ namespace RecipeGeneratorAPI.Tests.Database.Recipes
             //act && assert
             await Assert.ThrowsAnyAsync<ArgumentException>(async () => await recipeRepository.Add(RecipeSamples.NormalRecipe));
 
-        }
-
-        public void Dispose()
-        {
-            recipeDbContext.Database.EnsureDeleted();
-            recipeDbContext.Dispose();
         }
     }
 }
