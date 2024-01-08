@@ -13,9 +13,9 @@ using RecipeGenerator.API.Database.Recipes;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using RecipeGenerator.API.Models.Recipes;
 using RecipeGenerator.API.Models.Steps;
-using RecipeGeneratorAPI.Tests.Samples;
+using RecipeGenerator.API.Tests.Samples;
 
-namespace RecipeGeneratorAPI.Tests.Database.Recipes
+namespace RecipeGenerator.API.Tests.Database.Recipes
 {
     public partial class RecipeRepository_Tests
     {

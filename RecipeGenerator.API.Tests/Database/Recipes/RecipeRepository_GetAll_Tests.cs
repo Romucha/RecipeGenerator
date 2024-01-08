@@ -11,9 +11,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore.Diagnostics;
-using RecipeGeneratorAPI.Tests.Samples;
+using RecipeGenerator.API.Tests.Samples;
 
-namespace RecipeGeneratorAPI.Tests.Database.Recipes
+namespace RecipeGenerator.API.Tests.Database.Recipes
 {
     public partial class RecipeRepository_Tests
     {

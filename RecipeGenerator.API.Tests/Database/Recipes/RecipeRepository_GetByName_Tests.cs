@@ -11,45 +11,67 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore.Diagnostics;
-using RecipeGeneratorAPI.Tests.Samples;
+using RecipeGenerator.API.Tests.Samples;
 
-namespace RecipeGeneratorAPI.Tests.Database.Recipes
+namespace RecipeGenerator.API.Tests.Database.Recipes
 {
     public partial class RecipeRepository_Tests
     {
         [Fact]
-        public async Task GetById_Normal()
+        public async Task GetByName_Normal()
         {
             //arrange
             await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
             await recipeDbContext.SaveChangesAsync();
             //act
-            var recipe = await recipeRepository.GetById(RecipeSamples.NormalRecipes.FirstOrDefault().Id);
+            var recipe = await recipeRepository.GetByName(RecipeSamples.NormalRecipes.FirstOrDefault().Name);
             //assert
             Assert.NotNull(recipe);
         }
 
         [Fact]
-        public async Task GetById_IncorrectId()
+        public async Task GetByName_IncorrectName()
         {
             //arrange
             await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
             await recipeDbContext.SaveChangesAsync();
 
-            var id = Guid.NewGuid();
+            var name = "a-random-name";
             //act
-            var recipe = await recipeRepository.GetById(id);
+            var recipe = await recipeRepository.GetByName(name);
             //assert
             Assert.Null(recipe);
         }
 
         [Fact]
-        public async Task GetById_EmptyDatabase()
+        public async Task GetByName_EmptyDatabase()
         {
             //arrange
-            var guid = RecipeSamples.NormalRecipe.Id;
+            var name = RecipeSamples.NormalRecipe.Name;
             //act
-            var recipe = await recipeRepository.GetById(guid);
+            var recipe = await recipeRepository.GetByName(name);
+            //assert
+            Assert.Null(recipe);
+        }
+
+        [Fact]
+        public async Task GetByName_EmptyName()
+        {
+            //arrange
+            var name = string.Empty;
+            //act
+            var recipe = await recipeRepository.GetByName(name);
+            //assert
+            Assert.Null(recipe);
+        }
+
+        [Fact]
+        public async Task GetByName_NullName()
+        {
+            //arrange
+            string name = null;
+            //act
+            var recipe = await recipeRepository.GetByName(name);
             //assert
             Assert.Null(recipe);
         }

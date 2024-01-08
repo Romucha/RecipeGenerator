@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGeneratorAPI.Tests.Models.Recipes
+namespace RecipeGenerator.API.Tests.Models.Recipes
 {
     public class RecipeFactoryTests
     {

@@ -8,7 +8,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.API", "Reci
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.App", "RecipeGenerator.App\RecipeGenerator.App.csproj", "{76AEA5FC-3C10-412D-81DD-39902361E4E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGeneratorAPI.Tests", "RecipeGeneratorAPI.Tests\RecipeGeneratorAPI.Tests.csproj", "{08C561AF-1825-402D-8EB1-79A6DD5E6384}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.API.Tests", "RecipeGenerator.API.Tests\RecipeGenerator.API.Tests.csproj", "{81DEFB4B-40B2-4059-8771-66FD68C32656}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,10 +30,10 @@ Global
 		{76AEA5FC-3C10-412D-81DD-39902361E4E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76AEA5FC-3C10-412D-81DD-39902361E4E6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{76AEA5FC-3C10-412D-81DD-39902361E4E6}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{08C561AF-1825-402D-8EB1-79A6DD5E6384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{08C561AF-1825-402D-8EB1-79A6DD5E6384}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{08C561AF-1825-402D-8EB1-79A6DD5E6384}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{08C561AF-1825-402D-8EB1-79A6DD5E6384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DEFB4B-40B2-4059-8771-66FD68C32656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DEFB4B-40B2-4059-8771-66FD68C32656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DEFB4B-40B2-4059-8771-66FD68C32656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DEFB4B-40B2-4059-8771-66FD68C32656}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGeneratorAPI.Tests.Database.Ingredients
+namespace RecipeGenerator.API.Tests.Database.Ingredients
 {
     internal class IngredientRepositoryTests
     {

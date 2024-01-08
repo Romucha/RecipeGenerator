@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGeneratorAPI.Tests.Models.Steps
+namespace RecipeGenerator.API.Tests.Models.Steps
 {
     public class StepFactoryTests
     {

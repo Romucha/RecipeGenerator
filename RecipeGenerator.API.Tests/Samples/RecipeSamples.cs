@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGeneratorAPI.Tests.Samples
+namespace RecipeGenerator.API.Tests.Samples
 {
     internal static class RecipeSamples
     {

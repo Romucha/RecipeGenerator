@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
-namespace RecipeGeneratorAPI.Tests.Database.Recipes
+namespace RecipeGenerator.API.Tests.Database.Recipes
 {
     public partial class RecipeRepository_Tests : IDisposable
     {
