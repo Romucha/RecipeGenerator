@@ -1,4 +1,5 @@
-﻿using RecipeGenerator.API.Models.Ingeridients;
+﻿using RecipeGenerator.API.DTO.Ingredients;
+using RecipeGenerator.API.Models.Ingeridients;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,16 +10,16 @@ namespace RecipeGenerator.API.Database.Ingredients
 {
     public interface IIngredientRepository
     {
-        Task<Ingredient> GetByName(string name);
+        Task<GetIngredientDTO> GetByName(string name);
 
-        Task<IEnumerable<Ingredient>> GetAll();
+        Task<IEnumerable<GetIngredientDTO>> GetAll();
 
-        IEnumerable<Ingredient> GetByType(IngredientType type);
+        IEnumerable<GetIngredientDTO> GetByType(IngredientType type);
 
-        Task Add(Ingredient ingredient);
+        Task Create(CreateIngredientDTO createIngredientDTO);
 
-        Task Update(Ingredient ingredient);
+        Task Update(UpdateIngredientDTO updateIngredientDTO);
 
-        Task Delete(Ingredient ingredient);
+        Task Delete(DeleteIngredientDTO deleteIngredientDTO);
     }
 }

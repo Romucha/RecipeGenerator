@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.Models.Ingeridients
 {
-    public class IngredientFactory : IIngredientFactory
+    internal class IngredientFactory : IIngredientFactory
     {
         public Ingredient Create(string name, string description, Uri link, byte[] image, IngredientType ingredientType)
         {

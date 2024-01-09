@@ -7,7 +7,7 @@ namespace RecipeGenerator.API.Models.Recipes
     /// <summary>
     /// Contains basic information about recipe
     /// </summary>
-    public class Recipe
+    internal class Recipe
     {
         [Key]
         public Guid Id { get; set; }

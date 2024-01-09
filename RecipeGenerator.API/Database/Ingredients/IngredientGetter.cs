@@ -1,4 +1,5 @@
-﻿using RecipeGenerator.API.Models.Ingeridients;
+﻿using RecipeGenerator.API.DTO.Ingredients;
+using RecipeGenerator.API.Models.Ingeridients;
 using RecipeGenerator.API.Properties;
 using RecipeGenerator.API.Properties.Ingredients;
 using System;
@@ -28,7 +29,7 @@ namespace RecipeGenerator.API.Database.Ingredients
             this.ingredientFactory = ingredientFactory;
         }
 
-        public IEnumerable<Ingredient> Get()
+        public IEnumerable<GetIngredientDTO> Get()
         {
             ResourceManager resourceManager = new ResourceManager(typeof(IngredientNames));
 

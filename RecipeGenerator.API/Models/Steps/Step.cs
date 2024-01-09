@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.Models.Steps
 {
-    public class Step
+    internal class Step
     {
         [Key]
         public Guid Id { get; set; }
