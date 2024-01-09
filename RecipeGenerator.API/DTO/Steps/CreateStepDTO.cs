@@ -15,5 +15,9 @@ namespace RecipeGenerator.API.DTO.Steps
         public string Description { get; set; }
 
         public List<byte[]> Photos { get; set; }
+
+        public DateTime CreatedAt { get; set; }
+
+        public DateTime UpdatedAt { get; set; }
     }
 }

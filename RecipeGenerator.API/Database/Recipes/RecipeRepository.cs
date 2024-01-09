@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using RecipeGenerator.API.DTO.Recipes;
 using RecipeGenerator.API.Models.Recipes;
 using System;
 using System.Collections.Generic;
@@ -11,42 +13,52 @@ namespace RecipeGenerator.API.Database.Recipes
     public class RecipeRepository : IRecipeRepository
     {
         private readonly RecipeDbContext recipeDbContext;
+        private readonly IMapper mapper;
 
-        public RecipeRepository(RecipeDbContext recipeDbContext)
+        public RecipeRepository(RecipeDbContext recipeDbContext, IMapper mapper)
         {
             this.recipeDbContext = recipeDbContext;
+            this.mapper = mapper;
         }
 
-        public async Task Add(Recipe recipe)
+        public async Task Create(CreateRecipeDTO createRecipeDTO)
         {
+            var recipe = mapper.Map<Recipe>(createRecipeDTO);
+
             await recipeDbContext.Recipes.AddAsync(recipe);
             await recipeDbContext.SaveChangesAsync();
         }
 
-        public async Task Delete(Recipe recipe)
+        public async Task Delete(DeleteRecipeDTO deleteRecipeDTO)
         {
+            var recipe = mapper.Map<Recipe>(deleteRecipeDTO);
+
             recipeDbContext.Recipes.Remove(recipe);
             await recipeDbContext.SaveChangesAsync();
         }
 
-        public IEnumerable<Recipe> GetAll()
+        public async Task<IEnumerable<GetRecipeDTO>> GetAll()
         {
-            return recipeDbContext.Recipes.AsNoTracking();
+            return (await Task.FromResult(recipeDbContext.Recipes.AsNoTracking())).Select(c => mapper.Map<GetRecipeDTO>(c));
         }
 
-        public async Task<Recipe> GetById(Guid id)
+        public async Task<GetRecipeDTO> GetById(Guid id)
         {
-            return await recipeDbContext.Recipes.FindAsync(id);
+            var recipe = await recipeDbContext.Recipes.FindAsync(id);
+            return mapper.Map<GetRecipeDTO>(recipe);
         }
 
-        public async Task<Recipe> GetByName(string name)
+        public async Task<GetRecipeDTO> GetByName(string name)
         {
-            return await recipeDbContext.Recipes.FirstOrDefaultAsync(x => x.Name.Contains(name, StringComparison.CurrentCultureIgnoreCase));
+            var recipe = await recipeDbContext.Recipes.FirstOrDefaultAsync(x => x.Name.Contains(name, StringComparison.CurrentCultureIgnoreCase));
+            return mapper.Map<GetRecipeDTO>(recipe);
         }
 
-        public async Task Update(Recipe recipe)
+        public async Task Update(UpdateRecipeDTO updateRecipeDTO)
         {
-            recipe.UpdatedAt = DateTime.Now;
+            updateRecipeDTO.UpdatedAt = DateTime.Now;
+            var recipe = mapper.Map<Recipe>(updateRecipeDTO);
+
             recipeDbContext.Recipes.Update(recipe);
             await recipeDbContext.SaveChangesAsync();
         }

@@ -14,7 +14,7 @@ namespace RecipeGenerator.API.Database.Recipes
         Task<GetRecipeDTO> GetByName(string name);
         Task<GetRecipeDTO> GetById(Guid id);
 
-        IEnumerable<GetRecipeDTO> GetAll();
+        Task<IEnumerable<GetRecipeDTO>> GetAll();
 
         Task Create(CreateRecipeDTO createRecipeDTO);
 

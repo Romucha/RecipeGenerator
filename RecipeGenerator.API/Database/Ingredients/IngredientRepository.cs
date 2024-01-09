@@ -54,6 +54,7 @@ namespace RecipeGenerator.API.Database.Ingredients
 
         public async Task Update(UpdateIngredientDTO updateIngredientDTO)
         {
+            updateIngredientDTO.UpdatedAt = DateTime.Now;
             var ingredient = mapper.Map<Ingredient>(updateIngredientDTO);
             dbContext.Ingredients.Update(ingredient);
             await dbContext.SaveChangesAsync();

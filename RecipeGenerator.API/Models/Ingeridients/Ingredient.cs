@@ -17,6 +17,8 @@ namespace RecipeGenerator.API.Models.Ingeridients
         public string Description { get; set; }
         public Uri Link { get; set; }
         public IngredientType IngredientType { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
         public byte[] Image { get; set; }
         public List<Step> Steps { get; set; }
         public List<Recipe> Recipes { get; set; }
