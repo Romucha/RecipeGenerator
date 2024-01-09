@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using RecipeGenerator.API.DTO.Ingredients;
 using RecipeGenerator.API.Models.Ingeridients;
 using System;
 using System.Collections.Generic;
@@ -11,39 +13,50 @@ namespace RecipeGenerator.API.Database.Ingredients
     public class IngredientRepository : IIngredientRepository
     {
         private readonly RecipeDbContext dbContext;
-        public IngredientRepository(RecipeDbContext dbContext)
+        private readonly IMapper mapper;
+        public IngredientRepository(RecipeDbContext dbContext, IMapper mapper)
         {
             this.dbContext = dbContext;
+            this.mapper = mapper;
         }
 
-        public async Task Add(Ingredient ingredient)
+        public async Task Create(CreateIngredientDTO createIngredientDTO)
         {
-            throw new NotImplementedException();
+            var ingredient = mapper.Map<Ingredient>(createIngredientDTO);
+            await dbContext.Ingredients.AddAsync(ingredient);
+            await dbContext.SaveChangesAsync();
         }
 
-        public async Task Delete(Ingredient ingredient)
+        public async Task Delete(DeleteIngredientDTO deleteIngredientDTO)
         {
-            throw new NotImplementedException();
+            var ingredient = mapper.Map<Ingredient>(deleteIngredientDTO);
+            dbContext.Ingredients.Remove(ingredient);
+            await dbContext.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<Ingredient>> GetAll()
+        public async Task<IEnumerable<GetIngredientDTO>> GetAll()
         {
-            return await Task.FromResult(dbContext.Ingredients);
+            var ingredients = await Task.FromResult(dbContext.Ingredients.AsNoTracking());
+            return ingredients.Select(c => mapper.Map<GetIngredientDTO>(c));
         }
 
-        public async Task<Ingredient> GetByName(string name)
+        public async Task<GetIngredientDTO> GetByName(string name)
         {
-            return await dbContext.Ingredients.FirstOrDefaultAsync(x => x.Name == name);
+            var ingredient = await dbContext.Ingredients.FirstOrDefaultAsync(x => x.Name == name);
+            return mapper.Map<GetIngredientDTO>(ingredient);
         }
 
-        public IEnumerable<Ingredient> GetByType(IngredientType type)
+        public IEnumerable<GetIngredientDTO> GetByType(IngredientType type)
         {
-            return dbContext.Ingredients.Where(c => c.IngredientType == type);
+            var ingredients = dbContext.Ingredients.Where(c => c.IngredientType == type).AsNoTracking();
+            return ingredients.Select(c => mapper.Map<GetIngredientDTO>(c));
         }
 
-        public async Task Update(Ingredient ingredient)
+        public async Task Update(UpdateIngredientDTO updateIngredientDTO)
         {
-            throw new NotImplementedException();
+            var ingredient = mapper.Map<Ingredient>(updateIngredientDTO);
+            dbContext.Ingredients.Update(ingredient);
+            await dbContext.SaveChangesAsync();
         }
     }
 }
