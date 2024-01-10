@@ -14,7 +14,7 @@ namespace RecipeGenerator.API.Database.Ingredients
     {
         private readonly RecipeDbContext dbContext;
         private readonly IMapper mapper;
-        public IngredientRepository(RecipeDbContext dbContext, IMapper mapper)
+        internal IngredientRepository(RecipeDbContext dbContext, IMapper mapper)
         {
             this.dbContext = dbContext;
             this.mapper = mapper;

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.Models.Steps
 {
-    public class StepFactory : IStepFactory
+    internal class StepFactory : IStepFactory
     {
-        public Step DefaultStep()
+        public Step Create()
         {
             return new Step()
             {

@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.Models.Recipes
 {
-    public class RecipeFactory : IRecipeFactory
+    internal class RecipeFactory : IRecipeFactory
     {
-        public async Task<Recipe> DefaultRecipe()
+        public async Task<Recipe> Create()
         {
             return await Task.FromResult<Recipe>(new Recipe()
             {

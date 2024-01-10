@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.Models.Recipes
 {
-    public interface IRecipeFactory
+    internal interface IRecipeFactory
     {
-        Task<Recipe> DefaultRecipe();
+        Task<Recipe> Create();
     }
 }

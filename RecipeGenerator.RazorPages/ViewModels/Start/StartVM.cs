@@ -2,6 +2,8 @@
 using CommunityToolkit.Mvvm.Input;
 using RecipeGenerator.API.Database.Ingredients;
 using RecipeGenerator.API.Database.Recipes;
+using RecipeGenerator.API.DTO.Ingredients;
+using RecipeGenerator.API.DTO.Steps;
 using RecipeGenerator.API.Models.Ingeridients;
 using RecipeGenerator.API.Models.Recipes;
 using RecipeGenerator.API.Models.Steps;
@@ -75,21 +77,21 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
             set => SetProperty(ref allIngredientList, value);
         }
 
-        private ObservableCollection<Step> stepList;
+        private ObservableCollection<GetStepDTO> stepList;
         /// <summary>
         /// List of steps of a new recipe
         /// </summary>
-        public ObservableCollection<Step> StepList
+        public ObservableCollection<GetStepDTO> StepList
         {
             get => stepList;
             set => SetProperty(ref stepList, value);
         }
 
-        private ObservableCollection<Ingredient> ingredientList;
+        private ObservableCollection<GetIngredientDTO> ingredientList;
         /// <summary>
         /// List of ingredients of a new recipe
         /// </summary>
-        public ObservableCollection<Ingredient> IngredientList
+        public ObservableCollection<GetIngredientDTO> IngredientList
         {
             get => ingredientList;
             set => SetProperty(ref ingredientList, value);
@@ -119,10 +121,10 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
             SaveRecipeCommand = new AsyncRelayCommand(saveRecipe);
 
             AddStepCommand = new RelayCommand(addStep);
-            DeleteStepCommand = new RelayCommand<Step>(deleteStep);
+            DeleteStepCommand = new RelayCommand<GetStepDTO>(deleteStep);
 
             AddIngredientCommand = new AsyncRelayCommand(addIngredient);
-            DeleteIngredientCommand = new RelayCommand<Ingredient>(deleteIngredient);
+            DeleteIngredientCommand = new RelayCommand<GetIngredientDTO>(deleteIngredient);
         }
 
         #region Preparations
@@ -185,7 +187,7 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
         /// </summary>
         public IRelayCommand AddStepCommand { get; private set; }
 
-        private void deleteStep(Step step)
+        private void deleteStep(DeleteStepDTO step)
         {
             StepList.Remove(step);
         }

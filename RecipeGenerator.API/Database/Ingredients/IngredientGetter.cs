@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.Database.Ingredients
 {
-    public class IngredientGetter : IIngredientGetter
+    internal class IngredientGetter : IIngredientGetter
     {
         private class DictionaryEntryDTO
         {
@@ -29,7 +29,7 @@ namespace RecipeGenerator.API.Database.Ingredients
             this.ingredientFactory = ingredientFactory;
         }
 
-        public IEnumerable<GetIngredientDTO> Get()
+        public IEnumerable<CreateIngredientDTO> Get()
         {
             ResourceManager resourceManager = new ResourceManager(typeof(IngredientNames));
 
@@ -61,7 +61,16 @@ namespace RecipeGenerator.API.Database.Ingredients
                 var imageres = resource.FirstOrDefault(c => c.propertyName == "Image");
                 byte[] image = imageres == null ? null : descres.propertyValue as byte[];
 
-                yield return ingredientFactory.Create(name, description, uri, image, type);
+                yield return new CreateIngredientDTO
+                {
+                    Name = name,
+                    Description = description,
+                    CreatedAt = DateTime.Now,
+                    Image = image,
+                    IngredientType = type,
+                    Link = uri,
+                    UpdatedAt = DateTime.Now,
+                };
             }
         }
 

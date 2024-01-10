@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.Models.Steps
 {
-    public interface IStepFactory
+    internal interface IStepFactory
     {
-        Step DefaultStep();
+        Step Create();
     }
 }
