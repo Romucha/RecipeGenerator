@@ -3,6 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 using RecipeGenerator.API.Database.Ingredients;
 using RecipeGenerator.API.Database.Recipes;
 using RecipeGenerator.API.DTO.Ingredients;
+using RecipeGenerator.API.DTO.Recipes;
 using RecipeGenerator.API.DTO.Steps;
 using RecipeGenerator.API.Models.Ingeridients;
 using RecipeGenerator.API.Models.Recipes;
@@ -20,17 +21,15 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
     {
         private readonly IRecipeRepository recipeRepository;
         private readonly IIngredientRepository ingredientRepository;
-        private readonly IRecipeFactory recipeFactory;
-        private readonly IStepFactory stepFactory;
 
-        private Recipe recipe;
+        private CreateRecipeDTO recipeDTO;
         /// <summary>
         /// A recipe to be added
         /// </summary>
-        public Recipe Recipe
+        public CreateRecipeDTO RecipeDTO
         {
-            get => recipe;
-            set => SetProperty(ref recipe, value);
+            get => recipeDTO;
+            set => SetProperty(ref recipeDTO, value);
         }
 
         private IEnumerable<CourseListItem> courseList;
@@ -77,11 +76,11 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
             set => SetProperty(ref allIngredientList, value);
         }
 
-        private ObservableCollection<GetStepDTO> stepList;
+        private ObservableCollection<CreateStepDTO> stepList;
         /// <summary>
         /// List of steps of a new recipe
         /// </summary>
-        public ObservableCollection<GetStepDTO> StepList
+        public ObservableCollection<CreateStepDTO> StepList
         {
             get => stepList;
             set => SetProperty(ref stepList, value);
@@ -107,12 +106,10 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
             set => SetProperty(ref selectedIngredientName, value);
         }
 
-        public StartVM(IRecipeRepository recipeRepository, IIngredientRepository ingredientRepository, IRecipeFactory recipeFactory, IStepFactory stepFactory)
+        public StartVM(IRecipeRepository recipeRepository, IIngredientRepository ingredientRepository)
         {
             this.recipeRepository = recipeRepository;
             this.ingredientRepository = ingredientRepository;
-            this.recipeFactory = recipeFactory;
-            this.stepFactory = stepFactory;
 
             GetCourseListCommand = new RelayCommand(getCourseList);
             GetIngredientTypesListCommand = new RelayCommand(getIngredientTypesList);
@@ -121,7 +118,7 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
             SaveRecipeCommand = new AsyncRelayCommand(saveRecipe);
 
             AddStepCommand = new RelayCommand(addStep);
-            DeleteStepCommand = new RelayCommand<GetStepDTO>(deleteStep);
+            DeleteStepCommand = new RelayCommand<CreateStepDTO>(deleteStep);
 
             AddIngredientCommand = new AsyncRelayCommand(addIngredient);
             DeleteIngredientCommand = new RelayCommand<GetIngredientDTO>(deleteIngredient);
@@ -156,7 +153,7 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
         #region Recipes
         private async Task resetRecipe()
         {
-            Recipe = await recipeFactory.DefaultRecipe();
+            RecipeDTO = new();
             StepList = [];
             IngredientList = [];
         }
@@ -167,9 +164,9 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
 
         private async Task saveRecipe()
         {
-            Recipe.Ingredients = IngredientList;
-            Recipe.Steps = StepList;
-            await recipeRepository.Add(Recipe);
+            RecipeDTO.Ingredients = IngredientList;
+            RecipeDTO.Steps = StepList;
+            await recipeRepository.Create(RecipeDTO);
         }
         /// <summary>
         /// Adds recipe to database
@@ -180,18 +177,18 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
         #region Steps
         private void addStep()
         {
-            StepList.Add(stepFactory.DefaultStep());
+            StepList.Add(new CreateStepDTO());
         }
         /// <summary>
         /// Adds a new step to recipe
         /// </summary>
         public IRelayCommand AddStepCommand { get; private set; }
 
-        private void deleteStep(DeleteStepDTO step)
+        private void deleteStep(CreateStepDTO step)
         {
             StepList.Remove(step);
         }
-        public IRelayCommand<Step> DeleteStepCommand { get; private set; }
+        public IRelayCommand<CreateStepDTO> DeleteStepCommand { get; private set; }
         #endregion
 
         #region Ingredients
@@ -209,14 +206,14 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
         /// </summary>
         public IAsyncRelayCommand AddIngredientCommand { get; private set; }
 
-        private void deleteIngredient(Ingredient ingredient)
+        private void deleteIngredient(GetIngredientDTO ingredient)
         {
             IngredientList.Remove(ingredient);
         }
         /// <summary>
         /// Deletes ingredient from recipe
         /// </summary>
-        public IRelayCommand<Ingredient> DeleteIngredientCommand { get; private set; }
+        public IRelayCommand<GetIngredientDTO> DeleteIngredientCommand { get; private set; }
         #endregion
     }
 }

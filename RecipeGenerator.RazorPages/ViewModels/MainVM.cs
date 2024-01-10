@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using RecipeGenerator.API.DTO.Recipes;
 using RecipeGenerator.API.Models.Recipes;
 using System;
 using System.Collections.Generic;
@@ -13,9 +14,9 @@ namespace RecipeGenerator.App.ViewModels
     {
         public MainVM() { }
 
-        private ObservableCollection<Recipe> recipes;
+        private ObservableCollection<GetRecipeDTO> recipes;
 
-        public ObservableCollection<Recipe> Recipes
+        public ObservableCollection<GetRecipeDTO> Recipes
         {
             get => recipes;
             set => SetProperty(ref recipes, value);

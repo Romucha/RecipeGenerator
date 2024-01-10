@@ -27,7 +27,7 @@ namespace RecipeGenerator.RazorPages.Views.Start
             await base.OnInitializedAsync();
         }
 
-        private void StartVM_PropertyChanged(object? sender, PropertyChangedEventArgs e)
+        private void StartVM_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             this.StateHasChanged();
         }

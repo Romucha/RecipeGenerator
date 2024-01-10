@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using RecipeGenerator.API.Database.Recipes;
+using RecipeGenerator.API.DTO.Recipes;
 using RecipeGenerator.API.Models.Recipes;
 using System;
 using System.Collections.Generic;
@@ -15,9 +16,9 @@ namespace RecipeGenerator.RazorPages.ViewModels.Home
     {
         private readonly IRecipeRepository recipeRepository;
 
-        private IQueryable<Recipe> recipes;
+        private IEnumerable<GetRecipeDTO> recipes;
 
-        public IQueryable<Recipe> Recipes
+        public IEnumerable<GetRecipeDTO> Recipes
         {
             get => recipes;
             set => SetProperty(ref recipes, value);
@@ -26,14 +27,14 @@ namespace RecipeGenerator.RazorPages.ViewModels.Home
         public HomeVM(IRecipeRepository recipeRepository)
         {
             this.recipeRepository = recipeRepository;
-            GetRecipesCommand = new RelayCommand(getRecipes);
+            GetRecipesCommand = new AsyncRelayCommand(getRecipes);
         }
 
-        private void getRecipes()
+        private async Task getRecipes()
         {
-            Recipes = recipeRepository.GetAll() as IQueryable<Recipe>;
+            Recipes = await recipeRepository.GetAll();
         }
 
-        public IRelayCommand GetRecipesCommand { get; private set; }
+        public IAsyncRelayCommand GetRecipesCommand { get; private set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using RecipeGenerator.API.Database.Ingredients;
 using RecipeGenerator.API.Models.Ingeridients;
@@ -11,19 +12,21 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.Database
 {
-    internal class RecipeDbContext : DbContext
+    public class RecipeDbContext : DbContext
     {
-        public DbSet<Recipe> Recipes { get; set; }
+        internal DbSet<Recipe> Recipes { get; set; }
 
-        public DbSet<Ingredient> Ingredients { get; set; }
+        internal DbSet<Ingredient> Ingredients { get; set; }
 
         private readonly IConfiguration configuration;
         private readonly IIngredientGetter ingredientGetter;
+        private readonly IMapper mapper;
 
-        public RecipeDbContext(IConfiguration configuration, IIngredientGetter ingredientGetter, DbContextOptions dbContextOptions) : base(dbContextOptions)
+        public RecipeDbContext(IConfiguration configuration, IIngredientGetter ingredientGetter, IMapper mapper, DbContextOptions dbContextOptions) : base(dbContextOptions)
         {
             this.configuration = configuration;
             this.ingredientGetter = ingredientGetter;
+            this.mapper = mapper;
             Database.EnsureCreated();
         }
 
@@ -34,7 +37,7 @@ namespace RecipeGenerator.API.Database
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Ingredient>().HasData(ingredientGetter.Get());
+            modelBuilder.Entity<Ingredient>().HasData(ingredientGetter.Get().Select(c => mapper.Map<Ingredient>(c)));
         }
     }
 }

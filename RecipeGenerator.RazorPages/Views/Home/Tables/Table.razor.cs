@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components;
+using RecipeGenerator.API.DTO.Recipes;
 using RecipeGenerator.API.Models.Recipes;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,6 @@ namespace RecipeGenerator.RazorPages.Views.Home.Tables
     public partial class Table
     {
         [Parameter]
-        public IEnumerable<Recipe> Recipes { get; set; }
+        public IEnumerable<GetRecipeDTO> Recipes { get; set; }
     }
 }

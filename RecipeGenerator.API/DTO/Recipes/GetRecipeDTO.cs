@@ -11,9 +11,5 @@ namespace RecipeGenerator.API.DTO.Recipes
     public class GetRecipeDTO : CreateRecipeDTO
     {
         public Guid Id { get; set; }
-
-        public ICollection<GetStepDTO> Steps { get; set; } = default!;
-
-        public ICollection<GetIngredientDTO> Ingredients { get; set; } = default!;
     }
 }

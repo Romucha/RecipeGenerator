@@ -15,7 +15,7 @@ namespace RecipeGenerator.API.Database.Recipes
         private readonly RecipeDbContext recipeDbContext;
         private readonly IMapper mapper;
 
-        internal RecipeRepository(RecipeDbContext recipeDbContext, IMapper mapper)
+        public RecipeRepository(RecipeDbContext recipeDbContext, IMapper mapper)
         {
             this.recipeDbContext = recipeDbContext;
             this.mapper = mapper;
@@ -29,9 +29,9 @@ namespace RecipeGenerator.API.Database.Recipes
             await recipeDbContext.SaveChangesAsync();
         }
 
-        public async Task Delete(DeleteRecipeDTO deleteRecipeDTO)
+        public async Task Delete(Guid Id)
         {
-            var recipe = mapper.Map<Recipe>(deleteRecipeDTO);
+            var recipe = await recipeDbContext.Recipes.FindAsync(Id);
 
             recipeDbContext.Recipes.Remove(recipe);
             await recipeDbContext.SaveChangesAsync();

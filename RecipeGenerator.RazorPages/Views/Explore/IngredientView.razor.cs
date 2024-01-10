@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.AspNetCore.Components;
+using RecipeGenerator.API.DTO.Ingredients;
 using RecipeGenerator.API.Models.Ingeridients;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ namespace RecipeGenerator.RazorPages.Views.Explore
     public partial class IngredientView
     {
         [Parameter]
-        public Ingredient Ingredient { get; set; }
+        public GetIngredientDTO Ingredient { get; set; }
 
         private string imageURL { get; set; } = "/images/apple.png";
 

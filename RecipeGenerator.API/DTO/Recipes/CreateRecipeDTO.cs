@@ -21,6 +21,10 @@ namespace RecipeGenerator.API.DTO.Recipes
 
         public Course CourseType { get; set; }
 
+        public ICollection<GetIngredientDTO> Ingredients { get; set; }
+
+        public ICollection<CreateStepDTO> Steps { get; set; }
+
         public DateTime CreatedAt { get; set; }
 
         public DateTime UpdatedAt { get; set; }

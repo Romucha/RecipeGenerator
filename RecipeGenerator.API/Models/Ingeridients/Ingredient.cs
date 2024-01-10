@@ -12,7 +12,7 @@ namespace RecipeGenerator.API.Models.Ingeridients
     internal class Ingredient
     {
         [Key]
-        public Guid Id { get; set; }
+        public Guid Id { get; set; } = Guid.NewGuid();
         public string Name { get; set; }
         public string Description { get; set; }
         public Uri Link { get; set; }

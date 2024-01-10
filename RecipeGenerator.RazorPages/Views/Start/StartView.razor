@@ -4,7 +4,7 @@
 @using RecipeGenerator.RazorPages.Views.Start.Steps
 @using RecipeGenerator.RazorPages.Views.Start.Save
 <div class="start-page">
-    <EditForm Model="@StartVM.Recipe" OnSubmit="@RecipeSubmitted">
+    <EditForm Model="@StartVM.RecipeDTO" OnSubmit="@RecipeSubmitted">
         <DataAnnotationsValidator/>
         <ValidationSummary/>
 
