@@ -24,7 +24,7 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
             await recipeDbContext.SaveChangesAsync();
             //act
-            var recipes = recipeRepository.GetAll();
+            var recipes = await recipeRepository.GetAll();
             //assert
             Assert.NotNull(recipes);
             Assert.NotEmpty(recipes);

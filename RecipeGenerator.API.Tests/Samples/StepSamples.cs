@@ -41,7 +41,7 @@ namespace RecipeGenerator.API.Tests.Samples
             };
 
             IStepFactory stepFactory = new StepFactory();
-            DefaultStep = stepFactory.DefaultStep();
+            DefaultStep = stepFactory.Create();
 
             EmptyStep = new Step();
 
@@ -77,8 +77,8 @@ namespace RecipeGenerator.API.Tests.Samples
 
             DefaultSteps =
             [
-                stepFactory.DefaultStep(),
-                stepFactory.DefaultStep(),
+                stepFactory.Create(),
+                stepFactory.Create(),
             ];
 
             EmptySteps = [];

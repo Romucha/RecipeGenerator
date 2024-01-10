@@ -1,4 +1,7 @@
-﻿using RecipeGenerator.API.Models.Ingeridients;
+﻿using AutoMapper;
+using Moq;
+using RecipeGenerator.API.Mapping;
+using RecipeGenerator.API.Models.Ingeridients;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +16,8 @@ namespace RecipeGenerator.API.Tests.Models.Ingredients
         public void Create_Normal()
         {
             //arrange
-            IIngredientFactory ingredientFactory = new IngredientFactory();
+            IMapper mapper = new Mock<IMapper>(new MapperConfiguration(c => c.AddProfile(new MapperInitializer()))).Object;
+            IIngredientFactory ingredientFactory = new IngredientFactory(mapper);
             string name = "Name";
             string description = "Description";
             Uri link = new Uri("http://uri.uri");

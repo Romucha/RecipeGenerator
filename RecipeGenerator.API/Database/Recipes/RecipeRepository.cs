@@ -29,9 +29,9 @@ namespace RecipeGenerator.API.Database.Recipes
             await recipeDbContext.SaveChangesAsync();
         }
 
-        public async Task Delete(Guid Id)
+        public async Task Delete(DeleteRecipeDTO deleteRecipeDTO)
         {
-            var recipe = await recipeDbContext.Recipes.FindAsync(Id);
+            var recipe = mapper.Map<Recipe>(deleteRecipeDTO);
 
             recipeDbContext.Recipes.Remove(recipe);
             await recipeDbContext.SaveChangesAsync();

@@ -11,6 +11,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore.Diagnostics;
+using AutoMapper;
+using RecipeGenerator.API.Mapping;
 
 namespace RecipeGenerator.API.Tests.Database.Recipes
 {
@@ -23,14 +25,15 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
         public RecipeRepository_Tests()
         {
             IConfiguration configuration = new Mock<IConfiguration>().Object;
-            IIngredientFactory ingredientFactory = new IngredientFactory();
+            IMapper mapper = new Mock<IMapper>(new MapperConfiguration(c => c.AddProfile(new MapperInitializer()))).Object;
+            IIngredientFactory ingredientFactory = new IngredientFactory(mapper);
             IIngredientGetter ingredientgetter = new IngredientGetter(ingredientFactory);
             DbContextOptions<RecipeDbContext> dbContextOptions = new DbContextOptionsBuilder<RecipeDbContext>().UseInMemoryDatabase(Guid.NewGuid().ToString())
                                                                                                                .ConfigureWarnings(b => b.Ignore(InMemoryEventId.TransactionIgnoredWarning))
                                                                                                                .Options;
-            recipeDbContext = new RecipeDbContext(configuration, ingredientgetter, dbContextOptions);
+            recipeDbContext = new RecipeDbContext(configuration, ingredientgetter, mapper, dbContextOptions);
 
-            recipeRepository = new RecipeRepository(recipeDbContext);
+            recipeRepository = new RecipeRepository(recipeDbContext, mapper);
         }
 
         public void Dispose()

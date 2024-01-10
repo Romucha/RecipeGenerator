@@ -22,7 +22,7 @@ namespace RecipeGenerator.API.Tests.Models.Steps
                 Photos = new()
             };
             //act
-            var step = stepFactory.DefaultStep();
+            var step = stepFactory.Create();
             //assert
             Assert.NotNull(step);
             Assert.Equal(defaultStep.Name, step.Name);

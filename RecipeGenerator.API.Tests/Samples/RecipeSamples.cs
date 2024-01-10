@@ -43,7 +43,7 @@ namespace RecipeGenerator.API.Tests.Samples
             };
 
             IRecipeFactory recipeFactory = new RecipeFactory();
-            DefaultRecipe = recipeFactory.DefaultRecipe().Result;
+            DefaultRecipe = recipeFactory.Create().Result;
 
             EmptyRecipe = new Recipe();
 
@@ -79,8 +79,8 @@ namespace RecipeGenerator.API.Tests.Samples
 
             DefaultRecipes =
             [
-                recipeFactory.DefaultRecipe().Result,
-                recipeFactory.DefaultRecipe().Result
+                recipeFactory.Create().Result,
+                recipeFactory.Create().Result
             ];
 
             EmptyRecipes = [];

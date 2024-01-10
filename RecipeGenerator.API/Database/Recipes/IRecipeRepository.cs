@@ -20,6 +20,6 @@ namespace RecipeGenerator.API.Database.Recipes
 
         Task Update(UpdateRecipeDTO updateRecipeDTO);
 
-        Task Delete(Guid Id);
+        Task Delete(DeleteRecipeDTO deleteRecipeDTO);
     }
 }

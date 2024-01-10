@@ -20,56 +20,56 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
     public partial class RecipeRepository_Tests
     {
         [Fact]
-        public async Task Add_Normal()
+        public async Task Create_Normal()
         {
             //arrange
             var recipe = RecipeSamples.NormalRecipe;
             //act
-            await recipeRepository.Add(recipe);
+            await recipeRepository.Create(recipe);
             //assert
             Assert.NotNull(await recipeDbContext.Recipes.FindAsync(recipe.Id));
         }
 
         [Fact]
-        public async Task Add_Default()
+        public async Task Create_Default()
         {
             //arrange
             var recipe = RecipeSamples.DefaultRecipe;
             //act
-            await recipeRepository.Add(recipe);
+            await recipeRepository.Create(recipe);
             //assert
             Assert.NotNull(await recipeDbContext.Recipes.FindAsync(recipe.Id));
         }
 
         [Fact]
-        public async Task Add_Empty()
+        public async Task Create()
         {
             //arrange
             var recipe = RecipeSamples.EmptyRecipe;
             //act
-            await recipeRepository.Add(recipe);
+            await recipeRepository.Create(recipe);
             //assert
             Assert.NotNull(await recipeDbContext.Recipes.FindAsync(recipe.Id));
         }
 
         [Fact]
-        public async Task Add_Null()
+        public async Task Create_Null()
         {
             //arrange
             var recipe = RecipeSamples.NullRecipe;
             //act && assert
-            await Assert.ThrowsAsync<ArgumentNullException>(async () => await recipeRepository.Add(recipe));
+            await Assert.ThrowsAsync<ArgumentNullException>(async () => await recipeRepository.Create(recipe));
         }
 
         [Fact]
-        public async Task Add_ExistingId()
+        public async Task Create_ExistingId()
         {
             //arrange
             recipeDbContext.Recipes.Add(RecipeSamples.NormalRecipe);
             await recipeDbContext.SaveChangesAsync();
             var recipeCount = recipeDbContext.Recipes.Count();
             //act && assert
-            await Assert.ThrowsAnyAsync<ArgumentException>(async () => await recipeRepository.Add(RecipeSamples.NormalRecipe));
+            await Assert.ThrowsAnyAsync<ArgumentException>(async () => await recipeRepository.Create(RecipeSamples.NormalRecipe));
 
         }
     }

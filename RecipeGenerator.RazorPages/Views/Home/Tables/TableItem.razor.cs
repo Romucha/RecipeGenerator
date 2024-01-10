@@ -20,7 +20,11 @@ namespace RecipeGenerator.RazorPages.Views.Home.Tables
 
         private async Task deleteRecipe()
         {
-            await recipeRepository.Delete(Recipe.Id);
+            var deleterecipedto = new DeleteRecipeDTO()
+            {
+                Id = Recipe.Id,
+            };
+            await recipeRepository.Delete(deleterecipedto);
             this.StateHasChanged();
         }
     }

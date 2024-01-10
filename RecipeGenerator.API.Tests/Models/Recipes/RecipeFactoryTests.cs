@@ -26,7 +26,7 @@ namespace RecipeGenerator.API.Tests.Models.Recipes
                 Ingredients = new List<Ingredient>(),
             };
             //act
-            var recipe = await recipeFactory.DefaultRecipe();
+            var recipe = await recipeFactory.Create();
             //assert
             assertRecipes(recipe, defaultRecipe);
         }
