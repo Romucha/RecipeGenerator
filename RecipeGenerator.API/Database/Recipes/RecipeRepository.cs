@@ -24,7 +24,6 @@ namespace RecipeGenerator.API.Database.Recipes
         public async Task Create(CreateRecipeDTO createRecipeDTO)
         {
             var recipe = mapper.Map<Recipe>(createRecipeDTO);
-
             await recipeDbContext.Recipes.AddAsync(recipe);
             await recipeDbContext.SaveChangesAsync();
         }

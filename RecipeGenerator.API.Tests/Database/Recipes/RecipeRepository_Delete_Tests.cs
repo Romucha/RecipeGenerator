@@ -18,6 +18,7 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             //arrange
             await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
             await recipeDbContext.SaveChangesAsync();
+            recipeDbContext.ChangeTracker.Clear();
             var recipe = RecipeSamples.NormalRecipes.FirstOrDefault();
             //act
             var deleterecipedto = mapper.Map<DeleteRecipeDTO>(recipe);
