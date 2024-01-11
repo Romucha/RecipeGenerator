@@ -22,10 +22,13 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
 
         private readonly RecipeDbContext recipeDbContext;
 
+        private readonly IMapper mapper;
+
         public RecipeRepository_Tests()
         {
             IConfiguration configuration = new Mock<IConfiguration>().Object;
-            IMapper mapper = new Mock<IMapper>(new MapperConfiguration(c => c.AddProfile(new MapperInitializer()))).Object;
+            var config = new MapperConfiguration(c => c.AddProfile(new MapperInitializer()));
+            mapper = config.CreateMapper();
             IIngredientFactory ingredientFactory = new IngredientFactory(mapper);
             IIngredientGetter ingredientgetter = new IngredientGetter(ingredientFactory);
             DbContextOptions<RecipeDbContext> dbContextOptions = new DbContextOptionsBuilder<RecipeDbContext>().UseInMemoryDatabase(Guid.NewGuid().ToString())

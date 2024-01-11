@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using RecipeGenerator.API.DTO.Recipes;
 using RecipeGenerator.API.Models.Recipes;
 using RecipeGenerator.API.Tests.Samples;
 using System;
@@ -17,8 +18,10 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             //arrange
             await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
             await recipeDbContext.SaveChangesAsync();
+            var recipe = RecipeSamples.NormalRecipes.FirstOrDefault();
             //act
-            await recipeRepository.Delete(RecipeSamples.NormalRecipes.FirstOrDefault());
+            var deleterecipedto = mapper.Map<DeleteRecipeDTO>(recipe);
+            await recipeRepository.Delete(deleterecipedto);
             //assert
             Assert.False(recipeDbContext.Recipes.Contains(RecipeSamples.NormalRecipes.FirstOrDefault()));
         }
@@ -29,17 +32,20 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             //arrange
             await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
             await recipeDbContext.SaveChangesAsync();
+            var recipe = RecipeSamples.DefaultRecipe;
             //act & assert
-            await Assert.ThrowsAnyAsync<DbUpdateConcurrencyException>(async () => await recipeRepository.Delete(RecipeSamples.DefaultRecipe));
+            var deleterecipedto = mapper.Map<DeleteRecipeDTO>(recipe);
+            await Assert.ThrowsAnyAsync<DbUpdateConcurrencyException>(async () => await recipeRepository.Delete(deleterecipedto));
         }
 
         [Fact]
         public async Task Delete_EmptyDatabase()
         {
             //arrange
-
+            var recipe = RecipeSamples.NormalRecipe;
             //act & assert
-            await Assert.ThrowsAnyAsync<DbUpdateConcurrencyException>(async () => await recipeRepository.Delete(RecipeSamples.NormalRecipe));
+            var deleterecipedto = mapper.Map<DeleteRecipeDTO>(recipe);
+            await Assert.ThrowsAnyAsync<DbUpdateConcurrencyException>(async () => await recipeRepository.Delete(deleterecipedto));
         }
 
         [Fact]
@@ -49,7 +55,8 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
             await recipeDbContext.SaveChangesAsync();
             //act & assert
-            await Assert.ThrowsAnyAsync<ArgumentNullException>(async () => await recipeRepository.Delete(RecipeSamples.NullRecipe));
+            DeleteRecipeDTO deleteRecipeDTO = null;
+            await Assert.ThrowsAnyAsync<ArgumentNullException>(async () => await recipeRepository.Delete(deleteRecipeDTO));
 
         }
     }

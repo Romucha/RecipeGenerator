@@ -14,6 +14,7 @@ using Microsoft.EntityFrameworkCore.Diagnostics;
 using RecipeGenerator.API.Models.Recipes;
 using RecipeGenerator.API.Models.Steps;
 using RecipeGenerator.API.Tests.Samples;
+using RecipeGenerator.API.DTO.Recipes;
 
 namespace RecipeGenerator.API.Tests.Database.Recipes
 {
@@ -25,7 +26,8 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             //arrange
             var recipe = RecipeSamples.NormalRecipe;
             //act
-            await recipeRepository.Create(recipe);
+            CreateRecipeDTO createRecipeDTO = mapper.Map<CreateRecipeDTO>(recipe);
+            await recipeRepository.Create(createRecipeDTO);
             //assert
             Assert.NotNull(await recipeDbContext.Recipes.FindAsync(recipe.Id));
         }
@@ -36,7 +38,8 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             //arrange
             var recipe = RecipeSamples.DefaultRecipe;
             //act
-            await recipeRepository.Create(recipe);
+            CreateRecipeDTO createRecipeDTO = mapper.Map<CreateRecipeDTO>(recipe);
+            await recipeRepository.Create(createRecipeDTO);
             //assert
             Assert.NotNull(await recipeDbContext.Recipes.FindAsync(recipe.Id));
         }
@@ -47,7 +50,8 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             //arrange
             var recipe = RecipeSamples.EmptyRecipe;
             //act
-            await recipeRepository.Create(recipe);
+            CreateRecipeDTO createRecipeDTO = mapper.Map<CreateRecipeDTO>(recipe);
+            await recipeRepository.Create(createRecipeDTO);
             //assert
             Assert.NotNull(await recipeDbContext.Recipes.FindAsync(recipe.Id));
         }
@@ -56,9 +60,9 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
         public async Task Create_Null()
         {
             //arrange
-            var recipe = RecipeSamples.NullRecipe;
+            CreateRecipeDTO createRecipeDTO = null;
             //act && assert
-            await Assert.ThrowsAsync<ArgumentNullException>(async () => await recipeRepository.Create(recipe));
+            await Assert.ThrowsAsync<ArgumentNullException>(async () => await recipeRepository.Create(createRecipeDTO));
         }
 
         [Fact]
@@ -69,7 +73,8 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             await recipeDbContext.SaveChangesAsync();
             var recipeCount = recipeDbContext.Recipes.Count();
             //act && assert
-            await Assert.ThrowsAnyAsync<ArgumentException>(async () => await recipeRepository.Create(RecipeSamples.NormalRecipe));
+            CreateRecipeDTO createRecipeDTO = mapper.Map<CreateRecipeDTO>(RecipeSamples.NormalRecipe);
+            await Assert.ThrowsAnyAsync<ArgumentException>(async () => await recipeRepository.Create(createRecipeDTO));
 
         }
     }

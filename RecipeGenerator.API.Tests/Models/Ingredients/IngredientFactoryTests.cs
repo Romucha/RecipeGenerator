@@ -16,7 +16,8 @@ namespace RecipeGenerator.API.Tests.Models.Ingredients
         public void Create_Normal()
         {
             //arrange
-            IMapper mapper = new Mock<IMapper>(new MapperConfiguration(c => c.AddProfile(new MapperInitializer()))).Object;
+            var configuration = new MapperConfiguration(c => c.AddProfile(new MapperInitializer()));
+            IMapper mapper = configuration.CreateMapper();
             IIngredientFactory ingredientFactory = new IngredientFactory(mapper);
             string name = "Name";
             string description = "Description";
