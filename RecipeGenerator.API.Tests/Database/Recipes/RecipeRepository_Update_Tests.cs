@@ -33,7 +33,6 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             //arrange
             await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
             await recipeDbContext.SaveChangesAsync();
-            recipeDbContext.ChangeTracker.Clear();
             //act & assert
             string alteredName = Guid.NewGuid().ToString();
             var updateRecipeDTO = mapper.Map<UpdateRecipeDTO>(RecipeSamples.NormalRecipe);
