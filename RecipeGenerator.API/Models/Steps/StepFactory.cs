@@ -16,7 +16,6 @@ namespace RecipeGenerator.API.Models.Steps
                 Name = string.Empty,
                 Description = string.Empty,
                 Photos = [],
-                Ingredients = [],
             };
         }
     }

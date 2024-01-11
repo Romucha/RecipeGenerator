@@ -17,10 +17,9 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             //arrange
             await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
             await recipeDbContext.SaveChangesAsync();
-            recipeDbContext.ChangeTracker.Clear();
             //act
             string alteredName = Guid.NewGuid().ToString();
-            var originalrecipe = await recipeDbContext.Recipes.FirstOrDefaultAsync();
+            var originalrecipe = RecipeSamples.NormalRecipes.FirstOrDefault();
             UpdateRecipeDTO updateRecipeDTO = mapper.Map<UpdateRecipeDTO>(originalrecipe);
             updateRecipeDTO.Name = alteredName;
             await recipeRepository.Update(updateRecipeDTO);

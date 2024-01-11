@@ -17,13 +17,13 @@ namespace RecipeGenerator.API.Tests.Samples
 
         public static Ingredient NullIngredient { get; }
 
-        public static ICollection<Ingredient> NormalIngredients { get; }
+        public static List<Ingredient> NormalIngredients { get; }
 
-        public static ICollection<Ingredient> DefaultIngredients { get; }
+        public static List<Ingredient> DefaultIngredients { get; }
 
-        public static ICollection<Ingredient> EmptyIngredients { get; }
+        public static List<Ingredient> EmptyIngredients { get; }
 
-        public static ICollection<Ingredient> NullIngredients { get; }
+        public static List<Ingredient> NullIngredients { get; }
 
         static IngredientSamples()
         {

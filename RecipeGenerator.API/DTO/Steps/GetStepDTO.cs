@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.DTO.Steps
 {
-    public class GetStepDTO
+    public class GetStepDTO : CreateStepDTO
     {
         public Guid Id { get; set; }
-
-        public ICollection<GetIngredientDTO> Ingredients { get; set; } = default!;
     }
 }

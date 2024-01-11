@@ -29,7 +29,7 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             CreateRecipeDTO createRecipeDTO = mapper.Map<CreateRecipeDTO>(recipe);
             await recipeRepository.Create(createRecipeDTO);
             //assert
-            Assert.NotNull(await recipeDbContext.Recipes.FindAsync(recipe.Id));
+            Assert.NotNull(await recipeDbContext.Recipes.FirstOrDefaultAsync(c => c.Name == recipe.Name));
         }
 
         [Fact]
@@ -45,7 +45,7 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
         }
 
         [Fact]
-        public async Task Create()
+        public async Task Create_Empty()
         {
             //arrange
             var recipe = RecipeSamples.EmptyRecipe;

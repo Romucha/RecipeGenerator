@@ -25,26 +25,8 @@ namespace RecipeGenerator.API.Models.Steps
 
         public DateTime UpdatedAt { get; set; }
 
-        public List<Ingredient> Ingredients { get; set; }
-
         [ForeignKey(nameof(Recipe))]
         public Guid RecipeId { get; set; }
         public Recipe Recipe { get; set; }
-
-        public void AddIngredient(Ingredient ingredient)
-        {
-            if (Ingredients is null)
-                return;
-            if (Ingredients?.Contains(ingredient) == true)
-                return;
-
-            Ingredients.Add(ingredient);
-            Description = $"{Description} {ingredient.Name.ToLower()}";
-        }
-
-        public void AddPhoto()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

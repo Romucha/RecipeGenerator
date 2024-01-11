@@ -1,4 +1,5 @@
-﻿using RecipeGenerator.API.Models.Steps;
+﻿using RecipeGenerator.API.Models.Ingeridients;
+using RecipeGenerator.API.Models.Steps;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,6 @@ namespace RecipeGenerator.API.Tests.Models.Steps
             {
                 Name = string.Empty,
                 Description = string.Empty, 
-                Ingredients = new(), 
                 Photos = new()
             };
             //act
@@ -27,7 +27,6 @@ namespace RecipeGenerator.API.Tests.Models.Steps
             Assert.NotNull(step);
             Assert.Equal(defaultStep.Name, step.Name);
             Assert.Equal(defaultStep.Description, step.Description);
-            Assert.Equal(defaultStep.Ingredients, step.Ingredients);
             Assert.Equal(defaultStep.Photos, step.Photos);
         }
     }

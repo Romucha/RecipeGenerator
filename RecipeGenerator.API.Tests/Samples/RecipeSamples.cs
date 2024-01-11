@@ -19,13 +19,13 @@ namespace RecipeGenerator.API.Tests.Samples
 
         public static Recipe NullRecipe { get; }
 
-        public static ICollection<Recipe> NormalRecipes { get; }
+        public static List<Recipe> NormalRecipes { get; }
 
-        public static ICollection<Recipe> DefaultRecipes { get; }
+        public static List<Recipe> DefaultRecipes { get; }
 
-        public static ICollection<Recipe> EmptyRecipes { get; }
+        public static List<Recipe> EmptyRecipes { get; }
 
-        public static ICollection<Recipe> NullRecipes { get; }
+        public static List<Recipe> NullRecipes { get; }
 
         static RecipeSamples()
         {

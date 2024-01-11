@@ -1,10 +1,14 @@
 ﻿using AutoMapper;
+using AutoMapper.Internal;
 using Microsoft.EntityFrameworkCore;
 using RecipeGenerator.API.DTO.Recipes;
+using RecipeGenerator.API.Models.Ingeridients;
 using RecipeGenerator.API.Models.Recipes;
+using RecipeGenerator.API.Models.Steps;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -55,10 +59,12 @@ namespace RecipeGenerator.API.Database.Recipes
 
         public async Task Update(UpdateRecipeDTO updateRecipeDTO)
         {
+            recipeDbContext.ChangeTracker.Clear();
             updateRecipeDTO.UpdatedAt = DateTime.Now;
-            var recipe = mapper.Map<Recipe>(updateRecipeDTO);
+            var newrecipe = mapper.Map<Recipe>(updateRecipeDTO);
 
-            recipeDbContext.Recipes.Update(recipe);
+            recipeDbContext.Recipes.Attach(newrecipe);
+            recipeDbContext.Entry(newrecipe).State = EntityState.Modified;
             await recipeDbContext.SaveChangesAsync();
         }
     }

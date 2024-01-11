@@ -164,8 +164,8 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
 
         private async Task saveRecipe()
         {
-            RecipeDTO.Ingredients = IngredientList;
-            RecipeDTO.Steps = StepList;
+            RecipeDTO.Ingredients = new List<GetIngredientDTO>(IngredientList);
+            RecipeDTO.Steps = new List<CreateStepDTO>(StepList);
             await recipeRepository.Create(RecipeDTO);
         }
         /// <summary>

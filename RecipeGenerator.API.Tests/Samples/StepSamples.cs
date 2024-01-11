@@ -17,13 +17,13 @@ namespace RecipeGenerator.API.Tests.Samples
 
         public static Step NullStep { get; }
 
-        public static ICollection<Step> NormalSteps { get; }
+        public static List<Step> NormalSteps { get; }
 
-        public static ICollection<Step> DefaultSteps { get; }
+        public static List<Step> DefaultSteps { get; }
 
-        public static ICollection<Step> EmptySteps { get; }
+        public static List<Step> EmptySteps { get; }
 
-        public static ICollection<Step> NullSteps { get; }
+        public static List<Step> NullSteps { get; }
 
         static StepSamples()
         {
@@ -32,7 +32,6 @@ namespace RecipeGenerator.API.Tests.Samples
                 Id = Guid.NewGuid(),
                 Name = "Normal Step",
                 Description = "Normal Step Description",
-                Ingredients = IngredientSamples.NormalIngredients.ToList(),
                 Photos =
                 [
                     Properties.Resources.apple,
@@ -54,7 +53,6 @@ namespace RecipeGenerator.API.Tests.Samples
                     Id = Guid.NewGuid(),
                     Name = "Normal Step 1 ",
                     Description = "Normal Step Description 1",
-                    Ingredients = IngredientSamples.NormalIngredients.ToList(),
                     Photos =
                     [
                         Properties.Resources.apple,
@@ -66,7 +64,6 @@ namespace RecipeGenerator.API.Tests.Samples
                     Id = Guid.NewGuid(),
                     Name = "Normal Step 2",
                     Description = "Normal Step Description 2",
-                    Ingredients = IngredientSamples.NormalIngredients.ToList(),
                     Photos =
                     [
                         Properties.Resources.apple,

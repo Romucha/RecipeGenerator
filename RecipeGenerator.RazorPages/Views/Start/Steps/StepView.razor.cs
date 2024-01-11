@@ -24,10 +24,6 @@ namespace RecipeGenerator.RazorPages.Views.Start.Steps
 
         private void AddIngredient(GetIngredientDTO ingredient)
         {
-            if (Step.Ingredients.Contains(ingredient)) return;
-
-            Step.Ingredients.Append(ingredient);
-
             string.Concat(Step.Description, $" {ingredient.Name.ToLower()}");
         }
     }
