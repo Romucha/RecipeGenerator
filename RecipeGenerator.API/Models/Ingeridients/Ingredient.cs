@@ -20,7 +20,5 @@ namespace RecipeGenerator.API.Models.Ingeridients
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
         public byte[] Image { get; set; }
-        public List<Step> Steps { get; set; }
-        public List<Recipe> Recipes { get; set; }
     }
 }

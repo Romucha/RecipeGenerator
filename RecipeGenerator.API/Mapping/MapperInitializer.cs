@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
+using RecipeGenerator.API.DTO.AppliedIngredients;
 using RecipeGenerator.API.DTO.Ingredients;
 using RecipeGenerator.API.DTO.Recipes;
 using RecipeGenerator.API.DTO.Steps;
+using RecipeGenerator.API.Models.AppliedIngredients;
 using RecipeGenerator.API.Models.Ingeridients;
 using RecipeGenerator.API.Models.Recipes;
 using RecipeGenerator.API.Models.Steps;
@@ -31,6 +33,11 @@ namespace RecipeGenerator.API.Mapping
             CreateMap<GetRecipeDTO, Recipe>().ReverseMap();
             CreateMap<DeleteRecipeDTO, Recipe>().ReverseMap();
             CreateMap<UpdateRecipeDTO, Recipe>().ReverseMap();
+
+            CreateMap<CreateAppliedIngredientDTO, AppliedIngredient>().ReverseMap();
+            CreateMap<DeleteAppliedIngredientDTO, AppliedIngredient>().ReverseMap();
+            CreateMap<GetAppliedIngredientDTO, AppliedIngredient>().ReverseMap();
+            CreateMap<UpdateAppliedIngredientDTO, AppliedIngredient>().ReverseMap();
         }
     }
 }

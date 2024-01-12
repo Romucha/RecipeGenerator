@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using RecipeGenerator.API.Models.AppliedIngredients;
 using RecipeGenerator.API.Models.Ingeridients;
 using RecipeGenerator.API.Models.Steps;
 
@@ -22,7 +23,7 @@ namespace RecipeGenerator.API.Models.Recipes
 
         public List<Step> Steps { get; set; }
 
-        public List<Ingredient> Ingredients { get; set; }
+        public List<AppliedIngredient> Ingredients { get; set; }
 
         public DateTime CreatedAt { get; set; }
 

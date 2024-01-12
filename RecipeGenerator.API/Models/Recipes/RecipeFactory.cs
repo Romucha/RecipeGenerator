@@ -1,4 +1,5 @@
-﻿using RecipeGenerator.API.Models.Ingeridients;
+﻿using RecipeGenerator.API.Models.AppliedIngredients;
+using RecipeGenerator.API.Models.Ingeridients;
 using RecipeGenerator.API.Models.Steps;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ namespace RecipeGenerator.API.Models.Recipes
             return await Task.FromResult<Recipe>(new Recipe()
             {
                 Steps = new List<Step>(),
-                Ingredients = new List<Ingredient>(),
+                Ingredients = new List<AppliedIngredient>(),
                 CreatedAt = DateTime.Now,
                 UpdatedAt = DateTime.Now,
                 Id = Guid.NewGuid(),
