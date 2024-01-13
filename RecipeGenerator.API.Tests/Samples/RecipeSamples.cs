@@ -39,7 +39,6 @@ namespace RecipeGenerator.API.Tests.Samples
                 UpdatedAt = DateTime.Now,
                 Image = Properties.Resources.apple,
                 Steps = StepSamples.NormalSteps,
-                Ingredients = IngredientSamples.NormalIngredients
             };
 
             IRecipeFactory recipeFactory = new RecipeFactory();
@@ -61,7 +60,6 @@ namespace RecipeGenerator.API.Tests.Samples
                     UpdatedAt = DateTime.Now,
                     Image = Properties.Resources.apple,
                     Steps = StepSamples.NormalSteps,
-                    Ingredients = IngredientSamples.NormalIngredients
                 },
                 new Recipe()
                 {
@@ -73,7 +71,6 @@ namespace RecipeGenerator.API.Tests.Samples
                     UpdatedAt = DateTime.Now,
                     Image = Properties.Resources.apple,
                     Steps = StepSamples.NormalSteps,
-                    Ingredients = IngredientSamples.NormalIngredients
                 }
             ];
 

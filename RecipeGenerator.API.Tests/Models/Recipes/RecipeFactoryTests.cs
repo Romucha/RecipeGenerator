@@ -1,4 +1,5 @@
-﻿using RecipeGenerator.API.Models.Ingeridients;
+﻿using RecipeGenerator.API.Models.AppliedIngredients;
+using RecipeGenerator.API.Models.Ingeridients;
 using RecipeGenerator.API.Models.Recipes;
 using RecipeGenerator.API.Models.Steps;
 using System;
@@ -23,7 +24,7 @@ namespace RecipeGenerator.API.Tests.Models.Recipes
                 CourseType = Course.Unknown,
                 Image = null,
                 Steps = new List<Step>(),
-                Ingredients = new List<Ingredient>(),
+                Ingredients = new List<AppliedIngredient>(),
             };
             //act
             var recipe = await recipeFactory.Create();

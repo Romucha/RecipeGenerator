@@ -13,6 +13,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using AutoMapper;
 using RecipeGenerator.API.Mapping;
+using RecipeGenerator.API.Tests.Samples;
+using RecipeGenerator.API.Models.AppliedIngredients;
 
 namespace RecipeGenerator.API.Tests.Database.Recipes
 {
@@ -37,6 +39,23 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             recipeDbContext = new RecipeDbContext(configuration, ingredientgetter, mapper, dbContextOptions);
 
             recipeRepository = new RecipeRepository(recipeDbContext, mapper);
+
+            RecipeSamples.NormalRecipe.Ingredients = new List<AppliedIngredient>(recipeDbContext.Ingredients
+                                                                    .Take(5)
+                                                                    .Select(c => new AppliedIngredient()
+                                                                    {
+                                                                        IngredientId = c.Id,
+                                                                        Ingredient = c,
+                                                                        IngredientState = IngredientState.None,
+                                                                    }));
+            RecipeSamples.NormalRecipes.ForEach(c => c.Ingredients = new List<AppliedIngredient>(recipeDbContext.Ingredients
+                                                                    .Take(10)
+                                                                    .Select(c => new AppliedIngredient()
+                                                                    {
+                                                                        IngredientId = c.Id,
+                                                                        Ingredient = c,
+                                                                        IngredientState = IngredientState.None,
+                                                                    })));
         }
 
         public void Dispose()

@@ -1,4 +1,5 @@
-﻿using RecipeGenerator.API.DTO.Ingredients;
+﻿using RecipeGenerator.API.DTO.AppliedIngredients;
+using RecipeGenerator.API.DTO.Ingredients;
 using RecipeGenerator.API.DTO.Steps;
 using RecipeGenerator.API.Models.Ingeridients;
 using RecipeGenerator.API.Models.Recipes;
@@ -21,7 +22,7 @@ namespace RecipeGenerator.API.DTO.Recipes
 
         public Course CourseType { get; set; }
 
-        public List<GetIngredientDTO> Ingredients { get; set; }
+        public List<CreateAppliedIngredientDTO> Ingredients { get; set; }
 
         public List<CreateStepDTO> Steps { get; set; }
 

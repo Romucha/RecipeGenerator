@@ -62,7 +62,7 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             //arrange
             CreateRecipeDTO createRecipeDTO = null;
             //act && assert
-            await Assert.ThrowsAsync<NullReferenceException>(async () => await recipeRepository.Create(createRecipeDTO));
+            await Assert.ThrowsAsync<ArgumentNullException>(async () => await recipeRepository.Create(createRecipeDTO));
         }
     }
 }

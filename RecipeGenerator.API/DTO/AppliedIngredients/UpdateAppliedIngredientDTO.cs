@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.DTO.AppliedIngredients
 {
-    public class UpdateAppliedIngredientDTO
+    public class UpdateAppliedIngredientDTO : GetAppliedIngredientDTO
     {
     }
 }

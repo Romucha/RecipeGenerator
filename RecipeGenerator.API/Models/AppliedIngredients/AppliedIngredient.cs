@@ -13,7 +13,7 @@ namespace RecipeGenerator.API.Models.AppliedIngredients
     internal class AppliedIngredient
     {
         [Key]
-        public Guid Id { get; set; }
+        public Guid Id { get; set; } = Guid.NewGuid();
 
         public double VolumeValue { get; set; } 
 
@@ -24,7 +24,7 @@ namespace RecipeGenerator.API.Models.AppliedIngredients
 
         public Recipe Recipe { get; set; }
 
-        [ForeignKey(nameof(Recipe))]
+        [ForeignKey(nameof(Ingredient))]
         public Guid IngredientId { get; set; }
 
         public Ingredient Ingredient { get; set; }

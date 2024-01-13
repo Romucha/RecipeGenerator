@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using RecipeGenerator.API.Database.Ingredients;
 using RecipeGenerator.API.Database.Recipes;
+using RecipeGenerator.API.DTO.AppliedIngredients;
 using RecipeGenerator.API.DTO.Ingredients;
 using RecipeGenerator.API.DTO.Recipes;
 using RecipeGenerator.API.DTO.Steps;
@@ -164,7 +165,13 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
 
         private async Task saveRecipe()
         {
-            RecipeDTO.Ingredients = new List<GetIngredientDTO>(IngredientList);
+            //TODO
+            RecipeDTO.Ingredients = new List<CreateAppliedIngredientDTO>(IngredientList.Select(c => new CreateAppliedIngredientDTO()
+            {
+                IngredientId = c.Id,
+                IngredientState = API.Models.AppliedIngredients.IngredientState.None,
+                VolumeValue = 0
+            }));
             RecipeDTO.Steps = new List<CreateStepDTO>(StepList);
             await recipeRepository.Create(RecipeDTO);
         }
