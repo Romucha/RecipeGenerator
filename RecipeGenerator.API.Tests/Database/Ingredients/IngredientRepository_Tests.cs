@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.Tests.Database.Ingredients
 {
-    internal class IngredientRepositoryTests
+    internal class IngredientRepository_Tests
     {
     }
 }

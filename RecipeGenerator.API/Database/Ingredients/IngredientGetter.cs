@@ -60,17 +60,19 @@ namespace RecipeGenerator.API.Database.Ingredients
                     Uri.TryCreate("https://www.youtube.com/watch?v=dQw4w9WgXcQ", UriKind.Absolute, out uri);
                 var imageres = resource.FirstOrDefault(c => c.propertyName == "Image");
                 byte[] image = imageres == null ? null : descres.propertyValue as byte[];
-
-                yield return new CreateIngredientDTO
+                if (!string.IsNullOrEmpty(name))
                 {
-                    Name = name,
-                    Description = description,
-                    CreatedAt = DateTime.Now,
-                    Image = image,
-                    IngredientType = type,
-                    Link = uri,
-                    UpdatedAt = DateTime.Now,
-                };
+                    yield return new CreateIngredientDTO
+                    {
+                        Name = name,
+                        Description = description,
+                        CreatedAt = DateTime.Now,
+                        Image = image,
+                        IngredientType = type,
+                        Link = uri,
+                        UpdatedAt = DateTime.Now,
+                    };
+                }
             }
         }
 

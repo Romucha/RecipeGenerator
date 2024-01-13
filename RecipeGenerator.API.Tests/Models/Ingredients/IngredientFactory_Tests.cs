@@ -14,11 +14,11 @@ using System.Xml.Linq;
 
 namespace RecipeGenerator.API.Tests.Models.Ingredients
 {
-    public class IngredientFactoryTests
+    public class IngredientFactory_Tests
     {
         private readonly IMapper mapper;
         private readonly IIngredientFactory ingredientFactory;
-        public IngredientFactoryTests()
+        public IngredientFactory_Tests()
         {
             var configuration = new MapperConfiguration(c => c.AddProfile(new MapperInitializer()));
             mapper = configuration.CreateMapper();

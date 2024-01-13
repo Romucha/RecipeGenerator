@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.Tests.Models.Recipes
 {
-    public class RecipeFactoryTests
+    public class RecipeFactory_Tests
     {
         [Fact]
         public async Task Create_Normal()

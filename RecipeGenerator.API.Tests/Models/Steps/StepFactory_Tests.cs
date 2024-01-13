@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.Tests.Models.Steps
 {
-    public class StepFactoryTests
+    public class StepFactory_Tests
     {
         [Fact]
         public void Create_Normal()
