@@ -16,9 +16,9 @@ using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace RecipeGenerator.API.Tests.Database.Ingredients
 {
-    public class IngredientRepository_Tests : IDisposable
+    public partial class IngredientRepository_Tests : IDisposable
     {
-        private readonly IRecipeRepository recipeRepository;
+        private readonly IIngredientRepository ingredientRepository;
 
         private readonly RecipeDbContext recipeDbContext;
 
@@ -36,7 +36,7 @@ namespace RecipeGenerator.API.Tests.Database.Ingredients
                                                                                                                .Options;
             recipeDbContext = new RecipeDbContext(configuration, ingredientgetter, mapper, dbContextOptions);
 
-            recipeRepository = new RecipeRepository(recipeDbContext, mapper);
+            ingredientRepository = new IngredientRepository(recipeDbContext, mapper);
         }
 
         public void Dispose()
