@@ -201,10 +201,11 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
         #region Ingredients
         private async Task addIngredient()
         {
-            if (!string.IsNullOrEmpty(SelectedIngredientName))
-            {
-                IngredientList.Add(await ingredientRepository.GetByName(SelectedIngredientName));
-            }
+            //TODO
+            //if (!string.IsNullOrEmpty(SelectedIngredientName))
+            //{
+            //    IngredientList.Add(await ingredientRepository.GetByName(SelectedIngredientName));
+            //}
             //reset after adding
             SelectedIngredientName = null;
         }

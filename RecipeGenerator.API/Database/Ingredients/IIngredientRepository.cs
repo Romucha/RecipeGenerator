@@ -10,7 +10,9 @@ namespace RecipeGenerator.API.Database.Ingredients
 {
     public interface IIngredientRepository
     {
-        Task<GetIngredientDTO> GetByName(string name);
+        Task<GetIngredientDTO> GetByName(GetIngredientDTO getIngredientDTO);
+
+        Task<GetIngredientDTO> GetById(GetIngredientDTO getIngredientDTO);
 
         Task<IEnumerable<GetIngredientDTO>> GetAll();
 

@@ -40,9 +40,15 @@ namespace RecipeGenerator.API.Database.Ingredients
             return ingredients.Select(c => mapper.Map<GetIngredientDTO>(c));
         }
 
-        public async Task<GetIngredientDTO> GetByName(string name)
+        public async Task<GetIngredientDTO> GetByName(GetIngredientDTO getIngredientDTO)
         {
-            var ingredient = await dbContext.Ingredients.FirstOrDefaultAsync(x => x.Name == name);
+            var ingredient = await dbContext.Ingredients.FirstOrDefaultAsync(x => x.Name == getIngredientDTO.Name);
+            return mapper.Map<GetIngredientDTO>(ingredient);
+        }
+
+        public async Task<GetIngredientDTO> GetById(GetIngredientDTO getIngredientDTO)
+        {
+            var ingredient = await dbContext.Ingredients.FindAsync(getIngredientDTO.Id);
             return mapper.Map<GetIngredientDTO>(ingredient);
         }
 
