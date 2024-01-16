@@ -59,12 +59,11 @@ namespace RecipeGenerator.API.Database.Recipes
 
         public async Task Update(UpdateRecipeDTO updateRecipeDTO)
         {
-            recipeDbContext.ChangeTracker.Clear();
             updateRecipeDTO.UpdatedAt = DateTime.Now;
             var newrecipe = mapper.Map<Recipe>(updateRecipeDTO);
+            var oldrecipe = await recipeDbContext.Recipes.FindAsync(newrecipe.Id);
+            oldrecipe.CopyFromSource(newrecipe);
 
-            recipeDbContext.Recipes.Attach(newrecipe);
-            recipeDbContext.Entry(newrecipe).State = EntityState.Modified;
             await recipeDbContext.SaveChangesAsync();
         }
     }

@@ -166,13 +166,13 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
         private async Task saveRecipe()
         {
             //TODO
-            RecipeDTO.Ingredients = new List<CreateAppliedIngredientDTO>(IngredientList.Select(c => new CreateAppliedIngredientDTO()
-            {
-                IngredientId = c.Id,
-                IngredientState = API.Models.AppliedIngredients.IngredientState.None,
-                VolumeValue = 0
-            }));
-            RecipeDTO.Steps = new List<CreateStepDTO>(StepList);
+            //RecipeDTO.Ingredients = new List<CreateAppliedIngredientDTO>(IngredientList.Select(c => new CreateAppliedIngredientDTO()
+            //{
+            //    IngredientId = c.Id,
+            //    IngredientState = API.Models.AppliedIngredients.IngredientState.None,
+            //    VolumeValue = 0
+            //}));
+            //RecipeDTO.Steps = new List<CreateStepDTO>(StepList);
             await recipeRepository.Create(RecipeDTO);
         }
         /// <summary>

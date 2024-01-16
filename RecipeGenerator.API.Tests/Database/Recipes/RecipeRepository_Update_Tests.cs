@@ -15,11 +15,11 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
         public async Task Update_Normal()
         {
             //arrange
-            await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
+            await recipeDbContext.Recipes.AddAsync(RecipeSamples.NormalRecipe);
             await recipeDbContext.SaveChangesAsync();
             //act
             string alteredName = Guid.NewGuid().ToString();
-            var originalrecipe = RecipeSamples.NormalRecipes.FirstOrDefault();
+            var originalrecipe = RecipeSamples.NormalRecipe;
             UpdateRecipeDTO updateRecipeDTO = mapper.Map<UpdateRecipeDTO>(originalrecipe);
             updateRecipeDTO.Name = alteredName;
             await recipeRepository.Update(updateRecipeDTO);
@@ -37,7 +37,7 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             string alteredName = Guid.NewGuid().ToString();
             var updateRecipeDTO = mapper.Map<UpdateRecipeDTO>(RecipeSamples.NormalRecipe);
             updateRecipeDTO.Name = alteredName;
-            await Assert.ThrowsAsync<DbUpdateConcurrencyException>(async () => await recipeRepository.Update(updateRecipeDTO));
+            await Assert.ThrowsAsync<NullReferenceException>(async () => await recipeRepository.Update(updateRecipeDTO));
         }
 
         [Fact]

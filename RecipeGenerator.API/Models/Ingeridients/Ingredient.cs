@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.Models.Ingeridients
 {
-    internal class Ingredient
+    internal class Ingredient : IParametersFromSource<Ingredient>
     {
         [Key]
         public Guid Id { get; set; } = Guid.NewGuid();
@@ -20,5 +20,18 @@ namespace RecipeGenerator.API.Models.Ingeridients
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
         public byte[] Image { get; set; }
+
+        public void CopyFromSource(Ingredient source)
+        {
+            Name = source.Name;
+            Description = source.Description;
+            Link = source.Link;
+            IngredientType = source.IngredientType;
+            CreatedAt = source.CreatedAt;
+            UpdatedAt = source.UpdatedAt;
+            Image = source.Image;
+        }
     }
+
+
 }

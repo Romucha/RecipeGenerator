@@ -8,7 +8,7 @@ namespace RecipeGenerator.API.Models.Recipes
     /// <summary>
     /// Contains basic information about recipe
     /// </summary>
-    internal class Recipe
+    internal class Recipe : IParametersFromSource<Recipe>
     {
         [Key]
         public Guid Id { get; set; } = Guid.NewGuid();
@@ -29,9 +29,16 @@ namespace RecipeGenerator.API.Models.Recipes
 
         public DateTime UpdatedAt { get; set; }
 
-        public Recipe ShallowCopy()
+        public void CopyFromSource(Recipe source)
         {
-            return (Recipe)this.MemberwiseClone();
+            Name = source.Name;
+            Image = source.Image;
+            Description = source.Description;
+            //Steps.Clear();
+            //Steps.AddRange(source.Steps);
+            //Ingredients = source.Ingredients;
+            CreatedAt = source.CreatedAt;
+            UpdatedAt = source.UpdatedAt;
         }
     }
 }

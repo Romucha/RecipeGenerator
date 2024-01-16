@@ -22,9 +22,9 @@ namespace RecipeGenerator.API.DTO.Recipes
 
         public Course CourseType { get; set; }
 
-        public List<CreateAppliedIngredientDTO> Ingredients { get; set; }
+        public List<GetAppliedIngredientDTO> Ingredients { get; set; }
 
-        public List<CreateStepDTO> Steps { get; set; }
+        public List<GetStepDTO> Steps { get; set; }
 
         public DateTime CreatedAt { get; set; }
 
