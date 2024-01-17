@@ -52,10 +52,12 @@ namespace RecipeGenerator.API.Database.Ingredients
             return mapper.Map<GetIngredientDTO>(ingredient);
         }
 
-        public IEnumerable<GetIngredientDTO> GetByType(IngredientType type)
+        public IEnumerable<GetIngredientDTO> GetByType(GetIngredientDTO getIngredientDTO)
         {
-            var ingredients = dbContext.Ingredients.Where(c => c.IngredientType == type).AsNoTracking();
-            return ingredients.Select(c => mapper.Map<GetIngredientDTO>(c));
+            var ingredient = mapper.Map<Ingredient>(getIngredientDTO);
+            var ingredients = dbContext.Ingredients.Where(c => c.IngredientType == ingredient.IngredientType).AsNoTracking().ToList();
+            var mappedIngredients = ingredients.Select(c => mapper.Map<GetIngredientDTO>(c));
+            return mappedIngredients;
         }
 
         public async Task Update(UpdateIngredientDTO updateIngredientDTO)

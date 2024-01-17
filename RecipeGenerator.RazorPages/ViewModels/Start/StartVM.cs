@@ -145,7 +145,7 @@ namespace RecipeGenerator.RazorPages.ViewModels.Start
 
         private void updateAllIngedientList(IngredientType ingredientType)
         {
-            AllIngredientList = new ObservableCollection<string>(ingredientRepository.GetByType(ingredientType)
+            AllIngredientList = new ObservableCollection<string>(ingredientRepository.GetByType(new GetIngredientDTO { IngredientType = ingredientType })
                                                                                      .Select(c => c.Name));
             SelectedIngredientName = AllIngredientList.FirstOrDefault();
         }

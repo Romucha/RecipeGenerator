@@ -16,7 +16,7 @@ namespace RecipeGenerator.API.Database.Ingredients
 
         Task<IEnumerable<GetIngredientDTO>> GetAll();
 
-        IEnumerable<GetIngredientDTO> GetByType(IngredientType type);
+        IEnumerable<GetIngredientDTO> GetByType(GetIngredientDTO getIngredientDTO);
 
         Task Create(CreateIngredientDTO createIngredientDTO);
 

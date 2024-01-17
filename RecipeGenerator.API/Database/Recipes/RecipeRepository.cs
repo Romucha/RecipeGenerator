@@ -2,6 +2,7 @@
 using AutoMapper.Internal;
 using Microsoft.EntityFrameworkCore;
 using RecipeGenerator.API.DTO.Recipes;
+using RecipeGenerator.API.Models.AppliedIngredients;
 using RecipeGenerator.API.Models.Ingeridients;
 using RecipeGenerator.API.Models.Recipes;
 using RecipeGenerator.API.Models.Steps;
@@ -63,7 +64,7 @@ namespace RecipeGenerator.API.Database.Recipes
             var newrecipe = mapper.Map<Recipe>(updateRecipeDTO);
             var oldrecipe = await recipeDbContext.Recipes.FindAsync(newrecipe.Id);
             oldrecipe.CopyFromSource(newrecipe);
-
+            
             await recipeDbContext.SaveChangesAsync();
         }
     }

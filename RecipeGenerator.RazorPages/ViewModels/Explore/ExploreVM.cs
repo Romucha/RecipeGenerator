@@ -39,7 +39,7 @@ namespace RecipeGenerator.RazorPages.ViewModels.Explore
             List<IngredientGroupVM> ingredients = new();
             foreach (var ingType in ingredientTypes)
             {
-                ingredients.Add(new IngredientGroupVM((ingredientRepository.GetByType(ingType)).OrderBy(c => c.Name), ingType));
+                ingredients.Add(new IngredientGroupVM((ingredientRepository.GetByType(new API.DTO.Ingredients.GetIngredientDTO() { IngredientType = ingType })).OrderBy(c => c.Name), ingType));
             }
             Ingredients = new ObservableCollection<IngredientGroupVM>(ingredients.OrderBy(c => c.DisplayName));
         }

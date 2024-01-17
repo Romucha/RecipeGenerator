@@ -2,8 +2,10 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using RecipeGenerator.API.Database.Ingredients;
+using RecipeGenerator.API.Models.AppliedIngredients;
 using RecipeGenerator.API.Models.Ingeridients;
 using RecipeGenerator.API.Models.Recipes;
+using RecipeGenerator.API.Models.Steps;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -39,6 +41,7 @@ namespace RecipeGenerator.API.Database
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Ingredient>().HasData(ingredientGetter.Get().Select(c => mapper.Map<Ingredient>(c)));
+            modelBuilder.Entity<AppliedIngredient>().Property(e => e.Id).ValueGeneratedOnUpdateSometimes();
         }
     }
 }

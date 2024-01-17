@@ -34,9 +34,10 @@ namespace RecipeGenerator.API.Models.Recipes
             Name = source.Name;
             Image = source.Image;
             Description = source.Description;
-            //Steps.Clear();
-            //Steps.AddRange(source.Steps);
-            //Ingredients = source.Ingredients;
+            Steps.Clear();
+            Steps.AddRange(source.Steps);
+            Ingredients.Clear();
+            Ingredients.AddRange(source.Ingredients);
             CreatedAt = source.CreatedAt;
             UpdatedAt = source.UpdatedAt;
         }
