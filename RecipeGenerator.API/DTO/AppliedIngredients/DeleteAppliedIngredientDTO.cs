@@ -8,6 +8,6 @@ namespace RecipeGenerator.API.DTO.AppliedIngredients
 {
     public class DeleteAppliedIngredientDTO
     {
-        public Guid Id { get; set; } = Guid.NewGuid();
+        public Guid Id { get; set; }
     }
 }

@@ -18,8 +18,7 @@ namespace RecipeGenerator.API.Models.Ingeridients
         public Ingredient Create(string name, string description, Uri link, byte[] image, IngredientType ingredientType)
         {
             return new Ingredient()
-            { 
-                Id = Guid.NewGuid(),
+            {
                 Name = name, 
                 Description = description, 
                 Link = link, 

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using RecipeGenerator.API.Models.AppliedIngredients;
 using RecipeGenerator.API.Models.Ingeridients;
 using RecipeGenerator.API.Models.Steps;
@@ -10,8 +11,8 @@ namespace RecipeGenerator.API.Models.Recipes
     /// </summary>
     internal class Recipe : IParametersFromSource<Recipe>
     {
-        [Key]
-        public Guid Id { get; set; } = Guid.NewGuid();
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity), Key()]
+        public Guid Id { get; set; }
 
         public string Name { get; set; }
 
@@ -34,12 +35,10 @@ namespace RecipeGenerator.API.Models.Recipes
             Name = source.Name;
             Image = source.Image;
             Description = source.Description;
-            Steps.Clear();
-            Steps.AddRange(source.Steps);
-            Ingredients.Clear();
-            Ingredients.AddRange(source.Ingredients);
             CreatedAt = source.CreatedAt;
             UpdatedAt = source.UpdatedAt;
+            Steps = source.Steps;
+            Ingredients = source.Ingredients;
         }
     }
 }

@@ -46,7 +46,6 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
                                                                     {
                                                                         IngredientId = c.Id,
                                                                         Ingredient = c,
-                                                                        IngredientState = IngredientState.None,
                                                                     }));
             RecipeSamples.NormalRecipes.ForEach(c => c.Ingredients = new List<AppliedIngredient>(recipeDbContext.Ingredients
                                                                     .Take(10)
@@ -54,7 +53,6 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
                                                                     {
                                                                         IngredientId = c.Id,
                                                                         Ingredient = c,
-                                                                        IngredientState = IngredientState.None,
                                                                     })));
         }
 

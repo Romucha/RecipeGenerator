@@ -19,5 +19,7 @@ namespace RecipeGenerator.API.DTO.Steps
         public DateTime CreatedAt { get; set; }
 
         public DateTime UpdatedAt { get; set; }
+
+        public Guid RecipeId { get; set; }
     }
 }

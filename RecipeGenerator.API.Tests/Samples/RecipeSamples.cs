@@ -31,7 +31,6 @@ namespace RecipeGenerator.API.Tests.Samples
         {
             NormalRecipe = new Recipe()
             {
-                Id = Guid.NewGuid(),
                 Name = "Test Name",
                 Description = "Test Description",
                 CourseType = Course.Soup,
@@ -40,6 +39,12 @@ namespace RecipeGenerator.API.Tests.Samples
                 Image = Properties.Resources.apple,
                 Steps = StepSamples.NormalSteps,
             };
+
+            NormalRecipe.Steps.ForEach(c =>
+            {
+                c.RecipeId = NormalRecipe.Id;
+                c.Recipe = NormalRecipe;
+            });
 
             IRecipeFactory recipeFactory = new RecipeFactory();
             DefaultRecipe = recipeFactory.Create().Result;
@@ -52,7 +57,6 @@ namespace RecipeGenerator.API.Tests.Samples
             [
                 new Recipe()
                 {
-                    Id = Guid.NewGuid(),
                     Name = "Test Name 1",
                     Description = "Test Description 1",
                     CourseType = Course.Soup,
@@ -63,7 +67,6 @@ namespace RecipeGenerator.API.Tests.Samples
                 },
                 new Recipe()
                 {
-                    Id = Guid.NewGuid(),
                     Name = "Test Name 2",
                     Description = "Test Description 2",
                     CourseType = Course.Soup,
@@ -73,6 +76,15 @@ namespace RecipeGenerator.API.Tests.Samples
                     Steps = StepSamples.NormalSteps,
                 }
             ];
+
+            NormalRecipes.ForEach(c =>
+            {
+                c.Steps.ForEach(x =>
+                {
+                    x.RecipeId = c.Id;
+                    x.Recipe = c;
+                });
+            });
 
             DefaultRecipes =
             [

@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using RecipeGenerator.API.Tests.Samples;
+using RecipeGenerator.API.DTO.Recipes;
 
 namespace RecipeGenerator.API.Tests.Database.Recipes
 {
@@ -21,10 +22,11 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
         public async Task GetById_Normal()
         {
             //arrange
+            GetRecipeDTO getRecipeDTO = mapper.Map<GetRecipeDTO>(RecipeSamples.NormalRecipes.FirstOrDefault());
             await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
             await recipeDbContext.SaveChangesAsync();
             //act
-            var recipe = await recipeRepository.GetById(RecipeSamples.NormalRecipes.FirstOrDefault().Id);
+            var recipe = await recipeRepository.GetById(getRecipeDTO);
             //assert
             Assert.NotNull(recipe);
         }
@@ -36,7 +38,10 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
             await recipeDbContext.SaveChangesAsync();
 
-            var id = Guid.NewGuid();
+            var id = new GetRecipeDTO
+            {
+                Id = new Guid()
+            };
             //act
             var recipe = await recipeRepository.GetById(id);
             //assert
@@ -47,7 +52,7 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
         public async Task GetById_EmptyDatabase()
         {
             //arrange
-            var guid = RecipeSamples.NormalRecipe.Id;
+            var guid = mapper.Map<GetRecipeDTO>(RecipeSamples.NormalRecipe);
             //act
             var recipe = await recipeRepository.GetById(guid);
             //assert

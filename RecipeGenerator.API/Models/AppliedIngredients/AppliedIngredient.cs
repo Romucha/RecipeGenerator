@@ -12,12 +12,8 @@ namespace RecipeGenerator.API.Models.AppliedIngredients
 {
     internal class AppliedIngredient
     {
-        [Key]
-        public Guid Id { get; set; } = Guid.NewGuid();
-
-        public double VolumeValue { get; set; } 
-
-        public IngredientState IngredientState { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity), Key()]
+        public Guid Id { get; set; }
 
         [ForeignKey(nameof(Recipe))]
         public Guid RecipeId { get; set; }

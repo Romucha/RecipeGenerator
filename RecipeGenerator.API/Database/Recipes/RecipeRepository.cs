@@ -46,16 +46,18 @@ namespace RecipeGenerator.API.Database.Recipes
             return (await Task.FromResult(recipeDbContext.Recipes.AsNoTracking())).Select(c => mapper.Map<GetRecipeDTO>(c));
         }
 
-        public async Task<GetRecipeDTO> GetById(Guid id)
+        public async Task<GetRecipeDTO> GetById(GetRecipeDTO getRecipeDTO)
         {
-            var recipe = await recipeDbContext.Recipes.FindAsync(id);
-            return mapper.Map<GetRecipeDTO>(recipe);
+            var recipe = mapper.Map<Recipe>(getRecipeDTO);
+            var getrecipe = await recipeDbContext.Recipes.FindAsync(recipe.Id);
+            return mapper.Map<GetRecipeDTO>(getrecipe);
         }
 
-        public async Task<GetRecipeDTO> GetByName(string name)
+        public async Task<GetRecipeDTO> GetByName(GetRecipeDTO getRecipeDTO)
         {
-            var recipe = await recipeDbContext.Recipes.FirstOrDefaultAsync(x => x.Name.Contains(name, StringComparison.CurrentCultureIgnoreCase));
-            return mapper.Map<GetRecipeDTO>(recipe);
+            Recipe recipe = mapper.Map<Recipe>(getRecipeDTO);
+            var getrecipe = await recipeDbContext.Recipes.FirstOrDefaultAsync(x => x.Name.Contains(recipe.Name, StringComparison.CurrentCultureIgnoreCase));
+            return mapper.Map<GetRecipeDTO>(getrecipe);
         }
 
         public async Task Update(UpdateRecipeDTO updateRecipeDTO)
@@ -64,7 +66,6 @@ namespace RecipeGenerator.API.Database.Recipes
             var newrecipe = mapper.Map<Recipe>(updateRecipeDTO);
             var oldrecipe = await recipeDbContext.Recipes.FindAsync(newrecipe.Id);
             oldrecipe.CopyFromSource(newrecipe);
-            
             await recipeDbContext.SaveChangesAsync();
         }
     }

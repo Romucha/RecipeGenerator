@@ -29,7 +29,6 @@ namespace RecipeGenerator.API.Tests.Samples
         {
             NormalIngredient = new Ingredient()
             {
-                Id = Guid.NewGuid(),
                 Name = "Normal Ingredient",
                 Description = "Normal Ingredient Description",
                 Image = Properties.Resources.apple,
@@ -46,7 +45,6 @@ namespace RecipeGenerator.API.Tests.Samples
             [
                 new Ingredient()
                 {
-                    Id = Guid.NewGuid(),
                     Name = "Normal Ingredient 1",
                     Description = "Normal Ingredient Description 1",
                     Image = Properties.Resources.apple,
@@ -54,7 +52,6 @@ namespace RecipeGenerator.API.Tests.Samples
                 },
                 new Ingredient()
                 {
-                    Id = Guid.NewGuid(),
                     Name = "Normal Ingredient 2",
                     Description = "Normal Ingredient Description 2",
                     Image = Properties.Resources.apple,

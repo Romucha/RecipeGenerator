@@ -24,7 +24,7 @@ namespace RecipeGenerator.API.Database
         private readonly IIngredientGetter ingredientGetter;
         private readonly IMapper mapper;
 
-        public RecipeDbContext(IConfiguration configuration, IIngredientGetter ingredientGetter, IMapper mapper, DbContextOptions dbContextOptions) : base(dbContextOptions)
+        internal RecipeDbContext(IConfiguration configuration, IIngredientGetter ingredientGetter, IMapper mapper, DbContextOptions dbContextOptions) : base(dbContextOptions)
         {
             this.configuration = configuration;
             this.ingredientGetter = ingredientGetter;
@@ -41,7 +41,6 @@ namespace RecipeGenerator.API.Database
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Ingredient>().HasData(ingredientGetter.Get().Select(c => mapper.Map<Ingredient>(c)));
-            modelBuilder.Entity<AppliedIngredient>().Property(e => e.Id).ValueGeneratedOnUpdateSometimes();
         }
     }
 }

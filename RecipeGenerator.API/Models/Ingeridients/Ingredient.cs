@@ -3,6 +3,7 @@ using RecipeGenerator.API.Models.Steps;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,8 +12,8 @@ namespace RecipeGenerator.API.Models.Ingeridients
 {
     internal class Ingredient : IParametersFromSource<Ingredient>
     {
-        [Key]
-        public Guid Id { get; set; } = Guid.NewGuid();
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity), Key()]
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public Uri Link { get; set; }

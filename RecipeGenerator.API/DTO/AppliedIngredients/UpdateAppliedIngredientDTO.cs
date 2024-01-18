@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.API.DTO.AppliedIngredients
 {
-    public class UpdateAppliedIngredientDTO : GetAppliedIngredientDTO
+    public class UpdateAppliedIngredientDTO
     {
+        public Guid RecipeId { get; set; }
+
+        public Guid IngredientId { get; set; }
     }
 }

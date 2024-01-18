@@ -10,6 +10,6 @@ namespace RecipeGenerator.API.Database.Ingredients
 {
     public interface IIngredientGetter
     {
-        IEnumerable<CreateIngredientDTO> Get();
+        IEnumerable<GetIngredientDTO> Get();
     }
 }

@@ -29,7 +29,6 @@ namespace RecipeGenerator.API.Tests.Samples
         {
             NormalStep = new Step()
             {
-                Id = Guid.NewGuid(),
                 Name = "Normal Step",
                 Description = "Normal Step Description",
                 Photos =
@@ -50,7 +49,6 @@ namespace RecipeGenerator.API.Tests.Samples
             [
                 new Step()
                 {
-                    Id = Guid.NewGuid(),
                     Name = "Normal Step 1 ",
                     Description = "Normal Step Description 1",
                     Photos =
@@ -61,7 +59,6 @@ namespace RecipeGenerator.API.Tests.Samples
                 },
                 new Step()
                 {
-                    Id = Guid.NewGuid(),
                     Name = "Normal Step 2",
                     Description = "Normal Step Description 2",
                     Photos =

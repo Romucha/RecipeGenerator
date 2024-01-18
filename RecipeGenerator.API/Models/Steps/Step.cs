@@ -12,8 +12,8 @@ namespace RecipeGenerator.API.Models.Steps
 {
     internal class Step
     {
-        [Key]
-        public Guid Id { get; set; } = Guid.NewGuid();
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity), Key()]
+        public Guid Id { get; set; }
 
         public string Name { get; set; }
 
@@ -27,6 +27,7 @@ namespace RecipeGenerator.API.Models.Steps
 
         [ForeignKey(nameof(Recipe))]
         public Guid RecipeId { get; set; }
+
         public Recipe Recipe { get; set; }
     }
 }

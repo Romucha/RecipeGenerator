@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using RecipeGenerator.API.Tests.Samples;
+using RecipeGenerator.API.DTO.Recipes;
 
 namespace RecipeGenerator.API.Tests.Database.Recipes
 {
@@ -23,8 +24,9 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             //arrange
             await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
             await recipeDbContext.SaveChangesAsync();
+            GetRecipeDTO getRecipeDTO = mapper.Map<GetRecipeDTO>(RecipeSamples.NormalRecipes.FirstOrDefault());
             //act
-            var recipe = await recipeRepository.GetByName(RecipeSamples.NormalRecipes.FirstOrDefault().Name);
+            var recipe = await recipeRepository.GetByName(getRecipeDTO);
             //assert
             Assert.NotNull(recipe);
         }
@@ -33,12 +35,15 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
         public async Task GetByName_IncorrectName()
         {
             //arrange
+            var name = "a-random-name";
+            GetRecipeDTO getRecipeDTO = mapper.Map<GetRecipeDTO>(new GetRecipeDTO()
+            {
+                Name = name
+            });
             await recipeDbContext.Recipes.AddRangeAsync(RecipeSamples.NormalRecipes);
             await recipeDbContext.SaveChangesAsync();
-
-            var name = "a-random-name";
             //act
-            var recipe = await recipeRepository.GetByName(name);
+            var recipe = await recipeRepository.GetByName(getRecipeDTO);
             //assert
             Assert.Null(recipe);
         }
@@ -47,9 +52,12 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
         public async Task GetByName_EmptyDatabase()
         {
             //arrange
-            var name = RecipeSamples.NormalRecipe.Name;
+            GetRecipeDTO getRecipeDTO = new GetRecipeDTO
+            {
+                Name = RecipeSamples.NormalRecipe.Name,
+            };
             //act
-            var recipe = await recipeRepository.GetByName(name);
+            var recipe = await recipeRepository.GetByName(getRecipeDTO);
             //assert
             Assert.Null(recipe);
         }
@@ -58,7 +66,7 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
         public async Task GetByName_EmptyName()
         {
             //arrange
-            var name = string.Empty;
+            GetRecipeDTO name = new GetRecipeDTO();
             //act
             var recipe = await recipeRepository.GetByName(name);
             //assert
@@ -69,7 +77,10 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
         public async Task GetByName_NullName()
         {
             //arrange
-            string name = null;
+            GetRecipeDTO name = new GetRecipeDTO()
+            {
+                Name = null,
+            };
             //act
             var recipe = await recipeRepository.GetByName(name);
             //assert

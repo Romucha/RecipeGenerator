@@ -12,10 +12,6 @@ namespace RecipeGenerator.API.DTO.AppliedIngredients
 {
     public class CreateAppliedIngredientDTO
     {
-        public double VolumeValue { get; set; }
-
-        public IngredientState IngredientState { get; set; }
-
         public Guid RecipeId { get; set; }
 
         public Guid IngredientId { get; set; }

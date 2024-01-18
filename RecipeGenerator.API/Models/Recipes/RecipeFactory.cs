@@ -19,7 +19,6 @@ namespace RecipeGenerator.API.Models.Recipes
                 Ingredients = new List<AppliedIngredient>(),
                 CreatedAt = DateTime.Now,
                 UpdatedAt = DateTime.Now,
-                Id = Guid.NewGuid(),
                 Description = string.Empty,
                 Name = string.Empty,
                 CourseType = Course.Unknown

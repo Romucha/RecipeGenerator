@@ -29,7 +29,7 @@ namespace RecipeGenerator.API.Database.Ingredients
             this.ingredientFactory = ingredientFactory;
         }
 
-        public IEnumerable<CreateIngredientDTO> Get()
+        public IEnumerable<GetIngredientDTO> Get()
         {
             ResourceManager resourceManager = new ResourceManager(typeof(IngredientNames));
 
@@ -62,8 +62,9 @@ namespace RecipeGenerator.API.Database.Ingredients
                 byte[] image = imageres == null ? null : descres.propertyValue as byte[];
                 if (!string.IsNullOrEmpty(name))
                 {
-                    yield return new CreateIngredientDTO
+                    yield return new GetIngredientDTO
                     {
+                        Id = Guid.NewGuid(),
                         Name = name,
                         Description = description,
                         CreatedAt = DateTime.Now,

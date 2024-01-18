@@ -17,16 +17,16 @@ namespace RecipeGenerator.API.Tests.Database.Ingredients
         public async Task Update_Normal()
         {
             //arrange
-            await recipeDbContext.Ingredients.AddAsync(IngredientSamples.NormalIngredient);
+            var originalingredient = IngredientSamples.NormalIngredient;
+            await recipeDbContext.Ingredients.AddAsync(originalingredient);
             await recipeDbContext.SaveChangesAsync();
             //act
             string alteredName = Guid.NewGuid().ToString();
-            var originalingredient = IngredientSamples.NormalIngredient;
             UpdateIngredientDTO updateIngredientDTO = mapper.Map<UpdateIngredientDTO>(originalingredient);
             updateIngredientDTO.Name = alteredName;
             await ingredientRepository.Update(updateIngredientDTO);
             //assert
-            Assert.Equal(alteredName, recipeDbContext.Ingredients.Find(IngredientSamples.NormalIngredient.Id).Name);
+            Assert.Equal(alteredName, recipeDbContext.Ingredients.Find(originalingredient.Id).Name);
         }
 
 

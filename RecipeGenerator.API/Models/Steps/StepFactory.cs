@@ -12,7 +12,6 @@ namespace RecipeGenerator.API.Models.Steps
         {
             return new Step()
             {
-                Id = Guid.NewGuid(),
                 Name = string.Empty,
                 Description = string.Empty,
                 Photos = [],
