@@ -11,7 +11,5 @@ namespace RecipeGenerator.App.Components.Pages
 {
     public partial class Explore
     {
-        [Inject]
-        private ExploreVM ExploreVM { get; set; }
     }
 }

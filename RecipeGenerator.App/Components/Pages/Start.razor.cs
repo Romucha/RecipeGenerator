@@ -14,7 +14,6 @@ namespace RecipeGenerator.App.Components.Pages
 {
     public partial class Start
     {
-        [Inject]
-        public StartVM StartVM { get; set; }
+
     }
 }

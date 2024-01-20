@@ -1,4 +1,5 @@
-﻿<div class="explore-page">
+﻿@using RecipeGenerator.RazorPages.Views.Explore.Ingredients
+<div class="explore-page">
     @foreach (var ingredientGroup in ExploreVM.Ingredients)
     {
         <IngredientGroupView IngredientsGroupVM="@ingredientGroup" />

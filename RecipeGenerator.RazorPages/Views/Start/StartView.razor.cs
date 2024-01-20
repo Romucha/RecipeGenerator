@@ -12,7 +12,7 @@ namespace RecipeGenerator.RazorPages.Views.Start
 {
     public partial class StartView
     {
-        [Parameter]
+        [Inject]
         public StartVM StartVM { get; set; }
 
         protected override async Task OnInitializedAsync()

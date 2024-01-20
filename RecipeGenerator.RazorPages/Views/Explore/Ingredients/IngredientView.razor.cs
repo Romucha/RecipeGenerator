@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.RazorPages.Views.Explore
+namespace RecipeGenerator.RazorPages.Views.Explore.Ingredients
 {
     public partial class IngredientView
     {
@@ -29,7 +29,7 @@ namespace RecipeGenerator.RazorPages.Views.Explore
                 }
                 if (!string.IsNullOrEmpty(Ingredient.Description))
                 {
-                    desc = $"{Ingredient.Description.Substring(0,50)}...";
+                    desc = $"{Ingredient.Description.Substring(0, 50)}...";
                 }
             }
             await base.OnInitializedAsync();

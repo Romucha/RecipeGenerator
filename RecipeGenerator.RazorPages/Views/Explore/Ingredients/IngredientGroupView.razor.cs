@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.RazorPages.Views.Explore
+namespace RecipeGenerator.RazorPages.Views.Explore.Ingredients
 {
     public partial class IngredientGroupView
     {

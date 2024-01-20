@@ -10,7 +10,7 @@ namespace RecipeGenerator.RazorPages.Views.Explore
 {
     public partial class ExploreView
     {
-        [Parameter]
+        [Inject]
         public ExploreVM ExploreVM { get; set; }
 
         protected override async Task OnInitializedAsync()
