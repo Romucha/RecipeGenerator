@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.RazorPages.Views.Start.Steps
+namespace RecipeGenerator.RazorPages.Views.Add.Steps
 {
     public partial class StepView
     {
@@ -20,7 +20,7 @@ namespace RecipeGenerator.RazorPages.Views.Start.Steps
         [Parameter]
         public CreateStepDTO Step { get; set; }
 
-        private string menuId =>Guid.NewGuid().ToString();
+        private string menuId => Guid.NewGuid().ToString();
 
         private void AddIngredient(GetIngredientDTO ingredient)
         {

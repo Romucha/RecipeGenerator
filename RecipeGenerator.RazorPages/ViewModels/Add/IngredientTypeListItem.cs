@@ -10,7 +10,7 @@ using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.RazorPages.ViewModels.Start
+namespace RecipeGenerator.RazorPages.ViewModels.Add
 {
     public class IngredientTypeListItem
     {

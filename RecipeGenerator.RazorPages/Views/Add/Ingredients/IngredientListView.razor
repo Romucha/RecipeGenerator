@@ -1,0 +1,33 @@
+﻿<fieldset>
+    <legend>Add Ingredients</legend>
+    <div class="start-page-ingredients">
+
+        <label for="IngredientTypes">Select ingredient type</label>
+        <InputSelect class="form-select" @bind-Value="AddVM.SelectedIngredientType">
+            @foreach (var ingredientType in AddVM.IngredientTypeList)
+            {
+                <option value="@ingredientType.Value" title="@ingredientType.Description">@ingredientType.DisplayName</option>
+            }
+        </InputSelect>
+        <label for="Ingredients">Select ingredient of chosen type</label>
+        <InputSelect @bind-Value="@AddVM.SelectedIngredientName" class="form-select">
+            @if (AddVM.AllIngredientList != null)
+            {
+                @foreach (var ingredient in AddVM.AllIngredientList)
+                {
+                    <option value="@ingredient">@ingredient</option>
+                }
+            }
+        </InputSelect>
+        <div @onclick="AddVM.AddIngredientCommand.Execute" class="form-check">Add</div>
+        <label for="Ingredients">Selected ingredients</label>
+        <div>
+            @foreach (var ingredient in AddVM.IngredientList)
+            {
+                <div>
+                    @ingredient.Name
+                </div>
+            }
+        </div>
+    </div>
+</fieldset>

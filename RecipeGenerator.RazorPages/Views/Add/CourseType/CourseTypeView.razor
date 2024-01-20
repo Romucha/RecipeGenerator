@@ -2,8 +2,8 @@
  <legend>Select Course Type</legend>
     <div class="start-page-course">
         <label for="CourseTypes">Course type</label>
-        <InputSelect @bind-Value="@StartVM.RecipeDTO.CourseType" class="form-select">
-            @foreach (var course in StartVM.CourseList)
+        <InputSelect @bind-Value="@AddVM.RecipeDTO.CourseType" class="form-select">
+            @foreach (var course in AddVM.CourseList)
             {
                 <option value="@course.Value" title="@course.Description">@course.DisplayName</option>
             }

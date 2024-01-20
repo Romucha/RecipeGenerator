@@ -24,7 +24,7 @@ namespace RecipeGenerator.API.Database
         private readonly IIngredientGetter ingredientGetter;
         private readonly IMapper mapper;
 
-        internal RecipeDbContext(IConfiguration configuration, IIngredientGetter ingredientGetter, IMapper mapper, DbContextOptions dbContextOptions) : base(dbContextOptions)
+        public RecipeDbContext(IConfiguration configuration, IIngredientGetter ingredientGetter, IMapper mapper, DbContextOptions dbContextOptions) : base(dbContextOptions)
         {
             this.configuration = configuration;
             this.ingredientGetter = ingredientGetter;
