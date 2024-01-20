@@ -55,7 +55,7 @@ namespace RecipeGenerator.API.Database.Ingredients
         public IEnumerable<GetIngredientDTO> GetByType(GetIngredientDTO getIngredientDTO)
         {
             var ingredient = mapper.Map<Ingredient>(getIngredientDTO);
-            var ingredients = dbContext.Ingredients.Where(c => c.IngredientType == ingredient.IngredientType).AsNoTracking().ToList();
+            var ingredients = dbContext.Ingredients.Where(c => c.IngredientType == ingredient.IngredientType).AsNoTracking().OrderBy(c => c.Name);
             var mappedIngredients = ingredients.Select(c => mapper.Map<GetIngredientDTO>(c));
             return mappedIngredients;
         }
