@@ -23,7 +23,7 @@ namespace RecipeGenerator.RazorPages.Views.Explore.Ingredients
         {
             if (Ingredient != null && Ingredient.Image != null)
             {
-                if (Ingredient.Image != null)
+                if (Ingredient.Image != null && Ingredient.Image.Length > 0)
                 {
                     imageURL = string.Format("data:image/svg+xml;base64,{0}", Ingredient.Image);
                 }

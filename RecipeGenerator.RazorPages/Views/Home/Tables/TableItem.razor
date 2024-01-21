@@ -1,24 +1,34 @@
-﻿<div class="table-item" title="@Recipe.Description">
+﻿@using Microsoft.AspNetCore.Components.Forms
+<div class="table-item">
     <div class="row">
         <div class="column">
-            <img class="recipe-image" src="@(Recipe.Image == null ? "/images/apple.png" : "")"/>
+            <img class="recipe-image" src="@(Recipe.Image == null || Recipe.Image.Length == 0 ? "/images/apple.png" : "")" />
         </div>
         <div class="column">
             <div class="row">
                 <div class="recipe-name">
                     @Recipe.Name
                 </div>
-            </div>            
+            </div>
             <div class="row">
-                <div>Last modified at: @(Recipe.CreatedAt > Recipe.UpdatedAt ? Recipe.CreatedAt : Recipe.UpdatedAt)</div>
+                <div class="recipe-coursetype">
+                    @Recipe.CourseType
+                </div>
             </div>
         </div>
         <div class="column">
-            <div class="row">
-                <div class="btn btn-view-recipe oi oi-spreadsheet" title="Details" />
-            </div>
-            <div class="row">
-                <div class="btn btn-delete-recipe oi oi-x" title="Delete" @onclick="deleteRecipe" />
+            <div class="recipe-menu oi oi-magnifying-glass">
+                <div class="recipe-menu-content">
+                    <div>
+                        Details
+                    </div>
+                    <div>
+                        Share
+                    </div>
+                    <div>
+                        Delete
+                    </div>
+                </div>
             </div>
         </div>
     </div>

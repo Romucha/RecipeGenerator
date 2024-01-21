@@ -12,20 +12,12 @@ namespace RecipeGenerator.RazorPages.Views.Home.Tables
 {
     public partial class TableItem
     {
+        private string menuId => Guid.NewGuid().ToString();
+
         [Inject]
         private IRecipeRepository recipeRepository { get; set; }
     
         [Parameter]
         public GetRecipeDTO Recipe { get; set; }
-
-        private async Task deleteRecipe()
-        {
-            var deleterecipedto = new DeleteRecipeDTO()
-            {
-                Id = Recipe.Id,
-            };
-            await recipeRepository.Delete(deleterecipedto);
-            this.StateHasChanged();
-        }
     }
 }
