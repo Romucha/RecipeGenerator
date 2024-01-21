@@ -26,6 +26,8 @@ namespace RecipeGenerator.API.DTO.Recipes
 
         public List<CreateStepDTO> Steps { get; set; }
 
+        public TimeSpan Time { get; set; }
+
         public DateTime CreatedAt { get; set; }
 
         public DateTime UpdatedAt { get; set; }

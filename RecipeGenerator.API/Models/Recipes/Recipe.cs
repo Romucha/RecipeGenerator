@@ -30,6 +30,8 @@ namespace RecipeGenerator.API.Models.Recipes
 
         public DateTime UpdatedAt { get; set; }
 
+        public TimeSpan Time { get; set; }
+
         public void CopyFromSource(Recipe source)
         {
             Name = source.Name;
