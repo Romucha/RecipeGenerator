@@ -4,19 +4,11 @@
 @using RecipeGenerator.RazorPages.Views.Home.Tables
 
 <div class="home-view">
-    <div class="home-view-table">
-        <div class="home-view-table-row">
-            <div class="home-view-table-column">
-                <HomeButton NavPath="add" OiIcon="oi-plus" OiTitle="Add" OiDescription="Add"/>
-            </div>
-            <div class="home-view-table-column">
-                <HomeButton NavPath="explore" OiIcon="oi-script" OiTitle="Explore" OiDescription="Explore"/>
-            </div>
-        </div>
-        <div class="home-view-table-row">
-            <div class="home-view-table-column">
-                <DisplayView HomeVM="@HomeVM" />
-            </div>
-        </div>
+    <div class="home-view-buttons">
+        <HomeButton NavPath="add" OiIcon="oi-plus" OiTitle="Add" OiDescription="Add" />
+        <HomeButton NavPath="explore" OiIcon="oi-script" OiTitle="Explore" OiDescription="Explore" />
+    </div>
+    <div class="home-view-recipe-table">
+        <DisplayView HomeVM="@HomeVM" />
     </div>
 </div>

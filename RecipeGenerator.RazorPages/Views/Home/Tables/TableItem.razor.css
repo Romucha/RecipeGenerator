@@ -1,4 +1,8 @@
-﻿.table-item {
+﻿.even {
+    width: 33%;
+}
+
+.table-item {
     border: 2px solid var(--primary-color-shaded);
     background-color: var(--primary-color);
     border-radius: 1rem;
