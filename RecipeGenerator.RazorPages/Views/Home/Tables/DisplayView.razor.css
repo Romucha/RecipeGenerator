@@ -1,6 +1,12 @@
-﻿.home-view-recipe-table {
+﻿.displayview {
     display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    height: -webkit-fill-available;
+    width: 100%;
 }
 
-.home-view-recipe-table-no-recipes-warning {
+.displayview-warning {
+    font-size: 2rem;
 }

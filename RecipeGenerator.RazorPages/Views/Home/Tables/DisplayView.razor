@@ -1,10 +1,12 @@
-﻿@if (HomeVM?.Recipes?.Any() == true)
-{
-    <Table Recipes="@HomeVM.Recipes"/>
-}
-else
-{
-    <div class="home-view-recipe-table-no-recipes-warning">
-        You haven't generate any recipes yet...
-    </div>
-}
+﻿<div class="displayview">
+    @if (HomeVM?.Recipes?.Any() == true)
+    {
+        <RecipeTable Recipes="@HomeVM.Recipes" />
+    }
+    else
+    {
+        <div class="displayview-warning">
+            You haven't generate any recipes yet...
+        </div>
+    }
+</div>

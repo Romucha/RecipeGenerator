@@ -10,25 +10,21 @@
 .home-view-buttons {
     display: flex;
     flex-direction: row;
-    width: 75%;
-    height: -webkit-fill-available;
+    width: 50%;
+    height: 35%;
     justify-content: space-between;
     align-items: center;
+    margin: 1rem;
 }
 
 .home-view-recipe-table {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    width: 75%;
+    width: 50%;
+    height: -webkit-fill-available;
     justify-content: center;
-}
-
-.home-view-table-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 1rem;
 }
 
 
