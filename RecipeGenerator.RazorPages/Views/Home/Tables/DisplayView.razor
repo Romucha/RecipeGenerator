@@ -1,7 +1,7 @@
 ﻿<div class="displayview">
     @if (HomeVM?.Recipes?.Any() == true)
     {
-        <RecipeTable Recipes="@HomeVM.Recipes" />
+        <RecipeTable HomeVM="@HomeVM" />
     }
     else
     {

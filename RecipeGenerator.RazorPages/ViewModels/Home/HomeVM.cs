@@ -24,10 +24,13 @@ namespace RecipeGenerator.RazorPages.ViewModels.Home
             set => SetProperty(ref recipes, value);
         }
 
+        public IAsyncRelayCommand GetRecipesCommand => new AsyncRelayCommand(getRecipes);
+
+        public IAsyncRelayCommand DeleteRecipeCommand => new AsyncRelayCommand<DeleteRecipeDTO>(deleteRecipe);
+
         public HomeVM(IRecipeRepository recipeRepository)
         {
             this.recipeRepository = recipeRepository;
-            GetRecipesCommand = new AsyncRelayCommand(getRecipes);
         }
 
         private async Task getRecipes()
@@ -35,6 +38,9 @@ namespace RecipeGenerator.RazorPages.ViewModels.Home
             Recipes = await recipeRepository.GetAll();
         }
 
-        public IAsyncRelayCommand GetRecipesCommand { get; private set; }
+        private async Task deleteRecipe(DeleteRecipeDTO deleteRecipeDTO)
+        {
+            await recipeRepository.Delete(deleteRecipeDTO);
+        }
     }
 }
