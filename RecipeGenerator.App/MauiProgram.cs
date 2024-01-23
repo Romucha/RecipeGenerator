@@ -1,10 +1,4 @@
 ﻿using Microsoft.Extensions.Logging;
-using RecipeGenerator.API;
-using RecipeGenerator.App.ViewModels;
-using RecipeGenerator.RazorPages.ViewModels.About;
-using RecipeGenerator.RazorPages.ViewModels.Explore;
-using RecipeGenerator.RazorPages.ViewModels.Home;
-using RecipeGenerator.RazorPages.ViewModels.Add;
 
 namespace RecipeGenerator.App
 {
@@ -14,27 +8,16 @@ namespace RecipeGenerator.App
         {
             var builder = MauiApp.CreateBuilder();
             builder
-             .UseMauiApp<App>()
-             .ConfigureFonts(fonts =>
-             {
-                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-             });
-            
-            builder.Services.AddQuickGridEntityFrameworkAdapter();
-
-            builder.Services.AddMauiBlazorWebView();
-            builder.Services.AddBlazorContextMenu();
+                .UseMauiApp<App>()
+                .ConfigureFonts(fonts =>
+                {
+                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                });
 
 #if DEBUG
-            builder.Services.AddBlazorWebViewDeveloperTools();
-            builder.Logging.AddDebug();
+    		builder.Logging.AddDebug();
 #endif
-            builder.Services.AddDatabase();
-            builder.Services.AddTransient<MainVM>();
-            builder.Services.AddTransient<AboutVM>();
-            builder.Services.AddTransient<ExploreVM>();
-            builder.Services.AddTransient<AddVM>();
-            builder.Services.AddTransient<HomeVM>();
 
             return builder.Build();
         }
