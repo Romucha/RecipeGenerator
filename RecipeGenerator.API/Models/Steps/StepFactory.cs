@@ -13,6 +13,7 @@ namespace RecipeGenerator.API.Models.Steps
             return new Step()
             {
                 Name = string.Empty,
+                Index = 0,
                 Description = string.Empty,
                 Photos = [],
             };

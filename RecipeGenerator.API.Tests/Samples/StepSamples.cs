@@ -30,6 +30,7 @@ namespace RecipeGenerator.API.Tests.Samples
             NormalStep = new Step()
             {
                 Name = "Normal Step",
+                Index = 1,
                 Description = "Normal Step Description",
                 Photos =
                 [
@@ -50,6 +51,7 @@ namespace RecipeGenerator.API.Tests.Samples
                 new Step()
                 {
                     Name = "Normal Step 1 ",
+                    Index = 1,
                     Description = "Normal Step Description 1",
                     Photos =
                     [
@@ -60,6 +62,7 @@ namespace RecipeGenerator.API.Tests.Samples
                 new Step()
                 {
                     Name = "Normal Step 2",
+                    Index = 2,
                     Description = "Normal Step Description 2",
                     Photos =
                     [

@@ -10,6 +10,8 @@ namespace RecipeGenerator.API.DTO.Steps
     {
         public string Name { get; set; }
 
+        public int Index { get; set; }
+
         public string Description { get; set; }
 
         public List<byte[]> Photos { get; set; } = default!;
