@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using RecipeGenerator.API;
-using RecipeGenerator.Views;
+using RecipeGenerator.MVVM;
 
 namespace RecipeGenerator.App
 {

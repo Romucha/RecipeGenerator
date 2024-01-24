@@ -8,7 +8,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.API.Tests",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.App", "RecipeGenerator.App\RecipeGenerator.App.csproj", "{64CCC094-98E9-4F4C-9675-1692FCD2B07C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.Views", "RecipeGenerator.Views\RecipeGenerator.Views.csproj", "{2483BF3B-1052-4C6B-92E7-9542B458FCCB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.MVVM", "RecipeGenerator.MVVM\RecipeGenerator.MVVM.csproj", "{2483BF3B-1052-4C6B-92E7-9542B458FCCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
