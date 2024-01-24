@@ -4,7 +4,6 @@ using RecipeGenerator.MVVM.Views.Explore;
 using RecipeGenerator.MVVM.Views.Home;
 using RecipeGenerator.MVVM.Views.Settings;
 using RecipeGenerator.MVVM.Views.Navigation;
-using RecipeGenerator.MVVM.Views.Body;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,15 +15,14 @@ namespace RecipeGenerator.MVVM
 {
     public static class ServiceExtensions
     {
-        public static IServiceCollection AddViews(this IServiceCollection services)
+        public static IServiceCollection AddPages(this IServiceCollection services)
         {
-            services.AddTransient<AboutView>();
-            services.AddTransient<AddView>();
-            services.AddTransient<ExploreView>();
-            services.AddTransient<HomeView>();
+            services.AddTransient<AboutPage>();
+            services.AddTransient<AddPage>();
+            services.AddTransient<ExplorePage>();
+            services.AddTransient<HomePage>();
             services.AddTransient<SettingsView>();
-            services.AddTransient<NavigationPanelView>();
-            services.AddTransient<BodyPanelView>();
+            services.AddTransient<NavigationTabbedPage>();
             return services;
         }
     }

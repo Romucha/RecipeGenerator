@@ -3,7 +3,6 @@
     x:Class="RecipeGenerator.App.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:body="clr-namespace:RecipeGenerator.MVVM.Views.Body;assembly=RecipeGenerator.MVVM"
     xmlns:nav="clr-namespace:RecipeGenerator.MVVM.Views.Navigation;assembly=RecipeGenerator.MVVM">
 
     <!--<Grid>
@@ -15,7 +14,6 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <body:BodyPanelView Grid.Row="0" Grid.Column="0" />
-        <nav:NavigationPanelView Grid.Row="1" Grid.Column="0" />
+        <nav:NavigationTabbedPage Grid.Row="1" Grid.Column="0" />
     </Grid>-->
-    <body:BodyPanelView />
 </ContentPage>

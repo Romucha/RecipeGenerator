@@ -35,14 +35,8 @@
 	  <Compile Update="Views\Add\AddPage.xaml.cs">
 	    <DependentUpon>AddPage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Views\Explore\ExplorePage.xaml.cs">
-	    <DependentUpon>ExplorePage.xaml</DependentUpon>
-	  </Compile>
-	  <Compile Update="Views\Home\HomePage.xaml.cs">
-	    <DependentUpon>HomePage.xaml</DependentUpon>
-	  </Compile>
-	  <Compile Update="Views\Navigation\NavigationTabbedPage.xaml.cs">
-	    <DependentUpon>NavigationTabbedPage.xaml</DependentUpon>
+	  <Compile Update="Views\Navigation\NavigationPanel.xaml.cs">
+	    <DependentUpon>NavigationPanel.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
@@ -53,13 +47,13 @@
 	  <MauiXaml Update="Views\Add\AddPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Explore\ExplorePage.xaml">
+	  <MauiXaml Update="Views\Explore\ExploreView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Home\HomePage.xaml">
+	  <MauiXaml Update="Views\Home\HomeView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Navigation\NavigationTabbedPage.xaml">
+	  <MauiXaml Update="Views\Navigation\NavigationPanel.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Settings\SettingsView.xaml">
@@ -74,13 +68,13 @@
 	  <None Update="Views\Add\AddPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </None>
-	  <None Update="Views\Explore\ExplorePage.xaml">
+	  <None Update="Views\Explore\ExploreView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </None>
-	  <None Update="Views\Home\HomePage.xaml">
+	  <None Update="Views\Home\HomeView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </None>
-	  <None Update="Views\Navigation\NavigationTabbedPage.xaml">
+	  <None Update="Views\Navigation\NavigationPanel.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </None>
 	  <None Update="Views\Settings\SettingsView.xaml">

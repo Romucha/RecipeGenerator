@@ -1,8 +1,8 @@
 namespace RecipeGenerator.MVVM.Views.Home;
 
-public partial class HomeView : ContentPage
+public partial class HomePage : ContentPage
 {
-	public HomeView()
+	public HomePage()
 	{
 		InitializeComponent();
 	}

@@ -4,7 +4,7 @@ namespace RecipeGenerator.App
 {
     public partial class App : Application
     {
-        public App(NavigationPanelView shell)
+        public App(NavigationTabbedPage shell)
         {
             InitializeComponent();
 

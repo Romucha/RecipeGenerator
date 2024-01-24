@@ -21,9 +21,8 @@ namespace RecipeGenerator.App
     		builder.Logging.AddDebug();
 #endif
             builder.Services
-                .AddTransient<Shell, AppShell>()
                 .AddDatabase()
-                .AddViews();
+                .AddPages();
 
             return builder.Build();
         }

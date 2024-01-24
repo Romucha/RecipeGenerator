@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage
-    x:Class="RecipeGenerator.MVVM.Views.Navigation.NavigationPanelView"
+    x:Class="RecipeGenerator.MVVM.Views.Navigation.NavigationTabbedPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:about="clr-namespace:RecipeGenerator.MVVM.Views.About"
@@ -8,9 +8,9 @@
     xmlns:explore="clr-namespace:RecipeGenerator.MVVM.Views.Explore"
     xmlns:home="clr-namespace:RecipeGenerator.MVVM.Views.Home"
     xmlns:settings="clr-namespace:RecipeGenerator.MVVM.Views.Settings">
-    <add:AddView />
-    <explore:ExploreView />
-    <home:HomeView />
+    <add:AddPage />
+    <explore:ExplorePage />
+    <home:HomePage />
     <settings:SettingsView />
-    <about:AboutView />
+    <about:AboutPage />
 </TabbedPage>

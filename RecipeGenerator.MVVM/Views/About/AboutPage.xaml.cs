@@ -1,8 +1,8 @@
 namespace RecipeGenerator.MVVM.Views.About;
 
-public partial class AboutView : ContentPage
+public partial class AboutPage : ContentPage
 {
-	public AboutView()
+	public AboutPage()
 	{
 		InitializeComponent();
 	}

@@ -1,8 +1,8 @@
 namespace RecipeGenerator.MVVM.Views.Explore;
 
-public partial class ExploreView : ContentPage
+public partial class ExplorePage : ContentPage
 {
-	public ExploreView()
+	public ExplorePage()
 	{
 		InitializeComponent();
 	}
