@@ -1,8 +1,8 @@
 namespace RecipeGenerator.MVVM.Views.Settings;
 
-public partial class SettingsView : ContentPage
+public partial class SettingsPage : ContentPage
 {
-	public SettingsView()
+	public SettingsPage()
 	{
 		InitializeComponent();
 	}

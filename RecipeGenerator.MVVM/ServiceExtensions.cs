@@ -21,7 +21,7 @@ namespace RecipeGenerator.MVVM
             services.AddTransient<AddPage>();
             services.AddTransient<ExplorePage>();
             services.AddTransient<HomePage>();
-            services.AddTransient<SettingsView>();
+            services.AddTransient<SettingsPage>();
             services.AddTransient<NavigationTabbedPage>();
             return services;
         }

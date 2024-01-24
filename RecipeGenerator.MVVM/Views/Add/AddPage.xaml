@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="RecipeGenerator.MVVM.Views.Add.AddPage"
-             Title="AddPage">
+<ContentPage
+    x:Class="RecipeGenerator.MVVM.Views.Add.AddPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="AddPage">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Label
+            HorizontalOptions="Center"
+            Text="Add"
+            VerticalOptions="Center" />
     </VerticalStackLayout>
 </ContentPage>

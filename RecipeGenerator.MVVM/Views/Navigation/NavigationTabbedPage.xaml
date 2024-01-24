@@ -5,12 +5,35 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:about="clr-namespace:RecipeGenerator.MVVM.Views.About"
     xmlns:add="clr-namespace:RecipeGenerator.MVVM.Views.Add"
+    xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
     xmlns:explore="clr-namespace:RecipeGenerator.MVVM.Views.Explore"
     xmlns:home="clr-namespace:RecipeGenerator.MVVM.Views.Home"
-    xmlns:settings="clr-namespace:RecipeGenerator.MVVM.Views.Settings">
-    <add:AddPage />
-    <explore:ExplorePage />
-    <home:HomePage />
-    <settings:SettingsView />
-    <about:AboutPage />
+    xmlns:settings="clr-namespace:RecipeGenerator.MVVM.Views.Settings"
+    xmlns:windows="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.WindowsSpecific;assembly=Microsoft.Maui.Controls"
+    android:TabbedPage.ToolbarPlacement="Bottom">
+    <NavigationPage Title="Add">
+        <x:Arguments>
+            <add:AddPage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Explore">
+        <x:Arguments>
+            <explore:ExplorePage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Home">
+        <x:Arguments>
+            <home:HomePage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Settings">
+        <x:Arguments>
+            <settings:SettingsPage />
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="About">
+        <x:Arguments>
+            <about:AboutPage />
+        </x:Arguments>
+    </NavigationPage>
 </TabbedPage>
