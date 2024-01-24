@@ -1,8 +1,10 @@
-﻿namespace RecipeGenerator.App
+﻿using RecipeGenerator.MVVM.Views.Navigation;
+
+namespace RecipeGenerator.App
 {
     public partial class App : Application
     {
-        public App(Shell shell)
+        public App(NavigationPanelView shell)
         {
             InitializeComponent();
 
