@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
+using RecipeGenerator.API;
+using RecipeGenerator.Views;
 
 namespace RecipeGenerator.App
 {
@@ -18,6 +20,10 @@ namespace RecipeGenerator.App
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
+            builder.Services
+                .AddTransient<Shell, AppShell>()
+                .AddDatabase()
+                .AddViews();
 
             return builder.Build();
         }
