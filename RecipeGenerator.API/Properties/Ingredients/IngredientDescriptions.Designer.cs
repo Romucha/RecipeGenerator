@@ -994,7 +994,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Bacon.
+        ///   Ищет локализованную строку, похожую на Bacon is a cured meat product obtained from pig. Curing is a method of food preservation of meat by using salt in brine or dry packing. Curing also helps in adding flavor to the meat. Usually regarded as the pork belly, bacon is very popular in the United States..
         /// </summary>
         internal static string Meat_Bacon_Description {
             get {
@@ -1003,7 +1003,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Beef.
+        ///   Ищет локализованную строку, похожую на Derived from the Latin word bos , meat from the cattle is known as ‘beef’. Beef muscle meat can be cut into steak, roasts or short ribs..
         /// </summary>
         internal static string Meat_Beef_Description {
             get {
@@ -1012,7 +1012,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Chicken.
+        ///   Ищет локализованную строку, похожую на Chicken is the most common poultry in the world, with America accounting for the maximum global per capita meat consumption. Good especially as it is lean white meat. Chicken is rich in proteins, potassium, calcium and contains no carbohydrates. Types Free Range Chicken: This is a term used for the way chickens are raised..
         /// </summary>
         internal static string Meat_Chicken_Description {
             get {
@@ -1021,7 +1021,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Chicken Liver.
+        ///   Ищет локализованную строку, похожую на Chicken liver is the most sought after meat. It is most popularly used in a mixture of ground meat and fat minced into a paste. It is a very rich source of iron. Because of the high content of vitamin A present in it, it is very beneficial for the eyes and helps cure anemia..
         /// </summary>
         internal static string Meat_Chicken_Liver_Description {
             get {
@@ -1030,7 +1030,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Chicken Stock.
+        ///   Ищет локализованную строку, похожую на Stock forms an important base in soups and sauces. It is a light, clear, flavorful liquid. You can prepare it at home or buy stock cubes or bouillon cubes which dissolve in water.
+        ///To prepare stock at home let chicken bones, vegetables, herbs etc simmer in water for about 3-4 hours..
         /// </summary>
         internal static string Meat_Chicken_Stock_Description {
             get {
@@ -1039,7 +1040,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Chops.
+        ///   Ищет локализованную строку, похожую на A chop is referred to a thin boneless portion of meat cut from the ribs of the animal. A meat cut offered with a rib bone is called cutlet. The most commonly kinds of chops are pork and lamb.
+        ///Meat chops are cooked in several ways depending on the kind of animal the meat is taken from..
         /// </summary>
         internal static string Meat_Chops_Description {
             get {
@@ -1048,7 +1050,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Crab.
+        ///   Ищет локализованную строку, похожую на There are more than 4000 species of crabs on this planet. Crab is a delicacy for all meat lovers for the sweetness and softness of the meat. There is however a distinct variation in the meat of a male crab and female crab..
         /// </summary>
         internal static string Meat_Crab_Description {
             get {
@@ -1057,7 +1059,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Free Range Chicken.
+        ///   Ищет локализованную строку, похожую на Free range chickens are those which are allowed to roam about freely for food rather than being caged. This helps in muscle development of the meat.
+        ///It helps prevent cannibalism and it has been found that eggs from pastured hens have higher omega-3 fatty acid and vitamin A and E..
         /// </summary>
         internal static string Meat_Free_Range_Chicken_Description {
             get {
@@ -1066,7 +1069,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Grass Fed Chicken.
+        ///   Ищет локализованную строку, похожую на Pasture fed chickens are grass fed chickens, not to be confused with free-range chickens. the term grass fed is commonly used for cows for their natural diet is mostly grass and other weeds. similarily, chicken are also fed on grass along with vegetables, bugs, weeds, etc..
         /// </summary>
         internal static string Meat_Grass_Fed_Chicken_Description {
             get {
@@ -1075,7 +1078,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Ham.
+        ///   Ищет локализованную строку, похожую на Ham is the cured and smoked hind leg of an animal usually a pig though chicken ham is also available. All hams are mostly fully cooked or preserved in salt and sugar, but fresh ham is also available. The meat is rosy pink in color. Ham is either cured with salt or with nitrate..
         /// </summary>
         internal static string Meat_Ham_Description {
             get {
@@ -1084,7 +1087,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Keema.
+        ///   Ищет локализованную строку, похожую на Also called as minced meat, it is simply meat that has passed through a mincing machine to obtain smaller and finer meat pieces. This meat is popularly used in a wide variety of like burgers, pie fillings and pasta sauces. The most commonly grounded meat is beef, though meat of pork, lamb and poultry is also minced..
         /// </summary>
         internal static string Meat_Keema_Description {
             get {
@@ -1093,7 +1096,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Kidney Meat.
+        ///   Ищет локализованную строку, похожую на There are many Asian dishes that are made from the kidneys of goat, beef, etc. Each animal’s kidney is prepared in a different way in different cultures, each having a distinctive flavor. Most often, kidneys of beef and pork are eaten with more interest..
         /// </summary>
         internal static string Meat_Kidney_Meat_Description {
             get {
@@ -1102,7 +1105,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Lamb Meat.
+        ///   Ищет локализованную строку, похожую на Lamb meat is the meat of a sheep who is younger than 12 months of age. Lambs are sorted into three kinds of meat. First is the forequarter which includes the neck, front legs and the ribs upto the shoulder blade. The hindquarter includes the rear legs and hips..
         /// </summary>
         internal static string Meat_Lamb_Meat_Description {
             get {
@@ -1111,7 +1114,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Meat Stock.
+        ///   Ищет локализованную строку, похожую на Meat stock is nothing more than meat flavored broth but can provide character to many dishes since it comes loaded with flavor. It is used as a base for many dishes, commonly soup, sauces and marinades. A very useful ingredient, its versatility makes it an ingredient in myriad recipes..
         /// </summary>
         internal static string Meat_Meat_Stock_Description {
             get {
@@ -1120,7 +1123,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Mutton.
+        ///   Ищет локализованную строку, похожую на It is the meat of an adult domestic sheep or a goat. A sheep less than a year old is butchered to get lamb, an adolescent sheep meat is called hogget and an adult sheep or goat gives mutton. Mutton is tougher and has a stronger flavor than lamb. Goat meat from young animals is called kid..
         /// </summary>
         internal static string Meat_Mutton_Description {
             get {
@@ -1129,7 +1132,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Mutton Liver.
+        ///   Ищет локализованную строку, похожую на Kaleji or Mutton liver is an organ meat that is very high in nutritional value. It can be fried, boiled, baked or broiled into various savory dishes. Its use is not very common in the US. In fact organ meat was not consumed for a very long time in many parts of the world because it was considered to be bad in taste and looks..
         /// </summary>
         internal static string Meat_Mutton_Liver_Description {
             get {
@@ -1138,7 +1141,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Organic Chicken.
+        ///   Ищет локализованную строку, похожую на Organic chicken are those that are fed only certified organic feed. It is prohibited to inject the chickens with any kind of drugs or antibiotics. Chicken raised organically must have outdoor access for it to develop muscles.
+        ///This type of chicken is raised ethically, humanely and is free of chemicals..
         /// </summary>
         internal static string Meat_Organic_Chicken_Description {
             get {
@@ -1147,7 +1151,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Partridge.
+        ///   Ищет локализованную строку, похожую на Partridge are medium-sized birds from the pheasant family. The meat has a delicate and tender flesh. Partridge usually weighs around 1-3 pounds. These birds belong to the species present in Europe, North America and Asia. Partridges are eaten fondly for their fleshy muscular and plump breasts..
         /// </summary>
         internal static string Meat_Partridge_Description {
             get {
@@ -1156,7 +1160,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Pork.
+        ///   Ищет локализованную строку, похожую на Pork is the culinary name for the meat obtained from a domestic pig. It is available in different cuts like tenderloin, loin chops, bacon etc. It is eaten in both forms - freshly cooked and preserved. Mostly it is consumed after curing because it extends the shelf life of pork products..
         /// </summary>
         internal static string Meat_Pork_Description {
             get {
@@ -1165,7 +1169,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Quail.
+        ///   Ищет локализованную строку, похожую на Quails are mid-sized game birds that are served as a gourmet dish. They are usually eaten along with the bones, as they can be easily chewed. Both quail meat and eggs are consumed and have a delicate flavor. Quail eggs are sometimes used raw or cooked as tamago in sushi..
         /// </summary>
         internal static string Meat_Quail_Description {
             get {
@@ -1174,7 +1178,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Skinned Chicken.
+        ///   Ищет локализованную строку, похожую на Chicken skin acts as a cover which entraps the juices and fat inside the chicken while it is being cooked to provide the real flavor to your dish..
         /// </summary>
         internal static string Meat_Skinned_Chicken_Description {
             get {
@@ -1183,7 +1187,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Turkey.
+        ///   Ищет локализованную строку, похожую на The turkey is a large poultry bird that is said to have been domesticated by the people of Mesoamerica. It is sold sliced and ground or as a whole like chicken with its head, feet and feather removed. Sliced turkey is used in sandwiches or served as cold cuts..
         /// </summary>
         internal static string Meat_Turkey_Description {
             get {
