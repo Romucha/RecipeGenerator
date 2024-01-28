@@ -1359,7 +1359,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Agar.
+        ///   Ищет локализованную строку, похожую на Agar is a gelatinous substance made from seaweed. A natural gelling agent, this thickener is made from red seaweed. It is used throughout the world and is sold in a form of a powder that is mixed with water to make a gelling agent. Sold as strips or powder, it is a white semi-translucent substance, commonly known as vegetarian gelatin..
         /// </summary>
         internal static string OtherIngredients_Agar_Description {
             get {
@@ -1368,7 +1368,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Ajinomoto.
+        ///   Ищет локализованную строку, похожую на Unlike common belief, Ajinomoto is not an ingredient itself, but is a Food and Chemical corporation based in Japan that uses its name as a trademark for its original product Monosodium Glutamate. It is a salt widely used in Chinese cuisine to enhance flavors, hence popularly called the &apos;flavor enhancer..
         /// </summary>
         internal static string OtherIngredients_Ajinomoto_Description {
             get {
@@ -1377,7 +1377,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Almond Milk.
+        ///   Ищет локализованную строку, похожую на Almond milk is a beverage made with ground almonds. It is often used as a substitute for cows milk for those who are lactose intolerant or follow a vegan diet. It doesnt contain any animal products. It can also be prepared at home by grinding almonds with water in a blender..
         /// </summary>
         internal static string OtherIngredients_Almond_Milk_Description {
             get {
@@ -1386,7 +1386,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Alum.
+        ///   Ищет локализованную строку, похожую на Alum is a chemical compound. Alum powder may be used in pickling, to keep the fruits and vegetables crisp. It is also used as an acidic compound in some baking powders. Alum are double sulphate salst which are soluble in water. It is most commonly used for the purification of water..
         /// </summary>
         internal static string OtherIngredients_Alum_Description {
             get {
@@ -1395,7 +1395,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Arrowroot.
+        ///   Ищет локализованную строку, похожую на Also known as the obedience plant, arrowroot is a perennial herb which is also the name for the starch that is obtained from its rootstock. It is a plant based starch obtained from rhizomes that is usually used as a thickening agent. It is made into a light white powder and is usually odorless but has a faint odor when mixed with water..
         /// </summary>
         internal static string OtherIngredients_Arrowroot_Description {
             get {
@@ -1404,7 +1404,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Baking Powder.
+        ///   Ищет локализованную строку, похожую на A leavening agent that is a mixture of sodium bicarbonate and other acids, used widely in cakes. It increases the volume and lightens the texture of goods baked. A very common ingredient around the kitchen, it is used a raising agent in cakes, breads and biscuits..
         /// </summary>
         internal static string OtherIngredients_Baking_Powder_Description {
             get {
@@ -1413,7 +1413,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Baking Soda.
+        ///   Ищет локализованную строку, похожую на It is a white crystalline chemical compound usually found in powdered form. This white powder is commonly used as a raising agent in baking. It is used in cakes and baking products. Also know as cooking soda or bicarbonate of soda. It combines with an acidic component to produce tiny bubbles which lightens the dough or batter..
         /// </summary>
         internal static string OtherIngredients_Baking_Soda_Description {
             get {
@@ -1422,7 +1422,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Balsamic Vinegar.
+        ///   Ищет локализованную строку, похожую на Made from grape juice or grape must, balsamic vinegar has been in use since the middle ages. The dark-brown syrupy vinegar was originally produced in the Modena and Reggio regions of Italy. It has a slightly sweet-sour taste that adds a special flavor to dishes while cooking..
         /// </summary>
         internal static string OtherIngredients_Balsamic_Vinegar_Description {
             get {
@@ -1431,7 +1431,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Barfi.
+        ///   Ищет локализованную строку, похожую на A very popular Indian dessert, it is commonly cut into cubes, triangles or diamond shapes to serve. The most common preparation method is to thicken milk with sugar and other spices, spread out in a shallow dish and cut to desired shapes and sizes. These are often decorated with pieces of silver leaf which is edible and flavored with fruit..
         /// </summary>
         internal static string OtherIngredients_Barfi_Description {
             get {
@@ -1440,7 +1440,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Beer.
+        ///   Ищет локализованную строку, похожую на Beer is an alcoholic drink that is made by hydrolisis of starch and fermentation of resulting sugar. The basic ingredients used in beer are water, starch, brewer&apos;s yeast and flavouring. The alcohol content varies in every beer depending on the way it has been produced (usullay between 3%-14%)..
         /// </summary>
         internal static string OtherIngredients_Beer_Description {
             get {
@@ -1449,7 +1449,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Brown Sauce.
+        ///   Ищет локализованную строку, похожую на Brown sauce is a condiment used in the British and French cuisine. It is used in various recipes depending on the content used to prepare the sauce. In the British cuisine, brown sauce is made from butter and flour. It is made of browned roux and meat stock in classical French cuisine..
         /// </summary>
         internal static string OtherIngredients_Brown_Sauce_Description {
             get {
@@ -1458,7 +1458,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Chocolate Chips.
+        ///   Ищет локализованную строку, похожую на Chocolate chips are small bits of chocolate. They are available in different sizes, large to miniature. Circular, conical, square, rectangular, chocolate chips can be manufactured in any shape and size. They contain a smaller amount of cocoa butter than cooking chocolate..
         /// </summary>
         internal static string OtherIngredients_Chocolate_Chips_Description {
             get {
@@ -1467,7 +1467,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Chocolate.
+        ///   Ищет локализованную строку, похожую на Chocolates are produced from the tropical Theobroma cacao tree (also known as the cocoa tree) which is found in the tropical region of South America..
         /// </summary>
         internal static string OtherIngredients_Chocolate_Description {
             get {
@@ -1476,7 +1476,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cocoa.
+        ///   Ищет локализованную строку, похожую на Cocoa is the powder extracted from the fully fermented bean of Cocoa plant. Apart from Cocoa powder Cocoa butter and Cocoa solids are also extracted from the beans. Cocoa bean is the basis for chocolate. The seeds that are fairly white to pale lavender colour are securely embedded in a pod..
         /// </summary>
         internal static string OtherIngredients_Cocoa_Description {
             get {
@@ -1485,7 +1485,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Coconut Milk.
+        ///   Ищет локализованную строку, похожую на Coconut milk is obtained from grated coconut kernel. It is a very popular ingredient in South East Asian cuisine. The rich taste of coconut milk is due to the high oil content. It can be consumed raw or used as a substitute to milk in the preparation of various dishes..
         /// </summary>
         internal static string OtherIngredients_Coconut_Milk_Description {
             get {
@@ -1494,7 +1494,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Coconut Oil.
+        ///   Ищет локализованную строку, похожую на Coconut oil is edible oil extracted from the kernel of matured coconuts. Its uses are both internal and external and have various applications in the food and medicine industry. There are many varieties of coconut oil available in the market, varying mostly based on its preparation process..
         /// </summary>
         internal static string OtherIngredients_Coconut_Oil_Description {
             get {
@@ -1503,7 +1503,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Coconut Water.
+        ///   Ищет локализованную строку, похожую на Mother natures sports drink, coconut water is often regarded as a natural electrolyte add-on to the human body. It is the liquid present inside young coconut shells. Coconut water is largely popular for its nutritional benefits. It has been a popular drink in the tropical region, especially India, Brazilian Coast, Pacific Coast, Africa and the Caribbean..
         /// </summary>
         internal static string OtherIngredients_Coconut_Water_Description {
             get {
@@ -1512,7 +1512,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Coffee.
+        ///   Ищет локализованную строку, похожую на Coffee is a very popular beverage with a distinct flavor and aroma . It is prepared by roasting the seeds of the coffee plant. Coffee has a high content of caffeine and is slightly acidic. Coffee was first cultivated in southern Arabia. Brazil has been the world&apos;s leading producer of coffee..
         /// </summary>
         internal static string OtherIngredients_Coffee_Description {
             get {
@@ -1521,7 +1521,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cognac.
+        ///   Ищет локализованную строку, похожую на Cognac, a variety of brandy is named after the town of Cognac in France. It is produced from a specified variety of grapes which are locally known as Saint Emilion. The production methods also have to meet specific legal requirements set forth by the government..
         /// </summary>
         internal static string OtherIngredients_Cognac_Description {
             get {
@@ -1530,7 +1530,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cornflour.
+        ///   Ищет локализованную строку, похожую на Also known as corn starch or cornflour in various countries, it is finely grounded white starch powder extracted from maize kernels. The flour is milled from the kernels, while the starch is obtained from the endosperm of the kernel. The corn flour is pale white in color and is virtually tasteless..
         /// </summary>
         internal static string OtherIngredients_Cornflour_Description {
             get {
@@ -1539,7 +1539,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cranberry Sauce.
+        ///   Ищет локализованную строку, похожую на Cranberry sauce is made by boiling cranberries with sugar in water until they pop and reduces the mixture to thicken it. It can be flavored by using various ingredients like orange zest, cinnamon, ginger, maple syrup, almonds or orange juice. The sauce is present in the market in an un-condensed loose form or jellied..
         /// </summary>
         internal static string OtherIngredients_Cranberry_Sauce_Description {
             get {
@@ -1548,7 +1548,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Desiccated Coconut.
+        ///   Ищет локализованную строку, похожую на Coconut meat which has been shredded, chipped or powdered and then dried out is called desiccated coconut. It is prepared by removing natural moisture in the coconut fruit. It has a snow white appearance with a fresh sweetness and nutty flavor. Desiccated coconut is also available in a sweetened, toasted or toasted sweetened variety..
         /// </summary>
         internal static string OtherIngredients_Desiccated_Coconut_Description {
             get {
@@ -1557,7 +1557,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Egg.
+        ///   Ищет локализованную строку, похожую на Very high in nutrition, egg is made up of an outer shell, egg white and yolk. Egg yolks and whole eggs store significant amounts of protein and choline. Chicken eggs are the most commonly eaten eggs..
         /// </summary>
         internal static string OtherIngredients_Egg_Description {
             get {
@@ -1566,7 +1566,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Fish Sauce.
+        ///   Ищет локализованную строку, похожую на It is a condiment that is made from fermenting fish. Tt is most commonly used in Asian cuisine. It is amber colored and liquid-like. Fish sauce is generally salty in taste and has a pungent smell but its taste slightly alters in different countries. In china, it is said to be very salty and mostly suitable for cooking but in Vietnam you will find a slightly sweetened version and the smell is also less pungent..
         /// </summary>
         internal static string OtherIngredients_Fish_Sauce_Description {
             get {
@@ -1575,7 +1575,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Flat Noodles.
+        ///   Ищет локализованную строку, похожую на Flat noodles are a variety of noodles that are made into flat stripes instead of elongated round stripes like most noodles are. Flat noodles are fondly eaten with an accompanying sauce or soup.
+        ///Though essentially made from rice, noodles can also be prepared from wheat, rice, buckwheat and others..
         /// </summary>
         internal static string OtherIngredients_Flat_Noodles_Description {
             get {
@@ -1584,7 +1585,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Gelatin.
+        ///   Ищет локализованную строку, похожую на Gelatin is flavorless, colorless setting agent derived from collagen by boiling bones, skin and tendons of animals. It is available in sheets, powder form or in a granulated form which may be flavored. Gelatin needs to be softened before it can be used by soaking it in cold water for a few minutes..
         /// </summary>
         internal static string OtherIngredients_Gelatin_Description {
             get {
@@ -1593,7 +1594,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Glycerine.
+        ///   Ищет локализованную строку, похожую на Glycerin, a natural oil, is a thick liquid ingredient which has no color or aroma. It has a subtle sweet taste and majorly used as a sweetening agent in many recipes. It is a sticky, tarty and a very sweet liquid that easily dissolves in water and alcohol..
         /// </summary>
         internal static string OtherIngredients_Glycerine_Description {
             get {
@@ -1602,7 +1603,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Gold Leaves.
+        ///   Ищет локализованную строку, похожую на For over centuries, gold leaves are not only used as ornaments, but also as decoration over food. The gold employed in culinary is pure, very soft and delicate. Though it’s not an essential part of human diet, gold is a mineral that is safe to eat. The taste is flavorless carrying no aroma..
         /// </summary>
         internal static string OtherIngredients_Gold_Leaves_Description {
             get {
@@ -1611,7 +1612,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Guchchi.
+        ///   Ищет локализованную строку, похожую на Also known as sponge mushroom, guchchi belongs to the Morella fungus family. It has a rigid conical body cone with a sponge cap. It is usually grown on logs of decayed wood and leaves, stumps, or humous soil. At a low height it is usually black in color..
         /// </summary>
         internal static string OtherIngredients_Guchchi_Description {
             get {
@@ -1620,7 +1621,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Hoisin Sauce.
+        ///   Ищет локализованную строку, похожую на It is a Chinese sauce pronounced as HOY-sin sauce. Hoisin means seafood though it does not contain any. It is dark in colour with a thick consistency. Its color varied from reddish-brown to dark brown. It is made from a combination of vinegar, garlic, fermented soy, sugar, soybeans, sesame seeds, chilli and sweetener..
         /// </summary>
         internal static string OtherIngredients_Hoisin_Sauce_Description {
             get {
@@ -1629,7 +1630,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Jelly.
+        ///   Ищет локализованную строку, похожую на Preserves of fruit prepared using gelatin or substitutes, usually for long term storage is called jelly. A sweet mix of fruit juice and sugar, often set in a fancy mould. It is a somewhat elastic spread made with fruits juices, sugar and gelatine. It is available in various flavors..
         /// </summary>
         internal static string OtherIngredients_Jelly_Description {
             get {
@@ -1638,7 +1639,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Jus.
+        ///   Ищет локализованную строку, похожую на &apos;Au Jus&apos; or &apos;with juice&apos; is a french technique of using the juice itself to make a light sauce used for dipping. The french use it to enhance the flavor of dishes. A simple preparation involves bringing the remaining stock, usually after roasting or after cooking to a boil after skimming the fat..
         /// </summary>
         internal static string OtherIngredients_Jus_Description {
             get {
@@ -1647,7 +1648,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Lotus Seeds.
+        ///   Ищет локализованную строку, похожую на Makhana is a plant also known as Euryale Fox native to Eastern Asia. It produces white seeds which are edible. In India, especially in Punjab and Eastern parts, it is often roasted and fried. They are also considered pious in many cultures..
         /// </summary>
         internal static string OtherIngredients_Lotus_Seeds_Description {
             get {
@@ -1656,7 +1657,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Malt Vinegar.
+        ///   Ищет локализованную строку, похожую на Vinegar is a liquid mainly consisting of acetic acid and water. Vinegar is of many kinds, malt vinegar being one of them. Malt is the term used for germinated dried grains of barley. Once the barley has been malted (which means allowed to sprout) the resulting maltose is brewed into ale which is further fermented until it achieves a light brown color which is called malt vinegar..
         /// </summary>
         internal static string OtherIngredients_Malt_Vinegar_Description {
             get {
@@ -1665,7 +1666,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Margarine.
+        ///   Ищет локализованную строку, похожую на Margarine is an imitation of butter. Back in 1869, it was originally created as a substitute for butter from beef tallow and skimmed milk. Now it is made mainly from the refined oils and fats. It is created by using hydrogen to harden vegetable oils..
         /// </summary>
         internal static string OtherIngredients_Margarine_Description {
             get {
@@ -1674,7 +1675,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Marzipan.
+        ///   Ищет локализованную строку, похожую на Marzipan is a thick paste made from grounded almonds, eggs, sugar or honey. It is often rolled into thin sheets and is used for icing the cake. It is used to create shapes and is made out from almonds paste and is mixed with sugar and egg white..
         /// </summary>
         internal static string OtherIngredients_Marzipan_Description {
             get {
@@ -1683,7 +1684,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Mayonnaise.
+        ///   Ищет локализованную строку, похожую на It is a thick creamy sauce that is made by blending oil and eggs. It is used as a popular sandwich spread, salad dressing or also used as sauce bases. It can be white, cream or yellow in colour. The texture may vary from light cream to thick. In countries dominated by French culture, mustard is also added..
         /// </summary>
         internal static string OtherIngredients_Mayonnaise_Description {
             get {
@@ -1692,7 +1693,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Melon Seeds.
+        ///   Ищет локализованную строку, похожую на Seeds of musk melon that are usually dried, used to add flavor to rich Indian dishes and desserts. A cream white shell with a soft oval kernel inside. Magaz is the hindi name for musk melon seeds. These can be dried at home (cleansed thoroughly and sun dried) or you can buy them from the market..
         /// </summary>
         internal static string OtherIngredients_Melon_Seeds_Description {
             get {
@@ -1701,7 +1702,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Meringue.
+        ///   Ищет локализованную строку, похожую на Meringue is a stiffly beaten mixture of egg-whites and sugar eaten as a dessert, popular in Swiss and French cuisine. It may be used as a topping for cakes, pavlova, pies or eaten raw as biscuits. Vanilla or almond and coconut extract is often added to it..
         /// </summary>
         internal static string OtherIngredients_Meringue_Description {
             get {
@@ -1710,7 +1711,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Oyster Sauce.
+        ///   Ищет локализованную строку, похожую на Oyster sauce is a thick brown sauce extracted from boiled oysters and seasonings. The basic ingredients employed in the making of oyster sauce along with oyster and seasonings are sugar, salt and water stiffened with cornstarch. It is a very common ingredient in Chinese, Thai and Vietnamese cuisine..
         /// </summary>
         internal static string OtherIngredients_Oyster_Sauce_Description {
             get {
@@ -1719,7 +1720,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Paan.
+        ///   Ищет локализованную строку, похожую на The word paan has been derived from a Sanskrit word &apos;parna&apos; .It is a mouth freshener popular mostly in North India and is usually had after a heavy meal.It basically contains areca nut, sweetened coconut, rose petal jam, camphor, roasted fennel seeds, cashew and many other things depending on the person&apos;s preference and all this is wrapped in a betel leaf..
         /// </summary>
         internal static string OtherIngredients_Paan_Description {
             get {
@@ -1728,7 +1729,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Papad.
+        ///   Ищет локализованную строку, похожую на Papad or papadum is a tortilla like preparation that can be fried or roasted. It is eaten as a snack or accompaniment with Indian meals. Vegetables, tomatoes or onions are often added on top for flavor. It is usually made from urad flour mostly but can also be made from chickpeaas, lentils and rice flour..
         /// </summary>
         internal static string OtherIngredients_Papad_Description {
             get {
@@ -1737,7 +1738,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Pasta.
+        ///   Ищет локализованную строку, похожую на Pasta is commonly made by leavening dough of macaroni wheat. The wheat employed in the making of pasta is also called Durum wheat. Pasta is also accredited as an essential readymade food. It is a staple dish in Italian cuisine.
+        ///Coming in different shapes and sizes, Pasta is used an essential condiment in all popular cuisines..
         /// </summary>
         internal static string OtherIngredients_Pasta_Description {
             get {
@@ -1746,7 +1748,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Petha.
+        ///   Ищет локализованную строку, похожую на Pethas are translucent sweets from North-India. To make it the ash gourd or white pumpkin is candied. Usually available in rectangular or cylindrical form. Available in many flavors like kesar, kewda and so on..
         /// </summary>
         internal static string OtherIngredients_Petha_Description {
             get {
@@ -1755,7 +1757,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Polenta.
+        ///   Ищет локализованную строку, похожую на It is cornmeal that is made from ground maize. Polenta is an Italian word which means crushed grains. Polenta is very famous in the Italian cuisine and is eaten as a hot-side dish. It is either eaten directly or is consumed baked, grilled or fried. It has a rich yellow colour, and has a slight sweet taste..
         /// </summary>
         internal static string OtherIngredients_Polenta_Description {
             get {
@@ -1764,7 +1766,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Quinoa.
+        ///   Ищет локализованную строку, похожую на Often considered a grain, quinoa is actually a seed. It is pronounced as Keen-wah. It was a staple food for those who were living on the altitudes of Andes Mountains in South America. Though the name is not very popular during the recent times, nutritionists claim it to be “super grain” for it impeccable nutritional value..
         /// </summary>
         internal static string OtherIngredients_Quinoa_Description {
             get {
@@ -1773,7 +1775,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Red Wine.
+        ///   Ищет локализованную строку, похожую на Red wine is produced from the dark-coloured grape varieties. The anthocyan pigments that the skin of the grape contains imparts the red colour. It ranges from light to dark depending on how long it has been aged for. Cabernet Sauvignon, Pinot Noir, Shiraz, Bordeaux are some of the common types of wine..
         /// </summary>
         internal static string OtherIngredients_Red_Wine_Description {
             get {
@@ -1782,7 +1784,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Red Wine Vinegar.
+        ///   Ищет локализованную строку, похожую на Vinegar is a liquid that consists of acetic acid and water. There are many types of vinegars and red wine vinegar is one of them. Red Wine Vinegar is made from red wine and commonly used in the Mediterranean countries. Red wine is left to ferment till it becomes sour..
         /// </summary>
         internal static string OtherIngredients_Red_Wine_Vinegar_Description {
             get {
@@ -1791,7 +1793,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Rice Flour.
+        ///   Ищет локализованную строку, похожую на A type of flour that is made from finely milled rice. It is either made from white rice or brown rice. It is a good substitute for wheat flour and for those who are gluten intolerant. It is also used as a thickener in recipes that are to be kept in the fridge..
         /// </summary>
         internal static string OtherIngredients_Rice_Flour_Description {
             get {
@@ -1800,7 +1802,11 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Rice Noodles.
+        ///   Ищет локализованную строку, похожую на The main ingredients of rice noodles are rice flour, water and salt. They can be thick or very thin and also flavored with ingredients such as tapioca or corn starch to change their quality. They are also known as rice sticks.
+        ///When raw they are very brittle and on cooking they turn translucent and chewy.NDTV FoodNov 21 2014 17:31 IST
+        ///
+        ///Rice Noodles
+        ///The main ingredients of rice noodles are rice flour, water and salt. They can be thick or very thin and also flavored with ingredients such as tapioca or corn [остаток строки не уместился]&quot;;.
         /// </summary>
         internal static string OtherIngredients_Rice_Noodles_Description {
             get {
@@ -1809,7 +1815,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Rice Vinegar.
+        ///   Ищет локализованную строку, похожую на It is made by fermenting rice. It is essentially used in China and Japan. While vinegars from both China and Japan are much milder and sweeter than most Western vinegars, Chinese rice vinegar is still much stronger than Japanese versions. Chinese vinegars range from clear to various shades of red and brown..
         /// </summary>
         internal static string OtherIngredients_Rice_Vinegar_Description {
             get {
@@ -1818,7 +1824,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Rose Water.
+        ///   Ищет локализованную строку, похожую на Essence extracted from small deep red roses grown for their fragrance is mixed with water to make rose water. The liquid that is a remainder after rose petals are distilled with water to make rose oil is turned into rose water..
         /// </summary>
         internal static string OtherIngredients_Rose_Water_Description {
             get {
@@ -1827,7 +1833,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Roux.
+        ///   Ищет локализованную строку, похожую на A thickener for savory dishes, made basically from a combination of flour, butter and milk. The thickener is used in sauces such as bechamel sauce, veloute sauce and espagnole sauce. Vegetable oil, bacon drippings and lard can be substitutes for butter..
         /// </summary>
         internal static string OtherIngredients_Roux_Description {
             get {
@@ -1836,7 +1842,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Rum.
+        ///   Ищет локализованную строку, похожую на It is dark, rich liquor made from fermented sugarcane juice. The fermented drink is aged in oak barrels. Most rum is made from molasses.
+        ///Though largely it is consumed like an alcoholic beverage or in cocktails like Cuban libre or pina colada, it is also used in various recipes to add taste..
         /// </summary>
         internal static string OtherIngredients_Rum_Description {
             get {
@@ -1845,7 +1852,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Sake.
+        ///   Ищет локализованную строку, похожую на Also known as rice wine, sake [Sah-Keh] is a traditional Japanese alcohol. Although named rice wine, it is made using a process, which resembles the brewing of beer or fermentation. It is produced from rice and has a dry pungent taste but there are sweeter varieties available as well..
         /// </summary>
         internal static string OtherIngredients_Sake_Description {
             get {
@@ -1854,7 +1861,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Screw Pine.
+        ///   Ищет локализованную строку, похожую на Kewda is a shrub most commonly used for its fragrance and is native to South Asia. It has a sweet perfume odor. They are most commonly used in a watery form called the kewda water. The flowers are used to extract a juice used for giving an aroma to food preparations..
         /// </summary>
         internal static string OtherIngredients_Screw_Pine_Description {
             get {
@@ -1863,7 +1870,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Sea Salt.
+        ///   Ищет локализованную строку, похожую на As the name suggests, sea salt is obtained from the sea after the water evaporates. The salt is initially in a crystallized form, which can be ground as well. It has a distinctive taste of the sea and its crystalline flakes are popularly used in a variety of savoury dishes..
         /// </summary>
         internal static string OtherIngredients_Sea_Salt_Description {
             get {
@@ -1872,7 +1879,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Sev.
+        ///   Ищет локализованную строку, похожую на It is a deep fried snack made from chickpea flour. Gram flour/chickpea flour noodles are shaped through a machine which has a disk with fine holes and the flour is passed through and then fried to get Sev. The flour is mixed with salt, turmeric, pepper, oil and lemon juice to give the tangy taste..
         /// </summary>
         internal static string OtherIngredients_Sev_Description {
             get {
@@ -1881,7 +1888,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Sharbat.
+        ///   Ищет локализованную строку, похожую на A cool, sweet, aromatic drink made from concentrated fruit or fruit petals. It is traditionally mixed with cold water before serving but may also be served concentrated for added flavor. It can be made out of almost any flavor and the most common sharbat is rose flavored..
         /// </summary>
         internal static string OtherIngredients_Sharbat_Description {
             get {
@@ -1890,7 +1897,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Soy Milk.
+        ///   Ищет локализованную строку, похожую на Soy milk is a very nutritious and made from soaking, grinding and then boiling soy beans with water. It is naturally high in fatty acids, proteins, fiber, vitamins and minerals. These nutrients are known to provide energy and maintain bodily functions..
         /// </summary>
         internal static string OtherIngredients_Soy_Milk_Description {
             get {
@@ -1899,7 +1906,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Soya Sauce.
+        ///   Ищет локализованную строку, похожую на Used as a staple condiment and ingredient, soya sauce is made from fermented soya beans, roasted grains or barley, salt and water. It is added in rice, used for stir-frying and as a dipping sauce. Soya sauce is usually salty with a chocolate brown colour..
         /// </summary>
         internal static string OtherIngredients_Soya_Sauce_Description {
             get {
@@ -1908,7 +1915,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Tartaric Acid.
+        ///   Ищет локализованную строку, похожую на Tartaric acid is an important food additive that is commonly combined with baking soda to function as a leavening agent in recipes. It can be used in all kinds of foods except untreated foods. Tartaric acid naturally occurs in plants like grapes, apricots, apples, bananas, avocados and tamarinds..
         /// </summary>
         internal static string OtherIngredients_Tartaric_Acid_Description {
             get {
@@ -1917,7 +1924,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Tea.
+        ///   Ищет локализованную строку, похожую на Made from the leaves of the tea plant, tea is a very popular beverage consumed around the world, especially India. Tea is known to have originated in China. In India it is prepared with milk. Other types are black tea, green tea, oolong too etc. Tea is the most soothing beverage which has a sweet aroma and is prepared by using hot water and /or milk..
         /// </summary>
         internal static string OtherIngredients_Tea_Description {
             get {
@@ -1926,7 +1933,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Tofu.
+        ///   Ищет локализованную строку, похожую на Tofu is a fermented soya bean curd, used widely in Chinese cooking. It is prepared by coagulating soy milk and pressing the resulting curds. There are many different varieties of tofu, including fresh tofu and processed tofu. It has a subtle flavor and can be used in both savory and sweet dishes..
         /// </summary>
         internal static string OtherIngredients_Tofu_Description {
             get {
@@ -1935,7 +1942,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Tomato Puree.
+        ///   Ищет локализованную строку, похожую на Tomato puree is used in many a dishes to impart the acidic flavor of tomatoes or as a gravy. To make a puree, wash and remove the stem of the tomato and blanch it. Blend the mixture and add a little water if it is too thick to get a tomato puree..
         /// </summary>
         internal static string OtherIngredients_Tomato_Puree_Description {
             get {
@@ -1944,7 +1951,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Tortilla.
+        ///   Ищет локализованную строку, похожую на A thin bread made from finely ground wheat flour, originally derived from the corn tortilla, the tortilla is a staple food in Spain. Literally, it means small cake and is commonly prepared with meat to make a variety of dishes. In appearance it is very similar to the Indian Chapati..
         /// </summary>
         internal static string OtherIngredients_Tortilla_Description {
             get {
@@ -1953,7 +1960,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Vanilla Essence.
+        ///   Ищет локализованную строку, похожую на Vanilla essence is extracted from vanilla beans and is used to flavor several desserts and dishes. It is the extract that is made from vanilla beans which are soaked in alcohol. It is widely used as a flavoring and vanilla ice cream is the most common flavor..
         /// </summary>
         internal static string OtherIngredients_Vanilla_Essence_Description {
             get {
@@ -1962,7 +1969,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Vegetable Oil.
+        ///   Ищет локализованную строку, похожую на Made by refining extracts of plants, vegetable oils are those which remain in liquid form at room temperature. Many plants produce oil but it is commonly extracted from seeds. Vegetable oil may be made from a single ingredient or a blend of many.
+        ///Refined oils are recommended for high-heat deep frying, whereas oils which are unrefined taste better when used in salads or other cold recipes..
         /// </summary>
         internal static string OtherIngredients_Vegetable_Oil_Description {
             get {
@@ -1971,7 +1979,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Vermicelli.
+        ///   Ищет локализованную строку, похожую на Vermicelli is made from refined flour or rice. Vermicelli is similar in appearance to noodles but is much thinner. They are a form of rice noodles. They are often referred to as rice noodles or rice sticks. Vermicelli does not have much flavor of its own, but readily absorbs the flavors of whatever ingredients it is cooked with..
         /// </summary>
         internal static string OtherIngredients_Vermicelli_Description {
             get {
@@ -1980,7 +1988,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Vetiver.
+        ///   Ищет локализованную строку, похожую на It is a perennial grass which is popularly known as khus in western and northern India. It gets its name from the Tamil word ‘vettiver’. Vetiver can grow up to 1.5 meters in height. It has thin-long leaves and has brownish-purple flowers. Unlike most other plants, Vetiver roots grow vertically downward; they can reach a depth of up to 4 meters..
         /// </summary>
         internal static string OtherIngredients_Vetiver_Description {
             get {
@@ -1989,7 +1997,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Vinaigrette.
+        ///   Ищет локализованную строку, похожую на When vinegar is emulsified with any form of oil, it is called vinaigrette. The oil may be any kind, from soybean oil to olive oil, and the vinaigrette may be flavored with spices, herbs and other ingredients. The most common use of this emulsion is as a dressing for salads..
         /// </summary>
         internal static string OtherIngredients_Vinaigrette_Description {
             get {
@@ -1998,7 +2006,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Vinegar.
+        ///   Ищет локализованную строку, похожую на An ingredient originating from French cuisine, its name when translated means sour wine. Good vinegar is characterized by a light delicate slightly pungent taste and bright clear liquid. White vinegar is produced by distilling alcohol or may be a combination of acetic acid and salt dissolved water..
         /// </summary>
         internal static string OtherIngredients_Vinegar_Description {
             get {
@@ -2007,7 +2015,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на White Pepper.
+        ///   Ищет локализованную строку, похожую на White pepper is produced by removing the outer layer from black pepper which is obtained from pepper plant. The pepper plant is native to India and Indonesia. Once the black peppercorns are almost ripe and sun-dried, the outer layer is removed leaving only the inner seed which is white in color..
         /// </summary>
         internal static string OtherIngredients_White_Pepper_Description {
             get {
@@ -2016,7 +2024,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на White Wine.
+        ///   Ищет локализованную строку, похожую на White wine is produced by the fermentation of black or white grape pulp. White wine can be yellowish green, straw yellow or golden yellow in color. Types There are many types of white wine. Some of them are - Dry white wine, Sparkling white wine, Fortified wine, Sweet white wine..
         /// </summary>
         internal static string OtherIngredients_White_Wine_Description {
             get {
@@ -2025,7 +2033,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Yeast.
+        ///   Ищет локализованную строку, похожую на A microscopic living fungus that is an essential ingredient in bread making and brewing..
         /// </summary>
         internal static string OtherIngredients_Yeast_Description {
             get {
