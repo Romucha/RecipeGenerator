@@ -19,6 +19,7 @@ namespace RecipeGenerator.RazorPages.Views.Home.Tables
         [Parameter]
         public HomeVM HomeVM { get; set; }
 
+
         private async Task DeleteRecipe()
         {
             DeleteRecipeDTO deleteRecipeDTO = new DeleteRecipeDTO
@@ -26,8 +27,6 @@ namespace RecipeGenerator.RazorPages.Views.Home.Tables
                 Id = Recipe.Id
             };
             await HomeVM.DeleteRecipeCommand.ExecuteAsync(deleteRecipeDTO);
-
-            StateHasChanged();
         }
     }
 }
