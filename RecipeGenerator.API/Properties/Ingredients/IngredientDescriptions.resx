@@ -302,130 +302,135 @@ Though being a traditional North African dish, couscous has adapted itself to va
     <value>Yogurt is also known as dahi in India. It is a fermented milk product which is known for it's subtle taste and consistency. Yogurt (curd) is used during many auspicious occasions in India. It is sold sweetened and flavored and can be served with various kinds of fruit.</value>
   </data>
   <data name="Fruits_Apples_Description" xml:space="preserve">
-    <value>Apples</value>
+    <value>Apples are one of the most widely cultivated tree fruits. They grow on small, deciduous trees. The proverb "An apple a day keeps the doctor away", addressing the health effects of the fruit, dates from 19th century Wales. According to researchers, apples may reduce the risk of colon cancer, prostate cancer and lung cancer.</value>
   </data>
   <data name="Fruits_Apricots_Description" xml:space="preserve">
-    <value>Apricots</value>
+    <value>Apricot is a type of juicy fruit belonging to the peach family and is mostly cultivated in cold climatic regions. Apricots vary in taste as some have sweet kernels and some have bitter kernels. They are used in desserts and few are also added to meat dishes.</value>
   </data>
   <data name="Fruits_Banana_Description" xml:space="preserve">
-    <value>Banana</value>
+    <value>Delightfully sweet with firm and creamy flesh, bananas come pre-packaged in their own yellow jackets and are available for harvest all through the year. The fruit ripens from deep-green to bright yellow, making it consumable. The commonly cultivated fruit is seedless.</value>
   </data>
   <data name="Fruits_Blueberries_Description" xml:space="preserve">
-    <value>Blueberries</value>
+    <value>Blueberry, often regarded as Mother Nature’s super antioxidant, ranks as the second favorite fruit in the world after strawberry. From sweet to tart and tangy, blueberries are grown in clusters and range in a size from a pea to a marble. The fruit turns from pale green to dark blue upon ripening.</value>
   </data>
   <data name="Fruits_Cape_Gooseberry_Description" xml:space="preserve">
-    <value>Cape Gooseberry</value>
+    <value>Round berries, orangish yellow, covered with a brownish 'paper' like covering. It is also popularly known as 'golden berry'. Cape gooseberry is both fruit and a plant and has been cultivated in England since the 18th century. In India, it is known by the name ras bhari and it is available during the months of February to May.</value>
   </data>
   <data name="Fruits_Cherry_Description" xml:space="preserve">
-    <value>Cherry</value>
+    <value>A small round stoned fruit which grows in bunches. Cherry belongs to the same family of plums, apricots, peaches, etc. It varies from dark red to bright red in color. Mostly eaten raw it is also used in pies and jams. Unlike any other fruit, cherries have a very short fruiting season.</value>
   </data>
   <data name="Fruits_Coconut_Description" xml:space="preserve">
-    <value>Coconut</value>
+    <value>Almost all parts of the coconut palm are useful. Fruit of the coconut palm can be eaten or used in preparation of sweet, chips and savory dishes.
+Oil and milk derived from this fruit that are widely used in cooking. Water found enclosed inside the coconut shell is considered one of the best summer coolers.</value>
   </data>
   <data name="Fruits_Cooking_Apples_Description" xml:space="preserve">
-    <value>Cooking Apples</value>
+    <value>Unlike the apples eaten raw, there are varieties of apples that are better off on a cooking pan! Larger and tartier in flavour, cooking apples have a firm flesh that doesn’t breakdown while cooking. Though some varieties are specifically grown for cooking purpose, most apples are dual-purposed.</value>
   </data>
   <data name="Fruits_Cranberry_Description" xml:space="preserve">
-    <value>Cranberry</value>
+    <value>Cranberries are a group of evergreen dwarf shrubs. The fruit is a berry which is larger than the leaves of the plant. The fruits are initially white, but they turn deep red when fully ripe. It has a somewhat acidic taste that adds to its sweetness.</value>
   </data>
   <data name="Fruits_Currant_Description" xml:space="preserve">
-    <value>Currant</value>
+    <value>A member of the grape family, currant is a dry, dark-red and seedless raisin. Often considered along with gooseberry, currants are commonly used for making food preservatives, liqueurs and syrups. Currants are usually not eaten raw for their tarty taste.</value>
   </data>
   <data name="Fruits_Custard_Apple_Description" xml:space="preserve">
-    <value>Custard Apple</value>
+    <value>A type of tropical fruit, that is sweet and custard-like in texture. It is green, round and pine like but with a soft outer covering. Heart shaped fruit with a green exterior and white creamy flesh which is a curious combination of sweet flavor and grainy texture.</value>
   </data>
   <data name="Fruits_Dates_Description" xml:space="preserve">
-    <value>Dates</value>
+    <value>A type of stoned fruit that is available fresh or dried and is grown widely in desert areas. Dates are a staple food in the Middle East. They are sweet and chewy. They come in a cylindrical shape and have a wrinkled texture.</value>
   </data>
   <data name="Fruits_Dried_Fruit_Description" xml:space="preserve">
-    <value>Dried Fruit</value>
+    <value>Dried fruits are those from which most of the water content is removed. Raisins, dates, prunes, figs, apricots, peaches, apples and pears are conventional dry fruits that are either sun-dried, dried in heated wind tunnels, drums dried or freeze dried.</value>
   </data>
   <data name="Fruits_Figs_Description" xml:space="preserve">
-    <value>Figs</value>
+    <value>A fruit that is used fresh, canned or dried. It is often used in desserts and baked foods. Figs are native to the Middle East and commonly cultivated in the Mediterranean region, Spain and the USA. They are available round the year though they are best from May to November.</value>
   </data>
   <data name="Fruits_Grapefruit_Description" xml:space="preserve">
-    <value>Grapefruit</value>
+    <value>It is the fruit of a sub-tropical citrus tree. It is said to have originated in Barbados as a hybrid of the Jamaican sweet orange and the Indonesian pomelo. There are many stories associated with its origin that made people call it "The Forbidden Fruit".</value>
   </data>
   <data name="Fruits_Grapes_Description" xml:space="preserve">
-    <value>Grapes</value>
+    <value>A grape is a type of berry of woody vines that grows in clusters; they can be eaten raw or used to make wine, jam, raisins, vinegar, etc. Grapes are very low in calories. They are also good source of vitamins A, C, K and Carotenes. Grapes contain phyto-chemicals that have been found to have an anti-allergic, anti-inflammatory, anti-microbial, as well as anti-cancer property.</value>
   </data>
   <data name="Fruits_Guava_Description" xml:space="preserve">
-    <value>Guava</value>
+    <value>The guava is a tropical fruit with a rough outer skin and a sweet seedy flesh. It gives off a fragrance which is similar to lemon. The outer skin is green and changes color to either yellow, maroon or green when ripe. Types Strawberry guava Small fruits which are very juicy and full of flavor.</value>
   </data>
   <data name="Fruits_Indian_Gooseberry_Description" xml:space="preserve">
-    <value>Indian Gooseberry</value>
+    <value>Indian Gooseberry, also called Awla or Amla in Hindi is a species of ribes. It is used for a variety of purposes. It tastes bitter and hence is not consumed directly from the plant. It is either cooked or served with salt, oil or spices.</value>
   </data>
   <data name="Fruits_Jamun_Description" xml:space="preserve">
-    <value>Jamun</value>
+    <value>Known by various names like jambul, jambas etc, this purple berry has a unique taste, color and flavor. For its resemblance, jamun is always misinterpreted as blackberrry.
+Predominantly sweet, it also plates a acidic flavor which warrants the use of salt while eating it.</value>
   </data>
   <data name="Fruits_Kiwi_Description" xml:space="preserve">
-    <value>Kiwi</value>
+    <value>Kiwi fruit or kiwi berry is an edible berry that has a soft texture and a sweet flesh. The fibrous greenish-brown outer portion shields the bright green flesh. The center of the fruit has black tiny edible seeds. Kiwi fruit is now a commercial crop in countries like Italy, France, Greece and New Zealand.</value>
   </data>
   <data name="Fruits_Lemon_Description" xml:space="preserve">
-    <value>Lemon</value>
+    <value>Lemon is a yellow colored fruit most commonly used for its juice. Usually found in an oval shape, lemons are tarty and acidic. It has 5-6% of citric acid content in it. The lemon is used for its juice, rind and zest in sweet or savoury dishes and also in drinks.</value>
   </data>
   <data name="Fruits_Lemon_Juice_Description" xml:space="preserve">
-    <value>Lemon Juice</value>
+    <value>The juice extracted by crushing the pulp of lemon fruit. Lemon juice is most commonly used in a drink called lemonade which is made by using lemon juice, water and sugar. The juice is most widely used for various culinary and non-culinary purposes all over the world.</value>
   </data>
   <data name="Fruits_Lemon_Rind_Description" xml:space="preserve">
-    <value>Lemon Rind</value>
+    <value>Lemon rind is basically the peel of the lemon. The outer yellow part of the rind is used a lot for flavouring of cakes, tarts, salads. It is usually grated to add flavour to the food. The rind is also called the lemon zest if grated. It can also be used to deodorize garbage disposal and for cleaning microwaves and refrigerators.</value>
   </data>
   <data name="Fruits_Lychee_Description" xml:space="preserve">
-    <value>Lychee</value>
+    <value>Lychee is a fruit which has an extremely juicy whitish pulp and is usually eaten fresh. It is very sweet and tarty in taste. The fruit is oval shaped. It has a very enticing floral fragrance. It is covered with a rough texture which is pink in color and is to be removed before being consumed.</value>
   </data>
   <data name="Fruits_Mango_Description" xml:space="preserve">
-    <value>Mango</value>
+    <value>One of the most popular fruits, Mango is known to be the 'King of Fruits' because of its rich and aromatic flavor. It is the national fruit of India and also of Pakistan. In India, the green leaves are used ritually as floral decorations.
+The outer cover maybe yellow, orange or green depending on the type.</value>
   </data>
   <data name="Fruits_Mulberry_Description" xml:space="preserve">
-    <value>Mulberry</value>
+    <value>A fruit belonging to the berry family. The fruits turn pink to dark purple or black. It is about 2-3 cms long and has a sweet, tarty flavor. They get their color from a chemical called anthocyanins which is a great antioxidant.
+The ripe fruit is eaten raw or added in pies, teas and wine.</value>
   </data>
   <data name="Fruits_Olives_Description" xml:space="preserve">
-    <value>Olives</value>
+    <value>They are the fruits of the olive tree that have been cultivated for more than 5000 years in the Mediterranean. Its oldest cultivation is found to be in what is now Jordan. Olives are cultivated in autumn and winter for olive oil, fine wood, olive leaf and the fruit.</value>
   </data>
   <data name="Fruits_Orange_Description" xml:space="preserve">
-    <value>Orange</value>
+    <value>Copy Orange is a citrus fruit that can be sweet or bitter. Brazil is the worlds largest producer of oranges. It is believed to have originated in Southeast Asia. It is a winter fruit that is available mostly in colder climate but now it can be seen most of the year.</value>
   </data>
   <data name="Fruits_Orange_Rind_Description" xml:space="preserve">
-    <value>Orange Rind</value>
+    <value>Copy Orange is a citrus fruit that can be sweet or bitter. Brazil is the worlds largest producer of oranges. It is believed to have originated in Southeast Asia. It is a winter fruit that is available mostly in colder climate but now it can be seen most of the year.</value>
   </data>
   <data name="Fruits_Papaya_Description" xml:space="preserve">
-    <value>Papaya</value>
+    <value>It is a tropical fruit that has a sweet taste, soft texture and are pear shaped. It is native to southern Mexico and Central America. The black seeds of papaya are actually edible and have a peppery taste. Young papaya contains papain and hence has been used as a meat tenderizer for centuries now.</value>
   </data>
   <data name="Fruits_Peach_Description" xml:space="preserve">
-    <value>Peach</value>
+    <value>Peach is a type of fruit that comes from the deciduous peach tree native to China and South Asia. Peaches are seen with high regard in Chinese culture. In many other cultures, peaches have got historical significance. The fruit is in the size of a small apple.</value>
   </data>
   <data name="Fruits_Pear_Description" xml:space="preserve">
-    <value>Pear</value>
+    <value>Belonging to the member of rose family, pear is a fruit that is juicy and can have a mildly acidic to sweet taste. It typically has a rounded body that tapers into a neck. Pears are available in different forms: fresh, dried, canned or in the form of juice.</value>
   </data>
   <data name="Fruits_Pineapple_Description" xml:space="preserve">
-    <value>Pineapple</value>
+    <value>It is a sweet juicy fruit native to South America. They are grown from March to June but can be found all year around. It is consumed in a variety of ways but raw pineapple is the most nutritious as it is rich in magnesium and vitamin C.</value>
   </data>
   <data name="Fruits_Plum_Description" xml:space="preserve">
-    <value>Plum</value>
+    <value>Red or dark red round fruit with a stone, which is sweet but the skin and around the stone is very sour. Mature plums have a dusty-white coating that gives them a glaucous appearance; this can easily be rubbed off though. Dried plums are sometimes known as prunes.</value>
   </data>
   <data name="Fruits_Pomegranate_Description" xml:space="preserve">
-    <value>Pomegranate</value>
+    <value>It is a juicy fruit that is grown from March to May in the southern hemisphere, though it can be found all year round as well. It is native to Persia but is not grown all over the world. The fruit and the bark are known to have been used in the cure for diarrhea, dysentery and intestinal parasites.</value>
   </data>
   <data name="Fruits_Raisins_Description" xml:space="preserve">
-    <value>Raisins</value>
+    <value>Raisins are sweet and succulent dried grapes. It is produced by removing water from the grapes entirely and drying them. They come in colors varying from green to dark brown. Coming in the size of small pebbles, raisins have a wrinkled skin with chewy flash.</value>
   </data>
   <data name="Fruits_Strawberry_Description" xml:space="preserve">
-    <value>Strawberry</value>
+    <value>Widely appreciated for its distinctive aroma, fiery red color and juicy taste, strawberry is everybodys favorite fruit. They are red, juicy and have a conical shape. Strawberrys belong to the rose family and are essentially grown for the fruit. Strawberries come in various shapes, sizes and colors; some are even off-white or yellow in color.</value>
   </data>
   <data name="Fruits_Sultana_Description" xml:space="preserve">
-    <value>Sultana</value>
+    <value>Native to Turkish origin, Sultanas are large white grapes to rich golden-brown colour. Sultanas are often confused for raisins and currants, as all are dried forms of grapes. What differentiates Sultana from the other two varieties is its tenderness and sweetness.</value>
   </data>
   <data name="Fruits_Tamarind_Description" xml:space="preserve">
-    <value>Tamarind</value>
+    <value>It is an acid-like fruit from which the pulp is removed, dried and consumed. The Tamarind tree bears irregularly shaped brown color pods in each season which are used extensively in many cuisines. The taste is sweet and tangy; tamarind is one of the most sought-after ingredients in Indian, Middle Eastern and south-East Asian cooking.</value>
   </data>
   <data name="Fruits_Tomato_Description" xml:space="preserve">
-    <value>Tomato</value>
+    <value>Though botanically a fruit, Tomato is often regarded as a vegetable. Having originated from Mexico, this fruit belongs to the nightshade family. The English name Tomato is originated from a Spanish name Tomate. Tomatoes are a versatile fruit and greatly used in diverse meal courses in varied forms.</value>
   </data>
   <data name="Fruits_Watermelon_Description" xml:space="preserve">
-    <value>Watermelon</value>
+    <value>Belonging to the same family as cucumber, pumpkin and gourd, watermelon is actually a vegetable! It is, however, consumed as a fruit for it juicy flesh. Watermelon holds almost 92% water content and is considered an ideal health food.
+The red or pink flesh is secured by thick green rinds that are either spotted or striped.</value>
   </data>
   <data name="Fruits_Water_Chestnut_Description" xml:space="preserve">
-    <value>Water Chestnut</value>
+    <value>It is not a nut but a floating aquatic plant that grows in marshes. It is commonly used in Chinese cooking. It is a seasonal fruit that is available only after the monsoon until the start of winter. Devil's pod, buffalo nut, water caltrop are some of its other names.</value>
   </data>
   <data name="Meat_Bacon_Description" xml:space="preserve">
     <value>Bacon</value>

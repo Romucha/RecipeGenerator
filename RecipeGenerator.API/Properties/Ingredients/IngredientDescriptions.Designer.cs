@@ -611,7 +611,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Apples.
+        ///   Ищет локализованную строку, похожую на Apples are one of the most widely cultivated tree fruits. They grow on small, deciduous trees. The proverb &quot;An apple a day keeps the doctor away&quot;, addressing the health effects of the fruit, dates from 19th century Wales. According to researchers, apples may reduce the risk of colon cancer, prostate cancer and lung cancer..
         /// </summary>
         internal static string Fruits_Apples_Description {
             get {
@@ -620,7 +620,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Apricots.
+        ///   Ищет локализованную строку, похожую на Apricot is a type of juicy fruit belonging to the peach family and is mostly cultivated in cold climatic regions. Apricots vary in taste as some have sweet kernels and some have bitter kernels. They are used in desserts and few are also added to meat dishes..
         /// </summary>
         internal static string Fruits_Apricots_Description {
             get {
@@ -629,7 +629,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Banana.
+        ///   Ищет локализованную строку, похожую на Delightfully sweet with firm and creamy flesh, bananas come pre-packaged in their own yellow jackets and are available for harvest all through the year. The fruit ripens from deep-green to bright yellow, making it consumable. The commonly cultivated fruit is seedless..
         /// </summary>
         internal static string Fruits_Banana_Description {
             get {
@@ -638,7 +638,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Blueberries.
+        ///   Ищет локализованную строку, похожую на Blueberry, often regarded as Mother Nature’s super antioxidant, ranks as the second favorite fruit in the world after strawberry. From sweet to tart and tangy, blueberries are grown in clusters and range in a size from a pea to a marble. The fruit turns from pale green to dark blue upon ripening..
         /// </summary>
         internal static string Fruits_Blueberries_Description {
             get {
@@ -647,7 +647,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cape Gooseberry.
+        ///   Ищет локализованную строку, похожую на Round berries, orangish yellow, covered with a brownish &apos;paper&apos; like covering. It is also popularly known as &apos;golden berry&apos;. Cape gooseberry is both fruit and a plant and has been cultivated in England since the 18th century. In India, it is known by the name ras bhari and it is available during the months of February to May..
         /// </summary>
         internal static string Fruits_Cape_Gooseberry_Description {
             get {
@@ -656,7 +656,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cherry.
+        ///   Ищет локализованную строку, похожую на A small round stoned fruit which grows in bunches. Cherry belongs to the same family of plums, apricots, peaches, etc. It varies from dark red to bright red in color. Mostly eaten raw it is also used in pies and jams. Unlike any other fruit, cherries have a very short fruiting season..
         /// </summary>
         internal static string Fruits_Cherry_Description {
             get {
@@ -665,7 +665,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Coconut.
+        ///   Ищет локализованную строку, похожую на Almost all parts of the coconut palm are useful. Fruit of the coconut palm can be eaten or used in preparation of sweet, chips and savory dishes.
+        ///Oil and milk derived from this fruit that are widely used in cooking. Water found enclosed inside the coconut shell is considered one of the best summer coolers..
         /// </summary>
         internal static string Fruits_Coconut_Description {
             get {
@@ -674,7 +675,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cooking Apples.
+        ///   Ищет локализованную строку, похожую на Unlike the apples eaten raw, there are varieties of apples that are better off on a cooking pan! Larger and tartier in flavour, cooking apples have a firm flesh that doesn’t breakdown while cooking. Though some varieties are specifically grown for cooking purpose, most apples are dual-purposed..
         /// </summary>
         internal static string Fruits_Cooking_Apples_Description {
             get {
@@ -683,7 +684,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cranberry.
+        ///   Ищет локализованную строку, похожую на Cranberries are a group of evergreen dwarf shrubs. The fruit is a berry which is larger than the leaves of the plant. The fruits are initially white, but they turn deep red when fully ripe. It has a somewhat acidic taste that adds to its sweetness..
         /// </summary>
         internal static string Fruits_Cranberry_Description {
             get {
@@ -692,7 +693,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Currant.
+        ///   Ищет локализованную строку, похожую на A member of the grape family, currant is a dry, dark-red and seedless raisin. Often considered along with gooseberry, currants are commonly used for making food preservatives, liqueurs and syrups. Currants are usually not eaten raw for their tarty taste..
         /// </summary>
         internal static string Fruits_Currant_Description {
             get {
@@ -701,7 +702,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Custard Apple.
+        ///   Ищет локализованную строку, похожую на A type of tropical fruit, that is sweet and custard-like in texture. It is green, round and pine like but with a soft outer covering. Heart shaped fruit with a green exterior and white creamy flesh which is a curious combination of sweet flavor and grainy texture..
         /// </summary>
         internal static string Fruits_Custard_Apple_Description {
             get {
@@ -710,7 +711,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Dates.
+        ///   Ищет локализованную строку, похожую на A type of stoned fruit that is available fresh or dried and is grown widely in desert areas. Dates are a staple food in the Middle East. They are sweet and chewy. They come in a cylindrical shape and have a wrinkled texture..
         /// </summary>
         internal static string Fruits_Dates_Description {
             get {
@@ -719,7 +720,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Dried Fruit.
+        ///   Ищет локализованную строку, похожую на Dried fruits are those from which most of the water content is removed. Raisins, dates, prunes, figs, apricots, peaches, apples and pears are conventional dry fruits that are either sun-dried, dried in heated wind tunnels, drums dried or freeze dried..
         /// </summary>
         internal static string Fruits_Dried_Fruit_Description {
             get {
@@ -728,7 +729,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Figs.
+        ///   Ищет локализованную строку, похожую на A fruit that is used fresh, canned or dried. It is often used in desserts and baked foods. Figs are native to the Middle East and commonly cultivated in the Mediterranean region, Spain and the USA. They are available round the year though they are best from May to November..
         /// </summary>
         internal static string Fruits_Figs_Description {
             get {
@@ -737,7 +738,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Grapefruit.
+        ///   Ищет локализованную строку, похожую на It is the fruit of a sub-tropical citrus tree. It is said to have originated in Barbados as a hybrid of the Jamaican sweet orange and the Indonesian pomelo. There are many stories associated with its origin that made people call it &quot;The Forbidden Fruit&quot;..
         /// </summary>
         internal static string Fruits_Grapefruit_Description {
             get {
@@ -746,7 +747,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Grapes.
+        ///   Ищет локализованную строку, похожую на A grape is a type of berry of woody vines that grows in clusters; they can be eaten raw or used to make wine, jam, raisins, vinegar, etc. Grapes are very low in calories. They are also good source of vitamins A, C, K and Carotenes. Grapes contain phyto-chemicals that have been found to have an anti-allergic, anti-inflammatory, anti-microbial, as well as anti-cancer property..
         /// </summary>
         internal static string Fruits_Grapes_Description {
             get {
@@ -755,7 +756,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Guava.
+        ///   Ищет локализованную строку, похожую на The guava is a tropical fruit with a rough outer skin and a sweet seedy flesh. It gives off a fragrance which is similar to lemon. The outer skin is green and changes color to either yellow, maroon or green when ripe. Types Strawberry guava Small fruits which are very juicy and full of flavor..
         /// </summary>
         internal static string Fruits_Guava_Description {
             get {
@@ -764,7 +765,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Indian Gooseberry.
+        ///   Ищет локализованную строку, похожую на Indian Gooseberry, also called Awla or Amla in Hindi is a species of ribes. It is used for a variety of purposes. It tastes bitter and hence is not consumed directly from the plant. It is either cooked or served with salt, oil or spices..
         /// </summary>
         internal static string Fruits_Indian_Gooseberry_Description {
             get {
@@ -773,7 +774,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Jamun.
+        ///   Ищет локализованную строку, похожую на Known by various names like jambul, jambas etc, this purple berry has a unique taste, color and flavor. For its resemblance, jamun is always misinterpreted as blackberrry.
+        ///Predominantly sweet, it also plates a acidic flavor which warrants the use of salt while eating it..
         /// </summary>
         internal static string Fruits_Jamun_Description {
             get {
@@ -782,7 +784,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Kiwi.
+        ///   Ищет локализованную строку, похожую на Kiwi fruit or kiwi berry is an edible berry that has a soft texture and a sweet flesh. The fibrous greenish-brown outer portion shields the bright green flesh. The center of the fruit has black tiny edible seeds. Kiwi fruit is now a commercial crop in countries like Italy, France, Greece and New Zealand..
         /// </summary>
         internal static string Fruits_Kiwi_Description {
             get {
@@ -791,7 +793,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Lemon.
+        ///   Ищет локализованную строку, похожую на Lemon is a yellow colored fruit most commonly used for its juice. Usually found in an oval shape, lemons are tarty and acidic. It has 5-6% of citric acid content in it. The lemon is used for its juice, rind and zest in sweet or savoury dishes and also in drinks..
         /// </summary>
         internal static string Fruits_Lemon_Description {
             get {
@@ -800,7 +802,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Lemon Juice.
+        ///   Ищет локализованную строку, похожую на The juice extracted by crushing the pulp of lemon fruit. Lemon juice is most commonly used in a drink called lemonade which is made by using lemon juice, water and sugar. The juice is most widely used for various culinary and non-culinary purposes all over the world..
         /// </summary>
         internal static string Fruits_Lemon_Juice_Description {
             get {
@@ -809,7 +811,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Lemon Rind.
+        ///   Ищет локализованную строку, похожую на Lemon rind is basically the peel of the lemon. The outer yellow part of the rind is used a lot for flavouring of cakes, tarts, salads. It is usually grated to add flavour to the food. The rind is also called the lemon zest if grated. It can also be used to deodorize garbage disposal and for cleaning microwaves and refrigerators..
         /// </summary>
         internal static string Fruits_Lemon_Rind_Description {
             get {
@@ -818,7 +820,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Lychee.
+        ///   Ищет локализованную строку, похожую на Lychee is a fruit which has an extremely juicy whitish pulp and is usually eaten fresh. It is very sweet and tarty in taste. The fruit is oval shaped. It has a very enticing floral fragrance. It is covered with a rough texture which is pink in color and is to be removed before being consumed..
         /// </summary>
         internal static string Fruits_Lychee_Description {
             get {
@@ -827,7 +829,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Mango.
+        ///   Ищет локализованную строку, похожую на One of the most popular fruits, Mango is known to be the &apos;King of Fruits&apos; because of its rich and aromatic flavor. It is the national fruit of India and also of Pakistan. In India, the green leaves are used ritually as floral decorations.
+        ///The outer cover maybe yellow, orange or green depending on the type..
         /// </summary>
         internal static string Fruits_Mango_Description {
             get {
@@ -836,7 +839,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Mulberry.
+        ///   Ищет локализованную строку, похожую на A fruit belonging to the berry family. The fruits turn pink to dark purple or black. It is about 2-3 cms long and has a sweet, tarty flavor. They get their color from a chemical called anthocyanins which is a great antioxidant.
+        ///The ripe fruit is eaten raw or added in pies, teas and wine..
         /// </summary>
         internal static string Fruits_Mulberry_Description {
             get {
@@ -845,7 +849,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Olives.
+        ///   Ищет локализованную строку, похожую на They are the fruits of the olive tree that have been cultivated for more than 5000 years in the Mediterranean. Its oldest cultivation is found to be in what is now Jordan. Olives are cultivated in autumn and winter for olive oil, fine wood, olive leaf and the fruit..
         /// </summary>
         internal static string Fruits_Olives_Description {
             get {
@@ -854,7 +858,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Orange.
+        ///   Ищет локализованную строку, похожую на Copy Orange is a citrus fruit that can be sweet or bitter. Brazil is the worlds largest producer of oranges. It is believed to have originated in Southeast Asia. It is a winter fruit that is available mostly in colder climate but now it can be seen most of the year..
         /// </summary>
         internal static string Fruits_Orange_Description {
             get {
@@ -863,7 +867,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Orange Rind.
+        ///   Ищет локализованную строку, похожую на Copy Orange is a citrus fruit that can be sweet or bitter. Brazil is the worlds largest producer of oranges. It is believed to have originated in Southeast Asia. It is a winter fruit that is available mostly in colder climate but now it can be seen most of the year..
         /// </summary>
         internal static string Fruits_Orange_Rind_Description {
             get {
@@ -872,7 +876,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Papaya.
+        ///   Ищет локализованную строку, похожую на It is a tropical fruit that has a sweet taste, soft texture and are pear shaped. It is native to southern Mexico and Central America. The black seeds of papaya are actually edible and have a peppery taste. Young papaya contains papain and hence has been used as a meat tenderizer for centuries now..
         /// </summary>
         internal static string Fruits_Papaya_Description {
             get {
@@ -881,7 +885,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Peach.
+        ///   Ищет локализованную строку, похожую на Peach is a type of fruit that comes from the deciduous peach tree native to China and South Asia. Peaches are seen with high regard in Chinese culture. In many other cultures, peaches have got historical significance. The fruit is in the size of a small apple..
         /// </summary>
         internal static string Fruits_Peach_Description {
             get {
@@ -890,7 +894,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Pear.
+        ///   Ищет локализованную строку, похожую на Belonging to the member of rose family, pear is a fruit that is juicy and can have a mildly acidic to sweet taste. It typically has a rounded body that tapers into a neck. Pears are available in different forms: fresh, dried, canned or in the form of juice..
         /// </summary>
         internal static string Fruits_Pear_Description {
             get {
@@ -899,7 +903,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Pineapple.
+        ///   Ищет локализованную строку, похожую на It is a sweet juicy fruit native to South America. They are grown from March to June but can be found all year around. It is consumed in a variety of ways but raw pineapple is the most nutritious as it is rich in magnesium and vitamin C..
         /// </summary>
         internal static string Fruits_Pineapple_Description {
             get {
@@ -908,7 +912,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Plum.
+        ///   Ищет локализованную строку, похожую на Red or dark red round fruit with a stone, which is sweet but the skin and around the stone is very sour. Mature plums have a dusty-white coating that gives them a glaucous appearance; this can easily be rubbed off though. Dried plums are sometimes known as prunes..
         /// </summary>
         internal static string Fruits_Plum_Description {
             get {
@@ -917,7 +921,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Pomegranate.
+        ///   Ищет локализованную строку, похожую на It is a juicy fruit that is grown from March to May in the southern hemisphere, though it can be found all year round as well. It is native to Persia but is not grown all over the world. The fruit and the bark are known to have been used in the cure for diarrhea, dysentery and intestinal parasites..
         /// </summary>
         internal static string Fruits_Pomegranate_Description {
             get {
@@ -926,7 +930,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Raisins.
+        ///   Ищет локализованную строку, похожую на Raisins are sweet and succulent dried grapes. It is produced by removing water from the grapes entirely and drying them. They come in colors varying from green to dark brown. Coming in the size of small pebbles, raisins have a wrinkled skin with chewy flash..
         /// </summary>
         internal static string Fruits_Raisins_Description {
             get {
@@ -935,7 +939,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Strawberry.
+        ///   Ищет локализованную строку, похожую на Widely appreciated for its distinctive aroma, fiery red color and juicy taste, strawberry is everybodys favorite fruit. They are red, juicy and have a conical shape. Strawberrys belong to the rose family and are essentially grown for the fruit. Strawberries come in various shapes, sizes and colors; some are even off-white or yellow in color..
         /// </summary>
         internal static string Fruits_Strawberry_Description {
             get {
@@ -944,7 +948,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Sultana.
+        ///   Ищет локализованную строку, похожую на Native to Turkish origin, Sultanas are large white grapes to rich golden-brown colour. Sultanas are often confused for raisins and currants, as all are dried forms of grapes. What differentiates Sultana from the other two varieties is its tenderness and sweetness..
         /// </summary>
         internal static string Fruits_Sultana_Description {
             get {
@@ -953,7 +957,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Tamarind.
+        ///   Ищет локализованную строку, похожую на It is an acid-like fruit from which the pulp is removed, dried and consumed. The Tamarind tree bears irregularly shaped brown color pods in each season which are used extensively in many cuisines. The taste is sweet and tangy; tamarind is one of the most sought-after ingredients in Indian, Middle Eastern and south-East Asian cooking..
         /// </summary>
         internal static string Fruits_Tamarind_Description {
             get {
@@ -962,7 +966,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Tomato.
+        ///   Ищет локализованную строку, похожую на Though botanically a fruit, Tomato is often regarded as a vegetable. Having originated from Mexico, this fruit belongs to the nightshade family. The English name Tomato is originated from a Spanish name Tomate. Tomatoes are a versatile fruit and greatly used in diverse meal courses in varied forms..
         /// </summary>
         internal static string Fruits_Tomato_Description {
             get {
@@ -971,7 +975,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Water Chestnut.
+        ///   Ищет локализованную строку, похожую на It is not a nut but a floating aquatic plant that grows in marshes. It is commonly used in Chinese cooking. It is a seasonal fruit that is available only after the monsoon until the start of winter. Devil&apos;s pod, buffalo nut, water caltrop are some of its other names..
         /// </summary>
         internal static string Fruits_Water_Chestnut_Description {
             get {
@@ -980,7 +984,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Watermelon.
+        ///   Ищет локализованную строку, похожую на Belonging to the same family as cucumber, pumpkin and gourd, watermelon is actually a vegetable! It is, however, consumed as a fruit for it juicy flesh. Watermelon holds almost 92% water content and is considered an ideal health food.
+        ///The red or pink flesh is secured by thick green rinds that are either spotted or striped..
         /// </summary>
         internal static string Fruits_Watermelon_Description {
             get {
