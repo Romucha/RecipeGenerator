@@ -1196,7 +1196,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Almonds.
+        ///   Ищет локализованную строку, похожую на Known as badaam in hindi, almond is a dried fruit that is very nutritious. It is used in baking and as a flavoring agent in Indian food. Almonds can be used in many forms, such as sliced (flaked, slivered), almond butter, almond milk and almond oil. These can be used in both sweet and savory dishes..
         /// </summary>
         internal static string NutsAndOilseeds_Almonds_Description {
             get {
@@ -1205,7 +1205,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Blanched Almonds.
+        ///   Ищет локализованную строку, похожую на Blanching almonds is a method used to remove the skin of the almonds, called for in many recipes. It is done by immersing almonds in boiling water for a minute or two before transferring them to cold water. Once cool, drain the water from the almonds and let them dry..
         /// </summary>
         internal static string NutsAndOilseeds_Blanched_Almonds_Description {
             get {
@@ -1214,7 +1214,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Canola Oil.
+        ///   Ищет локализованную строку, похожую на Canola oil comes from Canola seeds. It has a neutral taste and is one of the healthiest oil choices..
         /// </summary>
         internal static string NutsAndOilseeds_Canola_Oil_Description {
             get {
@@ -1223,7 +1223,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cashew Nuts.
+        ///   Ищет локализованную строку, похожую на Cashew tree is large and evergreen and contains fruits which are pear shaped called the cashew apple. It has a yellowish red color and has very sweet aroma and taste. This fruit has a single whitish seed called cashew seed or cashew nut. The seed is surrounded with a double shell..
         /// </summary>
         internal static string NutsAndOilseeds_Cashew_Nuts_Description {
             get {
@@ -1232,7 +1232,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Chia Seeds.
+        ///   Ищет локализованную строку, похожую на Chia is an edible seed that comes from the desert plant -Salvia hispanica-, that belongs to the mint family and is popularly grown in Mexico. &quot;Chia&quot; means strength, and folklore has it that these cultures used the tiny black and white seeds as an energy booster..
         /// </summary>
         internal static string NutsAndOilseeds_Chia_Seeds_Description {
             get {
@@ -1241,7 +1241,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Chironji.
+        ///   Ищет локализованную строку, похожую на Charoli or Chironji is an Indian medicinal plant used as a spice and added in desserts. It is also called melon seed and has a taste similar to almonds. The seed is lentil-sized and slightly flattened. Though it can be eaten raw, the edible seed contains light acidic flavour, and is consumed both raw and fried..
         /// </summary>
         internal static string NutsAndOilseeds_Chironji_Description {
             get {
@@ -1250,7 +1250,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Hazelnut.
+        ///   Ищет локализованную строку, похожую на Hazelnuts grow in clusters on the hazel tree. Also known as cobnut or filbert nut, it is grown primarily in Europe and the U.S. These are small rounded grape size nuts having a broad spherical base and a pointy top. They have a dark brown jacket covering and the inner kernel is edible..
         /// </summary>
         internal static string NutsAndOilseeds_Hazelnut_Description {
             get {
@@ -1259,7 +1259,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Mustard Oil.
+        ///   Ищет локализованную строку, похожую на Essentially, mustard oil is produced by heating the seeds and carries a distinctive pungent taste. It can either be a vegetable oil, essential oil made by distillation or soybean oil. Black mustard, white mustard and brown Indian mustard seeds can be used to procure the oil..
         /// </summary>
         internal static string NutsAndOilseeds_Mustard_Oil_Description {
             get {
@@ -1268,7 +1268,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Mustard Seeds.
+        ///   Ищет локализованную строку, похожую на Salt is unrefined sodium chloride and an essential ingredient while cooking food worldwide. The most ubiquitous component of any recipe is salt. Let it be any cuisine, salt is an essential condiment. It is used relatively constant amounts in our regular diet..
         /// </summary>
         internal static string NutsAndOilseeds_Mustard_Seeds_Description {
             get {
@@ -1277,7 +1277,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Olive Oil.
+        ///   Ищет локализованную строку, похожую на This oil is obtained from olives. It can be used in multiple ways like in food or in cosmetics, soaps, pharmaceuticals etc.It is mostly used in Mediterranean countries.There are different types of olive oil with different flavor and quality. It has a very subtle aroma..
         /// </summary>
         internal static string NutsAndOilseeds_Olive_Oil_Description {
             get {
@@ -1286,7 +1286,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Peanuts.
+        ///   Ищет локализованную строку, похожую на Peanuts, also known as groundnuts are a nutritious legume found all over the world. They are said to have originated in South America. They can be used for direct consumption, in food preparations, for deriving oil, making peanut flour or in the preparation of peanut butter..
         /// </summary>
         internal static string NutsAndOilseeds_Peanuts_Description {
             get {
@@ -1295,7 +1295,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Pine Nuts.
+        ///   Ищет локализованную строку, похожую на The edible seeds taken from the pine trees. The oblong seeds are taken from several varieties of pine trees. The seeds are crunchy, sweet and very delicious. To amplify the flavour, the seeds are often toasted. Pine nuts have a tough brown-color coating..
         /// </summary>
         internal static string NutsAndOilseeds_Pine_Nuts_Description {
             get {
@@ -1304,7 +1304,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Pistachio.
+        ///   Ищет локализованную строку, похожую на Pistachio is a member of the cashew family which is a small tree originally from Central Asia and the Middle East. Iran, United States and Turkey are the leading producers of pista. They are dry hard-shelled nuts used to make desserts like baklava, halwa, chocolates and ice creams..
         /// </summary>
         internal static string NutsAndOilseeds_Pistachio_Description {
             get {
@@ -1313,7 +1313,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Poppy Seeds.
+        ///   Ищет локализованную строку, похожую на Tiny oil seeds from the opium poppy flower that has a nutty flavour. The seeds maybe used whole, ground or to extract poppy seed oil. The white poppy seeds are called potak or postu.
+        ///Poppy seeds are small and kidney shaped. They are less than a millimeter in length and are used as a spice or for decoration of the dish..
         /// </summary>
         internal static string NutsAndOilseeds_Poppy_Seeds_Description {
             get {
@@ -1322,7 +1323,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Sesame Oil.
+        ///   Ищет локализованную строку, похожую на Edible oil made using sesame seeds, it is used as cooking oil and to enhance flavor. The color of the oil varies from colorless to golden color to a dark brown made from roasted seeds. Colorless oil has fewer flavors than the dark brown oil as it is produced from raw seeds..
         /// </summary>
         internal static string NutsAndOilseeds_Sesame_Oil_Description {
             get {
@@ -1331,7 +1332,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Sesame Seeds.
+        ///   Ищет локализованную строку, похожую на These seeds from the sesame plant have a nutty flavor. The husked ones are called white sesame and the un-husked are black. They are widely used in Indian, Chinese, Japanese and Korean cooking. With a crunchy texture and a nutty taste, they are added to many dishes for the extra flavor..
         /// </summary>
         internal static string NutsAndOilseeds_Sesame_Seeds_Description {
             get {
@@ -1340,7 +1341,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Sunflower Seeds.
+        ///   Ищет локализованную строку, похожую на Sunflower seeds are the fruit of the beautiful, bright yellow coloured sunflower. The seeds are emanated from the seed-studded center. The seeds are greyish-green or black embedded in tear-shaped grey or black shells. The seeds, being high in oil content are the main sources to produce sunflower oil..
         /// </summary>
         internal static string NutsAndOilseeds_Sunflower_Seeds_Description {
             get {
@@ -1349,20 +1350,11 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Walnuts.
+        ///   Ищет локализованную строку, похожую на Walnut or akhrot is an edible, hard shelled dry fruit used in main dishes and sweets and desserts as well a hard-shelled dried fruit that are used in main dishes as well as desserts and salads. It is a great source of nutrients like proteins. Types Three of the main types of walnuts consumed are the English (or Persian) walnut, Juglans regia; the black walnut, Juglans nigra; and the white (or butternut) walnut, Juglans cinerea..
         /// </summary>
         internal static string NutsAndOilseeds_Walnuts_Description {
             get {
                 return ResourceManager.GetString("NutsAndOilseeds_Walnuts_Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Walnuts.
-        /// </summary>
-        internal static string NutsAndOilseeds_Walnuts_Description1 {
-            get {
-                return ResourceManager.GetString("NutsAndOilseeds_Walnuts_Description1", resourceCulture);
             }
         }
         
