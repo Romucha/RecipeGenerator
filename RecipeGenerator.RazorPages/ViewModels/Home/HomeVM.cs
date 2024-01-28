@@ -15,14 +15,7 @@ namespace RecipeGenerator.RazorPages.ViewModels.Home
     public class HomeVM : ObservableObject
     {
         private readonly IRecipeRepository recipeRepository;
-
-        private IEnumerable<GetRecipeDTO> recipes;
-
-        public IEnumerable<GetRecipeDTO> Recipes
-        {
-            get => recipes;
-            set => SetProperty(ref recipes, value);
-        }
+        public ObservableCollection<GetRecipeDTO> Recipes { get; set; }
 
         public IAsyncRelayCommand GetRecipesCommand => new AsyncRelayCommand(getRecipes);
 
@@ -35,7 +28,7 @@ namespace RecipeGenerator.RazorPages.ViewModels.Home
 
         private async Task getRecipes()
         {
-            Recipes = await recipeRepository.GetAll();
+            Recipes = new ObservableCollection<GetRecipeDTO>(await recipeRepository.GetAll());
         }
 
         private async Task deleteRecipe(DeleteRecipeDTO deleteRecipeDTO)

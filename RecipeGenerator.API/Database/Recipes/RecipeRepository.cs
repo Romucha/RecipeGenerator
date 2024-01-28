@@ -36,14 +36,15 @@ namespace RecipeGenerator.API.Database.Recipes
         public async Task Delete(DeleteRecipeDTO deleteRecipeDTO)
         {
             var recipe = mapper.Map<Recipe>(deleteRecipeDTO);
-
-            recipeDbContext.Recipes.Remove(recipe);
+            var recipeindb = await recipeDbContext.Recipes.FindAsync(recipe.Id);
+            recipeDbContext.Recipes.Remove(recipeindb);
             await recipeDbContext.SaveChangesAsync();
         }
 
         public async Task<IEnumerable<GetRecipeDTO>> GetAll()
         {
-            return (await Task.FromResult(recipeDbContext.Recipes.AsNoTracking())).Select(c => mapper.Map<GetRecipeDTO>(c));
+            var recipes = recipeDbContext.Recipes.AsNoTracking();
+            return await Task.FromResult(recipes.Select(c => mapper.Map<GetRecipeDTO>(c)));
         }
 
         public async Task<GetRecipeDTO> GetById(GetRecipeDTO getRecipeDTO)

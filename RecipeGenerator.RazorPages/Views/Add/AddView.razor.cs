@@ -15,6 +15,9 @@ namespace RecipeGenerator.RazorPages.Views.Add
         [Inject]
         public AddVM AddVM { get; set; }
 
+        [Inject]
+        public NavigationManager NavigationManager { get; set; }
+
         protected override async Task OnInitializedAsync()
         {
             AddVM.PropertyChanged += AddVM_PropertyChanged;
@@ -40,6 +43,7 @@ namespace RecipeGenerator.RazorPages.Views.Add
                 {
                     await AddVM.SaveRecipeCommand.ExecuteAsync(null);
                     AddVM.ResetRecipeCommand.Execute(null);
+                    NavigationManager.NavigateTo("/");
                 }
                 catch (Exception ex)
                 {
