@@ -413,7 +413,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Blue Cheese.
+        ///   Ищет локализованную строку, похожую на Blue vein cheese, or blue cheese is a generic term given to the type of cheese produced from cows milk, goats milk or sheeps milk and ripened with the arbitration of the mould Penicillium. It is produced by the coagulation of milk and ageing of cheese..
         /// </summary>
         internal static string DairyProducts_Blue_Cheese_Description {
             get {
@@ -422,7 +422,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Brie Cheese.
+        ///   Ищет локализованную строку, похожую на Brie is a type of French made with cows milk. It is slightly pale in colour with a greyish tinge under the rind. The rind is a white mould and is edible. It derives its name from the region where it originated. It is a popular dessert cheese. It is very soft and melts quickly when warmed. It tastes fruity and creamy..
         /// </summary>
         internal static string DairyProducts_Brie_Cheese_Description {
             get {
@@ -431,7 +431,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Butter.
+        ///   Ищет локализованную строку, похожую на Made from churning cream, butter adds the soppy richness and tender texture to cakes, pastries and biscuits. It is an everlasting delight in any cuisine. It is usually served as a spread or used a condiment while cooking. Frequently made from cows milk, it contains butterfat, milk proteins and water..
         /// </summary>
         internal static string DairyProducts_Butter_Description {
             get {
@@ -440,7 +440,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Buttermilk.
+        ///   Ищет локализованную строку, похожую на It can be sweet or salty and is a very refreshing drink in summer. It is very popular in North India. The tang of buttermilk is due to acid in the milk. Though the name suggests but it actually has no butter. Traditionally, it is the residual liquid which remains after butter is churned, i..
         /// </summary>
         internal static string DairyProducts_Buttermilk_Description {
             get {
@@ -449,7 +449,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cheddar Cheese.
+        ///   Ищет локализованную строку, похожую на Named after the village from it originated, cheddar cheese is hard and natural cheese made from cows milk. Its texture and colour, however, depends on the processing the cheese undergoes. It usually ranges from mild to sharp flavor varying from natural white to pumpkin orange in colour..
         /// </summary>
         internal static string DairyProducts_Cheddar_Cheese_Description {
             get {
@@ -458,7 +458,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Clarified Butter.
+        ///   Ищет локализованную строку, похожую на Clarified butter is produced by melting butter and allowing milk solid and water to separate from the butter fat. It is called ghee in India and is used extensively as an alternative to butter. Though the preparation of ghee is slightly different in different countries, one could say that clarified butter is in fact ghee..
         /// </summary>
         internal static string DairyProducts_Clarified_Butter_Description {
             get {
@@ -467,7 +467,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Condensed Milk.
+        ///   Ищет локализованную строку, похожую на It is a milk product extracted from cow&apos;s milk. It is usually sweet and sticky and thick in texture. The process in making condensed milk involves removing the water content from milk and the addition of sugar. It is also called sweetened condensed milk for its sugary flavor..
         /// </summary>
         internal static string DairyProducts_Condensed_Milk_Description {
             get {
@@ -476,7 +476,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cottage Cheese.
+        ///   Ищет локализованную строку, похожую на Made from curdling milk and straining the whey. Cottage cheese can be eaten raw or cooked. It has a moist texture. Store it in the cold part of the refrigerator for about 5-7 days. It is rich in calcium..
         /// </summary>
         internal static string DairyProducts_Cottage_Cheese_Description {
             get {
@@ -485,7 +485,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cream Cheese.
+        ///   Ищет локализованную строку, похожую на As the name suggests, this cheese has a soft creamy texture with a high fat content. Cream cheese is essentially made from un-skimmed cow milk and enriched with cream. It is an American favorite and considered by many as an American invention. Cream cheese is regarded as a fresh cheese, but must be consumed shortly after it is opened as it has a short shelf life..
         /// </summary>
         internal static string DairyProducts_Cream_Cheese_Description {
             get {
@@ -494,7 +494,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cream.
+        ///   Ищет локализованную строку, похожую на Cream is made out of milk and is a dairy product. Cream is usually yellowish white in color. However cream from goat&apos;s or cow&apos;s milk is usually white in color. It is nothing but the milk fat that accumulates if milk is allowed to sit undisturbed for a while..
         /// </summary>
         internal static string DairyProducts_Cream_Description {
             get {
@@ -503,7 +503,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Feta Cheese.
+        ///   Ищет локализованную строку, похожую на Feta is a type of Greek cheese. It has a very soft and creamy texture. It is mostly produced in blocks and is crumbly. Feta cheese is generally made from sheep or goats milk. It tastes somewhat tangy. Since 2002, feta has become of protected origin and can be produced only in Greece..
         /// </summary>
         internal static string DairyProducts_Feta_Cheese_Description {
             get {
@@ -512,7 +512,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Gouda Cheese.
+        ///   Ищет локализованную строку, похожую на It is a yellow Dutch cheese made from cows milk. The cheese is named after the city of Gouda in the Netherlands. It is a semi-hard cheese popular for its rich, unique flavour and smooth texture. Gouda is made from pasteurized cows milk but some varieties are also are made from sheep or goats milk..
         /// </summary>
         internal static string DairyProducts_Gouda_Cheese_Description {
             get {
@@ -521,7 +521,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Gruyere Cheese.
+        ///   Ищет локализованную строку, похожую на It is a yellow cheese that is named after the town of Gruyeres in Switzerland. It has a sweet and salty flavour. It is creamy and nutty when young, but becomes more earthy when aged for long. When fully aged it develops small cracks that impart a slightly grainy texture to it..
         /// </summary>
         internal static string DairyProducts_Gruyere_Cheese_Description {
             get {
@@ -530,7 +530,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Hung Curd.
+        ///   Ищет локализованную строку, похожую на Hung curd is nothing but yogurt drained of all its water. It can be made very easily at home. Tie some curd in a muslin cloth and leave it hanging for at least 3-4 hours or till all the water drains out. After this time period, pressure is applied to the bundle to squeeze out all the water and the hung curd is ready..
         /// </summary>
         internal static string DairyProducts_Hung_Curd_Description {
             get {
@@ -539,7 +539,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Khoya.
+        ///   Ищет локализованную строку, похожую на Khoya is milk that is evaporated to a solid consistency by thickening it. It is often prepared at home, but is also available in the market. It is used to make both savory as well as sweet dishes and desserts. It has a slightly oily or granular texture, and a rich nutty flavor..
         /// </summary>
         internal static string DairyProducts_Khoya_Description {
             get {
@@ -548,7 +548,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Mascarpone Cheese.
+        ///   Ищет локализованную строку, похожую на Mascarpone Cheese is a cream cheese that is obtained by boiling milk and curdling by adding citric acid or lemon juice. It is often confused with ricotta or cottage cheese because the preparation process is similar. But mascarpone cheese is double or triple cream cheese and it imparts a sweeter taste..
         /// </summary>
         internal static string DairyProducts_Mascarpone_Cheese_Description {
             get {
@@ -557,7 +557,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Milk.
+        ///   Ищет локализованную строку, похожую на Milk is a dairy product derived from the mammary gland of mammals. Milk is used worldwide as food for humans. It is also converted into dairy products like cheese, butter, curd, cream etc. Modern industries use milk to produce casein, lactose, whey protein, powdered milk, condensed milk and other industrial products..
         /// </summary>
         internal static string DairyProducts_Milk_Description {
             get {
@@ -566,7 +566,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Mozzarella Cheese.
+        ///   Ищет локализованную строку, похожую на Mozzarella - the name is applied to a variety of cheese which are made using the &apos;pasta filata&apos; method. This cheese is made by spinning and cutting and was originally prepared using buffalo milk, and later cow&apos;s milk. It is usually served the day after preparation for the fresh taste and often found in pizza and pasta dishes..
         /// </summary>
         internal static string DairyProducts_Mozzarella_Cheese_Description {
             get {
@@ -575,7 +575,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Parmesan Cheese.
+        ///   Ищет локализованную строку, похожую на Parmesan cheese is made from raw cows milk. It is a hard granulated cheese that is cooked but not pressed. Parmesan cheese has a fruity nutty taste. The cheese is made only from those cows that are fed only on grass or hay. It is said to have originated in Italy..
         /// </summary>
         internal static string DairyProducts_Parmesan_Cheese_Description {
             get {
@@ -584,7 +584,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Provolone Cheese.
+        ///   Ищет локализованную строку, похожую на Provolone cheese is an Italian cheese which was originated in Southern Italy. It has a smoky flavor and is used in making cannelloni and ravioli. It can be made with cow or buffalo&apos;s milk. It is golden-yellow in color..
         /// </summary>
         internal static string DairyProducts_Provolone_Cheese_Description {
             get {
@@ -593,7 +593,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Ricotta Cheese.
+        ///   Ищет локализованную строку, похожую на Ricotta is made from sheep, cow or goat milk whey that is left from the production of cheese. It is made by coagulating the proteins that remain after the casein has been used to make cheese. Notably, Italian ricotta is made from the whey of sheep, cow, goat, or buffalo milk..
         /// </summary>
         internal static string DairyProducts_Ricotta_Cheese_Description {
             get {
@@ -602,7 +602,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Yogurt.
+        ///   Ищет локализованную строку, похожую на Yogurt is also known as dahi in India. It is a fermented milk product which is known for it&apos;s subtle taste and consistency. Yogurt (curd) is used during many auspicious occasions in India. It is sold sweetened and flavored and can be served with various kinds of fruit..
         /// </summary>
         internal static string DairyProducts_Yogurt_Description {
             get {
