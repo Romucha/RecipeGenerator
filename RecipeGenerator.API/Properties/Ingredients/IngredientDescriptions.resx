@@ -1,0 +1,1237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CerealsAndPulses_All_Purpose_Flour_Description" xml:space="preserve">
+    <value>All-purpose flour, also known as refined flour or simply flour, is made from wheat grains after removing the brown covering. It is then milled, refined and bleached. It is very common in Indian cuisine specially for various many Indian breads. It is commonly used in baking cakes, pies and other desserts.</value>
+  </data>
+  <data name="CerealsAndPulses_Amaranth_Description" xml:space="preserve">
+    <value>Amaranth is a rich source of protein and its nutritional value is similar to that of grains as well as green leafy vegetables. Moreover, the nutty, crunchy flavour of amaranth makes for an amazing snack!</value>
+  </data>
+  <data name="CerealsAndPulses_Arborio_Rice_Description" xml:space="preserve">
+    <value>Arborio rice is an Italian short grain rice used to make one of its classic rice dishes called risotto.'Riso' means rice in Italian. Originally it was cultivated in Italy but now its is produced in other places too. It is named after the Arborio town in Italy.</value>
+  </data>
+  <data name="CerealsAndPulses_Barley_Description" xml:space="preserve">
+    <value>Barley, a wonder grain is a delightful diet supplement that helps to maintain a slim stature. It's a very common breakfast cereal. However it is used in various forms like porridges, soups, salads and in the making of whiskey and beer. Barley is packed with an insoluble fiber that retains water.</value>
+  </data>
+  <data name="CerealsAndPulses_Barnyard_Millet_Description" xml:space="preserve">
+    <value>These are tiny, white, round grains belonging to the millet family. It is an erect plant 60-130 cm tall. In India, cereal grains are not consumed during fasts. Hence, samvat is a popular ingredient during Navratras. While cooking any rice based dish during fasts, samvat or sama grains are used instead, as they do not belong to the rice family but act as an healthy alternative.</value>
+  </data>
+  <data name="CerealsAndPulses_Basmati_Rice_Description" xml:space="preserve">
+    <value>A delicately flavoured long-grain rice grown in India. It's an extraordinarily perfumed long slender grained rice, more commonly known as simply Basmati. It has a different, nutty flavor and is heralded as the best quality of rice. The most authentic procurement happens at the foothills of Himalayas.</value>
+  </data>
+  <data name="CerealsAndPulses_Bean_Sprouts_Description" xml:space="preserve">
+    <value>Bean sprouts are a common ingredient, especially in Asian cuisine, made from beans by sprouting. Moong beans are germinated to sprout edible shoots which are most commonly used around the world. These shoots have a crunchy texture and mildly sweet flavor and can be consumed raw or cooked.</value>
+  </data>
+  <data name="CerealsAndPulses_Bengal_Gram_(Split)_Description" xml:space="preserve">
+    <value>Bengal gram, closely related to the chickpea family, is a yellow lentil, rounded on one side and flat on the other. Bengal gram is one of the earliest cultivated legumes. In Indian cuisine, it is popularly known as Chana Dal. Bengal gram seeds are small and dark and have a rough coat.</value>
+  </data>
+  <data name="CerealsAndPulses_Black-eyed_Beans_Description" xml:space="preserve">
+    <value>Creamy white in color with a black mark on the curve, black eyed beans are a subspecies of cow pea. These beans are widely used due to the fact that they are tasty without any spices. The most common commercial variety is named California Blackeye, with large oblong beans and a subtle nutty aroma.</value>
+  </data>
+  <data name="CerealsAndPulses_Black_Beans_Description" xml:space="preserve">
+    <value>The small shiny black bean has a silky texture and smoky flavor and retains its firm texture even after cooking. It is a very popular ingredient in Latin American, Oriental and Thai cuisine. Its sweet, rich flavor is compared to that of mushrooms.</value>
+  </data>
+  <data name="CerealsAndPulses_Black_Gram_Description" xml:space="preserve">
+    <value>Also known as black lentil, it is one of the most widely consumed lentil in India. These are rounded black lentils, slightly elongated with a sticky texture and bland flavor. White lentil is black lentil with the black skin removed. These lentils have a very strong earthy flavor.</value>
+  </data>
+  <data name="CerealsAndPulses_Breadcrumbs_Description" xml:space="preserve">
+    <value>Bread that has been dried and ground into a fine powder with or without the crust is called breadcrumbs. It's is made using fresh and stale bread and can include the crust. Grounded, it is a light pink or brown in color. Used mostly to coat foods that are to be deep fried for a crunch, it has a crumbly texture.</value>
+  </data>
+  <data name="CerealsAndPulses_Bread_Description" xml:space="preserve">
+    <value>It is the most popular food around the world, and one of the oldest. Bread is found in almost all cuisines, flat or leavened. A dough has to be prepared before it can be baked. It's various forms are buns, rolls, loaves, pita, chapatti, naan, sourdough etc.</value>
+  </data>
+  <data name="CerealsAndPulses_Brown_Rice_Description" xml:space="preserve">
+    <value>Rice is a staple in most Indian households. Brown rice is a variety that is un-milled or partly milled and is considered as a whole grain. This means that it contains all the natural components - the bran, germ and endosperm. The basic difference is that white rice is stripped off the first two layers only to be left with the starchy endosperm.</value>
+  </data>
+  <data name="CerealsAndPulses_Buckwheat_Description" xml:space="preserve">
+    <value>Buckwheat grain is the dried and de-husked seed of the plant. The triangular seeds are produced and processed to be used as a grain. Brown in color, it is sold as grain or flour. It has a nutty flavor which means that it can be consumed raw or simply roasted.</value>
+  </data>
+  <data name="CerealsAndPulses_Chickpeas_Description" xml:space="preserve">
+    <value>Whole Bengal gram or kala chana is a variety of chickpeas that is used in many cuisines all over the world. But it is most commonly used in India. They are small, dark brown in color and very rich in protein. From sprouted grams till maturity, they are eaten in all stages of their growth.</value>
+  </data>
+  <data name="CerealsAndPulses_Cornmeal_Description" xml:space="preserve">
+    <value>Cornmeal is flour grounded from dried maize. It is grounded at a medium and coarse consistency, but not as finely soft wheat flour. Finely grounded cornmeal is called corn flour in some countries. It is usually yellow in color deriving its color from the maize kernels.</value>
+  </data>
+  <data name="CerealsAndPulses_Couscous_Description" xml:space="preserve">
+    <value>Made from steamed and dried durum wheat, couscous is now a popular alternative for rice and pasta. It contains tiny granules of semolina that have a slightly fluffy texture. Couscous is steamed several times until it gets the required texture.
+Though being a traditional North African dish, couscous has adapted itself to various cuisines.</value>
+  </data>
+  <data name="CerealsAndPulses_Finger_Millet_Description" xml:space="preserve">
+    <value>An extremely nutritious grain pound into very popular flour, ragi is a green tiny seed which is like a grain when raw. It is available round the year and is largely consumed in Africa and Asia. They are roasted to prepare a quick snack.</value>
+  </data>
+  <data name="CerealsAndPulses_Flour_Description" xml:space="preserve">
+    <value>Flour, also known as all-purpose or refined flour, is made from wheat grains after removing the brown covering. It is then milled, refined and bleached. It is very common in Indian cuisine specially for various many Indian breads. It is commonly used in baking cakes, pies and other desserts.</value>
+  </data>
+  <data name="CerealsAndPulses_Gram_flour_Description" xml:space="preserve">
+    <value>Made from a grounded mixture of chickpeas, chickpea or gram flour is a chief condiment in Indian, Pakistani and Bangladeshi cuisines. The flour is powdery yellow and has an earthy flavor adding savour to various dishes. Chickpea flour makes a tasty and crispy coating for deep-fried vegetable pakoras.</value>
+  </data>
+  <data name="CerealsAndPulses_Green_Gram_Description" xml:space="preserve">
+    <value>The green gram is a small, round olive green bean with a sweet flavor and soft texture. The mung or moong bean is the seed of Vigna radiata, belonging to the Indian subcontinent. These are commonly used in South-Asian cuisine. They are yellow in color once the skins are removed.</value>
+  </data>
+  <data name="CerealsAndPulses_Husked_Black_Gram_Description" xml:space="preserve">
+    <value>Husked Black gram is popularly sold as white lentil in the market. It is obtained by removing the skin of black gram. They are small black and narrow lentils somewhat cylindrical in shape. Since it is made from black gram it is only cultivated in India and is commonly used in Indian cooking.</value>
+  </data>
+  <data name="CerealsAndPulses_Husked_Green_Gram_Description" xml:space="preserve">
+    <value>It is a yellow colored dried form of green gram that is obtained by removing its green skin. It is mostly used in Indian cuisine as a pulse that is cooked by adding spices. The lentils are small, ovoid in shape, and green in color. They have a mild taste.</value>
+  </data>
+  <data name="CerealsAndPulses_Jowar_Description" xml:space="preserve">
+    <value>It is a popular Indian crop belonging to the grass family, Gramineae. It is similar in appearance to corn. It grows anywhere between 2 8ft tall. It has strong roots which extend up to 2.5mtrs below ground. After wheat, the maximum amount of cultivated land in India is used for growing Jowar.</value>
+  </data>
+  <data name="CerealsAndPulses_Kidney_Beans_Description" xml:space="preserve">
+    <value>These beans are dried and are available throughout the year. They are reddish brown in color and have a kidney like shape. They have a very strong taste and are used in both hot and cold recipes. It is most commonly in Mexican and Indian cuisine to make curries.</value>
+  </data>
+  <data name="CerealsAndPulses_Muesli_Description" xml:space="preserve">
+    <value>Muesli is a type of ready-to-eat cold breakfast cereal. It is made with a combination of oats, fresh or dried fruits, wheat flakes, nuts, seeds etc. It can be mixed with milk, sweetened yogurt, fruit juice and eaten. You can add fresh fruits also if you wish to.</value>
+  </data>
+  <data name="CerealsAndPulses_Oats_Description" xml:space="preserve">
+    <value>Oat is a type of cereal grain grown for its seed. Oats are an annual plant mostly grown in the foothills of Himalayas, Punjab and Uttar Pradesh. They are available throughout the year in per-packaged packs. Most of its taste comes from the roasting process after it has been harvested and cleaned.</value>
+  </data>
+  <data name="CerealsAndPulses_Pearl_Millet_Description" xml:space="preserve">
+    <value>A cereal, used a lot in rural India, it has a high fiber content. The most common millet is pearl millet i.e bajra, which is an important crop in India. India is the largest producer of pearl millet. Very famous in Rajasthan, it is the most famous type of millet.</value>
+  </data>
+  <data name="CerealsAndPulses_Pigeon_Pea_Description" xml:space="preserve">
+    <value>A yellow coloured lentil flat on one side, oblong in shape, used widely in Indian cooking. Pigeon pea is commonly known as arhar dal or split toor (tuvar) dal. It has its origins in the Eastern part of peninsular India. It is both a food crop and a cover crop.</value>
+  </data>
+  <data name="CerealsAndPulses_Pressed_Rice_Description" xml:space="preserve">
+    <value>Pressed or flattened rice is dehusked rice pressed into dry flakes that swell when added to liquid. They are most popularly consumed as a snack item and great for a sudden hunger pang. Pressed rice is most commonly used in Nepal, India and Bangladesh.</value>
+  </data>
+  <data name="CerealsAndPulses_Puffed_Rice_Description" xml:space="preserve">
+    <value>Murmura is nothing more than puffed rice made by heated rice grains which pops like corn does. It is considered one of the purest cereal products.</value>
+  </data>
+  <data name="CerealsAndPulses_Rice_Description" xml:space="preserve">
+    <value>Rice is a cereal grain that is consumed in almost all countries. The processed seeds need to be boiled or steamed before consuming. The seeds of the rice plant are first milled and the rice that is obtained is called brown rice. Many people prefer brown rice because the next step involved is to remove the rest of the bran and what is obtained is white rice, which is said to have lower nutrient content.</value>
+  </data>
+  <data name="CerealsAndPulses_Semolina_Description" xml:space="preserve">
+    <value>Also popularly called as semolina or rava, Suji is made from dried durum wheat. The colour of the Rava depends on the quality of wheat. Semolina is usually yellow in colour when made from Durum wheat. When made from softer wheat types, the colour is white.</value>
+  </data>
+  <data name="CerealsAndPulses_Tapioca_Description" xml:space="preserve">
+    <value>Tapioca is a starch extracted from the cassava plant. It is also called as sago or sabudana. It is made by crushing raw tapioca roots in a tank and the juice obtained is stored till it turns into a paste. This paste is then made into small round white balls through a machine.</value>
+  </data>
+  <data name="CerealsAndPulses_Water_Chestnut_flour_Description" xml:space="preserve">
+    <value>It is the by-product from the water chestnut seed. The flour is grounded from the dried ground water chestnuts. For preparing the flour, the nuts are peeled, boiled and finally crushed into flour. It is actually a form of starch.</value>
+  </data>
+  <data name="CerealsAndPulses_Whole_Bengal_Gram_Description" xml:space="preserve">
+    <value>Whole Bengal gram or kala chana is a variety of chickpeas that is used in many cuisines all over the world. But it is most commonly used in India. They are small, dark brown in color and very rich in protein. From sprouted grams till maturity, they are eaten in all stages of their growth.</value>
+  </data>
+  <data name="CerealsAndPulses_Whole_Brown_Lentils_Description" xml:space="preserve">
+    <value>Belonging to the Lentil family, sabut masoor dal are round flat lentils, in dark brown colour and have an orange interior. Unlike most lentil variety seeds, these Egyptian lentils don't require much soaking and are cooked in a short time. Masoor Dal is used in a variety of ways- one can relish it with rice, rotis and even bread.</value>
+  </data>
+  <data name="CerealsAndPulses_Whole_Wheat_Flour_Description" xml:space="preserve">
+    <value>It is a finely ground flour of whole wheat berries. It is derived by grinding the whole grain of wheat. It is high in fiber and more healthy and nutritious than white flour. It is a brownish flour with a coarse texture and sweet nutty flavor. The word 'whole' is used to describe this flour as it includes every aspect of the grain, the bran, germ and the endosperm as well.</value>
+  </data>
+  <data name="DairyProducts_Blue_Cheese_Description" xml:space="preserve">
+    <value>Blue Cheese</value>
+  </data>
+  <data name="DairyProducts_Brie_Cheese_Description" xml:space="preserve">
+    <value>Brie Cheese</value>
+  </data>
+  <data name="DairyProducts_Buttermilk_Description" xml:space="preserve">
+    <value>Buttermilk</value>
+  </data>
+  <data name="DairyProducts_Butter_Description" xml:space="preserve">
+    <value>Butter</value>
+  </data>
+  <data name="DairyProducts_Cheddar_Cheese_Description" xml:space="preserve">
+    <value>Cheddar Cheese</value>
+  </data>
+  <data name="DairyProducts_Clarified_Butter_Description" xml:space="preserve">
+    <value>Clarified Butter</value>
+  </data>
+  <data name="DairyProducts_Condensed_Milk_Description" xml:space="preserve">
+    <value>Condensed Milk</value>
+  </data>
+  <data name="DairyProducts_Cottage_Cheese_Description" xml:space="preserve">
+    <value>Cottage Cheese</value>
+  </data>
+  <data name="DairyProducts_Cream_Cheese_Description" xml:space="preserve">
+    <value>Cream Cheese</value>
+  </data>
+  <data name="DairyProducts_Cream_Description" xml:space="preserve">
+    <value>Cream</value>
+  </data>
+  <data name="DairyProducts_Feta_Cheese_Description" xml:space="preserve">
+    <value>Feta Cheese</value>
+  </data>
+  <data name="DairyProducts_Gouda_Cheese_Description" xml:space="preserve">
+    <value>Gouda Cheese</value>
+  </data>
+  <data name="DairyProducts_Gruyere_Cheese_Description" xml:space="preserve">
+    <value>Gruyere Cheese</value>
+  </data>
+  <data name="DairyProducts_Hung_Curd_Description" xml:space="preserve">
+    <value>Hung Curd</value>
+  </data>
+  <data name="DairyProducts_Khoya_Description" xml:space="preserve">
+    <value>Khoya</value>
+  </data>
+  <data name="DairyProducts_Mascarpone_Cheese_Description" xml:space="preserve">
+    <value>Mascarpone Cheese</value>
+  </data>
+  <data name="DairyProducts_Milk_Description" xml:space="preserve">
+    <value>Milk</value>
+  </data>
+  <data name="DairyProducts_Mozzarella_Cheese_Description" xml:space="preserve">
+    <value>Mozzarella Cheese</value>
+  </data>
+  <data name="DairyProducts_Parmesan_Cheese_Description" xml:space="preserve">
+    <value>Parmesan Cheese</value>
+  </data>
+  <data name="DairyProducts_Provolone_Cheese_Description" xml:space="preserve">
+    <value>Provolone Cheese</value>
+  </data>
+  <data name="DairyProducts_Ricotta_Cheese_Description" xml:space="preserve">
+    <value>Ricotta Cheese</value>
+  </data>
+  <data name="DairyProducts_Yogurt_Description" xml:space="preserve">
+    <value>Yogurt</value>
+  </data>
+  <data name="Fruits_Apples_Description" xml:space="preserve">
+    <value>Apples</value>
+  </data>
+  <data name="Fruits_Apricots_Description" xml:space="preserve">
+    <value>Apricots</value>
+  </data>
+  <data name="Fruits_Banana_Description" xml:space="preserve">
+    <value>Banana</value>
+  </data>
+  <data name="Fruits_Blueberries_Description" xml:space="preserve">
+    <value>Blueberries</value>
+  </data>
+  <data name="Fruits_Cape_Gooseberry_Description" xml:space="preserve">
+    <value>Cape Gooseberry</value>
+  </data>
+  <data name="Fruits_Cherry_Description" xml:space="preserve">
+    <value>Cherry</value>
+  </data>
+  <data name="Fruits_Coconut_Description" xml:space="preserve">
+    <value>Coconut</value>
+  </data>
+  <data name="Fruits_Cooking_Apples_Description" xml:space="preserve">
+    <value>Cooking Apples</value>
+  </data>
+  <data name="Fruits_Cranberry_Description" xml:space="preserve">
+    <value>Cranberry</value>
+  </data>
+  <data name="Fruits_Currant_Description" xml:space="preserve">
+    <value>Currant</value>
+  </data>
+  <data name="Fruits_Custard_Apple_Description" xml:space="preserve">
+    <value>Custard Apple</value>
+  </data>
+  <data name="Fruits_Dates_Description" xml:space="preserve">
+    <value>Dates</value>
+  </data>
+  <data name="Fruits_Dried_Fruit_Description" xml:space="preserve">
+    <value>Dried Fruit</value>
+  </data>
+  <data name="Fruits_Figs_Description" xml:space="preserve">
+    <value>Figs</value>
+  </data>
+  <data name="Fruits_Grapefruit_Description" xml:space="preserve">
+    <value>Grapefruit</value>
+  </data>
+  <data name="Fruits_Grapes_Description" xml:space="preserve">
+    <value>Grapes</value>
+  </data>
+  <data name="Fruits_Guava_Description" xml:space="preserve">
+    <value>Guava</value>
+  </data>
+  <data name="Fruits_Indian_Gooseberry_Description" xml:space="preserve">
+    <value>Indian Gooseberry</value>
+  </data>
+  <data name="Fruits_Jamun_Description" xml:space="preserve">
+    <value>Jamun</value>
+  </data>
+  <data name="Fruits_Kiwi_Description" xml:space="preserve">
+    <value>Kiwi</value>
+  </data>
+  <data name="Fruits_Lemon_Description" xml:space="preserve">
+    <value>Lemon</value>
+  </data>
+  <data name="Fruits_Lemon_Juice_Description" xml:space="preserve">
+    <value>Lemon Juice</value>
+  </data>
+  <data name="Fruits_Lemon_Rind_Description" xml:space="preserve">
+    <value>Lemon Rind</value>
+  </data>
+  <data name="Fruits_Lychee_Description" xml:space="preserve">
+    <value>Lychee</value>
+  </data>
+  <data name="Fruits_Mango_Description" xml:space="preserve">
+    <value>Mango</value>
+  </data>
+  <data name="Fruits_Mulberry_Description" xml:space="preserve">
+    <value>Mulberry</value>
+  </data>
+  <data name="Fruits_Olives_Description" xml:space="preserve">
+    <value>Olives</value>
+  </data>
+  <data name="Fruits_Orange_Description" xml:space="preserve">
+    <value>Orange</value>
+  </data>
+  <data name="Fruits_Orange_Rind_Description" xml:space="preserve">
+    <value>Orange Rind</value>
+  </data>
+  <data name="Fruits_Papaya_Description" xml:space="preserve">
+    <value>Papaya</value>
+  </data>
+  <data name="Fruits_Peach_Description" xml:space="preserve">
+    <value>Peach</value>
+  </data>
+  <data name="Fruits_Pear_Description" xml:space="preserve">
+    <value>Pear</value>
+  </data>
+  <data name="Fruits_Pineapple_Description" xml:space="preserve">
+    <value>Pineapple</value>
+  </data>
+  <data name="Fruits_Plum_Description" xml:space="preserve">
+    <value>Plum</value>
+  </data>
+  <data name="Fruits_Pomegranate_Description" xml:space="preserve">
+    <value>Pomegranate</value>
+  </data>
+  <data name="Fruits_Raisins_Description" xml:space="preserve">
+    <value>Raisins</value>
+  </data>
+  <data name="Fruits_Strawberry_Description" xml:space="preserve">
+    <value>Strawberry</value>
+  </data>
+  <data name="Fruits_Sultana_Description" xml:space="preserve">
+    <value>Sultana</value>
+  </data>
+  <data name="Fruits_Tamarind_Description" xml:space="preserve">
+    <value>Tamarind</value>
+  </data>
+  <data name="Fruits_Tomato_Description" xml:space="preserve">
+    <value>Tomato</value>
+  </data>
+  <data name="Fruits_Watermelon_Description" xml:space="preserve">
+    <value>Watermelon</value>
+  </data>
+  <data name="Fruits_Water_Chestnut_Description" xml:space="preserve">
+    <value>Water Chestnut</value>
+  </data>
+  <data name="Meat_Bacon_Description" xml:space="preserve">
+    <value>Bacon</value>
+  </data>
+  <data name="Meat_Beef_Description" xml:space="preserve">
+    <value>Beef</value>
+  </data>
+  <data name="Meat_Chicken_Description" xml:space="preserve">
+    <value>Chicken</value>
+  </data>
+  <data name="Meat_Chicken_Liver_Description" xml:space="preserve">
+    <value>Chicken Liver</value>
+  </data>
+  <data name="Meat_Chicken_Stock_Description" xml:space="preserve">
+    <value>Chicken Stock</value>
+  </data>
+  <data name="Meat_Chops_Description" xml:space="preserve">
+    <value>Chops</value>
+  </data>
+  <data name="Meat_Crab_Description" xml:space="preserve">
+    <value>Crab</value>
+  </data>
+  <data name="Meat_Free_Range_Chicken_Description" xml:space="preserve">
+    <value>Free Range Chicken</value>
+  </data>
+  <data name="Meat_Grass_Fed_Chicken_Description" xml:space="preserve">
+    <value>Grass Fed Chicken</value>
+  </data>
+  <data name="Meat_Ham_Description" xml:space="preserve">
+    <value>Ham</value>
+  </data>
+  <data name="Meat_Keema_Description" xml:space="preserve">
+    <value>Keema</value>
+  </data>
+  <data name="Meat_Kidney_Meat_Description" xml:space="preserve">
+    <value>Kidney Meat</value>
+  </data>
+  <data name="Meat_Lamb_Meat_Description" xml:space="preserve">
+    <value>Lamb Meat</value>
+  </data>
+  <data name="Meat_Meat_Stock_Description" xml:space="preserve">
+    <value>Meat Stock</value>
+  </data>
+  <data name="Meat_Mutton_Description" xml:space="preserve">
+    <value>Mutton</value>
+  </data>
+  <data name="Meat_Mutton_Liver_Description" xml:space="preserve">
+    <value>Mutton Liver</value>
+  </data>
+  <data name="Meat_Organic_Chicken_Description" xml:space="preserve">
+    <value>Organic Chicken</value>
+  </data>
+  <data name="Meat_Partridge_Description" xml:space="preserve">
+    <value>Partridge</value>
+  </data>
+  <data name="Meat_Pork_Description" xml:space="preserve">
+    <value>Pork</value>
+  </data>
+  <data name="Meat_Quail_Description" xml:space="preserve">
+    <value>Quail</value>
+  </data>
+  <data name="Meat_Skinned_Chicken_Description" xml:space="preserve">
+    <value>Skinned Chicken</value>
+  </data>
+  <data name="Meat_Turkey_Description" xml:space="preserve">
+    <value>Turkey</value>
+  </data>
+  <data name="NutsAndOilseeds_Almonds_Description" xml:space="preserve">
+    <value>Almonds</value>
+  </data>
+  <data name="NutsAndOilseeds_Blanched_Almonds_Description" xml:space="preserve">
+    <value>Blanched Almonds</value>
+  </data>
+  <data name="NutsAndOilseeds_Canola_Oil_Description" xml:space="preserve">
+    <value>Canola Oil</value>
+  </data>
+  <data name="NutsAndOilseeds_Cashew_Nuts_Description" xml:space="preserve">
+    <value>Cashew Nuts</value>
+  </data>
+  <data name="NutsAndOilseeds_Chia_Seeds_Description" xml:space="preserve">
+    <value>Chia Seeds</value>
+  </data>
+  <data name="NutsAndOilseeds_Chironji_Description" xml:space="preserve">
+    <value>Chironji</value>
+  </data>
+  <data name="NutsAndOilseeds_Hazelnut_Description" xml:space="preserve">
+    <value>Hazelnut</value>
+  </data>
+  <data name="NutsAndOilseeds_Mustard_Oil_Description" xml:space="preserve">
+    <value>Mustard Oil</value>
+  </data>
+  <data name="NutsAndOilseeds_Mustard_Seeds_Description" xml:space="preserve">
+    <value>Mustard Seeds</value>
+  </data>
+  <data name="NutsAndOilseeds_Olive_Oil_Description" xml:space="preserve">
+    <value>Olive Oil</value>
+  </data>
+  <data name="NutsAndOilseeds_Peanuts_Description" xml:space="preserve">
+    <value>Peanuts</value>
+  </data>
+  <data name="NutsAndOilseeds_Pine_Nuts_Description" xml:space="preserve">
+    <value>Pine Nuts</value>
+  </data>
+  <data name="NutsAndOilseeds_Pistachio_Description" xml:space="preserve">
+    <value>Pistachio</value>
+  </data>
+  <data name="NutsAndOilseeds_Poppy_Seeds_Description" xml:space="preserve">
+    <value>Poppy Seeds</value>
+  </data>
+  <data name="NutsAndOilseeds_Sesame_Oil_Description" xml:space="preserve">
+    <value>Sesame Oil</value>
+  </data>
+  <data name="NutsAndOilseeds_Sesame_Seeds_Description" xml:space="preserve">
+    <value>Sesame Seeds</value>
+  </data>
+  <data name="NutsAndOilseeds_Sunflower_Seeds_Description" xml:space="preserve">
+    <value>Sunflower Seeds</value>
+  </data>
+  <data name="NutsAndOilseeds_Walnuts_Description" xml:space="preserve">
+    <value>Walnuts</value>
+  </data>
+  <data name="NutsAndOilseeds_Walnuts_Description1" xml:space="preserve">
+    <value>Walnuts</value>
+  </data>
+  <data name="OtherIngredients_Agar_Description" xml:space="preserve">
+    <value>Agar</value>
+  </data>
+  <data name="OtherIngredients_Ajinomoto_Description" xml:space="preserve">
+    <value>Ajinomoto</value>
+  </data>
+  <data name="OtherIngredients_Almond_Milk_Description" xml:space="preserve">
+    <value>Almond Milk</value>
+  </data>
+  <data name="OtherIngredients_Alum_Description" xml:space="preserve">
+    <value>Alum</value>
+  </data>
+  <data name="OtherIngredients_Arrowroot_Description" xml:space="preserve">
+    <value>Arrowroot</value>
+  </data>
+  <data name="OtherIngredients_Baking_Powder_Description" xml:space="preserve">
+    <value>Baking Powder</value>
+  </data>
+  <data name="OtherIngredients_Baking_Soda_Description" xml:space="preserve">
+    <value>Baking Soda</value>
+  </data>
+  <data name="OtherIngredients_Balsamic_Vinegar_Description" xml:space="preserve">
+    <value>Balsamic Vinegar</value>
+  </data>
+  <data name="OtherIngredients_Barfi_Description" xml:space="preserve">
+    <value>Barfi</value>
+  </data>
+  <data name="OtherIngredients_Beer_Description" xml:space="preserve">
+    <value>Beer</value>
+  </data>
+  <data name="OtherIngredients_Brown_Sauce_Description" xml:space="preserve">
+    <value>Brown Sauce</value>
+  </data>
+  <data name="OtherIngredients_Chocolate_Chips_Description" xml:space="preserve">
+    <value>Chocolate Chips</value>
+  </data>
+  <data name="OtherIngredients_Chocolate_Description" xml:space="preserve">
+    <value>Chocolate</value>
+  </data>
+  <data name="OtherIngredients_Cocoa_Description" xml:space="preserve">
+    <value>Cocoa</value>
+  </data>
+  <data name="OtherIngredients_Coconut_Milk_Description" xml:space="preserve">
+    <value>Coconut Milk</value>
+  </data>
+  <data name="OtherIngredients_Coconut_Oil_Description" xml:space="preserve">
+    <value>Coconut Oil</value>
+  </data>
+  <data name="OtherIngredients_Coconut_Water_Description" xml:space="preserve">
+    <value>Coconut Water</value>
+  </data>
+  <data name="OtherIngredients_Coffee_Description" xml:space="preserve">
+    <value>Coffee</value>
+  </data>
+  <data name="OtherIngredients_Cognac_Description" xml:space="preserve">
+    <value>Cognac</value>
+  </data>
+  <data name="OtherIngredients_Cornflour_Description" xml:space="preserve">
+    <value>Cornflour</value>
+  </data>
+  <data name="OtherIngredients_Cranberry_Sauce_Description" xml:space="preserve">
+    <value>Cranberry Sauce</value>
+  </data>
+  <data name="OtherIngredients_Desiccated_Coconut_Description" xml:space="preserve">
+    <value>Desiccated Coconut</value>
+  </data>
+  <data name="OtherIngredients_Egg_Description" xml:space="preserve">
+    <value>Egg</value>
+  </data>
+  <data name="OtherIngredients_Fish_Sauce_Description" xml:space="preserve">
+    <value>Fish Sauce</value>
+  </data>
+  <data name="OtherIngredients_Flat_Noodles_Description" xml:space="preserve">
+    <value>Flat Noodles</value>
+  </data>
+  <data name="OtherIngredients_Gelatin_Description" xml:space="preserve">
+    <value>Gelatin</value>
+  </data>
+  <data name="OtherIngredients_Glycerine_Description" xml:space="preserve">
+    <value>Glycerine</value>
+  </data>
+  <data name="OtherIngredients_Gold_Leaves_Description" xml:space="preserve">
+    <value>Gold Leaves</value>
+  </data>
+  <data name="OtherIngredients_Guchchi_Description" xml:space="preserve">
+    <value>Guchchi</value>
+  </data>
+  <data name="OtherIngredients_Hoisin_Sauce_Description" xml:space="preserve">
+    <value>Hoisin Sauce</value>
+  </data>
+  <data name="OtherIngredients_Jelly_Description" xml:space="preserve">
+    <value>Jelly</value>
+  </data>
+  <data name="OtherIngredients_Jus_Description" xml:space="preserve">
+    <value>Jus</value>
+  </data>
+  <data name="OtherIngredients_Lotus_Seeds_Description" xml:space="preserve">
+    <value>Lotus Seeds</value>
+  </data>
+  <data name="OtherIngredients_Malt_Vinegar_Description" xml:space="preserve">
+    <value>Malt Vinegar</value>
+  </data>
+  <data name="OtherIngredients_Margarine_Description" xml:space="preserve">
+    <value>Margarine</value>
+  </data>
+  <data name="OtherIngredients_Marzipan_Description" xml:space="preserve">
+    <value>Marzipan</value>
+  </data>
+  <data name="OtherIngredients_Mayonnaise_Description" xml:space="preserve">
+    <value>Mayonnaise</value>
+  </data>
+  <data name="OtherIngredients_Melon_Seeds_Description" xml:space="preserve">
+    <value>Melon Seeds</value>
+  </data>
+  <data name="OtherIngredients_Meringue_Description" xml:space="preserve">
+    <value>Meringue</value>
+  </data>
+  <data name="OtherIngredients_Oyster_Sauce_Description" xml:space="preserve">
+    <value>Oyster Sauce</value>
+  </data>
+  <data name="OtherIngredients_Paan_Description" xml:space="preserve">
+    <value>Paan</value>
+  </data>
+  <data name="OtherIngredients_Papad_Description" xml:space="preserve">
+    <value>Papad</value>
+  </data>
+  <data name="OtherIngredients_Pasta_Description" xml:space="preserve">
+    <value>Pasta</value>
+  </data>
+  <data name="OtherIngredients_Petha_Description" xml:space="preserve">
+    <value>Petha</value>
+  </data>
+  <data name="OtherIngredients_Polenta_Description" xml:space="preserve">
+    <value>Polenta</value>
+  </data>
+  <data name="OtherIngredients_Quinoa_Description" xml:space="preserve">
+    <value>Quinoa</value>
+  </data>
+  <data name="OtherIngredients_Red_Wine_Description" xml:space="preserve">
+    <value>Red Wine</value>
+  </data>
+  <data name="OtherIngredients_Red_Wine_Vinegar_Description" xml:space="preserve">
+    <value>Red Wine Vinegar</value>
+  </data>
+  <data name="OtherIngredients_Rice_Flour_Description" xml:space="preserve">
+    <value>Rice Flour</value>
+  </data>
+  <data name="OtherIngredients_Rice_Noodles_Description" xml:space="preserve">
+    <value>Rice Noodles</value>
+  </data>
+  <data name="OtherIngredients_Rice_Vinegar_Description" xml:space="preserve">
+    <value>Rice Vinegar</value>
+  </data>
+  <data name="OtherIngredients_Rose_Water_Description" xml:space="preserve">
+    <value>Rose Water</value>
+  </data>
+  <data name="OtherIngredients_Roux_Description" xml:space="preserve">
+    <value>Roux</value>
+  </data>
+  <data name="OtherIngredients_Rum_Description" xml:space="preserve">
+    <value>Rum</value>
+  </data>
+  <data name="OtherIngredients_Sake_Description" xml:space="preserve">
+    <value>Sake</value>
+  </data>
+  <data name="OtherIngredients_Screw_Pine_Description" xml:space="preserve">
+    <value>Screw Pine</value>
+  </data>
+  <data name="OtherIngredients_Sea_Salt_Description" xml:space="preserve">
+    <value>Sea Salt</value>
+  </data>
+  <data name="OtherIngredients_Sev_Description" xml:space="preserve">
+    <value>Sev</value>
+  </data>
+  <data name="OtherIngredients_Sharbat_Description" xml:space="preserve">
+    <value>Sharbat</value>
+  </data>
+  <data name="OtherIngredients_Soya_Sauce_Description" xml:space="preserve">
+    <value>Soya Sauce</value>
+  </data>
+  <data name="OtherIngredients_Soy_Milk_Description" xml:space="preserve">
+    <value>Soy Milk</value>
+  </data>
+  <data name="OtherIngredients_Tartaric_Acid_Description" xml:space="preserve">
+    <value>Tartaric Acid</value>
+  </data>
+  <data name="OtherIngredients_Tea_Description" xml:space="preserve">
+    <value>Tea</value>
+  </data>
+  <data name="OtherIngredients_Tofu_Description" xml:space="preserve">
+    <value>Tofu</value>
+  </data>
+  <data name="OtherIngredients_Tomato_Puree_Description" xml:space="preserve">
+    <value>Tomato Puree</value>
+  </data>
+  <data name="OtherIngredients_Tortilla_Description" xml:space="preserve">
+    <value>Tortilla</value>
+  </data>
+  <data name="OtherIngredients_Vanilla_Essence_Description" xml:space="preserve">
+    <value>Vanilla Essence</value>
+  </data>
+  <data name="OtherIngredients_Vegetable_Oil_Description" xml:space="preserve">
+    <value>Vegetable Oil</value>
+  </data>
+  <data name="OtherIngredients_Vermicelli_Description" xml:space="preserve">
+    <value>Vermicelli</value>
+  </data>
+  <data name="OtherIngredients_Vetiver_Description" xml:space="preserve">
+    <value>Vetiver</value>
+  </data>
+  <data name="OtherIngredients_Vinaigrette_Description" xml:space="preserve">
+    <value>Vinaigrette</value>
+  </data>
+  <data name="OtherIngredients_Vinegar_Description" xml:space="preserve">
+    <value>Vinegar</value>
+  </data>
+  <data name="OtherIngredients_White_Pepper_Description" xml:space="preserve">
+    <value>White Pepper</value>
+  </data>
+  <data name="OtherIngredients_White_Wine_Description" xml:space="preserve">
+    <value>White Wine</value>
+  </data>
+  <data name="OtherIngredients_Yeast_Description" xml:space="preserve">
+    <value>Yeast</value>
+  </data>
+  <data name="Seafood_Anchovies_Description" xml:space="preserve">
+    <value>Anchovies</value>
+  </data>
+  <data name="Seafood_Cat_fish_Description" xml:space="preserve">
+    <value>Cat fish</value>
+  </data>
+  <data name="Seafood_Clams_Description" xml:space="preserve">
+    <value>Clams</value>
+  </data>
+  <data name="Seafood_Cod_Description" xml:space="preserve">
+    <value>Cod</value>
+  </data>
+  <data name="Seafood_Cuttle_fish_Description" xml:space="preserve">
+    <value>Cuttle fish</value>
+  </data>
+  <data name="Seafood_Fish_Description" xml:space="preserve">
+    <value>Fish</value>
+  </data>
+  <data name="Seafood_Fish_Fillet_Description" xml:space="preserve">
+    <value>Fish Fillet</value>
+  </data>
+  <data name="Seafood_Fish_Stock_Description" xml:space="preserve">
+    <value>Fish Stock</value>
+  </data>
+  <data name="Seafood_Flounder_Description" xml:space="preserve">
+    <value>Flounder</value>
+  </data>
+  <data name="Seafood_Haddock_Description" xml:space="preserve">
+    <value>Haddock</value>
+  </data>
+  <data name="Seafood_Hilsa_Description" xml:space="preserve">
+    <value>Hilsa</value>
+  </data>
+  <data name="Seafood_Mackerel_Description" xml:space="preserve">
+    <value>Mackerel</value>
+  </data>
+  <data name="Seafood_Mullet_Description" xml:space="preserve">
+    <value>Mullet</value>
+  </data>
+  <data name="Seafood_Mussels_Description" xml:space="preserve">
+    <value>Mussels</value>
+  </data>
+  <data name="Seafood_Pearl_spot_Description" xml:space="preserve">
+    <value>Pearl spot</value>
+  </data>
+  <data name="Seafood_Perch_Description" xml:space="preserve">
+    <value>Perch</value>
+  </data>
+  <data name="Seafood_Pomfret_Description" xml:space="preserve">
+    <value>Pomfret</value>
+  </data>
+  <data name="Seafood_Prawns_Description" xml:space="preserve">
+    <value>Prawns</value>
+  </data>
+  <data name="Seafood_Salmon_Description" xml:space="preserve">
+    <value>Salmon</value>
+  </data>
+  <data name="Seafood_Sardines_Description" xml:space="preserve">
+    <value>Sardines</value>
+  </data>
+  <data name="Seafood_Shark_Description" xml:space="preserve">
+    <value>Shark</value>
+  </data>
+  <data name="Seafood_Shellfish_Description" xml:space="preserve">
+    <value>Shellfish</value>
+  </data>
+  <data name="Seafood_Shrimp_Description" xml:space="preserve">
+    <value>Shrimp</value>
+  </data>
+  <data name="Seafood_Squids_Description" xml:space="preserve">
+    <value>Squids</value>
+  </data>
+  <data name="Seafood_Tuna_Fish_Description" xml:space="preserve">
+    <value>Tuna Fish</value>
+  </data>
+  <data name="SpicesAndHerbs_Acacia_Description" xml:space="preserve">
+    <value>Acacia</value>
+  </data>
+  <data name="SpicesAndHerbs_Allspice_Description" xml:space="preserve">
+    <value>Allspice</value>
+  </data>
+  <data name="SpicesAndHerbs_Aniseed_Description" xml:space="preserve">
+    <value>Aniseed</value>
+  </data>
+  <data name="SpicesAndHerbs_Asafoetida_Description" xml:space="preserve">
+    <value>Asafoetida</value>
+  </data>
+  <data name="SpicesAndHerbs_Basil_Description" xml:space="preserve">
+    <value>Basil</value>
+  </data>
+  <data name="SpicesAndHerbs_Bay_Leaf_Description" xml:space="preserve">
+    <value>Bay Leaf</value>
+  </data>
+  <data name="SpicesAndHerbs_Black_Cardamom_Description" xml:space="preserve">
+    <value>Black Cardamom</value>
+  </data>
+  <data name="SpicesAndHerbs_Black_Cumin_Description" xml:space="preserve">
+    <value>Black Cumin</value>
+  </data>
+  <data name="SpicesAndHerbs_Black_Pepper_Description" xml:space="preserve">
+    <value>Black Pepper</value>
+  </data>
+  <data name="SpicesAndHerbs_Cajun_Spices_Description" xml:space="preserve">
+    <value>Cajun Spices</value>
+  </data>
+  <data name="SpicesAndHerbs_Caraway_Seeds_Description" xml:space="preserve">
+    <value>Caraway Seeds</value>
+  </data>
+  <data name="SpicesAndHerbs_Carom_Seeds_Description" xml:space="preserve">
+    <value>Carom Seeds</value>
+  </data>
+  <data name="SpicesAndHerbs_Cayenne_Description" xml:space="preserve">
+    <value>Cayenne</value>
+  </data>
+  <data name="SpicesAndHerbs_Chives_Description" xml:space="preserve">
+    <value>Chives</value>
+  </data>
+  <data name="SpicesAndHerbs_Cinnamon_Description" xml:space="preserve">
+    <value>Cinnamon</value>
+  </data>
+  <data name="SpicesAndHerbs_Cloves_Description" xml:space="preserve">
+    <value>Cloves</value>
+  </data>
+  <data name="SpicesAndHerbs_Coriander_Leaves_Description" xml:space="preserve">
+    <value>Coriander Leaves</value>
+  </data>
+  <data name="SpicesAndHerbs_Coriander_Powder_Description" xml:space="preserve">
+    <value>Coriander Powder</value>
+  </data>
+  <data name="SpicesAndHerbs_Coriander_Seeds_Description" xml:space="preserve">
+    <value>Coriander Seeds</value>
+  </data>
+  <data name="SpicesAndHerbs_Cumin_Seeds_Description" xml:space="preserve">
+    <value>Cumin Seeds</value>
+  </data>
+  <data name="SpicesAndHerbs_Curry_Leaves_Description" xml:space="preserve">
+    <value>Curry Leaves</value>
+  </data>
+  <data name="SpicesAndHerbs_Dill_Description" xml:space="preserve">
+    <value>Dill</value>
+  </data>
+  <data name="SpicesAndHerbs_Dried_Fenugreek_Leaves_Description" xml:space="preserve">
+    <value>Dried Fenugreek Leaves</value>
+  </data>
+  <data name="SpicesAndHerbs_Dry_Ginger_Powder_Description" xml:space="preserve">
+    <value>Dry Ginger Powder</value>
+  </data>
+  <data name="SpicesAndHerbs_Fennel_Description" xml:space="preserve">
+    <value>Fennel</value>
+  </data>
+  <data name="SpicesAndHerbs_Fenugreek_Seeds_Description" xml:space="preserve">
+    <value>Fenugreek Seeds</value>
+  </data>
+  <data name="SpicesAndHerbs_Five_Spice_Powder_Description" xml:space="preserve">
+    <value>Five Spice Powder</value>
+  </data>
+  <data name="SpicesAndHerbs_Galangal_Description" xml:space="preserve">
+    <value>Galangal</value>
+  </data>
+  <data name="SpicesAndHerbs_Garam_Masala_Description" xml:space="preserve">
+    <value>Garam Masala</value>
+  </data>
+  <data name="SpicesAndHerbs_Green_Cardamom_Description" xml:space="preserve">
+    <value>Green Cardamom</value>
+  </data>
+  <data name="SpicesAndHerbs_Herbs_Description" xml:space="preserve">
+    <value>Herbs</value>
+  </data>
+  <data name="SpicesAndHerbs_Kashmiri_Mirch_Description" xml:space="preserve">
+    <value>Kashmiri Mirch</value>
+  </data>
+  <data name="SpicesAndHerbs_Lemongrass_Description" xml:space="preserve">
+    <value>Lemongrass</value>
+  </data>
+  <data name="SpicesAndHerbs_Mace_Description" xml:space="preserve">
+    <value>Mace</value>
+  </data>
+  <data name="SpicesAndHerbs_Marjoram_Description" xml:space="preserve">
+    <value>Marjoram</value>
+  </data>
+  <data name="SpicesAndHerbs_Mint_Leaves_Description" xml:space="preserve">
+    <value>Mint Leaves</value>
+  </data>
+  <data name="SpicesAndHerbs_Mustard_Powder_Description" xml:space="preserve">
+    <value>Mustard Powder</value>
+  </data>
+  <data name="SpicesAndHerbs_Nasturtium_Description" xml:space="preserve">
+    <value>Nasturtium</value>
+  </data>
+  <data name="SpicesAndHerbs_Nutmeg_Description" xml:space="preserve">
+    <value>Nutmeg</value>
+  </data>
+  <data name="SpicesAndHerbs_Onion_Seeds_Description" xml:space="preserve">
+    <value>Onion Seeds</value>
+  </data>
+  <data name="SpicesAndHerbs_Oregano_Description" xml:space="preserve">
+    <value>Oregano</value>
+  </data>
+  <data name="SpicesAndHerbs_Paprika_Description" xml:space="preserve">
+    <value>Paprika</value>
+  </data>
+  <data name="SpicesAndHerbs_Parsley_Description" xml:space="preserve">
+    <value>Parsley</value>
+  </data>
+  <data name="SpicesAndHerbs_Raw_Mango_Powder_Description" xml:space="preserve">
+    <value>Raw Mango Powder</value>
+  </data>
+  <data name="SpicesAndHerbs_Red_Chilli_Description" xml:space="preserve">
+    <value>Red Chilli</value>
+  </data>
+  <data name="SpicesAndHerbs_Rock_Salt_Description" xml:space="preserve">
+    <value>Rock Salt</value>
+  </data>
+  <data name="SpicesAndHerbs_Rosemary_Description" xml:space="preserve">
+    <value>Rosemary</value>
+  </data>
+  <data name="SpicesAndHerbs_Saffron_Description" xml:space="preserve">
+    <value>Saffron</value>
+  </data>
+  <data name="SpicesAndHerbs_Sage_Description" xml:space="preserve">
+    <value>Sage</value>
+  </data>
+  <data name="SpicesAndHerbs_Salt_Description" xml:space="preserve">
+    <value>Salt</value>
+  </data>
+  <data name="SpicesAndHerbs_Star_Anise_Description" xml:space="preserve">
+    <value>Star Anise</value>
+  </data>
+  <data name="SpicesAndHerbs_Thyme_Description" xml:space="preserve">
+    <value>Thyme</value>
+  </data>
+  <data name="SpicesAndHerbs_Tulsi_Description" xml:space="preserve">
+    <value>Tulsi</value>
+  </data>
+  <data name="SpicesAndHerbs_Turmeric_Description" xml:space="preserve">
+    <value>Turmeric</value>
+  </data>
+  <data name="SpicesAndHerbs_Yellow_Chillies_Description" xml:space="preserve">
+    <value>Yellow Chillies</value>
+  </data>
+  <data name="SugarAndSugarProducts_Brown_Sugar_Description" xml:space="preserve">
+    <value>Brown Sugar</value>
+  </data>
+  <data name="SugarAndSugarProducts_Cane_Sugar_Description" xml:space="preserve">
+    <value>Cane Sugar</value>
+  </data>
+  <data name="SugarAndSugarProducts_Caramel_Description" xml:space="preserve">
+    <value>Caramel</value>
+  </data>
+  <data name="SugarAndSugarProducts_Castor_Sugar_Description" xml:space="preserve">
+    <value>Castor Sugar</value>
+  </data>
+  <data name="SugarAndSugarProducts_Golden_Syrup_Description" xml:space="preserve">
+    <value>Golden Syrup</value>
+  </data>
+  <data name="SugarAndSugarProducts_Honey_Description" xml:space="preserve">
+    <value>Honey</value>
+  </data>
+  <data name="SugarAndSugarProducts_Icing_Sugar_Description" xml:space="preserve">
+    <value>Icing Sugar</value>
+  </data>
+  <data name="SugarAndSugarProducts_Jaggery_Description" xml:space="preserve">
+    <value>Jaggery</value>
+  </data>
+  <data name="SugarAndSugarProducts_Sugar_Candy_Description" xml:space="preserve">
+    <value>Sugar Candy</value>
+  </data>
+  <data name="SugarAndSugarProducts_Sugar_Description" xml:space="preserve">
+    <value>Sugar</value>
+  </data>
+  <data name="Vegetables_Artichoke_Description" xml:space="preserve">
+    <value>Artichoke</value>
+  </data>
+  <data name="Vegetables_Ash_Gourd_Description" xml:space="preserve">
+    <value>Ash Gourd</value>
+  </data>
+  <data name="Vegetables_Asparagus_Description" xml:space="preserve">
+    <value>Asparagus</value>
+  </data>
+  <data name="Vegetables_Avocado_Description" xml:space="preserve">
+    <value>Avocado</value>
+  </data>
+  <data name="Vegetables_Baby_Corn_Description" xml:space="preserve">
+    <value>Baby Corn</value>
+  </data>
+  <data name="Vegetables_Bamboo_Shoot_Description" xml:space="preserve">
+    <value>Bamboo Shoot</value>
+  </data>
+  <data name="Vegetables_Beetroot_Description" xml:space="preserve">
+    <value>Beetroot</value>
+  </data>
+  <data name="Vegetables_Bell_Pepper_Description" xml:space="preserve">
+    <value>Bell Pepper</value>
+  </data>
+  <data name="Vegetables_Bitter_Gourd_Description" xml:space="preserve">
+    <value>Bitter Gourd</value>
+  </data>
+  <data name="Vegetables_Bok_Choy_Description" xml:space="preserve">
+    <value>Bok Choy</value>
+  </data>
+  <data name="Vegetables_Bottle_Gourd_Description" xml:space="preserve">
+    <value>Bottle Gourd</value>
+  </data>
+  <data name="Vegetables_Broad_Beans_Description" xml:space="preserve">
+    <value>Broad Beans</value>
+  </data>
+  <data name="Vegetables_Broccoli_Description" xml:space="preserve">
+    <value>Broccoli</value>
+  </data>
+  <data name="Vegetables_Cabbage_Description" xml:space="preserve">
+    <value>Cabbage</value>
+  </data>
+  <data name="Vegetables_Capers_Description" xml:space="preserve">
+    <value>Capers</value>
+  </data>
+  <data name="Vegetables_Capsicum_Description" xml:space="preserve">
+    <value>Capsicum</value>
+  </data>
+  <data name="Vegetables_Carrot_Description" xml:space="preserve">
+    <value>Carrot</value>
+  </data>
+  <data name="Vegetables_Cauliflower_Description" xml:space="preserve">
+    <value>Cauliflower</value>
+  </data>
+  <data name="Vegetables_Celery_Description" xml:space="preserve">
+    <value>Celery</value>
+  </data>
+  <data name="Vegetables_Cherry_Tomatoes_Description" xml:space="preserve">
+    <value>Cherry Tomatoes</value>
+  </data>
+  <data name="Vegetables_Cluster_Beans_Description" xml:space="preserve">
+    <value>Cluster Beans</value>
+  </data>
+  <data name="Vegetables_Colocasia_Description" xml:space="preserve">
+    <value>Colocasia</value>
+  </data>
+  <data name="Vegetables_Corn_Description" xml:space="preserve">
+    <value>Corn</value>
+  </data>
+  <data name="Vegetables_Cucumber_Description" xml:space="preserve">
+    <value>Cucumber</value>
+  </data>
+  <data name="Vegetables_Drumstick_Description" xml:space="preserve">
+    <value>Drumstick</value>
+  </data>
+  <data name="Vegetables_Eggplant_Description" xml:space="preserve">
+    <value>Eggplant</value>
+  </data>
+  <data name="Vegetables_Fenugreek_Description" xml:space="preserve">
+    <value>Fenugreek</value>
+  </data>
+  <data name="Vegetables_French_Beans_Description" xml:space="preserve">
+    <value>French Beans</value>
+  </data>
+  <data name="Vegetables_Garlic_Description" xml:space="preserve">
+    <value>Garlic</value>
+  </data>
+  <data name="Vegetables_Gherkins_Description" xml:space="preserve">
+    <value>Gherkins</value>
+  </data>
+  <data name="Vegetables_Ginger_Description" xml:space="preserve">
+    <value>Ginger</value>
+  </data>
+  <data name="Vegetables_Green_Chillies_Description" xml:space="preserve">
+    <value>Green Chillies</value>
+  </data>
+  <data name="Vegetables_Green_Peas_Description" xml:space="preserve">
+    <value>Green Peas</value>
+  </data>
+  <data name="Vegetables_Horseradish_Description" xml:space="preserve">
+    <value>Horseradish</value>
+  </data>
+  <data name="Vegetables_Jackfruit_Description" xml:space="preserve">
+    <value>Jackfruit</value>
+  </data>
+  <data name="Vegetables_Jalapeno_Description" xml:space="preserve">
+    <value>Jalapeno</value>
+  </data>
+  <data name="Vegetables_Kaffir_Lime_Description" xml:space="preserve">
+    <value>Kaffir Lime</value>
+  </data>
+  <data name="Vegetables_Lady_Finger_Description" xml:space="preserve">
+    <value>Lady Finger</value>
+  </data>
+  <data name="Vegetables_Leek_Description" xml:space="preserve">
+    <value>Leek</value>
+  </data>
+  <data name="Vegetables_Lettuce_Description" xml:space="preserve">
+    <value>Lettuce</value>
+  </data>
+  <data name="Vegetables_Lotus_Stem_Description" xml:space="preserve">
+    <value>Lotus Stem</value>
+  </data>
+  <data name="Vegetables_Mushroom_Description" xml:space="preserve">
+    <value>Mushroom</value>
+  </data>
+  <data name="Vegetables_Mustard_Leaves_Description" xml:space="preserve">
+    <value>Mustard Leaves</value>
+  </data>
+  <data name="Vegetables_Onion_Description" xml:space="preserve">
+    <value>Onion</value>
+  </data>
+  <data name="Vegetables_Pigweed_Description" xml:space="preserve">
+    <value>Pigweed</value>
+  </data>
+  <data name="Vegetables_Pimiento_Description" xml:space="preserve">
+    <value>Pimiento</value>
+  </data>
+  <data name="Vegetables_Plantain_Description" xml:space="preserve">
+    <value>Plantain</value>
+  </data>
+  <data name="Vegetables_Potatoes_Description" xml:space="preserve">
+    <value>Potatoes</value>
+  </data>
+  <data name="Vegetables_Pumpkin_Description" xml:space="preserve">
+    <value>Pumpkin</value>
+  </data>
+  <data name="Vegetables_Radish_Description" xml:space="preserve">
+    <value>Radish</value>
+  </data>
+  <data name="Vegetables_Ridge_Gourd_Description" xml:space="preserve">
+    <value>Ridge Gourd</value>
+  </data>
+  <data name="Vegetables_Rocket_Leaves_Description" xml:space="preserve">
+    <value>Rocket Leaves</value>
+  </data>
+  <data name="Vegetables_Round_Gourd_Description" xml:space="preserve">
+    <value>Round Gourd</value>
+  </data>
+  <data name="Vegetables_Shallots_Description" xml:space="preserve">
+    <value>Shallots</value>
+  </data>
+  <data name="Vegetables_Shiitake_Mushroom_Description" xml:space="preserve">
+    <value>Shiitake Mushroom</value>
+  </data>
+  <data name="Vegetables_Snake_Beans_Description" xml:space="preserve">
+    <value>Snake Beans</value>
+  </data>
+  <data name="Vegetables_Sorrel_Leaves_Description" xml:space="preserve">
+    <value>Sorrel Leaves</value>
+  </data>
+  <data name="Vegetables_Spinach_Description" xml:space="preserve">
+    <value>Spinach</value>
+  </data>
+  <data name="Vegetables_Spring_Onion_Description" xml:space="preserve">
+    <value>Spring Onion</value>
+  </data>
+  <data name="Vegetables_Sweet_Potatoes_Description" xml:space="preserve">
+    <value>Sweet Potatoes</value>
+  </data>
+  <data name="Vegetables_Turnip_Description" xml:space="preserve">
+    <value>Turnip</value>
+  </data>
+  <data name="Vegetables_Yam_Description" xml:space="preserve">
+    <value>Yam</value>
+  </data>
+  <data name="Vegetables_Zucchini_Description" xml:space="preserve">
+    <value>Zucchini</value>
+  </data>
+</root>

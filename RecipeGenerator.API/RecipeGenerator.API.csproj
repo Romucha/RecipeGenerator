@@ -13,6 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Properties\Ingredients\IngredientDescriptions.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>IngredientDescriptions.resx</DependentUpon>
+    </Compile>
     <Compile Update="Properties\Ingredients\IngredientTypeDescriptions.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -41,6 +46,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Properties\Ingredients\IngredientDescriptions.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>IngredientDescriptions.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Properties\Ingredients\IngredientTypeDescriptions.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>IngredientTypeDescriptions.Designer.cs</LastGenOutput>
