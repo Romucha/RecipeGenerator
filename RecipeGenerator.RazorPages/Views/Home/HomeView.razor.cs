@@ -15,20 +15,10 @@ namespace RecipeGenerator.RazorPages.Views.Home
 
         protected override async Task OnInitializedAsync()
         {
-            HomeVM.PropertyChanged += HomeVM_PropertyChanged;
+            HomeVM.PropertyChanged += (sender, e) => StateHasChanged();
             HomeVM.GetRecipesCommand.Execute(null);
 
             await base.OnInitializedAsync();
-        }
-
-        public void StateHasChangedPublic()
-        {
-            this.StateHasChanged();
-        }
-
-        private void HomeVM_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
-        {
-            this.StateHasChanged();
         }
     }
 }
