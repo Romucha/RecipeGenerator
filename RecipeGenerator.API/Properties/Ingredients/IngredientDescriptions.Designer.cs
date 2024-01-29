@@ -2865,7 +2865,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Artichoke.
+        ///   Ищет локализованную строку, похожую на Artichoke is actually a flower of a plant called Cynara and is mostly consumed in the winter. It is not produced in India but is very common in European countries. The edible portions consist primarily of the fleshy lower portions and the base, known as the &quot;heart&quot;..
         /// </summary>
         internal static string Vegetables_Artichoke_Description {
             get {
@@ -2874,7 +2874,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Ash Gourd.
+        ///   Ищет локализованную строку, похожую на Ash gourd also known as winter melon or white pumpkin is a very large fruit and is eaten as a vegetable when it matures. It has a white flesh and a sweet taste however when it matures it forms a waxy surface this is the reason why it is also called wax gourd..
         /// </summary>
         internal static string Vegetables_Ash_Gourd_Description {
             get {
@@ -2883,7 +2883,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Asparagus.
+        ///   Ищет локализованную строку, похожую на It is a young shoot of a plant that is green and white in color, commonly used in European cooking. It is a spring vegetable. Only the young asparagus shoots are edible. It is very low in calories and sodium content. The shoot is prepared in a number of ways, typically as an appetizer..
         /// </summary>
         internal static string Vegetables_Asparagus_Description {
             get {
@@ -2892,7 +2892,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Avocado.
+        ///   Ищет локализованную строку, похожую на Avocado is a large berry which contains only one seed. The avocado tree is native to Central Mexico. It is a pear shaped fruit which is about 7 cm wide and 20 cm long. It is commonly used in Mexican cuisine. A Mexican dip called guacamole is made using avacados..
         /// </summary>
         internal static string Vegetables_Avocado_Description {
             get {
@@ -2901,7 +2901,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Baby Corn.
+        ///   Ищет локализованную строку, похожую на A miniature version of the corn plant, it&apos;s very popular in Thai and Chinese cooking. Baby corn is taken from corn when its very small and immature. It is actually a grain from corn which is harvested early before it matures. It is eaten both raw and cooked..
         /// </summary>
         internal static string Vegetables_Baby_Corn_Description {
             get {
@@ -2910,7 +2910,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Bamboo Shoot.
+        ///   Ищет локализованную строку, похожую на Bamboo is an evergreen plant. The edible inner part of the bamboo plant are called the bamboo shoots. The shoots are a conical structure, a yellow cream color that is very tender and faintly sweet. They might have a slight bitter taste but are god to eat once boiled..
         /// </summary>
         internal static string Vegetables_Bamboo_Shoot_Description {
             get {
@@ -2919,7 +2919,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Beetroot.
+        ///   Ищет локализованную строку, похожую на The beetroot also known as the table beet or garden beet refers to any of the cultivated varieties of beets. As the name implies, it is a root vegetable with dark purple skin and flesh. The beet is used in a variety of sweet and savory dishes. Beetroot is consumed in different ways catering to the region..
         /// </summary>
         internal static string Vegetables_Beetroot_Description {
             get {
@@ -2928,7 +2928,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Bell Pepper.
+        ///   Ищет локализованную строку, похожую на Available in a lot of vibrant colors including red, yellow, green, chocolate brown, vanilla/white and purple, they are also known as sweet pepper or simply peppers. It is a large pepper with sweet and mild flavor, not at all hot. This ingredient is Native to Mexico..
         /// </summary>
         internal static string Vegetables_Bell_Pepper_Description {
             get {
@@ -2937,7 +2937,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Bitter Gourd.
+        ///   Ищет локализованную строку, похожую на This edible fruit is one of the most bitter vegetables produced. The elongated fruit has a rough exterior and a crunchy, watery flesh which is bitter. When the fruit is green, the skin is edible whereas the pith is removed before cooking. The pith becomes sweet and red when ripe and is used uncooked in various salads..
         /// </summary>
         internal static string Vegetables_Bitter_Gourd_Description {
             get {
@@ -2946,7 +2946,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Bok Choy.
+        ///   Ищет локализованную строку, похожую на Bok Choy cultivation was first done in China. Bok choy is used in many dishes due to its crisp texture, sweet flavor and nutritional value. It is also known as white cabbage. The Chinese commonly call Bok Choy as Pak Choy meaning white vegetable.
+        ///Bok Choy has leafy blades with succulent and translucent stalks that are white in colour..
         /// </summary>
         internal static string Vegetables_Bok_Choy_Description {
             get {
@@ -2955,7 +2956,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Bottle Gourd.
+        ///   Ищет локализованную строку, похожую на Also known as white gourd, marrow, calabash or long melons, bottle gourds are a fruit with a light green skin and white seedy flesh. They come in a variety of shapes, thick and rounded, small and bottle shaped or long and slim. The young fruits are eaten as a vegetable and the mature can be used as a bottle, pipe or utensil..
         /// </summary>
         internal static string Vegetables_Bottle_Gourd_Description {
             get {
@@ -2964,7 +2965,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Broad Beans.
+        ///   Ищет локализованную строку, похожую на Broad beans or fava beans are firm and crisp pods that palate a strong beany flavor. Broad beans are eaten while still young and tender. They are flat greens pods. It is a widely grown crop, also used for ornamental purposes. Broad beans are prepared by removing the skin and blanching them for a minute or two..
         /// </summary>
         internal static string Vegetables_Broad_Beans_Description {
             get {
@@ -2973,7 +2974,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Broccoli.
+        ///   Ищет локализованную строку, похожую на Also called as &apos;Green Cauliflower&apos;, broccoli is a member of the cabbage family. The word broccoli is derived from the Italian word broccolo, which means the &apos;flowering top of the cabbage&apos;. It has large flowery heads similar to a cauliflower; usually green in colour..
         /// </summary>
         internal static string Vegetables_Broccoli_Description {
             get {
@@ -2982,7 +2983,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cabbage.
+        ///   Ищет локализованную строку, похожую на A round, layered, leafy vegetable that is eaten raw or cooked. It is round in shape and has layers of superimposed leafs. It is related to crops such as broccoli, cauliflower and brussel sprouts and can be green, white or purple. Its earliest cultivation is known to be in Europe..
         /// </summary>
         internal static string Vegetables_Cabbage_Description {
             get {
@@ -2991,7 +2992,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Capers.
+        ///   Ищет локализованную строку, похожую на Small green edible flower buds of the capparis plant, capers are native to the Mediterranean. They are expensive because they are labor intensive. They have a sour salty flavor and are added to many savory dishes to give a distinct flavor. Salt, wine vinegar, brine or olive oil is used to preserve capers, with the salty ones being more versatile..
         /// </summary>
         internal static string Vegetables_Capers_Description {
             get {
@@ -3000,7 +3001,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Capsicum.
+        ///   Ищет локализованную строку, похожую на It is a type of green pepper. It is a large and mildly flavored vegetable. They can be eaten raw or cooked. This relatively sweet pepper is a round and glossy and is mostly commonly called as capsicum in India and as a bell pepper elsewhere. They are deseeded before preparation..
         /// </summary>
         internal static string Vegetables_Capsicum_Description {
             get {
@@ -3009,7 +3010,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Carrot.
+        ///   Ищет локализованную строку, похожую на Carrot is a kind of taproot that grows underground. It is a root vegetable, usually orange in colour. However carrots in purple, red, white and yellow varieties do exist. The root is the part of the plant that is usually consumed, either raw or cooked..
         /// </summary>
         internal static string Vegetables_Carrot_Description {
             get {
@@ -3018,7 +3019,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cauliflower.
+        ///   Ищет локализованную строку, похожую на A flowery shaped vegetable, white in color with green leaves. The entire florets are edible. The green leaves at the base are also edible and have a stronger flavor. Cauliflowers are available all year round..
         /// </summary>
         internal static string Vegetables_Cauliflower_Description {
             get {
@@ -3027,7 +3028,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Celery.
+        ///   Ищет локализованную строку, похожую на Celery is a crisp green vegetable that is mainly used to flavor dishes including salads. It is of two types, white and red. The white one being better in flavor. The stalks are found fresh in the market without roots and very less green leaves. For cooking, only the stalks are used, not the leaves..
         /// </summary>
         internal static string Vegetables_Celery_Description {
             get {
@@ -3036,7 +3037,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cherry Tomatoes.
+        ///   Ищет локализованную строку, похожую на Cherry tomatoes are a smaller variety of the garden tomatoes, which are comparatively sweeter than the larger fruits. They are relatively found in size of a thumb tip to the size of a golfball. These varieties of tomatoes are even juicier and hold many valuable nutrients..
         /// </summary>
         internal static string Vegetables_Cherry_Tomatoes_Description {
             get {
@@ -3045,7 +3046,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cluster Beans.
+        ///   Ищет локализованную строку, похожую на Cluster bean is an annual legume. These beans are the smaller and flatter relative of the regular green beans. Cluster beans are very common in India, especially in the regions of Andhra Pradesh and Maharashtra. Cluster beans remain fresh for at least four days when refrigerated..
         /// </summary>
         internal static string Vegetables_Cluster_Beans_Description {
             get {
@@ -3054,7 +3055,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Colocasia.
+        ///   Ищет локализованную строку, похожую на Arbi or Taro, is thought to be the oldest cultivated plant in the world, being cultivated in Asia for more than ten thousand years. They are herbaceous perennial plants. They have a close resemblance to potatoes. There are various varieties of colocasia available like eddo, dasheen, elephant&apos;s ear etc..
         /// </summary>
         internal static string Vegetables_Colocasia_Description {
             get {
@@ -3063,7 +3064,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Corn.
+        ///   Ищет локализованную строку, похожую на Corn is another name for maize. Corn is used all over the world in different forms, eaten cooked or raw. It is a cereal grain..
         /// </summary>
         internal static string Vegetables_Corn_Description {
             get {
@@ -3072,7 +3073,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cucumber.
+        ///   Ищет локализованную строку, похожую на A long cylindrical green colored vegetable, which used widely in salads. In India it&apos;s mixed with yogurt to make raita. The cucumber is originally from India but now grown in other countries too. It is the fourth most widely cultivated vegetable in the world..
         /// </summary>
         internal static string Vegetables_Cucumber_Description {
             get {
@@ -3081,7 +3082,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Drumstick.
+        ///   Ищет локализованную строку, похожую на Drum stick or horseradish tree is a tall slender plant grown for it greens, flowers and nutritious pods. It is a very commonly used vegetable in Indian household. The leaves are the most nutritious part of the plant. They are cooked and used like spinach..
         /// </summary>
         internal static string Vegetables_Drumstick_Description {
             get {
@@ -3090,7 +3091,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Eggplant.
+        ///   Ищет локализованную строку, похожую на Also known as Brinjal or Aubergine. Botanically it is a fruit which is widely used in Indian cuisine. Infact it is native to the Indian subcontinent. It is purple colored with a whitish, hard flesh. It is available in various sizes and is eaten cooked..
         /// </summary>
         internal static string Vegetables_Eggplant_Description {
             get {
@@ -3099,7 +3100,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Fenugreek.
+        ///   Ищет локализованную строку, похожую на Fresh or dried leaves that have a slightly bitter taste, used widely in Indian dishes. &apos;Kasoori Methi&apos; is its dried form which is also used in cooking. The plant has small round leaves which are cooked and eaten as a main dish..
         /// </summary>
         internal static string Vegetables_Fenugreek_Description {
             get {
@@ -3108,7 +3109,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на French Beans.
+        ///   Ищет локализованную строку, похожую на French beans are thin, long pods with tiny seeds. Slightly smaller in size than the greener beans, French beans are tender, sweet and very crispy. The beans are of maximum use at a tender age, for as they mature, they become soggy.
+        ///Bush beans and climbing beans are the two varieties of French beans..
         /// </summary>
         internal static string Vegetables_French_Beans_Description {
             get {
@@ -3117,7 +3119,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Garlic.
+        ///   Ищет локализованную строку, похожую на A bulb vegetable, with a very strong and pungent taste. The whole bulb is divided into several cloves which are peeled and the flesh is used whole, crushed or as a paste. The cloves of garlic extracted from the bulb are the most commonly consumed part of the garlic..
         /// </summary>
         internal static string Vegetables_Garlic_Description {
             get {
@@ -3126,7 +3128,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Gherkins.
+        ///   Ищет локализованную строку, похожую на Gherkins belongs to the same family as cucumbers with a savory pickled flavor. They look like miniature cucumbers. They are usually consumed after being pickled with vinegar and herbs. Bright green in color and their length varies from 4 to 8 cm. They are known to have originated in West Indies..
         /// </summary>
         internal static string Vegetables_Gherkins_Description {
             get {
@@ -3135,7 +3137,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Ginger.
+        ///   Ищет локализованную строку, похожую на Ginger is the root of a Southeast Asian plant, known its pungent flavor and spicy aroma. Ginger plant also produces yellow flowers that have great aesthetic value. As an ingredient, it is pungent in flavor and very commonly used in Indian food. Ginger is known to stimulate the production of saliva, which makes swallowing easier..
         /// </summary>
         internal static string Vegetables_Ginger_Description {
             get {
@@ -3144,7 +3146,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Green Chillies.
+        ///   Ищет локализованную строку, похожую на A spice without which Indian cuisine would be incomplete, the most common variety of chilli used apart from red is the green. These are used with or without the stalks, whole or chopped, with seeds or deseeded. They are used fresh, dried, powdered, pickled or in sauces..
         /// </summary>
         internal static string Vegetables_Green_Chillies_Description {
             get {
@@ -3153,7 +3155,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Green Peas.
+        ///   Ищет локализованную строку, похожую на Small green pods grown in winter months, green peas are sweet fruits where each pod contains a number of peas. Though botanically a fruit, it is commonly used as a vegetable. Boiling or steaming makes them sweeter..
         /// </summary>
         internal static string Vegetables_Green_Peas_Description {
             get {
@@ -3162,7 +3164,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Horseradish.
+        ///   Ищет локализованную строку, похожую на A long rough root which has ring like structures and tiny roots hanging from the main root. Its aroma is not known until it is cut, produces a strong pungent aroma. It has a strong taste, which is hot and sharp. Prepared horseradish refers to grated horseradish mixed with vinegar, which is a creamy color that eventually darkens when it loses flavor..
         /// </summary>
         internal static string Vegetables_Horseradish_Description {
             get {
@@ -3171,7 +3173,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Jackfruit.
+        ///   Ищет локализованную строку, похожую на Jackfruit is a tree native to Southeast Asia. The fruit has a spiky green covering with white flesh inside. It is considered to be the largest tree borne fruit. The seeds of the furit are taken from the ripe fruit and then dried for use in either in curries or as part of roasted snacks..
         /// </summary>
         internal static string Vegetables_Jackfruit_Description {
             get {
@@ -3180,7 +3182,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Jalapeno.
+        ///   Ищет локализованную строку, похожую на It is a dark green colored, medium sized chilli pepper that is very hot. It produces a burning sensation in the mouth when eaten. They may be pickled or eaten raw. The seeds of the jalapenos contain the heat.With a unique blend of sour and fiery, these chilies have a wide range of use on the culinary world..
         /// </summary>
         internal static string Vegetables_Jalapeno_Description {
             get {
@@ -3189,7 +3191,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Kaffir Lime.
+        ///   Ищет локализованную строку, похожую на Kaffir lime is a rough bumpy green citrus fruit originating from Southeast Asia. The leaves also feature in many recipes because of their aromatic properties. They have a curious figure of eight shape..
         /// </summary>
         internal static string Vegetables_Kaffir_Lime_Description {
             get {
@@ -3198,7 +3200,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Lady Finger.
+        ///   Ищет локализованную строку, похожую на A green colored oblong shaped vegetable, tapering at the end with tiny seeds inside. It is also known as okra or gumbo. It is often used as an ingredient in Indian and Pakistani cuisine. The entire plant is edible and its leaves are usually eaten raw in salads..
         /// </summary>
         internal static string Vegetables_Lady_Finger_Description {
             get {
@@ -3207,7 +3209,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Leek.
+        ///   Ищет локализованную строку, похожую на Leeks are bulb like vegetables with a mild and crunchy onion taste. They reach maturity in the autumn season and they are as thin as a finger. They are most commonly used to add flavor to stock. They have a very mild and a sweet flavor. They may also be used in sauces, stews or soups..
         /// </summary>
         internal static string Vegetables_Leek_Description {
             get {
@@ -3216,7 +3218,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Lettuce.
+        ///   Ищет локализованную строку, похожую на Lettuce is most commonly grown as a leaf vegetable which is used in salads and sandwiches.This plant has a height of about 6-12 inches and its leaves are mostly greenish in color. It has a life of 65-130 days from planting to harvesting. They are at their peak in summer whereas their growth becomes a little slow in winters..
         /// </summary>
         internal static string Vegetables_Lettuce_Description {
             get {
@@ -3225,7 +3227,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Lotus Stem.
+        ///   Ищет локализованную строку, похожую на Also known as lotus root it is a root vegetable from India and China, used widely in Indian, Chinese and Japanese food. They are the edible parts of the lotus flower which is found under water. It is usually crunchy and is fairly sweet and has a flavor like water chestnut..
         /// </summary>
         internal static string Vegetables_Lotus_Stem_Description {
             get {
@@ -3234,7 +3236,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Mushroom.
+        ///   Ищет локализованную строку, похожую на Mushrooms are fleshy, edible fungi that are a low-calorie food and a good source of Vitamin B. Shiitake, porcini and chanterelle are some types of mushrooms. The edibility of mushroom depends on the absence of poisonous effects on humans and the desirable taste and aroma..
         /// </summary>
         internal static string Vegetables_Mushroom_Description {
             get {
@@ -3243,7 +3245,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Mustard Leaves.
+        ///   Ищет локализованную строку, похожую на Mustard Leaves or mustard greens appears in Italian, Chinese, Japanese, Korean, African, Pakistani and Indian cuisines. The most famous in the Indian peninsula is sarsoon da saag made using mustard greens. Mustard leaves is a popular winter vegetable..
         /// </summary>
         internal static string Vegetables_Mustard_Leaves_Description {
             get {
@@ -3252,7 +3254,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Onion.
+        ///   Ищет локализованную строку, похожую на Onions are used as vegetables and are cultivated around the world. They have a pungent odour and in some communities onions are considered as an aphrodisiac. Cutting onions emit certain compounds which cause the glands in the eyes to become irritated, thus releasing tears..
         /// </summary>
         internal static string Vegetables_Onion_Description {
             get {
@@ -3261,7 +3263,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Pigweed.
+        ///   Ищет локализованную строку, похожую на Also known as lamb&apos;s quarters or cheel bhaji, it is a leafy vegetable seasonal to winter months. Spinach is a close relative, and they both are prepared the same way. This plant is more waxy and carries an earthy flavor. Bathua saag, raita and paranthas are some of its preparations..
         /// </summary>
         internal static string Vegetables_Pigweed_Description {
             get {
@@ -3270,7 +3272,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Pimiento.
+        ///   Ищет локализованную строку, похожую на These look like smaller versions of red capsicums or bell peppers. These are also called as cherry peppers. These are used to stuff green olives. It is basically a small sweet red pepper. Pimiento is a Spanish word that means pepper.
+        ///It is usually 7-10 cms long and has a sweet flesh and aroma..
         /// </summary>
         internal static string Vegetables_Pimiento_Description {
             get {
@@ -3279,7 +3282,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Plantain.
+        ///   Ищет локализованную строку, похожую на They belong to the banana family but are firmer and not consumed raw. Green or under ripe plantains are the ones used in cooking and is a staple food in many tropical areas. The are eaten steamed or fried and called the potatoes of the Caribbean due to similarity of flavor..
         /// </summary>
         internal static string Vegetables_Plantain_Description {
             get {
@@ -3288,7 +3291,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Potatoes.
+        ///   Ищет локализованную строку, похожую на Potato, a starchy crop, is considered as the world’s favorite root crop. It is the swollen portion of the underground stem. It is a versatile vegetable all over the world and has around 5000 varieties. Its oldest cultivation is known to be in Peru. The outer skin is usually brown or yellow, while the flesh is white or yellow..
         /// </summary>
         internal static string Vegetables_Potatoes_Description {
             get {
@@ -3297,7 +3300,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Pumpkin.
+        ///   Ищет локализованную строку, похожую на A round fruit with its color varying from yellow to orange. Pumpkins are said to have originated in North America.
+        ///An average pumpkin weighs around 4-5 kgs. Did you know that the largest pumpkin ever grown weighed 1,140 pounds (517.095 kgs)
+        ///Pumpkin are grown in major parts of the world including U..
         /// </summary>
         internal static string Vegetables_Pumpkin_Description {
             get {
@@ -3306,7 +3311,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Radish.
+        ///   Ищет локализованную строку, похожую на Radish is a root vegetable that was native to the Europeans. They are white in color and are mainly used in salads but can be cooked or steamed as well. It is mostly grown during the cool season and has a peppery taste. Some radishes are grown for their seeds and some for their oil..
         /// </summary>
         internal static string Vegetables_Radish_Description {
             get {
@@ -3315,7 +3320,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Ridge Gourd.
+        ///   Ищет локализованную строку, похожую на A long vegetable with a dark green ridged skin and a white spongy flesh with soft seeds. It is prepared by removing the skin of the vegetable and then cooked. Ridge gourd is very prominent in Indian cooking. It is called as sponge gourd in Chinese cuisine..
         /// </summary>
         internal static string Vegetables_Ridge_Gourd_Description {
             get {
@@ -3324,7 +3329,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Rocket Leaves.
+        ///   Ищет локализованную строку, похожую на Rocket leaves or popularly known as arugula or salad rocket is nutritious green-leafy vegetable. The young tender leaves carry a bitter peppery flavor that makes it mostly a salad vegetable..
         /// </summary>
         internal static string Vegetables_Rocket_Leaves_Description {
             get {
@@ -3333,7 +3338,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Round Gourd.
+        ///   Ищет локализованную строку, похожую на Small round gourd, also called baby pumpkin, is a vegetable grown for its immature fruit. Green colored and apple sized, it is a slightly sour fruit which can be eaten cooked, candied or pickled. Stuffed round gourds cooked with spices is also a favorite recipe..
         /// </summary>
         internal static string Vegetables_Round_Gourd_Description {
             get {
@@ -3342,7 +3347,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Shallots.
+        ///   Ищет локализованную строку, похожую на Tiny onions called so because they are used a lot in South Indian cuisine. The flesh is thicker and it has a mild sweet taste.
+        ///Madras onions, more commonly known everywhere else as shallots, are like baby red onions but have a sweeter, milder flavor as compared to onions..
         /// </summary>
         internal static string Vegetables_Shallots_Description {
             get {
@@ -3351,7 +3357,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Shiitake Mushroom.
+        ///   Ищет локализованную строку, похожую на Shiitake mushroom is an edible mushroom native to East Asia. It is a type of Chinese mushroom and is heavily consumed in China. They are not just consumed as a delicacy, they are also considered a medicinal mushroom in some forms of traditional medicine..
         /// </summary>
         internal static string Vegetables_Shiitake_Mushroom_Description {
             get {
@@ -3360,7 +3366,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Snake Beans.
+        ///   Ищет локализованную строку, похожую на Snake beans are long and slender green pods with a sweet flavour and crunchy texture. Snake beans have a similar texture to that of green beans, but are slightly lighter green in colour. They are also known as yardlong beans, bora, long-podded cowpea, asparagus beans, pea beans or Chinese long beans..
         /// </summary>
         internal static string Vegetables_Snake_Beans_Description {
             get {
@@ -3369,7 +3375,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Sorrel Leaves.
+        ///   Ищет локализованную строку, похожую на Sorrel is a leafy green vegetable that is native to Europe. It has a sharp, lemony taste. It is a perennial herb also known as garden sorrel or common sorrel. Their color spectrum ranges from pale to dark green. They are arrow-headed somewhat like spinach leaves..
         /// </summary>
         internal static string Vegetables_Sorrel_Leaves_Description {
             get {
@@ -3378,7 +3384,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Spinach.
+        ///   Ищет локализованную строку, похожую на It is a bright and vibrant green leafy vegetable which is native to central and southwest Asia. It is said to have originated in Persia. It is sold loose, bunched, canned or frozen. Fresh spinach is preferred over canned spinach due to loss of nutrients..
         /// </summary>
         internal static string Vegetables_Spinach_Description {
             get {
@@ -3387,7 +3393,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Spring Onion.
+        ///   Ищет локализованную строку, похожую на Also known as scallions in America, spring onion is a type of root vegetable. They have a white fleshy root bulb with light green leaves. The tiny white fleshy bulb has a long slender green top, which is also edible. Spring onions have a slightly milder taste than the regular onions which are delight to the taste buds..
         /// </summary>
         internal static string Vegetables_Spring_Onion_Description {
             get {
@@ -3396,7 +3402,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Sweet Potatoes.
+        ///   Ищет локализованную строку, похожую на Shakarkandi or sweet potato is a starchy, sweet tasting root vegetable. Its leaves and shoots both are edible though the starchy tuberous roots are most commonly consumed. It can be baked at home as a snack or as a dessert. They are mostly consumed by boiling and adding dome dressing..
         /// </summary>
         internal static string Vegetables_Sweet_Potatoes_Description {
             get {
@@ -3405,7 +3411,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Turnip.
+        ///   Ищет локализованную строку, похожую на It is a white bulb taproot vegetable. Broad at the base, it points like a tail at the apex. The leaves and the root have a pungent bitterly taste, similar to raw cabbages and radishes. Turnips are available all year long, but are at their best in fall and spring, when they are small and sweet..
         /// </summary>
         internal static string Vegetables_Turnip_Description {
             get {
@@ -3414,7 +3420,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Yam.
+        ///   Ищет локализованную строку, похожую на Yams are forms of starchy edible tubers. It is a versatile vegetable. It has a hard brown skin with a starchy flesh inside. Yams are cultivated for their starchy tubers in countries like Africa, Asia, Latin America, the Caribbean and Oceania. Yam flesh is generally white, ivory, yellow or purple in color and its skin is white pink or brownish black in color..
         /// </summary>
         internal static string Vegetables_Yam_Description {
             get {
@@ -3423,7 +3429,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Zucchini.
+        ///   Ищет локализованную строку, похожую на Zucchini is a popular summer squash. It is usually dark or light green in color. Known as courgettes in French and zucchini in Italian, these are bland vegetables. It looks somewhat like a cucumber, but it is usually served cooked.
+        ///It has a very mild flavor and is eaten with the skin..
         /// </summary>
         internal static string Vegetables_Zucchini_Description {
             get {
