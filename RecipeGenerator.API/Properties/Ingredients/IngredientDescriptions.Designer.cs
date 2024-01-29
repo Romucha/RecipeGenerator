@@ -2271,7 +2271,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Acacia.
+        ///   Ищет локализованную строку, похожую на They are pod-bearing shrubs, with sap and leaves typically bearing large amounts of tannins (used to make leather). Also known as whistling thorns, the seeds and feathery shoots of acacia are used in soups and curries. In USA and Europe it is used in soft drinks, chewing gum and mints..
         /// </summary>
         internal static string SpicesAndHerbs_Acacia_Description {
             get {
@@ -2280,7 +2280,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Allspice.
+        ///   Ищет локализованную строку, похожую на Allspice is native to Greater Antilles, Southern Mexico and Central America and is usually cultivated in warm areas. Allspice is a small berry that tastes like a combination of cinnamon, cloves and nutmeg. It is also known as jamaica pepper or newspice..
         /// </summary>
         internal static string SpicesAndHerbs_Allspice_Description {
             get {
@@ -2289,7 +2289,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Aniseed.
+        ///   Ищет локализованную строку, похожую на Aniseed, synonymously called anise, anis or anise seed, is a herb often used in middle eastern recipes. It belongs to the flowering plant of Apiaceae family. Its flavor is similar to the spices star anise, fennel and liquorice. They have a pale brown color with a very mild and fragrant aroma..
         /// </summary>
         internal static string SpicesAndHerbs_Aniseed_Description {
             get {
@@ -2298,7 +2298,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Asafoetida.
+        ///   Ищет локализованную строку, похожую на Having said to be originated in Rome, Asafoetida has become an essential condiment in the Indian vegetarian cooking. It is the dried latex emanated from an underground living rhizome of Ferula. It is very commonly used in a granulated or powdered form..
         /// </summary>
         internal static string SpicesAndHerbs_Asafoetida_Description {
             get {
@@ -2307,7 +2307,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Basil.
+        ///   Ищет локализованную строку, похожую на This king of Mediterranean herb belongs to the mint family, originated in India. Though the common color of basil is green, there are some varieties which are purple or red. The odour of basil has a fragrant aroma, strong and pliable taste like that of peppermint..
         /// </summary>
         internal static string SpicesAndHerbs_Basil_Description {
             get {
@@ -2316,7 +2316,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Bay Leaf.
+        ///   Ищет локализованную строку, похожую на A leaf from the sweet bay or laurel tree, these are usually dried. An aromatic leaf, it&apos;s a staple around an Indian kitchen. Very common in Indian curries and rice dishes and in custards and stews in Western Cuisine. It&apos;s a smooth, elliptical leaf with a mildly bitter taste and the dried leaves has a fragrance similar to thyme and oregano..
         /// </summary>
         internal static string SpicesAndHerbs_Bay_Leaf_Description {
             get {
@@ -2325,7 +2325,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Black Cardamom.
+        ///   Ищет локализованную строку, похожую на A warming spice, black cardamom is used more commonly in savory dishes. It has a smoky flavor which comes from the method of drying on a flame which also lends it a distinct aroma. This dried fruit is sold both as pods and seeds where the pods carry a higher flavor..
         /// </summary>
         internal static string SpicesAndHerbs_Black_Cardamom_Description {
             get {
@@ -2334,7 +2334,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Black Cumin.
+        ///   Ищет локализованную строку, похожую на Black cumin belongs to the family of the flowering plant Apiaceae. The seed is smaller, darker and thinner compared to its other family members. It is popular for its strong flavor and is used as a spice in Indian cooking. Black cumin seed is referred to the seeds of two different plants..
         /// </summary>
         internal static string SpicesAndHerbs_Black_Cumin_Description {
             get {
@@ -2343,7 +2343,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Black Pepper.
+        ///   Ищет локализованную строку, похожую на Black pepper is a fruit which is dried for use as a spice. The cooked and dried unripe fruit of the pepper plants, has a spiciness which goes very well with salt. They are small black seeds with a wrinkled skin. Widely used in cuisines all over the world, pepper mills are a common tool used for freshly ground pepper which has a strong flavor..
         /// </summary>
         internal static string SpicesAndHerbs_Black_Pepper_Description {
             get {
@@ -2352,7 +2352,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cajun Spices.
+        ///   Ищет локализованную строку, похожую на Cajun spices are the condiment used in the Cajun cuisine, popular among the Acadian immigrants from Canada to Louisiana. It is more like a country meal dominated by the locally available ingredients.
+        ///It is a perfect blend of spicy, pungent, earthy and grassy flavor..
         /// </summary>
         internal static string SpicesAndHerbs_Cajun_Spices_Description {
             get {
@@ -2361,7 +2362,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Caraway Seeds.
+        ///   Ищет локализованную строку, похожую на Caraway plant is native to Western Asia, Europe and North Africa. Its fruits are crescent shaped and are about 2 mm long. The fruits have a pungent flavor and are often used as a spice.They are used in many desserts, curries and other food items. The fruit are crescent shaped with five horizontal ridges..
         /// </summary>
         internal static string SpicesAndHerbs_Caraway_Seeds_Description {
             get {
@@ -2370,7 +2371,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Carom Seeds.
+        ///   Ищет локализованную строку, похожую на Ajwain seeds or carom seeds belong to the cumin family, Apiaceae. This plant is predominantly found in the regions of India and Pakistan and used as a spice. Carom seeds are egg-shaped and khaki coloured. Though by appearance, it looks like thyme, carom seed is more aromatic, bitter and pungent..
         /// </summary>
         internal static string SpicesAndHerbs_Carom_Seeds_Description {
             get {
@@ -2379,7 +2380,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cayenne.
+        ///   Ищет локализованную строку, похожую на A hot and pungent spice that&apos;s made from a type of chilli pepper - orangey in color. It is used to spice up dishes especially in Korean and Sichuan cuisines. Cayenne is a fruit red in color when ripened in maturity. It is also known as bird pepper or guinea spice..
         /// </summary>
         internal static string SpicesAndHerbs_Cayenne_Description {
             get {
@@ -2388,7 +2389,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Chives.
+        ///   Ищет локализованную строку, похожую на Belonging to the family of onions, Chives are their smallest member. The tiny bulbs have long, thin and hollow green leaves. Chives carry a flavor and aroma that is common in onion family, but in a subtle quantity. They are often grown in clumps.
+        ///Chives are grown for the leaves that are added as flavoring agent..
         /// </summary>
         internal static string SpicesAndHerbs_Chives_Description {
             get {
@@ -2397,7 +2399,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cinnamon.
+        ///   Ищет локализованную строку, похожую на Cinnamon has a long history in the fields of culinary and medicine for its varied uses and scope. It is brown in colour and taken from the bark of the cinnamon tree. It is available in dried tubular structures known as quill and grounded powder. Known for its fragrant and warm taste, cinnamon is a popular choice among all spices..
         /// </summary>
         internal static string SpicesAndHerbs_Cinnamon_Description {
             get {
@@ -2406,7 +2408,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cloves.
+        ///   Ищет локализованную строку, похожую на Cloves are a kind of spice used in cuisines all over the world. It is an aromatic dried flower bud that is said to native to Indonesia. It has a strong taste and smell and is therefore, mostly used as a flavor in curries, meat or sweet dishes like fruits pies..
         /// </summary>
         internal static string SpicesAndHerbs_Cloves_Description {
             get {
@@ -2415,7 +2417,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Coriander Leaves.
+        ///   Ищет локализованную строку, похожую на Aromatic green leaves that are largely used to flavour and garnish food. Belonging to the same family of Cilantro, the leaves, dried seeds and powder are widely used in the Indian cuisine. There has always been a debate if coriander is more an herb or spice..
         /// </summary>
         internal static string SpicesAndHerbs_Coriander_Leaves_Description {
             get {
@@ -2424,7 +2426,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Coriander Powder.
+        ///   Ищет локализованную строку, похожую на Grounded from coriander seeds, coriander powder is an essential condiment in the Indian cuisine. Very few dishes can be made without the touch of coriander powder. It has a pleasing aroma and savour.
+        ///Coriander from which the powder is made is one of the worlds oldest spices..
         /// </summary>
         internal static string SpicesAndHerbs_Coriander_Powder_Description {
             get {
@@ -2433,7 +2436,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Coriander Seeds.
+        ///   Ищет локализованную строку, похожую на The dry fruits yielding from the coriander plant are considered as coriander seeds. In the Indian cuisine, the seeds are called Dhaniya and are an essential condiment in the spices. Carrying an aromatic and citrus flavor, the seeds are available both in dried seeds and grounded form..
         /// </summary>
         internal static string SpicesAndHerbs_Coriander_Seeds_Description {
             get {
@@ -2442,7 +2445,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cumin Seeds.
+        ///   Ищет локализованную строку, похожую на Oblong dark brown seeds with a very distinct flavor, cumin seeds are a very popular spice used for their strong aroma and bitter warm flavor. The most common consumption method is after frying or roasting. Cumin seed powder of roasted seeds is also widely used..
         /// </summary>
         internal static string SpicesAndHerbs_Cumin_Seeds_Description {
             get {
@@ -2451,7 +2454,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Curry Leaves.
+        ///   Ищет локализованную строку, похожую на Aromatic leaves, belonging to the neem family, are also called &apos;Meetha Neem&apos;, because these are not bitter like neem. They are used very widely in Indian cooking, especially the South and the West. The curry tree is native to India. Curry leaves are green leaves with a strong aroma and a different flavor which is very Southeast Asian..
         /// </summary>
         internal static string SpicesAndHerbs_Curry_Leaves_Description {
             get {
@@ -2460,7 +2463,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Dill.
+        ///   Ищет локализованную строку, похожую на Also known as Lao coriander, it is an aromatic ingredient with a delicate sweet flavor. It has fern like leaves which are feathery and dark green in color. Its seed is a light brown oval shaped ingredient. The leaves, seeds and yellow flowers of the dill plant are edible..
         /// </summary>
         internal static string SpicesAndHerbs_Dill_Description {
             get {
@@ -2469,7 +2472,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Dried Fenugreek Leaves.
+        ///   Ищет локализованную строку, похожую на Popularly known in the Indian subcontinent as Kasuri Methi, fenugreek leaves are an ancient spice used for flavoring various dishes. The leaves have a bitter taste, but when added to the recipe, titillate the taste buds.
+        ///Apart from the dried leaves, the green leaves and the seeds are also commonly used while cooking..
         /// </summary>
         internal static string SpicesAndHerbs_Dried_Fenugreek_Leaves_Description {
             get {
@@ -2478,7 +2482,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Dry Ginger Powder.
+        ///   Ищет локализованную строку, похожую на Like the name indicates, dry ginger powder is the grounded form of dried ginger roots. It is essentially used as a seasoning agent. However, the powdered form doesn&apos;t carry the strong pungent flavor from the roots. Hence, it is used for giving a mild taste to the dishes..
         /// </summary>
         internal static string SpicesAndHerbs_Dry_Ginger_Powder_Description {
             get {
@@ -2487,7 +2491,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Fennel.
+        ///   Ищет локализованную строку, похожую на The fennel plant originated in the Mediterranean countries. In India, it is cultivated in Punjab, Maharashtra, Gujarat and Assam. The flowers of this plant are yellow in color and are seen in the peak summer period. The seeds of fennel are sweet in taste and have a liquorice flavor..
         /// </summary>
         internal static string SpicesAndHerbs_Fennel_Description {
             get {
@@ -2496,7 +2500,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Fenugreek Seeds.
+        ///   Ищет локализованную строку, похожую на Small brown seeds which have a pleasing flavor with a bitter undertone and a strong aroma reminiscent of curry powder. Fenugreek seeds are mostly used toasted, which enhances their acrid taste. Due to their powerful flavor, they are used in small amounts..
         /// </summary>
         internal static string SpicesAndHerbs_Fenugreek_Seeds_Description {
             get {
@@ -2505,7 +2509,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Five Spice Powder.
+        ///   Ищет локализованную строку, похожую на Called as the Wonder Powder in Chinese cuisine, five spice powder is used as a seasoning agent for meat and poultry. The theory behind the composition of the five spice powder is to blend in five flavors - salty, sweet, sour, bitter and pungent. It is also believed that that addition of five spice powder counter balances the heat of a dish not creating any discomfort after eating..
         /// </summary>
         internal static string SpicesAndHerbs_Five_Spice_Powder_Description {
             get {
@@ -2514,7 +2518,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Galangal.
+        ///   Ищет локализованную строку, похожую на Galangal is a herb like ginger that belongs to the rhizome family. Also known as Thai or blue ginger, it has many medicinal and culinary properties. It has a stronger taste than its cousin, ginger, with a citrusy, earthy aroma. The galangal is available as a whole rut, in cuts or as a powder and is used like a ginger..
         /// </summary>
         internal static string SpicesAndHerbs_Galangal_Description {
             get {
@@ -2523,7 +2527,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Garam Masala.
+        ///   Ищет локализованную строку, похожую на One of the most widely used spice blends in Northern Indian Cooking, garam masala literally translates to hot spice that has about 5-6 types of spices. All the ingredients are well roasted and ground in to a powder form and added in to various delicacies to give them a slightly spicy and pungent flavour..
         /// </summary>
         internal static string SpicesAndHerbs_Garam_Masala_Description {
             get {
@@ -2532,7 +2536,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Green Cardamom.
+        ///   Ищет локализованную строку, похожую на Green cardamom is a aromatic spice with a very wide range of uses. The plant has underground stems with leafy roots, large white or pale green leaves, pale green fruits and black seeds. The spice has a very warm aroma and pungent taste which it can retain for a very long time..
         /// </summary>
         internal static string SpicesAndHerbs_Green_Cardamom_Description {
             get {
@@ -2541,7 +2545,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Herbs.
+        ///   Ищет локализованную строку, похожую на The leaves of plants like, bay leaf, oregano, basil, thyme and sage. They can be used fresh or dried. They are different from vegetables as they are used in small amounts just for flavour. They are used to season main dishes and salads..
         /// </summary>
         internal static string SpicesAndHerbs_Herbs_Description {
             get {
@@ -2550,7 +2554,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Kashmiri Mirch.
+        ///   Ищет локализованную строку, похожую на Rich wine red color, shriveled appearance and not so spicy, that&apos;s the definition of kashmiri chilli. The kashmiri chilli is smaller, rounder and less pungent, but lends a very bright red color to the food. They are bred for their high color retention since they redden anything capable of absorbing color..
         /// </summary>
         internal static string SpicesAndHerbs_Kashmiri_Mirch_Description {
             get {
@@ -2559,7 +2563,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Lemongrass.
+        ///   Ищет локализованную строку, похожую на Also known as cymbopogon, lemon grass is a tall perennial grass. It is native to India and tropical Asia. It has a lemony flavor and is used in teas, soups and curries. It tastes somewhat like ginger with a citrus kick. It is also used in Ayurvedic medicines..
         /// </summary>
         internal static string SpicesAndHerbs_Lemongrass_Description {
             get {
@@ -2568,7 +2572,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Mace.
+        ///   Ищет локализованную строку, похожую на Derived from nutmeg, mace is the dried outer covering of the seed. It has a beautiful yellowish-red tinge and is very aromatic. The flavor is similar to that of nutmeg but more peppery. It is available both in grounded and whole form. Whole dried mace is preferred over the grounded form for the preserved flavour..
         /// </summary>
         internal static string SpicesAndHerbs_Mace_Description {
             get {
@@ -2577,7 +2581,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Marjoram.
+        ///   Ищет локализованную строку, похожую на A herb from a sage like plant, Marjoram is commonly used a cooking spice. It is used either in fresh or dried form in soups, omlets, stews and sauces. Marjoram is often confused for its cousin oregano since they belong to the same family. However, both plants carry their own distinctive flavour..
         /// </summary>
         internal static string SpicesAndHerbs_Marjoram_Description {
             get {
@@ -2586,7 +2590,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Mint Leaves.
+        ///   Ищет локализованную строку, похожую на Mint is a type of herb with a refreshing flavor. It can be used dried or fresh. They have a sweet flavor with a cool after taste. It has a strong, sharp scent. In India, it is used to make mint chutney and mint tea. Mint leaves are the oldest and the most popular herb grown all over the world..
         /// </summary>
         internal static string SpicesAndHerbs_Mint_Leaves_Description {
             get {
@@ -2595,7 +2599,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Mustard Powder.
+        ///   Ищет локализованную строку, похожую на Finely ground mustard seeds make mustard powder.The powder is a mixture of brown and white seeds, with added saffron or tumeric for flavor and/or color. It is a popular ingredient since the flavor does not build or persist when used. This when mixed with water or milk forms a paste used in sandwiches, wraps, burgers etc with a pungent aroma..
         /// </summary>
         internal static string SpicesAndHerbs_Mustard_Powder_Description {
             get {
@@ -2604,7 +2608,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Nasturtium.
+        ///   Ищет локализованную строку, похожую на Nasturtium is a plant whose leaves and flower both are edible. It is mostly grown in spring end and early summer. Called as &apos;Jalkumbhi&apos; in Hindi, they are known to have originated in South America where they were used for their antibiotic action.
+        ///Fresh and bright nasturtium leaves and flowers have a pepper-like flavor and are nice to use in salads..
         /// </summary>
         internal static string SpicesAndHerbs_Nasturtium_Description {
             get {
@@ -2613,7 +2618,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Nutmeg.
+        ///   Ищет локализованную строку, похожую на Nutmeg is an egg shaped seed of a tree which is about 20-30mm long and weighs about 5-10gm. It is a source of different spices and helps to produce essential oils and nutmeg butter. It is also used for medicinal purpose and in the perfumery industries..
         /// </summary>
         internal static string SpicesAndHerbs_Nutmeg_Description {
             get {
@@ -2622,7 +2627,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Onion Seeds.
+        ///   Ищет локализованную строку, похожую на Contrary to its name, onion seeds do not belong to the onion family. Belonging to the same family of black cumin, onion seed is also known as kalonji, black onion seed, black caraway, etc.
+        ///Onion seed constitutes 38% of oil that is responsible for its aromatic flavor..
         /// </summary>
         internal static string SpicesAndHerbs_Onion_Seeds_Description {
             get {
@@ -2631,7 +2637,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Oregano.
+        ///   Ищет локализованную строку, похожую на Oregano is an aromatic herb that is native to northern Europe. The leaves and seeds are used widely in Mexican and Mediterranean cuisines. It is known for its aromatic and medicinal properties since ancient times. It is available fresh and in dried form..
         /// </summary>
         internal static string SpicesAndHerbs_Oregano_Description {
             get {
@@ -2640,7 +2646,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Paprika.
+        ///   Ищет локализованную строку, похожую на Dried red peppers coarsely ground, can be mild or hot. Capsicum peppers used for paprika are unusually rich in vitamin C. It is used mainly to add color to the dishes as it has very mild flavor. It is a deep red coarse powder. It acts as a natural coloring agent..
         /// </summary>
         internal static string SpicesAndHerbs_Paprika_Description {
             get {
@@ -2649,7 +2655,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Parsley.
+        ///   Ищет локализованную строку, похожую на Parsley is a herb that is commonly used for garnishing, especially in Italian cuisine. It is native to the central Mediterranean region where is it widely cultivated as a herb, spice and vegetable. In many countries, dishes are served with a small amount of fresh chopped parsley sprinkled on top..
         /// </summary>
         internal static string SpicesAndHerbs_Parsley_Description {
             get {
@@ -2658,7 +2664,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Raw Mango Powder.
+        ///   Ищет локализованную строку, похожую на A powder made from the unripe dry green mangoes. Once harvested, the green mangoes are peeled, thinly sliced, and sun-dried. These can be purchased whole and ground at home or in powder form from the market. A tangy powder that adds sourness to dishes, very popular in chaats..
         /// </summary>
         internal static string SpicesAndHerbs_Raw_Mango_Powder_Description {
             get {
@@ -2667,7 +2673,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Red Chilli.
+        ///   Ищет локализованную строку, похожую на Dried red pepper may be used whole or powdered. India is the largest producer of red chillies. As the name suggests it is red in color and can be consumed as it is or can be broken down and made into a powder. It is really spicy and the intense heat is concentrated in the seeds..
         /// </summary>
         internal static string SpicesAndHerbs_Red_Chilli_Description {
             get {
@@ -2676,7 +2682,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Rock Salt.
+        ///   Ищет локализованную строку, похожую на Black salt, also known as Kala Namak is a special type of Indian mineral salt. Unlike its name, black is not the salt&apos;s color. It has more of a pinkish-grey tint. It is due to the presence of trace minerals and iron. The distinctive flavor is due to the sulphur content and hence it is not considered as an alternative for ordinary salt, despite its sodium content..
         /// </summary>
         internal static string SpicesAndHerbs_Rock_Salt_Description {
             get {
@@ -2685,7 +2691,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Rosemary.
+        ///   Ищет локализованную строку, похожую на Rosemary is a herb that is used in food for flavoring purpose or for fragrance. Native to the Mediterranean, Rosemary has needle shaped leaves that are highly aromatic. Rosemary&apos;s needle-shaped leaves are highly aromatic and have the flavor of both lemon and pine..
         /// </summary>
         internal static string SpicesAndHerbs_Rosemary_Description {
             get {
@@ -2694,7 +2700,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Saffron.
+        ///   Ищет локализованную строку, похожую на A unique flavored spice, made from the dried stamens of the crocus flower. It can be found in threads or ground and is known for its medicinal properties.The styles and the dried stigmas of the flower are used as a seasoning and coloring agent in many cuisines..
         /// </summary>
         internal static string SpicesAndHerbs_Saffron_Description {
             get {
@@ -2703,7 +2709,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Sage.
+        ///   Ищет локализованную строку, похожую на It is a herb that is native to the Mediterranean. It has gray-green leaves that have a pungent smell and a minty taste. It is mostly used for seasoning.
+        ///It can be consumed fresh, dried, whole or powdered but fresh sage is considered less bitter and hence more desirable..
         /// </summary>
         internal static string SpicesAndHerbs_Sage_Description {
             get {
@@ -2712,7 +2719,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Salt.
+        ///   Ищет локализованную строку, похожую на Salt is unrefined sodium chloride and an essential ingredient while cooking food worldwide. The most ubiquitous component of any recipe is salt. Let it be any cuisine, salt is an essential condiment. It is used relatively constant amounts in our regular diet..
         /// </summary>
         internal static string SpicesAndHerbs_Salt_Description {
             get {
@@ -2721,7 +2728,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Star Anise.
+        ///   Ищет локализованную строку, похожую на As the name suggests, star anise is a fruit in the shape of a star which is native to South China. It is brown in color and has an aroma similar to that of a fennel seed. It has a strong licorice taste, more intense than regular anise. The fruits are picked up just before the harvest..
         /// </summary>
         internal static string SpicesAndHerbs_Star_Anise_Description {
             get {
@@ -2730,7 +2737,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Thyme.
+        ///   Ищет локализованную строку, похожую на A very popular herb, it has green-white curled leaves with a pungent minty taste and lemony aroma. It may be bought fresh or dried. The leaves are gray green in color. Its shelf life is almost a week and it is usually available all year round. Fresh thyme is commonly sold in bunches of sprigs..
         /// </summary>
         internal static string SpicesAndHerbs_Thyme_Description {
             get {
@@ -2739,7 +2746,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Tulsi.
+        ///   Ищет локализованную строку, похожую на The Tulsi or The holy basil is mostly used as a herbal remedy for a lot of common ailments because of its essential oils. Tulsi is a green leaf herb with excellent aromatic properties.
+        ///In South Asia it is commonly used in Ayurveda. In India, it is considered holy and is therefore rarely added to any dish..
         /// </summary>
         internal static string SpicesAndHerbs_Tulsi_Description {
             get {
@@ -2748,7 +2756,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Turmeric.
+        ///   Ищет локализованную строку, похожую на Turmeric is considered as a skin food in India and many other popular cultures. It is a bright yellow powder made from the rhizomes of turmeric. It is available as a whole root or in powdered form. India and Pakistan are the leading producers of Turmeric..
         /// </summary>
         internal static string SpicesAndHerbs_Turmeric_Description {
             get {
@@ -2757,7 +2765,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Yellow Chillies.
+        ///   Ищет локализованную строку, похожую на These are dried yellow peppers widely used in Indian households while cooking. The yellow colored peppers are used as spices to enhance color and piquancy to the dishes. The yellow variety of chili is mainly grown in the regions of Punjab and South Kashmir..
         /// </summary>
         internal static string SpicesAndHerbs_Yellow_Chillies_Description {
             get {
