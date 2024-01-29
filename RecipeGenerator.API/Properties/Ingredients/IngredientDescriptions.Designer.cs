@@ -2042,7 +2042,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Anchovies.
+        ///   Ищет локализованную строку, похожую на It is a tiny common salt water forage fish that has a very strong flavor. Anchovies are rich in healthy protein, essential vitamins (vitamin E and D) and minerals (calcium). They impart a salty and not a fishy flavor when added in dressings..
         /// </summary>
         internal static string Seafood_Anchovies_Description {
             get {
@@ -2051,7 +2051,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cat fish.
+        ///   Ищет локализованную строку, похожую на Catfish are fish which have no scales. It has been a part of African cuisine since hundreds of years. In Central Europe it is treated as a delicacy. It can be eaten in a variety of ways like for example in Indonesia it is often grilled whereas in India it is eaten as a favored delicacy during the monsoon season..
         /// </summary>
         internal static string Seafood_Cat_fish_Description {
             get {
@@ -2060,7 +2060,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Clams.
+        ///   Ищет локализованную строку, похожую на Clams are two-shelled molluscs related to the same family of scallops and oysters. They are usually found in the coastal water and shallow freshwater lakes. Most varieties of clams are edible. Secured between two hard shells, is the soft body.
+        ///Though there are more than 2,000 varieties, clams are broadly classified into two types: Hard-shell clams that dwell under deep waters whereas soft-shell clams reside in tides..
         /// </summary>
         internal static string Seafood_Clams_Description {
             get {
@@ -2069,7 +2070,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cod.
+        ///   Ищет локализованную строку, похожую на Growing in deep and cold waters, Cod belongs to the family Gadidea as Haddock and Pollock. It is a marine fish that generally survives near the bottom to grow, survive and reproduce. It is very popular for its white and mild flavoured flesh. When cooked, its flesh becomes moist and flaky..
         /// </summary>
         internal static string Seafood_Cod_Description {
             get {
@@ -2078,7 +2079,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cuttle fish.
+        ///   Ищет локализованную строку, похожую на Also known as ink fish, cuttle fish is deep water dwelling water mollusc. Its flesh tastes like squid and octopus. It has a long, elongated body with tentacles surrounding its mouth. The cuttle fish has several regional names like nargate, sepia and supion..
         /// </summary>
         internal static string Seafood_Cuttle_fish_Description {
             get {
@@ -2087,7 +2088,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Fish.
+        ///   Ищет локализованную строку, похожую на A limbless cold-blooded vertebrate with gills and fins and living wholly in water, it is a very popular seafood consumed with great interest all over the world. Fish should be stored in the coldest part of the refrigerator. Ideally, it should be consumed the same day but can be stored the freezer for not more than 2-3 days..
         /// </summary>
         internal static string Seafood_Fish_Description {
             get {
@@ -2096,7 +2097,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Fish Fillet.
+        ///   Ищет локализованную строку, похожую на A boneless, flat piece of meat or fish. It is a type of cut or slice of meat. Unlike steak, it is cut parallel to the spine and comprises of skeletal muscle and fat. They do not contain the backbone of the fish and are therefore easier to eat.
+        ///A knife with a flexible blade is used to fillet a fish..
         /// </summary>
         internal static string Seafood_Fish_Fillet_Description {
             get {
@@ -2105,7 +2107,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Fish Stock.
+        ///   Ищет локализованную строку, похожую на Flavored strained liquid made from fresh fish parts, water and seasoning is often termed as fish stock. The kind of animal meat used determines the variety of stock. The principal ingredients used while preparing stock are meat, bones, seasonings, herbs and spices..
         /// </summary>
         internal static string Seafood_Fish_Stock_Description {
             get {
@@ -2114,7 +2116,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Flounder.
+        ///   Ищет локализованную строку, похожую на Also known as fluke, it is a flat-fish found mostly in shallow waters which transforms from a normal fish to flat fish in adulthood. It is commonly found in the coastal areas of southern Gulf of Maine to Florida. There are many species of the flounder like sole or halibut which have their own distinct flavors..
         /// </summary>
         internal static string Seafood_Flounder_Description {
             get {
@@ -2123,7 +2125,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Haddock.
+        ///   Ищет локализованную строку, похожую на A salt water fish that is a popular food and widely fished commercially for its demand in the market. It belongs to the cod family. It is very popular for its flaxy and clean texture. It is sold fresh, smoked, frozen, dried or canned. In many popular cuisines, haddock is substituted for Atlantic cod..
         /// </summary>
         internal static string Seafood_Haddock_Description {
             get {
@@ -2132,7 +2134,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Hilsa.
+        ///   Ищет локализованную строку, похожую на A type of oily fish which is common in Bengali and Oriya cuisines. A very popular fish in Southeast Asia, it is the national fish of Bangladesh. It lays its eggs in large rivers despite being a sea fish and their young are caught while swimming back to the sea since they are the most delicious..
         /// </summary>
         internal static string Seafood_Hilsa_Description {
             get {
@@ -2141,7 +2143,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Mackerel.
+        ///   Ищет локализованную строку, похожую на A type of seawater fish that is often barbecued, baked or grilled. It is also known as Bhangra. Like any other fish, mackerel is high in omega-3 oils. It is eaten fondly for its firm flesh. This fish can be found in different varieties such as Atlantic mackerel, Spanish mackerel, King mackerel and Pacific mackerel..
         /// </summary>
         internal static string Seafood_Mackerel_Description {
             get {
@@ -2150,7 +2152,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Mullet.
+        ///   Ищет локализованную строку, похожую на Mullets are ray finned fish found around the world in tropical and coastal areas. There are more than 80 types of mullet. There are grey mullets, yellow-eyed mullets and red mullets. Most commercially harvested mullet species are striped and white mullet..
         /// </summary>
         internal static string Seafood_Mullet_Description {
             get {
@@ -2159,7 +2161,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Mussels.
+        ///   Ищет локализованную строку, похожую на Mussels are marine bivalves. Mussel is the common name used for a variety of clams, what differentiates them is their elongated shells. These beautiful sea creatures have a dark blue exterior and silver interior. Most mussels remain edible for only a day or two so be sure to check..
         /// </summary>
         internal static string Seafood_Mussels_Description {
             get {
@@ -2168,7 +2170,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Pearl spot.
+        ///   Ищет локализованную строку, похожую на Pearl spot fish, also popularly known as Karimeen or Chromide is considered a delicacy. The fish has an elliptical body with tiny shiny diamond spots all over its body. This variety of fish is one of the authentic dishes of the Kerala state. Karimeen, as called, it is commonly found in backwaters of Kerala..
         /// </summary>
         internal static string Seafood_Pearl_spot_Description {
             get {
@@ -2177,7 +2179,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Perch.
+        ///   Ищет локализованную строку, похожую на Perch is a name of a fish of the genus Perca. Perch fish are usually long and rounded with rough scales. These fishes are carnivorous and usually feed on smaller fishes. They are freshwater fish..
         /// </summary>
         internal static string Seafood_Perch_Description {
             get {
@@ -2186,7 +2188,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Pomfret.
+        ///   Ищет локализованную строку, похожую на Pomfret originated from the Portugese word &apos;pampo&apos;. A seawater fish with one single bone. Found in the Atlantic, Indian and Pacific oceans. Pomfrets have flat bodies and deeply forked tails. There are three types: silver, grey and black pomfrets. They are typically prepared whole after the inner organs of the fish have been removed..
         /// </summary>
         internal static string Seafood_Pomfret_Description {
             get {
@@ -2195,7 +2197,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Prawns.
+        ///   Ищет локализованную строку, похожую на Prawns are shrimp-like seafood that are 3-5 cm in length. For those who love eating seafood, prawns are a treat. They are of two kinds, there are the smaller ones and the bigger ones that are called tiger Prawns or jumbo prawns.
+        ///Though shrimp and prawns are addressed to the same of crustaceans, shrimps are the smaller ones..
         /// </summary>
         internal static string Seafood_Prawns_Description {
             get {
@@ -2204,7 +2207,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Salmon.
+        ///   Ищет локализованную строку, похожую на Salmon is a fresh water fish that is from the same family as trout. It has a pink-orange colored flesh. It is available as a whole, in steak or fillet form. It may be frozen, canned, dried or smoked. It is high in omega 3, vitamin D and proteins. Though farmed salmon is available all year round, wild salmon is only available from March until September..
         /// </summary>
         internal static string Seafood_Salmon_Description {
             get {
@@ -2213,7 +2216,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Sardines.
+        ///   Ищет локализованную строку, похожую на Sardines are silvery, small, oily seawater fish that are soft-boned. They are at the bottom of the aquatic food chain and survive mainly on plankton. They are sold fresh and due to their high perishability, they are also commonly sold in canned form..
         /// </summary>
         internal static string Seafood_Sardines_Description {
             get {
@@ -2222,7 +2225,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Shark.
+        ///   Ищет локализованную строку, похожую на Shark The huge water fish is fondly eaten for its fins. Shark is common seafood in many countries including Japan and Australia. Shark fish is eaten in fish and chips in parts of New Zealand and Australia. In many countries, shark meat is sold under the common name of fish..
         /// </summary>
         internal static string Seafood_Shark_Description {
             get {
@@ -2231,7 +2234,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Shellfish.
+        ///   Ищет локализованную строку, похожую на Shellfish are invertebrate aquatic animals that have a shell and are used as food. It includes various molluscs, crustaceans and echinoderms and is found in both fresh water and salt water..
         /// </summary>
         internal static string Seafood_Shellfish_Description {
             get {
@@ -2240,7 +2243,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Shrimp.
+        ///   Ищет локализованную строку, похожую на Shrimps refer to certain species of Decapod Crustaceans. The term is used broadly and covers a variety of species. Shrimps are mainly characterized by semi-transparent bodies which are flattened from side to side with a flexible abdomen. They have a fan-like tail..
         /// </summary>
         internal static string Seafood_Shrimp_Description {
             get {
@@ -2249,7 +2252,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Squids.
+        ///   Ищет локализованную строку, похожую на Squids belong to a class of mollusks known as Cephalopods. They are a very popular food in many diverse cuisines such as Chinese, English, Japanese, American, Italian and Spanish. The meat is firm and chewy having a sweet taste. Squid is popularly marketed as Calamari in many English-speaking countries..
         /// </summary>
         internal static string Seafood_Squids_Description {
             get {
@@ -2258,7 +2261,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Tuna Fish.
+        ///   Ищет локализованную строку, похожую на Tuna is a saltwater fish that belongs to the mackerel family. Tuna is popularly sold in canned form although fresh tuna is also available. Tuna is canned in edible oils, in brine, in water, and in various sauces.
+        ///Unique because of their pink to dark red flesh, tuna is a carnivorous fish specie..
         /// </summary>
         internal static string Seafood_Tuna_Fish_Description {
             get {
