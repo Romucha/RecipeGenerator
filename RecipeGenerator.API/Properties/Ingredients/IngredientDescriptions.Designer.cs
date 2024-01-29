@@ -2774,7 +2774,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Brown Sugar.
+        ///   Ищет локализованную строку, похожую на Brown sugar is a product of sucrose sugar. It is brown in color because of the presence of molasses in it. Often molasses are added to completely white sugar to make it brown. This is done to lessen the production cost of sugar. The first crystallization of sugarcane produces natural brown sugar..
         /// </summary>
         internal static string SugarAndSugarProducts_Brown_Sugar_Description {
             get {
@@ -2783,7 +2783,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cane Sugar.
+        ///   Ищет локализованную строку, похожую на Cane sugar is sugar extracted from sugar cane which is a tropical plant with a high content of sugar in it. The cane after undergoing many processes and filtration is finally used as a sweetener in beverages and desserts. Cane accounts for 80% of sugar produced..
         /// </summary>
         internal static string SugarAndSugarProducts_Cane_Sugar_Description {
             get {
@@ -2792,7 +2792,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Caramel.
+        ///   Ищет локализованную строку, похожую на A dark brown confectionery item produced using any type of sugar. It is a thick sweet liquid used as a flavoring, filling and topping for various recipes. The sugar and water mixture needs to be heated slowly to a high temperature until it breaks down and has the characteristic color and flavor..
         /// </summary>
         internal static string SugarAndSugarProducts_Caramel_Description {
             get {
@@ -2801,7 +2801,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Castor Sugar.
+        ///   Ищет локализованную строку, похожую на Caster or Castor sugar is finely granulated white sugar. It is most commonly found in North America and Britain. This kind of sugar is used for icing, essentially for its quick dissolving property. It is made by dissolving and purifying raw sugar content in various chemicals..
         /// </summary>
         internal static string SugarAndSugarProducts_Castor_Sugar_Description {
             get {
@@ -2810,7 +2810,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Golden Syrup.
+        ///   Ищет локализованную строку, похожую на A thick liquid sweetener which is golden in color and honey like with a rich flavor, golden syrup is very popular in European desserts. It is made by refining sugar cane and used as an alternative to honey. Since it has a heavy sweet flavor, it should be used in lesser amounts..
         /// </summary>
         internal static string SugarAndSugarProducts_Golden_Syrup_Description {
             get {
@@ -2819,7 +2819,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Honey.
+        ///   Ищет локализованную строку, похожую на Honey is a thick, sticky and sweet tasting liquid that bees produce by taking the nectar from flowers. It is used in desserts, jams, beverages etc. It is a natural energy booster and immunity builder. As of 2010, China is the largest honey producer in the world..
         /// </summary>
         internal static string SugarAndSugarProducts_Honey_Description {
             get {
@@ -2828,7 +2828,8 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Icing Sugar.
+        ///   Ищет локализованную строку, похожую на Also known as confectioner&apos;s sugar, it is prepared by grinding white sugar into a very fine powder. Sometimes, it is blended with corn flour for a finer texture.
+        ///Icing sugar is a handy ingredient used while making cakes and bakery products..
         /// </summary>
         internal static string SugarAndSugarProducts_Icing_Sugar_Description {
             get {
@@ -2837,7 +2838,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Jaggery.
+        ///   Ищет локализованную строку, похожую на Unrefined sugar, found in solid or powdered form, used in desserts as a substitute for sugar. Its color varies from golden brown to dark brown. It is used in both sweet and savory dishes across India. It keeps your body warm and is great to ward off common cold and cough..
         /// </summary>
         internal static string SugarAndSugarProducts_Jaggery_Description {
             get {
@@ -2846,7 +2847,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Sugar Candy.
+        ///   Ищет локализованную строку, похожую на Crystallised sugar lumps, these confectionary items originated in Persia and are known as rock sugar around the world. Its most common use in India is as a sacred offering to god but these crystals are used in a wide array of dishes too. Mishri-mawa is the most famous confectionery item and is often taken with aniseed at the end of a meal..
         /// </summary>
         internal static string SugarAndSugarProducts_Sugar_Candy_Description {
             get {
@@ -2855,7 +2856,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Sugar.
+        ///   Ищет локализованную строку, похожую на A white sweet crystal made primarily from sugar cane or sugar beets. It can also be produced from maple tree or certain palm trees. It is a type of carbohydrate which has replaced the traditional honey as a sweetener. It enhances the taste, structure, texture and appearance of many dishes, especially baked..
         /// </summary>
         internal static string SugarAndSugarProducts_Sugar_Description {
             get {
