@@ -18,6 +18,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>IngredientDescriptions.resx</DependentUpon>
     </Compile>
+    <Compile Update="Properties\Ingredients\IngredientLinks.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>IngredientLinks.resx</DependentUpon>
+    </Compile>
     <Compile Update="Properties\Ingredients\IngredientTypeDescriptions.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -49,6 +54,10 @@
     <EmbeddedResource Update="Properties\Ingredients\IngredientDescriptions.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>IngredientDescriptions.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Ingredients\IngredientLinks.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>IngredientLinks.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Properties\Ingredients\IngredientTypeDescriptions.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

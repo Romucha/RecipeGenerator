@@ -1,0 +1,1266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CerealsAndPulses_All_Purpose_Flour_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/All Purpose Flour</value>
+  </data>
+  <data name="CerealsAndPulses_Amaranth_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Amaranth</value>
+  </data>
+  <data name="CerealsAndPulses_Arborio_Rice_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Arborio Rice</value>
+  </data>
+  <data name="CerealsAndPulses_Barley_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Barley</value>
+  </data>
+  <data name="CerealsAndPulses_Barnyard_Millet_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Barnyard Millet</value>
+  </data>
+  <data name="CerealsAndPulses_Basmati_Rice_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Basmati Rice</value>
+  </data>
+  <data name="CerealsAndPulses_Bean_Sprouts_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Bean Sprouts</value>
+  </data>
+  <data name="CerealsAndPulses_Bengal_Gram_(Split)_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Bengal Gram (Split)</value>
+  </data>
+  <data name="CerealsAndPulses_Black-eyed_Beans_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Black-eyed Beans</value>
+  </data>
+  <data name="CerealsAndPulses_Black_Beans_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Black Beans</value>
+  </data>
+  <data name="CerealsAndPulses_Black_Gram_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Black Gram</value>
+  </data>
+  <data name="CerealsAndPulses_Breadcrumbs_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Breadcrumbs</value>
+  </data>
+  <data name="CerealsAndPulses_Bread_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Bread</value>
+  </data>
+  <data name="CerealsAndPulses_Brown_Rice_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Brown Rice</value>
+  </data>
+  <data name="CerealsAndPulses_Buckwheat_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Buckwheat</value>
+  </data>
+  <data name="CerealsAndPulses_Chickpeas_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Chickpeas</value>
+  </data>
+  <data name="CerealsAndPulses_Cornmeal_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cornmeal</value>
+  </data>
+  <data name="CerealsAndPulses_Couscous_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Couscous</value>
+  </data>
+  <data name="CerealsAndPulses_Finger_Millet_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Finger Millet</value>
+  </data>
+  <data name="CerealsAndPulses_Flour_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Flour</value>
+  </data>
+  <data name="CerealsAndPulses_Gram_flour_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Gram flour</value>
+  </data>
+  <data name="CerealsAndPulses_Green_Gram_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Green Gram</value>
+  </data>
+  <data name="CerealsAndPulses_Husked_Black_Gram_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Husked Black Gram</value>
+  </data>
+  <data name="CerealsAndPulses_Husked_Green_Gram_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Husked Green Gram</value>
+  </data>
+  <data name="CerealsAndPulses_Jowar_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Jowar</value>
+  </data>
+  <data name="CerealsAndPulses_Kidney_Beans_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Kidney Beans</value>
+  </data>
+  <data name="CerealsAndPulses_Muesli_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Muesli</value>
+  </data>
+  <data name="CerealsAndPulses_Oats_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Oats</value>
+  </data>
+  <data name="CerealsAndPulses_Pearl_Millet_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Pearl Millet</value>
+  </data>
+  <data name="CerealsAndPulses_Pigeon_Pea_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Pigeon Pea</value>
+  </data>
+  <data name="CerealsAndPulses_Pressed_Rice_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Pressed Rice</value>
+  </data>
+  <data name="CerealsAndPulses_Puffed_Rice_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Puffed Rice</value>
+  </data>
+  <data name="CerealsAndPulses_Rice_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Rice</value>
+  </data>
+  <data name="CerealsAndPulses_Semolina_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Semolina</value>
+  </data>
+  <data name="CerealsAndPulses_Tapioca_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Tapioca</value>
+  </data>
+  <data name="CerealsAndPulses_TypeName" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cereals and Pulses</value>
+  </data>
+  <data name="CerealsAndPulses_Water_Chestnut_flour_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Water Chestnut flour</value>
+  </data>
+  <data name="CerealsAndPulses_Whole_Bengal_Gram_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Whole Bengal Gram</value>
+  </data>
+  <data name="CerealsAndPulses_Whole_Brown_Lentils_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Whole Brown Lentils</value>
+  </data>
+  <data name="CerealsAndPulses_Whole_Wheat_Flour_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Whole Wheat Flour</value>
+  </data>
+  <data name="DairyProducts_Blue_Cheese_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Blue Cheese</value>
+  </data>
+  <data name="DairyProducts_Brie_Cheese_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Brie Cheese</value>
+  </data>
+  <data name="DairyProducts_Buttermilk_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Buttermilk</value>
+  </data>
+  <data name="DairyProducts_Butter_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Butter</value>
+  </data>
+  <data name="DairyProducts_Cheddar_Cheese_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cheddar Cheese</value>
+  </data>
+  <data name="DairyProducts_Clarified_Butter_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Clarified Butter</value>
+  </data>
+  <data name="DairyProducts_Condensed_Milk_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Condensed Milk</value>
+  </data>
+  <data name="DairyProducts_Cottage_Cheese_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cottage Cheese</value>
+  </data>
+  <data name="DairyProducts_Cream_Cheese_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cream Cheese</value>
+  </data>
+  <data name="DairyProducts_Cream_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cream</value>
+  </data>
+  <data name="DairyProducts_Feta_Cheese_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Feta Cheese</value>
+  </data>
+  <data name="DairyProducts_Gouda_Cheese_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Gouda Cheese</value>
+  </data>
+  <data name="DairyProducts_Gruyere_Cheese_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Gruyere Cheese</value>
+  </data>
+  <data name="DairyProducts_Hung_Curd_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Hung Curd</value>
+  </data>
+  <data name="DairyProducts_Khoya_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Khoya</value>
+  </data>
+  <data name="DairyProducts_Mascarpone_Cheese_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Mascarpone Cheese</value>
+  </data>
+  <data name="DairyProducts_Milk_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Milk</value>
+  </data>
+  <data name="DairyProducts_Mozzarella_Cheese_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Mozzarella Cheese</value>
+  </data>
+  <data name="DairyProducts_Parmesan_Cheese_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Parmesan Cheese</value>
+  </data>
+  <data name="DairyProducts_Provolone_Cheese_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Provolone Cheese</value>
+  </data>
+  <data name="DairyProducts_Ricotta_Cheese_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Ricotta Cheese</value>
+  </data>
+  <data name="DairyProducts_TypeName" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Dairy Products</value>
+  </data>
+  <data name="DairyProducts_Yogurt_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Yogurt</value>
+  </data>
+  <data name="Fruits_Apples_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Apples</value>
+  </data>
+  <data name="Fruits_Apricots_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Apricots</value>
+  </data>
+  <data name="Fruits_Banana_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Banana</value>
+  </data>
+  <data name="Fruits_Blueberries_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Blueberries</value>
+  </data>
+  <data name="Fruits_Cape_Gooseberry_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cape Gooseberry</value>
+  </data>
+  <data name="Fruits_Cherry_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cherry</value>
+  </data>
+  <data name="Fruits_Coconut_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Coconut</value>
+  </data>
+  <data name="Fruits_Cooking_Apples_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cooking Apples</value>
+  </data>
+  <data name="Fruits_Cranberry_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cranberry</value>
+  </data>
+  <data name="Fruits_Currant_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Currant</value>
+  </data>
+  <data name="Fruits_Custard_Apple_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Custard Apple</value>
+  </data>
+  <data name="Fruits_Dates_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Dates</value>
+  </data>
+  <data name="Fruits_Dried_Fruit_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Dried Fruit</value>
+  </data>
+  <data name="Fruits_Figs_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Figs</value>
+  </data>
+  <data name="Fruits_Grapefruit_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Grapefruit</value>
+  </data>
+  <data name="Fruits_Grapes_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Grapes</value>
+  </data>
+  <data name="Fruits_Guava_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Guava</value>
+  </data>
+  <data name="Fruits_Indian_Gooseberry_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Indian Gooseberry</value>
+  </data>
+  <data name="Fruits_Jamun_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Jamun</value>
+  </data>
+  <data name="Fruits_Kiwi_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Kiwi</value>
+  </data>
+  <data name="Fruits_Lemon_Juice_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Lemon Juice</value>
+  </data>
+  <data name="Fruits_Lemon_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Lemon</value>
+  </data>
+  <data name="Fruits_Lemon_Rind_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Lemon Rind</value>
+  </data>
+  <data name="Fruits_Lychee_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Lychee</value>
+  </data>
+  <data name="Fruits_Mango_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Mango</value>
+  </data>
+  <data name="Fruits_Mulberry_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Mulberry</value>
+  </data>
+  <data name="Fruits_Olives_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Olives</value>
+  </data>
+  <data name="Fruits_Orange_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Orange</value>
+  </data>
+  <data name="Fruits_Orange_Rind_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Orange Rind</value>
+  </data>
+  <data name="Fruits_Papaya_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Papaya</value>
+  </data>
+  <data name="Fruits_Peach_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Peach</value>
+  </data>
+  <data name="Fruits_Pear_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Pear</value>
+  </data>
+  <data name="Fruits_Pineapple_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Pineapple</value>
+  </data>
+  <data name="Fruits_Plum_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Plum</value>
+  </data>
+  <data name="Fruits_Pomegranate_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Pomegranate</value>
+  </data>
+  <data name="Fruits_Raisins_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Raisins</value>
+  </data>
+  <data name="Fruits_Strawberry_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Strawberry</value>
+  </data>
+  <data name="Fruits_Sultana_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Sultana</value>
+  </data>
+  <data name="Fruits_Tamarind_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Tamarind</value>
+  </data>
+  <data name="Fruits_Tomato_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Tomato</value>
+  </data>
+  <data name="Fruits_TypeName" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Fruits</value>
+  </data>
+  <data name="Fruits_Watermelon_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Watermelon</value>
+  </data>
+  <data name="Fruits_Water_Chestnut_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Water Chestnut</value>
+  </data>
+  <data name="Meat_Bacon_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Bacon</value>
+  </data>
+  <data name="Meat_Beef_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Beef</value>
+  </data>
+  <data name="Meat_Chicken_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Chicken</value>
+  </data>
+  <data name="Meat_Chicken_Liver_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Chicken Liver</value>
+  </data>
+  <data name="Meat_Chicken_Stock_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Chicken Stock</value>
+  </data>
+  <data name="Meat_Chops_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Chops</value>
+  </data>
+  <data name="Meat_Crab_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Crab</value>
+  </data>
+  <data name="Meat_Free_Range_Chicken_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Free Range Chicken</value>
+  </data>
+  <data name="Meat_Grass_Fed_Chicken_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Grass Fed Chicken</value>
+  </data>
+  <data name="Meat_Ham_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Ham</value>
+  </data>
+  <data name="Meat_Keema_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Keema</value>
+  </data>
+  <data name="Meat_Kidney_Meat_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Kidney Meat</value>
+  </data>
+  <data name="Meat_Lamb_Meat_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Lamb Meat</value>
+  </data>
+  <data name="Meat_Meat_Stock_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Meat Stock</value>
+  </data>
+  <data name="Meat_Mutton_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Mutton</value>
+  </data>
+  <data name="Meat_Mutton_Liver_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Mutton Liver</value>
+  </data>
+  <data name="Meat_Organic_Chicken_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Organic Chicken</value>
+  </data>
+  <data name="Meat_Partridge_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Partridge</value>
+  </data>
+  <data name="Meat_Pork_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Pork</value>
+  </data>
+  <data name="Meat_Quail_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Quail</value>
+  </data>
+  <data name="Meat_Skinned_Chicken_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Skinned Chicken</value>
+  </data>
+  <data name="Meat_Turkey_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Turkey</value>
+  </data>
+  <data name="Meat_TypeName" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Meat</value>
+  </data>
+  <data name="NutsAndOilseeds_Almonds_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Almonds</value>
+  </data>
+  <data name="NutsAndOilseeds_Blanched_Almonds_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Blanched Almonds</value>
+  </data>
+  <data name="NutsAndOilseeds_Canola_Oil_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Canola Oil</value>
+  </data>
+  <data name="NutsAndOilseeds_Cashew_Nuts_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cashew Nuts</value>
+  </data>
+  <data name="NutsAndOilseeds_Chia_Seeds_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Chia Seeds</value>
+  </data>
+  <data name="NutsAndOilseeds_Chironji_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Chironji</value>
+  </data>
+  <data name="NutsAndOilseeds_Hazelnut_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Hazelnut</value>
+  </data>
+  <data name="NutsAndOilseeds_Mustard_Oil_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Mustard Oil</value>
+  </data>
+  <data name="NutsAndOilseeds_Mustard_Seeds_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Mustard Seeds</value>
+  </data>
+  <data name="NutsAndOilseeds_Olive_Oil_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Olive Oil</value>
+  </data>
+  <data name="NutsAndOilseeds_Peanuts_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Peanuts</value>
+  </data>
+  <data name="NutsAndOilseeds_Pine_Nuts_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Pine Nuts</value>
+  </data>
+  <data name="NutsAndOilseeds_Pistachio_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Pistachio</value>
+  </data>
+  <data name="NutsAndOilseeds_Poppy_Seeds_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Poppy Seeds</value>
+  </data>
+  <data name="NutsAndOilseeds_Sesame_Oil_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Sesame Oil</value>
+  </data>
+  <data name="NutsAndOilseeds_Sesame_Seeds_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Sesame Seeds</value>
+  </data>
+  <data name="NutsAndOilseeds_Sunflower_Seeds_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Sunflower Seeds</value>
+  </data>
+  <data name="NutsAndOilseeds_TypeName" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Nuts and Oilseeds</value>
+  </data>
+  <data name="NutsAndOilseeds_Walnuts_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Walnuts</value>
+  </data>
+  <data name="NutsAndOilseeds_Walnuts_Link1" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Walnuts</value>
+  </data>
+  <data name="OtherIngredients_Agar_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Agar</value>
+  </data>
+  <data name="OtherIngredients_Ajinomoto_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Ajinomoto</value>
+  </data>
+  <data name="OtherIngredients_Almond_Milk_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Almond Milk</value>
+  </data>
+  <data name="OtherIngredients_Alum_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Alum</value>
+  </data>
+  <data name="OtherIngredients_Arrowroot_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Arrowroot</value>
+  </data>
+  <data name="OtherIngredients_Baking_Powder_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Baking Powder</value>
+  </data>
+  <data name="OtherIngredients_Baking_Soda_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Baking Soda</value>
+  </data>
+  <data name="OtherIngredients_Balsamic_Vinegar_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Balsamic Vinegar</value>
+  </data>
+  <data name="OtherIngredients_Barfi_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Barfi</value>
+  </data>
+  <data name="OtherIngredients_Beer_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Beer</value>
+  </data>
+  <data name="OtherIngredients_Brown_Sauce_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Brown Sauce</value>
+  </data>
+  <data name="OtherIngredients_Chocolate_Chips_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Chocolate Chips</value>
+  </data>
+  <data name="OtherIngredients_Chocolate_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Chocolate</value>
+  </data>
+  <data name="OtherIngredients_Cocoa_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cocoa</value>
+  </data>
+  <data name="OtherIngredients_Coconut_Milk_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Coconut Milk</value>
+  </data>
+  <data name="OtherIngredients_Coconut_Oil_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Coconut Oil</value>
+  </data>
+  <data name="OtherIngredients_Coconut_Water_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Coconut Water</value>
+  </data>
+  <data name="OtherIngredients_Coffee_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Coffee</value>
+  </data>
+  <data name="OtherIngredients_Cognac_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cognac</value>
+  </data>
+  <data name="OtherIngredients_Cornflour_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cornflour</value>
+  </data>
+  <data name="OtherIngredients_Cranberry_Sauce_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cranberry Sauce</value>
+  </data>
+  <data name="OtherIngredients_Desiccated_Coconut_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Desiccated Coconut</value>
+  </data>
+  <data name="OtherIngredients_Egg_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Egg</value>
+  </data>
+  <data name="OtherIngredients_Fish_Sauce_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Fish Sauce</value>
+  </data>
+  <data name="OtherIngredients_Flat_Noodles_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Flat Noodles</value>
+  </data>
+  <data name="OtherIngredients_Gelatin_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Gelatin</value>
+  </data>
+  <data name="OtherIngredients_Glycerine_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Glycerine</value>
+  </data>
+  <data name="OtherIngredients_Gold_Leaves_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Gold Leaves</value>
+  </data>
+  <data name="OtherIngredients_Guchchi_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Guchchi</value>
+  </data>
+  <data name="OtherIngredients_Hoisin_Sauce_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Hoisin Sauce</value>
+  </data>
+  <data name="OtherIngredients_Jelly_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Jelly</value>
+  </data>
+  <data name="OtherIngredients_Jus_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Jus</value>
+  </data>
+  <data name="OtherIngredients_Lotus_Seeds_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Lotus Seeds</value>
+  </data>
+  <data name="OtherIngredients_Malt_Vinegar_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Malt Vinegar</value>
+  </data>
+  <data name="OtherIngredients_Margarine_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Margarine</value>
+  </data>
+  <data name="OtherIngredients_Marzipan_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Marzipan</value>
+  </data>
+  <data name="OtherIngredients_Mayonnaise_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Mayonnaise</value>
+  </data>
+  <data name="OtherIngredients_Melon_Seeds_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Melon Seeds</value>
+  </data>
+  <data name="OtherIngredients_Meringue_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Meringue</value>
+  </data>
+  <data name="OtherIngredients_Oyster_Sauce_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Oyster Sauce</value>
+  </data>
+  <data name="OtherIngredients_Paan_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Paan</value>
+  </data>
+  <data name="OtherIngredients_Papad_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Papad</value>
+  </data>
+  <data name="OtherIngredients_Pasta_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Pasta</value>
+  </data>
+  <data name="OtherIngredients_Petha_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Petha</value>
+  </data>
+  <data name="OtherIngredients_Polenta_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Polenta</value>
+  </data>
+  <data name="OtherIngredients_Quinoa_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Quinoa</value>
+  </data>
+  <data name="OtherIngredients_Red_Wine_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Red Wine</value>
+  </data>
+  <data name="OtherIngredients_Red_Wine_Vinegar_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Red Wine Vinegar</value>
+  </data>
+  <data name="OtherIngredients_Rice_Flour_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Rice Flour</value>
+  </data>
+  <data name="OtherIngredients_Rice_Noodles_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Rice Noodles</value>
+  </data>
+  <data name="OtherIngredients_Rice_Vinegar_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Rice Vinegar</value>
+  </data>
+  <data name="OtherIngredients_Rose_Water_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Rose Water</value>
+  </data>
+  <data name="OtherIngredients_Roux_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Roux</value>
+  </data>
+  <data name="OtherIngredients_Rum_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Rum</value>
+  </data>
+  <data name="OtherIngredients_Sake_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Sake</value>
+  </data>
+  <data name="OtherIngredients_Screw_Pine_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Screw Pine</value>
+  </data>
+  <data name="OtherIngredients_Sea_Salt_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Sea Salt</value>
+  </data>
+  <data name="OtherIngredients_Sev_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Sev</value>
+  </data>
+  <data name="OtherIngredients_Sharbat_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Sharbat</value>
+  </data>
+  <data name="OtherIngredients_Soya_Sauce_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Soya Sauce</value>
+  </data>
+  <data name="OtherIngredients_Soy_Milk_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Soy Milk</value>
+  </data>
+  <data name="OtherIngredients_Tartaric_Acid_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Tartaric Acid</value>
+  </data>
+  <data name="OtherIngredients_Tea_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Tea</value>
+  </data>
+  <data name="OtherIngredients_Tofu_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Tofu</value>
+  </data>
+  <data name="OtherIngredients_Tomato_Puree_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Tomato Puree</value>
+  </data>
+  <data name="OtherIngredients_Tortilla_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Tortilla</value>
+  </data>
+  <data name="OtherIngredients_TypeName" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Other Ingredients</value>
+  </data>
+  <data name="OtherIngredients_Vanilla_Essence_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Vanilla Essence</value>
+  </data>
+  <data name="OtherIngredients_Vegetable_Oil_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Vegetable Oil</value>
+  </data>
+  <data name="OtherIngredients_Vermicelli_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Vermicelli</value>
+  </data>
+  <data name="OtherIngredients_Vetiver_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Vetiver</value>
+  </data>
+  <data name="OtherIngredients_Vinaigrette_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Vinaigrette</value>
+  </data>
+  <data name="OtherIngredients_Vinegar_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Vinegar</value>
+  </data>
+  <data name="OtherIngredients_White_Pepper_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/White Pepper</value>
+  </data>
+  <data name="OtherIngredients_White_Wine_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/White Wine</value>
+  </data>
+  <data name="OtherIngredients_Yeast_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Yeast</value>
+  </data>
+  <data name="Seafood_Anchovies_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Anchovies</value>
+  </data>
+  <data name="Seafood_Cat_fish_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cat fish</value>
+  </data>
+  <data name="Seafood_Clams_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Clams</value>
+  </data>
+  <data name="Seafood_Cod_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cod</value>
+  </data>
+  <data name="Seafood_Cuttle_fish_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cuttle fish</value>
+  </data>
+  <data name="Seafood_Fish_Fillet_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Fish Fillet</value>
+  </data>
+  <data name="Seafood_Fish_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Fish</value>
+  </data>
+  <data name="Seafood_Fish_Stock_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Fish Stock</value>
+  </data>
+  <data name="Seafood_Flounder_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Flounder</value>
+  </data>
+  <data name="Seafood_Haddock_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Haddock</value>
+  </data>
+  <data name="Seafood_Hilsa_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Hilsa</value>
+  </data>
+  <data name="Seafood_Mackerel_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Mackerel</value>
+  </data>
+  <data name="Seafood_Mullet_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Mullet</value>
+  </data>
+  <data name="Seafood_Mussels_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Mussels</value>
+  </data>
+  <data name="Seafood_Pearl_spot_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Pearl spot</value>
+  </data>
+  <data name="Seafood_Perch_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Perch</value>
+  </data>
+  <data name="Seafood_Pomfret_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Pomfret</value>
+  </data>
+  <data name="Seafood_Prawns_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Prawns</value>
+  </data>
+  <data name="Seafood_Salmon_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Salmon</value>
+  </data>
+  <data name="Seafood_Sardines_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Sardines</value>
+  </data>
+  <data name="Seafood_Shark_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Shark</value>
+  </data>
+  <data name="Seafood_Shellfish_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Shellfish</value>
+  </data>
+  <data name="Seafood_Shrimp_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Shrimp</value>
+  </data>
+  <data name="Seafood_Squids_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Squids</value>
+  </data>
+  <data name="Seafood_Tuna_Fish_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Tuna Fish</value>
+  </data>
+  <data name="Seafood_TypeName" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Seafood</value>
+  </data>
+  <data name="SpicesAndHerbs_Acacia_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Acacia</value>
+  </data>
+  <data name="SpicesAndHerbs_Allspice_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Allspice</value>
+  </data>
+  <data name="SpicesAndHerbs_Aniseed_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Aniseed</value>
+  </data>
+  <data name="SpicesAndHerbs_Asafoetida_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Asafoetida</value>
+  </data>
+  <data name="SpicesAndHerbs_Basil_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Basil</value>
+  </data>
+  <data name="SpicesAndHerbs_Bay_Leaf_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Bay Leaf</value>
+  </data>
+  <data name="SpicesAndHerbs_Black_Cardamom_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Black Cardamom</value>
+  </data>
+  <data name="SpicesAndHerbs_Black_Cumin_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Black Cumin</value>
+  </data>
+  <data name="SpicesAndHerbs_Black_Pepper_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Black Pepper</value>
+  </data>
+  <data name="SpicesAndHerbs_Cajun_Spices_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cajun Spices</value>
+  </data>
+  <data name="SpicesAndHerbs_Caraway_Seeds_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Caraway Seeds</value>
+  </data>
+  <data name="SpicesAndHerbs_Carom_Seeds_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Carom Seeds</value>
+  </data>
+  <data name="SpicesAndHerbs_Cayenne_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cayenne</value>
+  </data>
+  <data name="SpicesAndHerbs_Chives_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Chives</value>
+  </data>
+  <data name="SpicesAndHerbs_Cinnamon_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cinnamon</value>
+  </data>
+  <data name="SpicesAndHerbs_Cloves_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cloves</value>
+  </data>
+  <data name="SpicesAndHerbs_Coriander_Leaves_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Coriander Leaves</value>
+  </data>
+  <data name="SpicesAndHerbs_Coriander_Powder_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Coriander Powder</value>
+  </data>
+  <data name="SpicesAndHerbs_Coriander_Seeds_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Coriander Seeds</value>
+  </data>
+  <data name="SpicesAndHerbs_Cumin_Seeds_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cumin Seeds</value>
+  </data>
+  <data name="SpicesAndHerbs_Curry_Leaves_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Curry Leaves</value>
+  </data>
+  <data name="SpicesAndHerbs_Dill_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Dill</value>
+  </data>
+  <data name="SpicesAndHerbs_Dried_Fenugreek_Leaves_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Dried Fenugreek Leaves</value>
+  </data>
+  <data name="SpicesAndHerbs_Dry_Ginger_Powder_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Dry Ginger Powder</value>
+  </data>
+  <data name="SpicesAndHerbs_Fennel_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Fennel</value>
+  </data>
+  <data name="SpicesAndHerbs_Fenugreek_Seeds_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Fenugreek Seeds</value>
+  </data>
+  <data name="SpicesAndHerbs_Five_Spice_Powder_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Five Spice Powder</value>
+  </data>
+  <data name="SpicesAndHerbs_Galangal_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Galangal</value>
+  </data>
+  <data name="SpicesAndHerbs_Garam_Masala_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Garam Masala</value>
+  </data>
+  <data name="SpicesAndHerbs_Green_Cardamom_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Green Cardamom</value>
+  </data>
+  <data name="SpicesAndHerbs_Herbs_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Herbs</value>
+  </data>
+  <data name="SpicesAndHerbs_Kashmiri_Mirch_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Kashmiri Mirch</value>
+  </data>
+  <data name="SpicesAndHerbs_Lemongrass_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Lemongrass</value>
+  </data>
+  <data name="SpicesAndHerbs_Mace_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Mace</value>
+  </data>
+  <data name="SpicesAndHerbs_Marjoram_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Marjoram</value>
+  </data>
+  <data name="SpicesAndHerbs_Mint_Leaves_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Mint Leaves</value>
+  </data>
+  <data name="SpicesAndHerbs_Mustard_Powder_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Mustard Powder</value>
+  </data>
+  <data name="SpicesAndHerbs_Nasturtium_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Nasturtium</value>
+  </data>
+  <data name="SpicesAndHerbs_Nutmeg_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Nutmeg</value>
+  </data>
+  <data name="SpicesAndHerbs_Onion_Seeds_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Onion Seeds</value>
+  </data>
+  <data name="SpicesAndHerbs_Oregano_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Oregano</value>
+  </data>
+  <data name="SpicesAndHerbs_Paprika_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Paprika</value>
+  </data>
+  <data name="SpicesAndHerbs_Parsley_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Parsley</value>
+  </data>
+  <data name="SpicesAndHerbs_Raw_Mango_Powder_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Raw Mango Powder</value>
+  </data>
+  <data name="SpicesAndHerbs_Red_Chilli_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Red Chilli</value>
+  </data>
+  <data name="SpicesAndHerbs_Rock_Salt_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Rock Salt</value>
+  </data>
+  <data name="SpicesAndHerbs_Rosemary_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Rosemary</value>
+  </data>
+  <data name="SpicesAndHerbs_Saffron_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Saffron</value>
+  </data>
+  <data name="SpicesAndHerbs_Sage_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Sage</value>
+  </data>
+  <data name="SpicesAndHerbs_Salt_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Salt</value>
+  </data>
+  <data name="SpicesAndHerbs_Star_Anise_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Star Anise</value>
+  </data>
+  <data name="SpicesAndHerbs_Thyme_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Thyme</value>
+  </data>
+  <data name="SpicesAndHerbs_Tulsi_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Tulsi</value>
+  </data>
+  <data name="SpicesAndHerbs_Turmeric_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Turmeric</value>
+  </data>
+  <data name="SpicesAndHerbs_TypeName" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Spices and Herbs</value>
+  </data>
+  <data name="SpicesAndHerbs_Yellow_Chillies_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Yellow Chillies</value>
+  </data>
+  <data name="SugarAndSugarProducts_Brown_Sugar_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Brown Sugar</value>
+  </data>
+  <data name="SugarAndSugarProducts_Cane_Sugar_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cane Sugar</value>
+  </data>
+  <data name="SugarAndSugarProducts_Caramel_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Caramel</value>
+  </data>
+  <data name="SugarAndSugarProducts_Castor_Sugar_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Castor Sugar</value>
+  </data>
+  <data name="SugarAndSugarProducts_Golden_Syrup_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Golden Syrup</value>
+  </data>
+  <data name="SugarAndSugarProducts_Honey_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Honey</value>
+  </data>
+  <data name="SugarAndSugarProducts_Icing_Sugar_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Icing Sugar</value>
+  </data>
+  <data name="SugarAndSugarProducts_Jaggery_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Jaggery</value>
+  </data>
+  <data name="SugarAndSugarProducts_Sugar_Candy_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Sugar Candy</value>
+  </data>
+  <data name="SugarAndSugarProducts_Sugar_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Sugar</value>
+  </data>
+  <data name="SugarAndSugarProducts_TypeName" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Sugar andSugar Products</value>
+  </data>
+  <data name="Vegetables_Artichoke_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Artichoke</value>
+  </data>
+  <data name="Vegetables_Ash_Gourd_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Ash Gourd</value>
+  </data>
+  <data name="Vegetables_Asparagus_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Asparagus</value>
+  </data>
+  <data name="Vegetables_Avocado_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Avocado</value>
+  </data>
+  <data name="Vegetables_Baby_Corn_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Baby Corn</value>
+  </data>
+  <data name="Vegetables_Bamboo_Shoot_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Bamboo Shoot</value>
+  </data>
+  <data name="Vegetables_Beetroot_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Beetroot</value>
+  </data>
+  <data name="Vegetables_Bell_Pepper_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Bell Pepper</value>
+  </data>
+  <data name="Vegetables_Bitter_Gourd_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Bitter Gourd</value>
+  </data>
+  <data name="Vegetables_Bok_Choy_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Bok Choy</value>
+  </data>
+  <data name="Vegetables_Bottle_Gourd_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Bottle Gourd</value>
+  </data>
+  <data name="Vegetables_Broad_Beans_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Broad Beans</value>
+  </data>
+  <data name="Vegetables_Broccoli_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Broccoli</value>
+  </data>
+  <data name="Vegetables_Cabbage_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cabbage</value>
+  </data>
+  <data name="Vegetables_Capers_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Capers</value>
+  </data>
+  <data name="Vegetables_Capsicum_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Capsicum</value>
+  </data>
+  <data name="Vegetables_Carrot_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Carrot</value>
+  </data>
+  <data name="Vegetables_Cauliflower_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cauliflower</value>
+  </data>
+  <data name="Vegetables_Celery_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Celery</value>
+  </data>
+  <data name="Vegetables_Cherry_Tomatoes_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cherry Tomatoes</value>
+  </data>
+  <data name="Vegetables_Cluster_Beans_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cluster Beans</value>
+  </data>
+  <data name="Vegetables_Colocasia_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Colocasia</value>
+  </data>
+  <data name="Vegetables_Corn_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Corn</value>
+  </data>
+  <data name="Vegetables_Cucumber_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Cucumber</value>
+  </data>
+  <data name="Vegetables_Drumstick_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Drumstick</value>
+  </data>
+  <data name="Vegetables_Eggplant_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Eggplant</value>
+  </data>
+  <data name="Vegetables_Fenugreek_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Fenugreek</value>
+  </data>
+  <data name="Vegetables_French_Beans_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/French Beans</value>
+  </data>
+  <data name="Vegetables_Garlic_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Garlic</value>
+  </data>
+  <data name="Vegetables_Gherkins_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Gherkins</value>
+  </data>
+  <data name="Vegetables_Ginger_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Ginger</value>
+  </data>
+  <data name="Vegetables_Green_Chillies_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Green Chillies</value>
+  </data>
+  <data name="Vegetables_Green_Peas_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Green Peas</value>
+  </data>
+  <data name="Vegetables_Horseradish_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Horseradish</value>
+  </data>
+  <data name="Vegetables_Jackfruit_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Jackfruit</value>
+  </data>
+  <data name="Vegetables_Jalapeno_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Jalapeno</value>
+  </data>
+  <data name="Vegetables_Kaffir_Lime_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Kaffir Lime</value>
+  </data>
+  <data name="Vegetables_Lady_Finger_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Lady Finger</value>
+  </data>
+  <data name="Vegetables_Leek_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Leek</value>
+  </data>
+  <data name="Vegetables_Lettuce_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Lettuce</value>
+  </data>
+  <data name="Vegetables_Lotus_Stem_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Lotus Stem</value>
+  </data>
+  <data name="Vegetables_Mushroom_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Mushroom</value>
+  </data>
+  <data name="Vegetables_Mustard_Leaves_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Mustard Leaves</value>
+  </data>
+  <data name="Vegetables_Onion_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Onion</value>
+  </data>
+  <data name="Vegetables_Pigweed_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Pigweed</value>
+  </data>
+  <data name="Vegetables_Pimiento_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Pimiento</value>
+  </data>
+  <data name="Vegetables_Plantain_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Plantain</value>
+  </data>
+  <data name="Vegetables_Potatoes_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Potatoes</value>
+  </data>
+  <data name="Vegetables_Pumpkin_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Pumpkin</value>
+  </data>
+  <data name="Vegetables_Radish_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Radish</value>
+  </data>
+  <data name="Vegetables_Ridge_Gourd_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Ridge Gourd</value>
+  </data>
+  <data name="Vegetables_Rocket_Leaves_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Rocket Leaves</value>
+  </data>
+  <data name="Vegetables_Round_Gourd_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Round Gourd</value>
+  </data>
+  <data name="Vegetables_Shallots_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Shallots</value>
+  </data>
+  <data name="Vegetables_Shiitake_Mushroom_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Shiitake Mushroom</value>
+  </data>
+  <data name="Vegetables_Snake_Beans_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Snake Beans</value>
+  </data>
+  <data name="Vegetables_Sorrel_Leaves_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Sorrel Leaves</value>
+  </data>
+  <data name="Vegetables_Spinach_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Spinach</value>
+  </data>
+  <data name="Vegetables_Spring_Onion_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Spring Onion</value>
+  </data>
+  <data name="Vegetables_Sweet_Potatoes_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Sweet Potatoes</value>
+  </data>
+  <data name="Vegetables_Turnip_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Turnip</value>
+  </data>
+  <data name="Vegetables_TypeName" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Vegetables</value>
+  </data>
+  <data name="Vegetables_Yam_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Yam</value>
+  </data>
+  <data name="Vegetables_Zucchini_Link" xml:space="preserve">
+    <value>https://www.wikipedia.org/wiki/Zucchini</value>
+  </data>
+</root>
