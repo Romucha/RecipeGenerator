@@ -970,15 +970,6 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Fruits.
-        /// </summary>
-        internal static string Fruits_TypeName {
-            get {
-                return ResourceManager.GetString("Fruits_TypeName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Ищет локализованную строку, похожую на Water Chestnut.
         /// </summary>
         internal static string Fruits_Water_Chestnut_Name {

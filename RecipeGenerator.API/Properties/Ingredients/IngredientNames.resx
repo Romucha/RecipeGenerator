@@ -420,9 +420,6 @@
   <data name="Fruits_Tomato_Name" xml:space="preserve">
     <value>Tomato</value>
   </data>
-  <data name="Fruits_TypeName" xml:space="preserve">
-    <value>Fruits</value>
-  </data>
   <data name="Fruits_Watermelon_Name" xml:space="preserve">
     <value>Watermelon</value>
   </data>

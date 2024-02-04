@@ -669,5 +669,425 @@ namespace RecipeGenerator.API.Properties.Ingredients {
                 return ((byte[])(obj));
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Apples_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Apples_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Apricots_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Apricots_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Banana_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Banana_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Blueberries_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Blueberries_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Cape_Gooseberry_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Cape_Gooseberry_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Cherry_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Cherry_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Coconut_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Coconut_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Cooking_Apples_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Cooking_Apples_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Cranberry_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Cranberry_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Currant_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Currant_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Custard_Apple_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Custard_Apple_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Dates_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Dates_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Dried_Fruit_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Dried_Fruit_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Figs_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Figs_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Grapefruit_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Grapefruit_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Grapes_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Grapes_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Guava_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Guava_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Indian_Gooseberry_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Indian_Gooseberry_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Jamun_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Jamun_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Kiwi_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Kiwi_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Lemon_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Lemon_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Lemon_Juice_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Lemon_Juice_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Lemon_Rind_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Lemon_Rind_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Lychee_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Lychee_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Mango_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Mango_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Mulberry_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Mulberry_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Olives_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Olives_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Orange_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Orange_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Orange_Rind_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Orange_Rind_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Papaya_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Papaya_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Peach_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Peach_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Pear_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Pear_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Pineapple_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Pineapple_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Plum_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Plum_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Pomegranate_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Pomegranate_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Raisins_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Raisins_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Strawberry_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Strawberry_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Sultana_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Sultana_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Tamarind_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Tamarind_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Tomato_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Tomato_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Water_Chestnut_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Water_Chestnut_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Fruits_Watermelon_Image {
+            get {
+                object obj = ResourceManager.GetObject("Fruits_Watermelon_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }
