@@ -601,15 +601,6 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Dairy Products.
-        /// </summary>
-        internal static string DairyProducts_TypeName {
-            get {
-                return ResourceManager.GetString("DairyProducts_TypeName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Ищет локализованную строку, похожую на Yogurt.
         /// </summary>
         internal static string DairyProducts_Yogurt_Name {

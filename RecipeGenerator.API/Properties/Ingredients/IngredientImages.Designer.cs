@@ -449,5 +449,225 @@ namespace RecipeGenerator.API.Properties.Ingredients {
                 return ((byte[])(obj));
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Blue_Cheese_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Blue_Cheese_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Brie_Cheese_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Brie_Cheese_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Butter_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Butter_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Buttermilk_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Buttermilk_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Cheddar_Cheese_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Cheddar_Cheese_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Clarified_Butter_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Clarified_Butter_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Condensed_Milk_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Condensed_Milk_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Cottage_Cheese_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Cottage_Cheese_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Cream_Cheese_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Cream_Cheese_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Cream_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Cream_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Feta_Cheese_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Feta_Cheese_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Gouda_Cheese_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Gouda_Cheese_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Gruyere_Cheese_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Gruyere_Cheese_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Hung_Curd_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Hung_Curd_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Khoya_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Khoya_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Mascarpone_Cheese_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Mascarpone_Cheese_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Milk_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Milk_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Mozzarella_Cheese_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Mozzarella_Cheese_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Parmesan_Cheese_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Parmesan_Cheese_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Provolone_Cheese_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Provolone_Cheese_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Ricotta_Cheese_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Ricotta_Cheese_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] DairyProducts_Yogurt_Image {
+            get {
+                object obj = ResourceManager.GetObject("DairyProducts_Yogurt_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }

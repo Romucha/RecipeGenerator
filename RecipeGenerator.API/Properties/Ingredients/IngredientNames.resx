@@ -297,9 +297,6 @@
   <data name="DairyProducts_Ricotta_Cheese_Name" xml:space="preserve">
     <value>Ricotta Cheese</value>
   </data>
-  <data name="DairyProducts_TypeName" xml:space="preserve">
-    <value>Dairy Products</value>
-  </data>
   <data name="DairyProducts_Yogurt_Name" xml:space="preserve">
     <value>Yogurt</value>
   </data>
