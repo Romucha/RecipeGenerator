@@ -409,5 +409,45 @@ namespace RecipeGenerator.API.Properties.Ingredients {
                 return ((byte[])(obj));
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] CerealsAndPulses_Water_Chestnut_Flour_Image {
+            get {
+                object obj = ResourceManager.GetObject("CerealsAndPulses_Water_Chestnut_Flour_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] CerealsAndPulses_Whole_Bengal_Gram_Image {
+            get {
+                object obj = ResourceManager.GetObject("CerealsAndPulses_Whole_Bengal_Gram_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] CerealsAndPulses_Whole_Brown_Lentils_Image {
+            get {
+                object obj = ResourceManager.GetObject("CerealsAndPulses_Whole_Brown_Lentils_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] CerealsAndPulses_Whole_Wheat_Flour_Image {
+            get {
+                object obj = ResourceManager.GetObject("CerealsAndPulses_Whole_Wheat_Flour_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }

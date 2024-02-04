@@ -376,11 +376,11 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Water Chestnut flour.
+        ///   Ищет локализованную строку, похожую на Water Chestnut Flour.
         /// </summary>
-        internal static string CerealsAndPulses_Water_Chestnut_flour_Name {
+        internal static string CerealsAndPulses_Water_Chestnut_Flour_Name {
             get {
-                return ResourceManager.GetString("CerealsAndPulses_Water_Chestnut_flour_Name", resourceCulture);
+                return ResourceManager.GetString("CerealsAndPulses_Water_Chestnut_Flour_Name", resourceCulture);
             }
         }
         

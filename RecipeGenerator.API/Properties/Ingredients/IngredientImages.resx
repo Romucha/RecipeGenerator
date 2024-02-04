@@ -223,4 +223,16 @@
   <data name="CerealsAndPulses_Tapioca_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Tapioca_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="CerealsAndPulses_Water_Chestnut_Flour_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Water_Chestnut_Flour_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CerealsAndPulses_Whole_Bengal_Gram_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Whole_Bengal_Gram_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CerealsAndPulses_Whole_Brown_Lentils_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Whole_Brown_Lentils_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CerealsAndPulses_Whole_Wheat_Flour_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Whole_Wheat_Flour_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
