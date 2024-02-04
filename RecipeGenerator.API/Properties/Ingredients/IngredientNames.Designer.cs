@@ -241,11 +241,11 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Gram flour.
+        ///   Ищет локализованную строку, похожую на Gram Flour.
         /// </summary>
-        internal static string CerealsAndPulses_Gram_flour_Name {
+        internal static string CerealsAndPulses_Gram_Flour_Name {
             get {
-                return ResourceManager.GetString("CerealsAndPulses_Gram_flour_Name", resourceCulture);
+                return ResourceManager.GetString("CerealsAndPulses_Gram_Flour_Name", resourceCulture);
             }
         }
         
@@ -372,15 +372,6 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         internal static string CerealsAndPulses_Tapioca_Name {
             get {
                 return ResourceManager.GetString("CerealsAndPulses_Tapioca_Name", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Cereals and Pulses.
-        /// </summary>
-        internal static string CerealsAndPulses_TypeName {
-            get {
-                return ResourceManager.GetString("CerealsAndPulses_TypeName", resourceCulture);
             }
         }
         

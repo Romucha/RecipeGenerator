@@ -177,8 +177,8 @@
   <data name="CerealsAndPulses_Flour_Name" xml:space="preserve">
     <value>Flour</value>
   </data>
-  <data name="CerealsAndPulses_Gram_flour_Name" xml:space="preserve">
-    <value>Gram flour</value>
+  <data name="CerealsAndPulses_Gram_Flour_Name" xml:space="preserve">
+    <value>Gram Flour</value>
   </data>
   <data name="CerealsAndPulses_Green_Gram_Name" xml:space="preserve">
     <value>Green Gram</value>
@@ -221,9 +221,6 @@
   </data>
   <data name="CerealsAndPulses_Tapioca_Name" xml:space="preserve">
     <value>Tapioca</value>
-  </data>
-  <data name="CerealsAndPulses_TypeName" xml:space="preserve">
-    <value>Cereals and Pulses</value>
   </data>
   <data name="CerealsAndPulses_Water_Chestnut_flour_Name" xml:space="preserve">
     <value>Water Chestnut flour</value>
