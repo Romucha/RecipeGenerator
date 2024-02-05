@@ -492,9 +492,6 @@
   <data name="Meat_Turkey_Name" xml:space="preserve">
     <value>Turkey</value>
   </data>
-  <data name="Meat_TypeName" xml:space="preserve">
-    <value>Meat</value>
-  </data>
   <data name="NutsAndOilseeds_Almonds_Name" xml:space="preserve">
     <value>Almonds</value>
   </data>

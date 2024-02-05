@@ -1186,15 +1186,6 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Meat.
-        /// </summary>
-        internal static string Meat_TypeName {
-            get {
-                return ResourceManager.GetString("Meat_TypeName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Ищет локализованную строку, похожую на Almonds.
         /// </summary>
         internal static string NutsAndOilseeds_Almonds_Name {

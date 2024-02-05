@@ -1089,5 +1089,225 @@ namespace RecipeGenerator.API.Properties.Ingredients {
                 return ((byte[])(obj));
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Bacon_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Bacon_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Beef_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Beef_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Chicken_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Chicken_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Chicken_Liver_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Chicken_Liver_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Chicken_Stock_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Chicken_Stock_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Chops_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Chops_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Crab_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Crab_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Free_Range_Chicken_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Free_Range_Chicken_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Grass_Fed_Chicken_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Grass_Fed_Chicken_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Ham_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Ham_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Keema_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Keema_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Kidney_Meat_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Kidney_Meat_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Lamb_Meat_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Lamb_Meat_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Meat_Stock_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Meat_Stock_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Mutton_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Mutton_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Mutton_Liver_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Mutton_Liver_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Organic_Chicken_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Organic_Chicken_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Partridge_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Partridge_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Pork_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Pork_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Quail_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Quail_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Skinned_Chicken_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Skinned_Chicken_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Meat_Turkey_Image {
+            get {
+                object obj = ResourceManager.GetObject("Meat_Turkey_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }
