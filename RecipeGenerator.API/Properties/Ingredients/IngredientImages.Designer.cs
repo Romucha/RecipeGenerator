@@ -1309,5 +1309,185 @@ namespace RecipeGenerator.API.Properties.Ingredients {
                 return ((byte[])(obj));
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] NutsAndOilseeds_Almonds_Image {
+            get {
+                object obj = ResourceManager.GetObject("NutsAndOilseeds_Almonds_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] NutsAndOilseeds_Blanched_Almonds_Image {
+            get {
+                object obj = ResourceManager.GetObject("NutsAndOilseeds_Blanched_Almonds_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] NutsAndOilseeds_Canola_Oil_Image {
+            get {
+                object obj = ResourceManager.GetObject("NutsAndOilseeds_Canola_Oil_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] NutsAndOilseeds_Cashew_Nuts_Image {
+            get {
+                object obj = ResourceManager.GetObject("NutsAndOilseeds_Cashew_Nuts_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] NutsAndOilseeds_Chia_Seeds_Image {
+            get {
+                object obj = ResourceManager.GetObject("NutsAndOilseeds_Chia_Seeds_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] NutsAndOilseeds_Chironji_Image {
+            get {
+                object obj = ResourceManager.GetObject("NutsAndOilseeds_Chironji_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] NutsAndOilseeds_Hazelnut_Image {
+            get {
+                object obj = ResourceManager.GetObject("NutsAndOilseeds_Hazelnut_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] NutsAndOilseeds_Mustard_Oil_Image {
+            get {
+                object obj = ResourceManager.GetObject("NutsAndOilseeds_Mustard_Oil_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] NutsAndOilseeds_Mustard_Seeds_Image {
+            get {
+                object obj = ResourceManager.GetObject("NutsAndOilseeds_Mustard_Seeds_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] NutsAndOilseeds_Olive_Oil_Image {
+            get {
+                object obj = ResourceManager.GetObject("NutsAndOilseeds_Olive_Oil_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] NutsAndOilseeds_Peanuts_Image {
+            get {
+                object obj = ResourceManager.GetObject("NutsAndOilseeds_Peanuts_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] NutsAndOilseeds_Pine_Nuts_Image {
+            get {
+                object obj = ResourceManager.GetObject("NutsAndOilseeds_Pine_Nuts_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] NutsAndOilseeds_Pistachio_Image {
+            get {
+                object obj = ResourceManager.GetObject("NutsAndOilseeds_Pistachio_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] NutsAndOilseeds_Poppy_Seeds_Image {
+            get {
+                object obj = ResourceManager.GetObject("NutsAndOilseeds_Poppy_Seeds_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] NutsAndOilseeds_Sesame_Oil_Image {
+            get {
+                object obj = ResourceManager.GetObject("NutsAndOilseeds_Sesame_Oil_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] NutsAndOilseeds_Sesame_Seeds_Image {
+            get {
+                object obj = ResourceManager.GetObject("NutsAndOilseeds_Sesame_Seeds_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] NutsAndOilseeds_Sunflower_Seeds_Image {
+            get {
+                object obj = ResourceManager.GetObject("NutsAndOilseeds_Sunflower_Seeds_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] NutsAndOilseeds_Walnuts_Image {
+            get {
+                object obj = ResourceManager.GetObject("NutsAndOilseeds_Walnuts_Image", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }

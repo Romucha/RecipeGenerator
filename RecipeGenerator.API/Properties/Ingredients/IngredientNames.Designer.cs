@@ -1339,29 +1339,11 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Nuts and Oilseeds.
-        /// </summary>
-        internal static string NutsAndOilseeds_TypeName {
-            get {
-                return ResourceManager.GetString("NutsAndOilseeds_TypeName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Ищет локализованную строку, похожую на Walnuts.
         /// </summary>
         internal static string NutsAndOilseeds_Walnuts_Name {
             get {
                 return ResourceManager.GetString("NutsAndOilseeds_Walnuts_Name", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Walnuts.
-        /// </summary>
-        internal static string NutsAndOilseeds_Walnuts_Name1 {
-            get {
-                return ResourceManager.GetString("NutsAndOilseeds_Walnuts_Name1", resourceCulture);
             }
         }
         

@@ -493,4 +493,58 @@
   <data name="Meat_Turkey_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\Images\Ingredients\Meat\Meat_Turkey_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="NutsAndOilseeds_Almonds_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Almonds_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NutsAndOilseeds_Blanched_Almonds_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Blanched_Almonds_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NutsAndOilseeds_Canola_Oil_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Canola_Oil_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NutsAndOilseeds_Cashew_Nuts_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Cashew_Nuts_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NutsAndOilseeds_Chia_Seeds_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Chia_Seeds_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NutsAndOilseeds_Chironji_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Chironji_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NutsAndOilseeds_Hazelnut_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Hazelnut_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NutsAndOilseeds_Mustard_Oil_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Mustard_Oil_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NutsAndOilseeds_Mustard_Seeds_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Mustard_Seeds_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NutsAndOilseeds_Olive_Oil_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Olive_Oil_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NutsAndOilseeds_Peanuts_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Peanuts_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NutsAndOilseeds_Pine_Nuts_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Pine_Nuts_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NutsAndOilseeds_Pistachio_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Pistachio_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NutsAndOilseeds_Poppy_Seeds_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Poppy_Seeds_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NutsAndOilseeds_Sesame_Oil_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Sesame_Oil_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NutsAndOilseeds_Sesame_Seeds_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Sesame_Seeds_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NutsAndOilseeds_Sunflower_Seeds_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Sunflower_Seeds_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NutsAndOilseeds_Walnuts_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Walnuts_Image.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

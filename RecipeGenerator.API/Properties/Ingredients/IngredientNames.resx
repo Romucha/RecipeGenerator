@@ -543,13 +543,7 @@
   <data name="NutsAndOilseeds_Sunflower_Seeds_Name" xml:space="preserve">
     <value>Sunflower Seeds</value>
   </data>
-  <data name="NutsAndOilseeds_TypeName" xml:space="preserve">
-    <value>Nuts and Oilseeds</value>
-  </data>
   <data name="NutsAndOilseeds_Walnuts_Name" xml:space="preserve">
-    <value>Walnuts</value>
-  </data>
-  <data name="NutsAndOilseeds_Walnuts_Name1" xml:space="preserve">
     <value>Walnuts</value>
   </data>
   <data name="OtherIngredients_Agar_Name" xml:space="preserve">
