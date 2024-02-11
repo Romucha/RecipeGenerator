@@ -63,9 +63,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_All_Purpose_Flour_Image {
+        internal static byte[] All_Purpose_Flour {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_All_Purpose_Flour_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("All_Purpose_Flour", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Amaranth_Image {
+        internal static byte[] Almonds {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Amaranth_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Almonds", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Arborio_Rice_Image {
+        internal static byte[] Amaranth {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Arborio_Rice_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Amaranth", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Barley_Image {
+        internal static byte[] Apples {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Barley_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Apples", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Barnyard_Millet_Image {
+        internal static byte[] Apricots {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Barnyard_Millet_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Apricots", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Basmati_Rice_Image {
+        internal static byte[] Arborio_Rice {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Basmati_Rice_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Arborio_Rice", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Bean_Sprouts_Image {
+        internal static byte[] Bacon {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Bean_Sprouts_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Bacon", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Bengal_Gram__Split__Image {
+        internal static byte[] Banana {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Bengal_Gram__Split__Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Banana", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -143,9 +143,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Black_Beans_Image {
+        internal static byte[] Barley {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Black_Beans_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Barley", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -153,9 +153,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Black_eyed_Beans_Image {
+        internal static byte[] Barnyard_Millet {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Black_eyed_Beans_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Barnyard_Millet", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -163,9 +163,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Black_Gram_Images {
+        internal static byte[] Basmati_Rice {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Black_Gram_Images", resourceCulture);
+                object obj = ResourceManager.GetObject("Basmati_Rice", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -173,9 +173,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Bread_Images {
+        internal static byte[] Bean_Sprouts {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Bread_Images", resourceCulture);
+                object obj = ResourceManager.GetObject("Bean_Sprouts", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -183,9 +183,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Breadcrumbs_Image {
+        internal static byte[] Beef {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Breadcrumbs_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Beef", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -193,9 +193,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Brown_Rice_Image {
+        internal static byte[] Bengal_Gram__Split_ {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Brown_Rice_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Bengal_Gram__Split_", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -203,9 +203,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Buckwheat_Image {
+        internal static byte[] Black_Beans {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Buckwheat_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Black_Beans", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -213,9 +213,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Chickpeas_Image {
+        internal static byte[] Black_eyed_Beans {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Chickpeas_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Black_eyed_Beans", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -223,9 +223,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Cornmeal_Image {
+        internal static byte[] Black_Grams {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Cornmeal_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Black_Grams", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -233,9 +233,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Couscous_Image {
+        internal static byte[] Blanched_Almonds {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Couscous_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Blanched_Almonds", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -243,9 +243,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Finger_Millet_Image {
+        internal static byte[] Blue_Cheese {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Finger_Millet_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Blue_Cheese", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -253,9 +253,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Flour_Image {
+        internal static byte[] Blueberries {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Flour_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Blueberries", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -263,9 +263,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Gram_Flour_Image {
+        internal static byte[] Breadcrumbs {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Gram_Flour_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Breadcrumbs", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -273,9 +273,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Green_Gram_Image {
+        internal static byte[] Breads {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Green_Gram_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Breads", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -283,9 +283,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Husked_Black_Gram_Image {
+        internal static byte[] Brie_Cheese {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Husked_Black_Gram_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Brie_Cheese", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -293,9 +293,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Husked_Green_Gram_Image {
+        internal static byte[] Brown_Rice {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Husked_Green_Gram_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Brown_Rice", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -303,9 +303,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Jowar_Image {
+        internal static byte[] Buckwheat {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Jowar_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Buckwheat", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -313,9 +313,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Kidney_Beans_Image {
+        internal static byte[] Butter {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Kidney_Beans_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Butter", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -323,9 +323,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Muesli_Image {
+        internal static byte[] Buttermilk {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Muesli_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Buttermilk", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -333,9 +333,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Oats_Image {
+        internal static byte[] Canola_Oil {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Oats_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Canola_Oil", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -343,9 +343,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Pearl_Millet_Image {
+        internal static byte[] Cape_Gooseberry {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Pearl_Millet_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Cape_Gooseberry", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -353,9 +353,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Pigeon_Pea_Image {
+        internal static byte[] Cashew_Nuts {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Pigeon_Pea_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Cashew_Nuts", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -363,9 +363,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Pressed_Rice_Image {
+        internal static byte[] Cheddar_Cheese {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Pressed_Rice_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Cheddar_Cheese", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -373,9 +373,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Puffed_Rice_Image {
+        internal static byte[] Cherry {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Puffed_Rice_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Cherry", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -383,9 +383,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Rice_Image {
+        internal static byte[] Chia_Seeds {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Rice_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Chia_Seeds", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -393,9 +393,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Semolina_Image {
+        internal static byte[] Chicken {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Semolina_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Chicken", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -403,9 +403,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Tapioca_Image {
+        internal static byte[] Chicken_Liver {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Tapioca_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Chicken_Liver", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -413,9 +413,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Water_Chestnut_Flour_Image {
+        internal static byte[] Chicken_Stock {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Water_Chestnut_Flour_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Chicken_Stock", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -423,9 +423,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Whole_Bengal_Gram_Image {
+        internal static byte[] Chickpeas {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Whole_Bengal_Gram_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Chickpeas", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -433,9 +433,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Whole_Brown_Lentils_Image {
+        internal static byte[] Chironji {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Whole_Brown_Lentils_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Chironji", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -443,9 +443,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] CerealsAndPulses_Whole_Wheat_Flour_Image {
+        internal static byte[] Chops {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Whole_Wheat_Flour_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Chops", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -453,9 +453,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Blue_Cheese_Image {
+        internal static byte[] Clarified_Butter {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Blue_Cheese_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Clarified_Butter", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -463,9 +463,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Brie_Cheese_Image {
+        internal static byte[] Coconut {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Brie_Cheese_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Coconut", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -473,9 +473,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Butter_Image {
+        internal static byte[] Condensed_Milk {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Butter_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Condensed_Milk", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -483,9 +483,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Buttermilk_Image {
+        internal static byte[] Cooking_Apples {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Buttermilk_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Cooking_Apples", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -493,9 +493,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Cheddar_Cheese_Image {
+        internal static byte[] Cornmeal {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Cheddar_Cheese_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Cornmeal", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -503,9 +503,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Clarified_Butter_Image {
+        internal static byte[] Cottage_Cheese {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Clarified_Butter_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Cottage_Cheese", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -513,9 +513,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Condensed_Milk_Image {
+        internal static byte[] Couscous {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Condensed_Milk_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Couscous", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -523,9 +523,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Cottage_Cheese_Image {
+        internal static byte[] Crab {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Cottage_Cheese_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Crab", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -533,9 +533,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Cream_Cheese_Image {
+        internal static byte[] Cranberry {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Cream_Cheese_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Cranberry", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -543,9 +543,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Cream_Image {
+        internal static byte[] Cream {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Cream_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Cream", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -553,9 +553,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Feta_Cheese_Image {
+        internal static byte[] Cream_Cheese {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Feta_Cheese_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Cream_Cheese", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -563,9 +563,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Gouda_Cheese_Image {
+        internal static byte[] Currant {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Gouda_Cheese_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Currant", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -573,9 +573,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Gruyere_Cheese_Image {
+        internal static byte[] Custard_Apple {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Gruyere_Cheese_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Custard_Apple", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -583,9 +583,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Hung_Curd_Image {
+        internal static byte[] Dates {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Hung_Curd_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Dates", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -593,9 +593,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Khoya_Image {
+        internal static byte[] Dried_Fruit {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Khoya_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Dried_Fruit", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -603,9 +603,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Mascarpone_Cheese_Image {
+        internal static byte[] Feta_Cheese {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Mascarpone_Cheese_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Feta_Cheese", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -613,9 +613,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Milk_Image {
+        internal static byte[] Figs {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Milk_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Figs", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -623,9 +623,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Mozzarella_Cheese_Image {
+        internal static byte[] Finger_Millet {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Mozzarella_Cheese_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Finger_Millet", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -633,9 +633,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Parmesan_Cheese_Image {
+        internal static byte[] Flour {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Parmesan_Cheese_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Flour", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -643,9 +643,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Provolone_Cheese_Image {
+        internal static byte[] Free_Range_Chicken {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Provolone_Cheese_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Free_Range_Chicken", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -653,9 +653,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Ricotta_Cheese_Image {
+        internal static byte[] Gouda_Cheese {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Ricotta_Cheese_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Gouda_Cheese", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -663,9 +663,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] DairyProducts_Yogurt_Image {
+        internal static byte[] Gram_Flour {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Yogurt_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Gram_Flour", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -673,9 +673,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Apples_Image {
+        internal static byte[] Grapefruit {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Apples_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Grapefruit", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -683,9 +683,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Apricots_Image {
+        internal static byte[] Grapes {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Apricots_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Grapes", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -693,9 +693,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Banana_Image {
+        internal static byte[] Grass_Fed_Chicken {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Banana_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Grass_Fed_Chicken", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -703,9 +703,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Blueberries_Image {
+        internal static byte[] Green_Gram {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Blueberries_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Green_Gram", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -713,9 +713,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Cape_Gooseberry_Image {
+        internal static byte[] Gruyere_Cheese {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Cape_Gooseberry_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Gruyere_Cheese", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -723,9 +723,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Cherry_Image {
+        internal static byte[] Guava {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Cherry_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Guava", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -733,9 +733,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Coconut_Image {
+        internal static byte[] Ham {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Coconut_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Ham", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -743,9 +743,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Cooking_Apples_Image {
+        internal static byte[] Hazelnut {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Cooking_Apples_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Hazelnut", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -753,9 +753,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Cranberry_Image {
+        internal static byte[] Hung_Curd {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Cranberry_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Hung_Curd", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -763,9 +763,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Currant_Image {
+        internal static byte[] Husked_Black_Gram {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Currant_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Husked_Black_Gram", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -773,9 +773,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Custard_Apple_Image {
+        internal static byte[] Husked_Green_Gram {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Custard_Apple_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Husked_Green_Gram", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -783,9 +783,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Dates_Image {
+        internal static byte[] Indian_Gooseberry {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Dates_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Indian_Gooseberry", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -793,9 +793,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Dried_Fruit_Image {
+        internal static byte[] Jamun {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Dried_Fruit_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Jamun", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -803,9 +803,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Figs_Image {
+        internal static byte[] Jowar {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Figs_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Jowar", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -813,9 +813,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Grapefruit_Image {
+        internal static byte[] Keema {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Grapefruit_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Keema", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -823,9 +823,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Grapes_Image {
+        internal static byte[] Khoya {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Grapes_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Khoya", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -833,9 +833,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Guava_Image {
+        internal static byte[] Kidney_Beans {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Guava_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Kidney_Beans", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -843,9 +843,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Indian_Gooseberry_Image {
+        internal static byte[] Kidney_Meat {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Indian_Gooseberry_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Kidney_Meat", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -853,9 +853,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Jamun_Image {
+        internal static byte[] Kiwi {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Jamun_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Kiwi", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -863,9 +863,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Kiwi_Image {
+        internal static byte[] Lamb_Meat {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Kiwi_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Lamb_Meat", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -873,9 +873,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Lemon_Image {
+        internal static byte[] Lemon {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Lemon_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Lemon", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -883,9 +883,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Lemon_Juice_Image {
+        internal static byte[] Lemon_Juice {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Lemon_Juice_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Lemon_Juice", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -893,9 +893,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Lemon_Rind_Image {
+        internal static byte[] Lemon_Rind {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Lemon_Rind_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Lemon_Rind", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -903,9 +903,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Lychee_Image {
+        internal static byte[] Lychee {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Lychee_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Lychee", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -913,9 +913,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Mango_Image {
+        internal static byte[] Mango {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Mango_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Mango", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -923,9 +923,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Mulberry_Image {
+        internal static byte[] Mascarpone_Cheese {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Mulberry_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Mascarpone_Cheese", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -933,9 +933,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Olives_Image {
+        internal static byte[] Milk {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Olives_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Milk", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -943,9 +943,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Orange_Image {
+        internal static byte[] Mozzarella_Cheese {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Orange_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Mozzarella_Cheese", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -953,9 +953,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Orange_Rind_Image {
+        internal static byte[] Muesli {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Orange_Rind_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Muesli", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -963,9 +963,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Papaya_Image {
+        internal static byte[] Mulberry {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Papaya_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Mulberry", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -973,9 +973,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Peach_Image {
+        internal static byte[] Mustard_Oil {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Peach_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Mustard_Oil", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -983,9 +983,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Pear_Image {
+        internal static byte[] Mustard_Seeds {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Pear_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Mustard_Seeds", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -993,9 +993,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Pineapple_Image {
+        internal static byte[] Mutton {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Pineapple_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Mutton", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1003,9 +1003,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Plum_Image {
+        internal static byte[] Mutton_Liver {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Plum_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Mutton_Liver", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1013,9 +1013,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Pomegranate_Image {
+        internal static byte[] Oats {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Pomegranate_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Oats", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1023,9 +1023,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Raisins_Image {
+        internal static byte[] Olive_Oil {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Raisins_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Olive_Oil", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1033,9 +1033,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Strawberry_Image {
+        internal static byte[] Olives {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Strawberry_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Olives", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1043,9 +1043,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Sultana_Image {
+        internal static byte[] Orange {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Sultana_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Orange", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1053,9 +1053,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Tamarind_Image {
+        internal static byte[] Orange_Rind {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Tamarind_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Orange_Rind", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1063,9 +1063,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Tomato_Image {
+        internal static byte[] Organic_Chicken {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Tomato_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Organic_Chicken", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1073,9 +1073,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Water_Chestnut_Image {
+        internal static byte[] Papaya {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Water_Chestnut_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Papaya", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1083,9 +1083,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Fruits_Watermelon_Image {
+        internal static byte[] Parmesan_Cheese {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Watermelon_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Parmesan_Cheese", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1093,9 +1093,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Bacon_Image {
+        internal static byte[] Partridge {
             get {
-                object obj = ResourceManager.GetObject("Meat_Bacon_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Partridge", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1103,9 +1103,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Beef_Image {
+        internal static byte[] Peach {
             get {
-                object obj = ResourceManager.GetObject("Meat_Beef_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Peach", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1113,9 +1113,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Chicken_Image {
+        internal static byte[] Peanuts {
             get {
-                object obj = ResourceManager.GetObject("Meat_Chicken_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Peanuts", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1123,9 +1123,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Chicken_Liver_Image {
+        internal static byte[] Pear {
             get {
-                object obj = ResourceManager.GetObject("Meat_Chicken_Liver_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Pear", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1133,9 +1133,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Chicken_Stock_Image {
+        internal static byte[] Pearl_Millet {
             get {
-                object obj = ResourceManager.GetObject("Meat_Chicken_Stock_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Pearl_Millet", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1143,9 +1143,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Chops_Image {
+        internal static byte[] Pigeon_Pea {
             get {
-                object obj = ResourceManager.GetObject("Meat_Chops_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Pigeon_Pea", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1153,9 +1153,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Crab_Image {
+        internal static byte[] Pine_Nuts {
             get {
-                object obj = ResourceManager.GetObject("Meat_Crab_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Pine_Nuts", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1163,9 +1163,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Free_Range_Chicken_Image {
+        internal static byte[] Pineapple {
             get {
-                object obj = ResourceManager.GetObject("Meat_Free_Range_Chicken_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Pineapple", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1173,9 +1173,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Grass_Fed_Chicken_Image {
+        internal static byte[] Pistachio {
             get {
-                object obj = ResourceManager.GetObject("Meat_Grass_Fed_Chicken_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Pistachio", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1183,9 +1183,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Ham_Image {
+        internal static byte[] Plum {
             get {
-                object obj = ResourceManager.GetObject("Meat_Ham_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Plum", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1193,9 +1193,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Keema_Image {
+        internal static byte[] Pomegranate {
             get {
-                object obj = ResourceManager.GetObject("Meat_Keema_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Pomegranate", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1203,9 +1203,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Kidney_Meat_Image {
+        internal static byte[] Poppy_Seeds {
             get {
-                object obj = ResourceManager.GetObject("Meat_Kidney_Meat_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Poppy_Seeds", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1213,9 +1213,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Lamb_Meat_Image {
+        internal static byte[] Pork {
             get {
-                object obj = ResourceManager.GetObject("Meat_Lamb_Meat_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Pork", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1223,9 +1223,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Meat_Stock_Image {
+        internal static byte[] Pressed_Rice {
             get {
-                object obj = ResourceManager.GetObject("Meat_Meat_Stock_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Pressed_Rice", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1233,9 +1233,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Mutton_Image {
+        internal static byte[] Provolone_Cheese {
             get {
-                object obj = ResourceManager.GetObject("Meat_Mutton_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Provolone_Cheese", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1243,9 +1243,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Mutton_Liver_Image {
+        internal static byte[] Puffed_Rice {
             get {
-                object obj = ResourceManager.GetObject("Meat_Mutton_Liver_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Puffed_Rice", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1253,9 +1253,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Organic_Chicken_Image {
+        internal static byte[] Quail {
             get {
-                object obj = ResourceManager.GetObject("Meat_Organic_Chicken_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Quail", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1263,9 +1263,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Partridge_Image {
+        internal static byte[] Raisins {
             get {
-                object obj = ResourceManager.GetObject("Meat_Partridge_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Raisins", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1273,9 +1273,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Pork_Image {
+        internal static byte[] Rice {
             get {
-                object obj = ResourceManager.GetObject("Meat_Pork_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Rice", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1283,9 +1283,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Quail_Image {
+        internal static byte[] Ricotta_Cheese {
             get {
-                object obj = ResourceManager.GetObject("Meat_Quail_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Ricotta_Cheese", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1293,9 +1293,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Skinned_Chicken_Image {
+        internal static byte[] Semolina {
             get {
-                object obj = ResourceManager.GetObject("Meat_Skinned_Chicken_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Semolina", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1303,9 +1303,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] Meat_Turkey_Image {
+        internal static byte[] Sesame_Oil {
             get {
-                object obj = ResourceManager.GetObject("Meat_Turkey_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Sesame_Oil", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1313,9 +1313,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Almonds_Image {
+        internal static byte[] Sesame_Seeds {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Almonds_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Sesame_Seeds", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1323,9 +1323,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Blanched_Almonds_Image {
+        internal static byte[] Skinned_Chicken {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Blanched_Almonds_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Skinned_Chicken", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1333,9 +1333,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Canola_Oil_Image {
+        internal static byte[] Stock {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Canola_Oil_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Stock", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1343,9 +1343,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Cashew_Nuts_Image {
+        internal static byte[] Strawberry {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Cashew_Nuts_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Strawberry", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1353,9 +1353,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Chia_Seeds_Image {
+        internal static byte[] Sultana {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Chia_Seeds_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Sultana", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1363,9 +1363,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Chironji_Image {
+        internal static byte[] Sunflower_Seeds {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Chironji_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Sunflower_Seeds", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1373,9 +1373,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Hazelnut_Image {
+        internal static byte[] Tamarind {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Hazelnut_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Tamarind", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1383,9 +1383,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Mustard_Oil_Image {
+        internal static byte[] Tapioca {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Mustard_Oil_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Tapioca", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1393,9 +1393,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Mustard_Seeds_Image {
+        internal static byte[] Tomato {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Mustard_Seeds_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Tomato", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1403,9 +1403,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Olive_Oil_Image {
+        internal static byte[] Turkey {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Olive_Oil_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Turkey", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1413,9 +1413,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Peanuts_Image {
+        internal static byte[] Walnuts {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Peanuts_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Walnuts", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1423,9 +1423,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Pine_Nuts_Image {
+        internal static byte[] Water_Chestnut {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Pine_Nuts_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Water_Chestnut", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1433,9 +1433,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Pistachio_Image {
+        internal static byte[] Water_Chestnut_Flour {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Pistachio_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Water_Chestnut_Flour", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1443,9 +1443,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Poppy_Seeds_Image {
+        internal static byte[] Watermelon {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Poppy_Seeds_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Watermelon", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1453,9 +1453,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Sesame_Oil_Image {
+        internal static byte[] Whole_Bengal_Gram {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Sesame_Oil_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Whole_Bengal_Gram", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1463,9 +1463,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Sesame_Seeds_Image {
+        internal static byte[] Whole_Brown_Lentils {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Sesame_Seeds_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Whole_Brown_Lentils", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1473,9 +1473,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Sunflower_Seeds_Image {
+        internal static byte[] Whole_Wheat_Flour {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Sunflower_Seeds_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Whole_Wheat_Flour", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -1483,9 +1483,9 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Walnuts_Image {
+        internal static byte[] Yogurt {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Walnuts_Image", resourceCulture);
+                object obj = ResourceManager.GetObject("Yogurt", resourceCulture);
                 return ((byte[])(obj));
             }
         }
