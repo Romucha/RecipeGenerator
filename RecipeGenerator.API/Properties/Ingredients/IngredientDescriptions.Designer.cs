@@ -1803,10 +1803,17 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         
         /// <summary>
         ///   Ищет локализованную строку, похожую на The main ingredients of rice noodles are rice flour, water and salt. They can be thick or very thin and also flavored with ingredients such as tapioca or corn starch to change their quality. They are also known as rice sticks.
-        ///When raw they are very brittle and on cooking they turn translucent and chewy.NDTV FoodNov 21 2014 17:31 IST
+        ///When raw they are very brittle and on cooking they turn translucent and chewy.
         ///
-        ///Rice Noodles
-        ///The main ingredients of rice noodles are rice flour, water and salt. They can be thick or very thin and also flavored with ingredients such as tapioca or corn [остаток строки не уместился]&quot;;.
+        ///
+        ///Cereals And Pulses
+        ///Meat
+        ///Dairy Products
+        ///Fruits
+        ///Seafood
+        ///Sugar And Sugar Products
+        ///Nuts And Oilseeds
+        ///Other Ingredients.
         /// </summary>
         internal static string OtherIngredients_Rice_Noodles_Description {
             get {

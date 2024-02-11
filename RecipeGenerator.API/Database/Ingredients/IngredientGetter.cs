@@ -31,8 +31,15 @@ namespace RecipeGenerator.API.Database.Ingredients
 
         public IEnumerable<GetIngredientDTO> Get()
         {
-            ResourceManager resourceManager = new ResourceManager(typeof(IngredientNames));
+            /*
+             * 1. Get list of ingredients from ingredient name resources. Element of list is made from entry name with "_Image" part replaced by "".
+             *    Also get names.
+             * 2. For all other components get values from resource managers get values by id.
+             */
+            var ids = getIngredientComponentIds();
 
+            ResourceManager resourceManager = new ResourceManager(typeof(IngredientNames));
+            
             ResourceSet resourceSet = resourceManager.GetResourceSet(CultureInfo.CurrentUICulture, true, true);
             /*
              * 1. read all resources
@@ -95,6 +102,19 @@ namespace RecipeGenerator.API.Database.Ingredients
                 keyName = keyName,
                 type = ingredientType
             };
+        }
+
+        private IEnumerable<string> getIngredientComponentIds()
+        {
+            ResourceManager manager = new ResourceManager(typeof(IngredientIds));
+            var entries = manager.GetResourceSet(CultureInfo.CurrentUICulture, true, true).Cast<DictionaryEntry>().OrderBy(c => c.Key);
+            return entries.Select(c => c.Value.ToString());
+        }
+
+        private T getIngredientComponentResource<T>(ResourceManager manager, string componentId) where T : class
+        {
+            var entry = manager.GetObject(componentId);
+            return entry as T;
         }
     }
 }
