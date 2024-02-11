@@ -37,72 +37,42 @@ namespace RecipeGenerator.API.Database.Ingredients
              * 2. For all other components get values from resource managers get values by id.
              */
             var ids = getIngredientComponentIds();
+            //get ingreddient names
+            var namemanager = new ResourceManager(typeof(IngredientNames));
+            //get ingredient descriptions
+            var descmanager = new ResourceManager(typeof(IngredientDescriptions));
+            //get ingredient links
+            var linkmanager = new ResourceManager(typeof(IngredientLinks));
+            //get ingredient images
+            var imgmanager = new ResourceManager(typeof(IngredientImages));
 
-            ResourceManager resourceManager = new ResourceManager(typeof(IngredientNames));
-            
-            ResourceSet resourceSet = resourceManager.GetResourceSet(CultureInfo.CurrentUICulture, true, true);
-            /*
-             * 1. read all resources
-             * 2. convert each dictionary entry into format (ingredient type, ingredient key name, ingredient property name, ingredient property value)
-             * 3. group all list by ingredient key name
-             * 4. create new ingredients from groupings
-             */
-
-            var resources = resourceSet.Cast<DictionaryEntry>()
-                                       .Select(parseResourceDictionaryEntry)
-                                       .GroupBy(c => c.keyName);
-            foreach (var resource in resources)
+            foreach (var id in ids)
             {
-                IngredientType type = resource.FirstOrDefault().type;
-                var nameres = resource.FirstOrDefault(c => c.propertyName == "Name");
-                string name = nameres == null ? string.Empty : nameres.propertyValue?.ToString();
-                var descres = resource.FirstOrDefault(c => c.propertyName == "Description");
-                string description = descres == null ? string.Empty : descres.propertyValue?.ToString();
-                var urires = resource.FirstOrDefault(c => c.propertyName == "Uri");
-                Uri uri = null;
-                if (urires != null)
-                    Uri.TryCreate(urires.propertyValue?.ToString(), UriKind.Absolute, out uri);
-                else
-                    //rick roll for now
-                    Uri.TryCreate("https://www.youtube.com/watch?v=dQw4w9WgXcQ", UriKind.Absolute, out uri);
-                var imageres = resource.FirstOrDefault(c => c.propertyName == "Image");
-                byte[] image = imageres == null ? null : descres.propertyValue as byte[];
-                if (!string.IsNullOrEmpty(name))
+                //get name
+                var name = getIngredientComponentResource<string>(namemanager, id);
+                //get description
+                var desc = getIngredientComponentResource<string>(descmanager, id);
+                //get link
+                var _link = getIngredientComponentResource<string>(linkmanager, id);
+                Uri.TryCreate(_link, UriKind.Absolute, out Uri link);
+                //get image
+                var image = getIngredientComponentResource<byte[]>(imgmanager, id);
+                //get type
+                var typeid = id.Split('_').FirstOrDefault();
+                var ingrtype = Enum.Parse<IngredientType>(typeid);
+                yield return new GetIngredientDTO
                 {
-                    yield return new GetIngredientDTO
-                    {
-                        Id = Guid.NewGuid(),
-                        Name = name,
-                        Description = description,
-                        CreatedAt = DateTime.Now,
-                        Image = image,
-                        IngredientType = type,
-                        Link = uri,
-                        UpdatedAt = DateTime.Now,
-                    };
-                }
+                    Id = Guid.NewGuid(),
+                    Name = name,
+                    Description = desc,
+                    Image = image,
+                    IngredientType = ingrtype,
+                    Link = link,
+                    CreatedAt = DateTime.Now,
+                    UpdatedAt = DateTime.Now,
+                };
             }
-        }
-
-        private DictionaryEntryDTO parseResourceDictionaryEntry(DictionaryEntry entry)
-        {
-            string resourceKey = entry.Key.ToString();
-            object resource = entry.Value;
-
-            string[] resKeySplit = resourceKey.Split("_");
-            IngredientType ingredientType = Enum.Parse<IngredientType>(resKeySplit[0]);
-            string propertyName = resKeySplit.Last();
-            object propertyValue = resource;
-            string keyName = string.Join("_", resKeySplit.Skip(1).Take(resKeySplit.Length - 2));
-
-            return new DictionaryEntryDTO
-            {
-                propertyName = propertyName,
-                propertyValue = propertyValue,
-                keyName = keyName,
-                type = ingredientType
-            };
-        }
+        }        
 
         private IEnumerable<string> getIngredientComponentIds()
         {

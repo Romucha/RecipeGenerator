@@ -118,658 +118,658 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Agar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Agar.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_All_Purpose_Flour" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_All_Purpose_Flour.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Ajinomoto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Ajinomoto.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Amaranth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Amaranth.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="All_Purpose_Flour" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\All_Purpose_Flour.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Arborio_Rice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Arborio_Rice.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Almonds" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\NutsAndOilseeds\Almonds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Barley" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Barley.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Almond_Milk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Almond Milk.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Barnyard_Millet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Barnyard_Millet.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Alum" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Alum.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Basmati_Rice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Basmati_Rice.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Amaranth" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Amaranth.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Bean_Sprouts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Bean_Sprouts.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Apples" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Apples.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Bengal_Gram__Split_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Bengal_Gram_(Split).png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Apricots" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Apricots.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Black_Beans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Black_Beans.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Arborio_Rice" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Arborio_Rice.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Black_eyed_Beans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Black-eyed_Beans.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Arrowroot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Arrowroot.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Black_Grams" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Black_Grams.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Bacon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Bacon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Breadcrumbs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Breadcrumbs.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Baking_Powder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Baking Powder.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Breads" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Breads.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Baking_Soda" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Baking Soda.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Brown_Rice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Brown_Rice.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Balsamic_Vinegar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Balsamic Vinegar.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Buckwheat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Buckwheat.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Banana" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Banana.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Chickpeas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Chickpeas.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Barfi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Barfi.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Cornmeal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Cornmeal.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Barley" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Barley.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Couscous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Couscous.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Barnyard_Millet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Barnyard_Millet.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Finger_Millet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Finger_Millet.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Basmati_Rice" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Basmati_Rice.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Flour" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Flour.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Bean_Sprouts" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Bean_Sprouts.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Gram_Flour" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Gram_Flour.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Beef" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Beef.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Green_Gram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Green_Gram.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Beer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Beer.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Husked_Black_Gram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Husked_Black_Gram.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Bengal_Gram__Split_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Bengal_Gram_(Split).png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Husked_Green_Gram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Husked_Green_Gram.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Black_Beans" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Black_Beans.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Jowar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Jowar.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Black_eyed_Beans" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Black-eyed_Beans.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Kidney_Beans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Kidney_Beans.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Black_Grams" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Black_Grams.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Muesli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Muesli.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Blanched_Almonds" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\NutsAndOilseeds\Blanched_Almonds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Oats" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Oats.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Blueberries" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Blueberries.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Pearl_Millet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Pearl_Millet.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Blue_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Blue_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Pigeon_Pea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Pigeon_Pea.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Breadcrumbs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Breadcrumbs.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Pressed_Rice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Pressed_Rice.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Breads" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Breads.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Puffed_Rice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Puffed_Rice.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Brie_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Brie_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Rice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Rice.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Brown_Rice" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Brown_Rice.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Semolina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Semolina.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Brown_Sauce" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Brown Sauce.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Tapioca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Tapioca.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Buckwheat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Buckwheat.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Water_Chestnut_Flour" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Water_Chestnut_Flour.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Butter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Butter.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Whole_Bengal_Gram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Whole_Bengal_Gram.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Buttermilk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Buttermilk.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Whole_Brown_Lentils" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Whole_Brown_Lentils.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Canola_Oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\NutsAndOilseeds\Canola_Oil.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="CerealsAndPulses_Whole_Wheat_Flour" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Whole_Wheat_Flour.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Cape_Gooseberry" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Cape_Gooseberry.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Blue_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Blue_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Cashew_Nuts" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\NutsAndOilseeds\Cashew_Nuts.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Brie_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Brie_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Cheddar_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Cheddar_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Butter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Butter.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Cherry" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Cherry.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Buttermilk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Buttermilk.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Chia_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\NutsAndOilseeds\Chia_Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Cheddar_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Cheddar_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Chicken" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Chicken.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Clarified_Butter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Clarified_Butter.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Chicken_Liver" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Chicken_Liver.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Condensed_Milk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Condensed_Milk.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Chicken_Stock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Chicken_Stock.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Cottage_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Cottage_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Chickpeas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Chickpeas.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Cream" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Cream.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Chironji" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\NutsAndOilseeds\Chironji.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Cream_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Cream_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Chocolate" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Chocolate.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Feta_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Feta_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Chocolate_Chips" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Chocolate Chips.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Gouda_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Gouda_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Chops" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Chops.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Gruyere_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Gruyere_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Clarified_Butter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Clarified_Butter.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Hung_Curd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Hung_Curd.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Cocoa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Cocoa.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Khoya" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Khoya.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Coconut" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Coconut.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Mascarpone_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Mascarpone_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Coconut_Milk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Coconut Milk.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Milk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Milk.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Coconut_Oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Coconut Oil.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Mozzarella_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Mozzarella_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Coconut_Water" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Coconut Water.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Parmesan_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Parmesan_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Coffee" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Coffee.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Provolone_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Provolone_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Cognac" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Cognac.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Ricotta_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Ricotta_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Condensed_Milk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Condensed_Milk.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DairyProducts_Yogurt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\DairyProducts\DairyProducts_Yogurt.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Cooking_Apples" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Cooking_Apples.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Apples" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Apples.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Cornflour" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Cornflour.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Apricots" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Apricots.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Cornmeal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Cornmeal.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Banana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Banana.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Cottage_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Cottage_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Blueberries" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Blueberries.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Couscous" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Couscous.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Cape_Gooseberry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Cape_Gooseberry.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Crab" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Crab.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Cherry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Cherry.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Cranberry" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Cranberry.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Coconut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Coconut.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Cranberry_Sauce" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Cranberry Sauce.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Cooking_Apples" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Cooking_Apples.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Cream" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Cream.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Cranberry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Cranberry.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Cream_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Cream_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Currant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Currant.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Currant" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Currant.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Custard_Apple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Custard_Apple.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Custard_Apple" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Custard_Apple.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Dates" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Dates.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Dates" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Dates.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Dried_Fruit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Dried_Fruit.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Desiccated_Coconut" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Desiccated Coconut.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Figs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Figs.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Dried_Fruit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Dried_Fruit.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Grapefruit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Grapefruit.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Egg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Egg.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Grapes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Grapes.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Feta_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Feta_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Guava" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Guava.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Figs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Figs.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Indian_Gooseberry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Indian_Gooseberry.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Finger_Millet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Finger_Millet.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Jamun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Jamun.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Fish_Sauce" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Fish Sauce.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Kiwi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Kiwi.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Flat_Noodles" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Flat Noodles.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Lemon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Lemon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Flour" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Flour.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Lemon_Juice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Lemon_Juice.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Free_Range_Chicken" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Free_Range_Chicken.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Lemon_Rind" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Lemon_Rind.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Gelatin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Gelatin.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Lychee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Lychee.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Glycerine" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Glycerine.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Mango" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Mango.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Gold_Leaves" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Gold Leaves.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Mulberry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Mulberry.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Gouda_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Gouda_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Olives" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Olives.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Gram_Flour" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Gram_Flour.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Orange.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Grapefruit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Grapefruit.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Orange_Rind" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Orange_Rind.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Grapes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Grapes.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Papaya" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Papaya.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Grass_Fed_Chicken" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Grass_Fed_Chicken.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Peach" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Peach.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Green_Gram" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Green_Gram.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Pear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Pear.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Gruyere_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Gruyere_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Pineapple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Pineapple.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Guava" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Guava.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Plum" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Plum.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Guchchi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Guchchi.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Pomegranate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Pomegranate.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Ham" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Ham.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Raisins" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Raisins.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Hazelnut" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\NutsAndOilseeds\Hazelnut.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Strawberry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Strawberry.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Hoisin_Sauce" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Hoisin Sauce.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Sultana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Sultana.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Hung_Curd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Hung_Curd.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Tamarind" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Tamarind.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Husked_Black_Gram" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Husked_Black_Gram.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Tomato" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Tomato.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Husked_Green_Gram" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Husked_Green_Gram.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Watermelon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Watermelon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Indian_Gooseberry" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Indian_Gooseberry.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Fruits_Water_Chestnut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Fruits\Fruits_Water_Chestnut.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Jamun" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Jamun.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Bacon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Bacon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Jelly" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Jelly.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Beef" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Beef.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Jowar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Jowar.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Chicken" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Chicken.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Jus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Jus.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Chicken_Liver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Chicken_Liver.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Keema" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Keema.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Chicken_Stock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Chicken_Stock.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Khoya" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Khoya.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Chops" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Chops.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Kidney_Beans" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Kidney_Beans.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Crab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Crab.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Kidney_Meat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Kidney_Meat.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Free_Range_Chicken" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Free_Range_Chicken.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Kiwi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Kiwi.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Grass_Fed_Chicken" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Grass_Fed_Chicken.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Lamb_Meat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Lamb_Meat.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Ham" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Ham.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Lemon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Lemon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Keema" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Keema.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Lemon_Juice" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Lemon_Juice.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Kidney_Meat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Kidney_Meat.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Lemon_Rind" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Lemon_Rind.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Lamb_Meat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Lamb_Meat.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Lotus_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Lotus Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Mutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Mutton.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Lychee" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Lychee.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Mutton_Liver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Mutton_Liver.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Malt_Vinegar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Malt Vinegar.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Organic_Chicken" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Organic_Chicken.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Mango" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Mango.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Partridge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Partridge.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Margarine" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Margarine.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Pork" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Pork.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Marzipan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Marzipan.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Quail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Quail.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Mascarpone_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Mascarpone_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Skinned_Chicken" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Skinned_Chicken.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Mayonnaise" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Mayonnaise.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Stock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Stock.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Melon_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Melon Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Meat_Turkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\Meat\Meat_Turkey.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Meringue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Meringue.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NutsAndOilseeds_Almonds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Almonds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Milk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Milk.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NutsAndOilseeds_Blanched_Almonds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Blanched_Almonds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Mozzarella_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Mozzarella_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NutsAndOilseeds_Canola_Oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Canola_Oil.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Muesli" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Muesli.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NutsAndOilseeds_Cashew_Nuts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Cashew_Nuts.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Mulberry" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Mulberry.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NutsAndOilseeds_Chia_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Chia_Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Mustard_Oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\NutsAndOilseeds\Mustard_Oil.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NutsAndOilseeds_Chironji" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Chironji.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Mustard_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\NutsAndOilseeds\Mustard_Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NutsAndOilseeds_Hazelnut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Hazelnut.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Mutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Mutton.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NutsAndOilseeds_Mustard_Oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Mustard_Oil.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Mutton_Liver" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Mutton_Liver.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NutsAndOilseeds_Mustard_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Mustard_Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Oats" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Oats.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NutsAndOilseeds_Olive_Oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Olive_Oil.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Olives" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Olives.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NutsAndOilseeds_Peanuts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Peanuts.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Olive_Oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\NutsAndOilseeds\Olive_Oil.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NutsAndOilseeds_Pine_Nuts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Pine_Nuts.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Orange.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NutsAndOilseeds_Pistachio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Pistachio.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Orange_Rind" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Orange_Rind.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NutsAndOilseeds_Poppy_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Poppy_Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Organic_Chicken" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Organic_Chicken.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NutsAndOilseeds_Sesame_Oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Sesame_Oil.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Oyster_Sauce" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Oyster Sauce.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NutsAndOilseeds_Sesame_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Sesame_Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Paan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Paan.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NutsAndOilseeds_Sunflower_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Sunflower_Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Papad" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Papad.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="NutsAndOilseeds_Walnuts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Walnuts.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Papaya" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Papaya.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Agar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Agar.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Parmesan_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Parmesan_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Ajinomoto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Ajinomoto.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Partridge" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Partridge.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Almond_Milk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Almond Milk.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Pasta" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Pasta.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Alum" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Alum.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Peach" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Peach.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Arrowroot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Arrowroot.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Peanuts" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\NutsAndOilseeds\Peanuts.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Baking_Powder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Baking Powder.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Pear" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Pear.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Baking_Soda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Baking Soda.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Pearl_Millet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Pearl_Millet.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Balsamic_Vinegar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Balsamic Vinegar.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Petha" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Petha.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Barfi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Barfi.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Pigeon_Pea" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Pigeon_Pea.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Beer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Beer.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Pineapple" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Pineapple.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Brown_Sauce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Brown Sauce.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Pine_Nuts" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\NutsAndOilseeds\Pine_Nuts.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Chocolate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Chocolate.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Pistachio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\NutsAndOilseeds\Pistachio.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Chocolate_Chips" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Chocolate Chips.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Plum" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Plum.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Cocoa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Cocoa.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Polenta" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Polenta.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Coconut_Milk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Coconut Milk.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Pomegranate" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Pomegranate.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Coconut_Oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Coconut Oil.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Poppy_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\NutsAndOilseeds\Poppy_Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Coconut_Water" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Coconut Water.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Pork" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Pork.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Coffee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Coffee.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Pressed_Rice" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Pressed_Rice.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Cognac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Cognac.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Provolone_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Provolone_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Cornflour" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Cornflour.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Puffed_Rice" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Puffed_Rice.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Cranberry_Sauce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Cranberry Sauce.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Quail" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Quail.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Desiccated_Coconut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Desiccated Coconut.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Quinoa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Quinoa.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Egg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Egg.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Raisins" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Raisins.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Fish_Sauce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Fish Sauce.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Red_Wine" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Red Wine.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Flat_Noodles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Flat Noodles.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Red_Wine_Vinegar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Red Wine Vinegar.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Gelatin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Gelatin.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Rice" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Rice.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Glycerine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Glycerine.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Rice_Flour" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Rice Flour.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Gold_Leaves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Gold Leaves.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Rice_Noodles" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Rice Noodles.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Guchchi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Guchchi.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Rice_Vinegar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Rice Vinegar.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Hoisin_Sauce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Hoisin Sauce.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Ricotta_Cheese" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Ricotta_Cheese.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Jelly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Jelly.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Rose_Water" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Rose Water.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Jus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Jus.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Roux" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Roux.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Lotus_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Lotus Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Rum" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Rum.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Malt_Vinegar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Malt Vinegar.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Sake" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Sake.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Margarine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Margarine.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Screw_Pine" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Screw Pine.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Marzipan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Marzipan.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Sea_Salt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Sea Salt.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Mayonnaise" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Mayonnaise.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Semolina" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Semolina.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Melon_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Melon Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Sesame_Oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\NutsAndOilseeds\Sesame_Oil.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Meringue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Meringue.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Sesame_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\NutsAndOilseeds\Sesame_Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Oyster_Sauce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Oyster Sauce.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Sev" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Sev.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Paan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Paan.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Sharbat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Sharbat.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Papad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Papad.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Skinned_Chicken" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Skinned_Chicken.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Pasta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Pasta.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Soya_Sauce" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Soya Sauce.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Petha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Petha.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Soy_Milk" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Soy Milk.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Polenta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Polenta.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Stock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Stock.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Quinoa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Quinoa.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Strawberry" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Strawberry.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Red_Wine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Red Wine.PNG;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Sultana" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Sultana.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Red_Wine_Vinegar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Red Wine Vinegar.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Sunflower_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\NutsAndOilseeds\Sunflower_Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Rice_Flour" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Rice Flour.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Tamarind" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Tamarind.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Rice_Noodles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Rice Noodles.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Tapioca" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Tapioca.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Rice_Vinegar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Rice Vinegar.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Tartaric_Acid" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Tartaric Acid.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Rose_Water" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Rose Water.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Tea" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Tea.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Roux" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Roux.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Tofu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Tofu.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Rum" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Rum.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Tomato" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Tomato.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Sake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Sake.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Tomato_Puree" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Tomato Puree.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Screw_Pine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Screw Pine.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Tortilla" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Tortilla.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Sea_Salt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Sea Salt.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Turkey" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Meat\Turkey.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Sev" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Sev.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Vanilla_Essence" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Vanilla Essence.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Sharbat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Sharbat.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Vegetable_Oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Vegetable Oil.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Soya_Sauce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Soya Sauce.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Vermicelli" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Vermicelli.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Soy_Milk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Soy Milk.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Vetiver" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Vetiver.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Tartaric_Acid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Tartaric Acid.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Vinaigrette" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Vinaigrette.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Tea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Tea.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Vinegar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Vinegar.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Tofu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Tofu.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Walnuts" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\NutsAndOilseeds\Walnuts.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Tomato_Puree" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Tomato Puree.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Watermelon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Watermelon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Tortilla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Tortilla.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Water_Chestnut" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\Fruits\Water_Chestnut.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Vanilla_Essence" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Vanilla Essence.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Water_Chestnut_Flour" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Water_Chestnut_Flour.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Vegetable_Oil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Vegetable Oil.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="White_Pepper" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\White Pepper.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Vermicelli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Vermicelli.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="White_Wine" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\White Wine.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Vetiver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Vetiver.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Whole_Bengal_Gram" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Whole_Bengal_Gram.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Vinaigrette" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Vinaigrette.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Whole_Brown_Lentils" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Whole_Brown_Lentils.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Vinegar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Vinegar.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Whole_Wheat_Flour" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\CerealsAndPulses\Whole_Wheat_Flour.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_White_Pepper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_White Pepper.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Yeast" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\OtherIngredients\Yeast.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_White_Wine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_White Wine.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Yogurt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\Images\Ingredients\DairyProducts\Yogurt.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OtherIngredients_Yeast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images\Ingredients\OtherIngredients\OtherIngredients_Yeast.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
