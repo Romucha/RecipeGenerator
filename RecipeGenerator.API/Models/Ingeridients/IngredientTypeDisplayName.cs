@@ -17,11 +17,11 @@ namespace RecipeGenerator.API.Models.Ingeridients
         {
             try
             {
-                ResourceManager resourceManager = new ResourceManager(typeof(IngredientNames));
+                ResourceManager resourceManager = new ResourceManager(typeof(IngredientTypeNames));
 
                 ResourceSet resourceSet = resourceManager.GetResourceSet(CultureInfo.CurrentUICulture, true, true);
                 return resourceSet.Cast<DictionaryEntry>()
-                                  .FirstOrDefault(c => c.Key.ToString() == $"{ingredientType}_TypeName")
+                                  .FirstOrDefault(c => c.Key.ToString() == $"{ingredientType}")
                                   .Value
                                   .ToString();
             }

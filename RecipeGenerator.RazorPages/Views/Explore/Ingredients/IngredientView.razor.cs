@@ -15,23 +15,29 @@ namespace RecipeGenerator.RazorPages.Views.Explore.Ingredients
         [Parameter]
         public GetIngredientDTO Ingredient { get; set; }
 
-        private string imageURL { get; set; } = "/images/apple.png";
+        private string imageURL { get; set; }
 
         private string desc { get; set; } = "There could be your ad, but it's just an ingredient.";
 
         protected override async Task OnInitializedAsync()
         {
-            if (Ingredient != null && Ingredient.Image != null)
+            if (Ingredient != null)
             {
-                if (Ingredient.Image != null && Ingredient.Image.Length > 0)
+                if (Ingredient.Image != null && Ingredient.Image.Length > 0 && Ingredient.Image.Length < 1000000)
                 {
-                    imageURL = string.Format("data:image/svg+xml;base64,{0}", Ingredient.Image);
+                    var imagesrc = Convert.ToBase64String(Ingredient.Image);
+                    imageURL = string.Format("data:image/png;base64,{0}", imagesrc);
+                }
+                else
+                {
+                    imageURL = "/images/apple.png";
                 }
                 if (!string.IsNullOrEmpty(Ingredient.Description))
                 {
                     desc = $"{Ingredient.Description.Substring(0, 50)}...";
                 }
             }
+            
             await base.OnInitializedAsync();
         }
     }
