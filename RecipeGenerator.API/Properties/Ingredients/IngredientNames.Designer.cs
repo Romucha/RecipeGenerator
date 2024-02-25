@@ -2032,11 +2032,11 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cat fish.
+        ///   Ищет локализованную строку, похожую на Cat Fish.
         /// </summary>
-        internal static string Seafood_Cat_fish {
+        internal static string Seafood_Cat_Fish {
             get {
-                return ResourceManager.GetString("Seafood_Cat_fish", resourceCulture);
+                return ResourceManager.GetString("Seafood_Cat_Fish", resourceCulture);
             }
         }
         
@@ -2059,20 +2059,11 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Cuttle fish.
-        /// </summary>
-        internal static string Seafood_Cuttle_fish {
-            get {
-                return ResourceManager.GetString("Seafood_Cuttle_fish", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Ищет локализованную строку, похожую на Fish.
         /// </summary>
-        internal static string Seafood_Fish {
+        internal static string Seafood_Cuttle_Fish {
             get {
-                return ResourceManager.GetString("Seafood_Fish", resourceCulture);
+                return ResourceManager.GetString("Seafood_Cuttle_Fish", resourceCulture);
             }
         }
         
@@ -2149,11 +2140,11 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Pearl spot.
+        ///   Ищет локализованную строку, похожую на Pearl Spot.
         /// </summary>
-        internal static string Seafood_Pearl_spot {
+        internal static string Seafood_Pearl_Spot {
             get {
-                return ResourceManager.GetString("Seafood_Pearl_spot", resourceCulture);
+                return ResourceManager.GetString("Seafood_Pearl_Spot", resourceCulture);
             }
         }
         
@@ -2244,15 +2235,6 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         internal static string Seafood_Tuna_Fish {
             get {
                 return ResourceManager.GetString("Seafood_Tuna_Fish", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на Seafood.
-        /// </summary>
-        internal static string Seafood_TypeName {
-            get {
-                return ResourceManager.GetString("Seafood_TypeName", resourceCulture);
             }
         }
         

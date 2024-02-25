@@ -2239,5 +2239,255 @@ namespace RecipeGenerator.API.Properties.Ingredients {
                 return ((byte[])(obj));
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Anchovies {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Anchovies", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Cat_Fish {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Cat_Fish", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Clams {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Clams", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Cod {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Cod", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Cuttle_Fish {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Cuttle_Fish", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Fish {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Fish", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Fish_Fillet {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Fish_Fillet", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Fish_Stock {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Fish_Stock", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Flounder {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Flounder", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Haddock {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Haddock", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Hilsa {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Hilsa", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Mackerel {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Mackerel", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Mullet {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Mullet", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Mussels {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Mussels", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Pearl_Spot {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Pearl_Spot", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Perch {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Perch", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Pomfret {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Pomfret", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Prawns {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Prawns", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Salmon {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Salmon", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Sardines {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Sardines", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Shark {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Shark", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Shellfish {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Shellfish", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Shrimp {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Shrimp", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Squids {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Squids", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        internal static byte[] Seafood_Tuna_Fish {
+            get {
+                object obj = ResourceManager.GetObject("Seafood_Tuna_Fish", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
     }
 }

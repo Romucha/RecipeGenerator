@@ -774,8 +774,8 @@
   <data name="Seafood_Anchovies" xml:space="preserve">
     <value>Anchovies</value>
   </data>
-  <data name="Seafood_Cat_fish" xml:space="preserve">
-    <value>Cat fish</value>
+  <data name="Seafood_Cat_Fish" xml:space="preserve">
+    <value>Cat Fish</value>
   </data>
   <data name="Seafood_Clams" xml:space="preserve">
     <value>Clams</value>
@@ -783,10 +783,7 @@
   <data name="Seafood_Cod" xml:space="preserve">
     <value>Cod</value>
   </data>
-  <data name="Seafood_Cuttle_fish" xml:space="preserve">
-    <value>Cuttle fish</value>
-  </data>
-  <data name="Seafood_Fish" xml:space="preserve">
+  <data name="Seafood_Cuttle_Fish" xml:space="preserve">
     <value>Fish</value>
   </data>
   <data name="Seafood_Fish_Fillet" xml:space="preserve">
@@ -813,8 +810,8 @@
   <data name="Seafood_Mussels" xml:space="preserve">
     <value>Mussels</value>
   </data>
-  <data name="Seafood_Pearl_spot" xml:space="preserve">
-    <value>Pearl spot</value>
+  <data name="Seafood_Pearl_Spot" xml:space="preserve">
+    <value>Pearl Spot</value>
   </data>
   <data name="Seafood_Perch" xml:space="preserve">
     <value>Perch</value>
@@ -845,9 +842,6 @@
   </data>
   <data name="Seafood_Tuna_Fish" xml:space="preserve">
     <value>Tuna Fish</value>
-  </data>
-  <data name="Seafood_TypeName" xml:space="preserve">
-    <value>Seafood</value>
   </data>
   <data name="SpicesAndHerbs_Acacia" xml:space="preserve">
     <value>Acacia</value>
