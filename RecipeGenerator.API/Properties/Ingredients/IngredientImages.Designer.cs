@@ -61,2432 +61,3368 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_All_Purpose_Flour.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_All_Purpose_Flour {
+        internal static string CerealsAndPulses_All_Purpose_Flour {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_All_Purpose_Flour", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_All_Purpose_Flour", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Amaranth.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Amaranth {
+        internal static string CerealsAndPulses_Amaranth {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Amaranth", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Amaranth", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Arborio_Rice.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Arborio_Rice {
+        internal static string CerealsAndPulses_Arborio_Rice {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Arborio_Rice", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Arborio_Rice", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Barley.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Barley {
+        internal static string CerealsAndPulses_Barley {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Barley", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Barley", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Barnyard_Millet.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Barnyard_Millet {
+        internal static string CerealsAndPulses_Barnyard_Millet {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Barnyard_Millet", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Barnyard_Millet", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Basmati_Rice.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Basmati_Rice {
+        internal static string CerealsAndPulses_Basmati_Rice {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Basmati_Rice", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Basmati_Rice", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Bean_Sprouts.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Bean_Sprouts {
+        internal static string CerealsAndPulses_Bean_Sprouts {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Bean_Sprouts", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Bean_Sprouts", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Bengal_Gram_(Split).png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Bengal_Gram__Split_ {
+        internal static string CerealsAndPulses_Bengal_Gram__Split_ {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Bengal_Gram__Split_", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Bengal_Gram_(Split)", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Black-eyed_Beans.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Black_Beans {
+        internal static string CerealsAndPulses_Black_Beans {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Black_Beans", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Black_Beans", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Black_Grams.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Black_eyed_Beans {
+        internal static string CerealsAndPulses_Black_eyed_Beans {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Black_eyed_Beans", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Black-eyed_Beans", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Black_Beans.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Black_Grams {
+        internal static string CerealsAndPulses_Black_Gram {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Black_Grams", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Black_Gram", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Breadcrumbs.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Breadcrumbs {
+        internal static string CerealsAndPulses_Bread {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Breadcrumbs", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Bread", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Breads.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Breads {
+        internal static string CerealsAndPulses_Breadcrumbs {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Breads", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Breadcrumbs", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Brown_Rice.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Brown_Rice {
+        internal static string CerealsAndPulses_Brown_Rice {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Brown_Rice", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Brown_Rice", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Buckwheat.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Buckwheat {
+        internal static string CerealsAndPulses_Buckwheat {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Buckwheat", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Buckwheat", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Chickpeas.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Chickpeas {
+        internal static string CerealsAndPulses_Chickpeas {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Chickpeas", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Chickpeas", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Cornmeal.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Cornmeal {
+        internal static string CerealsAndPulses_Cornmeal {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Cornmeal", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Cornmeal", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Couscous.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Couscous {
+        internal static string CerealsAndPulses_Couscous {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Couscous", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Couscous", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Finger_Millet.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Finger_Millet {
+        internal static string CerealsAndPulses_Finger_Millet {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Finger_Millet", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Finger_Millet", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Flour.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Flour {
+        internal static string CerealsAndPulses_Flour {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Flour", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Flour", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Gram_Flour.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Gram_Flour {
+        internal static string CerealsAndPulses_Gram_Flour {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Gram_Flour", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Gram_Flour", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Green_Gram.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Green_Gram {
+        internal static string CerealsAndPulses_Green_Gram {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Green_Gram", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Green_Gram", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Husked_Black_Gram.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Husked_Black_Gram {
+        internal static string CerealsAndPulses_Husked_Black_Gram {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Husked_Black_Gram", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Husked_Black_Gram", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Husked_Green_Gram.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Husked_Green_Gram {
+        internal static string CerealsAndPulses_Husked_Green_Gram {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Husked_Green_Gram", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Husked_Green_Gram", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Jowar.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Jowar {
+        internal static string CerealsAndPulses_Jowar {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Jowar", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Jowar", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Kidney_Beans.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Kidney_Beans {
+        internal static string CerealsAndPulses_Kidney_Beans {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Kidney_Beans", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Kidney_Beans", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Muesli.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Muesli {
+        internal static string CerealsAndPulses_Muesli {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Muesli", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Muesli", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Oats.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Oats {
+        internal static string CerealsAndPulses_Oats {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Oats", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Oats", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Pearl_Millet.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Pearl_Millet {
+        internal static string CerealsAndPulses_Pearl_Millet {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Pearl_Millet", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Pearl_Millet", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Pigeon_Pea.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Pigeon_Pea {
+        internal static string CerealsAndPulses_Pigeon_Pea {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Pigeon_Pea", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Pigeon_Pea", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Pressed_Rice.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Pressed_Rice {
+        internal static string CerealsAndPulses_Pressed_Rice {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Pressed_Rice", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Pressed_Rice", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Puffed_Rice.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Puffed_Rice {
+        internal static string CerealsAndPulses_Puffed_Rice {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Puffed_Rice", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Puffed_Rice", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Rice.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Rice {
+        internal static string CerealsAndPulses_Rice {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Rice", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Rice", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Semolina.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Semolina {
+        internal static string CerealsAndPulses_Semolina {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Semolina", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Semolina", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Tapioca.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Tapioca {
+        internal static string CerealsAndPulses_Tapioca {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Tapioca", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Tapioca", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Water_Chestnut_Flour.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Water_Chestnut_Flour {
+        internal static string CerealsAndPulses_Water_Chestnut_Flour {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Water_Chestnut_Flour", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Water_Chestnut_Flour", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Whole_Bengal_Gram.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Whole_Bengal_Gram {
+        internal static string CerealsAndPulses_Whole_Bengal_Gram {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Whole_Bengal_Gram", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Whole_Bengal_Gram", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Whole_Brown_Lentils.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Whole_Brown_Lentils {
+        internal static string CerealsAndPulses_Whole_Brown_Lentils {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Whole_Brown_Lentils", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Whole_Brown_Lentils", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/CerealsAndPulses/CerealsAndPulses_Whole_Wheat_Flour.png.
         /// </summary>
-        internal static byte[] CerealsAndPulses_Whole_Wheat_Flour {
+        internal static string CerealsAndPulses_Whole_Wheat_Flour {
             get {
-                object obj = ResourceManager.GetObject("CerealsAndPulses_Whole_Wheat_Flour", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("CerealsAndPulses_Whole_Wheat_Flour", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Blue_Cheese.png.
         /// </summary>
-        internal static byte[] DairyProducts_Blue_Cheese {
+        internal static string DairyProducts_Blue_Cheese {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Blue_Cheese", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Blue_Cheese", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Brie_Cheese.png.
         /// </summary>
-        internal static byte[] DairyProducts_Brie_Cheese {
+        internal static string DairyProducts_Brie_Cheese {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Brie_Cheese", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Brie_Cheese", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Butter.png.
         /// </summary>
-        internal static byte[] DairyProducts_Butter {
+        internal static string DairyProducts_Butter {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Butter", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Butter", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Buttermilk.png.
         /// </summary>
-        internal static byte[] DairyProducts_Buttermilk {
+        internal static string DairyProducts_Buttermilk {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Buttermilk", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Buttermilk", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Cheddar_Cheese.png.
         /// </summary>
-        internal static byte[] DairyProducts_Cheddar_Cheese {
+        internal static string DairyProducts_Cheddar_Cheese {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Cheddar_Cheese", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Cheddar_Cheese", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Clarified_Butter.png.
         /// </summary>
-        internal static byte[] DairyProducts_Clarified_Butter {
+        internal static string DairyProducts_Clarified_Butter {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Clarified_Butter", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Clarified_Butter", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Condensed_Milk.png.
         /// </summary>
-        internal static byte[] DairyProducts_Condensed_Milk {
+        internal static string DairyProducts_Condensed_Milk {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Condensed_Milk", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Condensed_Milk", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Cottage_Cheese.png.
         /// </summary>
-        internal static byte[] DairyProducts_Cottage_Cheese {
+        internal static string DairyProducts_Cottage_Cheese {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Cottage_Cheese", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Cottage_Cheese", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Cream.png.
         /// </summary>
-        internal static byte[] DairyProducts_Cream {
+        internal static string DairyProducts_Cream {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Cream", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Cream", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Cream_Cheese.png.
         /// </summary>
-        internal static byte[] DairyProducts_Cream_Cheese {
+        internal static string DairyProducts_Cream_Cheese {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Cream_Cheese", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Cream_Cheese", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Feta_Cheese.png.
         /// </summary>
-        internal static byte[] DairyProducts_Feta_Cheese {
+        internal static string DairyProducts_Feta_Cheese {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Feta_Cheese", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Feta_Cheese", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Gouda_Cheese.png.
         /// </summary>
-        internal static byte[] DairyProducts_Gouda_Cheese {
+        internal static string DairyProducts_Gouda_Cheese {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Gouda_Cheese", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Gouda_Cheese", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Gruyere_Cheese.png.
         /// </summary>
-        internal static byte[] DairyProducts_Gruyere_Cheese {
+        internal static string DairyProducts_Gruyere_Cheese {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Gruyere_Cheese", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Gruyere_Cheese", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Hung_Curd.png.
         /// </summary>
-        internal static byte[] DairyProducts_Hung_Curd {
+        internal static string DairyProducts_Hung_Curd {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Hung_Curd", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Hung_Curd", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Khoya.png.
         /// </summary>
-        internal static byte[] DairyProducts_Khoya {
+        internal static string DairyProducts_Khoya {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Khoya", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Khoya", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Mascarpone_Cheese.png.
         /// </summary>
-        internal static byte[] DairyProducts_Mascarpone_Cheese {
+        internal static string DairyProducts_Mascarpone_Cheese {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Mascarpone_Cheese", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Mascarpone_Cheese", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Milk.png.
         /// </summary>
-        internal static byte[] DairyProducts_Milk {
+        internal static string DairyProducts_Milk {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Milk", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Milk", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Mozzarella_Cheese.png.
         /// </summary>
-        internal static byte[] DairyProducts_Mozzarella_Cheese {
+        internal static string DairyProducts_Mozzarella_Cheese {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Mozzarella_Cheese", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Mozzarella_Cheese", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Parmesan_Cheese.png.
         /// </summary>
-        internal static byte[] DairyProducts_Parmesan_Cheese {
+        internal static string DairyProducts_Parmesan_Cheese {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Parmesan_Cheese", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Parmesan_Cheese", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Provolone_Cheese.png.
         /// </summary>
-        internal static byte[] DairyProducts_Provolone_Cheese {
+        internal static string DairyProducts_Provolone_Cheese {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Provolone_Cheese", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Provolone_Cheese", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Ricotta_Cheese.png.
         /// </summary>
-        internal static byte[] DairyProducts_Ricotta_Cheese {
+        internal static string DairyProducts_Ricotta_Cheese {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Ricotta_Cheese", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Ricotta_Cheese", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/DairyProducts/DairyProducts_Yogurt.png.
         /// </summary>
-        internal static byte[] DairyProducts_Yogurt {
+        internal static string DairyProducts_Yogurt {
             get {
-                object obj = ResourceManager.GetObject("DairyProducts_Yogurt", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("DairyProducts_Yogurt", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Apples.png.
         /// </summary>
-        internal static byte[] Fruits_Apples {
+        internal static string Fruits_Apples {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Apples", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Apples", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Apricots.png.
         /// </summary>
-        internal static byte[] Fruits_Apricots {
+        internal static string Fruits_Apricots {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Apricots", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Apricots", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Banana.png.
         /// </summary>
-        internal static byte[] Fruits_Banana {
+        internal static string Fruits_Banana {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Banana", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Banana", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Blueberries.png.
         /// </summary>
-        internal static byte[] Fruits_Blueberries {
+        internal static string Fruits_Blueberries {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Blueberries", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Blueberries", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Cape_Gooseberry.png.
         /// </summary>
-        internal static byte[] Fruits_Cape_Gooseberry {
+        internal static string Fruits_Cape_Gooseberry {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Cape_Gooseberry", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Cape_Gooseberry", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Cherry.png.
         /// </summary>
-        internal static byte[] Fruits_Cherry {
+        internal static string Fruits_Cherry {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Cherry", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Cherry", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Coconut.png.
         /// </summary>
-        internal static byte[] Fruits_Coconut {
+        internal static string Fruits_Coconut {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Coconut", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Coconut", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Cooking_Apples.png.
         /// </summary>
-        internal static byte[] Fruits_Cooking_Apples {
+        internal static string Fruits_Cooking_Apples {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Cooking_Apples", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Cooking_Apples", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Cranberry.png.
         /// </summary>
-        internal static byte[] Fruits_Cranberry {
+        internal static string Fruits_Cranberry {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Cranberry", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Cranberry", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Currant.png.
         /// </summary>
-        internal static byte[] Fruits_Currant {
+        internal static string Fruits_Currant {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Currant", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Currant", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Custard_Apple.png.
         /// </summary>
-        internal static byte[] Fruits_Custard_Apple {
+        internal static string Fruits_Custard_Apple {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Custard_Apple", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Custard_Apple", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Dates.png.
         /// </summary>
-        internal static byte[] Fruits_Dates {
+        internal static string Fruits_Dates {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Dates", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Dates", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Dried_Fruit.png.
         /// </summary>
-        internal static byte[] Fruits_Dried_Fruit {
+        internal static string Fruits_Dried_Fruit {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Dried_Fruit", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Dried_Fruit", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Figs.png.
         /// </summary>
-        internal static byte[] Fruits_Figs {
+        internal static string Fruits_Figs {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Figs", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Figs", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Grapefruit.png.
         /// </summary>
-        internal static byte[] Fruits_Grapefruit {
+        internal static string Fruits_Grapefruit {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Grapefruit", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Grapefruit", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Grapes.png.
         /// </summary>
-        internal static byte[] Fruits_Grapes {
+        internal static string Fruits_Grapes {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Grapes", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Grapes", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Guava.png.
         /// </summary>
-        internal static byte[] Fruits_Guava {
+        internal static string Fruits_Guava {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Guava", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Guava", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Indian_Gooseberry.png.
         /// </summary>
-        internal static byte[] Fruits_Indian_Gooseberry {
+        internal static string Fruits_Indian_Gooseberry {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Indian_Gooseberry", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Indian_Gooseberry", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Jamun.png.
         /// </summary>
-        internal static byte[] Fruits_Jamun {
+        internal static string Fruits_Jamun {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Jamun", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Jamun", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Kiwi.png.
         /// </summary>
-        internal static byte[] Fruits_Kiwi {
+        internal static string Fruits_Kiwi {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Kiwi", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Kiwi", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Lemon.png.
         /// </summary>
-        internal static byte[] Fruits_Lemon {
+        internal static string Fruits_Lemon {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Lemon", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Lemon", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Lemon_Juice.png.
         /// </summary>
-        internal static byte[] Fruits_Lemon_Juice {
+        internal static string Fruits_Lemon_Juice {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Lemon_Juice", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Lemon_Juice", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Lemon_Rind.png.
         /// </summary>
-        internal static byte[] Fruits_Lemon_Rind {
+        internal static string Fruits_Lemon_Rind {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Lemon_Rind", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Lemon_Rind", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Lychee.png.
         /// </summary>
-        internal static byte[] Fruits_Lychee {
+        internal static string Fruits_Lychee {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Lychee", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Lychee", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Mango.png.
         /// </summary>
-        internal static byte[] Fruits_Mango {
+        internal static string Fruits_Mango {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Mango", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Mango", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Mulberry.png.
         /// </summary>
-        internal static byte[] Fruits_Mulberry {
+        internal static string Fruits_Mulberry {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Mulberry", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Mulberry", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Olives.png.
         /// </summary>
-        internal static byte[] Fruits_Olives {
+        internal static string Fruits_Olives {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Olives", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Olives", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Orange.png.
         /// </summary>
-        internal static byte[] Fruits_Orange {
+        internal static string Fruits_Orange {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Orange", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Orange", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Orange_Rind.png.
         /// </summary>
-        internal static byte[] Fruits_Orange_Rind {
+        internal static string Fruits_Orange_Rind {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Orange_Rind", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Orange_Rind", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Papaya.png.
         /// </summary>
-        internal static byte[] Fruits_Papaya {
+        internal static string Fruits_Papaya {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Papaya", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Papaya", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Peach.png.
         /// </summary>
-        internal static byte[] Fruits_Peach {
+        internal static string Fruits_Peach {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Peach", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Peach", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Pear.png.
         /// </summary>
-        internal static byte[] Fruits_Pear {
+        internal static string Fruits_Pear {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Pear", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Pear", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Pineapple.png.
         /// </summary>
-        internal static byte[] Fruits_Pineapple {
+        internal static string Fruits_Pineapple {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Pineapple", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Pineapple", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Plum.png.
         /// </summary>
-        internal static byte[] Fruits_Plum {
+        internal static string Fruits_Plum {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Plum", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Plum", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Pomegranate.png.
         /// </summary>
-        internal static byte[] Fruits_Pomegranate {
+        internal static string Fruits_Pomegranate {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Pomegranate", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Pomegranate", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Raisins.png.
         /// </summary>
-        internal static byte[] Fruits_Raisins {
+        internal static string Fruits_Raisins {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Raisins", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Raisins", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Strawberry.png.
         /// </summary>
-        internal static byte[] Fruits_Strawberry {
+        internal static string Fruits_Strawberry {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Strawberry", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Strawberry", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Sultana.png.
         /// </summary>
-        internal static byte[] Fruits_Sultana {
+        internal static string Fruits_Sultana {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Sultana", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Sultana", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Tamarind.png.
         /// </summary>
-        internal static byte[] Fruits_Tamarind {
+        internal static string Fruits_Tamarind {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Tamarind", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Tamarind", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Tomato.png.
         /// </summary>
-        internal static byte[] Fruits_Tomato {
+        internal static string Fruits_Tomato {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Tomato", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Tomato", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Watermelon.png.
         /// </summary>
-        internal static byte[] Fruits_Water_Chestnut {
+        internal static string Fruits_Water_Chestnut {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Water_Chestnut", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Water_Chestnut", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Fruits/Fruits_Water_Chestnut.png.
         /// </summary>
-        internal static byte[] Fruits_Watermelon {
+        internal static string Fruits_Watermelon {
             get {
-                object obj = ResourceManager.GetObject("Fruits_Watermelon", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Fruits_Watermelon", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Bacon.png.
         /// </summary>
-        internal static byte[] Meat_Bacon {
+        internal static string Meat_Bacon {
             get {
-                object obj = ResourceManager.GetObject("Meat_Bacon", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Bacon", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Beef.png.
         /// </summary>
-        internal static byte[] Meat_Beef {
+        internal static string Meat_Beef {
             get {
-                object obj = ResourceManager.GetObject("Meat_Beef", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Beef", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Chicken.png.
         /// </summary>
-        internal static byte[] Meat_Chicken {
+        internal static string Meat_Chicken {
             get {
-                object obj = ResourceManager.GetObject("Meat_Chicken", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Chicken", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Chicken_Liver.png.
         /// </summary>
-        internal static byte[] Meat_Chicken_Liver {
+        internal static string Meat_Chicken_Liver {
             get {
-                object obj = ResourceManager.GetObject("Meat_Chicken_Liver", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Chicken_Liver", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Chicken_Stock.png.
         /// </summary>
-        internal static byte[] Meat_Chicken_Stock {
+        internal static string Meat_Chicken_Stock {
             get {
-                object obj = ResourceManager.GetObject("Meat_Chicken_Stock", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Chicken_Stock", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Chops.png.
         /// </summary>
-        internal static byte[] Meat_Chops {
+        internal static string Meat_Chops {
             get {
-                object obj = ResourceManager.GetObject("Meat_Chops", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Chops", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Crab.png.
         /// </summary>
-        internal static byte[] Meat_Crab {
+        internal static string Meat_Crab {
             get {
-                object obj = ResourceManager.GetObject("Meat_Crab", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Crab", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Free_Range_Chicken.png.
         /// </summary>
-        internal static byte[] Meat_Free_Range_Chicken {
+        internal static string Meat_Free_Range_Chicken {
             get {
-                object obj = ResourceManager.GetObject("Meat_Free_Range_Chicken", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Free_Range_Chicken", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Grass_Fed_Chicken.png.
         /// </summary>
-        internal static byte[] Meat_Grass_Fed_Chicken {
+        internal static string Meat_Grass_Fed_Chicken {
             get {
-                object obj = ResourceManager.GetObject("Meat_Grass_Fed_Chicken", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Grass_Fed_Chicken", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Ham.png.
         /// </summary>
-        internal static byte[] Meat_Ham {
+        internal static string Meat_Ham {
             get {
-                object obj = ResourceManager.GetObject("Meat_Ham", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Ham", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Keema.png.
         /// </summary>
-        internal static byte[] Meat_Keema {
+        internal static string Meat_Keema {
             get {
-                object obj = ResourceManager.GetObject("Meat_Keema", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Keema", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Kidney_Meat.png.
         /// </summary>
-        internal static byte[] Meat_Kidney_Meat {
+        internal static string Meat_Kidney_Meat {
             get {
-                object obj = ResourceManager.GetObject("Meat_Kidney_Meat", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Kidney_Meat", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Lamb_Meat.png.
         /// </summary>
-        internal static byte[] Meat_Lamb_Meat {
+        internal static string Meat_Lamb_Meat {
             get {
-                object obj = ResourceManager.GetObject("Meat_Lamb_Meat", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Lamb_Meat", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Mutton.png.
         /// </summary>
-        internal static byte[] Meat_Mutton {
+        internal static string Meat_Meat_Stock {
             get {
-                object obj = ResourceManager.GetObject("Meat_Mutton", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Meat_Stock", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Mutton_Liver.png.
         /// </summary>
-        internal static byte[] Meat_Mutton_Liver {
+        internal static string Meat_Mutton {
             get {
-                object obj = ResourceManager.GetObject("Meat_Mutton_Liver", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Mutton", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Organic_Chicken.png.
         /// </summary>
-        internal static byte[] Meat_Organic_Chicken {
+        internal static string Meat_Mutton_Liver {
             get {
-                object obj = ResourceManager.GetObject("Meat_Organic_Chicken", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Mutton_Liver", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Partridge.png.
         /// </summary>
-        internal static byte[] Meat_Partridge {
+        internal static string Meat_Organic_Chicken {
             get {
-                object obj = ResourceManager.GetObject("Meat_Partridge", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Organic_Chicken", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Pork.png.
         /// </summary>
-        internal static byte[] Meat_Pork {
+        internal static string Meat_Partridge {
             get {
-                object obj = ResourceManager.GetObject("Meat_Pork", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Partridge", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Quail.png.
         /// </summary>
-        internal static byte[] Meat_Quail {
+        internal static string Meat_Pork {
             get {
-                object obj = ResourceManager.GetObject("Meat_Quail", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Pork", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Skinned_Chicken.png.
         /// </summary>
-        internal static byte[] Meat_Skinned_Chicken {
+        internal static string Meat_Quail {
             get {
-                object obj = ResourceManager.GetObject("Meat_Skinned_Chicken", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Quail", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Stock.png.
         /// </summary>
-        internal static byte[] Meat_Stock {
+        internal static string Meat_Skinned_Chicken {
             get {
-                object obj = ResourceManager.GetObject("Meat_Stock", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Skinned_Chicken", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Meat/Meat_Turkey.png.
         /// </summary>
-        internal static byte[] Meat_Turkey {
+        internal static string Meat_Turkey {
             get {
-                object obj = ResourceManager.GetObject("Meat_Turkey", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Meat_Turkey", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/NutsAndOilseeds/NutsAndOilseeds_Almonds.png.
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Almonds {
+        internal static string NutsAndOilseeds_Almonds {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Almonds", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("NutsAndOilseeds_Almonds", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/NutsAndOilseeds/NutsAndOilseeds_Blanched_Almonds.png.
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Blanched_Almonds {
+        internal static string NutsAndOilseeds_Blanched_Almonds {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Blanched_Almonds", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("NutsAndOilseeds_Blanched_Almonds", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/NutsAndOilseeds/NutsAndOilseeds_Canola_Oil.png.
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Canola_Oil {
+        internal static string NutsAndOilseeds_Canola_Oil {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Canola_Oil", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("NutsAndOilseeds_Canola_Oil", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/NutsAndOilseeds/NutsAndOilseeds_Cashew_Nuts.png.
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Cashew_Nuts {
+        internal static string NutsAndOilseeds_Cashew_Nuts {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Cashew_Nuts", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("NutsAndOilseeds_Cashew_Nuts", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/NutsAndOilseeds/NutsAndOilseeds_Chia_Seeds.png.
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Chia_Seeds {
+        internal static string NutsAndOilseeds_Chia_Seeds {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Chia_Seeds", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("NutsAndOilseeds_Chia_Seeds", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/NutsAndOilseeds/NutsAndOilseeds_Chironji.png.
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Chironji {
+        internal static string NutsAndOilseeds_Chironji {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Chironji", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("NutsAndOilseeds_Chironji", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/NutsAndOilseeds/NutsAndOilseeds_Hazelnut.png.
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Hazelnut {
+        internal static string NutsAndOilseeds_Hazelnut {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Hazelnut", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("NutsAndOilseeds_Hazelnut", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/NutsAndOilseeds/NutsAndOilseeds_Mustard_Oil.png.
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Mustard_Oil {
+        internal static string NutsAndOilseeds_Mustard_Oil {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Mustard_Oil", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("NutsAndOilseeds_Mustard_Oil", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/NutsAndOilseeds/NutsAndOilseeds_Mustard_Seeds.png.
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Mustard_Seeds {
+        internal static string NutsAndOilseeds_Mustard_Seeds {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Mustard_Seeds", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("NutsAndOilseeds_Mustard_Seeds", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/NutsAndOilseeds/NutsAndOilseeds_Olive_Oil.png.
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Olive_Oil {
+        internal static string NutsAndOilseeds_Olive_Oil {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Olive_Oil", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("NutsAndOilseeds_Olive_Oil", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/NutsAndOilseeds/NutsAndOilseeds_Peanuts.png.
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Peanuts {
+        internal static string NutsAndOilseeds_Peanuts {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Peanuts", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("NutsAndOilseeds_Peanuts", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/NutsAndOilseeds/NutsAndOilseeds_Pine_Nuts.png.
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Pine_Nuts {
+        internal static string NutsAndOilseeds_Pine_Nuts {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Pine_Nuts", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("NutsAndOilseeds_Pine_Nuts", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/NutsAndOilseeds/NutsAndOilseeds_Pistachio.png.
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Pistachio {
+        internal static string NutsAndOilseeds_Pistachio {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Pistachio", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("NutsAndOilseeds_Pistachio", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/NutsAndOilseeds/NutsAndOilseeds_Poppy_Seeds.png.
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Poppy_Seeds {
+        internal static string NutsAndOilseeds_Poppy_Seeds {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Poppy_Seeds", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("NutsAndOilseeds_Poppy_Seeds", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/NutsAndOilseeds/NutsAndOilseeds_Sesame_Oil.png.
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Sesame_Oil {
+        internal static string NutsAndOilseeds_Sesame_Oil {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Sesame_Oil", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("NutsAndOilseeds_Sesame_Oil", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/NutsAndOilseeds/NutsAndOilseeds_Sesame_Seeds.png.
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Sesame_Seeds {
+        internal static string NutsAndOilseeds_Sesame_Seeds {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Sesame_Seeds", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("NutsAndOilseeds_Sesame_Seeds", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/NutsAndOilseeds/NutsAndOilseeds_Sunflower_Seeds.png.
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Sunflower_Seeds {
+        internal static string NutsAndOilseeds_Sunflower_Seeds {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Sunflower_Seeds", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("NutsAndOilseeds_Sunflower_Seeds", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/NutsAndOilseeds/NutsAndOilseeds_Walnuts.png.
         /// </summary>
-        internal static byte[] NutsAndOilseeds_Walnuts {
+        internal static string NutsAndOilseeds_Walnuts {
             get {
-                object obj = ResourceManager.GetObject("NutsAndOilseeds_Walnuts", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("NutsAndOilseeds_Walnuts", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Agar.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Agar {
+        internal static string OtherIngredients_Agar {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Agar", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Agar", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Ajinomoto.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Ajinomoto {
+        internal static string OtherIngredients_Ajinomoto {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Ajinomoto", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Ajinomoto", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Almond Milk.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Almond_Milk {
+        internal static string OtherIngredients_Almond_Milk {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Almond_Milk", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Almond_Milk", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Alum.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Alum {
+        internal static string OtherIngredients_Alum {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Alum", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Alum", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Arrowroot.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Arrowroot {
+        internal static string OtherIngredients_Arrowroot {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Arrowroot", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Arrowroot", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Baking Powder.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Baking_Powder {
+        internal static string OtherIngredients_Baking_Powder {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Baking_Powder", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Baking_Powder", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Baking Soda.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Baking_Soda {
+        internal static string OtherIngredients_Baking_Soda {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Baking_Soda", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Baking_Soda", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Balsamic Vinegar.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Balsamic_Vinegar {
+        internal static string OtherIngredients_Balsamic_Vinegar {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Balsamic_Vinegar", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Balsamic_Vinegar", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Barfi.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Barfi {
+        internal static string OtherIngredients_Barfi {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Barfi", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Barfi", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Beer.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Beer {
+        internal static string OtherIngredients_Beer {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Beer", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Beer", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Brown Sauce.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Brown_Sauce {
+        internal static string OtherIngredients_Brown_Sauce {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Brown_Sauce", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Brown_Sauce", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Chocolate Chips.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Chocolate {
+        internal static string OtherIngredients_Chocolate {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Chocolate", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Chocolate", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Chocolate.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Chocolate_Chips {
+        internal static string OtherIngredients_Chocolate_Chips {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Chocolate_Chips", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Chocolate_Chips", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Cocoa.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Cocoa {
+        internal static string OtherIngredients_Cocoa {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Cocoa", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Cocoa", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Coconut Milk.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Coconut_Milk {
+        internal static string OtherIngredients_Coconut_Milk {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Coconut_Milk", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Coconut_Milk", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Coconut Oil.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Coconut_Oil {
+        internal static string OtherIngredients_Coconut_Oil {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Coconut_Oil", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Coconut_Oil", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Coconut Water.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Coconut_Water {
+        internal static string OtherIngredients_Coconut_Water {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Coconut_Water", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Coconut_Water", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Coffee.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Coffee {
+        internal static string OtherIngredients_Coffee {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Coffee", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Coffee", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Cognac.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Cognac {
+        internal static string OtherIngredients_Cognac {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Cognac", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Cognac", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Cornflour.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Cornflour {
+        internal static string OtherIngredients_Cornflour {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Cornflour", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Cornflour", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Cranberry Sauce.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Cranberry_Sauce {
+        internal static string OtherIngredients_Cranberry_Sauce {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Cranberry_Sauce", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Cranberry_Sauce", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Desiccated Coconut.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Desiccated_Coconut {
+        internal static string OtherIngredients_Desiccated_Coconut {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Desiccated_Coconut", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Desiccated_Coconut", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Egg.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Egg {
+        internal static string OtherIngredients_Egg {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Egg", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Egg", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Fish Sauce.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Fish_Sauce {
+        internal static string OtherIngredients_Fish_Sauce {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Fish_Sauce", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Fish_Sauce", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Flat Noodles.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Flat_Noodles {
+        internal static string OtherIngredients_Flat_Noodles {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Flat_Noodles", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Flat_Noodles", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Gelatin.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Gelatin {
+        internal static string OtherIngredients_Gelatin {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Gelatin", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Gelatin", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Glycerine.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Glycerine {
+        internal static string OtherIngredients_Glycerine {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Glycerine", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Glycerine", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Gold Leaves.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Gold_Leaves {
+        internal static string OtherIngredients_Gold_Leaves {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Gold_Leaves", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Gold_Leaves", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Guchchi.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Guchchi {
+        internal static string OtherIngredients_Guchchi {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Guchchi", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Guchchi", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Hoisin Sauce.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Hoisin_Sauce {
+        internal static string OtherIngredients_Hoisin_Sauce {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Hoisin_Sauce", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Hoisin_Sauce", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Jelly.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Jelly {
+        internal static string OtherIngredients_Jelly {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Jelly", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Jelly", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Jus.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Jus {
+        internal static string OtherIngredients_Jus {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Jus", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Jus", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Lotus Seeds.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Lotus_Seeds {
+        internal static string OtherIngredients_Lotus_Seeds {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Lotus_Seeds", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Lotus_Seeds", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Malt Vinegar.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Malt_Vinegar {
+        internal static string OtherIngredients_Malt_Vinegar {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Malt_Vinegar", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Malt_Vinegar", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Margarine.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Margarine {
+        internal static string OtherIngredients_Margarine {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Margarine", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Margarine", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Marzipan.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Marzipan {
+        internal static string OtherIngredients_Marzipan {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Marzipan", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Marzipan", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Mayonnaise.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Mayonnaise {
+        internal static string OtherIngredients_Mayonnaise {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Mayonnaise", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Mayonnaise", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Melon Seeds.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Melon_Seeds {
+        internal static string OtherIngredients_Melon_Seeds {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Melon_Seeds", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Melon_Seeds", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Meringue.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Meringue {
+        internal static string OtherIngredients_Meringue {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Meringue", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Meringue", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Oyster Sauce.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Oyster_Sauce {
+        internal static string OtherIngredients_Oyster_Sauce {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Oyster_Sauce", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Oyster_Sauce", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Paan.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Paan {
+        internal static string OtherIngredients_Paan {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Paan", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Paan", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Papad.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Papad {
+        internal static string OtherIngredients_Papad {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Papad", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Papad", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Pasta.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Pasta {
+        internal static string OtherIngredients_Pasta {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Pasta", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Pasta", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Petha.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Petha {
+        internal static string OtherIngredients_Petha {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Petha", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Petha", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Polenta.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Polenta {
+        internal static string OtherIngredients_Polenta {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Polenta", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Polenta", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Quinoa.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Quinoa {
+        internal static string OtherIngredients_Quinoa {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Quinoa", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Quinoa", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Red Wine Vinegar.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Red_Wine {
+        internal static string OtherIngredients_Red_Wine {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Red_Wine", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Red_Wine", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Red Wine.PNG.
         /// </summary>
-        internal static byte[] OtherIngredients_Red_Wine_Vinegar {
+        internal static string OtherIngredients_Red_Wine_Vinegar {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Red_Wine_Vinegar", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Red_Wine_Vinegar", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Rice Flour.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Rice_Flour {
+        internal static string OtherIngredients_Rice_Flour {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Rice_Flour", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Rice_Flour", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Rice Noodles.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Rice_Noodles {
+        internal static string OtherIngredients_Rice_Noodles {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Rice_Noodles", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Rice_Noodles", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Rice Vinegar.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Rice_Vinegar {
+        internal static string OtherIngredients_Rice_Vinegar {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Rice_Vinegar", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Rice_Vinegar", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Rose Water.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Rose_Water {
+        internal static string OtherIngredients_Rose_Water {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Rose_Water", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Rose_Water", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Roux.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Roux {
+        internal static string OtherIngredients_Roux {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Roux", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Roux", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Rum.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Rum {
+        internal static string OtherIngredients_Rum {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Rum", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Rum", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Sake.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Sake {
+        internal static string OtherIngredients_Sake {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Sake", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Sake", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Screw Pine.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Screw_Pine {
+        internal static string OtherIngredients_Screw_Pine {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Screw_Pine", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Screw_Pine", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Sea Salt.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Sea_Salt {
+        internal static string OtherIngredients_Sea_Salt {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Sea_Salt", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Sea_Salt", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Sev.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Sev {
+        internal static string OtherIngredients_Sev {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Sev", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Sev", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Sharbat.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Sharbat {
+        internal static string OtherIngredients_Sharbat {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Sharbat", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Sharbat", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Soy Milk.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Soy_Milk {
+        internal static string OtherIngredients_Soy_Milk {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Soy_Milk", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Soy_Milk", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Soya Sauce.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Soya_Sauce {
+        internal static string OtherIngredients_Soya_Sauce {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Soya_Sauce", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Soya_Sauce", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Tartaric Acid.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Tartaric_Acid {
+        internal static string OtherIngredients_Tartaric_Acid {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Tartaric_Acid", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Tartaric_Acid", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Tea.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Tea {
+        internal static string OtherIngredients_Tea {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Tea", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Tea", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Tofu.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Tofu {
+        internal static string OtherIngredients_Tofu {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Tofu", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Tofu", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Tomato Puree.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Tomato_Puree {
+        internal static string OtherIngredients_Tomato_Puree {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Tomato_Puree", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Tomato_Puree", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Tortilla.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Tortilla {
+        internal static string OtherIngredients_Tortilla {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Tortilla", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Tortilla", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Vanilla Essence.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Vanilla_Essence {
+        internal static string OtherIngredients_Vanilla_Essence {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Vanilla_Essence", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Vanilla_Essence", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Vegetable Oil.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Vegetable_Oil {
+        internal static string OtherIngredients_Vegetable_Oil {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Vegetable_Oil", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Vegetable_Oil", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Vermicelli.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Vermicelli {
+        internal static string OtherIngredients_Vermicelli {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Vermicelli", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Vermicelli", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Vetiver.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Vetiver {
+        internal static string OtherIngredients_Vetiver {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Vetiver", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Vetiver", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Vinaigrette.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Vinaigrette {
+        internal static string OtherIngredients_Vinaigrette {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Vinaigrette", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Vinaigrette", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Vinegar.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Vinegar {
+        internal static string OtherIngredients_Vinegar {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Vinegar", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Vinegar", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_White Pepper.png.
         /// </summary>
-        internal static byte[] OtherIngredients_White_Pepper {
+        internal static string OtherIngredients_White_Pepper {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_White_Pepper", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_White_Pepper", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_White Wine.png.
         /// </summary>
-        internal static byte[] OtherIngredients_White_Wine {
+        internal static string OtherIngredients_White_Wine {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_White_Wine", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_White_Wine", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/OtherIngredients/OtherIngredients_Yeast.png.
         /// </summary>
-        internal static byte[] OtherIngredients_Yeast {
+        internal static string OtherIngredients_Yeast {
             get {
-                object obj = ResourceManager.GetObject("OtherIngredients_Yeast", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OtherIngredients_Yeast", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Anchovies.png.
         /// </summary>
-        internal static byte[] Seafood_Anchovies {
+        internal static string Seafood_Anchovies {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Anchovies", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Anchovies", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Cat_Fish.png.
         /// </summary>
-        internal static byte[] Seafood_Cat_Fish {
+        internal static string Seafood_Cat_Fish {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Cat_Fish", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Cat_Fish", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Clams.png.
         /// </summary>
-        internal static byte[] Seafood_Clams {
+        internal static string Seafood_Clams {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Clams", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Clams", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Cod.png.
         /// </summary>
-        internal static byte[] Seafood_Cod {
+        internal static string Seafood_Cod {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Cod", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Cod", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Cuttle_Fish.png.
         /// </summary>
-        internal static byte[] Seafood_Cuttle_Fish {
+        internal static string Seafood_Cuttle_Fish {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Cuttle_Fish", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Cuttle_Fish", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Fish.png.
         /// </summary>
-        internal static byte[] Seafood_Fish {
+        internal static string Seafood_Fish {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Fish", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Fish", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Fish_Fillet.png.
         /// </summary>
-        internal static byte[] Seafood_Fish_Fillet {
+        internal static string Seafood_Fish_Fillet {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Fish_Fillet", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Fish_Fillet", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Fish_Stock.png.
         /// </summary>
-        internal static byte[] Seafood_Fish_Stock {
+        internal static string Seafood_Fish_Stock {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Fish_Stock", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Fish_Stock", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Flounder.png.
         /// </summary>
-        internal static byte[] Seafood_Flounder {
+        internal static string Seafood_Flounder {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Flounder", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Flounder", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Haddock.png.
         /// </summary>
-        internal static byte[] Seafood_Haddock {
+        internal static string Seafood_Haddock {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Haddock", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Haddock", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Hilsa.png.
         /// </summary>
-        internal static byte[] Seafood_Hilsa {
+        internal static string Seafood_Hilsa {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Hilsa", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Hilsa", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Mackerel.png.
         /// </summary>
-        internal static byte[] Seafood_Mackerel {
+        internal static string Seafood_Mackerel {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Mackerel", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Mackerel", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Mullet.png.
         /// </summary>
-        internal static byte[] Seafood_Mullet {
+        internal static string Seafood_Mullet {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Mullet", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Mullet", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Mussels.png.
         /// </summary>
-        internal static byte[] Seafood_Mussels {
+        internal static string Seafood_Mussels {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Mussels", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Mussels", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Pearl_Spot.png.
         /// </summary>
-        internal static byte[] Seafood_Pearl_Spot {
+        internal static string Seafood_Pearl_Spot {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Pearl_Spot", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Pearl_Spot", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Perch.png.
         /// </summary>
-        internal static byte[] Seafood_Perch {
+        internal static string Seafood_Perch {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Perch", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Perch", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Pomfret.png.
         /// </summary>
-        internal static byte[] Seafood_Pomfret {
+        internal static string Seafood_Pomfret {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Pomfret", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Pomfret", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Prawns.png.
         /// </summary>
-        internal static byte[] Seafood_Prawns {
+        internal static string Seafood_Prawns {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Prawns", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Prawns", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Salmon.png.
         /// </summary>
-        internal static byte[] Seafood_Salmon {
+        internal static string Seafood_Salmon {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Salmon", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Salmon", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Sardines.png.
         /// </summary>
-        internal static byte[] Seafood_Sardines {
+        internal static string Seafood_Sardines {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Sardines", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Sardines", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Shark.png.
         /// </summary>
-        internal static byte[] Seafood_Shark {
+        internal static string Seafood_Shark {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Shark", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Shark", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Shellfish.png.
         /// </summary>
-        internal static byte[] Seafood_Shellfish {
+        internal static string Seafood_Shellfish {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Shellfish", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Shellfish", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Shrimp.png.
         /// </summary>
-        internal static byte[] Seafood_Shrimp {
+        internal static string Seafood_Shrimp {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Shrimp", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Shrimp", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Squids.png.
         /// </summary>
-        internal static byte[] Seafood_Squids {
+        internal static string Seafood_Squids {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Squids", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Squids", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Seafood/Seafood_Tuna_Fish.png.
         /// </summary>
-        internal static byte[] Seafood_Tuna_Fish {
+        internal static string Seafood_Tuna_Fish {
             get {
-                object obj = ResourceManager.GetObject("Seafood_Tuna_Fish", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("Seafood_Tuna_Fish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Acacia {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Acacia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Allspice {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Allspice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Aniseed {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Aniseed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Asafoetida {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Asafoetida", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Basil {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Basil", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Bay_Leaf {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Bay_Leaf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Black_Cardamom {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Black_Cardamom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Black_Cumin {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Black_Cumin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Black_Pepper {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Black_Pepper", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Cajun_Spices {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Cajun_Spices", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Caraway_Seeds {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Caraway_Seeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Carom_Seeds {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Carom_Seeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Cayenne {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Cayenne", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Chives {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Chives", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Cinnamon {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Cinnamon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Cloves {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Cloves", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Coriander_Leaves {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Coriander_Leaves", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Coriander_Powder {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Coriander_Powder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Coriander_Seeds {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Coriander_Seeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Cumin_Seeds {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Cumin_Seeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Curry_Leaves {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Curry_Leaves", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Dill {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Dill", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Dried_Fenugreek_Leaves {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Dried_Fenugreek_Leaves", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Dry_Ginger_Powder {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Dry_Ginger_Powder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Fennel {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Fennel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Fenugreek_Seeds {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Fenugreek_Seeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Five_Spice_Powder {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Five_Spice_Powder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Galangal {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Galangal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Garam_Masala {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Garam_Masala", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Green_Cardamom {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Green_Cardamom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Herbs {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Herbs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Kashmiri_Mirch {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Kashmiri_Mirch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Lemongrass {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Lemongrass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Mace {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Mace", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Marjoram {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Marjoram", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Mint_Leaves {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Mint_Leaves", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Mustard_Powder {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Mustard_Powder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Nasturtium {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Nasturtium", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Nutmeg {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Nutmeg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Onion_Seeds {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Onion_Seeds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Oregano {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Oregano", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Paprika {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Paprika", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Parsley {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Parsley", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Raw_Mango_Powder {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Raw_Mango_Powder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Red_Chilli {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Red_Chilli", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Rock_Salt {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Rock_Salt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Rosemary {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Rosemary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Saffron {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Saffron", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Sage {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Sage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Salt {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Salt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Star_Anise {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Star_Anise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Thyme {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Thyme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Tulsi {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Tulsi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Turmeric {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Turmeric", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_TypeName {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_TypeName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SpicesAndHerbs_Yellow_Chillies {
+            get {
+                return ResourceManager.GetString("SpicesAndHerbs_Yellow_Chillies", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SugarAndSugarProducts_Brown_Sugar {
+            get {
+                return ResourceManager.GetString("SugarAndSugarProducts_Brown_Sugar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SugarAndSugarProducts_Cane_Sugar {
+            get {
+                return ResourceManager.GetString("SugarAndSugarProducts_Cane_Sugar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SugarAndSugarProducts_Caramel {
+            get {
+                return ResourceManager.GetString("SugarAndSugarProducts_Caramel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SugarAndSugarProducts_Castor_Sugar {
+            get {
+                return ResourceManager.GetString("SugarAndSugarProducts_Castor_Sugar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SugarAndSugarProducts_Golden_Syrup {
+            get {
+                return ResourceManager.GetString("SugarAndSugarProducts_Golden_Syrup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SugarAndSugarProducts_Honey {
+            get {
+                return ResourceManager.GetString("SugarAndSugarProducts_Honey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SugarAndSugarProducts_Icing_Sugar {
+            get {
+                return ResourceManager.GetString("SugarAndSugarProducts_Icing_Sugar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SugarAndSugarProducts_Jaggery {
+            get {
+                return ResourceManager.GetString("SugarAndSugarProducts_Jaggery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SugarAndSugarProducts_Sugar {
+            get {
+                return ResourceManager.GetString("SugarAndSugarProducts_Sugar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SugarAndSugarProducts_Sugar_Candy {
+            get {
+                return ResourceManager.GetString("SugarAndSugarProducts_Sugar_Candy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string SugarAndSugarProducts_TypeName {
+            get {
+                return ResourceManager.GetString("SugarAndSugarProducts_TypeName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Artichoke {
+            get {
+                return ResourceManager.GetString("Vegetables_Artichoke", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Ash_Gourd {
+            get {
+                return ResourceManager.GetString("Vegetables_Ash_Gourd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Asparagus {
+            get {
+                return ResourceManager.GetString("Vegetables_Asparagus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Avocado {
+            get {
+                return ResourceManager.GetString("Vegetables_Avocado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Baby_Corn {
+            get {
+                return ResourceManager.GetString("Vegetables_Baby_Corn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Bamboo_Shoot {
+            get {
+                return ResourceManager.GetString("Vegetables_Bamboo_Shoot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Beetroot {
+            get {
+                return ResourceManager.GetString("Vegetables_Beetroot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Bell_Pepper {
+            get {
+                return ResourceManager.GetString("Vegetables_Bell_Pepper", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Bitter_Gourd {
+            get {
+                return ResourceManager.GetString("Vegetables_Bitter_Gourd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Bok_Choy {
+            get {
+                return ResourceManager.GetString("Vegetables_Bok_Choy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Bottle_Gourd {
+            get {
+                return ResourceManager.GetString("Vegetables_Bottle_Gourd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Broad_Beans {
+            get {
+                return ResourceManager.GetString("Vegetables_Broad_Beans", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Broccoli {
+            get {
+                return ResourceManager.GetString("Vegetables_Broccoli", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Cabbage {
+            get {
+                return ResourceManager.GetString("Vegetables_Cabbage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Capers {
+            get {
+                return ResourceManager.GetString("Vegetables_Capers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Capsicum {
+            get {
+                return ResourceManager.GetString("Vegetables_Capsicum", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Carrot {
+            get {
+                return ResourceManager.GetString("Vegetables_Carrot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Cauliflower {
+            get {
+                return ResourceManager.GetString("Vegetables_Cauliflower", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Celery {
+            get {
+                return ResourceManager.GetString("Vegetables_Celery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Cherry_Tomatoes {
+            get {
+                return ResourceManager.GetString("Vegetables_Cherry_Tomatoes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Cluster_Beans {
+            get {
+                return ResourceManager.GetString("Vegetables_Cluster_Beans", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Colocasia {
+            get {
+                return ResourceManager.GetString("Vegetables_Colocasia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Corn {
+            get {
+                return ResourceManager.GetString("Vegetables_Corn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Cucumber {
+            get {
+                return ResourceManager.GetString("Vegetables_Cucumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Drumstick {
+            get {
+                return ResourceManager.GetString("Vegetables_Drumstick", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Eggplant {
+            get {
+                return ResourceManager.GetString("Vegetables_Eggplant", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Fenugreek {
+            get {
+                return ResourceManager.GetString("Vegetables_Fenugreek", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_French_Beans {
+            get {
+                return ResourceManager.GetString("Vegetables_French_Beans", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Garlic {
+            get {
+                return ResourceManager.GetString("Vegetables_Garlic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Gherkins {
+            get {
+                return ResourceManager.GetString("Vegetables_Gherkins", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Ginger {
+            get {
+                return ResourceManager.GetString("Vegetables_Ginger", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Green_Chillies {
+            get {
+                return ResourceManager.GetString("Vegetables_Green_Chillies", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Green_Peas {
+            get {
+                return ResourceManager.GetString("Vegetables_Green_Peas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Horseradish {
+            get {
+                return ResourceManager.GetString("Vegetables_Horseradish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Jackfruit {
+            get {
+                return ResourceManager.GetString("Vegetables_Jackfruit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Jalapeno {
+            get {
+                return ResourceManager.GetString("Vegetables_Jalapeno", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Kaffir_Lime {
+            get {
+                return ResourceManager.GetString("Vegetables_Kaffir_Lime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Lady_Finger {
+            get {
+                return ResourceManager.GetString("Vegetables_Lady_Finger", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Leek {
+            get {
+                return ResourceManager.GetString("Vegetables_Leek", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Lettuce {
+            get {
+                return ResourceManager.GetString("Vegetables_Lettuce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Lotus_Stem {
+            get {
+                return ResourceManager.GetString("Vegetables_Lotus_Stem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Mushroom {
+            get {
+                return ResourceManager.GetString("Vegetables_Mushroom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Mustard_Leaves {
+            get {
+                return ResourceManager.GetString("Vegetables_Mustard_Leaves", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Onion {
+            get {
+                return ResourceManager.GetString("Vegetables_Onion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Pigweed {
+            get {
+                return ResourceManager.GetString("Vegetables_Pigweed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Pimiento {
+            get {
+                return ResourceManager.GetString("Vegetables_Pimiento", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Plantain {
+            get {
+                return ResourceManager.GetString("Vegetables_Plantain", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Potatoes {
+            get {
+                return ResourceManager.GetString("Vegetables_Potatoes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Pumpkin {
+            get {
+                return ResourceManager.GetString("Vegetables_Pumpkin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Radish {
+            get {
+                return ResourceManager.GetString("Vegetables_Radish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Ridge_Gourd {
+            get {
+                return ResourceManager.GetString("Vegetables_Ridge_Gourd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Rocket_Leaves {
+            get {
+                return ResourceManager.GetString("Vegetables_Rocket_Leaves", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Round_Gourd {
+            get {
+                return ResourceManager.GetString("Vegetables_Round_Gourd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Shallots {
+            get {
+                return ResourceManager.GetString("Vegetables_Shallots", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Shiitake_Mushroom {
+            get {
+                return ResourceManager.GetString("Vegetables_Shiitake_Mushroom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Snake_Beans {
+            get {
+                return ResourceManager.GetString("Vegetables_Snake_Beans", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Sorrel_Leaves {
+            get {
+                return ResourceManager.GetString("Vegetables_Sorrel_Leaves", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Spinach {
+            get {
+                return ResourceManager.GetString("Vegetables_Spinach", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Spring_Onion {
+            get {
+                return ResourceManager.GetString("Vegetables_Spring_Onion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Sweet_Potatoes {
+            get {
+                return ResourceManager.GetString("Vegetables_Sweet_Potatoes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Turnip {
+            get {
+                return ResourceManager.GetString("Vegetables_Turnip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_TypeName {
+            get {
+                return ResourceManager.GetString("Vegetables_TypeName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Yam {
+            get {
+                return ResourceManager.GetString("Vegetables_Yam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string Vegetables_Zucchini {
+            get {
+                return ResourceManager.GetString("Vegetables_Zucchini", resourceCulture);
             }
         }
     }
