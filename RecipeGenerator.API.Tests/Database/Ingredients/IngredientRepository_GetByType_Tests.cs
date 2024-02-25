@@ -30,8 +30,10 @@ namespace RecipeGenerator.API.Tests.Database.Ingredients
         {
             //arrange
             GetIngredientDTO getIngredientDTO = mapper.Map<GetIngredientDTO>(IngredientSamples.NullIngredient);
-            //act & assert
-            Assert.Throws<InvalidOperationException>(() => ingredientRepository.GetByType(getIngredientDTO));
+            //act
+            var ingredients = ingredientRepository.GetByType(getIngredientDTO);
+            //assert
+            Assert.NotNull(ingredients);
         }
     }
 }

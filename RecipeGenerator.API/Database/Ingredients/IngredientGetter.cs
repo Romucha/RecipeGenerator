@@ -56,7 +56,7 @@ namespace RecipeGenerator.API.Database.Ingredients
                 var _link = getIngredientComponentResource<string>(linkmanager, id);
                 Uri.TryCreate(_link, UriKind.Absolute, out Uri link);
                 //get image
-                var image = getIngredientComponentResource<byte[]>(imgmanager, id);
+                var image = getIngredientComponentResource<string>(imgmanager, id);
                 //get type
                 var typeid = id.Split('_').FirstOrDefault();
                 var ingrtype = Enum.Parse<IngredientType>(typeid);

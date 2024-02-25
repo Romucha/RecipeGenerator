@@ -9,7 +9,7 @@ namespace RecipeGenerator.API.Models.Ingeridients
 {
     internal interface IIngredientFactory
     {
-        Ingredient Create(string name, string description, Uri link, byte[] image, IngredientType ingredientType);
+        Ingredient Create(string name, string description, Uri link, string image, IngredientType ingredientType);
 
         Ingredient CreateFromDTO(CreateIngredientDTO createIngredientDTO);
     }

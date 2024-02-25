@@ -19,7 +19,7 @@ namespace RecipeGenerator.API.DTO.Ingredients
 
         public IngredientType IngredientType { get; set; }
 
-        public byte[] Image { get; set; } = default!;
+        public string Image { get; set; } = default!;
 
         public DateTime CreatedAt { get; set; }
 

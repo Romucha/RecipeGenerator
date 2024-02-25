@@ -23,10 +23,9 @@ namespace RecipeGenerator.RazorPages.Views.Explore.Ingredients
         {
             if (Ingredient != null)
             {
-                if (Ingredient.Image != null && Ingredient.Image.Length > 0)
+                if (!string.IsNullOrEmpty(Ingredient.Image))
                 {
-                    var imagesrc = Convert.ToBase64String(Ingredient.Image);
-                    imageURL = string.Format("data:image/png;base64,{0}", imagesrc);
+                    imageURL = Ingredient.Image;
                 }
                 else
                 {

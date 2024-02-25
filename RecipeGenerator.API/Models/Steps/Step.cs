@@ -21,7 +21,7 @@ namespace RecipeGenerator.API.Models.Steps
 
         public string Description { get; set; }
 
-        public List<byte[]> Photos { get; set; }
+        public List<string> Photos { get; set; }
 
         public DateTime CreatedAt { get; set; }
 

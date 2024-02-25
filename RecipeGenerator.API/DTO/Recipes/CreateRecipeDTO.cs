@@ -16,7 +16,7 @@ namespace RecipeGenerator.API.DTO.Recipes
     {
         public string Name { get; set; }
 
-        public byte[] Image { get; set; } = default!;
+        public string Image { get; set; } = default!;
 
         public string Description { get; set; }
 

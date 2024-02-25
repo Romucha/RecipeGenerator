@@ -15,7 +15,7 @@ namespace RecipeGenerator.API.Models.Ingeridients
         {
             this.mapper = mapper;
         }
-        public Ingredient Create(string name, string description, Uri link, byte[] image, IngredientType ingredientType)
+        public Ingredient Create(string name, string description, Uri link, string image, IngredientType ingredientType)
         {
             return new Ingredient()
             {

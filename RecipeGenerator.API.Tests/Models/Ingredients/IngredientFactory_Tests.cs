@@ -32,7 +32,7 @@ namespace RecipeGenerator.API.Tests.Models.Ingredients
             string name = "Name";
             string description = "Description";
             Uri link = new Uri("http://uri.uri");
-            byte[] image = Array.Empty<byte>();
+            string image = "";
             IngredientType ingredientType = IngredientType.Fruits;
             //act
             var ingredient = ingredientFactory.Create(name, description, link, image, ingredientType);

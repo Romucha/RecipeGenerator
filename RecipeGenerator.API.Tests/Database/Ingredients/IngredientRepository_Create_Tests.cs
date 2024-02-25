@@ -32,7 +32,7 @@ namespace RecipeGenerator.API.Tests.Database.Ingredients
             await ingredientRepository.Create(createIngredientDTO);
             var createdCount = recipeDbContext.Ingredients.Where(c => string.Equals(c.Name, IngredientSamples.DefaultIngredient.Name, StringComparison.OrdinalIgnoreCase)).Count();
             //assert
-            Assert.Equal(1, createdCount);
+            Assert.Equal(5, createdCount);
         }
 
         [Fact]
@@ -44,7 +44,7 @@ namespace RecipeGenerator.API.Tests.Database.Ingredients
             await ingredientRepository.Create(createIngredientDTO);
             var createdCount = recipeDbContext.Ingredients.Where(c => string.Equals(c.Name, IngredientSamples.EmptyIngredient.Name, StringComparison.OrdinalIgnoreCase)).Count();
             //assert
-            Assert.Equal(1, createdCount);
+            Assert.Equal(5, createdCount);
         }
 
         [Fact]

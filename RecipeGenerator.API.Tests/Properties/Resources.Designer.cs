@@ -61,12 +61,11 @@ namespace RecipeGenerator.API.Tests.Properties {
         }
         
         /// <summary>
-        ///   Поиск локализованного ресурса типа System.Byte[].
+        ///   Ищет локализованную строку, похожую на /images/apple.png.
         /// </summary>
-        internal static byte[] apple {
+        internal static string apple {
             get {
-                object obj = ResourceManager.GetObject("apple", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("apple", resourceCulture);
             }
         }
     }

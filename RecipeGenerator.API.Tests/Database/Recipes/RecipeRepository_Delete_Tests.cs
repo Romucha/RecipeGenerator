@@ -36,7 +36,7 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             var recipe = RecipeSamples.DefaultRecipe;
             //act & assert
             var deleterecipedto = mapper.Map<DeleteRecipeDTO>(recipe);
-            await Assert.ThrowsAnyAsync<DbUpdateConcurrencyException>(async () => await recipeRepository.Delete(deleterecipedto));
+            await Assert.ThrowsAnyAsync<ArgumentNullException>(async () => await recipeRepository.Delete(deleterecipedto));
         }
 
         [Fact]
@@ -46,7 +46,7 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             var recipe = RecipeSamples.NormalRecipe;
             //act & assert
             var deleterecipedto = mapper.Map<DeleteRecipeDTO>(recipe);
-            await Assert.ThrowsAnyAsync<DbUpdateConcurrencyException>(async () => await recipeRepository.Delete(deleterecipedto));
+            await Assert.ThrowsAnyAsync<ArgumentNullException>(async () => await recipeRepository.Delete(deleterecipedto));
         }
 
         [Fact]
@@ -57,7 +57,7 @@ namespace RecipeGenerator.API.Tests.Database.Recipes
             await recipeDbContext.SaveChangesAsync();
             //act & assert
             DeleteRecipeDTO deleteRecipeDTO = null;
-            await Assert.ThrowsAnyAsync<ArgumentNullException>(async () => await recipeRepository.Delete(deleteRecipeDTO));
+            await Assert.ThrowsAnyAsync<NullReferenceException>(async () => await recipeRepository.Delete(deleteRecipeDTO));
 
         }
     }

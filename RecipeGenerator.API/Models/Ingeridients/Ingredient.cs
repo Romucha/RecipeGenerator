@@ -20,7 +20,7 @@ namespace RecipeGenerator.API.Models.Ingeridients
         public IngredientType IngredientType { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
-        public byte[] Image { get; set; }
+        public string Image { get; set; }
 
         public void CopyFromSource(Ingredient source)
         {

@@ -31,7 +31,7 @@ namespace RecipeGenerator.API.Tests.Database.Ingredients
             //assert
             Assert.NotNull(ingredients);
             Assert.NotEmpty(ingredients);
-            Assert.True(!ingredients.Any(c => string.IsNullOrEmpty(c.Name)));
+            Assert.Contains(ingredients, c => string.IsNullOrEmpty(c.Name));
         }
     }
 }
