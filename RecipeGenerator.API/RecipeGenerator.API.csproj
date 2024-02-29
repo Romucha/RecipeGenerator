@@ -831,4 +831,8 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\ingredients\SpicesAndHerbs\" />
+  </ItemGroup>
+
 </Project>

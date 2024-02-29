@@ -2725,15 +2725,6 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Spices and Herbs.
-        /// </summary>
-        internal static string SpicesAndHerbs_TypeName {
-            get {
-                return ResourceManager.GetString("SpicesAndHerbs_TypeName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Ищет локализованную строку, похожую на Yellow Chillies.
         /// </summary>
         internal static string SpicesAndHerbs_Yellow_Chillies {

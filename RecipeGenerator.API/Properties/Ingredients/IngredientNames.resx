@@ -1005,9 +1005,6 @@
   <data name="SpicesAndHerbs_Turmeric" xml:space="preserve">
     <value>Turmeric</value>
   </data>
-  <data name="SpicesAndHerbs_TypeName" xml:space="preserve">
-    <value>Spices and Herbs</value>
-  </data>
   <data name="SpicesAndHerbs_Yellow_Chillies" xml:space="preserve">
     <value>Yellow Chillies</value>
   </data>
