@@ -2824,15 +2824,6 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Sugar andSugar Products.
-        /// </summary>
-        internal static string SugarAndSugarProducts_TypeName {
-            get {
-                return ResourceManager.GetString("SugarAndSugarProducts_TypeName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Ищет локализованную строку, похожую на Artichoke.
         /// </summary>
         internal static string Vegetables_Artichoke {
