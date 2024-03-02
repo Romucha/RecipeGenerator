@@ -1221,9 +1221,6 @@
   <data name="Vegetables_Turnip" xml:space="preserve">
     <value>Turnip</value>
   </data>
-  <data name="Vegetables_TypeName" xml:space="preserve">
-    <value>Vegetables</value>
-  </data>
   <data name="Vegetables_Yam" xml:space="preserve">
     <value>Yam</value>
   </data>

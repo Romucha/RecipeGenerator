@@ -3373,15 +3373,6 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Vegetables.
-        /// </summary>
-        internal static string Vegetables_TypeName {
-            get {
-                return ResourceManager.GetString("Vegetables_TypeName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Ищет локализованную строку, похожую на Yam.
         /// </summary>
         internal static string Vegetables_Yam {
