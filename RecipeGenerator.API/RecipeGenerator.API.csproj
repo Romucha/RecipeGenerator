@@ -7,6 +7,64 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Acacia.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Allspice.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Aniseed.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Asafoetida.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Basil.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Bay_Leaf.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Black_Cardamom.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Black_Cumin.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Black_Pepper.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Cajun_Spices.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Caraway_Seeds.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Carom_Seeds.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Cayenne.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Chives.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Cinnamon.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Cloves.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Coriander_Leaves.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Coriander_Powder.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Coriander_Seeds.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Cumin_Seeds.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Curry_Leaves.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Dill.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Dried_Fenugreek_Leaves.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Dry_Ginger_Powder.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Fennel.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Fenugreek_Seeds.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Five_Spice_Powder.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Galangal.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Garam_Masala.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Green_Cardamom.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Herbs.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Kashmiri_Mirch.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Lemongrass.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Mace.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Marjoram.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Mint_Leaves.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Mustard_Powder.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Nasturtium.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Nutmeg.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Onion_Seeds.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Oregano.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Paprika.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Parsley.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Raw_Mango_Powder.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Red_Chilli.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Rock_Salt.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Rosemary.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Saffron.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Sage.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Salt.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Star_Anise.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Thyme.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Tulsi.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Turmeric.png" />
+    <None Remove="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Yellow_Chillies.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="wwwroot\images\ingredients\CerealsAndPulses\CerealsAndPulses_All_Purpose_Flour.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -736,6 +794,171 @@
     <Content Include="wwwroot\images\ingredients\Seafood\Seafood_Tuna_Fish.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Acacia.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Allspice.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Aniseed.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Asafoetida.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Basil.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Bay_Leaf.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Black_Cardamom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Black_Cumin.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Black_Pepper.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Cajun_Spices.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Caraway_Seeds.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Carom_Seeds.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Cayenne.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Chives.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Cinnamon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Cloves.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Coriander_Leaves.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Coriander_Powder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Coriander_Seeds.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Cumin_Seeds.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Curry_Leaves.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Dill.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Dried_Fenugreek_Leaves.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Dry_Ginger_Powder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Fennel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Fenugreek_Seeds.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Five_Spice_Powder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Galangal.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Garam_Masala.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Green_Cardamom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Herbs.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Kashmiri_Mirch.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Lemongrass.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Mace.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Marjoram.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Mint_Leaves.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Mustard_Powder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Nasturtium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Nutmeg.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Onion_Seeds.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Oregano.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Paprika.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Parsley.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Raw_Mango_Powder.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Red_Chilli.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Rock_Salt.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Rosemary.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Saffron.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Sage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Salt.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Star_Anise.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Thyme.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Tulsi.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Turmeric.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\SpicesAndHerbs\SpicesAndHerbs_Yellow_Chillies.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -829,10 +1052,6 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>CourseDescriptions.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\images\ingredients\SpicesAndHerbs\" />
   </ItemGroup>
 
 </Project>
