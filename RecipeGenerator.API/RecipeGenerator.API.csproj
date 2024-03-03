@@ -72,6 +72,69 @@
     <None Remove="wwwroot\images\ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Jaggery.png" />
     <None Remove="wwwroot\images\ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Sugar.png" />
     <None Remove="wwwroot\images\ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Sugar_Candy.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Artichoke.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Ash_Gourd.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Asparagus.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Avocado.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Baby_Corn.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Bamboo_Shoot.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Beetroot.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Bell_Pepper.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Bitter_Gourd.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Bok_Choy.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Bottle_Gourd.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Broad_Beans.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Broccoli.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Cabbage.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Capers.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Capsicum.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Carrot.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Cauliflower.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Celery.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Cherry_Tomatoes.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Cluster_Beans.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Colocasia.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Corn.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Cucumber.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Drumstick.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Eggplant.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Fenugreek.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_French_Beans.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Garlic.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Gherkins.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Ginger.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Green_Chillies.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Green_Peas.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Horseradish.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Jackfruit.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Jalapeno.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Kaffir_Lime.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Lady_Finger.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Leek.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Lettuce.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Lotus_Stem.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Mushroom.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Mustard_Leaves.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Onion.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Pigweed.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Pimiento.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Plantain.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Potatoes.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Pumpkin.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Radish.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Ridge_Gourd.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Rocket_Leaves.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Round_Gourd.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Shallots.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Shiitake_Mushroom.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Snake_Beans.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Sorrel_Leaves.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Spinach.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Spring_Onion.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Sweet_Potatoes.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Turnip.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Yam.png" />
+    <None Remove="wwwroot\images\ingredients\Vegetables\Vegetables_Zucchini.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -997,6 +1060,195 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="wwwroot\images\ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Sugar_Candy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Artichoke.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Ash_Gourd.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Asparagus.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Avocado.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Baby_Corn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Bamboo_Shoot.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Beetroot.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Bell_Pepper.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Bitter_Gourd.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Bok_Choy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Bottle_Gourd.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Broad_Beans.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Broccoli.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Cabbage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Capers.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Capsicum.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Carrot.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Cauliflower.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Celery.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Cherry_Tomatoes.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Cluster_Beans.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Colocasia.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Corn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Cucumber.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Drumstick.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Eggplant.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Fenugreek.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_French_Beans.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Garlic.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Gherkins.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Ginger.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Green_Chillies.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Green_Peas.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Horseradish.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Jackfruit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Jalapeno.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Kaffir_Lime.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Lady_Finger.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Leek.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Lettuce.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Lotus_Stem.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Mushroom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Mustard_Leaves.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Onion.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Pigweed.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Pimiento.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Plantain.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Potatoes.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Pumpkin.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Radish.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Ridge_Gourd.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Rocket_Leaves.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Round_Gourd.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Shallots.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Shiitake_Mushroom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Snake_Beans.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Sorrel_Leaves.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Spinach.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Spring_Onion.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Sweet_Potatoes.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Turnip.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Yam.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="wwwroot\images\ingredients\Vegetables\Vegetables_Zucchini.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
