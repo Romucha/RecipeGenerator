@@ -2248,7 +2248,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Acacia.png.
         /// </summary>
         internal static string SpicesAndHerbs_Acacia {
             get {
@@ -2257,7 +2257,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Allspice.png.
         /// </summary>
         internal static string SpicesAndHerbs_Allspice {
             get {
@@ -2266,7 +2266,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Aniseed.png.
         /// </summary>
         internal static string SpicesAndHerbs_Aniseed {
             get {
@@ -2275,7 +2275,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Asafoetida.png.
         /// </summary>
         internal static string SpicesAndHerbs_Asafoetida {
             get {
@@ -2284,7 +2284,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Basil.png.
         /// </summary>
         internal static string SpicesAndHerbs_Basil {
             get {
@@ -2293,7 +2293,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Bay_Leaf.png.
         /// </summary>
         internal static string SpicesAndHerbs_Bay_Leaf {
             get {
@@ -2302,7 +2302,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Black_Cardamom.png.
         /// </summary>
         internal static string SpicesAndHerbs_Black_Cardamom {
             get {
@@ -2311,7 +2311,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Black_Cumin.png.
         /// </summary>
         internal static string SpicesAndHerbs_Black_Cumin {
             get {
@@ -2320,7 +2320,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Black_Pepper.png.
         /// </summary>
         internal static string SpicesAndHerbs_Black_Pepper {
             get {
@@ -2329,7 +2329,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Cajun_Spices.png.
         /// </summary>
         internal static string SpicesAndHerbs_Cajun_Spices {
             get {
@@ -2338,7 +2338,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Caraway_Seeds.png.
         /// </summary>
         internal static string SpicesAndHerbs_Caraway_Seeds {
             get {
@@ -2347,7 +2347,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Carom_Seeds.png.
         /// </summary>
         internal static string SpicesAndHerbs_Carom_Seeds {
             get {
@@ -2356,7 +2356,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Cayenne.png.
         /// </summary>
         internal static string SpicesAndHerbs_Cayenne {
             get {
@@ -2365,7 +2365,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Chives.png.
         /// </summary>
         internal static string SpicesAndHerbs_Chives {
             get {
@@ -2374,7 +2374,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Cinnamon.png.
         /// </summary>
         internal static string SpicesAndHerbs_Cinnamon {
             get {
@@ -2383,7 +2383,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Cloves.png.
         /// </summary>
         internal static string SpicesAndHerbs_Cloves {
             get {
@@ -2392,7 +2392,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Coriander_Leaves.png.
         /// </summary>
         internal static string SpicesAndHerbs_Coriander_Leaves {
             get {
@@ -2401,7 +2401,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Coriander_Powder.png.
         /// </summary>
         internal static string SpicesAndHerbs_Coriander_Powder {
             get {
@@ -2410,7 +2410,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Coriander_Seeds.png.
         /// </summary>
         internal static string SpicesAndHerbs_Coriander_Seeds {
             get {
@@ -2419,7 +2419,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Cumin_Seeds.png.
         /// </summary>
         internal static string SpicesAndHerbs_Cumin_Seeds {
             get {
@@ -2428,7 +2428,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Curry_Leaves.png.
         /// </summary>
         internal static string SpicesAndHerbs_Curry_Leaves {
             get {
@@ -2437,7 +2437,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Dill.png.
         /// </summary>
         internal static string SpicesAndHerbs_Dill {
             get {
@@ -2446,7 +2446,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Dried_Fenugreek_Leaves.png.
         /// </summary>
         internal static string SpicesAndHerbs_Dried_Fenugreek_Leaves {
             get {
@@ -2455,7 +2455,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Dry_Ginger_Powder.png.
         /// </summary>
         internal static string SpicesAndHerbs_Dry_Ginger_Powder {
             get {
@@ -2464,7 +2464,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Fennel.png.
         /// </summary>
         internal static string SpicesAndHerbs_Fennel {
             get {
@@ -2473,7 +2473,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Fenugreek_Seeds.png.
         /// </summary>
         internal static string SpicesAndHerbs_Fenugreek_Seeds {
             get {
@@ -2482,7 +2482,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Five_Spice_Powder.png.
         /// </summary>
         internal static string SpicesAndHerbs_Five_Spice_Powder {
             get {
@@ -2491,7 +2491,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Galangal.png.
         /// </summary>
         internal static string SpicesAndHerbs_Galangal {
             get {
@@ -2500,7 +2500,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Garam_Masala.png.
         /// </summary>
         internal static string SpicesAndHerbs_Garam_Masala {
             get {
@@ -2509,7 +2509,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Green_Cardamom.png.
         /// </summary>
         internal static string SpicesAndHerbs_Green_Cardamom {
             get {
@@ -2518,7 +2518,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Herbs.png.
         /// </summary>
         internal static string SpicesAndHerbs_Herbs {
             get {
@@ -2527,7 +2527,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Kashmiri_Mirch.png.
         /// </summary>
         internal static string SpicesAndHerbs_Kashmiri_Mirch {
             get {
@@ -2536,7 +2536,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Lemongrass.png.
         /// </summary>
         internal static string SpicesAndHerbs_Lemongrass {
             get {
@@ -2545,7 +2545,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Mace.png.
         /// </summary>
         internal static string SpicesAndHerbs_Mace {
             get {
@@ -2554,7 +2554,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Marjoram.png.
         /// </summary>
         internal static string SpicesAndHerbs_Marjoram {
             get {
@@ -2563,7 +2563,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Mint_Leaves.png.
         /// </summary>
         internal static string SpicesAndHerbs_Mint_Leaves {
             get {
@@ -2572,7 +2572,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Mustard_Powder.png.
         /// </summary>
         internal static string SpicesAndHerbs_Mustard_Powder {
             get {
@@ -2581,7 +2581,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Nasturtium.png.
         /// </summary>
         internal static string SpicesAndHerbs_Nasturtium {
             get {
@@ -2590,7 +2590,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Nutmeg.png.
         /// </summary>
         internal static string SpicesAndHerbs_Nutmeg {
             get {
@@ -2599,7 +2599,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Onion_Seeds.png.
         /// </summary>
         internal static string SpicesAndHerbs_Onion_Seeds {
             get {
@@ -2608,7 +2608,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Oregano.png.
         /// </summary>
         internal static string SpicesAndHerbs_Oregano {
             get {
@@ -2617,7 +2617,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Paprika.png.
         /// </summary>
         internal static string SpicesAndHerbs_Paprika {
             get {
@@ -2626,7 +2626,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Parsley.png.
         /// </summary>
         internal static string SpicesAndHerbs_Parsley {
             get {
@@ -2635,7 +2635,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Raw_Mango_Powder.png.
         /// </summary>
         internal static string SpicesAndHerbs_Raw_Mango_Powder {
             get {
@@ -2644,7 +2644,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Red_Chilli.png.
         /// </summary>
         internal static string SpicesAndHerbs_Red_Chilli {
             get {
@@ -2653,7 +2653,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Rock_Salt.png.
         /// </summary>
         internal static string SpicesAndHerbs_Rock_Salt {
             get {
@@ -2662,7 +2662,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Rosemary.png.
         /// </summary>
         internal static string SpicesAndHerbs_Rosemary {
             get {
@@ -2671,7 +2671,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Saffron.png.
         /// </summary>
         internal static string SpicesAndHerbs_Saffron {
             get {
@@ -2680,7 +2680,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Sage.png.
         /// </summary>
         internal static string SpicesAndHerbs_Sage {
             get {
@@ -2689,7 +2689,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Salt.png.
         /// </summary>
         internal static string SpicesAndHerbs_Salt {
             get {
@@ -2698,7 +2698,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Star_Anise.png.
         /// </summary>
         internal static string SpicesAndHerbs_Star_Anise {
             get {
@@ -2707,7 +2707,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Thyme.png.
         /// </summary>
         internal static string SpicesAndHerbs_Thyme {
             get {
@@ -2716,7 +2716,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Tulsi.png.
         /// </summary>
         internal static string SpicesAndHerbs_Tulsi {
             get {
@@ -2725,7 +2725,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Turmeric.png.
         /// </summary>
         internal static string SpicesAndHerbs_Turmeric {
             get {
@@ -2734,16 +2734,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
-        /// </summary>
-        internal static string SpicesAndHerbs_TypeName {
-            get {
-                return ResourceManager.GetString("SpicesAndHerbs_TypeName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SpicesAndHerbs/SpicesAndHerbs_Yellow_Chillies.png.
         /// </summary>
         internal static string SpicesAndHerbs_Yellow_Chillies {
             get {
@@ -2752,7 +2743,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SugarAndSugarProducts/SugarAndSugarProducts_Brown_Sugar.png.
         /// </summary>
         internal static string SugarAndSugarProducts_Brown_Sugar {
             get {
@@ -2761,7 +2752,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SugarAndSugarProducts/SugarAndSugarProducts_Cane_Sugar.png.
         /// </summary>
         internal static string SugarAndSugarProducts_Cane_Sugar {
             get {
@@ -2770,7 +2761,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SugarAndSugarProducts/SugarAndSugarProducts_Caramel.png.
         /// </summary>
         internal static string SugarAndSugarProducts_Caramel {
             get {
@@ -2779,7 +2770,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SugarAndSugarProducts/SugarAndSugarProducts_Castor_Sugar.png.
         /// </summary>
         internal static string SugarAndSugarProducts_Castor_Sugar {
             get {
@@ -2788,7 +2779,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SugarAndSugarProducts/SugarAndSugarProducts_Golden_Syrup.png.
         /// </summary>
         internal static string SugarAndSugarProducts_Golden_Syrup {
             get {
@@ -2797,7 +2788,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SugarAndSugarProducts/SugarAndSugarProducts_Honey.png.
         /// </summary>
         internal static string SugarAndSugarProducts_Honey {
             get {
@@ -2806,7 +2797,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SugarAndSugarProducts/SugarAndSugarProducts_Icing_Sugar.png.
         /// </summary>
         internal static string SugarAndSugarProducts_Icing_Sugar {
             get {
@@ -2815,7 +2806,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SugarAndSugarProducts/SugarAndSugarProducts_Jaggery.png.
         /// </summary>
         internal static string SugarAndSugarProducts_Jaggery {
             get {
@@ -2824,7 +2815,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SugarAndSugarProducts/SugarAndSugarProducts_Sugar.png.
         /// </summary>
         internal static string SugarAndSugarProducts_Sugar {
             get {
@@ -2833,7 +2824,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/SugarAndSugarProducts/SugarAndSugarProducts_Sugar_Candy.png.
         /// </summary>
         internal static string SugarAndSugarProducts_Sugar_Candy {
             get {
@@ -2842,16 +2833,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
-        /// </summary>
-        internal static string SugarAndSugarProducts_TypeName {
-            get {
-                return ResourceManager.GetString("SugarAndSugarProducts_TypeName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Artichoke.png.
         /// </summary>
         internal static string Vegetables_Artichoke {
             get {
@@ -2860,7 +2842,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Ash_Gourd.png.
         /// </summary>
         internal static string Vegetables_Ash_Gourd {
             get {
@@ -2869,7 +2851,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Asparagus.png.
         /// </summary>
         internal static string Vegetables_Asparagus {
             get {
@@ -2878,7 +2860,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Avocado.png.
         /// </summary>
         internal static string Vegetables_Avocado {
             get {
@@ -2887,7 +2869,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Baby_Corn.png.
         /// </summary>
         internal static string Vegetables_Baby_Corn {
             get {
@@ -2896,7 +2878,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Bamboo_Shoot.png.
         /// </summary>
         internal static string Vegetables_Bamboo_Shoot {
             get {
@@ -2905,7 +2887,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Beetroot.png.
         /// </summary>
         internal static string Vegetables_Beetroot {
             get {
@@ -2914,7 +2896,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Bell_Pepper.png.
         /// </summary>
         internal static string Vegetables_Bell_Pepper {
             get {
@@ -2923,7 +2905,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Bitter_Gourd.png.
         /// </summary>
         internal static string Vegetables_Bitter_Gourd {
             get {
@@ -2932,7 +2914,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Bok_Choy.png.
         /// </summary>
         internal static string Vegetables_Bok_Choy {
             get {
@@ -2941,7 +2923,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Bottle_Gourd.png.
         /// </summary>
         internal static string Vegetables_Bottle_Gourd {
             get {
@@ -2950,7 +2932,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Broad_Beans.png.
         /// </summary>
         internal static string Vegetables_Broad_Beans {
             get {
@@ -2959,7 +2941,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Broccoli.png.
         /// </summary>
         internal static string Vegetables_Broccoli {
             get {
@@ -2968,7 +2950,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Cabbage.png.
         /// </summary>
         internal static string Vegetables_Cabbage {
             get {
@@ -2977,7 +2959,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Capers.png.
         /// </summary>
         internal static string Vegetables_Capers {
             get {
@@ -2986,7 +2968,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Capsicum.png.
         /// </summary>
         internal static string Vegetables_Capsicum {
             get {
@@ -2995,7 +2977,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Carrot.png.
         /// </summary>
         internal static string Vegetables_Carrot {
             get {
@@ -3004,7 +2986,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Cauliflower.png.
         /// </summary>
         internal static string Vegetables_Cauliflower {
             get {
@@ -3013,7 +2995,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Celery.png.
         /// </summary>
         internal static string Vegetables_Celery {
             get {
@@ -3022,7 +3004,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Cherry_Tomatoes.png.
         /// </summary>
         internal static string Vegetables_Cherry_Tomatoes {
             get {
@@ -3031,7 +3013,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Cluster_Beans.png.
         /// </summary>
         internal static string Vegetables_Cluster_Beans {
             get {
@@ -3040,7 +3022,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Colocasia.png.
         /// </summary>
         internal static string Vegetables_Colocasia {
             get {
@@ -3049,7 +3031,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Corn.png.
         /// </summary>
         internal static string Vegetables_Corn {
             get {
@@ -3058,7 +3040,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Cucumber.png.
         /// </summary>
         internal static string Vegetables_Cucumber {
             get {
@@ -3067,7 +3049,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Drumstick.png.
         /// </summary>
         internal static string Vegetables_Drumstick {
             get {
@@ -3076,7 +3058,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Eggplant.png.
         /// </summary>
         internal static string Vegetables_Eggplant {
             get {
@@ -3085,7 +3067,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Fenugreek.png.
         /// </summary>
         internal static string Vegetables_Fenugreek {
             get {
@@ -3094,7 +3076,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_French_Beans.png.
         /// </summary>
         internal static string Vegetables_French_Beans {
             get {
@@ -3103,7 +3085,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Garlic.png.
         /// </summary>
         internal static string Vegetables_Garlic {
             get {
@@ -3112,7 +3094,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Gherkins.png.
         /// </summary>
         internal static string Vegetables_Gherkins {
             get {
@@ -3121,7 +3103,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Ginger.png.
         /// </summary>
         internal static string Vegetables_Ginger {
             get {
@@ -3130,7 +3112,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Green_Chillies.png.
         /// </summary>
         internal static string Vegetables_Green_Chillies {
             get {
@@ -3139,7 +3121,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Green_Peas.png.
         /// </summary>
         internal static string Vegetables_Green_Peas {
             get {
@@ -3148,7 +3130,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Horseradish.png.
         /// </summary>
         internal static string Vegetables_Horseradish {
             get {
@@ -3157,7 +3139,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Jackfruit.png.
         /// </summary>
         internal static string Vegetables_Jackfruit {
             get {
@@ -3166,7 +3148,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Jalapeno.png.
         /// </summary>
         internal static string Vegetables_Jalapeno {
             get {
@@ -3175,7 +3157,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Kaffir_Lime.png.
         /// </summary>
         internal static string Vegetables_Kaffir_Lime {
             get {
@@ -3184,7 +3166,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Lady_Finger.png.
         /// </summary>
         internal static string Vegetables_Lady_Finger {
             get {
@@ -3193,7 +3175,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Leek.png.
         /// </summary>
         internal static string Vegetables_Leek {
             get {
@@ -3202,7 +3184,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Lettuce.png.
         /// </summary>
         internal static string Vegetables_Lettuce {
             get {
@@ -3211,7 +3193,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Lotus_Stem.png.
         /// </summary>
         internal static string Vegetables_Lotus_Stem {
             get {
@@ -3220,7 +3202,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Mushroom.png.
         /// </summary>
         internal static string Vegetables_Mushroom {
             get {
@@ -3229,7 +3211,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Mustard_Leaves.png.
         /// </summary>
         internal static string Vegetables_Mustard_Leaves {
             get {
@@ -3238,7 +3220,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Onion.png.
         /// </summary>
         internal static string Vegetables_Onion {
             get {
@@ -3247,7 +3229,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Pigweed.png.
         /// </summary>
         internal static string Vegetables_Pigweed {
             get {
@@ -3256,7 +3238,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Pimiento.png.
         /// </summary>
         internal static string Vegetables_Pimiento {
             get {
@@ -3265,7 +3247,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Plantain.png.
         /// </summary>
         internal static string Vegetables_Plantain {
             get {
@@ -3274,7 +3256,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Potatoes.png.
         /// </summary>
         internal static string Vegetables_Potatoes {
             get {
@@ -3283,7 +3265,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Pumpkin.png.
         /// </summary>
         internal static string Vegetables_Pumpkin {
             get {
@@ -3292,7 +3274,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Radish.png.
         /// </summary>
         internal static string Vegetables_Radish {
             get {
@@ -3301,7 +3283,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Ridge_Gourd.png.
         /// </summary>
         internal static string Vegetables_Ridge_Gourd {
             get {
@@ -3310,7 +3292,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Rocket_Leaves.png.
         /// </summary>
         internal static string Vegetables_Rocket_Leaves {
             get {
@@ -3319,7 +3301,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Round_Gourd.png.
         /// </summary>
         internal static string Vegetables_Round_Gourd {
             get {
@@ -3328,7 +3310,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Shallots.png.
         /// </summary>
         internal static string Vegetables_Shallots {
             get {
@@ -3337,7 +3319,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Shiitake_Mushroom.png.
         /// </summary>
         internal static string Vegetables_Shiitake_Mushroom {
             get {
@@ -3346,7 +3328,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Snake_Beans.png.
         /// </summary>
         internal static string Vegetables_Snake_Beans {
             get {
@@ -3355,7 +3337,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Sorrel_Leaves.png.
         /// </summary>
         internal static string Vegetables_Sorrel_Leaves {
             get {
@@ -3364,7 +3346,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Spinach.png.
         /// </summary>
         internal static string Vegetables_Spinach {
             get {
@@ -3373,7 +3355,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Spring_Onion.png.
         /// </summary>
         internal static string Vegetables_Spring_Onion {
             get {
@@ -3382,7 +3364,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Sweet_Potatoes.png.
         /// </summary>
         internal static string Vegetables_Sweet_Potatoes {
             get {
@@ -3391,7 +3373,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Turnip.png.
         /// </summary>
         internal static string Vegetables_Turnip {
             get {
@@ -3400,16 +3382,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
-        /// </summary>
-        internal static string Vegetables_TypeName {
-            get {
-                return ResourceManager.GetString("Vegetables_TypeName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Yam.png.
         /// </summary>
         internal static string Vegetables_Yam {
             get {
@@ -3418,7 +3391,7 @@ namespace RecipeGenerator.API.Properties.Ingredients {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на .
+        ///   Ищет локализованную строку, похожую на /images/ingredients/Vegetables/Vegetables_Zucchini.png.
         /// </summary>
         internal static string Vegetables_Zucchini {
             get {
