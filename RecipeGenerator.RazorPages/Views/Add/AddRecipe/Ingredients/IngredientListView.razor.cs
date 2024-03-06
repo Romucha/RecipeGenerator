@@ -1,17 +1,17 @@
 ﻿using Microsoft.AspNetCore.Components;
 using RecipeGenerator.API.Models.Recipes;
-using RecipeGenerator.RazorPages.ViewModels.Add;
+using RecipeGenerator.RazorPages.ViewModels.Add.AddRecipe;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.RazorPages.Views.Add.CourseType
+namespace RecipeGenerator.RazorPages.Views.Add.AddRecipe.Ingredients
 {
-    public partial class CourseTypeView
+    public partial class IngredientListView
     {
         [CascadingParameter]
-        public AddVM AddVM { get; set; }
+        public AddRecipeVM AddVM { get; set; }
     }
 }

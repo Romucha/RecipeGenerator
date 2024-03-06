@@ -8,7 +8,7 @@ using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.RazorPages.ViewModels.Add
+namespace RecipeGenerator.RazorPages.ViewModels.Add.AddRecipe
 {
     public class CourseListItem
     {

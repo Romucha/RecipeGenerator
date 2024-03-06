@@ -16,9 +16,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.RazorPages.ViewModels.Add
+namespace RecipeGenerator.RazorPages.ViewModels.Add.AddRecipe
 {
-    public class AddVM : ObservableObject
+    public class AddRecipeVM : ObservableObject
     {
         private readonly IRecipeRepository recipeRepository;
         private readonly IIngredientRepository ingredientRepository;
@@ -61,9 +61,9 @@ namespace RecipeGenerator.RazorPages.ViewModels.Add
         {
             get => selectedIngredientType;
             set
-            { 
+            {
                 SetProperty(ref selectedIngredientType, value);
-                updateAllIngedientList(value); 
+                updateAllIngedientList(value);
             }
         }
 
@@ -107,7 +107,7 @@ namespace RecipeGenerator.RazorPages.ViewModels.Add
             set => SetProperty(ref selectedIngredientName, value);
         }
 
-        public AddVM(IRecipeRepository recipeRepository, IIngredientRepository ingredientRepository)
+        public AddRecipeVM(IRecipeRepository recipeRepository, IIngredientRepository ingredientRepository)
         {
             this.recipeRepository = recipeRepository;
             this.ingredientRepository = ingredientRepository;

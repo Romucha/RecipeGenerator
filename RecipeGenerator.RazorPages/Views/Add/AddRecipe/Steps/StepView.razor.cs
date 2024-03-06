@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.RazorPages.Views.Add.Steps
+namespace RecipeGenerator.RazorPages.Views.Add.AddRecipe.Steps
 {
     public partial class StepView
     {

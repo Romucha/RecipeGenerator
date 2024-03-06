@@ -4,7 +4,7 @@ using RecipeGenerator.App.ViewModels;
 using RecipeGenerator.RazorPages.ViewModels.About;
 using RecipeGenerator.RazorPages.ViewModels.Explore;
 using RecipeGenerator.RazorPages.ViewModels.Home;
-using RecipeGenerator.RazorPages.ViewModels.Add;
+using RecipeGenerator.RazorPages.ViewModels.Add.AddRecipe;
 
 namespace RecipeGenerator.App
 {
@@ -33,7 +33,7 @@ namespace RecipeGenerator.App
             builder.Services.AddTransient<MainVM>();
             builder.Services.AddTransient<AboutVM>();
             builder.Services.AddTransient<ExploreVM>();
-            builder.Services.AddTransient<AddVM>();
+            builder.Services.AddTransient<AddRecipeVM>();
             builder.Services.AddTransient<HomeVM>();
 
             return builder.Build();

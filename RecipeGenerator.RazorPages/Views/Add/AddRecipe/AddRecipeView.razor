@@ -1,0 +1,28 @@
+﻿@using RecipeGenerator.RazorPages.Views.Add.AddRecipe.CourseType
+@using RecipeGenerator.RazorPages.Views.Add.AddRecipe.Ingredients
+@using RecipeGenerator.RazorPages.Views.Add.AddRecipe.Save
+@using RecipeGenerator.RazorPages.Views.Add.AddRecipe.Steps
+@using RecipeGenerator.RazorPages.Views.Add.AddRecipe.Title
+<div class="start-page">
+    <EditForm Model="@AddVM.RecipeDTO" OnSubmit="@RecipeSubmitted">
+        <DataAnnotationsValidator/>
+        <ValidationSummary/>
+        <!--Navigation panel is required here:
+            1. Basic info (title, description, image, type)
+            2. List of ingredients
+            3. List of steps
+            4. Save, cancel or return to recipe elements
+
+            How to do it:
+            Option one - create a variable in view model. Add naviagation buttons. After a button is clicked, change variable and re-render page.
+            Option two - change page completely. Add routing to components of recipe.
+        -->
+        <CascadingValue Value="AddVM">
+            <TitleView />
+            <CourseTypeView/>
+            <IngredientListView/>
+            <StepListView/>
+            <SaveView />
+        </CascadingValue>
+    </EditForm>
+</div>
