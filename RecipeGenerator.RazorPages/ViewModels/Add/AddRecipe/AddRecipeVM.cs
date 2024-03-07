@@ -107,6 +107,21 @@ namespace RecipeGenerator.RazorPages.ViewModels.Add.AddRecipe
             set => SetProperty(ref selectedIngredientName, value);
         }
 
+        private int pageIndex = 0;
+        /// <summary>
+        /// Index of a current page in list of recipe parts.
+        /// </summary>
+        public int PageIndex
+        {
+            get => pageIndex;
+            set => SetProperty(ref pageIndex, value);
+        }
+
+        /// <summary>
+        /// Number of pages.
+        /// </summary>
+        public const int MaxPageIndex = 4;
+
         public AddRecipeVM(IRecipeRepository recipeRepository, IIngredientRepository ingredientRepository)
         {
             this.recipeRepository = recipeRepository;
@@ -123,6 +138,9 @@ namespace RecipeGenerator.RazorPages.ViewModels.Add.AddRecipe
 
             AddIngredientCommand = new AsyncRelayCommand(addIngredient);
             DeleteIngredientCommand = new RelayCommand<GetIngredientDTO>(deleteIngredient);
+
+            NavigateForwardCommand = new RelayCommand(navigateForward);
+            NavigateBackwardCommand = new RelayCommand(navigateBackward);
         }
 
         #region Preparations
@@ -222,6 +240,30 @@ namespace RecipeGenerator.RazorPages.ViewModels.Add.AddRecipe
         /// Deletes ingredient from recipe
         /// </summary>
         public IRelayCommand<GetIngredientDTO> DeleteIngredientCommand { get; private set; }
+        #endregion
+
+        #region Navigation
+        private void navigateForward()
+        {
+            if (PageIndex < MaxPageIndex)
+                ++PageIndex;
+        }
+
+        private void navigateBackward()
+        {
+            if (PageIndex > 0)
+                --PageIndex;
+        }
+
+        /// <summary>
+        /// Navigates to the next page.
+        /// </summary>
+        public IRelayCommand NavigateForwardCommand { get; private set; }
+
+        /// <summary>
+        /// Navigates to previous page.
+        /// </summary>
+        public IRelayCommand NavigateBackwardCommand { get; private set; }
         #endregion
     }
 }

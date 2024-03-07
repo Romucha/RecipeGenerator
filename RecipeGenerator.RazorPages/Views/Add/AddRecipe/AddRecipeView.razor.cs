@@ -20,7 +20,7 @@ namespace RecipeGenerator.RazorPages.Views.Add.AddRecipe
 
         protected override async Task OnInitializedAsync()
         {
-            AddVM.PropertyChanged += AddVM_PropertyChanged;
+            AddVM.PropertyChanged += async (sender, e) => await InvokeAsync(StateHasChanged);
 
             AddVM.ResetRecipeCommand.Execute(null);
             AddVM.GetCourseListCommand.Execute(null);
@@ -28,11 +28,6 @@ namespace RecipeGenerator.RazorPages.Views.Add.AddRecipe
             AddVM.SelectedIngredientType = default;
 
             await base.OnInitializedAsync();
-        }
-
-        private void AddVM_PropertyChanged(object sender, PropertyChangedEventArgs e)
-        {
-            this.StateHasChanged();
         }
 
         public async Task RecipeSubmitted(EditContext editContext)

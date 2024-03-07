@@ -18,11 +18,27 @@
             Option two - change page completely. Add routing to components of recipe.
         -->
         <CascadingValue Value="AddVM">
-            <TitleView />
-            <CourseTypeView/>
-            <IngredientListView/>
-            <StepListView/>
-            <SaveView />
+        @switch (AddVM.PageIndex)
+        {
+            case 0:
+            default:
+                <TitleView />
+            break;
+            case 1:
+                <CourseTypeView/>
+            break;
+            case 2:
+                <IngredientListView/>
+            break;
+            case 3:
+                <StepListView/>
+            break;
+            case 4:
+                <SaveView />
+            break;
+        }
         </CascadingValue>
     </EditForm>
+    <div @onclick="() => AddVM.NavigateBackwardCommand.Execute(null)">Previous</div>
+    <div @onclick="() => AddVM.NavigateForwardCommand.Execute(null)">Next</div>
 </div>
