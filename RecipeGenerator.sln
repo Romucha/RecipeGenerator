@@ -10,6 +10,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.App", "Reci
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.API.Tests", "RecipeGenerator.API.Tests\RecipeGenerator.API.Tests.csproj", "{81DEFB4B-40B2-4059-8771-66FD68C32656}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator", "RecipeGenerator\RecipeGenerator.csproj", "{85F97047-013F-41E2-967F-480CAB874EBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.Views", "RecipeGenerator.Views\RecipeGenerator.Views.csproj", "{B91096CB-C769-4A6E-9A54-8FC11C678B62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.ViewModels", "RecipeGenerator.ViewModels\RecipeGenerator.ViewModels.csproj", "{07DABFE2-EA85-4F1E-989B-1DDCFF9F718B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.Data", "RecipeGenerator.Data\RecipeGenerator.Data.csproj", "{49001847-EEF2-42DD-AE21-6C5B04F3D78A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +42,24 @@ Global
 		{81DEFB4B-40B2-4059-8771-66FD68C32656}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81DEFB4B-40B2-4059-8771-66FD68C32656}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81DEFB4B-40B2-4059-8771-66FD68C32656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85F97047-013F-41E2-967F-480CAB874EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85F97047-013F-41E2-967F-480CAB874EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85F97047-013F-41E2-967F-480CAB874EBC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{85F97047-013F-41E2-967F-480CAB874EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85F97047-013F-41E2-967F-480CAB874EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85F97047-013F-41E2-967F-480CAB874EBC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B91096CB-C769-4A6E-9A54-8FC11C678B62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B91096CB-C769-4A6E-9A54-8FC11C678B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B91096CB-C769-4A6E-9A54-8FC11C678B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B91096CB-C769-4A6E-9A54-8FC11C678B62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07DABFE2-EA85-4F1E-989B-1DDCFF9F718B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07DABFE2-EA85-4F1E-989B-1DDCFF9F718B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07DABFE2-EA85-4F1E-989B-1DDCFF9F718B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07DABFE2-EA85-4F1E-989B-1DDCFF9F718B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49001847-EEF2-42DD-AE21-6C5B04F3D78A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49001847-EEF2-42DD-AE21-6C5B04F3D78A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49001847-EEF2-42DD-AE21-6C5B04F3D78A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49001847-EEF2-42DD-AE21-6C5B04F3D78A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
