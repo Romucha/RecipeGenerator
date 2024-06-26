@@ -10,13 +10,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.App", "Reci
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.API.Tests", "RecipeGenerator.API.Tests\RecipeGenerator.API.Tests.csproj", "{81DEFB4B-40B2-4059-8771-66FD68C32656}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator", "RecipeGenerator\RecipeGenerator.csproj", "{85F97047-013F-41E2-967F-480CAB874EBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator", "RecipeGenerator\RecipeGenerator.csproj", "{85F97047-013F-41E2-967F-480CAB874EBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.Views", "RecipeGenerator.Views\RecipeGenerator.Views.csproj", "{B91096CB-C769-4A6E-9A54-8FC11C678B62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Views", "RecipeGenerator.Views\RecipeGenerator.Views.csproj", "{B91096CB-C769-4A6E-9A54-8FC11C678B62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.ViewModels", "RecipeGenerator.ViewModels\RecipeGenerator.ViewModels.csproj", "{07DABFE2-EA85-4F1E-989B-1DDCFF9F718B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.ViewModels", "RecipeGenerator.ViewModels\RecipeGenerator.ViewModels.csproj", "{07DABFE2-EA85-4F1E-989B-1DDCFF9F718B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.Data", "RecipeGenerator.Data\RecipeGenerator.Data.csproj", "{49001847-EEF2-42DD-AE21-6C5B04F3D78A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Data", "RecipeGenerator.Data\RecipeGenerator.Data.csproj", "{49001847-EEF2-42DD-AE21-6C5B04F3D78A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.Localization", "RecipeGenerator.Localization\RecipeGenerator.Localization.csproj", "{C7DFCFA3-F2FB-41C4-A370-B345C566A5E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,6 +62,10 @@ Global
 		{49001847-EEF2-42DD-AE21-6C5B04F3D78A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49001847-EEF2-42DD-AE21-6C5B04F3D78A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49001847-EEF2-42DD-AE21-6C5B04F3D78A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7DFCFA3-F2FB-41C4-A370-B345C566A5E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7DFCFA3-F2FB-41C4-A370-B345C566A5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7DFCFA3-F2FB-41C4-A370-B345C566A5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7DFCFA3-F2FB-41C4-A370-B345C566A5E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
