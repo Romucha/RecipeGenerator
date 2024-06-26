@@ -18,7 +18,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.ViewModels"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Data", "RecipeGenerator.Data\RecipeGenerator.Data.csproj", "{49001847-EEF2-42DD-AE21-6C5B04F3D78A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.Localization", "RecipeGenerator.Localization\RecipeGenerator.Localization.csproj", "{C7DFCFA3-F2FB-41C4-A370-B345C566A5E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.Resources", "RecipeGenerator.Resources\RecipeGenerator.Resources.csproj", "{C7DFCFA3-F2FB-41C4-A370-B345C566A5E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
