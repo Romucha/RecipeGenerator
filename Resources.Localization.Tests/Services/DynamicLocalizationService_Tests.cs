@@ -22,152 +22,28 @@ namespace Resources.Localization.Tests.Services
             logger = new NullLogger<DynamicLocalizationService>();
         }
 
-        [Fact]
-        public void Constructor_Normal_NoOptions()
+        [Theory]
+        [InlineData(null, null, "en", new[] { "en", "ru" })]
+        [InlineData("", new[] { "en", "ru", "fr" }, "en", new[] { "en", "ru" })]
+        [InlineData(null, new[] { "en", "ru", "fr" }, "en", new[] { "en", "ru" })]
+        [InlineData("en", new string[] { }, "en", new[] { "en", "ru" })]
+        [InlineData("en", null, "en", new[] { "en", "ru" })]
+        [InlineData("fr", new string[] { "en", "ru", "fr" }, "fr", new[] { "en", "ru", "fr" })]
+        public void Constructor_Normal(string? currenCulture, IEnumerable<string>? cultures, string expectedCurrentCulture, IEnumerable<string> expectedCultures) 
         {
             //arrange
-            var currentCulture = "en";
-            var cultures = new ObservableCollection<CultureInfo>([
-                new CultureInfo("en"),
-                new CultureInfo("ru")
-                ]);
-            IOptions<DynamicLocalizationOptions> options = Options.Create<DynamicLocalizationOptions>(new());
-
-            //act
-            DynamicLocalizationService service = new(logger, options);
-
-            //assert
-            Assert.Equal(currentCulture, service.CurrentCulture);
-            Assert.Equal(cultures, service.Cultures);
-        }
-
-        [Fact]
-        public void Constructor_Culture_WithOptions() 
-        {
-            //arrange
-            var currentCulture = "fr";
-            var cultures = new ObservableCollection<CultureInfo>([
-                new CultureInfo("en"),
-                new CultureInfo("ru"),
-                new CultureInfo("fr")
-                ]);
             IOptions<DynamicLocalizationOptions> options = Options.Create<DynamicLocalizationOptions>(new()
             {
-                CurrentCulture = "fr",
-                Cultures = [
-                    "en",
-                    "ru",
-                    "fr"
-                    ]
+                CurrentCulture = currenCulture,
+                Cultures = cultures,
             });
 
             //act
             DynamicLocalizationService service = new(logger, options);
 
             //assert
-            Assert.Equal(currentCulture, service.CurrentCulture);
-            Assert.Equal(cultures, service.Cultures);
-        }
-
-        [Fact]
-        public void Constructor_Culture_WithInvalidOptions_EmptyCurrentCulture()
-        {
-            //arrange
-            var currentCulture = "en";
-            var cultures = new ObservableCollection<CultureInfo>([
-                new CultureInfo("en"),
-                new CultureInfo("ru")
-                ]);
-            IOptions<DynamicLocalizationOptions> options = Options.Create<DynamicLocalizationOptions>(new()
-            {
-                CurrentCulture = "",
-                Cultures = [
-                    "en",
-                    "ru",
-                    "fr"
-                    ]
-            });
-
-            //act
-            DynamicLocalizationService service = new(logger, options);
-
-            //assert
-            Assert.Equal(currentCulture, service.CurrentCulture);
-            Assert.Equal(cultures, service.Cultures);
-        }
-
-        [Fact]
-        public void Constructor_Culture_WithInvalidOptions_NullCurrentCulture()
-        {
-            //arrange
-            var currentCulture = "en";
-            var cultures = new ObservableCollection<CultureInfo>([
-                new CultureInfo("en"),
-                new CultureInfo("ru")
-                ]);
-            IOptions<DynamicLocalizationOptions> options = Options.Create<DynamicLocalizationOptions>(new()
-            {
-                CurrentCulture = null,
-                Cultures = [
-                    "en",
-                    "ru",
-                    "fr"
-                    ]
-            });
-
-            //act
-            DynamicLocalizationService service = new(logger, options);
-
-            //assert
-            Assert.Equal(currentCulture, service.CurrentCulture);
-            Assert.Equal(cultures, service.Cultures);
-        }
-
-        [Fact]
-        public void Constructor_Culture_WithInvalidOptions_EmptyCultures()
-        {
-            //arrange
-            var currentCulture = "en";
-            var cultures = new ObservableCollection<CultureInfo>([
-                new CultureInfo("en"),
-                new CultureInfo("ru")
-                ]);
-            IOptions<DynamicLocalizationOptions> options = Options.Create<DynamicLocalizationOptions>(new()
-            {
-                CurrentCulture = "fr",
-                Cultures = [
-                    ]
-            });
-
-            //act
-            DynamicLocalizationService service = new(logger, options);
-
-            //assert
-            Assert.Equal(currentCulture, service.CurrentCulture);
-            Assert.Equal(cultures, service.Cultures);
-        }
-
-        [Fact]
-        public void Constructor_Culture_WithInvalidOptions_NullCultures()
-        {
-            //arrange
-            var currentCulture = "en";
-            var cultures = new ObservableCollection<CultureInfo>([
-                new CultureInfo("en"),
-                new CultureInfo("ru")
-                ]);
-            IOptions<DynamicLocalizationOptions> options = Options.Create<DynamicLocalizationOptions>(new()
-            {
-                CurrentCulture = "fr",
-                Cultures = null
-            });
-
-            //act
-            DynamicLocalizationService service = new(logger, options);
-
-            //assert
-            Assert.Equal(currentCulture, service.CurrentCulture);
-            Assert.Equal(cultures, service.Cultures);
+            Assert.Equal(expectedCurrentCulture, service.CurrentCulture);
+            Assert.Equal(expectedCultures.Select(c => new CultureInfo(c)), service.Cultures);
         }
     }
 }
