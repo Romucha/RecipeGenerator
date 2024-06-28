@@ -18,7 +18,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.ViewModels"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Data", "RecipeGenerator.Data\RecipeGenerator.Data.csproj", "{49001847-EEF2-42DD-AE21-6C5B04F3D78A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.Resources", "RecipeGenerator.Resources\RecipeGenerator.Resources.csproj", "{C7DFCFA3-F2FB-41C4-A370-B345C566A5E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Localization", "RecipeGenerator.Localization\RecipeGenerator.Localization.csproj", "{C7DFCFA3-F2FB-41C4-A370-B345C566A5E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.Resources", "RecipeGenerator.Resources\RecipeGenerator.Resources.csproj", "{336A91D3-7E7C-452F-88B2-07BA2739978C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -66,6 +68,10 @@ Global
 		{C7DFCFA3-F2FB-41C4-A370-B345C566A5E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7DFCFA3-F2FB-41C4-A370-B345C566A5E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7DFCFA3-F2FB-41C4-A370-B345C566A5E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{336A91D3-7E7C-452F-88B2-07BA2739978C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{336A91D3-7E7C-452F-88B2-07BA2739978C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{336A91D3-7E7C-452F-88B2-07BA2739978C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{336A91D3-7E7C-452F-88B2-07BA2739978C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

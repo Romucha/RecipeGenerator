@@ -69,7 +69,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\RecipeGenerator.Resources\RecipeGenerator.Resources.csproj" />
+      <ProjectReference Include="..\RecipeGenerator.Localization\RecipeGenerator.Localization.csproj" />
+      <ProjectReference Include="..\RecipeGenerator.Resources\RecipeGenerator.Localization.csproj" />
     </ItemGroup>
 
     <ItemGroup>
