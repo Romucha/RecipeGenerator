@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RecipeGenerator.API.Properties.Recipes {
+namespace RecipeGenerator.Resources.Descriptions.Recipes {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace RecipeGenerator.API.Properties.Recipes {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class CourseDescriptions {
+    public class Descriptions_Courses {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal CourseDescriptions() {
+        internal Descriptions_Courses() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace RecipeGenerator.API.Properties.Recipes {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RecipeGenerator.API.Properties.Recipes.CourseDescriptions", typeof(CourseDescriptions).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RecipeGenerator.Resources.Descriptions.Recipes.Descriptions_Courses", typeof(Descriptions_Courses).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
