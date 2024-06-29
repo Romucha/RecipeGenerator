@@ -45,5 +45,51 @@ namespace Resources.Localization.Tests.Services
             Assert.Equal(expectedCurrentCulture, service.CurrentCulture);
             Assert.Equal(expectedCultures.Select(c => new CultureInfo(c)), service.Cultures);
         }
+
+        [Fact]
+        public void SetCulture_Normal()
+        {
+            //arrange
+            IOptions<DynamicLocalizationOptions> options = Options.Create<DynamicLocalizationOptions>(new()
+            {
+                CurrentCulture = "en",
+                Cultures =
+                [
+                    "en",
+                    "ru",
+                    "fr"
+                ],
+            });
+            DynamicLocalizationService service = new(logger, options);
+            //act
+            service.SetCulture("ru");
+
+            //assert
+            Assert.Equal("ru", service.CurrentCulture);
+        }
+
+        [Theory]
+        [InlineData("de")]
+        [InlineData("")]
+        [InlineData(null)]
+        public void SetCulture_ThrowsException(string? currentCulture)
+        {
+            //arrange
+            IOptions<DynamicLocalizationOptions> options = Options.Create<DynamicLocalizationOptions>(new()
+            {
+                CurrentCulture = "en",
+                Cultures =
+                [
+                    "en",
+                    "ru",
+                    "fr"
+                ],
+            });
+            DynamicLocalizationService service = new(logger, options);
+            //act & assert
+            Assert.Throws< NullReferenceException>(() => service.SetCulture(currentCulture!));
+
+            Assert.Equal(options.Value.CurrentCulture, service.CurrentCulture);
+        }
     }
 }
