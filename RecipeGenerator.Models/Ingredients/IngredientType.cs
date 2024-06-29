@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.Data.Ingredients
+namespace RecipeGenerator.Models.Ingredients
 {
     public enum IngredientType
     {

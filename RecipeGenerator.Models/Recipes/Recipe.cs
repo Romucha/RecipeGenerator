@@ -1,4 +1,4 @@
-﻿using RecipeGenerator.Data.Steps;
+﻿using RecipeGenerator.Models.Steps;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -6,9 +6,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RecipeGenerator.Data.Ingredients;
+using RecipeGenerator.Models.Ingredients;
 
-namespace RecipeGenerator.Data.Recipes
+namespace RecipeGenerator.Models.Recipes
 {
     /// <summary>
     /// Recipe.

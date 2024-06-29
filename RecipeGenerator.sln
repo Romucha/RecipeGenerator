@@ -16,13 +16,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Views", "Re
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.ViewModels", "RecipeGenerator.ViewModels\RecipeGenerator.ViewModels.csproj", "{07DABFE2-EA85-4F1E-989B-1DDCFF9F718B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Data", "RecipeGenerator.Data\RecipeGenerator.Data.csproj", "{49001847-EEF2-42DD-AE21-6C5B04F3D78A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Models", "RecipeGenerator.Models\RecipeGenerator.Models.csproj", "{49001847-EEF2-42DD-AE21-6C5B04F3D78A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Localization", "RecipeGenerator.Localization\RecipeGenerator.Localization.csproj", "{C7DFCFA3-F2FB-41C4-A370-B345C566A5E5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Resources", "RecipeGenerator.Resources\RecipeGenerator.Resources.csproj", "{336A91D3-7E7C-452F-88B2-07BA2739978C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Localization.Tests", "RecipeGenerator.Localization.Tests\RecipeGenerator.Localization.Tests.csproj", "{E832EE75-7853-4C1A-8654-94A94E140EF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Old", "Old", "{35EAC896-D1E2-43E7-9BE1-C9A690BA3299}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{96306632-1D4E-4289-9EC8-08B5DB03DFFF} = {35EAC896-D1E2-43E7-9BE1-C9A690BA3299}
+		{062C1824-DE85-4127-BEBF-0EFC2D96E05C} = {35EAC896-D1E2-43E7-9BE1-C9A690BA3299}
+		{76AEA5FC-3C10-412D-81DD-39902361E4E6} = {35EAC896-D1E2-43E7-9BE1-C9A690BA3299}
+		{81DEFB4B-40B2-4059-8771-66FD68C32656} = {35EAC896-D1E2-43E7-9BE1-C9A690BA3299}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}

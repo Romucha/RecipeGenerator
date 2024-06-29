@@ -1,4 +1,4 @@
-﻿using RecipeGenerator.Data.Recipes;
+﻿using RecipeGenerator.Models.Recipes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.Data.Steps
+namespace RecipeGenerator.Models.Steps
 {
     /// <summary>
     /// A step in a recipe.

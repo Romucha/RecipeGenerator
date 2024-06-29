@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.Data.Recipes
+namespace RecipeGenerator.Models.Recipes
 {
     public enum Course
     {
