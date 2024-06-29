@@ -23,19 +23,11 @@ namespace RecipeGenerator.Resources.Services
         /// </summary>
         /// <param name="logger">Logger service.</param>
         /// <param name="options">Localization options.</param>
-        public DynamicLocalizationService(ILogger<DynamicLocalizationService> logger, IOptions<DynamicLocalizationOptions> options)
+        public DynamicLocalizationService(ILogger<DynamicLocalizationService> logger, DynamicLocalizationOptions options)
         {
             this.logger = logger;
-            var localization = options.Value;
-            if (localization is null
-                || string.IsNullOrEmpty(localization.CurrentCulture)
-                || localization.Cultures is null
-                || !localization.Cultures.Any())
-            {
-                localization = DynamicLocalizationOptions.DefaultLocalizationOptions;
-            }
-
-            restoreCulturesFromOptions(localization);
+            CurrentCulture = options.CurrentCulture!;
+            Cultures = new ObservableCollection<CultureInfo>(options.Cultures!.Select(c => new CultureInfo(c)));
         }
 
         private string currentCulture = default!;
@@ -81,33 +73,6 @@ namespace RecipeGenerator.Resources.Services
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(SetCulture));
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        private void restoreCulturesFromOptions(DynamicLocalizationOptions options)
-        {
-            try
-            {
-                logger.LogInformation("Restoring culture information from options...");
-                if (options is null)
-                {
-                    throw new ArgumentNullException(nameof(options));
-                }
-
-                if (options.CurrentCulture is not null
-                    && options.Cultures is not null)
-                {
-                    CurrentCulture = options.CurrentCulture;
-                    Cultures = new(options.Cultures.Select(c => new CultureInfo(c)));
-                }
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(restoreCulturesFromOptions));
             }
             finally
             {

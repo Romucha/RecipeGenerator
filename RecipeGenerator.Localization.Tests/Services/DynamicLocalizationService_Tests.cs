@@ -32,11 +32,11 @@ namespace Resources.Localization.Tests.Services
         public void Constructor_Normal(string? currenCulture, IEnumerable<string>? cultures, string expectedCurrentCulture, IEnumerable<string> expectedCultures) 
         {
             //arrange
-            IOptions<DynamicLocalizationOptions> options = Options.Create<DynamicLocalizationOptions>(new()
+            DynamicLocalizationOptions options = new()
             {
                 CurrentCulture = currenCulture,
                 Cultures = cultures,
-            });
+            };
 
             //act
             DynamicLocalizationService service = new(logger, options);
@@ -50,7 +50,7 @@ namespace Resources.Localization.Tests.Services
         public void SetCulture_Normal()
         {
             //arrange
-            IOptions<DynamicLocalizationOptions> options = Options.Create<DynamicLocalizationOptions>(new()
+            DynamicLocalizationOptions options = new()
             {
                 CurrentCulture = "en",
                 Cultures =
@@ -59,7 +59,7 @@ namespace Resources.Localization.Tests.Services
                     "ru",
                     "fr"
                 ],
-            });
+            };
             DynamicLocalizationService service = new(logger, options);
             //act
             service.SetCulture("ru");
@@ -72,10 +72,10 @@ namespace Resources.Localization.Tests.Services
         [InlineData("de")]
         [InlineData("")]
         [InlineData(null)]
-        public void SetCulture_ThrowsException(string? currentCulture)
+        public void SetCulture_DoesNotChangeCulture_WhenInputIsInvalid(string? currentCulture)
         {
             //arrange
-            IOptions<DynamicLocalizationOptions> options = Options.Create<DynamicLocalizationOptions>(new()
+            DynamicLocalizationOptions options = new()
             {
                 CurrentCulture = "en",
                 Cultures =
@@ -84,12 +84,12 @@ namespace Resources.Localization.Tests.Services
                     "ru",
                     "fr"
                 ],
-            });
+            };
             DynamicLocalizationService service = new(logger, options);
             //act & assert
             service.SetCulture(currentCulture!);
 
-            Assert.Equal(options.Value.CurrentCulture, service.CurrentCulture);
+            Assert.Equal(options.CurrentCulture, service.CurrentCulture);
         }
     }
 }

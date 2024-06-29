@@ -20,9 +20,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Data", "Rec
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Localization", "RecipeGenerator.Localization\RecipeGenerator.Localization.csproj", "{C7DFCFA3-F2FB-41C4-A370-B345C566A5E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.Resources", "RecipeGenerator.Resources\RecipeGenerator.Resources.csproj", "{336A91D3-7E7C-452F-88B2-07BA2739978C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Resources", "RecipeGenerator.Resources\RecipeGenerator.Resources.csproj", "{336A91D3-7E7C-452F-88B2-07BA2739978C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources.Localization.Tests", "Resources.Localization.Tests\Resources.Localization.Tests.csproj", "{E832EE75-7853-4C1A-8654-94A94E140EF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Localization.Tests", "RecipeGenerator.Localization.Tests\RecipeGenerator.Localization.Tests.csproj", "{E832EE75-7853-4C1A-8654-94A94E140EF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
