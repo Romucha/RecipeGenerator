@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging.Abstractions;
+﻿using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Options;
 using RecipeGenerator.Localization.Factories;
 using RecipeGenerator.Resources.Models;
@@ -14,32 +15,62 @@ namespace RecipeGenerator.Localization.Tests.Factories
 {
     public class DynamicLocalizationServiceFactory_Tests
     {
+        private readonly ILoggerFactory loggerFactory;
+
         public DynamicLocalizationServiceFactory_Tests()
         {
-            
+            loggerFactory = new NullLoggerFactory();
         }
 
         [Fact]
         public async Task Create_Normal()
         {
             //arrange
-            var loggerFactory = new NullLoggerFactory();
-            var options = Options.Create(new DynamicLocalizationOptions()
+            var localizationOptions = new DynamicLocalizationOptions()
             {
-                CurrentCulture = "en",
+                CurrentCulture = "fr",
                 Cultures =
                 [
                     "en",
-                    "ru"
+                    "ru",
+                    "fr"
                 ]
-            });
+            };
+            var options = Options.Create(localizationOptions);
             DynamicLocalizationFactory factory = new DynamicLocalizationFactory(loggerFactory, options);
             //act
-            DynamicLocalizationService? service = await factory.CreateAsync();
+            DynamicLocalizationService? service = await factory.CreateAsync()!;
             //assert
             Assert.NotNull(service);
-            Assert.Equal(options.Value.CurrentCulture, service.CurrentCulture);
-            Assert.Equal(options.Value.Cultures!.Select(c => new CultureInfo(c)), service.Cultures);
+            Assert.Equal(localizationOptions.CurrentCulture, service.CurrentCulture);
+            Assert.Equal(localizationOptions.Cultures.Select(c => new CultureInfo(c)), service.Cultures);
+        }
+
+        [Theory]
+        [InlineData("", new[] { "en", "ru", "fr" })]
+        [InlineData(null, new[] { "en", "ru", "fr" })]
+        [InlineData("fr", new string[] { })]
+        [InlineData("fr", null)]
+        [InlineData(null, null)]
+        public async Task Create_ReturnsDefault_WhenOptionsAreInvalid(string? currentCulture, string[]? cultures)
+        {
+            //arrange
+            var localizationOptions = new DynamicLocalizationOptions()
+            {
+                CurrentCulture = currentCulture,
+                Cultures = cultures
+            };
+            var expectedOptions = DynamicLocalizationOptions.DefaultLocalizationOptions;
+            var options = Options.Create(localizationOptions);
+            DynamicLocalizationFactory factory = new DynamicLocalizationFactory(loggerFactory, options);
+
+            //act
+            DynamicLocalizationService? service = await factory.CreateAsync()!;
+
+            //assert
+            Assert.NotNull(service);
+            Assert.Equal(expectedOptions.CurrentCulture, service.CurrentCulture);
+            Assert.Equal(expectedOptions.Cultures!.Select(c => new CultureInfo(c)), service.Cultures);
         }
     }
 }

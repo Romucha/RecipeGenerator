@@ -1,5 +1,7 @@
-﻿using System;
+﻿using RecipeGenerator.Localization.Attributes;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,11 +21,14 @@ namespace RecipeGenerator.Resources.Models
         /// <summary>
         /// Current culture.
         /// </summary>
+        [Required]
         public string? CurrentCulture { get; set; }
 
         /// <summary>
         /// List of cultures.
         /// </summary>
+        [Required]
+        [NotEmpty]
         public IEnumerable<string>? Cultures { get; set; }
 
         public static DynamicLocalizationOptions DefaultLocalizationOptions => new()

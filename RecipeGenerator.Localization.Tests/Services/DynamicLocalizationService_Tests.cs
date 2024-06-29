@@ -22,30 +22,6 @@ namespace Resources.Localization.Tests.Services
             logger = new NullLogger<DynamicLocalizationService>();
         }
 
-        [Theory]
-        [InlineData(null, null, "en", new[] { "en", "ru" })]
-        [InlineData("", new[] { "en", "ru", "fr" }, "en", new[] { "en", "ru" })]
-        [InlineData(null, new[] { "en", "ru", "fr" }, "en", new[] { "en", "ru" })]
-        [InlineData("en", new string[] { }, "en", new[] { "en", "ru" })]
-        [InlineData("en", null, "en", new[] { "en", "ru" })]
-        [InlineData("fr", new string[] { "en", "ru", "fr" }, "fr", new[] { "en", "ru", "fr" })]
-        public void Constructor_Normal(string? currenCulture, IEnumerable<string>? cultures, string expectedCurrentCulture, IEnumerable<string> expectedCultures) 
-        {
-            //arrange
-            DynamicLocalizationOptions options = new()
-            {
-                CurrentCulture = currenCulture,
-                Cultures = cultures,
-            };
-
-            //act
-            DynamicLocalizationService service = new(logger, options);
-
-            //assert
-            Assert.Equal(expectedCurrentCulture, service.CurrentCulture);
-            Assert.Equal(expectedCultures.Select(c => new CultureInfo(c)), service.Cultures);
-        }
-
         [Fact]
         public void SetCulture_Normal()
         {

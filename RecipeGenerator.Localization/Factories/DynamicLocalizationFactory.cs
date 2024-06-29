@@ -4,6 +4,7 @@ using RecipeGenerator.Resources.Models;
 using RecipeGenerator.Resources.Services;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,13 +29,23 @@ namespace RecipeGenerator.Localization.Factories
             try
             {
                 logger.LogInformation("Cerating dynamic localization service...");
+                ValidationContext validationContext = new ValidationContext(options.Value);
+                var results = new List<ValidationResult>();
                 var serviceLogger = loggerFactory.CreateLogger<DynamicLocalizationService>();
-                return await Task.FromResult(new DynamicLocalizationService(serviceLogger, options.Value));
+                if (Validator.TryValidateObject(options.Value, validationContext, results, true))
+                {
+                    return await Task.FromResult(new DynamicLocalizationService(serviceLogger, options.Value));
+                }
+                else
+                {
+                    logger.LogInformation(string.Join("\r\n", results.Select(c => c.ErrorMessage)));
+                    return await Task.FromResult(new DynamicLocalizationService(serviceLogger, DynamicLocalizationOptions.DefaultLocalizationOptions));
+                }
             }
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(CreateAsync));
-                return await Task.FromResult<DynamicLocalizationService>(null);
+                return await Task.FromResult<DynamicLocalizationService>(null!);
             }
             finally
             {
