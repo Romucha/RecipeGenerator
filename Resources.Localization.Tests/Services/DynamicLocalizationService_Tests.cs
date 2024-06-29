@@ -87,7 +87,7 @@ namespace Resources.Localization.Tests.Services
             });
             DynamicLocalizationService service = new(logger, options);
             //act & assert
-            Assert.Throws< NullReferenceException>(() => service.SetCulture(currentCulture!));
+            service.SetCulture(currentCulture!);
 
             Assert.Equal(options.Value.CurrentCulture, service.CurrentCulture);
         }

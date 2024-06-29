@@ -71,18 +71,16 @@ namespace RecipeGenerator.Resources.Services
             {
                 logger.LogInformation($"Setting up new culture from string: {cultureName}");
                 var culture = Cultures.FirstOrDefault(c => c.Name == cultureName);
-                if (culture is null)
+                if (culture is not null)
                 {
-                    throw new NullReferenceException($"No culture {cultureName} was found.");
+                    CultureInfo.CurrentCulture = culture;
+                    CultureInfo.CurrentUICulture = culture;
+                    CurrentCulture = cultureName;
                 }
-                CultureInfo.CurrentCulture = culture;
-                CultureInfo.CurrentUICulture = culture;
-                CurrentCulture = cultureName;
             }
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(SetCulture));
-                throw;
             }
             finally
             {
@@ -100,13 +98,16 @@ namespace RecipeGenerator.Resources.Services
                     throw new ArgumentNullException(nameof(options));
                 }
 
-                CurrentCulture = options.CurrentCulture;
-                Cultures = new(options.Cultures.Select(c => new CultureInfo(c)));
+                if (options.CurrentCulture is not null
+                    && options.Cultures is not null)
+                {
+                    CurrentCulture = options.CurrentCulture;
+                    Cultures = new(options.Cultures.Select(c => new CultureInfo(c)));
+                }
             }
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(restoreCulturesFromOptions));
-                throw;
             }
             finally
             {
