@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.Resources.Extensions
+namespace RecipeGenerator.Localization.Extensions
 {
     public static class ServiceExtensions
     {
