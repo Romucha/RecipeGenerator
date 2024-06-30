@@ -71,7 +71,6 @@
     <ItemGroup>
       <ProjectReference Include="..\RecipeGenerator.Functionalities\RecipeGenerator.Functionalities.csproj" />
       <ProjectReference Include="..\RecipeGenerator.Localization\RecipeGenerator.Localization.csproj" />
-      <ProjectReference Include="..\RecipeGenerator.Resources\RecipeGenerator.Localization.csproj" />
       <ProjectReference Include="..\RecipeGenerator.Utility\RecipeGenerator.Utility.csproj" />
     </ItemGroup>
 

@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Options;
 using RecipeGenerator.Resources.Models;
 using RecipeGenerator.Resources.Services;
+using RecipeGenerator.Utility.Validation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -16,12 +17,14 @@ namespace RecipeGenerator.Localization.Factories
         private readonly ILogger<DynamicLocalizationFactory> logger;
         private readonly ILoggerFactory loggerFactory;
         private readonly IOptions<DynamicLocalizationOptions> options;
+        private readonly RecipeGeneratorValidator validator;
 
-        public DynamicLocalizationFactory(ILoggerFactory loggerFactory, IOptions<DynamicLocalizationOptions> options) 
+        public DynamicLocalizationFactory(ILoggerFactory loggerFactory, IOptions<DynamicLocalizationOptions> options, RecipeGeneratorValidator validator) 
         {
             this.loggerFactory = loggerFactory;
             logger = this.loggerFactory.CreateLogger<DynamicLocalizationFactory>();
             this.options = options;
+            this.validator = validator;
         }
 
         public async Task<DynamicLocalizationService>? CreateAsync()
@@ -29,18 +32,9 @@ namespace RecipeGenerator.Localization.Factories
             try
             {
                 logger.LogInformation("Cerating dynamic localization service...");
-                ValidationContext validationContext = new ValidationContext(options.Value);
-                var results = new List<ValidationResult>();
                 var serviceLogger = loggerFactory.CreateLogger<DynamicLocalizationService>();
-                if (Validator.TryValidateObject(options.Value, validationContext, results, true))
-                {
-                    return await Task.FromResult(new DynamicLocalizationService(serviceLogger, options.Value));
-                }
-                else
-                {
-                    logger.LogInformation(string.Join("\r\n", results.Select(c => c.ErrorMessage)));
-                    return await Task.FromResult(new DynamicLocalizationService(serviceLogger, DynamicLocalizationOptions.DefaultLocalizationOptions));
-                }
+                var localizationOptions = await validator.ValidateAsync(options.Value)!;
+                return await Task.FromResult(new DynamicLocalizationService(serviceLogger, localizationOptions));
             }
             catch (Exception ex)
             {

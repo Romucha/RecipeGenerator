@@ -4,6 +4,7 @@ using Microsoft.Extensions.Options;
 using RecipeGenerator.Localization.Factories;
 using RecipeGenerator.Resources.Models;
 using RecipeGenerator.Resources.Services;
+using RecipeGenerator.Utility.Validation;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -16,10 +17,12 @@ namespace RecipeGenerator.Localization.Tests.Factories
     public class DynamicLocalizationServiceFactory_Tests
     {
         private readonly ILoggerFactory loggerFactory;
+        private readonly RecipeGeneratorValidator validator;
 
         public DynamicLocalizationServiceFactory_Tests()
         {
             loggerFactory = new NullLoggerFactory();
+            validator = new RecipeGeneratorValidator(loggerFactory.CreateLogger<RecipeGeneratorValidator>());
         }
 
         [Fact]
@@ -37,7 +40,7 @@ namespace RecipeGenerator.Localization.Tests.Factories
                 ]
             };
             var options = Options.Create(localizationOptions);
-            DynamicLocalizationFactory factory = new DynamicLocalizationFactory(loggerFactory, options);
+            DynamicLocalizationFactory factory = new DynamicLocalizationFactory(loggerFactory, options, validator);
             //act
             DynamicLocalizationService? service = await factory.CreateAsync()!;
             //assert
@@ -62,15 +65,13 @@ namespace RecipeGenerator.Localization.Tests.Factories
             };
             var expectedOptions = DynamicLocalizationOptions.DefaultLocalizationOptions;
             var options = Options.Create(localizationOptions);
-            DynamicLocalizationFactory factory = new DynamicLocalizationFactory(loggerFactory, options);
+            DynamicLocalizationFactory factory = new DynamicLocalizationFactory(loggerFactory, options, validator);
 
             //act
             DynamicLocalizationService? service = await factory.CreateAsync()!;
 
             //assert
-            Assert.NotNull(service);
-            Assert.Equal(expectedOptions.CurrentCulture, service.CurrentCulture);
-            Assert.Equal(expectedOptions.Cultures!.Select(c => new CultureInfo(c)), service.Cultures);
+            Assert.Null(service);
         }
     }
 }
