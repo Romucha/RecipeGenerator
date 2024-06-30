@@ -26,11 +26,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Localizatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Old", "Old", "{35EAC896-D1E2-43E7-9BE1-C9A690BA3299}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.Functionalities", "RecipeGenerator.Functionalities\RecipeGenerator.Functionalities.csproj", "{1C1DDAA0-C136-4F07-B239-059C14C578D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Functionalities", "RecipeGenerator.Functionalities\RecipeGenerator.Functionalities.csproj", "{1C1DDAA0-C136-4F07-B239-059C14C578D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.Utility", "RecipeGenerator.Utility\RecipeGenerator.Utility.csproj", "{01DC66BC-E201-45B1-9557-7BA0F828A7AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Utility", "RecipeGenerator.Utility\RecipeGenerator.Utility.csproj", "{01DC66BC-E201-45B1-9557-7BA0F828A7AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.DTO", "RecipeGenerator.DTO\RecipeGenerator.DTO.csproj", "{F9EFA4ED-94F9-4189-B415-071B8D4FD519}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.DTO", "RecipeGenerator.DTO\RecipeGenerator.DTO.csproj", "{F9EFA4ED-94F9-4189-B415-071B8D4FD519}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.Utility.Tests", "RecipeGenerator.Utility.Tests\RecipeGenerator.Utility.Tests.csproj", "{6E6E411B-C2B4-4C5A-80AD-80328B025FBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -98,6 +100,10 @@ Global
 		{F9EFA4ED-94F9-4189-B415-071B8D4FD519}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9EFA4ED-94F9-4189-B415-071B8D4FD519}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9EFA4ED-94F9-4189-B415-071B8D4FD519}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E6E411B-C2B4-4C5A-80AD-80328B025FBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E6E411B-C2B4-4C5A-80AD-80328B025FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E6E411B-C2B4-4C5A-80AD-80328B025FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E6E411B-C2B4-4C5A-80AD-80328B025FBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
