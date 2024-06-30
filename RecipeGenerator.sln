@@ -40,6 +40,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{4F925ADA-09FE-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.Functionalities.Tests", "RecipeGenerator.Functionalities.Tests\RecipeGenerator.Functionalities.Tests.csproj", "{53ABC6F7-97BD-454F-8B82-47C5C282938A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{00C52342-40DC-4B23-99A2-F5E2A32510D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.Database", "RecipeGenerator.Database\RecipeGenerator.Database.csproj", "{171E408D-D3F7-4023-8C67-A39C32D479CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -114,6 +118,10 @@ Global
 		{53ABC6F7-97BD-454F-8B82-47C5C282938A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53ABC6F7-97BD-454F-8B82-47C5C282938A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53ABC6F7-97BD-454F-8B82-47C5C282938A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{171E408D-D3F7-4023-8C67-A39C32D479CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{171E408D-D3F7-4023-8C67-A39C32D479CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{171E408D-D3F7-4023-8C67-A39C32D479CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{171E408D-D3F7-4023-8C67-A39C32D479CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -135,6 +143,7 @@ Global
 		{F9EFA4ED-94F9-4189-B415-071B8D4FD519} = {4FD911E2-367E-4601-9679-2B0719F71556}
 		{6E6E411B-C2B4-4C5A-80AD-80328B025FBB} = {4FD911E2-367E-4601-9679-2B0719F71556}
 		{53ABC6F7-97BD-454F-8B82-47C5C282938A} = {4FD911E2-367E-4601-9679-2B0719F71556}
+		{171E408D-D3F7-4023-8C67-A39C32D479CE} = {00C52342-40DC-4B23-99A2-F5E2A32510D7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
