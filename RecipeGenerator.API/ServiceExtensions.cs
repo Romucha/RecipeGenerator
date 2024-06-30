@@ -1,9 +1,8 @@
-﻿using AutoMapper;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using RecipeGenerator.API.Database;
 using RecipeGenerator.API.Database.Ingredients;
 using RecipeGenerator.API.Database.Recipes;
-using RecipeGenerator.API.Mapping;
+using AutoMapper;
 using RecipeGenerator.API.Models.Ingeridients;
 using RecipeGenerator.API.Models.Recipes;
 using RecipeGenerator.API.Models.Steps;
@@ -28,7 +27,7 @@ namespace RecipeGenerator.API
 
             services.AddTransient<IStepFactory, StepFactory>();
 
-            services.AddAutoMapper(typeof(MapperInitializer));
+            services.AddAutoMapper(typeof(Mapping.MapperInitializer));
 
             string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "RecipeGenerator");
             if (!Directory.Exists(dbPath)) {

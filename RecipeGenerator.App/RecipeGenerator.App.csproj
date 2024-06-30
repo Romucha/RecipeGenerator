@@ -85,12 +85,12 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Blazor.ContextMenu" Version="1.17.0" />
+        <PackageReference Include="Blazor.ContextMenu" Version="2.1.0" />
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.0" />
-        <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-        <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="$(MauiVersion)" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.6" />
+        <PackageReference Include="Microsoft.Maui.Controls" Version="8.0.61" />
+        <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.61" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="8.0.61" />
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
     </ItemGroup>
 

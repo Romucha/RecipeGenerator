@@ -12,10 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Blazor.ContextMenu" Version="1.17.0" />
+    <PackageReference Include="Blazor.ContextMenu" Version="2.1.0" />
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid" Version="8.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid" Version="8.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.6" />
   </ItemGroup>
 
   <ItemGroup>

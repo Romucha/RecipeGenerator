@@ -9,7 +9,8 @@ namespace RecipeGenerator.Database.Repositories
     /// <summary>
     /// Provides methods for working with database entities.
     /// </summary>
-    public interface IRepository
+    /// <typeparam name="T">A database entity.</typeparam>
+    public interface IRepository<T> where T : class
     {
         /// <summary>
         /// Gets a list of entities.
