@@ -17,7 +17,7 @@ namespace RecipeGenerator.Utility.Validation
             this.logger = logger;
         }
 
-        public async Task<T>? ValidateAsync<T>(T value)
+        public async Task<T?> ValidateAsync<T>(T value)
         {
             try
             {
@@ -25,7 +25,7 @@ namespace RecipeGenerator.Utility.Validation
                 if (value is null)
                 {
                     logger.LogError("Value was null.");
-                    return await Task.FromResult<T>(default!);
+                    return await Task.FromResult<T?>(default);
                 }
                 ValidationContext validationContext = new(value);
                 List<ValidationResult> results = new();
@@ -37,13 +37,13 @@ namespace RecipeGenerator.Utility.Validation
                 else
                 {
                     logger.LogError(string.Join("\r\n", results.Select(c => c.ErrorMessage)));
-                    return await Task.FromResult<T>(default!);
+                    return await Task.FromResult<T?>(default);
                 }
             }
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(ValidateAsync));
-                return await Task.FromResult<T>(default!);
+                return await Task.FromResult<T?>(default);
             }
             finally
             {

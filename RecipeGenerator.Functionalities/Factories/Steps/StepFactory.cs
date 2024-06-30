@@ -1,4 +1,5 @@
-﻿using RecipeGenerator.Models.Steps;
+﻿using Microsoft.Extensions.Logging;
+using RecipeGenerator.Models.Steps;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,19 +8,35 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Functionalities.Factories.Steps
 {
-    internal class StepFactory
+    public class StepFactory
     {
-        public Step Create()
+        private readonly ILogger<StepFactory> logger;
+
+        public StepFactory(ILogger<StepFactory> logger)
         {
-            return new Step()
+            this.logger = logger;
+        }
+
+        public async Task<Step?> CreateAsync()
+        {
+            try
             {
-                Name = string.Empty,
-                Index = 0,
-                Description = string.Empty,
-                Photos = [],
-                CreatedAt = DateTime.Now,
-                UpdatedAt = DateTime.Now,
-            };
+                logger.LogInformation("Creating new step...");
+                return await Task.FromResult(new Step()
+                {
+                    CreatedAt = DateTime.Now,
+                    UpdatedAt = DateTime.Now,
+                });
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(CreateAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
         }
     }
 }

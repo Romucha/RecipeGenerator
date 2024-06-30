@@ -27,19 +27,19 @@ namespace RecipeGenerator.Localization.Factories
             this.validator = validator;
         }
 
-        public async Task<DynamicLocalizationService>? CreateAsync()
+        public async Task<DynamicLocalization?> CreateAsync()
         {
             try
             {
                 logger.LogInformation("Cerating dynamic localization service...");
-                var serviceLogger = loggerFactory.CreateLogger<DynamicLocalizationService>();
-                var localizationOptions = await validator.ValidateAsync(options.Value)!;
-                return await Task.FromResult(new DynamicLocalizationService(serviceLogger, localizationOptions));
+                var serviceLogger = loggerFactory.CreateLogger<DynamicLocalization>();
+                var localizationOptions = await validator.ValidateAsync(options.Value);
+                return await Task.FromResult(new DynamicLocalization(serviceLogger, localizationOptions));
             }
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(CreateAsync));
-                return await Task.FromResult<DynamicLocalizationService>(null!);
+                return await Task.FromResult<DynamicLocalization>(null);
             }
             finally
             {

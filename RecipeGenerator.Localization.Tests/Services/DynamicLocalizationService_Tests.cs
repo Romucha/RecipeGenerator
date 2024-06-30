@@ -15,11 +15,11 @@ namespace Resources.Localization.Tests.Services
 {
     public class DynamicLocalizationService_Tests
     {
-        private readonly ILogger<DynamicLocalizationService> logger;
+        private readonly ILogger<DynamicLocalization> logger;
 
         public DynamicLocalizationService_Tests()
         {
-            logger = new NullLogger<DynamicLocalizationService>();
+            logger = new NullLogger<DynamicLocalization>();
         }
 
         [Fact]
@@ -36,7 +36,7 @@ namespace Resources.Localization.Tests.Services
                     "fr"
                 ],
             };
-            DynamicLocalizationService service = new(logger, options);
+            DynamicLocalization service = new(logger, options);
             //act
             service.SetCulture("ru");
 
@@ -61,7 +61,7 @@ namespace Resources.Localization.Tests.Services
                     "fr"
                 ],
             };
-            DynamicLocalizationService service = new(logger, options);
+            DynamicLocalization service = new(logger, options);
             //act & assert
             service.SetCulture(currentCulture!);
 

@@ -41,5 +41,15 @@ namespace RecipeGenerator.Models.Ingredients
         /// Base ingredient.
         /// </summary>
         public ApplicableIngredient Ingredient { get; set; } = default!;
+
+        /// <summary>
+        /// Date of creation.
+        /// </summary>
+        public DateTime CreatedAt { get; set; }
+
+        /// <summary>
+        /// Date of last update.
+        /// </summary>
+        public DateTime UpdatedAt { get; set; }
     }
 }

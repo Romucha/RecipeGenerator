@@ -11,21 +11,21 @@ using Microsoft.Extensions.Logging;
 
 namespace RecipeGenerator.Functionalities.Factories.Ingredients
 {
-    public class ApplicableIngredientFactory
+    public class AppliedIngredientFactory
     {
-        private readonly ILogger<ApplicableIngredientFactory> logger;
+        private readonly ILogger<AppliedIngredientFactory> logger;
 
-        public ApplicableIngredientFactory(ILogger<ApplicableIngredientFactory> logger)
+        public AppliedIngredientFactory(ILogger<AppliedIngredientFactory> logger)
         {
             this.logger = logger;
         }
 
-        public async Task<ApplicableIngredient?> CreateAsync()
+        public async Task<AppliedIngredient?> CreateAsync()
         {
             try
             {
-                logger.LogInformation("Creating a new applicable ingredient...");
-                return await Task.FromResult(new ApplicableIngredient()
+                logger.LogInformation("Creating a new applied ingredient...");
+                return await Task.FromResult(new AppliedIngredient()
                 {
                     CreatedAt = DateTime.UtcNow,
                     UpdatedAt = DateTime.UtcNow,

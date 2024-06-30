@@ -26,7 +26,7 @@ namespace RecipeGenerator.Localization.Extensions
             { 
                 configuration.Bind(DynamicLocalizationOptions.Localization, options);
             });
-            services.AddSingleton<DynamicLocalizationStotageService>();
+            services.AddSingleton<DynamicLocalizationService>();
         }
     }
 }

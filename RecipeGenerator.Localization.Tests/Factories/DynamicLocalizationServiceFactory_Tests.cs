@@ -42,7 +42,7 @@ namespace RecipeGenerator.Localization.Tests.Factories
             var options = Options.Create(localizationOptions);
             DynamicLocalizationFactory factory = new DynamicLocalizationFactory(loggerFactory, options, validator);
             //act
-            DynamicLocalizationService? service = await factory.CreateAsync()!;
+            DynamicLocalization? service = await factory.CreateAsync()!;
             //assert
             Assert.NotNull(service);
             Assert.Equal(localizationOptions.CurrentCulture, service.CurrentCulture);
@@ -68,7 +68,7 @@ namespace RecipeGenerator.Localization.Tests.Factories
             DynamicLocalizationFactory factory = new DynamicLocalizationFactory(loggerFactory, options, validator);
 
             //act
-            DynamicLocalizationService? service = await factory.CreateAsync()!;
+            DynamicLocalization? service = await factory.CreateAsync()!;
 
             //assert
             Assert.Null(service);

@@ -1,4 +1,5 @@
-﻿using RecipeGenerator.Models.Ingredients;
+﻿using Microsoft.Extensions.Logging;
+using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Models.Recipes;
 using RecipeGenerator.Models.Steps;
 using System;
@@ -9,20 +10,40 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Functionalities.Factories.Recipes
 {
-    internal class RecipeFactory
+    public class RecipeFactory
     {
-        public async Task<Recipe> Create()
+        private readonly ILogger<RecipeFactory> logger;
+
+        public RecipeFactory(ILogger<RecipeFactory> logger)
         {
-            return await Task.FromResult<Recipe>(new Recipe()
+            this.logger = logger;
+        }
+
+        /// <summary>
+        /// Creates default instance of <see cref="Recipe"/> class.
+        /// </summary>
+        /// <returns></returns>
+        public async Task<Recipe?> CreateAsync()
+        {
+            try
             {
-                Steps = new List<Step>(),
-                Ingredients = new List<AppliedIngredient>(),
-                CreatedAt = DateTime.Now,
-                UpdatedAt = DateTime.Now,
-                Description = string.Empty,
-                Name = string.Empty,
-                CourseType = Course.Unknown
-            }); ;
+                logger.LogInformation("Creating new recipe...");
+
+                return await Task.FromResult(new Recipe()
+                {
+                    CreatedAt = DateTime.UtcNow,
+                    UpdatedAt = DateTime.UtcNow,
+                });
+            }
+            catch (Exception ex) 
+            {
+                logger.LogError(ex, nameof(CreateAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
         }
     }
 }

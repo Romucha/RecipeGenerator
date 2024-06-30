@@ -17,14 +17,14 @@ namespace RecipeGenerator.Localization.Tests.Services
     public class DynamicLocalizationStotageService_Tests
     {
         private readonly ILoggerFactory loggerFactory;
-        private readonly ILogger<DynamicLocalizationStotageService> logger;
+        private readonly ILogger<DynamicLocalizationService> logger;
         private readonly RecipeGeneratorValidator validator;
 
         public DynamicLocalizationStotageService_Tests()
         {
             loggerFactory = new NullLoggerFactory();
             validator = new RecipeGeneratorValidator(loggerFactory.CreateLogger<RecipeGeneratorValidator>());
-            logger = new NullLogger<DynamicLocalizationStotageService>();
+            logger = new NullLogger<DynamicLocalizationService>();
         }
 
         [Fact]
@@ -43,7 +43,7 @@ namespace RecipeGenerator.Localization.Tests.Services
             };
             var options = Options.Create(localizationOptions);
             DynamicLocalizationFactory factory = new DynamicLocalizationFactory(loggerFactory, options, validator);
-            DynamicLocalizationStotageService stotageService = new DynamicLocalizationStotageService(logger, factory);
+            DynamicLocalizationService stotageService = new DynamicLocalizationService(logger, factory);
             //act
             var service = await stotageService.GetServiceAsync();
 
@@ -60,7 +60,7 @@ namespace RecipeGenerator.Localization.Tests.Services
             DynamicLocalizationOptions localizationOptions = null;
             var options = Options.Create(localizationOptions);
             DynamicLocalizationFactory factory = new DynamicLocalizationFactory(loggerFactory, options, validator);
-            DynamicLocalizationStotageService stotageService = new DynamicLocalizationStotageService(logger, factory);
+            DynamicLocalizationService stotageService = new DynamicLocalizationService(logger, factory);
             //act
             var service = await stotageService.GetServiceAsync();
 
