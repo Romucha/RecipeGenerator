@@ -18,16 +18,16 @@ namespace RecipeGenerator.Database.Context
         internal DbSet<ApplicableIngredient> Ingredients { get; set; }
 
         private readonly IConfiguration configuration;
-        private readonly IMapper mapper;
 
         public RecipeGeneratorDbContext(
-            IConfiguration configuration, 
-            IMapper mapper, 
+            IConfiguration configuration,
             DbContextOptions dbContextOptions) : base(dbContextOptions)
         {
             this.configuration = configuration;
-            this.mapper = mapper;
-            Database.Migrate();
+            if (Database.IsRelational())
+            {
+                Database.Migrate();
+            }
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
