@@ -55,5 +55,104 @@ namespace RecipeGenerator.Database.Tests.Repositories
             Assert.NotNull(actualStep);
             Assert.Equal(expectedStep, actualStep);
         }
+
+        [Fact]
+        public async Task GetAllAsync_Normal()
+        {
+            //arrange
+            Step[] expectedSteps =
+            [
+                new Step()
+                {
+                    Name = nameof(GetAllAsync_Normal),
+                    Description = nameof(GetAllAsync_Normal),
+                    CreatedAt = DateTime.UtcNow,
+                    UpdatedAt = DateTime.UtcNow,
+                    Index = 1,
+                    Photos = [],
+                },
+                new Step()
+                {
+                    Name = nameof(GetAllAsync_Normal),
+                    Description = nameof(GetAllAsync_Normal),
+                    CreatedAt = DateTime.UtcNow,
+                    UpdatedAt = DateTime.UtcNow,
+                    Index = 2,
+                    Photos = [],
+                }
+            ];
+            ;
+            await dbContext.AddRangeAsync(expectedSteps);
+            await dbContext.SaveChangesAsync();
+
+            //act
+            var actualSteps = await repository.GetAllAsync();
+            //assert
+            Assert.NotNull(actualSteps);
+            Assert.NotEmpty(actualSteps);
+            Assert.Equal(expectedSteps.Count(), actualSteps.Count());
+        }
+
+        [Fact]
+        public async Task CreateAsync_Normal()
+        {
+            //act
+            var step = await repository.CreateAsync();
+            await dbContext.SaveChangesAsync();
+            //assert
+            Assert.NotNull(step);
+            Assert.NotNull(dbContext.Find<Step>(step.Id));
+        }
+
+        [Fact]
+        public async Task DeleteAsync_Normal()
+        {
+            //arrange
+            Step expectedStep = new Step()
+            {
+                Name = nameof(DeleteAsync_Normal),
+                Description = nameof(DeleteAsync_Normal),
+                CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
+                Index = 1,
+                Photos = [],
+            };
+            await dbContext.AddAsync(expectedStep);
+            await dbContext.SaveChangesAsync();
+
+            var id = expectedStep.Id;
+            //act
+            await repository.DeleteAsync(id);
+            await dbContext.SaveChangesAsync();
+            //assert
+            Assert.Null(dbContext.Find<Step>(id));
+        }
+
+        [Fact]
+        public async Task UpdateAsync_Normal()
+        {
+            //arrange
+            Step expectedStep = new Step()
+            {
+                Name = nameof(UpdateAsync_Normal),
+                Description = nameof(UpdateAsync_Normal),
+                CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow,
+                Index = 1,
+                Photos = [],
+            };
+            await dbContext.AddAsync(expectedStep);
+            await dbContext.SaveChangesAsync();
+
+            var id = expectedStep.Id;
+            var actualStep = await repository.GetAsync(id);
+            //act
+            actualStep!.Description = "";
+            await dbContext.SaveChangesAsync();
+            //assert
+            Assert.NotNull(actualStep);
+            Assert.Equal(expectedStep, actualStep);
+            Assert.Equal("", actualStep.Description);
+        }
     }
 }

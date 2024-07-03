@@ -19,7 +19,7 @@ namespace RecipeGenerator.Database.Repositories
         /// <param name="pageNumber">Page number.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
         /// <returns></returns>
-        Task<IEnumerable<T>?> GetAllAsync(int pageSize, int pageNumber, CancellationToken cancellationToken = default);
+        Task<IEnumerable<T>?> GetAllAsync(int pageSize = 0, int pageNumber = 0, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Gets an entity.
