@@ -28,27 +28,27 @@ namespace RecipeGenerator.Models.Steps
         /// <summary>
         /// Display name.
         /// </summary>
-        public string Name { get; set; } = default!;
+        public string Name { get; set; } = string.Empty;
 
         /// <summary>
         /// Description.
         /// </summary>
-        public string Description { get; set; } = default!;
+        public string Description { get; set; } = string.Empty;
 
         /// <summary>
         /// List of photos.
         /// </summary>
-        public List<string> Photos { get; set; } = default!;
+        public List<string> Photos { get; set; } = [];
 
         /// <summary>
         /// Date of creation.
         /// </summary>
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
         /// <summary>
         /// Date of last update.
         /// </summary>
-        public DateTime UpdatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
         /// <summary>
         /// Id of parent recipe.
