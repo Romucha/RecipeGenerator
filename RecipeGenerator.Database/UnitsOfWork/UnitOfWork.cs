@@ -1,4 +1,6 @@
-﻿using RecipeGenerator.Database.Repositories;
+﻿using Microsoft.Extensions.Logging;
+using RecipeGenerator.Database.Context;
+using RecipeGenerator.Database.Repositories;
 using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Models.Recipes;
 using RecipeGenerator.Models.Steps;
@@ -12,17 +14,32 @@ namespace RecipeGenerator.Database.UnitsOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {
-        public IRepository<Recipe> RecipeRepository => throw new NotImplementedException();
+        private readonly ILogger<UnitOfWork> logger;
+        private readonly RecipeGeneratorDbContext dbContext;
+        private readonly IRepository<Recipe> recipeRepository;
+        private readonly IRepository<Step> stepRepostiry;
+        private readonly IRepository<AppliedIngredient> appliedIngredientRepository;
+        private readonly IRepository<AppliedIngredient> applicableIngredientRepository;
 
-        public IRepository<Step> StepRepository => throw new NotImplementedException();
-
-        public IRepository<ApplicableIngredient> ApplicableIngredientRepository => throw new NotImplementedException();
-
-        public IRepository<AppliedIngredient> AppliedIngredientRepository => throw new NotImplementedException();
-
-        public Task SaveChangesAsync(CancellationToken cancellationToken = default)
+        public UnitOfWork(
+            ILogger<UnitOfWork> logger, 
+            RecipeGeneratorDbContext dbContext, 
+            IRepository<Recipe> recipeRepository,
+            IRepository<Step> stepRepostiry,
+            IRepository<AppliedIngredient> appliedIngredientRepository,
+            IRepository<AppliedIngredient> applicableIngredientRepository)
         {
-            throw new NotImplementedException();
+            this.logger = logger;
+            this.dbContext = dbContext;
+            this.recipeRepository = recipeRepository;
+            this.stepRepostiry = stepRepostiry;
+            this.appliedIngredientRepository = appliedIngredientRepository;
+            this.applicableIngredientRepository = applicableIngredientRepository;
+        }
+
+        public async Task SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            await dbContext.SaveChangesAsync(cancellationToken);
         }
     }
 }

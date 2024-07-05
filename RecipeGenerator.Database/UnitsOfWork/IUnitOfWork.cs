@@ -12,14 +12,6 @@ namespace RecipeGenerator.Database.UnitsOfWork
 {
     public interface IUnitOfWork
     {
-        IRepository<Recipe> RecipeRepository { get; }
-
-        IRepository<Step> StepRepository { get; }
-
-        IRepository<ApplicableIngredient> ApplicableIngredientRepository { get; }
-
-        IRepository<AppliedIngredient> AppliedIngredientRepository { get; }
-
         Task SaveChangesAsync(CancellationToken cancellationToken = default);
     }
 }
