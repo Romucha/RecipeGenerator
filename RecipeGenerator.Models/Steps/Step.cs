@@ -12,7 +12,7 @@ namespace RecipeGenerator.Models.Steps
     /// <summary>
     /// A step in a recipe.
     /// </summary>
-    public class Step
+    public class Step : IRecipeGeneratorModel
     {
         /// <summary>
         /// Identifier.
@@ -21,19 +21,21 @@ namespace RecipeGenerator.Models.Steps
         public Guid Id { get; set; }
 
         /// <summary>
-        /// Counter.
-        /// </summary>
-        public int Index { get; set; }
-
-        /// <summary>
         /// Display name.
         /// </summary>
+        [Required(AllowEmptyStrings = true)]
         public string Name { get; set; } = string.Empty;
 
         /// <summary>
         /// Description.
         /// </summary>
+        [Required(AllowEmptyStrings = true)]
         public string Description { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Counter.
+        /// </summary>
+        public int Index { get; set; }
 
         /// <summary>
         /// List of photos.

@@ -12,7 +12,7 @@ namespace RecipeGenerator.Models.Ingredients
     /// <summary>
     /// Ingredient applied to a recipe.
     /// </summary>
-    public class AppliedIngredient
+    public class AppliedIngredient : IRecipeGeneratorModel
     {
         /// <summary>
         /// Identifier.
@@ -40,16 +40,16 @@ namespace RecipeGenerator.Models.Ingredients
         /// <summary>
         /// Base ingredient.
         /// </summary>
-        public ApplicableIngredient Ingredient { get; set; } = default!;
+        public ApplicableIngredient? Ingredient { get; set; } = default!;
 
         /// <summary>
         /// Date of creation.
         /// </summary>
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
         /// <summary>
         /// Date of last update.
         /// </summary>
-        public DateTime UpdatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }

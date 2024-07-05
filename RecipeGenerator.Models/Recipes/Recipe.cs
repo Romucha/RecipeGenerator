@@ -13,7 +13,7 @@ namespace RecipeGenerator.Models.Recipes
     /// <summary>
     /// Recipe.
     /// </summary>
-    public class Recipe
+    public class Recipe : IRecipeGeneratorModel
     {
         /// <summary>
         /// Identifier.
@@ -24,17 +24,19 @@ namespace RecipeGenerator.Models.Recipes
         /// <summary>
         /// Display name.
         /// </summary>
-        public string Name { get; set; } = default!;
-
-        /// <summary>
-        /// Image.
-        /// </summary>
-        public string Image { get; set; } = default!;
+        [Required(AllowEmptyStrings = true)]
+        public string Name { get; set; } = string.Empty;
 
         /// <summary>
         /// Description.
         /// </summary>
-        public string Description { get; set; } = default!;
+        [Required(AllowEmptyStrings = true)]
+        public string Description { get; set; } = string.Empty;
+
+        /// <summary>
+        /// Image.
+        /// </summary>
+        public string Image { get; set; } = string.Empty;
 
         /// <summary>
         /// Course type.
@@ -54,21 +56,21 @@ namespace RecipeGenerator.Models.Recipes
         /// <summary>
         /// List of steps.
         /// </summary>
-        public List<Step> Steps { get; set; } = default!;
+        public List<Step> Steps { get; set; } = new();
 
         /// <summary>
         /// List of ingredients.
         /// </summary>
-        public List<AppliedIngredient> Ingredients { get; set; } = default!;
+        public List<AppliedIngredient> Ingredients { get; set; } = new();
 
         /// <summary>
         /// Date of creation.
         /// </summary>
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
         /// <summary>
         /// Date of the last update.
         /// </summary>
-        public DateTime UpdatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
     }
 }
