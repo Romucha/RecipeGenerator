@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using RecipeGenerator.Database.Context;
+using RecipeGenerator.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Database.Repositories
 {
-    public class Repository<T> : IRepository<T> where T : class
+    public class Repository<T> : IRepository<T> where T : class, IRecipeGeneratorModel
     {
         private readonly RecipeGeneratorDbContext dbContext;
         private readonly ILogger<Repository<T>> logger;
@@ -149,6 +150,7 @@ namespace RecipeGenerator.Database.Repositories
                 try
                 {
                     logger.LogInformation($"Getting entity of type \"{typeof(T).Name}\"...");
+                    entity.UpdatedAt = DateTime.UtcNow;
                     dbContext.Entry(entity).State = EntityState.Modified;
                 }
                 catch (Exception ex)

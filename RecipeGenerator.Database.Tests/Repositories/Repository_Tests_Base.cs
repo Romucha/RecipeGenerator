@@ -6,7 +6,6 @@ using Microsoft.Extensions.Logging.Abstractions;
 using Moq;
 using RecipeGenerator.Database.Context;
 using RecipeGenerator.Database.Repositories;
-using RecipeGenerator.Database.Tests.TestData.Repositories.Steps;
 using RecipeGenerator.Models;
 using RecipeGenerator.Models.Steps;
 using System;
@@ -33,6 +32,8 @@ namespace RecipeGenerator.Database.Tests.Repositories
             dbContext = new RecipeGeneratorDbContext(configuration, dbContextOptions);
             repository = new Repository<T>(dbContext, logger);
         }
+
+        protected abstract void EditEntity(T entity);
 
         [Fact]
         public async Task CreateAsync_Normal()
@@ -110,6 +111,26 @@ namespace RecipeGenerator.Database.Tests.Repositories
             //assert
             Assert.NotNull(actualTs);
             Assert.Equal(totalCount, actualTs.Count());
+        }
+
+        [Fact]
+        public async Task UpdateAsync_Normal()
+        {
+            //arrange
+            T expectedT = Activator.CreateInstance<T>();
+            await dbContext.AddAsync(expectedT);
+            await dbContext.SaveChangesAsync();
+
+            var id = expectedT.Id;
+            var actualT = await repository.GetAsync(id);
+            //act
+            EditEntity(actualT!);
+            await repository.UpdateAsync(actualT!);
+            await dbContext.SaveChangesAsync();
+            //assert
+            Assert.NotNull(actualT);
+            Assert.Equal(expectedT, actualT);
+            Assert.NotEqual(actualT.CreatedAt, actualT.UpdatedAt);
         }
     }
 }

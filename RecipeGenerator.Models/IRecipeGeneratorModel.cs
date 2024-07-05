@@ -15,5 +15,15 @@ namespace RecipeGenerator.Models
         /// </summary>
         [DatabaseGenerated(DatabaseGeneratedOption.Identity), Key()]
         Guid Id { get; set; }
+
+        /// <summary>
+        /// Date of creation.
+        /// </summary>
+        DateTime CreatedAt { get; set; }
+
+        /// <summary>
+        /// Date of last update.
+        /// </summary>
+        DateTime UpdatedAt { get; set; }
     }
 }

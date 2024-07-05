@@ -15,5 +15,12 @@ namespace RecipeGenerator.Database.Tests.Repositories.Steps
         public Steps_Repository_Tests() : base()
         {
         }
+
+        protected override void EditEntity(Step entity)
+        {
+            entity.Name = "Updated Step Name";
+            entity.Description = "Updated Step Description";
+            entity.Index = 1000;
+        }
     }
 }

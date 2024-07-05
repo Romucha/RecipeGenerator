@@ -11,7 +11,7 @@ namespace RecipeGenerator.Models.Ingredients
     /// <summary>
     /// Ingredient ready to be applied to a recipe.
     /// </summary>
-    public class ApplicableIngredient : IRecipeGeneratorNamedModel
+    public class ApplicableIngredient : IRecipeGeneratorModel
     {
         /// <summary>
         /// Idetifier.
