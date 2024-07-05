@@ -19,7 +19,7 @@ namespace RecipeGenerator.Database.Tests.Repositories.Steps
             await dbContext.SaveChangesAsync();
 
             //act
-            var actualSteps = await repository.GetAllAsync(pageSize, pageNumber);
+            var actualSteps = await repository.GetAllAsync(pageNumber, pageSize);
             //assert
             Assert.NotNull(actualSteps);
             Assert.Equal(expectedCount, actualSteps.Count());
