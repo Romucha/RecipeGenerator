@@ -78,7 +78,7 @@ namespace RecipeGenerator.Database.Repositories
         }
 
         /// <inheritdoc/>
-        public async Task<IEnumerable<T>?> GetAllAsync(int pageSize = 0, int pageNumber = 0, CancellationToken cancellationToken = default)
+        public async Task<IEnumerable<T>?> GetAllAsync(int pageNumber = 0, int pageSize = 0, CancellationToken cancellationToken = default)
         {
             return await Task.Run(() =>
             {

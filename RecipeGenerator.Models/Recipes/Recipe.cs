@@ -13,7 +13,7 @@ namespace RecipeGenerator.Models.Recipes
     /// <summary>
     /// Recipe.
     /// </summary>
-    public class Recipe : IRecipeGeneratorModel
+    public class Recipe : IRecipeGeneratorNamedModel
     {
         /// <summary>
         /// Identifier.

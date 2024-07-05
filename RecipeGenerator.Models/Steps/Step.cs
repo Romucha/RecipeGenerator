@@ -12,7 +12,7 @@ namespace RecipeGenerator.Models.Steps
     /// <summary>
     /// A step in a recipe.
     /// </summary>
-    public class Step : IRecipeGeneratorModel
+    public class Step : IRecipeGeneratorNamedModel
     {
         /// <summary>
         /// Identifier.
