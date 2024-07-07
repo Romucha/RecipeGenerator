@@ -14,6 +14,16 @@ namespace RecipeGenerator.DTO.AppliedIngredients.Responses
         public Guid Id { get; set; }
 
         /// <summary>
+        /// Date of creation.
+        /// </summary>
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+        /// <summary>
+        /// Date of last update.
+        /// </summary>
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+
+        /// <summary>
         /// Identifier of a parent recipe.
         /// </summary>
         public Guid RecipeId { get; set; }

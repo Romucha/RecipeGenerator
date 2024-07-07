@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.DTO.AppliedIngredients
+namespace RecipeGenerator.DTO.Recipes.Responses
 {
-    public class DeleteAppliedIngredientDTO
+    public record DeleteRecipeResponse
     {
         public Guid Id { get; set; }
+
+        public string Name { get; set; } = default!;
     }
 }

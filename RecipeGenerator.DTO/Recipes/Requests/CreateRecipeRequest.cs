@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.DTO.Recipes
+namespace RecipeGenerator.DTO.Recipes.Requests
 {
-    public class DeleteRecipeDTO
+    public record CreateRecipeRequest
     {
-        public Guid Id { get; set; }
     }
 }

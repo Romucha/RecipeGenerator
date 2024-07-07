@@ -1,40 +1,29 @@
-﻿using RecipeGenerator.Models.Steps;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RecipeGenerator.Models.Ingredients;
+using RecipeGenerator.DTO.AppliedIngredients.Responses;
 
-namespace RecipeGenerator.Models.Recipes
+namespace RecipeGenerator.DTO.Recipes.Responses
 {
-    /// <summary>
-    /// Recipe.
-    /// </summary>
-    public class Recipe : IRecipeGeneratorModel
+    public record CreateRecipeResponse
     {
-        /// <inheritdoc/>
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity), Key()]
+        /// <summary>
+        /// Identifier.
+        /// </summary>
         public Guid Id { get; set; }
-
-        /// <inheritdoc/>
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-
-        /// <inheritdoc/>
-        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
         /// <summary>
         /// Display name.
         /// </summary>
-        [Required(AllowEmptyStrings = true)]
         public string Name { get; set; } = string.Empty;
 
         /// <summary>
         /// Description.
         /// </summary>
-        [Required(AllowEmptyStrings = true)]
         public string Description { get; set; } = string.Empty;
 
         /// <summary>
@@ -45,7 +34,7 @@ namespace RecipeGenerator.Models.Recipes
         /// <summary>
         /// Course type.
         /// </summary>
-        public Course CourseType { get; set; }
+        public int CourseType { get; set; }
 
         /// <summary>
         /// Approximate time to cook the dish.
@@ -60,11 +49,21 @@ namespace RecipeGenerator.Models.Recipes
         /// <summary>
         /// List of steps.
         /// </summary>
-        public List<Step> Steps { get; set; } = new();
+        public List<CreateStepResponse> Steps { get; set; } = new();
 
         /// <summary>
         /// List of ingredients.
         /// </summary>
-        public List<AppliedIngredient> Ingredients { get; set; } = new();
+        public List<CreateAppliedIndredientResponse> Ingredients { get; set; } = new();
+
+        /// <summary>
+        /// Date of creation.
+        /// </summary>
+        public DateTime CreatedAt { get; set; }
+
+        /// <summary>
+        /// Date of the last update.
+        /// </summary>
+        public DateTime UpdatedAt { get; set; }
     }
 }

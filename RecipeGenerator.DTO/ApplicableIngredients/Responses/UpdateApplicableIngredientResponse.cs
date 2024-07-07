@@ -6,12 +6,22 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.DTO.ApplicableIngredients.Responses
 {
-    public record UpdateApplicableRequestResponse
+    public record UpdateApplicableIngredientResponse
     {
         /// <summary>
         /// Idetifier.
         /// </summary>
         public Guid Id { get; set; }
+
+        /// <summary>
+        /// Date of creation.
+        /// </summary>
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+        /// <summary>
+        /// Date of last update.
+        /// </summary>
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
         /// <summary>
         /// Display name.

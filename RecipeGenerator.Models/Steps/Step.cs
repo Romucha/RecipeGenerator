@@ -14,11 +14,15 @@ namespace RecipeGenerator.Models.Steps
     /// </summary>
     public class Step : IRecipeGeneratorModel
     {
-        /// <summary>
-        /// Identifier.
-        /// </summary>
+        /// <inheritdoc/>
         [DatabaseGenerated(DatabaseGeneratedOption.Identity), Key()]
         public Guid Id { get; set; }
+
+        /// <inheritdoc/>
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+        /// <inheritdoc/>
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
         /// <summary>
         /// Display name.
@@ -41,16 +45,6 @@ namespace RecipeGenerator.Models.Steps
         /// List of photos.
         /// </summary>
         public List<string> Photos { get; set; } = [];
-
-        /// <summary>
-        /// Date of creation.
-        /// </summary>
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-
-        /// <summary>
-        /// Date of last update.
-        /// </summary>
-        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
         /// <summary>
         /// Id of parent recipe.

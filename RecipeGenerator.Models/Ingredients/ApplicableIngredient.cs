@@ -13,11 +13,15 @@ namespace RecipeGenerator.Models.Ingredients
     /// </summary>
     public class ApplicableIngredient : IRecipeGeneratorModel
     {
-        /// <summary>
-        /// Idetifier.
-        /// </summary>
+        /// <inheritdoc/>
         [DatabaseGenerated(DatabaseGeneratedOption.Identity), Key()]
         public Guid Id { get; set; }
+
+        /// <inheritdoc/>
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+        /// <inheritdoc/>
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
         /// <summary>
         /// Display name.
@@ -38,16 +42,6 @@ namespace RecipeGenerator.Models.Ingredients
         /// Ingredient type.
         /// </summary>
         public IngredientType IngredientType { get; set; }
-
-        /// <summary>
-        /// Date of creation.
-        /// </summary>
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-
-        /// <summary>
-        /// Date of last update.
-        /// </summary>
-        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
         /// <summary>
         /// Image of the ingredient.
