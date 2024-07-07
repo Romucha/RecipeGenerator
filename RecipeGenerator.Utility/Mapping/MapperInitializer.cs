@@ -21,7 +21,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Utility.Mapping
 {
-    internal class MapperInitializer : Profile
+    public class MapperInitializer : Profile
     {
         public MapperInitializer()
         {

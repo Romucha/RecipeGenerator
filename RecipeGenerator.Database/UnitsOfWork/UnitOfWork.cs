@@ -31,7 +31,7 @@ namespace RecipeGenerator.Database.UnitsOfWork
         private readonly IRepository<Recipe> recipeRepository;
         private readonly IRepository<Step> stepRepostiry;
         private readonly IRepository<AppliedIngredient> appliedIngredientRepository;
-        private readonly IRepository<AppliedIngredient> applicableIngredientRepository;
+        private readonly IRepository<ApplicableIngredient> applicableIngredientRepository;
         private readonly IMapper mapper;
 
         /// <summary>
@@ -50,7 +50,7 @@ namespace RecipeGenerator.Database.UnitsOfWork
             IRepository<Recipe> recipeRepository,
             IRepository<Step> stepRepostiry,
             IRepository<AppliedIngredient> appliedIngredientRepository,
-            IRepository<AppliedIngredient> applicableIngredientRepository, IMapper mapper)
+            IRepository<ApplicableIngredient> applicableIngredientRepository, IMapper mapper)
         {
             this.logger = logger;
             this.dbContext = dbContext;

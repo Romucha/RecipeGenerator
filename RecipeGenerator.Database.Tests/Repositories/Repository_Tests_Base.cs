@@ -19,7 +19,7 @@ namespace RecipeGenerator.Database.Tests.Repositories
     public abstract class Repository_Tests_Base<T>  where T : class, IRecipeGeneratorModel
     {
         protected readonly ILogger<Repository<T>> logger;
-        protected readonly Repository<T> repository;
+        protected readonly IRepository<T> repository;
         protected readonly RecipeGeneratorDbContext dbContext;
 
         public Repository_Tests_Base()
