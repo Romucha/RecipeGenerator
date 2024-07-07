@@ -1,29 +1,20 @@
-﻿using RecipeGenerator.DTO.AppliedIngredients.Responses;
-using RecipeGenerator.DTO.Steps.Responses;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RecipeGenerator.DTO.AppliedIngredients.Responses;
 
-namespace RecipeGenerator.DTO.Recipes.Responses
+namespace RecipeGenerator.DTO.Steps.Responses
 {
-    public record UpdateRecipeResponse
+    public record CreateStepResponse
     {
         /// <summary>
         /// Identifier.
         /// </summary>
         public Guid Id { get; set; }
-
-        /// <summary>
-        /// Date of creation.
-        /// </summary>
-        public DateTime CreatedAt { get; set; }
-
-        /// <summary>
-        /// Date of last update.
-        /// </summary>
-        public DateTime UpdatedAt { get; set; }
 
         /// <summary>
         /// Display name.
@@ -58,11 +49,21 @@ namespace RecipeGenerator.DTO.Recipes.Responses
         /// <summary>
         /// List of steps.
         /// </summary>
-        public List<UpdateStepResponse> Steps { get; set; } = new();
+        public List<CreateStepResponse> Steps { get; set; } = new();
 
         /// <summary>
         /// List of ingredients.
         /// </summary>
-        public List<UpdateAppliedRequestResponse> Ingredients { get; set; } = new();
+        public List<CreateAppliedIndredientResponse> Ingredients { get; set; } = new();
+
+        /// <summary>
+        /// Date of creation.
+        /// </summary>
+        public DateTime CreatedAt { get; set; }
+
+        /// <summary>
+        /// Date of the last update.
+        /// </summary>
+        public DateTime UpdatedAt { get; set; }
     }
 }

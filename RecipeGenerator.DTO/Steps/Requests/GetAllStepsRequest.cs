@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.DTO.Recipes.Requests
+namespace RecipeGenerator.DTO.Steps.Requests
 {
-    public record GetAllRecipeRequest
+    public record GetAllStepsRequest
     {
         public int PageNumber { get; set; }
 

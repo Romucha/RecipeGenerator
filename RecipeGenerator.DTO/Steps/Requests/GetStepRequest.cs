@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.DTO.Steps
+namespace RecipeGenerator.DTO.Steps.Requests
 {
-    public class DeleteStepDTO
+    public record GetStepRequest
     {
         public Guid Id { get; set; }
     }
