@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using RecipeGenerator.DTO.AppliedIngredients.Responses;
+using RecipeGenerator.DTO.Steps.Responses;
 
 namespace RecipeGenerator.DTO.Recipes.Responses
 {

@@ -63,6 +63,6 @@ namespace RecipeGenerator.DTO.Recipes.Responses
         /// <summary>
         /// List of ingredients.
         /// </summary>
-        public List<UpdateAppliedRequestResponse> Ingredients { get; set; } = new();
+        public List<UpdateAppliedIngredientResponse> Ingredients { get; set; } = new();
     }
 }

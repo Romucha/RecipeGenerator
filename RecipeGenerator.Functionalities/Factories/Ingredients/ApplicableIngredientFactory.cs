@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RecipeGenerator.DTO.Ingredients;
 using Microsoft.Extensions.Logging;
 
 namespace RecipeGenerator.Functionalities.Factories.Ingredients

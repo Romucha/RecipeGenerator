@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.DTO.AppliedIngredients.Responses
 {
-    public record UpdateAppliedRequestResponse
+    public record UpdateAppliedIngredientResponse
     {
         /// <summary>
         /// Identifier.
