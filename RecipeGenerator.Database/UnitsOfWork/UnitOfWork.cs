@@ -62,97 +62,157 @@ namespace RecipeGenerator.Database.UnitsOfWork
         }
 
         /// <inheritdoc/>
-        public Task<CreateAppliedIndredientResponse> CreateApplicableIndredientAsync(CreateApplicableIngredientRequest request, CancellationToken cancellationToken = default)
+        public async Task<CreateApplicableIndredientResponse?> CreateApplicableIndredientAsync(CreateApplicableIngredientRequest request, CancellationToken cancellationToken = default)
+        {
+            try
+            {
+                logger.LogInformation("Creating applicable ingredient...");
+                var ingredient = await applicableIngredientRepository.CreateAsync(cancellationToken);
+
+                return mapper.Map<CreateApplicableIndredientResponse>(ingredient);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(CreateApplicableIndredientAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
+        }
+
+        /// <inheritdoc/>
+        public async Task<CreateAppliedIndredientResponse?> CreateAppliedIndredientAsync(CreateAppliedIngredientRequest request, CancellationToken cancellationToken = default)
+        {
+            try
+            {
+                logger.LogInformation("Creating applied ingredient...");
+                var ingredient = await appliedIngredientRepository.CreateAsync(cancellationToken);
+
+                return mapper.Map<CreateAppliedIndredientResponse>(ingredient);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(CreateAppliedIndredientAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
+        }
+
+        /// <inheritdoc/>
+        public async Task<CreateRecipeResponse?> CreateRecipeAsync(CreateRecipeRequest request, CancellationToken cancellationToken = default)
+        {
+            try
+            {
+                logger.LogInformation("Creating recipe...");
+                var ingredient = await recipeRepository.CreateAsync(cancellationToken);
+
+                return mapper.Map<CreateRecipeResponse>(ingredient);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(CreateRecipeAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
+        }
+
+        /// <inheritdoc/>
+        public async Task<CreateStepResponse?> CreateStepAsync(CreateStepRequest request, CancellationToken cancellationToken = default)
+        {
+            try
+            {
+                logger.LogInformation("Creating step...");
+                var ingredient = await recipeRepository.CreateAsync(cancellationToken);
+
+                return mapper.Map<CreateStepResponse>(ingredient);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(CreateStepResponse));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
+        }
+
+        /// <inheritdoc/>
+        public Task<DeleteAppliedIngredientResponse?> DeleteApplicableIngredientAsync(DeleteApplicableIngredientRequest request, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
         /// <inheritdoc/>
-        public Task<CreateAppliedIndredientResponse> CreateAppliedIndredientAsync(CreateAppliedIngredientRequest request, CancellationToken cancellationToken = default)
+        public Task<DeleteAppliedIngredientResponse?> DeleteAppliedIngredientAsync(DeleteAppliedIngredientRequest request, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
         /// <inheritdoc/>
-        public Task<CreateAppliedIndredientResponse> CreateRecipeAsync(CreateRecipeRequest request, CancellationToken cancellationToken = default)
+        public Task<DeleteRecipeResponse?> DeleteRecipeAsync(DeleteRecipeRequest request, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
         /// <inheritdoc/>
-        public Task<CreateAppliedIndredientResponse> CreateStepAsync(CreateStepRequest request, CancellationToken cancellationToken = default)
+        public Task<DeleteStepResponse?> DeleteStepAsync(DeleteStepRequest request, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
         /// <inheritdoc/>
-        public Task<DeleteAppliedIngredientResponse> DeleteApplicableIngredientAsync(DeleteApplicableIngredientRequest request, CancellationToken cancellationToken = default)
+        public Task<GetAllApplicableIngredientsResponse?> GetAllApplicableIngredientAsync(GetAllApplicableIngredientsRequest request, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
         /// <inheritdoc/>
-        public Task<DeleteAppliedIngredientResponse> DeleteAppliedIngredientAsync(DeleteAppliedIngredientRequest request, CancellationToken cancellationToken = default)
+        public Task<GetAllAppliedIngredientsResponse?> GetAllAppliedIngredientAsync(GetAllAppliedIngredientsRequest request, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
         /// <inheritdoc/>
-        public Task<DeleteRecipeResponse> DeleteRecipeAsync(DeleteRecipeRequest request, CancellationToken cancellationToken = default)
+        public Task<GetAllRecipesResponse?> GetAllRecipeAsync(GetAllRecipesRequest request, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
         /// <inheritdoc/>
-        public Task<DeleteStepResponse> DeleteStepAsync(DeleteStepRequest request, CancellationToken cancellationToken = default)
+        public Task<GetAllStepsResponse?> GetAllStepAsync(GetAllStepsRequest request, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
         /// <inheritdoc/>
-        public Task<GetAllApplicableIngredientsResponse> GetAllApplicableIngredientAsync(GetAllApplicableIngredientsRequest request, CancellationToken cancellationToken = default)
+        public Task<GetApplicableIngredientResponse?> GetApplicableIngredientAsync(GetApplicableIngredientRequest request, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
         /// <inheritdoc/>
-        public Task<GetAllAppliedIngredientsResponse> GetAllAppliedIngredientAsync(GetAllAppliedIngredientsRequest request, CancellationToken cancellationToken = default)
+        public Task<GetAppliedIngredientResponse?> GetAppliedIngredientAsync(GetAppliedIngredientRequest request, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
         /// <inheritdoc/>
-        public Task<GetAllRecipesResponse> GetAllRecipeAsync(GetAllRecipesRequest request, CancellationToken cancellationToken = default)
+        public Task<GetRecipeResponse?> GetRecipeAsync(GetRecipeRequest request, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
         /// <inheritdoc/>
-        public Task<GetAllStepsResponse> GetAllStepAsync(GetAllStepsRequest request, CancellationToken cancellationToken = default)
-        {
-            throw new NotImplementedException();
-        }
-
-        /// <inheritdoc/>
-        public Task<GetApplicableIngredientResponse> GetApplicableIngredientAsync(GetApplicableIngredientRequest request, CancellationToken cancellationToken = default)
-        {
-            throw new NotImplementedException();
-        }
-
-        /// <inheritdoc/>
-        public Task<GetAppliedIngredientResponse> GetAppliedIngredientAsync(GetAppliedIngredientRequest request, CancellationToken cancellationToken = default)
-        {
-            throw new NotImplementedException();
-        }
-
-        /// <inheritdoc/>
-        public Task<GetRecipeResponse> GetRecipeAsync(GetRecipeRequest request, CancellationToken cancellationToken = default)
-        {
-            throw new NotImplementedException();
-        }
-
-        /// <inheritdoc/>
-        public Task<GetStepResponse> GetStepAsync(GetStepRequest request, CancellationToken cancellationToken = default)
+        public Task<GetStepResponse?> GetStepAsync(GetStepRequest request, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
