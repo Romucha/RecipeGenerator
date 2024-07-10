@@ -50,7 +50,7 @@ namespace RecipeGenerator.Database.UnitsOfWork
         /// </summary>
         /// <param name="request">Request.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
-        Task<DeleteAppliedIngredientResponse?> DeleteApplicableIngredientAsync(DeleteApplicableIngredientRequest request, CancellationToken cancellationToken = default);
+        Task<DeleteApplicableIngredientResponse?> DeleteApplicableIngredientAsync(DeleteApplicableIngredientRequest request, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Gets a list of applied ingredients.
@@ -85,7 +85,7 @@ namespace RecipeGenerator.Database.UnitsOfWork
         /// </summary>
         /// <param name="request">Request.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
-        Task<GetAllStepsResponse?> GetAllStepAsync(GetAllStepsRequest request, CancellationToken cancellationToken = default);
+        Task<GetAllStepsResponse?> GetAllStepsAsync(GetAllStepsRequest request, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Gets a step.

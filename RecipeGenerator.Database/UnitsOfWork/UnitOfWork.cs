@@ -136,7 +136,7 @@ namespace RecipeGenerator.Database.UnitsOfWork
             }
             catch (Exception ex)
             {
-                logger.LogError(ex, nameof(CreateStepResponse));
+                logger.LogError(ex, nameof(CreateStepAsync));
                 return null;
             }
             finally
@@ -146,51 +146,216 @@ namespace RecipeGenerator.Database.UnitsOfWork
         }
 
         /// <inheritdoc/>
-        public Task<DeleteAppliedIngredientResponse?> DeleteApplicableIngredientAsync(DeleteApplicableIngredientRequest request, CancellationToken cancellationToken = default)
+        public async Task<DeleteApplicableIngredientResponse?> DeleteApplicableIngredientAsync(DeleteApplicableIngredientRequest request, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            try
+            {
+                logger.LogInformation("Deleting applicable ingredient...");
+                var ingredient = await applicableIngredientRepository.GetAsync(request.Id, cancellationToken);
+                await applicableIngredientRepository.DeleteAsync(request.Id, cancellationToken);
+
+                return mapper.Map<DeleteApplicableIngredientResponse>(ingredient);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(DeleteApplicableIngredientAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
         }
 
         /// <inheritdoc/>
-        public Task<DeleteAppliedIngredientResponse?> DeleteAppliedIngredientAsync(DeleteAppliedIngredientRequest request, CancellationToken cancellationToken = default)
+        public async Task<DeleteAppliedIngredientResponse?> DeleteAppliedIngredientAsync(DeleteAppliedIngredientRequest request, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            try
+            {
+                logger.LogInformation("Deleting applicable ingredient...");
+                var ingredient = await appliedIngredientRepository.GetAsync(request.Id, cancellationToken);
+                await appliedIngredientRepository.DeleteAsync(request.Id, cancellationToken);
+
+                return mapper.Map<DeleteAppliedIngredientResponse>(ingredient);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(DeleteAppliedIngredientAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
         }
 
         /// <inheritdoc/>
-        public Task<DeleteRecipeResponse?> DeleteRecipeAsync(DeleteRecipeRequest request, CancellationToken cancellationToken = default)
+        public async Task<DeleteRecipeResponse?> DeleteRecipeAsync(DeleteRecipeRequest request, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            try
+            {
+                logger.LogInformation("Deleting recipe...");
+                var recipe = await recipeRepository.GetAsync(request.Id, cancellationToken);
+                await recipeRepository.DeleteAsync(request.Id, cancellationToken);
+
+                return mapper.Map<DeleteRecipeResponse>(recipe);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(DeleteRecipeAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
         }
 
         /// <inheritdoc/>
-        public Task<DeleteStepResponse?> DeleteStepAsync(DeleteStepRequest request, CancellationToken cancellationToken = default)
+        public async Task<DeleteStepResponse?> DeleteStepAsync(DeleteStepRequest request, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            try
+            {
+                logger.LogInformation("Deleting step...");
+                var step = await stepRepostiry.GetAsync(request.Id, cancellationToken);
+                await stepRepostiry.DeleteAsync(request.Id, cancellationToken);
+
+                return mapper.Map<DeleteStepResponse>(step);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(DeleteStepAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
         }
 
         /// <inheritdoc/>
-        public Task<GetAllApplicableIngredientsResponse?> GetAllApplicableIngredientAsync(GetAllApplicableIngredientsRequest request, CancellationToken cancellationToken = default)
+        public async Task<GetAllApplicableIngredientsResponse?> GetAllApplicableIngredientAsync(GetAllApplicableIngredientsRequest request, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            try
+            {
+                logger.LogInformation("Getting applicable ingredients...");
+                var entites = await applicableIngredientRepository.GetAllAsync(request.PageNumber, request.PageSize, cancellationToken);
+                List<ApplicableIngredient> fitleredEntities = new();
+                if (entites != null)
+                {
+                    fitleredEntities.AddRange(entites.Where(c =>
+                        c.Name.Contains(request.Filter, StringComparison.OrdinalIgnoreCase)
+                        || c.Description.Contains(request.Filter, StringComparison.OrdinalIgnoreCase)));
+                }
+
+                return new()
+                {
+                    Items = fitleredEntities.Select(mapper.Map<GetAllApplicableIngredientResponse>),
+                };
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(GetAllApplicableIngredientAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
         }
 
         /// <inheritdoc/>
-        public Task<GetAllAppliedIngredientsResponse?> GetAllAppliedIngredientAsync(GetAllAppliedIngredientsRequest request, CancellationToken cancellationToken = default)
+        public async Task<GetAllAppliedIngredientsResponse?> GetAllAppliedIngredientAsync(GetAllAppliedIngredientsRequest request, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            try
+            {
+                logger.LogInformation("Getting applied ingredients...");
+                var entites = await appliedIngredientRepository.GetAllAsync(request.PageNumber, request.PageSize, cancellationToken);
+                List<AppliedIngredient> fitleredEntities = new();
+                if (entites != null)
+                {
+                    fitleredEntities.AddRange(entites.Where(c => 
+                        c.Ingredient is null ? false : 
+                            (c.Ingredient.Name.Contains(request.Filter, StringComparison.OrdinalIgnoreCase)
+                            || c.Ingredient.Description.Contains(request.Filter, StringComparison.OrdinalIgnoreCase))));
+                }
+
+                return new()
+                {
+                    Items = fitleredEntities.Select(mapper.Map<GetAllAppliedIngredientResponse>),
+                };
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(GetAllAppliedIngredientAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
         }
 
         /// <inheritdoc/>
-        public Task<GetAllRecipesResponse?> GetAllRecipeAsync(GetAllRecipesRequest request, CancellationToken cancellationToken = default)
+        public async Task<GetAllRecipesResponse?> GetAllRecipeAsync(GetAllRecipesRequest request, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            try
+            {
+                logger.LogInformation("Getting recipes...");
+                var entites = await recipeRepository.GetAllAsync(request.PageNumber, request.PageSize, cancellationToken);
+                List<Recipe> fitleredEntities = new();
+                if (entites != null)
+                {
+                    fitleredEntities.AddRange(entites.Where(c =>
+                        c.Name.Contains(request.Filter, StringComparison.OrdinalIgnoreCase)
+                        || c.Description.Contains(request.Filter, StringComparison.OrdinalIgnoreCase)));
+                }
+
+                return new()
+                {
+                    Items = fitleredEntities.Select(mapper.Map<GetAllRecipeResponse>),
+                };
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(GetAllRecipeAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
         }
 
         /// <inheritdoc/>
-        public Task<GetAllStepsResponse?> GetAllStepAsync(GetAllStepsRequest request, CancellationToken cancellationToken = default)
+        public async Task<GetAllStepsResponse?> GetAllStepsAsync(GetAllStepsRequest request, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            try
+            {
+                logger.LogInformation("Getting steps...");
+                var entites = await stepRepostiry.GetAllAsync(request.PageNumber, request.PageSize, cancellationToken);
+                List<Step> fitleredEntities = new();
+                if (entites != null)
+                {
+                    fitleredEntities.AddRange(entites.Where(c => 
+                        c.Name.Contains(request.Filter, StringComparison.OrdinalIgnoreCase)
+                        || c.Description.Contains(request.Filter, StringComparison.OrdinalIgnoreCase)));
+                }
+
+                return new()
+                {
+                    Items = fitleredEntities.Select(mapper.Map<GetAllStepResponse>),
+                };
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(GetAllStepsAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
         }
 
         /// <inheritdoc/>
