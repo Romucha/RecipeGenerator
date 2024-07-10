@@ -359,27 +359,87 @@ namespace RecipeGenerator.Database.UnitsOfWork
         }
 
         /// <inheritdoc/>
-        public Task<GetApplicableIngredientResponse?> GetApplicableIngredientAsync(GetApplicableIngredientRequest request, CancellationToken cancellationToken = default)
+        public async Task<GetApplicableIngredientResponse?> GetApplicableIngredientAsync(GetApplicableIngredientRequest request, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            try
+            {
+                logger.LogInformation("Getting applicable ingredient...");
+                var entity = await applicableIngredientRepository.GetAsync(request.Id, cancellationToken);
+                
+                return mapper.Map<GetApplicableIngredientResponse>(entity);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(GetAllApplicableIngredientAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
         }
 
         /// <inheritdoc/>
-        public Task<GetAppliedIngredientResponse?> GetAppliedIngredientAsync(GetAppliedIngredientRequest request, CancellationToken cancellationToken = default)
+        public async Task<GetAppliedIngredientResponse?> GetAppliedIngredientAsync(GetAppliedIngredientRequest request, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            try
+            {
+                logger.LogInformation("Getting applied ingredient...");
+                var entity = await appliedIngredientRepository.GetAsync(request.Id, cancellationToken);
+
+                return mapper.Map<GetAppliedIngredientResponse>(entity);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(GetAppliedIngredientAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
         }
 
         /// <inheritdoc/>
-        public Task<GetRecipeResponse?> GetRecipeAsync(GetRecipeRequest request, CancellationToken cancellationToken = default)
+        public async Task<GetRecipeResponse?> GetRecipeAsync(GetRecipeRequest request, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            try
+            {
+                logger.LogInformation("Getting recipe...");
+                var entity = await recipeRepository.GetAsync(request.Id, cancellationToken);
+
+                return mapper.Map<GetRecipeResponse>(entity);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(GetRecipeAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
         }
 
         /// <inheritdoc/>
-        public Task<GetStepResponse?> GetStepAsync(GetStepRequest request, CancellationToken cancellationToken = default)
+        public async Task<GetStepResponse?> GetStepAsync(GetStepRequest request, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            try
+            {
+                logger.LogInformation("Getting step...");
+                var entity = await stepRepostiry.GetAsync(request.Id, cancellationToken);
+
+                return mapper.Map<GetStepResponse>(entity);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(GetAppliedIngredientAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
         }
 
         /// <inheritdoc/>
