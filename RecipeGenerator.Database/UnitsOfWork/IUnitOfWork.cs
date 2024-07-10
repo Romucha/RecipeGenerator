@@ -53,6 +53,14 @@ namespace RecipeGenerator.Database.UnitsOfWork
         Task<DeleteApplicableIngredientResponse?> DeleteApplicableIngredientAsync(DeleteApplicableIngredientRequest request, CancellationToken cancellationToken = default);
 
         /// <summary>
+        /// Updates an applicable ingredient.
+        /// </summary>
+        /// <param name="request">Request.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns></returns>
+        Task<UpdateApplicableIngredientResponse?> UpdateApplicableIngredientAsync(UpdateApplicableIngredientRequest request, CancellationToken cancellationToken = default);
+
+        /// <summary>
         /// Gets a list of applied ingredients.
         /// </summary>
         /// <param name="request">Request.</param>
@@ -79,6 +87,14 @@ namespace RecipeGenerator.Database.UnitsOfWork
         /// <param name="request">Request.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
         Task<DeleteAppliedIngredientResponse?> DeleteAppliedIngredientAsync(DeleteAppliedIngredientRequest request, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Updates an applied ingredient.
+        /// </summary>
+        /// <param name="request">Request.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns></returns>
+        Task<UpdateAppliedIngredientResponse?> UpdateAppliedIngredientAsync(UpdateAppliedIngredientRequest request, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Gets a list of steps.
@@ -109,6 +125,14 @@ namespace RecipeGenerator.Database.UnitsOfWork
         Task<DeleteStepResponse?> DeleteStepAsync(DeleteStepRequest request, CancellationToken cancellationToken = default);
 
         /// <summary>
+        /// Updates a step.
+        /// </summary>
+        /// <param name="request">Request.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns></returns>
+        Task<UpdateStepResponse?> UpdateStepAsync(UpdateStepRequest request, CancellationToken cancellationToken = default);
+
+        /// <summary>
         /// Gets a list of recipes.
         /// </summary>
         /// <param name="request">Request.</param>
@@ -135,6 +159,14 @@ namespace RecipeGenerator.Database.UnitsOfWork
         /// <param name="request">Request.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
         Task<DeleteRecipeResponse?> DeleteRecipeAsync(DeleteRecipeRequest request, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Updates a recipe.
+        /// </summary>
+        /// <param name="request">Request.</param>
+        /// <param name="cancellationToken">Cancellation token.</param>
+        /// <returns></returns>
+        Task<UpdateRecipeResponse?> UpdateRecipeAsync(UpdateRecipeRequest request, CancellationToken cancellationToken= default);
 
         /// <summary>
         /// Save changes in database.

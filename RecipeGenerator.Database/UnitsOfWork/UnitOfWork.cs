@@ -447,5 +447,87 @@ namespace RecipeGenerator.Database.UnitsOfWork
         {
             await dbContext.SaveChangesAsync(cancellationToken);
         }
+
+        /// <inheritdoc/>
+        public async Task<UpdateApplicableIngredientResponse?> UpdateApplicableIngredientAsync(UpdateApplicableIngredientRequest request, CancellationToken cancellationToken = default)
+        {
+            try
+            {
+                logger.LogInformation("Updating applicable ingredient...");
+                var entity = await applicableIngredientRepository.GetAsync(request.Id, cancellationToken);
+                if (entity is null)
+                    return null;
+
+                if (request.Description is not null)
+                    entity.Description = request.Description;
+
+                if (request.Image is not null)
+                    entity.Image = request.Image;
+
+                if (request.IngredientType is not null)
+                    entity.IngredientType = (IngredientType)request.IngredientType;
+
+                if (request.Link is not null)
+                    entity.Link = request.Link;
+
+                if (request.Name is not null)
+                    entity.Name = request.Name;
+
+
+
+                await applicableIngredientRepository.UpdateAsync(entity, cancellationToken);
+
+                return mapper.Map<UpdateApplicableIngredientResponse>(entity);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(UpdateApplicableIngredientAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
+        }
+
+        /// <inheritdoc/>
+        public async Task<UpdateAppliedIngredientResponse?> UpdateAppliedIngredientAsync(UpdateAppliedIngredientRequest request, CancellationToken cancellationToken = default)
+        {
+            try
+            {
+                logger.LogInformation("Updating applied ingredient...");
+                var entity = await appliedIngredientRepository.GetAsync(request.Id, cancellationToken);
+
+                if (entity is null)
+                    return null;
+
+                //TO-DO: add editing here.
+
+                await appliedIngredientRepository.UpdateAsync(entity, cancellationToken);
+
+                return mapper.Map<UpdateAppliedIngredientResponse>(entity);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(UpdateAppliedIngredientAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
+        }
+
+        /// <inheritdoc/>
+        public Task<UpdateRecipeResponse?> UpdateRecipeAsync(UpdateRecipeRequest request, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
+        }
+
+        /// <inheritdoc/>
+        public Task<UpdateStepResponse?> UpdateStepAsync(UpdateStepRequest request, CancellationToken cancellationToken = default)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
