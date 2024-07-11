@@ -243,9 +243,16 @@ namespace RecipeGenerator.Database.UnitsOfWork
                 List<ApplicableIngredient> fitleredEntities = new();
                 if (entites != null)
                 {
-                    fitleredEntities.AddRange(entites.Where(c =>
-                        c.Name.Contains(request.Filter, StringComparison.OrdinalIgnoreCase)
-                        || c.Description.Contains(request.Filter, StringComparison.OrdinalIgnoreCase)));
+                    if (string.IsNullOrEmpty(request.Filter))
+                    {
+                        fitleredEntities.AddRange(entites);
+                    }
+                    else
+                    {
+                        fitleredEntities.AddRange(entites.Where(c =>
+                            c.Name.Contains(request.Filter, StringComparison.OrdinalIgnoreCase)
+                            || c.Description.Contains(request.Filter, StringComparison.OrdinalIgnoreCase)));
+                    }
                 }
 
                 return new()

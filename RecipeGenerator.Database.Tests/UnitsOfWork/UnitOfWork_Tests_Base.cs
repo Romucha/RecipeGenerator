@@ -25,6 +25,11 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork
         protected readonly IUnitOfWork unitOfWork;
         protected readonly RecipeGeneratorDbContext dbContext;
 
+        protected readonly IRepository<ApplicableIngredient> applicableIngredientRepository;
+        protected readonly IRepository<AppliedIngredient> appliedIngredientRepository;
+        protected readonly IRepository<Step> stepRepository;
+        protected readonly IRepository<Recipe> recipeRepository;
+
         public UnitOfWork_Tests_Base()
         {
             ILogger<UnitOfWork> uowLogger = new NullLogger<UnitOfWork>();
@@ -35,16 +40,16 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork
             dbContext = new RecipeGeneratorDbContext(configuration, dbContextOptions);
 
             ILogger<Repository<ApplicableIngredient>> raiLogger = new NullLogger<Repository<ApplicableIngredient>>();
-            IRepository<ApplicableIngredient> applicableIngredientRepository = new Repository<ApplicableIngredient>(dbContext, raiLogger);
+            applicableIngredientRepository = new Repository<ApplicableIngredient>(dbContext, raiLogger);
 
             ILogger<Repository<AppliedIngredient>> raidLogger = new NullLogger<Repository<AppliedIngredient>>();
-            IRepository<AppliedIngredient> appliedIngredientRepository = new Repository<AppliedIngredient>(dbContext, raidLogger);
+            appliedIngredientRepository = new Repository<AppliedIngredient>(dbContext, raidLogger);
 
             ILogger<Repository<Step>> stepLogger = new NullLogger<Repository<Step>>();
-            IRepository<Step> stepRepository = new Repository<Step>(dbContext, stepLogger);
+            stepRepository = new Repository<Step>(dbContext, stepLogger);
 
             ILogger<Repository<Recipe>> recipeLogger = new NullLogger<Repository<Recipe>>();
-            IRepository<Recipe> recipeRepository = new Repository<Recipe>(dbContext, recipeLogger);
+            recipeRepository = new Repository<Recipe>(dbContext, recipeLogger);
 
             var config = new MapperConfiguration(c => c.AddProfile(new MapperInitializer()));
             IMapper mapper = config.CreateMapper();
@@ -58,19 +63,15 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork
                 applicableIngredientRepository,
                 mapper);
         }
-        [Fact]
+
         public abstract Task CreateAsync_Normal();
 
-        [Fact]
         public abstract Task DeleteAsync_Normal();
 
-        [Fact]
         public abstract Task UpdateAsync_Normal();
 
-        [Fact]
         public abstract Task GetAsync_Normal();
 
-        [Fact]
-        public abstract Task GetAllAsync_Normal();
+        public abstract Task GetAllAsync_Normal(int pageNumber, int pageSize, string fitler, int totalCount, int expectedCount);
     }
 }
