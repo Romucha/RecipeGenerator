@@ -501,7 +501,11 @@ namespace RecipeGenerator.Database.UnitsOfWork
                 if (entity is null)
                     return null;
 
-                //TO-DO: add editing here.
+                if (request.IngredientId is not null)
+                    entity.IngredientId = (Guid)request.IngredientId;
+
+                if (request.RecipeId is not null)
+                    entity.RecipeId = (Guid)request.RecipeId;
 
                 await appliedIngredientRepository.UpdateAsync(entity, cancellationToken);
 
@@ -519,15 +523,91 @@ namespace RecipeGenerator.Database.UnitsOfWork
         }
 
         /// <inheritdoc/>
-        public Task<UpdateRecipeResponse?> UpdateRecipeAsync(UpdateRecipeRequest request, CancellationToken cancellationToken = default)
+        public async Task<UpdateRecipeResponse?> UpdateRecipeAsync(UpdateRecipeRequest request, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            try
+            {
+                logger.LogInformation("Updating recipe...");
+                var entity = await recipeRepository.GetAsync(request.Id, cancellationToken);
+
+                if (entity is null)
+                    return null;
+
+                if (request.CourseType is not null)
+                    entity.CourseType = (Course)request.CourseType;
+
+                if (request.Description is not null)
+                    entity.Description = request.Description;
+
+                if (request.EstimatedTime is not null)
+                    entity.EstimatedTime = (TimeSpan)request.EstimatedTime;
+
+                if (request.Image is not null)
+                    entity.Image = request.Image;
+
+                if (request.Ingredients is not null)
+                    entity.Ingredients = request.Ingredients.Select(mapper.Map<AppliedIngredient>).ToList();
+
+                if (request.Name is not null)
+                    entity.Name = request.Name;
+
+                if (request.Portions is not null)
+                    entity.Portions = (int)request.Portions;
+
+                if (request.Steps is not null)
+                    entity.Steps = request.Steps.Select(mapper.Map<Step>).ToList();
+
+                await recipeRepository.UpdateAsync(entity, cancellationToken);
+
+                return mapper.Map<UpdateRecipeResponse>(entity);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(UpdateRecipeAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
         }
 
         /// <inheritdoc/>
-        public Task<UpdateStepResponse?> UpdateStepAsync(UpdateStepRequest request, CancellationToken cancellationToken = default)
+        public async Task<UpdateStepResponse?> UpdateStepAsync(UpdateStepRequest request, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            try
+            {
+                logger.LogInformation("Updating step...");
+                var entity = await stepRepostiry.GetAsync(request.Id, cancellationToken);
+
+                if (entity is null)
+                    return null;
+
+                if (request.Index is not null)
+                    entity.Index = (int)request.Index;
+
+                if (request.Name is not null)
+                    entity.Name = request.Name;
+
+                if (request.Photos is not null)
+                    entity.Photos = request.Photos;
+
+                if (request.RecipeId is not null)
+                    entity.RecipeId = (Guid)request.RecipeId;
+
+                await stepRepostiry.UpdateAsync(entity, cancellationToken);
+
+                return mapper.Map<UpdateStepResponse>(entity);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(UpdateStepAsync));
+                return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
         }
     }
 }
