@@ -87,7 +87,7 @@ namespace RecipeGenerator.Database.Repositories
                 {
                     logger.LogInformation($"Getting entities of type \"{typeof(T).Name}\"...");
                     IEnumerable<T>? entities;
-                    if (pageSize > 0 && pageNumber > 0)
+                    if (pageSize > 0)
                     {
                         entities = dbContext
                             .Set<T>()

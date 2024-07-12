@@ -1,4 +1,5 @@
 ﻿using RecipeGenerator.DTO.ApplicableIngredients.Requests;
+using RecipeGenerator.Models.Ingredients;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork.ApplicableIngredients
             CreateApplicableIngredientRequest request = new();
             //act
             var response = await unitOfWork.CreateApplicableIndredientAsync(request);
-            await unitOfWork.SaveChangesAsync();
+            await dbContext.SaveChangesAsync();
             //assert
             Assert.NotNull(response);
             Assert.Equal(string.Empty, response.Name);
@@ -30,8 +31,8 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork.ApplicableIngredients
         public override async Task DeleteAsync_Normal()
         {
             //arrange
-            var entity = await applicableIngredientRepository.CreateAsync();
-            await unitOfWork.SaveChangesAsync();
+            var entity = (await dbContext.AddAsync(new ApplicableIngredient())).Entity;
+            await dbContext.SaveChangesAsync();
 
             DeleteApplicableIngredientRequest req = new()
             {
@@ -39,13 +40,13 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork.ApplicableIngredients
             };
             //act
             var response = await unitOfWork.DeleteApplicableIngredientAsync(req);
-            await unitOfWork.SaveChangesAsync();
+            await dbContext.SaveChangesAsync();
             //assert
             Assert.NotNull(response);
             Assert.Equal(req.Id, response.Id);
             Assert.Equal(entity.Name, response.Name);
 
-            var deletedEntity = await applicableIngredientRepository.GetAsync(req.Id);
+            var deletedEntity = await dbContext.FindAsync<ApplicableIngredient>(req.Id);
             Assert.Null(deletedEntity);
         }
 
@@ -59,13 +60,13 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork.ApplicableIngredients
             //arrange
             for (int i = 0; i < totalCount; ++i)
             {
-                var entity = await applicableIngredientRepository.CreateAsync();
+                var entity = await dbContext.AddAsync(new ApplicableIngredient());
                 if (i % 2 == 0 && !string.IsNullOrEmpty(fitler))
                 {
-                    entity!.Name = fitler;
+                    entity.Entity!.Name = fitler;
                 }
             }
-            await unitOfWork.SaveChangesAsync();
+            await dbContext.SaveChangesAsync();
             GetAllApplicableIngredientsRequest req = new()
             {
                 PageNumber = pageNumber,
@@ -74,7 +75,7 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork.ApplicableIngredients
             };
             //act
             var response = await unitOfWork.GetAllApplicableIngredientAsync(req);
-            await unitOfWork.SaveChangesAsync();
+            await dbContext.SaveChangesAsync();
             //assert
             Assert.NotNull(response);
             Assert.NotEmpty(response.Items);
@@ -86,8 +87,8 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork.ApplicableIngredients
         public override async Task GetAsync_Normal()
         {
             //arrange
-            var entity = await applicableIngredientRepository.CreateAsync();
-            await unitOfWork.SaveChangesAsync();
+            var entity = (await dbContext.AddAsync(new ApplicableIngredient())).Entity;
+            await dbContext.SaveChangesAsync();
 
             GetApplicableIngredientRequest req = new()
             {
@@ -95,7 +96,7 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork.ApplicableIngredients
             };
             //act
             var response = await unitOfWork.GetApplicableIngredientAsync(req);
-            await unitOfWork.SaveChangesAsync();
+            await dbContext.SaveChangesAsync();
             //assert
             Assert.NotNull(response);
             Assert.Equal(req.Id, response.Id);
