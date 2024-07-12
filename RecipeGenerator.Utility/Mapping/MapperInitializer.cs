@@ -41,6 +41,7 @@ namespace RecipeGenerator.Utility.Mapping
             CreateMap<CreateApplicableIndredientResponse, ApplicableIngredient>().ReverseMap();
             CreateMap<DeleteApplicableIngredientResponse, ApplicableIngredient>().ReverseMap();
             CreateMap<GetAllApplicableIngredientResponse, ApplicableIngredient>().ReverseMap();
+            CreateMap<GetApplicableIngredientResponse, ApplicableIngredient>().ReverseMap();
             CreateMap<UpdateApplicableIngredientResponse, ApplicableIngredient>().ReverseMap();
         }
 
@@ -54,6 +55,7 @@ namespace RecipeGenerator.Utility.Mapping
             CreateMap<CreateAppliedIndredientResponse, AppliedIngredient>().ReverseMap();
             CreateMap<DeleteAppliedIngredientResponse, AppliedIngredient>().ReverseMap();
             CreateMap<GetAllAppliedIngredientResponse, AppliedIngredient>().ReverseMap();
+            CreateMap<GetAppliedIngredientResponse, AppliedIngredient>().ReverseMap();
             CreateMap<UpdateAppliedIngredientResponse, AppliedIngredient>().ReverseMap();
         }
 
@@ -67,6 +69,7 @@ namespace RecipeGenerator.Utility.Mapping
             CreateMap<CreateStepResponse, Step>().ReverseMap();
             CreateMap<DeleteStepResponse, Step>().ReverseMap();
             CreateMap<GetAllStepResponse, Step>().ReverseMap();
+            CreateMap<GetStepResponse, Step>().ReverseMap();
             CreateMap<UpdateStepResponse, Step>().ReverseMap();
         }
 
@@ -80,6 +83,7 @@ namespace RecipeGenerator.Utility.Mapping
             CreateMap<CreateRecipeResponse, Recipe>().ReverseMap();
             CreateMap<DeleteRecipeResponse, Recipe>().ReverseMap();
             CreateMap<GetAllRecipeResponse, Recipe>().ReverseMap();
+            CreateMap<GetRecipeResponse, Recipe>().ReverseMap();
             CreateMap<UpdateRecipeResponse, Recipe>().ReverseMap();
         }
     }
