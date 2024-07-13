@@ -1,0 +1,1659 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_All_Purpose_Flour.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Amaranth.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Arborio_Rice.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Barley.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Barnyard_Millet.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Basmati_Rice.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Bean_Sprouts.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Bengal_Gram_(Split).png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Black-eyed_Beans.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Black_Beans.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Black_Grams.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Breadcrumbs.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Breads.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Brown_Rice.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Buckwheat.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Chickpeas.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Cornmeal.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Couscous.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Finger_Millet.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Flour.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Gram_Flour.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Green_Gram.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Husked_Black_Gram.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Husked_Green_Gram.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Jowar.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Kidney_Beans.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Muesli.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Oats.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Pearl_Millet.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Pigeon_Pea.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Pressed_Rice.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Puffed_Rice.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Rice.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Semolina.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Tapioca.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Water_Chestnut_Flour.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Whole_Bengal_Gram.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Whole_Brown_Lentils.png" />
+    <None Remove="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Whole_Wheat_Flour.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Blue_Cheese.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Brie_Cheese.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Butter.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Buttermilk.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Cheddar_Cheese.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Clarified_Butter.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Condensed_Milk.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Cottage_Cheese.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Cream.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Cream_Cheese.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Feta_Cheese.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Gouda_Cheese.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Gruyere_Cheese.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Hung_Curd.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Khoya.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Mascarpone_Cheese.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Milk.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Mozzarella_Cheese.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Parmesan_Cheese.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Provolone_Cheese.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Ricotta_Cheese.png" />
+    <None Remove="Files\Images\Ingredients\DairyProducts\DairyProducts_Yogurt.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Apples.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Apricots.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Banana.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Blueberries.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Cape_Gooseberry.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Cherry.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Coconut.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Cooking_Apples.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Cranberry.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Currant.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Custard_Apple.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Dates.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Dried_Fruit.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Figs.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Grapefruit.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Grapes.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Guava.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Indian_Gooseberry.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Jamun.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Kiwi.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Lemon.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Lemon_Juice.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Lemon_Rind.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Lychee.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Mango.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Mulberry.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Olives.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Orange.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Orange_Rind.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Papaya.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Peach.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Pear.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Pineapple.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Plum.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Pomegranate.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Raisins.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Strawberry.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Sultana.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Tamarind.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Tomato.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Watermelon.png" />
+    <None Remove="Files\Images\Ingredients\Fruits\Fruits_Water_Chestnut.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Bacon.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Beef.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Chicken.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Chicken_Liver.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Chicken_Stock.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Chops.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Crab.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Free_Range_Chicken.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Grass_Fed_Chicken.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Ham.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Keema.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Kidney_Meat.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Lamb_Meat.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Mutton.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Mutton_Liver.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Organic_Chicken.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Partridge.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Pork.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Quail.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Skinned_Chicken.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Stock.png" />
+    <None Remove="Files\Images\Ingredients\Meat\Meat_Turkey.png" />
+    <None Remove="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Almonds.png" />
+    <None Remove="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Blanched_Almonds.png" />
+    <None Remove="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Canola_Oil.png" />
+    <None Remove="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Cashew_Nuts.png" />
+    <None Remove="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Chia_Seeds.png" />
+    <None Remove="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Chironji.png" />
+    <None Remove="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Hazelnut.png" />
+    <None Remove="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Mustard_Oil.png" />
+    <None Remove="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Mustard_Seeds.png" />
+    <None Remove="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Olive_Oil.png" />
+    <None Remove="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Peanuts.png" />
+    <None Remove="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Pine_Nuts.png" />
+    <None Remove="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Pistachio.png" />
+    <None Remove="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Poppy_Seeds.png" />
+    <None Remove="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Sesame_Oil.png" />
+    <None Remove="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Sesame_Seeds.png" />
+    <None Remove="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Sunflower_Seeds.png" />
+    <None Remove="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Walnuts.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Agar.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Ajinomoto.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Almond Milk.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Alum.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Arrowroot.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Baking Powder.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Baking Soda.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Balsamic Vinegar.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Barfi.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Beer.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Brown Sauce.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Chocolate Chips.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Chocolate.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Cocoa.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Coconut Milk.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Coconut Oil.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Coconut Water.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Coffee.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Cognac.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Cornflour.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Cranberry Sauce.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Desiccated Coconut.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Egg.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Fish Sauce.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Flat Noodles.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Gelatin.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Glycerine.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Gold Leaves.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Guchchi.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Hoisin Sauce.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Jelly.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Jus.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Lotus Seeds.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Malt Vinegar.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Margarine.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Marzipan.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Mayonnaise.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Melon Seeds.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Meringue.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Oyster Sauce.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Paan.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Papad.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Pasta.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Petha.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Polenta.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Quinoa.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Red Wine Vinegar.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Red Wine.PNG" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Rice Flour.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Rice Noodles.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Rice Vinegar.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Rose Water.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Roux.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Rum.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Sake.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Screw Pine.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Sea Salt.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Sev.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Sharbat.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Soy Milk.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Soya Sauce.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Tartaric Acid.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Tea.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Tofu.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Tomato Puree.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Tortilla.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Vanilla Essence.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Vegetable Oil.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Vermicelli.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Vetiver.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Vinaigrette.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Vinegar.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_White Pepper.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_White Wine.png" />
+    <None Remove="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Yeast.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Anchovies.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Cat_Fish.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Clams.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Cod.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Cuttle_Fish.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Fish.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Fish_Fillet.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Fish_Stock.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Flounder.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Haddock.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Hilsa.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Mackerel.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Mullet.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Mussels.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Pearl_Spot.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Perch.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Pomfret.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Prawns.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Salmon.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Sardines.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Shark.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Shellfish.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Shrimp.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Squids.png" />
+    <None Remove="Files\Images\Ingredients\Seafood\Seafood_Tuna_Fish.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Acacia.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Allspice.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Aniseed.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Asafoetida.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Basil.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Bay_Leaf.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Black_Cardamom.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Black_Cumin.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Black_Pepper.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Cajun_Spices.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Caraway_Seeds.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Carom_Seeds.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Cayenne.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Chives.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Cinnamon.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Cloves.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Coriander_Leaves.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Coriander_Powder.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Coriander_Seeds.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Cumin_Seeds.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Curry_Leaves.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Dill.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Dried_Fenugreek_Leaves.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Dry_Ginger_Powder.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Fennel.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Fenugreek_Seeds.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Five_Spice_Powder.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Galangal.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Garam_Masala.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Green_Cardamom.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Herbs.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Kashmiri_Mirch.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Lemongrass.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Mace.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Marjoram.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Mint_Leaves.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Mustard_Powder.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Nasturtium.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Nutmeg.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Onion_Seeds.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Oregano.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Paprika.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Parsley.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Raw_Mango_Powder.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Red_Chilli.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Rock_Salt.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Rosemary.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Saffron.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Sage.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Salt.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Star_Anise.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Thyme.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Tulsi.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Turmeric.png" />
+    <None Remove="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Yellow_Chillies.png" />
+    <None Remove="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Brown_Sugar.png" />
+    <None Remove="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Cane_Sugar.png" />
+    <None Remove="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Caramel.png" />
+    <None Remove="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Castor_Sugar.png" />
+    <None Remove="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Golden_Syrup.png" />
+    <None Remove="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Honey.png" />
+    <None Remove="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Icing_Sugar.png" />
+    <None Remove="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Jaggery.png" />
+    <None Remove="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Sugar.png" />
+    <None Remove="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Sugar_Candy.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Artichoke.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Ash_Gourd.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Asparagus.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Avocado.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Baby_Corn.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Bamboo_Shoot.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Beetroot.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Bell_Pepper.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Bitter_Gourd.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Bok_Choy.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Bottle_Gourd.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Broad_Beans.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Broccoli.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Cabbage.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Capers.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Capsicum.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Carrot.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Cauliflower.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Celery.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Cherry_Tomatoes.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Cluster_Beans.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Colocasia.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Corn.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Cucumber.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Drumstick.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Eggplant.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Fenugreek.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_French_Beans.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Garlic.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Gherkins.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Ginger.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Green_Chillies.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Green_Peas.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Horseradish.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Jackfruit.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Jalapeno.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Kaffir_Lime.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Lady_Finger.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Leek.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Lettuce.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Lotus_Stem.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Mushroom.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Mustard_Leaves.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Onion.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Pigweed.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Pimiento.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Plantain.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Potatoes.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Pumpkin.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Radish.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Ridge_Gourd.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Rocket_Leaves.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Round_Gourd.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Shallots.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Shiitake_Mushroom.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Snake_Beans.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Sorrel_Leaves.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Spinach.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Spring_Onion.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Sweet_Potatoes.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Turnip.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Yam.png" />
+    <None Remove="Files\Images\Ingredients\Vegetables\Vegetables_Zucchini.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_All_Purpose_Flour.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Amaranth.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Arborio_Rice.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Barley.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Barnyard_Millet.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Basmati_Rice.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Bean_Sprouts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Bengal_Gram_(Split).png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Black-eyed_Beans.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Black_Beans.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Black_Grams.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Breadcrumbs.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Breads.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Brown_Rice.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Buckwheat.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Chickpeas.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Cornmeal.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Couscous.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Finger_Millet.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Flour.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Gram_Flour.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Green_Gram.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Husked_Black_Gram.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Husked_Green_Gram.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Jowar.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Kidney_Beans.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Muesli.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Oats.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Pearl_Millet.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Pigeon_Pea.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Pressed_Rice.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Puffed_Rice.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Rice.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Semolina.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Tapioca.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Water_Chestnut_Flour.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Whole_Bengal_Gram.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Whole_Brown_Lentils.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\CerealsAndPulses\CerealsAndPulses_Whole_Wheat_Flour.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Blue_Cheese.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Brie_Cheese.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Butter.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Buttermilk.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Cheddar_Cheese.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Clarified_Butter.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Condensed_Milk.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Cottage_Cheese.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Cream.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Cream_Cheese.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Feta_Cheese.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Gouda_Cheese.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Gruyere_Cheese.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Hung_Curd.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Khoya.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Mascarpone_Cheese.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Milk.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Mozzarella_Cheese.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Parmesan_Cheese.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Provolone_Cheese.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Ricotta_Cheese.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\DairyProducts\DairyProducts_Yogurt.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Apples.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Apricots.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Banana.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Blueberries.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Cape_Gooseberry.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Cherry.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Coconut.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Cooking_Apples.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Cranberry.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Currant.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Custard_Apple.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Dates.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Dried_Fruit.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Figs.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Grapefruit.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Grapes.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Guava.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Indian_Gooseberry.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Jamun.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Kiwi.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Lemon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Lemon_Juice.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Lemon_Rind.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Lychee.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Mango.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Mulberry.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Olives.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Orange.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Orange_Rind.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Papaya.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Peach.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Pear.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Pineapple.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Plum.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Pomegranate.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Raisins.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Strawberry.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Sultana.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Tamarind.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Tomato.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Watermelon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Fruits\Fruits_Water_Chestnut.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Bacon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Beef.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Chicken.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Chicken_Liver.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Chicken_Stock.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Chops.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Crab.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Free_Range_Chicken.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Grass_Fed_Chicken.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Ham.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Keema.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Kidney_Meat.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Lamb_Meat.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Mutton.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Mutton_Liver.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Organic_Chicken.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Partridge.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Pork.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Quail.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Skinned_Chicken.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Stock.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Meat\Meat_Turkey.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Almonds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Blanched_Almonds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Canola_Oil.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Cashew_Nuts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Chia_Seeds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Chironji.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Hazelnut.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Mustard_Oil.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Mustard_Seeds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Olive_Oil.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Peanuts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Pine_Nuts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Pistachio.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Poppy_Seeds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Sesame_Oil.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Sesame_Seeds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Sunflower_Seeds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\NutsAndOilseeds\NutsAndOilseeds_Walnuts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Agar.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Ajinomoto.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Almond Milk.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Alum.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Arrowroot.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Baking Powder.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Baking Soda.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Balsamic Vinegar.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Barfi.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Beer.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Brown Sauce.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Chocolate Chips.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Chocolate.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Cocoa.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Coconut Milk.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Coconut Oil.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Coconut Water.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Coffee.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Cognac.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Cornflour.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Cranberry Sauce.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Desiccated Coconut.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Egg.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Fish Sauce.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Flat Noodles.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Gelatin.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Glycerine.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Gold Leaves.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Guchchi.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Hoisin Sauce.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Jelly.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Jus.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Lotus Seeds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Malt Vinegar.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Margarine.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Marzipan.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Mayonnaise.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Melon Seeds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Meringue.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Oyster Sauce.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Paan.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Papad.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Pasta.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Petha.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Polenta.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Quinoa.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Red Wine Vinegar.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Red Wine.PNG">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Rice Flour.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Rice Noodles.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Rice Vinegar.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Rose Water.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Roux.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Rum.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Sake.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Screw Pine.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Sea Salt.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Sev.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Sharbat.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Soy Milk.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Soya Sauce.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Tartaric Acid.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Tea.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Tofu.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Tomato Puree.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Tortilla.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Vanilla Essence.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Vegetable Oil.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Vermicelli.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Vetiver.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Vinaigrette.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Vinegar.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_White Pepper.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_White Wine.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\OtherIngredients\OtherIngredients_Yeast.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Anchovies.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Cat_Fish.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Clams.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Cod.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Cuttle_Fish.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Fish.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Fish_Fillet.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Fish_Stock.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Flounder.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Haddock.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Hilsa.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Mackerel.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Mullet.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Mussels.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Pearl_Spot.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Perch.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Pomfret.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Prawns.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Salmon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Sardines.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Shark.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Shellfish.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Shrimp.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Squids.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Seafood\Seafood_Tuna_Fish.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Acacia.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Allspice.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Aniseed.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Asafoetida.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Basil.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Bay_Leaf.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Black_Cardamom.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Black_Cumin.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Black_Pepper.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Cajun_Spices.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Caraway_Seeds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Carom_Seeds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Cayenne.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Chives.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Cinnamon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Cloves.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Coriander_Leaves.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Coriander_Powder.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Coriander_Seeds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Cumin_Seeds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Curry_Leaves.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Dill.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Dried_Fenugreek_Leaves.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Dry_Ginger_Powder.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Fennel.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Fenugreek_Seeds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Five_Spice_Powder.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Galangal.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Garam_Masala.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Green_Cardamom.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Herbs.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Kashmiri_Mirch.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Lemongrass.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Mace.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Marjoram.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Mint_Leaves.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Mustard_Powder.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Nasturtium.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Nutmeg.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Onion_Seeds.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Oregano.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Paprika.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Parsley.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Raw_Mango_Powder.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Red_Chilli.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Rock_Salt.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Rosemary.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Saffron.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Sage.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Salt.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Star_Anise.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Thyme.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Tulsi.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Turmeric.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Yellow_Chillies.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Brown_Sugar.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Cane_Sugar.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Caramel.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Castor_Sugar.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Golden_Syrup.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Honey.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Icing_Sugar.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Jaggery.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Sugar.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\SugarAndSugarProducts\SugarAndSugarProducts_Sugar_Candy.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Artichoke.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Ash_Gourd.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Asparagus.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Avocado.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Baby_Corn.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Bamboo_Shoot.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Beetroot.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Bell_Pepper.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Bitter_Gourd.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Bok_Choy.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Bottle_Gourd.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Broad_Beans.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Broccoli.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Cabbage.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Capers.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Capsicum.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Carrot.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Cauliflower.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Celery.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Cherry_Tomatoes.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Cluster_Beans.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Colocasia.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Corn.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Cucumber.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Drumstick.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Eggplant.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Fenugreek.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_French_Beans.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Garlic.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Gherkins.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Ginger.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Green_Chillies.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Green_Peas.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Horseradish.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Jackfruit.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Jalapeno.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Kaffir_Lime.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Lady_Finger.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Leek.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Lettuce.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Lotus_Stem.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Mushroom.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Mustard_Leaves.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Onion.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Pigweed.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Pimiento.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Plantain.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Potatoes.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Pumpkin.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Radish.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Ridge_Gourd.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Rocket_Leaves.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Round_Gourd.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Shallots.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Shiitake_Mushroom.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Snake_Beans.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Sorrel_Leaves.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Spinach.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Spring_Onion.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Sweet_Potatoes.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Turnip.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Yam.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\Images\Ingredients\Vegetables\Vegetables_Zucchini.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Descriptions\Ingredients\Descriptions_Ingredients.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Descriptions_Ingredients.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Descriptions\Recipes\Descriptions_Courses.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Descriptions_Courses.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Identifiers\Ingredients\Identifiers_Ingredients.Designer.cs">
+      <DependentUpon>Identifiers_Ingredients.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Images\Ingredients\Images_ Fruits.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Images_ Fruits.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Images\Ingredients\Images_CerealsAndPulses.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Images_CerealsAndPulses.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Images\Ingredients\Images_DairyProducts.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Images_DairyProducts.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Images\Ingredients\Images_Meat.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Images_Meat.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Images\Ingredients\Images_NutsAndOilseeds.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Images_NutsAndOilseeds.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Images\Ingredients\Images_OtherIngredients.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Images_OtherIngredients.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Images\Ingredients\Images_Seafood.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Images_Seafood.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Images\Ingredients\Images_SpicesAndHerbs.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Images_SpicesAndHerbs.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Images\Ingredients\Images_SugarAndSugarProducts.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Images_SugarAndSugarProducts.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Images\Ingredients\Images_Vegetables.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Images_Vegetables.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Links\Ingredients\Links_Ingredients.Designer.cs">
+      <DependentUpon>Links_Ingredients.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Names\Ingredients\Names_Ingredients.Designer.cs">
+      <DependentUpon>Names_Ingredients.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Names\Ingredients\Names_IngredientTypes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Names_IngredientTypes.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Names\Recipes\Names_Courses.Designer.cs">
+      <DependentUpon>Names_Courses.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Descriptions\Ingredients\Descriptions_Ingredients.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Descriptions_Ingredients.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Descriptions\Recipes\Descriptions_Courses.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Descriptions_Courses.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Identifiers\Ingredients\Identifiers_Ingredients.resx">
+      <LastGenOutput>Identifiers_Ingredients.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Images\Ingredients\Images_ Fruits.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images_ Fruits.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Images\Ingredients\Images_CerealsAndPulses.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images_CerealsAndPulses.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Images\Ingredients\Images_DairyProducts.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images_DairyProducts.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Images\Ingredients\Images_Meat.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images_Meat.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Images\Ingredients\Images_NutsAndOilseeds.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images_NutsAndOilseeds.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Images\Ingredients\Images_OtherIngredients.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images_OtherIngredients.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Images\Ingredients\Images_Seafood.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images_Seafood.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Images\Ingredients\Images_SpicesAndHerbs.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images_SpicesAndHerbs.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Images\Ingredients\Images_SugarAndSugarProducts.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images_SugarAndSugarProducts.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Images\Ingredients\Images_Vegetables.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images_Vegetables.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Links\Ingredients\Links_Ingredients.resx">
+      <LastGenOutput>Links_Ingredients.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Names\Ingredients\Names_IngredientTypes.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Names_IngredientTypes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Names\Ingredients\Names_Ingredients.resx">
+      <SubType>Designer</SubType>
+      <LastGenOutput>Names_Ingredients.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Names\Recipes\Names_Courses.resx">
+      <LastGenOutput>Names_Courses.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

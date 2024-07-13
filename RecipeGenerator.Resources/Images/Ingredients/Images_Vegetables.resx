@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Vegetables_Artichoke" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Artichoke.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Ash_Gourd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Ash_Gourd.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Asparagus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Asparagus.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Avocado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Avocado.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Baby_Corn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Baby_Corn.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Bamboo_Shoot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Bamboo_Shoot.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Beetroot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Beetroot.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Bell_Pepper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Bell_Pepper.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Bitter_Gourd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Bitter_Gourd.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Bok_Choy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Bok_Choy.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Bottle_Gourd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Bottle_Gourd.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Broad_Beans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Broad_Beans.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Broccoli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Broccoli.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Cabbage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Cabbage.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Capers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Capers.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Capsicum" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Capsicum.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Carrot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Carrot.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Cauliflower" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Cauliflower.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Celery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Celery.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Cherry_Tomatoes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Cherry_Tomatoes.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Cluster_Beans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Cluster_Beans.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Colocasia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Colocasia.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Corn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Corn.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Cucumber" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Cucumber.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Drumstick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Drumstick.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Eggplant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Eggplant.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Fenugreek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Fenugreek.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_French_Beans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_French_Beans.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Garlic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Garlic.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Gherkins" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Gherkins.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Ginger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Ginger.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Green_Chillies" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Green_Chillies.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Green_Peas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Green_Peas.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Horseradish" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Horseradish.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Jackfruit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Jackfruit.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Jalapeno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Jalapeno.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Kaffir_Lime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Kaffir_Lime.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Lady_Finger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Lady_Finger.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Leek" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Leek.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Lettuce" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Lettuce.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Lotus_Stem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Lotus_Stem.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Mushroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Mushroom.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Mustard_Leaves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Mustard_Leaves.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Onion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Onion.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Pigweed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Pigweed.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Pimiento" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Pimiento.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Plantain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Plantain.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Potatoes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Potatoes.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Pumpkin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Pumpkin.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Radish" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Radish.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Ridge_Gourd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Ridge_Gourd.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Rocket_Leaves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Rocket_Leaves.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Round_Gourd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Round_Gourd.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Shallots" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Shallots.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Shiitake_Mushroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Shiitake_Mushroom.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Snake_Beans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Snake_Beans.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Sorrel_Leaves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Sorrel_Leaves.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Spinach" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Spinach.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Spring_Onion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Spring_Onion.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Sweet_Potatoes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Sweet_Potatoes.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Turnip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Turnip.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Yam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Yam.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Vegetables_Zucchini" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\Vegetables\Vegetables_Zucchini.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

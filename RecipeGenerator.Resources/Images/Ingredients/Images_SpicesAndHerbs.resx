@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="SpicesAndHerbs_Acacia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Acacia.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Allspice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Allspice.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Aniseed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Aniseed.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Asafoetida" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Asafoetida.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Basil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Basil.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Bay_Leaf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Bay_Leaf.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Black_Cardamom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Black_Cardamom.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Black_Cumin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Black_Cumin.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Black_Pepper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Black_Pepper.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Cajun_Spices" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Cajun_Spices.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Caraway_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Caraway_Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Carom_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Carom_Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Cayenne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Cayenne.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Chives" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Chives.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Cinnamon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Cinnamon.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Cloves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Cloves.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Coriander_Leaves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Coriander_Leaves.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Coriander_Powder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Coriander_Powder.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Coriander_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Coriander_Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Cumin_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Cumin_Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Curry_Leaves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Curry_Leaves.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Dill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Dill.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Dried_Fenugreek_Leaves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Dried_Fenugreek_Leaves.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Dry_Ginger_Powder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Dry_Ginger_Powder.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Fennel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Fennel.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Fenugreek_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Fenugreek_Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Five_Spice_Powder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Five_Spice_Powder.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Galangal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Galangal.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Garam_Masala" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Garam_Masala.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Green_Cardamom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Green_Cardamom.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Herbs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Herbs.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Kashmiri_Mirch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Kashmiri_Mirch.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Lemongrass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Lemongrass.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Mace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Mace.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Marjoram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Marjoram.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Mint_Leaves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Mint_Leaves.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Mustard_Powder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Mustard_Powder.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Nasturtium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Nasturtium.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Nutmeg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Nutmeg.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Onion_Seeds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Onion_Seeds.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Oregano" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Oregano.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Paprika" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Paprika.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Parsley" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Parsley.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Raw_Mango_Powder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Raw_Mango_Powder.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Red_Chilli" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Red_Chilli.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Rock_Salt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Rock_Salt.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Rosemary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Rosemary.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Saffron" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Saffron.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Sage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Sage.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Salt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Salt.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Star_Anise" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Star_Anise.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Thyme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Thyme.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Tulsi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Tulsi.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Turmeric" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Turmeric.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SpicesAndHerbs_Yellow_Chillies" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Files\Images\Ingredients\SpicesAndHerbs\SpicesAndHerbs_Yellow_Chillies.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
