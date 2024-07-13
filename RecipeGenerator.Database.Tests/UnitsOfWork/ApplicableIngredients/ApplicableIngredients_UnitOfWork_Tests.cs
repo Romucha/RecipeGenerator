@@ -107,9 +107,33 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork.ApplicableIngredients
             Assert.Equal(entity.Link, response.Link);
         }
 
-        public override Task UpdateAsync_Normal()
+        [Fact]
+        public override async Task UpdateAsync_Normal()
         {
-            throw new NotImplementedException();
+            //arrange
+            var entity = (await dbContext.AddAsync(new ApplicableIngredient())).Entity;
+            await dbContext.SaveChangesAsync();
+
+            UpdateApplicableIngredientRequest req = new()
+            {
+                Id = entity!.Id,
+                Name = nameof(UpdateAsync_Normal),
+                Description = nameof(UpdateAsync_Normal),
+                IngredientType = 2,
+                Image = null,
+                Link = null
+            };
+            //act
+            var response = await unitOfWork.UpdateApplicableIngredientAsync(req);
+            await dbContext.SaveChangesAsync();
+            //assert
+            Assert.NotNull(response);
+            Assert.Equal(req.Id, response.Id);
+            Assert.Equal(entity.Name, response.Name);
+            Assert.Equal(entity.Description, response.Description);
+            Assert.Equal(entity.Image, response.Image);
+            Assert.Equal((int)entity.IngredientType, response.IngredientType);
+            Assert.Equal(entity.Link, response.Link);
         }
     }
 }
