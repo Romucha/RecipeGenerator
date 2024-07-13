@@ -1,4 +1,4 @@
-﻿using RecipeGenerator.DTO.ApplicableIngredients.Requests;
+﻿using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Requests;
 using RecipeGenerator.Models.Ingredients;
 using System;
 using System.Collections.Generic;

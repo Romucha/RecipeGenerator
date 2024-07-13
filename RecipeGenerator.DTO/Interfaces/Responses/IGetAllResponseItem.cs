@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.DTO.Interfaces.Requests
+namespace RecipeGenerator.DTO.Interfaces.Responses
 {
-    public interface IUpdateRequest
+    public interface IGetAllResponseItem
     {
-        public Guid Id { get; set; }
+        Guid Id { get; }
     }
 }

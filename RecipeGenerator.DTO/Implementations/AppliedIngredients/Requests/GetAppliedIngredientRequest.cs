@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.DTO.Interfaces.Requests
+namespace RecipeGenerator.DTO.Implementations.AppliedIngredients.Requests
 {
-    public interface IUpdateRequest
+    public record GetAppliedIngredientRequest
     {
         public Guid Id { get; set; }
     }

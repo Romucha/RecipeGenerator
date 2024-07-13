@@ -8,5 +8,6 @@ namespace RecipeGenerator.DTO.Interfaces.Responses
 {
     public interface IGetAllResponse
     {
+        IEnumerable<IGetAllResponseItem> Items { get; }
     }
 }
