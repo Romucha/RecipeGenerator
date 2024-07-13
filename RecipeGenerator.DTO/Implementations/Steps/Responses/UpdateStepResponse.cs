@@ -1,15 +1,15 @@
-﻿using RecipeGenerator.DTO.AppliedIngredients.Responses;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RecipeGenerator.DTO.Interfaces.Responses;
 
 namespace RecipeGenerator.DTO.Implementations.Steps.Responses
 {
-    public record UpdateStepResponse
+    public record UpdateStepResponse : IUpdateResponse
     {
         /// <summary>
         /// Identifier.

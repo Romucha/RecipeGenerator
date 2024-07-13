@@ -5,10 +5,11 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RecipeGenerator.DTO.Interfaces.Responses;
 
 namespace RecipeGenerator.DTO.Implementations.AppliedIngredients.Responses
 {
-    public record CreateAppliedIndredientResponse
+    public record CreateAppliedIndredientResponse : ICreateResponse
     {
         /// <summary>
         /// Identifier.

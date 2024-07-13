@@ -5,11 +5,11 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RecipeGenerator.DTO.AppliedIngredients.Requests;
+using RecipeGenerator.DTO.Interfaces.Requests;
 
 namespace RecipeGenerator.DTO.Implementations.Steps.Requests
 {
-    public record UpdateStepRequest
+    public record UpdateStepRequest : IUpdateRequest
     {
         /// <inheritdoc/>
         public Guid Id { get; set; }

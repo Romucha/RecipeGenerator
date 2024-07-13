@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RecipeGenerator.DTO.Interfaces.Responses;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.DTO.Implementations.AppliedIngredients.Responses
 {
-    public record UpdateAppliedIngredientResponse
+    public record UpdateAppliedIngredientResponse : IUpdateResponse
     {
         /// <summary>
         /// Identifier.
@@ -16,12 +17,12 @@ namespace RecipeGenerator.DTO.Implementations.AppliedIngredients.Responses
         /// <summary>
         /// Date of creation.
         /// </summary>
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime CreatedAt { get; set; }
 
         /// <summary>
         /// Date of last update.
         /// </summary>
-        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; }
 
         /// <summary>
         /// Identifier of a parent recipe.

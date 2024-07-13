@@ -7,10 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using RecipeGenerator.DTO.Implementations.Steps.Requests;
 using RecipeGenerator.DTO.Implementations.AppliedIngredients.Requests;
+using RecipeGenerator.DTO.Interfaces.Requests;
 
 namespace RecipeGenerator.DTO.Implementations.Recipes.Requests
 {
-    public record UpdateRecipeRequest
+    public record UpdateRecipeRequest : IUpdateRequest
     {
         /// <summary>
         /// Identifier.

@@ -1,4 +1,5 @@
 ﻿using RecipeGenerator.DTO.Implementations.AppliedIngredients.Responses;
+using RecipeGenerator.DTO.Interfaces.Responses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,12 +8,22 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.DTO.Implementations.Steps.Responses
 {
-    public record GetStepResponse
+    public record GetStepResponse : IGetResponse
     {
         /// <summary>
         /// Identifier.
         /// </summary>
         public Guid Id { get; set; }
+
+        /// <summary>
+        /// Date of creation.
+        /// </summary>
+        public DateTime CreatedAt { get; set; }
+
+        /// <summary>
+        /// Date of the last update.
+        /// </summary>
+        public DateTime UpdatedAt { get; set; }
 
         /// <summary>
         /// Display name.
@@ -53,15 +64,5 @@ namespace RecipeGenerator.DTO.Implementations.Steps.Responses
         /// List of ingredients.
         /// </summary>
         public List<GetAppliedIngredientResponse> Ingredients { get; set; } = new();
-
-        /// <summary>
-        /// Date of creation.
-        /// </summary>
-        public DateTime CreatedAt { get; set; }
-
-        /// <summary>
-        /// Date of the last update.
-        /// </summary>
-        public DateTime UpdatedAt { get; set; }
     }
 }

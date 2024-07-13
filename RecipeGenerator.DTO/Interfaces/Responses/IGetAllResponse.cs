@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.DTO.Interfaces.Responses
 {
-    public interface IGetAllResponse
+    public interface IGetAllResponse<T> where T: IGetAllResponseItem
     {
-        IEnumerable<IGetAllResponseItem> Items { get; }
+        IEnumerable<T> Items { get; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using RecipeGenerator.DTO.Implementations.AppliedIngredients.Responses;
 using RecipeGenerator.DTO.Implementations.Steps.Responses;
+using RecipeGenerator.DTO.Interfaces.Responses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.DTO.Implementations.Recipes.Responses
 {
-    public record UpdateRecipeResponse
+    public record UpdateRecipeResponse : IUpdateResponse
     {
         /// <summary>
         /// Identifier.
