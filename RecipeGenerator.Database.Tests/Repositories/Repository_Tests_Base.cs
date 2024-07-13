@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Database.Tests.Repositories
 {
-    public abstract class Repository_Tests_Base<T>  where T : class, IRecipeGeneratorModel
+    public abstract class Repository_Tests_Base<T>  where T : class, IRecipeGeneratorEntity
     {
         protected readonly ILogger<Repository<T>> logger;
         protected readonly IRepository<T> repository;

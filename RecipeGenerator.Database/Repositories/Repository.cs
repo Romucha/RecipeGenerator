@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Database.Repositories
 {
-    public class Repository<T> : IRepository<T> where T : class, IRecipeGeneratorModel
+    public class Repository<T> : IRepository<T> where T : class, IRecipeGeneratorEntity
     {
         private readonly RecipeGeneratorDbContext dbContext;
         private readonly ILogger<Repository<T>> logger;

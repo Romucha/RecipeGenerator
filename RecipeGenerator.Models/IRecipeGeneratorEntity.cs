@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Models
 {
-    public interface IRecipeGeneratorModel
+    public interface IRecipeGeneratorEntity
     {
         /// <summary>
         /// Identifier.
