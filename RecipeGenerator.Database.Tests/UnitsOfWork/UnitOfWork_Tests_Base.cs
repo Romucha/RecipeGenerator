@@ -136,22 +136,23 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork
         [InlineData(0, 0, "Fitlered name", 5, 3)]
         [InlineData(0, 2, null, 5, 2)]
         [InlineData(1, 2, null, 5, 2)]
-        public async Task GetAllAsync_Normal(int pageNumber, int pageSize, string fitler, int totalCount, int expectedCount)
+        public async Task GetAllAsync_Normal(int pageNumber, int pageSize, string filter, int totalCount, int expectedCount)
         {
             //arrange
             for (int i = 0; i < totalCount; ++i)
             {
                 Entity entity = (await dbContext.AddAsync(Activator.CreateInstance<Entity>())).Entity;
-                if (i % 2 == 0 && !string.IsNullOrEmpty(fitler))
+                if (i % 2 == 0 && !string.IsNullOrEmpty(filter))
                 {
                     PropertyInfo? propertyInfo = typeof(Entity).GetProperty("Name");
                     if (propertyInfo != null)
                     {
-                        propertyInfo.SetValue(entity, fitler, null);
+                        propertyInfo.SetValue(entity, filter, null);
                     }
                     else
                     {
-
+                        filter = null!;
+                        expectedCount = totalCount;
                     }
                 }
             }
@@ -159,7 +160,7 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork
             GetAllRequest req = Activator.CreateInstance<GetAllRequest>();
             req.PageNumber = pageNumber;
             req.PageSize = pageSize;
-            req.Filter = fitler;
+            req.Filter = filter;
             //act
             GetAllResponse? response = await unitOfWork.GetAllAsync<Entity, GetAllRequest, GetAllResponse, GetAllResponseItem>(req);
             await dbContext.SaveChangesAsync();
