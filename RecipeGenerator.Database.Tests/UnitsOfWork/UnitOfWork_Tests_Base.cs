@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 using Moq;
+using Newtonsoft.Json.Bson;
 using RecipeGenerator.Database.Context;
 using RecipeGenerator.Database.Repositories;
 using RecipeGenerator.Database.UnitsOfWork;
@@ -18,6 +19,7 @@ using RecipeGenerator.Utility.Mapping;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -31,8 +33,8 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork
             DeleteRequest,
             DeleteResponse,
             GetAllRequest,
-            GetAllResponse,
             GetAllResponseItem,
+            GetAllResponse,
             GetRequest,
             GetResponse,
             UpdateRequest,
@@ -44,8 +46,8 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork
         where DeleteRequest : IDeleteRequest
         where DeleteResponse : IDeleteResponse
         where GetAllRequest : IGetAllRequest
-        where GetAllResponse : IGetAllResponse<GetAllResponseItem>
         where GetAllResponseItem : IGetAllResponseItem
+        where GetAllResponse : IGetAllResponse<IGetAllResponseItem>
         where GetRequest : IGetRequest
         where GetResponse : IGetResponse
         where UpdateRequest : IUpdateRequest
@@ -93,6 +95,10 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork
                 mapper);
         }
 
+        protected abstract void EditRequest<EditRequest>(EditRequest req);
+
+        protected abstract void CompareEntities<EditRequest, EditResponse>(EditRequest req, EditResponse res);
+
         [Fact]
         public async Task CreateAsync_Normal()
         {
@@ -125,10 +131,78 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork
             Assert.Null(deletedEntity);
         }
 
-        //public abstract Task UpdateAsync_Normal();
+        [Theory]
+        [InlineData(0, 0, null, 5, 5)]
+        [InlineData(0, 0, "Fitlered name", 5, 3)]
+        [InlineData(0, 2, null, 5, 2)]
+        [InlineData(1, 2, null, 5, 2)]
+        public async Task GetAllAsync_Normal(int pageNumber, int pageSize, string fitler, int totalCount, int expectedCount)
+        {
+            //arrange
+            for (int i = 0; i < totalCount; ++i)
+            {
+                Entity entity = (await dbContext.AddAsync(Activator.CreateInstance<Entity>())).Entity;
+                if (i % 2 == 0 && !string.IsNullOrEmpty(fitler))
+                {
+                    PropertyInfo? propertyInfo = typeof(Entity).GetProperty("Name");
+                    if (propertyInfo != null)
+                    {
+                        propertyInfo.SetValue(entity, fitler, null);
+                    }
+                    else
+                    {
 
-        //public abstract Task GetAsync_Normal();
+                    }
+                }
+            }
+            await dbContext.SaveChangesAsync();
+            GetAllRequest req = Activator.CreateInstance<GetAllRequest>();
+            req.PageNumber = pageNumber;
+            req.PageSize = pageSize;
+            req.Filter = fitler;
+            //act
+            GetAllResponse? response = await unitOfWork.GetAllAsync<Entity, GetAllRequest, GetAllResponse, GetAllResponseItem>(req);
+            await dbContext.SaveChangesAsync();
+            //assert
+            Assert.NotNull(response);
+            Assert.NotEmpty(response.Items);
+            Assert.Equal(expectedCount, response.Items.Count());
+        }
 
-        //public abstract Task GetAllAsync_Normal(int pageNumber, int pageSize, string fitler, int totalCount, int expectedCount);
+        [Fact]
+        public async Task GetAsync_Normal()
+        {
+            //arrange
+            Entity entity = (await dbContext.AddAsync(Activator.CreateInstance<Entity>())).Entity;
+            await dbContext.SaveChangesAsync();
+
+            GetRequest req = Activator.CreateInstance<GetRequest>();
+            req.Id = entity.Id;
+            //act
+            GetResponse? response = await unitOfWork.GetAsync<Entity, GetRequest, GetResponse>(req);
+            await dbContext.SaveChangesAsync();
+            //assert
+            Assert.NotNull(response);
+            Assert.Equal(req.Id, response.Id);
+        }
+
+        [Fact]
+        public async Task UpdateAsync_Normal()
+        {
+            //arrange
+            Entity entity = (await dbContext.AddAsync(Activator.CreateInstance<Entity>())).Entity;
+            await dbContext.SaveChangesAsync();
+
+            UpdateRequest req = Activator.CreateInstance<UpdateRequest>();
+            req.Id = entity.Id;
+            EditRequest(req);
+            //act
+            UpdateResponse? response = await unitOfWork.UpdateAsync<Entity, UpdateRequest, UpdateResponse>(req);
+            await dbContext.SaveChangesAsync();
+            //assert
+            Assert.NotNull(response);
+            CompareEntities(req, response);
+        }
+
     }
 }

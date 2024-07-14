@@ -69,12 +69,12 @@ namespace RecipeGenerator.Database.UnitsOfWork
         {
             var prop = src.GetType().GetProperty(propName);
             if (prop == null)
-                return string.Empty;
+                return default;
 
             var value = prop.GetValue(src, null);
 
             if (value == null)
-                return string.Empty;
+                return default;
 
             return value;
         }
@@ -86,7 +86,17 @@ namespace RecipeGenerator.Database.UnitsOfWork
             Type type = typeof(T);
             PropertyInfo pi = type.GetProperty(propertyName)!;
 
-            pi.SetValue(obj, Convert.ChangeType(value, pi.PropertyType), null);
+            var piType = Nullable.GetUnderlyingType(pi.PropertyType) ?? pi.PropertyType;
+
+            if (piType.IsEnum)
+            {
+                object enumValue = Enum.ToObject(piType, value); 
+                pi.SetValue(obj, Convert.ChangeType(enumValue, piType), null);
+            }
+            else
+            {
+                pi.SetValue(obj, Convert.ChangeType(value, piType), null);
+            }
         }
 
         /// <inheritdoc/>
@@ -215,10 +225,10 @@ namespace RecipeGenerator.Database.UnitsOfWork
         }
 
 
-        private void editEntity(object request, object entity)
+        private void editEntity<Request, Entity>(Request request, Entity entity)
         {
-            var requestType = request.GetType();
-            var entityType = entity.GetType();
+            var requestType = request!.GetType();
+            var entityType = entity!.GetType();
 
             foreach (var reqProp in requestType.GetProperties())
             {
