@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.DTO.Implementations.Recipes.Responses
 {
-    public record GetAllRecipesResponse : IGetAllResponse<GetAllRecipeResponse>
+    public record GetAllRecipesResponse : IGetAllResponse<IGetAllResponseItem>
     {
-        public IEnumerable<GetAllRecipeResponse> Items { get; set; } = default!;
+        public IEnumerable<IGetAllResponseItem> Items { get; set; } = default!;
     }
 }

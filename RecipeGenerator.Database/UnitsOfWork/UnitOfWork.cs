@@ -95,7 +95,7 @@ namespace RecipeGenerator.Database.UnitsOfWork
             }
             else
             {
-                pi.SetValue(obj, Convert.ChangeType(value, piType), null);
+                pi.SetValue(obj, value, null);
             }
         }
 
@@ -225,7 +225,7 @@ namespace RecipeGenerator.Database.UnitsOfWork
         }
 
 
-        private void editEntity<Request, Entity>(Request request, Entity entity)
+        private void editEntity<Entity>(Entity request, Entity entity)
         {
             var requestType = request!.GetType();
             var entityType = entity!.GetType();
@@ -258,7 +258,9 @@ namespace RecipeGenerator.Database.UnitsOfWork
                     return default;
                 }
 
-                editEntity(request, entity);
+                Entity updateStorage = mapper.Map<Entity>(request);
+
+                editEntity(updateStorage, entity);
 
                 await repositories.GetValue<IRepository<Entity>>(typeof(Entity)).UpdateAsync(entity, cancellationToken);
 

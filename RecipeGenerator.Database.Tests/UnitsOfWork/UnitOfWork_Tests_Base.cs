@@ -199,7 +199,7 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork
             EditRequest(req);
             //act
             UpdateResponse? response = await unitOfWork.UpdateAsync<Entity, UpdateRequest, UpdateResponse>(req);
-            await dbContext.SaveChangesAsync();
+            await unitOfWork.SaveChangesAsync();
             //assert
             Assert.NotNull(response);
             CompareEntities(req, response);
