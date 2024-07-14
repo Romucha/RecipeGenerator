@@ -72,6 +72,8 @@
       <ProjectReference Include="..\RecipeGenerator.Functionalities\RecipeGenerator.Functionalities.csproj" />
       <ProjectReference Include="..\RecipeGenerator.Localization\RecipeGenerator.Localization.csproj" />
       <ProjectReference Include="..\RecipeGenerator.Utility\RecipeGenerator.Utility.csproj" />
+      <ProjectReference Include="..\RecipeGenerator.ViewModels\RecipeGenerator.ViewModels.csproj" />
+      <ProjectReference Include="..\RecipeGenerator.Views\RecipeGenerator.Views.csproj" />
     </ItemGroup>
 
     <ItemGroup>
