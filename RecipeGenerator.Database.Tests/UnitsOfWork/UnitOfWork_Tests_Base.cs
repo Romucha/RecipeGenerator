@@ -38,7 +38,7 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork
             UpdateRequest,
             UpdateResponse
         >
-        where Entity : IRecipeGeneratorEntity
+        where Entity : class, IRecipeGeneratorEntity
         where CreateRequest : ICreateRequest
         where CreateResponse : ICreateResponse
         where DeleteRequest : IDeleteRequest
@@ -105,7 +105,25 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork
             Assert.NotEqual(default, response.Id);
         }
 
-        //public abstract Task DeleteAsync_Normal();
+        [Fact]
+        public async Task DeleteAsync_Normal()
+        {
+            //arrange
+            Entity entity = (Entity)(await dbContext.AddAsync(Activator.CreateInstance<Entity>())).Entity;
+            await dbContext.SaveChangesAsync();
+
+            DeleteRequest req = Activator.CreateInstance<DeleteRequest>();
+            req.Id = entity.Id;
+            //act
+            DeleteResponse? response = await unitOfWork.DeleteAsync<Entity, DeleteRequest, DeleteResponse>(req);
+            await dbContext.SaveChangesAsync();
+            //assert
+            Assert.NotNull(response);
+            Assert.Equal(req.Id, response.Id);
+
+            var deletedEntity = await dbContext.FindAsync<Entity>(req.Id);
+            Assert.Null(deletedEntity);
+        }
 
         //public abstract Task UpdateAsync_Normal();
 
