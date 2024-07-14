@@ -12,7 +12,7 @@ namespace RecipeGenerator.Models.Ingredients
     /// <summary>
     /// Ingredient applied to a recipe.
     /// </summary>
-    public class AppliedIngredient : IRecipeGeneratorModel
+    public class AppliedIngredient : IRecipeGeneratorEntity
     {
         /// <inheritdoc/>
         [DatabaseGenerated(DatabaseGeneratedOption.Identity), Key()]

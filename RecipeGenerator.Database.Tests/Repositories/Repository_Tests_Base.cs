@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Database.Tests.Repositories
 {
-    public abstract class Repository_Tests_Base<T>  where T : class, IRecipeGeneratorModel
+    public abstract class Repository_Tests_Base<T>  where T : class, IRecipeGeneratorEntity
     {
         protected readonly ILogger<Repository<T>> logger;
         protected readonly IRepository<T> repository;
@@ -86,7 +86,7 @@ namespace RecipeGenerator.Database.Tests.Repositories
         [InlineData(1, 0, 10)]
         [InlineData(1, 1, 1)]
         [InlineData(1, 2, 2)]
-        [InlineData(0, int.MaxValue, 1)]
+        [InlineData(0, int.MaxValue, 10)]
         public async Task GetAllAsync_Normal(int pageNumber, int pageSize, int totalCount)
         {
             //arrange

@@ -28,10 +28,4 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="UnitsOfWork\AppliedIngredients\" />
-    <Folder Include="UnitsOfWork\Recipes\" />
-    <Folder Include="UnitsOfWork\Steps\" />
-  </ItemGroup>
-
 </Project>

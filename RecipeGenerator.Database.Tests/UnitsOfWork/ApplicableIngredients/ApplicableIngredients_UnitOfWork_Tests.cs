@@ -1,4 +1,5 @@
-﻿using RecipeGenerator.DTO.ApplicableIngredients.Requests;
+﻿using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Requests;
+using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Responses;
 using RecipeGenerator.Models.Ingredients;
 using System;
 using System.Collections.Generic;
@@ -9,131 +10,46 @@ using System.Threading.Tasks;
 namespace RecipeGenerator.Database.Tests.UnitsOfWork.ApplicableIngredients
 {
     public class ApplicableIngredients_UnitOfWork_Tests : UnitOfWork_Tests_Base
+        <
+            ApplicableIngredient,
+            CreateApplicableIngredientRequest,
+            CreateApplicableIndredientResponse,
+            DeleteApplicableIngredientRequest,
+            DeleteApplicableIngredientResponse,
+            GetAllApplicableIngredientsRequest,
+            GetAllApplicableIngredientResponse,
+            GetAllApplicableIngredientsResponse,
+            GetApplicableIngredientRequest,
+            GetApplicableIngredientResponse,
+            UpdateApplicableIngredientRequest,
+            UpdateApplicableIngredientResponse
+        >
     {
-        [Fact]
-        public override async Task CreateAsync_Normal()
+        protected override void CompareEntities<EditRequest, EditResponse>(EditRequest req, EditResponse res)
         {
-            //arrange
-            CreateApplicableIngredientRequest request = new();
-            //act
-            var response = await unitOfWork.CreateApplicableIndredientAsync(request);
-            await dbContext.SaveChangesAsync();
-            //assert
-            Assert.NotNull(response);
-            Assert.Equal(string.Empty, response.Name);
-            Assert.Equal(string.Empty, response.Description);
-            Assert.Equal(string.Empty, response.Image);
-            Assert.Equal(0, response.IngredientType);
-            Assert.Null(response.Link);
-        }
-
-        [Fact]
-        public override async Task DeleteAsync_Normal()
-        {
-            //arrange
-            var entity = (await dbContext.AddAsync(new ApplicableIngredient())).Entity;
-            await dbContext.SaveChangesAsync();
-
-            DeleteApplicableIngredientRequest req = new()
+            var request = req as UpdateApplicableIngredientRequest;
+            var response = res as UpdateApplicableIngredientResponse;
+            if (response is null || request is null)
             {
-                Id = entity!.Id
-            };
-            //act
-            var response = await unitOfWork.DeleteApplicableIngredientAsync(req);
-            await dbContext.SaveChangesAsync();
-            //assert
-            Assert.NotNull(response);
-            Assert.Equal(req.Id, response.Id);
-            Assert.Equal(entity.Name, response.Name);
-
-            var deletedEntity = await dbContext.FindAsync<ApplicableIngredient>(req.Id);
-            Assert.Null(deletedEntity);
-        }
-
-        [Theory]
-        [InlineData(0, 0, null, 5, 5)]
-        [InlineData(0, 0, "Fitlered name", 5, 3)]
-        //TO-DO: refactor pagination.
-        [InlineData(0, 2, null, 5, 2)]
-        public override async Task GetAllAsync_Normal(int pageNumber, int pageSize, string fitler, int totalCount, int expectedCount)
-        {
-            //arrange
-            for (int i = 0; i < totalCount; ++i)
-            {
-                var entity = await dbContext.AddAsync(new ApplicableIngredient());
-                if (i % 2 == 0 && !string.IsNullOrEmpty(fitler))
-                {
-                    entity.Entity!.Name = fitler;
-                }
+                throw new NullReferenceException();
             }
-            await dbContext.SaveChangesAsync();
-            GetAllApplicableIngredientsRequest req = new()
-            {
-                PageNumber = pageNumber,
-                PageSize = pageSize,
-                Filter = fitler,
-            };
-            //act
-            var response = await unitOfWork.GetAllApplicableIngredientAsync(req);
-            await dbContext.SaveChangesAsync();
-            //assert
-            Assert.NotNull(response);
-            Assert.NotEmpty(response.Items);
-            Assert.Equal(expectedCount, response.Items.Count());
-
+            Assert.Equal(request.Id, response.Id);
+            Assert.Equal(request.Name, response.Name);
+            Assert.Equal(request.Description, response.Description);
+            Assert.Equal(request.IngredientType, response.IngredientType);
+            Assert.Equal(request.Link, response.Link);
         }
 
-        [Fact]
-        public override async Task GetAsync_Normal()
+        protected override void EditRequest<EditRequest>(EditRequest req)
         {
-            //arrange
-            var entity = (await dbContext.AddAsync(new ApplicableIngredient())).Entity;
-            await dbContext.SaveChangesAsync();
-
-            GetApplicableIngredientRequest req = new()
-            {
-                Id = entity!.Id
-            };
-            //act
-            var response = await unitOfWork.GetApplicableIngredientAsync(req);
-            await dbContext.SaveChangesAsync();
-            //assert
-            Assert.NotNull(response);
-            Assert.Equal(req.Id, response.Id);
-            Assert.Equal(entity.Name, response.Name);
-            Assert.Equal(entity.Description, response.Description);
-            Assert.Equal(entity.Image, response.Image);
-            Assert.Equal((int)entity.IngredientType, response.IngredientType);
-            Assert.Equal(entity.Link, response.Link);
-        }
-
-        [Fact]
-        public override async Task UpdateAsync_Normal()
-        {
-            //arrange
-            var entity = (await dbContext.AddAsync(new ApplicableIngredient())).Entity;
-            await dbContext.SaveChangesAsync();
-
-            UpdateApplicableIngredientRequest req = new()
-            {
-                Id = entity!.Id,
-                Name = nameof(UpdateAsync_Normal),
-                Description = nameof(UpdateAsync_Normal),
-                IngredientType = 2,
-                Image = null,
-                Link = null
-            };
-            //act
-            var response = await unitOfWork.UpdateApplicableIngredientAsync(req);
-            await dbContext.SaveChangesAsync();
-            //assert
-            Assert.NotNull(response);
-            Assert.Equal(req.Id, response.Id);
-            Assert.Equal(entity.Name, response.Name);
-            Assert.Equal(entity.Description, response.Description);
-            Assert.Equal(entity.Image, response.Image);
-            Assert.Equal((int)entity.IngredientType, response.IngredientType);
-            Assert.Equal(entity.Link, response.Link);
+            var request = req as UpdateApplicableIngredientRequest;
+            if (request is null)
+                throw new NullReferenceException();
+            request.Name = nameof(EditRequest);
+            request.Description = nameof(EditRequest);
+            request.Image = "12345";
+            request.IngredientType = 2;
+            request.Link = null;
         }
     }
 }

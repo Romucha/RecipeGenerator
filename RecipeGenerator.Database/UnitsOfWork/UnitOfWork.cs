@@ -2,21 +2,26 @@
 using Microsoft.Extensions.Logging;
 using RecipeGenerator.Database.Context;
 using RecipeGenerator.Database.Repositories;
-using RecipeGenerator.DTO.ApplicableIngredients.Requests;
-using RecipeGenerator.DTO.ApplicableIngredients.Responses;
-using RecipeGenerator.DTO.AppliedIngredients.Requests;
-using RecipeGenerator.DTO.AppliedIngredients.Responses;
-using RecipeGenerator.DTO.Recipes.Requests;
-using RecipeGenerator.DTO.Recipes.Responses;
-using RecipeGenerator.DTO.Steps.Requests;
-using RecipeGenerator.DTO.Steps.Responses;
+using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Requests;
+using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Responses;
+using RecipeGenerator.DTO.Implementations.AppliedIngredients.Requests;
+using RecipeGenerator.DTO.Implementations.AppliedIngredients.Responses;
+using RecipeGenerator.DTO.Implementations.Recipes.Requests;
+using RecipeGenerator.DTO.Implementations.Recipes.Responses;
+using RecipeGenerator.DTO.Implementations.Steps.Requests;
+using RecipeGenerator.DTO.Implementations.Steps.Responses;
+using RecipeGenerator.DTO.Interfaces.Requests;
+using RecipeGenerator.DTO.Interfaces.Responses;
+using RecipeGenerator.Models;
 using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Models.Recipes;
 using RecipeGenerator.Models.Steps;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace RecipeGenerator.Database.UnitsOfWork
@@ -24,14 +29,11 @@ namespace RecipeGenerator.Database.UnitsOfWork
     /// <summary>
     /// Provides methods for work with database in a single context.
     /// </summary>
-    public class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork, IDisposable
     {
         private readonly ILogger<UnitOfWork> logger;
         private readonly RecipeGeneratorDbContext dbContext;
-        private readonly IRepository<Recipe> recipeRepository;
-        private readonly IRepository<Step> stepRepostiry;
-        private readonly IRepository<AppliedIngredient> appliedIngredientRepository;
-        private readonly IRepository<ApplicableIngredient> applicableIngredientRepository;
+        private GenericDictionary repositories;
         private readonly IMapper mapper;
 
         /// <summary>
@@ -45,8 +47,8 @@ namespace RecipeGenerator.Database.UnitsOfWork
         /// <param name="applicableIngredientRepository">Repository of applicable ingredients.</param>
         /// <param name="mapper">Mapper.</param>
         public UnitOfWork(
-            ILogger<UnitOfWork> logger, 
-            RecipeGeneratorDbContext dbContext, 
+            ILogger<UnitOfWork> logger,
+            RecipeGeneratorDbContext dbContext,
             IRepository<Recipe> recipeRepository,
             IRepository<Step> stepRepostiry,
             IRepository<AppliedIngredient> appliedIngredientRepository,
@@ -54,27 +56,72 @@ namespace RecipeGenerator.Database.UnitsOfWork
         {
             this.logger = logger;
             this.dbContext = dbContext;
-            this.recipeRepository = recipeRepository;
-            this.stepRepostiry = stepRepostiry;
-            this.appliedIngredientRepository = appliedIngredientRepository;
-            this.applicableIngredientRepository = applicableIngredientRepository;
+            repositories = new();
+            repositories.Add(typeof(Recipe), recipeRepository);
+            repositories.Add(typeof(Step), stepRepostiry);
+            repositories.Add(typeof(AppliedIngredient), appliedIngredientRepository);
+            repositories.Add(typeof(ApplicableIngredient), applicableIngredientRepository);
+            
             this.mapper = mapper;
         }
 
+        private object? getValue(object src, string propName)
+        {
+            var prop = src.GetType().GetProperty(propName);
+            if (prop == null)
+                return default;
+
+            var value = prop.GetValue(src, null);
+
+            if (value == null)
+                return default;
+
+            return value;
+        }
+
+
+        private void setValue<T>(T obj, string propertyName, object value)
+        {
+            // these should be cached if possible
+            Type type = typeof(T);
+            PropertyInfo pi = type.GetProperty(propertyName)!;
+
+            var piType = Nullable.GetUnderlyingType(pi.PropertyType) ?? pi.PropertyType;
+
+            if (piType.IsEnum)
+            {
+                object enumValue = Enum.ToObject(piType, value); 
+                pi.SetValue(obj, Convert.ChangeType(enumValue, piType), null);
+            }
+            else
+            {
+                pi.SetValue(obj, value, null);
+            }
+        }
+
         /// <inheritdoc/>
-        public async Task<CreateApplicableIndredientResponse?> CreateApplicableIndredientAsync(CreateApplicableIngredientRequest request, CancellationToken cancellationToken = default)
+        public async Task SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            await dbContext.SaveChangesAsync(cancellationToken);
+        }
+        
+
+        public async Task<Response?> CreateAsync<Entity, Request, Response>(Request request, CancellationToken cancellationToken = default)
+            where Entity : IRecipeGeneratorEntity
+            where Request : ICreateRequest
+            where Response : ICreateResponse
         {
             try
             {
-                logger.LogInformation("Creating applicable ingredient...");
-                var ingredient = await applicableIngredientRepository.CreateAsync(cancellationToken);
+                logger.LogInformation($"Creating {typeof(Entity).Name}...");
+                var ingredient = await repositories.GetValue<IRepository<Entity>>(typeof(Entity)).CreateAsync(cancellationToken);
 
-                return mapper.Map<CreateApplicableIndredientResponse>(ingredient);
+                return mapper.Map<Response>(ingredient);
             }
             catch (Exception ex)
             {
-                logger.LogError(ex, nameof(CreateApplicableIndredientAsync));
-                return null;
+                logger.LogError(ex, nameof(CreateAsync));
+                return default;
             }
             finally
             {
@@ -82,20 +129,23 @@ namespace RecipeGenerator.Database.UnitsOfWork
             }
         }
 
-        /// <inheritdoc/>
-        public async Task<CreateAppliedIndredientResponse?> CreateAppliedIndredientAsync(CreateAppliedIngredientRequest request, CancellationToken cancellationToken = default)
+        public async Task<Response?> DeleteAsync<Entity, Request, Response>(Request request, CancellationToken cancellationToken = default)
+            where Entity : IRecipeGeneratorEntity
+            where Request : IDeleteRequest
+            where Response : IDeleteResponse
         {
             try
             {
-                logger.LogInformation("Creating applied ingredient...");
-                var ingredient = await appliedIngredientRepository.CreateAsync(cancellationToken);
+                logger.LogInformation($"Deleting {typeof(Entity).Name}...");
+                var ingredient = await repositories.GetValue<IRepository<Entity>>(typeof(Entity)).GetAsync(request.Id, cancellationToken);
+                await repositories.GetValue<IRepository<Entity>>(typeof(Entity)).DeleteAsync(request.Id, cancellationToken);
 
-                return mapper.Map<CreateAppliedIndredientResponse>(ingredient);
+                return mapper.Map<Response>(ingredient);
             }
             catch (Exception ex)
             {
-                logger.LogError(ex, nameof(CreateAppliedIndredientAsync));
-                return null;
+                logger.LogError(ex, nameof(DeleteAsync));
+                return default;
             }
             finally
             {
@@ -103,144 +153,17 @@ namespace RecipeGenerator.Database.UnitsOfWork
             }
         }
 
-        /// <inheritdoc/>
-        public async Task<CreateRecipeResponse?> CreateRecipeAsync(CreateRecipeRequest request, CancellationToken cancellationToken = default)
+        public async Task<Response?> GetAllAsync<Entity, Request, Response, ResponseItem>(Request request, CancellationToken cancellationToken = default)
+            where Entity : IRecipeGeneratorEntity
+            where Request : IGetAllRequest
+            where Response : IGetAllResponse<IGetAllResponseItem>
+            where ResponseItem : IGetAllResponseItem
         {
             try
             {
-                logger.LogInformation("Creating recipe...");
-                var ingredient = await recipeRepository.CreateAsync(cancellationToken);
-
-                return mapper.Map<CreateRecipeResponse>(ingredient);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(CreateRecipeAsync));
-                return null;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        /// <inheritdoc/>
-        public async Task<CreateStepResponse?> CreateStepAsync(CreateStepRequest request, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                logger.LogInformation("Creating step...");
-                var ingredient = await recipeRepository.CreateAsync(cancellationToken);
-
-                return mapper.Map<CreateStepResponse>(ingredient);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(CreateStepAsync));
-                return null;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        /// <inheritdoc/>
-        public async Task<DeleteApplicableIngredientResponse?> DeleteApplicableIngredientAsync(DeleteApplicableIngredientRequest request, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                logger.LogInformation("Deleting applicable ingredient...");
-                var ingredient = await applicableIngredientRepository.GetAsync(request.Id, cancellationToken);
-                await applicableIngredientRepository.DeleteAsync(request.Id, cancellationToken);
-
-                return mapper.Map<DeleteApplicableIngredientResponse>(ingredient);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(DeleteApplicableIngredientAsync));
-                return null;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        /// <inheritdoc/>
-        public async Task<DeleteAppliedIngredientResponse?> DeleteAppliedIngredientAsync(DeleteAppliedIngredientRequest request, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                logger.LogInformation("Deleting applicable ingredient...");
-                var ingredient = await appliedIngredientRepository.GetAsync(request.Id, cancellationToken);
-                await appliedIngredientRepository.DeleteAsync(request.Id, cancellationToken);
-
-                return mapper.Map<DeleteAppliedIngredientResponse>(ingredient);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(DeleteAppliedIngredientAsync));
-                return null;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        /// <inheritdoc/>
-        public async Task<DeleteRecipeResponse?> DeleteRecipeAsync(DeleteRecipeRequest request, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                logger.LogInformation("Deleting recipe...");
-                var recipe = await recipeRepository.GetAsync(request.Id, cancellationToken);
-                await recipeRepository.DeleteAsync(request.Id, cancellationToken);
-
-                return mapper.Map<DeleteRecipeResponse>(recipe);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(DeleteRecipeAsync));
-                return null;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        /// <inheritdoc/>
-        public async Task<DeleteStepResponse?> DeleteStepAsync(DeleteStepRequest request, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                logger.LogInformation("Deleting step...");
-                var step = await stepRepostiry.GetAsync(request.Id, cancellationToken);
-                await stepRepostiry.DeleteAsync(request.Id, cancellationToken);
-
-                return mapper.Map<DeleteStepResponse>(step);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(DeleteStepAsync));
-                return null;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        /// <inheritdoc/>
-        public async Task<GetAllApplicableIngredientsResponse?> GetAllApplicableIngredientAsync(GetAllApplicableIngredientsRequest request, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                logger.LogInformation("Getting applicable ingredients...");
-                var entites = await applicableIngredientRepository.GetAllAsync(request.PageNumber, request.PageSize, cancellationToken);
-                List<ApplicableIngredient> fitleredEntities = new();
+                logger.LogInformation($"Getting {typeof(Entity).Name}s...");
+                var entites = await repositories.GetValue<IRepository<Entity>>(typeof(Entity)).GetAllAsync(request.PageNumber, request.PageSize, cancellationToken);
+                List<Entity> fitleredEntities = new();
                 if (entites != null)
                 {
                     if (string.IsNullOrEmpty(request.Filter))
@@ -250,20 +173,27 @@ namespace RecipeGenerator.Database.UnitsOfWork
                     else
                     {
                         fitleredEntities.AddRange(entites.Where(c =>
-                            c.Name.Contains(request.Filter, StringComparison.OrdinalIgnoreCase)
-                            || c.Description.Contains(request.Filter, StringComparison.OrdinalIgnoreCase)));
+                        {
+                            var name = getValue(c, "Name");
+                            if (name == null)
+                                return false;
+                            var nameValue = name.ToString();
+                            if (nameValue == null) 
+                                return false;
+                            return nameValue.Contains(request.Filter, StringComparison.OrdinalIgnoreCase);
+                        }));
                     }
                 }
 
-                return new()
-                {
-                    Items = fitleredEntities.Select(mapper.Map<GetAllApplicableIngredientResponse>),
-                };
+                if (Activator.CreateInstance(typeof(Response)) is not Response response)
+                    return default;
+                response.Items = fitleredEntities.Select(c => (IGetAllResponseItem)mapper.Map<ResponseItem>(c));
+                return response;
             }
             catch (Exception ex)
             {
-                logger.LogError(ex, nameof(GetAllApplicableIngredientAsync));
-                return null;
+                logger.LogError(ex, nameof(GetAllAsync));
+                return default;
             }
             finally
             {
@@ -271,31 +201,75 @@ namespace RecipeGenerator.Database.UnitsOfWork
             }
         }
 
-        /// <inheritdoc/>
-        public async Task<GetAllAppliedIngredientsResponse?> GetAllAppliedIngredientAsync(GetAllAppliedIngredientsRequest request, CancellationToken cancellationToken = default)
+        public async Task<Response?> GetAsync<Entity, Request, Response>(Request request, CancellationToken cancellationToken = default)
+            where Entity : IRecipeGeneratorEntity
+            where Request : IGetRequest
+            where Response : IGetResponse
         {
             try
             {
-                logger.LogInformation("Getting applied ingredients...");
-                var entites = await appliedIngredientRepository.GetAllAsync(request.PageNumber, request.PageSize, cancellationToken);
-                List<AppliedIngredient> fitleredEntities = new();
-                if (entites != null)
+                logger.LogInformation($"Getting {typeof(Entity)}...");
+                var entity = await repositories.GetValue<IRepository<Entity>>(typeof(Entity)).GetAsync(request.Id, cancellationToken);
+
+                return mapper.Map<Response>(entity);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(GetAsync));
+                return default;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
+        }
+
+
+        private void editEntity<Entity>(Entity request, Entity entity)
+        {
+            var requestType = request!.GetType();
+            var entityType = entity!.GetType();
+
+            foreach (var reqProp in requestType.GetProperties())
+            {
+                if (reqProp.Name != "Id")
                 {
-                    fitleredEntities.AddRange(entites.Where(c => 
-                        c.Ingredient is null ? false : 
-                            (c.Ingredient.Name.Contains(request.Filter, StringComparison.OrdinalIgnoreCase)
-                            || c.Ingredient.Description.Contains(request.Filter, StringComparison.OrdinalIgnoreCase))));
+                    var requestPropValue = getValue(request, reqProp.Name);
+
+                    if (requestPropValue != null)
+                    {
+                        setValue(entity, reqProp.Name, requestPropValue);
+                    }
+                }
+            }
+        }
+
+        public async Task<Response?> UpdateAsync<Entity, Request, Response>(Request request, CancellationToken cancellationToken = default)
+            where Entity : IRecipeGeneratorEntity
+            where Request : IUpdateRequest
+            where Response : IUpdateResponse
+        {
+            try
+            {
+                logger.LogInformation($"Updating {typeof(Entity).Name}...");
+                var entity = await repositories.GetValue<IRepository<Entity>>(typeof(Entity)).GetAsync(request.Id, cancellationToken);
+                if (entity == null)
+                {
+                    return default;
                 }
 
-                return new()
-                {
-                    Items = fitleredEntities.Select(mapper.Map<GetAllAppliedIngredientResponse>),
-                };
+                Entity updateStorage = mapper.Map<Entity>(request);
+
+                editEntity(updateStorage, entity);
+
+                await repositories.GetValue<IRepository<Entity>>(typeof(Entity)).UpdateAsync(entity, cancellationToken);
+
+                return mapper.Map<Response>(entity);
             }
             catch (Exception ex)
             {
-                logger.LogError(ex, nameof(GetAllAppliedIngredientAsync));
-                return null;
+                logger.LogError(ex, nameof(UpdateAsync));
+                return default;
             }
             finally
             {
@@ -303,318 +277,39 @@ namespace RecipeGenerator.Database.UnitsOfWork
             }
         }
 
-        /// <inheritdoc/>
-        public async Task<GetAllRecipesResponse?> GetAllRecipeAsync(GetAllRecipesRequest request, CancellationToken cancellationToken = default)
+        private class GenericDictionary
         {
-            try
+            private Dictionary<object, object> _dict = new Dictionary<object, object>();
+
+            public void Add<T>(object key, T value) where T : class
             {
-                logger.LogInformation("Getting recipes...");
-                var entites = await recipeRepository.GetAllAsync(request.PageNumber, request.PageSize, cancellationToken);
-                List<Recipe> fitleredEntities = new();
-                if (entites != null)
+                _dict.Add(key, value);
+            }
+
+            public T GetValue<T>(object key) where T : class
+            {
+                return (_dict[key] as T)!;
+            }
+        }
+
+        private bool disposed = false;
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
                 {
-                    fitleredEntities.AddRange(entites.Where(c =>
-                        c.Name.Contains(request.Filter, StringComparison.OrdinalIgnoreCase)
-                        || c.Description.Contains(request.Filter, StringComparison.OrdinalIgnoreCase)));
+                    dbContext.Dispose();
                 }
-
-                return new()
-                {
-                    Items = fitleredEntities.Select(mapper.Map<GetAllRecipeResponse>),
-                };
             }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(GetAllRecipeAsync));
-                return null;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
+            this.disposed = true;
         }
 
-        /// <inheritdoc/>
-        public async Task<GetAllStepsResponse?> GetAllStepsAsync(GetAllStepsRequest request, CancellationToken cancellationToken = default)
+        public void Dispose()
         {
-            try
-            {
-                logger.LogInformation("Getting steps...");
-                var entites = await stepRepostiry.GetAllAsync(request.PageNumber, request.PageSize, cancellationToken);
-                List<Step> fitleredEntities = new();
-                if (entites != null)
-                {
-                    fitleredEntities.AddRange(entites.Where(c => 
-                        c.Name.Contains(request.Filter, StringComparison.OrdinalIgnoreCase)
-                        || c.Description.Contains(request.Filter, StringComparison.OrdinalIgnoreCase)));
-                }
-
-                return new()
-                {
-                    Items = fitleredEntities.Select(mapper.Map<GetAllStepResponse>),
-                };
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(GetAllStepsAsync));
-                return null;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        /// <inheritdoc/>
-        public async Task<GetApplicableIngredientResponse?> GetApplicableIngredientAsync(GetApplicableIngredientRequest request, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                logger.LogInformation("Getting applicable ingredient...");
-                var entity = await applicableIngredientRepository.GetAsync(request.Id, cancellationToken);
-                
-                return mapper.Map<GetApplicableIngredientResponse>(entity);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(GetAllApplicableIngredientAsync));
-                return null;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        /// <inheritdoc/>
-        public async Task<GetAppliedIngredientResponse?> GetAppliedIngredientAsync(GetAppliedIngredientRequest request, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                logger.LogInformation("Getting applied ingredient...");
-                var entity = await appliedIngredientRepository.GetAsync(request.Id, cancellationToken);
-
-                return mapper.Map<GetAppliedIngredientResponse>(entity);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(GetAppliedIngredientAsync));
-                return null;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        /// <inheritdoc/>
-        public async Task<GetRecipeResponse?> GetRecipeAsync(GetRecipeRequest request, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                logger.LogInformation("Getting recipe...");
-                var entity = await recipeRepository.GetAsync(request.Id, cancellationToken);
-
-                return mapper.Map<GetRecipeResponse>(entity);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(GetRecipeAsync));
-                return null;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        /// <inheritdoc/>
-        public async Task<GetStepResponse?> GetStepAsync(GetStepRequest request, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                logger.LogInformation("Getting step...");
-                var entity = await stepRepostiry.GetAsync(request.Id, cancellationToken);
-
-                return mapper.Map<GetStepResponse>(entity);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(GetAppliedIngredientAsync));
-                return null;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        /// <inheritdoc/>
-        public async Task SaveChangesAsync(CancellationToken cancellationToken = default)
-        {
-            await dbContext.SaveChangesAsync(cancellationToken);
-        }
-
-        /// <inheritdoc/>
-        public async Task<UpdateApplicableIngredientResponse?> UpdateApplicableIngredientAsync(UpdateApplicableIngredientRequest request, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                logger.LogInformation("Updating applicable ingredient...");
-                var entity = await applicableIngredientRepository.GetAsync(request.Id, cancellationToken);
-                if (entity is null)
-                    return null;
-
-                if (request.Description is not null)
-                    entity.Description = request.Description;
-
-                if (request.Image is not null)
-                    entity.Image = request.Image;
-
-                if (request.IngredientType is not null)
-                    entity.IngredientType = (IngredientType)request.IngredientType;
-
-                if (request.Link is not null)
-                    entity.Link = request.Link;
-
-                if (request.Name is not null)
-                    entity.Name = request.Name;
-
-
-
-                await applicableIngredientRepository.UpdateAsync(entity, cancellationToken);
-
-                return mapper.Map<UpdateApplicableIngredientResponse>(entity);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(UpdateApplicableIngredientAsync));
-                return null;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        /// <inheritdoc/>
-        public async Task<UpdateAppliedIngredientResponse?> UpdateAppliedIngredientAsync(UpdateAppliedIngredientRequest request, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                logger.LogInformation("Updating applied ingredient...");
-                var entity = await appliedIngredientRepository.GetAsync(request.Id, cancellationToken);
-
-                if (entity is null)
-                    return null;
-
-                if (request.IngredientId is not null)
-                    entity.IngredientId = (Guid)request.IngredientId;
-
-                if (request.RecipeId is not null)
-                    entity.RecipeId = (Guid)request.RecipeId;
-
-                await appliedIngredientRepository.UpdateAsync(entity, cancellationToken);
-
-                return mapper.Map<UpdateAppliedIngredientResponse>(entity);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(UpdateAppliedIngredientAsync));
-                return null;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        /// <inheritdoc/>
-        public async Task<UpdateRecipeResponse?> UpdateRecipeAsync(UpdateRecipeRequest request, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                logger.LogInformation("Updating recipe...");
-                var entity = await recipeRepository.GetAsync(request.Id, cancellationToken);
-
-                if (entity is null)
-                    return null;
-
-                if (request.CourseType is not null)
-                    entity.CourseType = (Course)request.CourseType;
-
-                if (request.Description is not null)
-                    entity.Description = request.Description;
-
-                if (request.EstimatedTime is not null)
-                    entity.EstimatedTime = (TimeSpan)request.EstimatedTime;
-
-                if (request.Image is not null)
-                    entity.Image = request.Image;
-
-                if (request.Ingredients is not null)
-                    entity.Ingredients = request.Ingredients.Select(mapper.Map<AppliedIngredient>).ToList();
-
-                if (request.Name is not null)
-                    entity.Name = request.Name;
-
-                if (request.Portions is not null)
-                    entity.Portions = (int)request.Portions;
-
-                if (request.Steps is not null)
-                    entity.Steps = request.Steps.Select(mapper.Map<Step>).ToList();
-
-                await recipeRepository.UpdateAsync(entity, cancellationToken);
-
-                return mapper.Map<UpdateRecipeResponse>(entity);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(UpdateRecipeAsync));
-                return null;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        /// <inheritdoc/>
-        public async Task<UpdateStepResponse?> UpdateStepAsync(UpdateStepRequest request, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                logger.LogInformation("Updating step...");
-                var entity = await stepRepostiry.GetAsync(request.Id, cancellationToken);
-
-                if (entity is null)
-                    return null;
-
-                if (request.Index is not null)
-                    entity.Index = (int)request.Index;
-
-                if (request.Name is not null)
-                    entity.Name = request.Name;
-
-                if (request.Photos is not null)
-                    entity.Photos = request.Photos;
-
-                if (request.RecipeId is not null)
-                    entity.RecipeId = (Guid)request.RecipeId;
-
-                await stepRepostiry.UpdateAsync(entity, cancellationToken);
-
-                return mapper.Map<UpdateStepResponse>(entity);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(UpdateStepAsync));
-                return null;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
+            Dispose(true);
+            GC.SuppressFinalize(this);
         }
     }
 }

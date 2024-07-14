@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using RecipeGenerator.Models.Ingredients;
-using RecipeGenerator.DTO.AppliedIngredients;
 using System;
 using System.Collections.Generic;
 using System.Linq;
