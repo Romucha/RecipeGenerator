@@ -8,6 +8,9 @@ using Moq;
 using RecipeGenerator.Database.Context;
 using RecipeGenerator.Database.Repositories;
 using RecipeGenerator.Database.UnitsOfWork;
+using RecipeGenerator.DTO.Interfaces.Requests;
+using RecipeGenerator.DTO.Interfaces.Responses;
+using RecipeGenerator.Models;
 using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Models.Recipes;
 using RecipeGenerator.Models.Steps;
@@ -21,6 +24,32 @@ using System.Threading.Tasks;
 namespace RecipeGenerator.Database.Tests.UnitsOfWork
 {
     public abstract class UnitOfWork_Tests_Base
+        <
+            Entity,
+            CreateRequest,
+            CreateResponse,
+            DeleteRequest,
+            DeleteResponse,
+            GetAllRequest,
+            GetAllResponse,
+            GetAllResponseItem,
+            GetRequest,
+            GetResponse,
+            UpdateRequest,
+            UpdateResponse
+        >
+        where Entity : IRecipeGeneratorEntity
+        where CreateRequest : ICreateRequest
+        where CreateResponse : ICreateResponse
+        where DeleteRequest : IDeleteRequest
+        where DeleteResponse : IDeleteResponse
+        where GetAllRequest : IGetAllRequest
+        where GetAllResponse : IGetAllResponse<GetAllResponseItem>
+        where GetAllResponseItem : IGetAllResponseItem
+        where GetRequest : IGetRequest
+        where GetResponse : IGetResponse
+        where UpdateRequest : IUpdateRequest
+        where UpdateResponse : IUpdateResponse
     {
         protected readonly IUnitOfWork unitOfWork;
         protected readonly RecipeGeneratorDbContext dbContext;
@@ -64,14 +93,24 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork
                 mapper);
         }
 
-        public abstract Task CreateAsync_Normal();
+        [Fact]
+        public async Task CreateAsync_Normal()
+        {
+            //arrange
+            CreateRequest request = Activator.CreateInstance<CreateRequest>();
+            //act
+            CreateResponse? response = await unitOfWork.CreateAsync<Entity, CreateRequest, CreateResponse>(request);
+            //assert
+            Assert.NotNull(response);
+            Assert.NotEqual(default, response.Id);
+        }
 
-        public abstract Task DeleteAsync_Normal();
+        //public abstract Task DeleteAsync_Normal();
 
-        public abstract Task UpdateAsync_Normal();
+        //public abstract Task UpdateAsync_Normal();
 
-        public abstract Task GetAsync_Normal();
+        //public abstract Task GetAsync_Normal();
 
-        public abstract Task GetAllAsync_Normal(int pageNumber, int pageSize, string fitler, int totalCount, int expectedCount);
+        //public abstract Task GetAllAsync_Normal(int pageNumber, int pageSize, string fitler, int totalCount, int expectedCount);
     }
 }

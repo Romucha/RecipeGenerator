@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RecipeGenerator.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace RecipeGenerator.Database.Repositories
     /// Provides methods for working with database entities.
     /// </summary>
     /// <typeparam name="T">A database entity.</typeparam>
-    public interface IRepository<T> where T : class
+    public interface IRepository<T> where T : IRecipeGeneratorEntity
     {
         /// <summary>
         /// Gets a list of entities.

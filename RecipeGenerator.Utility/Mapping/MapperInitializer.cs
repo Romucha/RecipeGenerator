@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using RecipeGenerator.DTO.AppliedIngredients;
 using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Requests;
 using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Responses;
 using RecipeGenerator.DTO.Implementations.AppliedIngredients.Requests;
@@ -8,8 +7,6 @@ using RecipeGenerator.DTO.Implementations.Recipes.Requests;
 using RecipeGenerator.DTO.Implementations.Recipes.Responses;
 using RecipeGenerator.DTO.Implementations.Steps.Requests;
 using RecipeGenerator.DTO.Implementations.Steps.Responses;
-using RecipeGenerator.DTO.Recipes;
-using RecipeGenerator.DTO.Steps;
 using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Models.Recipes;
 using RecipeGenerator.Models.Steps;

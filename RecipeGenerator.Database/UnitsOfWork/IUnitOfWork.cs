@@ -33,7 +33,10 @@ namespace RecipeGenerator.Database.UnitsOfWork
         /// <param name="request">Request.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
         /// <returns>Response.</returns>
-        Task<ICreateResponse> CreateAsync<Entity>(ICreateRequest request, CancellationToken cancellationToken = default) where Entity : IRecipeGeneratorEntity;
+        Task<Response?> CreateAsync<Entity, Request, Response>(Request request, CancellationToken cancellationToken = default)
+            where Entity : IRecipeGeneratorEntity 
+            where Request : ICreateRequest 
+            where Response : ICreateResponse;
 
         /// <summary>
         /// Deletes a recipe generator entity.
@@ -42,7 +45,10 @@ namespace RecipeGenerator.Database.UnitsOfWork
         /// <param name="request">Request.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
         /// <returns>Response.</returns>
-        Task<IDeleteResponse> DeleteAsync<Entity>(IDeleteRequest request, CancellationToken cancelToken = default) where Entity : IRecipeGeneratorEntity;
+        Task<Response?> DeleteAsync<Entity, Request, Response>(Request request, CancellationToken cancellationToken = default)
+            where Entity : IRecipeGeneratorEntity 
+            where Request : IDeleteRequest 
+            where Response : IDeleteResponse;
 
         /// <summary>
         /// Gets a list of recipe generator entities.
@@ -51,7 +57,11 @@ namespace RecipeGenerator.Database.UnitsOfWork
         /// <param name="request">Request.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
         /// <returns>Response.</returns>
-        Task<IGetAllResponse<IGetAllResponseItem>> GetAllAsync<Entity>(IGetAllRequest request, CancellationToken cancelToken = default) where Entity: IRecipeGeneratorEntity;
+        Task<Response?> GetAllAsync<Entity, Request, Response, ResponseItem>(Request request, CancellationToken cancellationToken = default) 
+            where Entity: IRecipeGeneratorEntity
+            where Request : IGetAllRequest
+            where Response : IGetAllResponse<IGetAllResponseItem>
+            where ResponseItem : IGetAllResponseItem;
 
         /// <summary>
         /// Gets a recipe generator entity.
@@ -60,7 +70,10 @@ namespace RecipeGenerator.Database.UnitsOfWork
         /// <param name="request">Request.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
         /// <returns>Response.</returns>
-        Task<IGetResponse> GetAsync<Entity>(IGetResponse request, CancellationToken cancellationToken = default) where Entity : IRecipeGeneratorEntity;
+        Task<Response?> GetAsync<Entity, Request, Response>(Request request, CancellationToken cancellationToken = default) 
+            where Entity : IRecipeGeneratorEntity
+            where Request : IGetRequest
+            where Response : IGetResponse;
 
         /// <summary>
         /// Updates a recipe generator entity.
@@ -69,7 +82,10 @@ namespace RecipeGenerator.Database.UnitsOfWork
         /// <param name="request">Request.</param>
         /// <param name="cancellationToken">Cancellation token.</param>
         /// <returns>Response.</returns>
-        Task<IUpdateResponse> UpdateAsync<Entity>(IUpdateResponse request, CancellationToken cancelToken = default) where Entity : IRecipeGeneratorEntity;
+        Task<Response?> UpdateAsync<Entity, Request, Response>(Request request, CancellationToken cancellationToken = default) 
+            where Entity : IRecipeGeneratorEntity
+            where Request : IUpdateRequest
+            where Response : IUpdateResponse;
 
         /// <summary>
         /// Save changes in database.
