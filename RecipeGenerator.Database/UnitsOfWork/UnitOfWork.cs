@@ -29,7 +29,7 @@ namespace RecipeGenerator.Database.UnitsOfWork
     /// <summary>
     /// Provides methods for work with database in a single context.
     /// </summary>
-    public class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork, IDisposable
     {
         private readonly ILogger<UnitOfWork> logger;
         private readonly RecipeGeneratorDbContext dbContext;
@@ -290,6 +290,26 @@ namespace RecipeGenerator.Database.UnitsOfWork
             {
                 return (_dict[key] as T)!;
             }
+        }
+
+        private bool disposed = false;
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    dbContext.Dispose();
+                }
+            }
+            this.disposed = true;
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
         }
     }
 }
