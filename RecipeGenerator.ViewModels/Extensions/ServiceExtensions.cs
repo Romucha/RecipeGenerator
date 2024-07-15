@@ -12,7 +12,7 @@ namespace RecipeGenerator.ViewModels.Extensions
     {
         public static void AddRecipeGeneratorViewModels(this IServiceCollection services)
         {
-
+            addRecipes(services);
         }
 
         private static void addRecipes(IServiceCollection services)
