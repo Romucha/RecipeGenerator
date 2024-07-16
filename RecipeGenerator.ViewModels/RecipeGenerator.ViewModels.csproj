@@ -16,4 +16,9 @@
     <ProjectReference Include="..\RecipeGenerator.Database\RecipeGenerator.Database.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Ingredients\" />
+    <Folder Include="Steps\" />
+  </ItemGroup>
+
 </Project>

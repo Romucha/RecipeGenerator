@@ -68,7 +68,7 @@ namespace RecipeGenerator.ViewModels.Recipes
             set => SetProperty(ref recipePortions, value);
         }
 
-        public async Task CreateAsync(CancellationToken cancellationToken = default)
+        public async Task<Guid?> CreateAsync(CancellationToken cancellationToken = default)
         {
             try
             {
@@ -78,6 +78,7 @@ namespace RecipeGenerator.ViewModels.Recipes
                 logger.LogInformation("Editing recipe...");
                 UpdateRecipeRequest updateRecipeRequest = new()
                 {
+                    Id = createRecipeResponse!.Id,
                     Name = RecipeName,
                     Description = RecipeDescription,
                     CourseType = (int?)RecipeCourseType,
@@ -88,85 +89,17 @@ namespace RecipeGenerator.ViewModels.Recipes
                     Ingredients = new()
                 };
                 UpdateRecipeResponse? updateRecipeResponse = await unitOfWork.UpdateAsync<Recipe, UpdateRecipeRequest, UpdateRecipeResponse>(updateRecipeRequest, cancellationToken);
+                if (updateRecipeResponse != null)
+                {
+                    return updateRecipeResponse.Id;
+                }
+
+                return null;
             }
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(CreateAsync));
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        public async Task AddStepAsync(CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                logger.LogInformation("Creating step...");
-                CreateStepRequest createStepRequest = new();
-                CreateStepResponse? createStepResponse = await unitOfWork.CreateAsync<Step, CreateStepRequest, CreateStepResponse>(createStepRequest, cancellationToken);
-                //TO-DO: figure out how to edit a step
-                logger.LogInformation("Editing step...");
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(AddStepAsync));
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        public async Task DeleteStepAsync(Guid stepId, CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                logger.LogInformation("Deleting step...");
-                DeleteStepRequest deleteStepRequest = new()
-                {
-                    Id = stepId
-                };
-                DeleteStepResponse? deleteStepResponse = await unitOfWork.DeleteAsync<Step, DeleteStepRequest, DeleteStepResponse>(deleteStepRequest, cancellationToken);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(DeleteStepAsync));
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        public async Task AddIngredientAsync(CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                logger.LogInformation("Creating ingredient...");
-
-                logger.LogInformation("Editing ingredient...");
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(AddIngredientAsync));
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        public async Task DeleteIngredientAsync(CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                logger.LogInformation("Deleting ingredient...");
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(AddStepAsync));
+                return null;
             }
             finally
             {
