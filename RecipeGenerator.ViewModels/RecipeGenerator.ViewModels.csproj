@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Ingredients\**" />
+    <Compile Remove="Steps\**" />
+    <EmbeddedResource Remove="Ingredients\**" />
+    <EmbeddedResource Remove="Steps\**" />
+    <None Remove="Ingredients\**" />
+    <None Remove="Steps\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
@@ -17,8 +26,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Ingredients\" />
-    <Folder Include="Steps\" />
+    <Folder Include="Create\Recipes\" />
+    <Folder Include="Display\Collections\Recipes\" />
+    <Folder Include="Display\Entities\Ingredients\" />
+    <Folder Include="Recipes\" />
+    <Folder Include="Settings\" />
   </ItemGroup>
 
 </Project>

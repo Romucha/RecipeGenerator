@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using RecipeGenerator.ViewModels.Recipes;
+using RecipeGenerator.ViewModels.Create.Ingredients;
+using RecipeGenerator.ViewModels.Display.Collections.Ingredients;
+using RecipeGenerator.ViewModels.Display.Entities.Recipes;
 using System;
 using System.Collections.Generic;
 using System.Linq;

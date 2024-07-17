@@ -13,7 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.ViewModels.Recipes
+namespace RecipeGenerator.ViewModels.Create.Ingredients
 {
     public class CreateRecipeViewModel : ObservableObject
     {
@@ -50,7 +50,7 @@ namespace RecipeGenerator.ViewModels.Recipes
         private TimeSpan recipeEstimatedTime;
         public TimeSpan RecipeEstimatedTime
         {
-            get => recipeEstimatedTime; 
+            get => recipeEstimatedTime;
             set => SetProperty(ref recipeEstimatedTime, value);
         }
 
@@ -64,7 +64,7 @@ namespace RecipeGenerator.ViewModels.Recipes
         private int recipePortions;
         public int RecipePortions
         {
-            get => recipePortions; 
+            get => recipePortions;
             set => SetProperty(ref recipePortions, value);
         }
 

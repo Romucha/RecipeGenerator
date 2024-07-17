@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.ViewModels.Recipes
+namespace RecipeGenerator.ViewModels.Display.Collections.Ingredients
 {
     public class GetAllRecipesViewModel : ObservableObject
     {

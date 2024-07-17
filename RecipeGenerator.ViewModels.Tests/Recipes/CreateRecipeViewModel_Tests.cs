@@ -17,11 +17,11 @@ using System.Threading.Tasks;
 using Moq;
 using RecipeGenerator.Utility.Mapping;
 using Microsoft.EntityFrameworkCore.Diagnostics;
-using RecipeGenerator.ViewModels.Recipes;
+using RecipeGenerator.ViewModels.Create.Ingredients;
 
 namespace RecipeGenerator.ViewModels.Tests.Recipes
 {
-    public class CreateRecipeViewModelTests
+    public class CreateRecipeViewModel_Tests
     {
         protected readonly IUnitOfWork unitOfWork;
         protected readonly RecipeGeneratorDbContext dbContext;
@@ -33,7 +33,7 @@ namespace RecipeGenerator.ViewModels.Tests.Recipes
 
         protected readonly CreateRecipeViewModel createRecipeViewModel;
 
-        public CreateRecipeViewModelTests()
+        public CreateRecipeViewModel_Tests()
         {
             ILogger<UnitOfWork> uowLogger = new NullLogger<UnitOfWork>();
             IConfiguration configuration = new Mock<IConfiguration>().Object;
@@ -81,6 +81,7 @@ namespace RecipeGenerator.ViewModels.Tests.Recipes
             createRecipeViewModel.RecipePortions = 10;
             //act
             var id = await createRecipeViewModel.CreateAsync();
+            await createRecipeViewModel.SaveAsync();
             //assert
             Assert.NotNull(id);
             var recipe = await dbContext.FindAsync<Recipe>(id);
