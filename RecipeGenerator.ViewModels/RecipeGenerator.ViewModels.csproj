@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Create\Recipes\" />
+    <Folder Include="Create\Ingredients\" />
     <Folder Include="Display\Collections\Recipes\" />
     <Folder Include="Display\Entities\Ingredients\" />
     <Folder Include="Recipes\" />

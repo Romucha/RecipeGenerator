@@ -9,6 +9,7 @@ using RecipeGenerator.Models.Recipes;
 using RecipeGenerator.Models.Steps;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -68,6 +69,20 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
             set => SetProperty(ref recipePortions, value);
         }
 
+        private ObservableCollection<GetAllStepResponse> steps = new();
+        public ObservableCollection<GetAllStepResponse> Steps
+        {
+            get => steps;
+            set => SetProperty(ref steps, value);
+        }
+
+        private int stepIndex = 0;
+        public int StepIndex
+        {
+            get => stepIndex;
+            set => SetProperty(ref stepIndex, value);
+        }
+
         public async Task<Guid?> CreateAsync(CancellationToken cancellationToken = default)
         {
             try
@@ -100,6 +115,51 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
             {
                 logger.LogError(ex, nameof(CreateAsync));
                 return null;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
+        }
+
+        public async Task AddStepAsync(CancellationToken cancellationToken = default)
+        {
+            try
+            {
+                logger.LogInformation("Adding step...");
+                CreateStepRequest createStepRequest = new();
+                CreateStepResponse? createStepResponse = await unitOfWork.CreateAsync<Step, CreateStepRequest, CreateStepResponse>(createStepRequest, cancellationToken);
+
+                if (createStepResponse != null)
+                {
+                    UpdateStepRequest updateStepRequest = new()
+                    {
+                        Id = createStepResponse.Id,
+                        Index = ++StepIndex
+                    };
+                    UpdateStepResponse? updateStepResponse = await unitOfWork.UpdateAsync<Step, UpdateStepRequest, UpdateStepResponse>(updateStepRequest, cancellationToken);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(AddStepAsync));
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
+        }
+
+        public async Task DeleteStepAsync(CancellationToken cancellationToken = default)
+        {
+            try
+            {
+                logger.LogInformation("Deleting step...");
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(AddStepAsync));
             }
             finally
             {
