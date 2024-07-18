@@ -36,7 +36,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Database", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Database.Tests", "RecipeGenerator.Database.Tests\RecipeGenerator.Database.Tests.csproj", "{2DB1A805-4957-4E00-8A15-42427C01A90F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.ViewModels.Tests", "RecipeGenerator.ViewModels.Tests\RecipeGenerator.ViewModels.Tests.csproj", "{6E69E84D-4887-44F3-B34B-A88854B6158A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.ViewModels.Tests", "RecipeGenerator.ViewModels.Tests\RecipeGenerator.ViewModels.Tests.csproj", "{6E69E84D-4887-44F3-B34B-A88854B6158A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

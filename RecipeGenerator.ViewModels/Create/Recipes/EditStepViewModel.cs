@@ -76,5 +76,6 @@ namespace RecipeGenerator.ViewModels.Create.Recipes
             {
                 logger.LogInformation("Done.");
             }
+        }
     }
 }
