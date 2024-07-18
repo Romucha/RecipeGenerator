@@ -1,16 +1,15 @@
 ﻿using Microsoft.AspNetCore.Components;
-using RecipeGenerator.ViewModels.About;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.Views.About
+namespace RecipeGenerator.Views.Create.Recipes
 {
- public partial class AboutView
+ public partial class CreateRecipeViewModel
  {
   [Inject]
-  public AboutViewModel ViewModel { get; set; } = default!;
+  public CreateRecipeViewModel ViewModel { get; set; } = default!;
  }
 }

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.ViewModels.Display.Collections.Ingredients
+namespace RecipeGenerator.ViewModels.Details.Ingredients
 {
-    public class GetAllRecipesViewModel : ObservableObject
+    public class DetailsIngredientViewModel : ObservableObject
     {
     }
 }

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.ViewModels.Display.Entities.Recipes
+namespace RecipeGenerator.ViewModels.Home
 {
-    public class ViewOrEditRecipeViewModel : ObservableObject
-    {
-    }
+ public class HomeViewModel : ObservableObject
+ {
+ }
 }
