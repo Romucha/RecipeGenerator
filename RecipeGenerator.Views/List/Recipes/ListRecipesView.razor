@@ -1,4 +1,4 @@
-﻿<button class="btn-primary" onclick="@(async () =>{ await ViewModel.GetRecipesAsync(); })">Refresh</button>
+﻿<button class="btn-primary" onclick="@ViewModel.GetRecipesAsync">Refresh</button>
 <div>
     <div style="display: flex; flex-direction: row">
         <button class="btn-primary" onclick="@ViewModel.PreviousPage">Previous</button>

@@ -50,7 +50,7 @@ public class ListRecipesViewModel : ObservableObject
         set => SetProperty(ref filterString, value);
     }
 
-    public async Task GetRecipesAsync(CancellationToken cancellationToken = default)
+    public async Task GetRecipesAsync()
     {
         try
         {
@@ -62,7 +62,7 @@ public class ListRecipesViewModel : ObservableObject
                 PageNumber = PageNumber - 1,
                 PageSize = PageSize
             };
-            GetAllRecipesResponse? response = await unitOfWork.GetAllAsync<Recipe, GetAllRecipesRequest, GetAllRecipesResponse, GetAllRecipeResponse>(request, cancellationToken);
+            GetAllRecipesResponse? response = await unitOfWork.GetAllAsync<Recipe, GetAllRecipesRequest, GetAllRecipesResponse, GetAllRecipeResponse>(request);
             if (response != null)
             {
                 Recipes = new ObservableCollection<GetAllRecipeResponse>(response.Items.Select(c => (GetAllRecipeResponse)c));
@@ -78,25 +78,27 @@ public class ListRecipesViewModel : ObservableObject
         }
     }
 
-    public void NextPage()
+    public async Task NextPage()
     {
         if (PageNumber < int.MaxValue)
         {
             PageNumber++;
+            await GetRecipesAsync();
         }
     }
 
-    public void PreviousPage()
+    public async Task PreviousPage()
     {
         if (PageNumber > 1)
         {
             PageNumber--;
+            await GetRecipesAsync();
         }
     }
 
     public async Task Seed(CancellationToken cancellationToken = default)
     {
-        for (int i = 0; i < 20; ++i)
+        for (int i = 0; i < 40; ++i)
         {
             var response = await unitOfWork.CreateAsync<Recipe, CreateRecipeRequest, CreateRecipeResponse>(new(), cancellationToken);
             if (response != null)
