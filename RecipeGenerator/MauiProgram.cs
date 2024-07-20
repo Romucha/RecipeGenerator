@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using RecipeGenerator.Functionalities.Extensions;
 using RecipeGenerator.Localization.Extensions;
 using RecipeGenerator.Utility.Extensions;
+using RecipeGenerator.ViewModels.Extensions;
 using System.Reflection;
 
 namespace RecipeGenerator
@@ -35,6 +36,7 @@ namespace RecipeGenerator
             builder.Services.AddRecipeGeneratorResources(builder.Configuration);
             builder.Services.AddRecipeGeneratorUtility();
             builder.Services.AddRecipeGeneratorFunctionality();
+            builder.Services.AddRecipeGeneratorViewModels();
 
 #if DEBUG
             builder.Services.AddBlazorWebViewDeveloperTools();
