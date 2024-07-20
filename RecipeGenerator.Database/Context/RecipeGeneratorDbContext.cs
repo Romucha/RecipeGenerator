@@ -13,9 +13,9 @@ namespace RecipeGenerator.Database.Context
 {
     public class RecipeGeneratorDbContext : DbContext
     {
-        internal DbSet<Recipe> Recipes { get; set; }
+        public DbSet<Recipe> Recipes { get; set; }
 
-        internal DbSet<ApplicableIngredient> Ingredients { get; set; }
+        public DbSet<ApplicableIngredient> Ingredients { get; set; }
 
         private readonly IConfiguration configuration;
 
@@ -26,6 +26,7 @@ namespace RecipeGenerator.Database.Context
             this.configuration = configuration;
             if (Database.IsRelational())
             {
+                Database.EnsureCreated();
                 Database.Migrate();
             }
         }

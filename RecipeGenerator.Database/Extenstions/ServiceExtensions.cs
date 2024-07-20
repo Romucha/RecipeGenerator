@@ -24,7 +24,7 @@ namespace RecipeGenerator.Database.Extenstions
             {
                 Directory.CreateDirectory(dbPath);
             }
-            services.AddSqlite<RecipeGeneratorDbContext>($"Data Source={dbPath}\\Recipe.db");
+            services.AddSqlite<RecipeGeneratorDbContext>($"Data Source=\"{dbPath}/Recipe.db\"");
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<IRepository<Step>, Repository<Step>>();

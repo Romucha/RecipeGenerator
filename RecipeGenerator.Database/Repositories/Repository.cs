@@ -32,7 +32,7 @@ namespace RecipeGenerator.Database.Repositories
                     logger.LogInformation($"Creating entity of type \"{typeof(T).Name}\"...");
                     T entity = (T)Activator.CreateInstance(typeof(T), [])!;
 
-                    dbContext.Add(entity);
+                    dbContext.Set<T>().Add(entity);
 
                     return entity;
                 }

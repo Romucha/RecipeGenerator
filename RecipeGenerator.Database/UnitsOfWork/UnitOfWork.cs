@@ -102,7 +102,18 @@ namespace RecipeGenerator.Database.UnitsOfWork
         /// <inheritdoc/>
         public async Task SaveChangesAsync(CancellationToken cancellationToken = default)
         {
-            await dbContext.SaveChangesAsync(cancellationToken);
+            try
+            {
+                await dbContext.SaveChangesAsync(cancellationToken);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(SaveChangesAsync));
+            }
+            finally
+            {
+
+            }
         }
         
 

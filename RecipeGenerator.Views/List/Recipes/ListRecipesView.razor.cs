@@ -8,9 +8,19 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Views.List.Recipes
 {
- public partial class ListRecipesView
- {
-  [Inject]
-  public ListRecipesViewModel ViewModel { get; set; } = default!;
- }
+    public partial class ListRecipesView
+    {
+        [Inject]
+        public ListRecipesViewModel ViewModel { get; set; } = default!;
+
+        protected override async Task OnInitializedAsync()
+        {
+            if (ViewModel != null)
+            {
+                ViewModel.PropertyChanged += (sender, e) => StateHasChanged();
+                await ViewModel.Seed();
+                await ViewModel.GetRecipesAsync();
+            }
+        }
+    }
 }

@@ -1,5 +1,14 @@
-﻿<h3>ListRecipesView</h3>
-
-@code {
-
-}
+﻿<button class="btn-primary" onclick="@(async () =>{ await ViewModel.GetRecipesAsync(); })">Refresh</button>
+<div>
+    <div style="display: flex; flex-direction: row">
+        <button class="btn-primary" onclick="@ViewModel.PreviousPage">Previous</button>
+        <div>@ViewModel.PageNumber</div>
+        <button class="btn-primary" onclick="@ViewModel.NextPage">Next</button>
+    </div>
+    <div style="display: flex; flex-direction: column">
+        @foreach (var recipe in ViewModel.Recipes)
+        {
+            <div style="background-color: lightgray;" title="@recipe.Description">@recipe.Name</div>
+        }
+    </div>
+</div>
