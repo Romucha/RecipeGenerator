@@ -1,4 +1,5 @@
-﻿<button class="btn-primary" onclick="@ViewModel.GetRecipesAsync">Refresh</button>
+﻿@* <button class="btn-primary" onclick="@ViewModel.GetRecipesAsync">Refresh</button> *@
+<a class="btn-primary" href="/create-recipe">Create a new recipe</a>
 <div>
     <div style="display: flex; flex-direction: row">
         <button class="btn-primary" onclick="@ViewModel.PreviousPage">Previous</button>
@@ -9,6 +10,7 @@
         @foreach (var recipe in ViewModel.Recipes)
         {
             <div style="background-color: lightgray;" title="@recipe.Description">@recipe.Name</div>
+            <div>@recipe.UpdatedAt</div>
         }
     </div>
 </div>
