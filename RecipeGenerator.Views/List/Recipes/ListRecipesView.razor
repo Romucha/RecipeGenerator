@@ -1,10 +1,18 @@
-﻿@* <button class="btn-primary" onclick="@ViewModel.GetRecipesAsync">Refresh</button> *@
-<a class="btn-primary" href="/create-recipe">Create a new recipe</a>
+﻿<a class="btn-primary" href="/create-recipe">Create a new recipe</a>
 <div>
     <div style="display: flex; flex-direction: row">
         <button class="btn-primary" onclick="@ViewModel.PreviousPage">Previous</button>
         <div>@ViewModel.PageNumber</div>
         <button class="btn-primary" onclick="@ViewModel.NextPage">Next</button>
+    </div>
+    <div>
+        <div>
+            <InputText @bind-Value="ViewModel.FilterString"/>
+            <button onclick="@ViewModel.GetRecipesAsync">Search</button>
+        </div>
+        <div>
+
+        </div>
     </div>
     <div style="display: flex; flex-direction: column">
         @foreach (var recipe in ViewModel.Recipes)
