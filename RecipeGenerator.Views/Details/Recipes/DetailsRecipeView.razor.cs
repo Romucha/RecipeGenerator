@@ -8,12 +8,21 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Views.Details.Recipes
 {
- public partial class DetailsRecipeView
- {
-  [Inject]
-  public DetailsRecipeViewModel ViewModel { get; set; } = default!;
+    public partial class DetailsRecipeView
+    {
+        [Inject]
+        public DetailsRecipeViewModel ViewModel { get; set; } = default!;
 
-  [Parameter]
-  public Guid Id { get; set; }
- }
+        [Parameter]
+        public Guid Id { get; set; }
+
+        protected override async Task OnInitializedAsync()
+        {
+            if (ViewModel != null)
+            {
+                ViewModel.PropertyChanged += (sender, e) => StateHasChanged();
+                await ViewModel.GetRecipeAsync(Id);
+            }
+        }
+    }
 }

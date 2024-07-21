@@ -1,5 +1,67 @@
-﻿<h3>DetailsRecipeView</h3>
-
-@code {
-
-}
+﻿<div style="display: flex; flex-direction: column">
+    <div style="display: flex; flex-direction: row">
+        <div>
+            @(nameof(ViewModel.Name)): 
+        </div>
+        <div>
+            @ViewModel.Name
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: row">
+        <div>
+            @(nameof(ViewModel.Image)): 
+        </div>
+        <div>
+   <img src="@($"data:image/gif;base64,{ViewModel.Image}")" alt="@ViewModel.Name" />
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: row">
+        <div>
+            @(nameof(ViewModel.Description)): 
+        </div>
+        <div>
+            @ViewModel.Description
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: row">
+        <div>
+            @(nameof(ViewModel.Portions)): 
+        </div>
+        <div>
+            @ViewModel.Portions
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: row">
+        <div>
+            @(nameof(ViewModel.EstimatedTime)): 
+        </div>
+        <div>
+            @ViewModel.EstimatedTime
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: row">
+        <div>
+            @(nameof(ViewModel.Portions)): 
+        </div>
+        <div>
+            @ViewModel.Portions
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: row">
+        <div>
+            @(nameof(ViewModel.CreatedAt)): 
+        </div>
+        <div>
+            @ViewModel.CreatedAt
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: row">
+        <div>
+            @(nameof(ViewModel.UpdatedAt)): 
+        </div>
+        <div>
+            @ViewModel.UpdatedAt
+        </div>
+    </div>
+    @*TO-DO insert ingredients and steps*@
+</div>
