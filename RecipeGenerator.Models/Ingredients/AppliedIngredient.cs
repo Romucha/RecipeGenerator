@@ -23,6 +23,12 @@ namespace RecipeGenerator.Models.Ingredients
 
         /// <inheritdoc/>
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+        
+        /// <inheritdoc/>
+        public string Name { get; set; } = string.Empty;
+
+        /// <inheritdoc/>
+        public string Description { get; set; } = string.Empty;
 
         /// <summary>
         /// Identifier of a parent recipe.

@@ -26,5 +26,15 @@ namespace RecipeGenerator.Models
         /// Date of last update.
         /// </summary>
         DateTime UpdatedAt { get; set; }
+  
+        /// <summary>
+        /// Display name.
+        /// </summary>
+        string Name { get; set; }
+
+        /// <summary>
+        /// Description.
+        /// </summary>
+        string Description { get; set; }
     }
 }
