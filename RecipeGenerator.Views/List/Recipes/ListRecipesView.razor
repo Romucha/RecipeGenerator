@@ -9,8 +9,10 @@
     <div style="display: flex; flex-direction: column">
         @foreach (var recipe in ViewModel.Recipes)
         {
-            <div style="background-color: lightgray;" title="@recipe.Description">@recipe.Name</div>
-            <div>@recipe.UpdatedAt</div>
+           <a href="@($"/details-recipe/{recipe.Id}")">
+                <div style="background-color: lightgray;" title="@recipe.Description">@recipe.Name</div>
+                <div>@recipe.UpdatedAt</div>
+           </a>
         }
     </div>
 </div>

@@ -12,5 +12,8 @@ namespace RecipeGenerator.Views.Details.Recipes
  {
   [Inject]
   public DetailsRecipeViewModel ViewModel { get; set; } = default!;
+
+  [Parameter]
+  public Guid Id { get; set; }
  }
 }
