@@ -173,33 +173,17 @@ namespace RecipeGenerator.Database.UnitsOfWork
             try
             {
                 logger.LogInformation($"Getting {typeof(Entity).Name}s...");
-                var entites = await repositories.GetValue<IRepository<Entity>>(typeof(Entity)).GetAllAsync(request.PageNumber, request.PageSize, cancellationToken);
+                var entites = await repositories.GetValue<IRepository<Entity>>(typeof(Entity)).GetAllAsync(request.PageNumber, request.PageSize, request.Filter, cancellationToken);
                 List<Entity> fitleredEntities = new();
                 if (entites != null)
                 {
-                    if (string.IsNullOrEmpty(request.Filter))
-                    {
-                        fitleredEntities.AddRange(entites);
-                    }
-                    else
-                    {
-                        fitleredEntities.AddRange(entites.Where(c =>
-                        {
-                            var name = getValue(c, "Name");
-                            if (name == null)
-                                return false;
-                            var nameValue = name.ToString();
-                            if (nameValue == null) 
-                                return false;
-                            return nameValue.Contains(request.Filter, StringComparison.OrdinalIgnoreCase);
-                        }));
-                    }
+                    if (Activator.CreateInstance(typeof(Response)) is not Response response)
+                    return default;
+                    response.Items = entites.Select(c => (IGetAllResponseItem)mapper.Map<ResponseItem>(c));
+                    return response;
                 }
 
-                if (Activator.CreateInstance(typeof(Response)) is not Response response)
-                    return default;
-                response.Items = fitleredEntities.Select(c => (IGetAllResponseItem)mapper.Map<ResponseItem>(c));
-                return response;
+                return default;
             }
             catch (Exception ex)
             {

@@ -79,27 +79,25 @@ namespace RecipeGenerator.Database.Repositories
         }
 
         /// <inheritdoc/>
-        public async Task<IEnumerable<T>?> GetAllAsync(int pageNumber = 0, int pageSize = 0, CancellationToken cancellationToken = default)
+        public async Task<IEnumerable<T>?> GetAllAsync(int pageNumber = 0, int pageSize = 0, string? filterString = "", CancellationToken cancellationToken = default)
         {
             return await Task.Run(() =>
             {
                 try
                 {
                     logger.LogInformation($"Getting entities of type \"{typeof(T).Name}\"...");
-                    IEnumerable<T>? entities;
+                    IEnumerable<T>? entities = dbContext.Set<T>().AsNoTracking().AsEnumerable();
+                    if (!string.IsNullOrEmpty(filterString))
+                    {
+                        entities = entities
+                            .Where(c => c.Name.IndexOf(filterString, StringComparison.OrdinalIgnoreCase) >= 0);
+                    }
+
                     if (pageSize > 0)
                     {
-                        entities = dbContext
-                            .Set<T>()
+                        entities = entities
                             .Skip(pageSize * pageNumber)
-                            .Take(pageSize)
-                            .AsNoTracking();
-                    }
-                    else
-                    {
-                        entities = dbContext
-                            .Set<T>()
-                            .AsNoTracking();
+                            .Take(pageSize);
                     }
 
                     return entities;
