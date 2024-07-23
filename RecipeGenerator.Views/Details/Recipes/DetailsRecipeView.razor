@@ -63,5 +63,96 @@
             @ViewModel.UpdatedAt
         </div>
     </div>
-    @*TO-DO insert ingredients and steps*@
+    <div style="display: flex; flex-direction: column">
+        <div>Ingredients:</div>
+        @foreach (var ingredient in ViewModel.Ingredients)
+        {
+            <div style="display: flex; flex-direction: column">
+                <div style="display: flex; flex-direction: row">
+                    <div>
+                        @(nameof(ingredient.Name)): 
+                    </div>
+                    <div>
+                        @ingredient.Name
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column">
+                <div style="display: flex; flex-direction: row">
+                    <div>
+                        @(nameof(ingredient.Description)): 
+                    </div>
+                    <div>
+                        @ingredient.Description
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column">
+                <div style="display: flex; flex-direction: row">
+                    <div>
+                        @(nameof(ingredient.CreatedAt)): 
+                    </div>
+                    <div>
+                        @ingredient.CreatedAt
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column">
+                <div style="display: flex; flex-direction: row">
+                    <div>
+                        @(nameof(ingredient.UpdatedAt)): 
+                    </div>
+                    <div>
+                        @ingredient.UpdatedAt
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <div style="display: flex; flex-direction: column">
+        <div>Steps:</div>
+        @foreach (var step in ViewModel.Steps)
+        {
+            <div style="display: flex; flex-direction: column">
+                <div style="display: flex; flex-direction: row">
+                    <div>
+                        @(nameof(step.Name)): 
+                    </div>
+                    <div>
+                        @step.Name
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column">
+                <div style="display: flex; flex-direction: row">
+                    <div>
+                        @(nameof(step.Description)): 
+                    </div>
+                    <div>
+                        @step.Description
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column">
+                <div style="display: flex; flex-direction: row">
+                    <div>
+                        @(nameof(step.CreatedAt)): 
+                    </div>
+                    <div>
+                        @step.CreatedAt
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column">
+                <div style="display: flex; flex-direction: row">
+                    <div>
+                        @(nameof(step.UpdatedAt)): 
+                    </div>
+                    <div>
+                        @step.UpdatedAt
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 </div>
