@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using RecipeGenerator.Database.Seeding.ApplicableIngredients;
 using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Models.Recipes;
 using System;
@@ -17,12 +18,15 @@ namespace RecipeGenerator.Database.Context
 
         public DbSet<ApplicableIngredient> Ingredients { get; set; }
 
+        private readonly ApplicableIngredientsSeeder applicableIngredientsSeeder;
         private readonly IConfiguration configuration;
 
         public RecipeGeneratorDbContext(
+            ApplicableIngredientsSeeder applicableIngredientsSeeder,
             IConfiguration configuration,
             DbContextOptions dbContextOptions) : base(dbContextOptions)
         {
+            this.applicableIngredientsSeeder = applicableIngredientsSeeder;
             this.configuration = configuration;
             if (Database.IsRelational())
             {
@@ -41,6 +45,7 @@ namespace RecipeGenerator.Database.Context
         {
             //add seeding here
             //modelBuilder.Entity<Ingredient>().HasData(ingredientGetter.Get().Select(c => mapper.Map<Ingredient>(c)));
+            modelBuilder.Entity<ApplicableIngredient>().HasData(applicableIngredientsSeeder.GetEntitiesAsync().Result);
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using RecipeGenerator.Database.Context;
 using RecipeGenerator.Database.Repositories;
+using RecipeGenerator.Database.Seeding.ApplicableIngredients;
 using RecipeGenerator.Database.UnitsOfWork;
 using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Models.Recipes;
@@ -31,6 +32,8 @@ namespace RecipeGenerator.Database.Extenstions
             services.AddTransient<IRepository<Recipe>, Repository<Recipe>>();
             services.AddTransient<IRepository<AppliedIngredient>, Repository<AppliedIngredient>>();
             services.AddTransient<IRepository<ApplicableIngredient>, Repository<ApplicableIngredient>>();
+
+            services.AddTransient<ApplicableIngredientsSeeder>();
         }
     }
 }

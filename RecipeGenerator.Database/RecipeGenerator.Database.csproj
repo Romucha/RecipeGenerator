@@ -10,6 +10,7 @@
     <ProjectReference Include="..\RecipeGenerator.DTO\RecipeGenerator.DTO.csproj" />
     <ProjectReference Include="..\RecipeGenerator.Functionalities\RecipeGenerator.Functionalities.csproj" />
     <ProjectReference Include="..\RecipeGenerator.Models\RecipeGenerator.Models.csproj" />
+    <ProjectReference Include="..\RecipeGenerator.Resources\RecipeGenerator.Resources.csproj" />
   </ItemGroup>
 
   <ItemGroup>
