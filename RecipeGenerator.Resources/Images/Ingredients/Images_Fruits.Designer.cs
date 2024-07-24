@@ -22,14 +22,14 @@ namespace RecipeGenerator.Resources.Images.Ingredients {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Images__Fruits {
+    public class Images_Fruits {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Images__Fruits() {
+        internal Images_Fruits() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace RecipeGenerator.Resources.Images.Ingredients {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RecipeGenerator.Resources.Images.Ingredients.Images_ Fruits", typeof(Images__Fruits).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RecipeGenerator.Resources.Images.Ingredients.Images_Fruits", typeof(Images_Fruits).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

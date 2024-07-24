@@ -41,11 +41,12 @@ namespace RecipeGenerator.Database.Context
             base.OnConfiguring(optionsBuilder);
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override async void OnModelCreating(ModelBuilder modelBuilder)
         {
             //add seeding here
             //modelBuilder.Entity<Ingredient>().HasData(ingredientGetter.Get().Select(c => mapper.Map<Ingredient>(c)));
-            modelBuilder.Entity<ApplicableIngredient>().HasData(applicableIngredientsSeeder.GetEntitiesAsync().Result);
+            var data = await applicableIngredientsSeeder.GetEntitiesAsync();
+            modelBuilder.Entity<ApplicableIngredient>().HasData();
         }
     }
 }

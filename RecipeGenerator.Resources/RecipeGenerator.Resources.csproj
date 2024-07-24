@@ -1512,10 +1512,10 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
-    <Compile Update="Images\Ingredients\Images_ Fruits.Designer.cs">
+    <Compile Update="Images\Ingredients\Images_Fruits.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Images_ Fruits.resx</DependentUpon>
+      <DependentUpon>Images_Fruits.resx</DependentUpon>
     </Compile>
     <Compile Update="Images\Ingredients\Images_CerealsAndPulses.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -1597,9 +1597,9 @@
       <LastGenOutput>Identifiers_Ingredients.Designer.cs</LastGenOutput>
       <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Images\Ingredients\Images_ Fruits.resx">
+    <EmbeddedResource Update="Images\Ingredients\Images_Fruits.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Images_ Fruits.Designer.cs</LastGenOutput>
+      <LastGenOutput>Images_Fruits.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Images\Ingredients\Images_CerealsAndPulses.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
