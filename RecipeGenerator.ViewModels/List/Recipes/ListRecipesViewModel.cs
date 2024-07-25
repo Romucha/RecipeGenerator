@@ -114,5 +114,5 @@ public class ListRecipesViewModel : ObservableObject
                 await unitOfWork.SaveChangesAsync(cancellationToken);
             }
         }
- }
+    }
 }
