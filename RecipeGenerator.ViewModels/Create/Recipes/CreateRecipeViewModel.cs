@@ -55,8 +55,8 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
             set => SetProperty(ref recipeEstimatedTime, value);
         }
 
-        private string recipeImage = default!;
-        public string RecipeImage
+        private byte[] recipeImage = default!;
+        public byte[] RecipeImage
         {
             get => recipeImage;
             set => SetProperty(ref recipeImage, value);

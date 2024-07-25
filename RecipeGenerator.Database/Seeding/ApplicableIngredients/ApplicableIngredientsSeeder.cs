@@ -25,24 +25,22 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
             this.logger = logger;
         }
 
-        public override async Task<IEnumerable<ApplicableIngredient>> GetEntitiesAsync(CancellationToken cancellationToken = default)
+        public override IEnumerable<ApplicableIngredient> GetEntities()
         {
-            return await Task.Run(() =>
+            try
             {
-                try
-                {
-                    logger.LogInformation("Creating list of inredients...");
-                    ResourceManager identifiersManager = new(typeof(Identifiers_Ingredients));
-                    var identifiers = getResourceEntries(identifiersManager).Select(c => c.Value!.ToString());
+                logger.LogInformation("Creating list of inredients...");
+                ResourceManager identifiersManager = new(typeof(Identifiers_Ingredients));
+                var identifiers = getResourceEntries(identifiersManager).Select(c => c.Value!.ToString());
 
-                    ResourceManager descriptionsManager = new(typeof(Descriptions_Ingredients));
-                    ResourceManager linksManager = new(typeof(Links_Ingredients));
-                    ResourceManager namesManager = new(typeof(Names_Ingredients));
-                    ResourceManager typesManager = new(typeof(Names_IngredientTypes));
+                ResourceManager descriptionsManager = new(typeof(Descriptions_Ingredients));
+                ResourceManager linksManager = new(typeof(Links_Ingredients));
+                ResourceManager namesManager = new(typeof(Names_Ingredients));
+                ResourceManager typesManager = new(typeof(Names_IngredientTypes));
 
-                    ResourceManager[] imageManagers =
-                    [
-                        new(typeof(Images_CerealsAndPulses)),
+                ResourceManager[] imageManagers =
+                [
+                    new(typeof(Images_CerealsAndPulses)),
                         new(typeof(Images_DairyProducts)),
                         new(typeof(Images_Fruits)),
                         new(typeof(Images_Meat)),
@@ -52,48 +50,50 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
                         new(typeof(Images_SpicesAndHerbs)),
                         new(typeof(Images_SugarAndSugarProducts)),
                         new(typeof(Images_Vegetables))
-                    ];
-                    var images = imageManagers.SelectMany(c => getResourceEntries(c));
+                ];
+                var images = imageManagers.SelectMany(c => getResourceEntries(c));
 
-                    List<ApplicableIngredient> applicableIngredients = new();
+                List<ApplicableIngredient> applicableIngredients = new();
 
-                    foreach (var id in identifiers)
+                foreach (var id in identifiers)
+                {
+                    if (id != null)
                     {
-                        if (id != null)
+                        try
                         {
-                            try
-                            {
-                                var typeid = id.Split('_').FirstOrDefault();
-                                var ingrtype = Enum.Parse<IngredientType>(typeid!);
+                            var typeid = id.Split('_').FirstOrDefault();
+                            var ingrtype = Enum.Parse<IngredientType>(typeid!);
 
-                                applicableIngredients.Add(new ApplicableIngredient()
-                                {
-                                    Description = descriptionsManager.GetString(id)!,
-                                    Name = namesManager.GetString(id)!,
-                                    Image = (images.FirstOrDefault(c => c.Key.ToString() == id).Value as byte[])!,
-                                    Link = new Uri(linksManager.GetString(id)!),
-                                    IngredientType = ingrtype,
-                                });
-                            }
-                            catch (Exception ex)
+                            applicableIngredients.Add(new ApplicableIngredient()
                             {
-                                //SOMETIMES ERROR SHOWS UP BECAUSE OF BROKEN IMAGE. FIX
-                            }
+                                Id = Guid.NewGuid(),
+                                Description = descriptionsManager.GetString(id) ?? "",
+                                Name = namesManager.GetString(id) ?? "",
+                                Image = (images.FirstOrDefault(c => c.Key.ToString() == id).Value as byte[]) ?? [],
+                                Link = new Uri(linksManager.GetString(id) ?? "https://google.com"),
+                                IngredientType = ingrtype,
+                                CreatedAt = DateTime.UtcNow,
+                                UpdatedAt = DateTime.UtcNow,
+                            });
+                        }
+                        catch (Exception ex)
+                        {
+                            //SOMETIMES ERROR SHOWS UP BECAUSE OF BROKEN IMAGE. FIX
                         }
                     }
+                }
 
-                    return applicableIngredients;
-                }
-                catch (Exception ex)
-                {
-                    logger.LogError(ex, nameof(GetEntitiesAsync));
-                    return Enumerable.Empty<ApplicableIngredient>();
-                }
-                finally
-                {
-                    logger.LogInformation("Done.");
-                }
-            }, cancellationToken);
+                return applicableIngredients;
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(GetEntities));
+                return Enumerable.Empty<ApplicableIngredient>();
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
         }
 
         private IEnumerable<DictionaryEntry> getResourceEntries(ResourceManager resourceManager)

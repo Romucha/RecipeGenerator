@@ -17,6 +17,6 @@ namespace RecipeGenerator.Database.Seeding
         /// Get list of entites to seed a database.
         /// </summary>
         /// <returns></returns>
-        public abstract Task<IEnumerable<Entity>> GetEntitiesAsync(CancellationToken cancellationToken = default);
+        public abstract IEnumerable<Entity> GetEntities();
     }
 }

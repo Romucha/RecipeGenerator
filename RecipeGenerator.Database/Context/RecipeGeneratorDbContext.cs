@@ -46,8 +46,9 @@ namespace RecipeGenerator.Database.Context
             //add seeding here
             //modelBuilder.Entity<Ingredient>().HasData(ingredientGetter.Get().Select(c => mapper.Map<Ingredient>(c)));
             
-            var data = applicableIngredientsSeeder.GetEntitiesAsync().GetAwaiter().GetResult();
-            modelBuilder.Entity<ApplicableIngredient>().HasData();
+            var data = Task.Run(applicableIngredientsSeeder.GetEntities);
+            data.Wait();
+            modelBuilder.Entity<ApplicableIngredient>().HasData(data.Result);
         }
     }
 }

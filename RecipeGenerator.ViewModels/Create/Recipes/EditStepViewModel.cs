@@ -46,8 +46,8 @@ namespace RecipeGenerator.ViewModels.Create.Recipes
             set => SetProperty(ref index, value);
         }
 
-        private ObservableCollection<string> photos = new();
-        public ObservableCollection<string> Photos
+        private ObservableCollection<byte[]> photos = new();
+        public ObservableCollection<byte[]> Photos
         {
             get => photos;
             set => SetProperty(ref photos, value);

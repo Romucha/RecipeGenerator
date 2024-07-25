@@ -54,8 +54,8 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
             set => SetProperty(ref description, value);
         }
 
-        private string image = string.Empty;
-        public string Image
+        private byte[] image = [];
+        public byte[] Image
         {
             get => image;
             set => SetProperty(ref image, value);
