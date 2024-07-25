@@ -41,6 +41,6 @@ namespace RecipeGenerator.DTO.Implementations.ApplicableIngredients.Responses
         /// <summary>
         /// Image of the ingredient.
         /// </summary>
-        public string Image { get; set; } = default!;
+        public byte[] Image { get; set; } = default!;
     }
 }

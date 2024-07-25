@@ -31,7 +31,7 @@ namespace RecipeGenerator.DTO.Implementations.Recipes.Responses
         /// <summary>
         /// Image.
         /// </summary>
-        public string Image { get; set; } = string.Empty;
+        public byte[] Image { get; set; } = [];
 
         /// <summary>
         /// Course type.

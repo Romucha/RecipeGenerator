@@ -44,7 +44,7 @@ namespace RecipeGenerator.DTO.Implementations.Steps.Responses
         /// <summary>
         /// List of photos.
         /// </summary>
-        public List<string> Photos { get; set; } = new();
+        public List<byte[]> Photos { get; set; } = new();
 
         /// <summary>
         /// Id of parent recipe.

@@ -46,6 +46,6 @@ namespace RecipeGenerator.Models.Ingredients
         /// <summary>
         /// Image of the ingredient.
         /// </summary>
-        public string Image { get; set; } = string.Empty;
+        public byte[] Image { get; set; } = [];
     }
 }

@@ -32,7 +32,7 @@ namespace RecipeGenerator.DTO.Implementations.Steps.Requests
         /// <summary>
         /// List of photos.
         /// </summary>
-        public List<string>? Photos { get; set; }
+        public List<byte[]>? Photos { get; set; }
 
         /// <summary>
         /// Id of parent recipe.

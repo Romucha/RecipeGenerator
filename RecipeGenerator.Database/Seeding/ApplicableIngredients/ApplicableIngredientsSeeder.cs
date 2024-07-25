@@ -70,7 +70,7 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
                                 {
                                     Description = descriptionsManager.GetString(id)!,
                                     Name = namesManager.GetString(id)!,
-                                    Image = Encoding.UTF8.GetString((images.FirstOrDefault(c => c.Key.ToString() == id).Value as byte[])!)!,
+                                    Image = (images.FirstOrDefault(c => c.Key.ToString() == id).Value as byte[])!,
                                     Link = new Uri(linksManager.GetString(id)!),
                                     IngredientType = ingrtype,
                                 });
