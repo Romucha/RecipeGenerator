@@ -54,8 +54,8 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
             set => SetProperty(ref description, value);
         }
 
-        private byte[] image = [];
-        public byte[] Image
+        private string image = string.Empty;
+        public string Image
         {
             get => image;
             set => SetProperty(ref image, value);
@@ -109,7 +109,7 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
                 {
                     Name = response.Name;
                     Description = response.Description;
-                    Image = response.Image;
+                    Image = Convert.ToBase64String(response.Image);
                     CreatedAt = response.CreatedAt;
                     UpdatedAt = response.UpdatedAt;
                     CourseType = (Course)response.CourseType;

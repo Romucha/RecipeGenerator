@@ -1,5 +1,9 @@
-﻿<h3>DetailsIngredient</h3>
+﻿@page "/details-ingredient/{id:guid}"
 
-@code {
+<DetailsIngredientView Id="@id"/>
 
+@code
+{
+    [Parameter]
+    public Guid id { get; set; }
 }
