@@ -1,6 +1,8 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.Extensions.Logging;
 using RecipeGenerator.Database.UnitsOfWork;
+using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Responses;
+using RecipeGenerator.DTO.Implementations.AppliedIngredients.Requests;
 using RecipeGenerator.DTO.Implementations.Recipes.Requests;
 using RecipeGenerator.DTO.Implementations.Recipes.Responses;
 using RecipeGenerator.DTO.Implementations.Steps.Requests;
@@ -48,8 +50,8 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
             set => SetProperty(ref recipeCourseType, value);
         }
 
-        private TimeSpan recipeEstimatedTime;
-        public TimeSpan RecipeEstimatedTime
+        private double recipeEstimatedTime;
+        public double RecipeEstimatedTime
         {
             get => recipeEstimatedTime;
             set => SetProperty(ref recipeEstimatedTime, value);
@@ -69,8 +71,8 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
             set => SetProperty(ref recipePortions, value);
         }
 
-        private ObservableCollection<GetAllStepResponse> steps = new();
-        public ObservableCollection<GetAllStepResponse> Steps
+        private ObservableCollection<UpdateStepRequest> steps = new();
+        public ObservableCollection<UpdateStepRequest> Steps
         {
             get => steps;
             set => SetProperty(ref steps, value);
@@ -83,29 +85,46 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
             set => SetProperty(ref stepIndex, value);
         }
 
-        public async Task<Guid?> CreateAsync(CancellationToken cancellationToken = default)
+        private ObservableCollection<UpdateAppliedIngredientRequest> appliedIngredients = new();
+        public ObservableCollection<UpdateAppliedIngredientRequest> AppliedIngredients
+        {
+            get => appliedIngredients;
+            set => SetProperty(ref appliedIngredients, value);
+        }
+
+        private ObservableCollection<GetAllApplicableIngredientResponse> applicableIngredients = new();
+        public ObservableCollection<GetAllApplicableIngredientResponse> ApplicableIngredients
+        {
+            get => applicableIngredients;
+            set => SetProperty(ref applicableIngredients, value);
+        }
+
+        public async Task<Guid?> CreateAsync()
         {
             try
             {
                 logger.LogInformation("Creating recipe...");
                 CreateRecipeRequest createRecipeRequest = new();
-                CreateRecipeResponse? createRecipeResponse = await unitOfWork.CreateAsync<Recipe, CreateRecipeRequest, CreateRecipeResponse>(createRecipeRequest, cancellationToken);
+                CreateRecipeResponse? createRecipeResponse = await unitOfWork.CreateAsync<Recipe, CreateRecipeRequest, CreateRecipeResponse>(createRecipeRequest);
+                await SaveAsync();
                 logger.LogInformation("Editing recipe...");
+                Steps.ToList().ForEach(c => c.RecipeId = createRecipeResponse!.Id);
                 UpdateRecipeRequest updateRecipeRequest = new()
                 {
                     Id = createRecipeResponse!.Id,
                     Name = RecipeName,
                     Description = RecipeDescription,
                     CourseType = (int?)RecipeCourseType,
-                    EstimatedTime = RecipeEstimatedTime,
+                    EstimatedTime = TimeSpan.FromMinutes(RecipeEstimatedTime),
                     Image = RecipeImage,
                     Portions = RecipePortions,
-                    Steps = new(),
-                    Ingredients = new()
+                    Steps = [.. Steps],
+                    Ingredients = [.. AppliedIngredients]
                 };
-                UpdateRecipeResponse? updateRecipeResponse = await unitOfWork.UpdateAsync<Recipe, UpdateRecipeRequest, UpdateRecipeResponse>(updateRecipeRequest, cancellationToken);
+                UpdateRecipeResponse? updateRecipeResponse = await unitOfWork.UpdateAsync<Recipe, UpdateRecipeRequest, UpdateRecipeResponse>(updateRecipeRequest);
                 if (updateRecipeResponse != null)
                 {
+                    await SaveAsync();
                     return updateRecipeResponse.Id;
                 }
 
@@ -122,24 +141,40 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
             }
         }
 
-        public async Task AddStepAsync(CancellationToken cancellationToken = default)
+        public async Task SaveAsync()
         {
             try
             {
-                logger.LogInformation("Adding step...");
-                CreateStepRequest createStepRequest = new();
-                CreateStepResponse? createStepResponse = await unitOfWork.CreateAsync<Step, CreateStepRequest, CreateStepResponse>(createStepRequest, cancellationToken);
+                logger.LogInformation("Saving changes...");
+                await unitOfWork.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(SaveAsync));
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
+        }
 
+        public async Task AddStepAsync()
+        {
+            try
+            {
+                //TO-DO: the process breaks because of recipeID constraint. Make it nullable?
+                CreateStepRequest createStepRequest = new();
+                CreateStepResponse? createStepResponse = await unitOfWork.CreateAsync<Step, CreateStepRequest, CreateStepResponse>(createStepRequest);
                 if (createStepResponse != null)
                 {
+                    await SaveAsync();
                     UpdateStepRequest updateStepRequest = new()
                     {
                         Id = createStepResponse.Id,
-                        Index = ++StepIndex
+                        Index = StepIndex++
                     };
-                    UpdateStepResponse? updateStepResponse = await unitOfWork.UpdateAsync<Step, UpdateStepRequest, UpdateStepResponse>(updateStepRequest, cancellationToken);
+                    Steps.Add(updateStepRequest);
                 }
-
             }
             catch (Exception ex)
             {
@@ -160,23 +195,6 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(AddStepAsync));
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        public async Task SaveAsync(CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                logger.LogInformation("Saving changes...");
-                await unitOfWork.SaveChangesAsync(cancellationToken);
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(SaveAsync));
             }
             finally
             {

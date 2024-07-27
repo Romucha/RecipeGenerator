@@ -65,7 +65,7 @@ public class ListRecipesViewModel : ObservableObject
             GetAllRecipesResponse? response = await unitOfWork.GetAllAsync<Recipe, GetAllRecipesRequest, GetAllRecipesResponse, GetAllRecipeResponse>(request);
             if (response != null)
             {
-                Recipes = new ObservableCollection<GetAllRecipeResponse>(response.Items.Select(c => (GetAllRecipeResponse)c));
+                Recipes = new ObservableCollection<GetAllRecipeResponse>(response.Items.Select(c => (GetAllRecipeResponse)c).OrderByDescending(c => c.UpdatedAt));
             }
         }
         catch (Exception ex)

@@ -67,8 +67,8 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
                             applicableIngredients.Add(new ApplicableIngredient()
                             {
                                 Id = Guid.NewGuid(),
-                                Description = descriptionsManager.GetString(id) ?? "",
-                                Name = namesManager.GetString(id) ?? "",
+                                Description = descriptionsManager.GetString(id) ?? id,
+                                Name = namesManager.GetString(id) ?? id,
                                 Image = (images.FirstOrDefault(c => c.Key.ToString() == id).Value as byte[]) ?? [],
                                 Link = new Uri(linksManager.GetString(id) ?? "https://google.com"),
                                 IngredientType = ingrtype,
@@ -78,7 +78,7 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
                         }
                         catch (Exception ex)
                         {
-                            //SOMETIMES ERROR SHOWS UP BECAUSE OF BROKEN IMAGE. FIX
+                            
                         }
                     }
                 }

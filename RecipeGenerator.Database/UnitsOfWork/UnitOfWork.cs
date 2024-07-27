@@ -109,6 +109,7 @@ namespace RecipeGenerator.Database.UnitsOfWork
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(SaveChangesAsync));
+                throw;
             }
             finally
             {

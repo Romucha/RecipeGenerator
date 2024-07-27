@@ -1,5 +1,48 @@
-﻿<h3>CreateRecipeView</h3>
-
-@code {
-
-}
+﻿<EditForm Model="@ViewModel" OnSubmit="ViewModel.CreateAsync">
+    <DataAnnotationsValidator />
+    <div style="display: flex; flex-direction: column">
+        <div>
+            @nameof(ViewModel.RecipeName)
+            <InputText @bind-Value="@ViewModel.RecipeName"/>
+        </div>
+        <div>
+            @nameof(ViewModel.RecipeDescription)
+            <InputText @bind-Value="@ViewModel.RecipeDescription"/>
+        </div>
+        <div>
+            @nameof(ViewModel.RecipePortions)
+            <InputNumber @bind-Value="@ViewModel.RecipePortions"/>
+        </div>
+        <div>
+            @nameof(ViewModel.RecipeEstimatedTime)
+            <InputNumber @bind-Value="@ViewModel.RecipeEstimatedTime"/>
+        </div>
+        <div>
+            @nameof(ViewModel.RecipeCourseType)
+            <InputSelect @bind-Value="@ViewModel.RecipeCourseType">
+                @foreach (var c in Enum.GetValues(typeof(RecipeGenerator.Models.Recipes.Course)))
+                {
+                    <option value="@c">@c</option>
+                }
+            </InputSelect>
+        </div>
+        <div style="display: flex; flex-direction: column">
+            <div class="btn-primary" onclick="@ViewModel.AddStepAsync">Add step</div>
+            @foreach (var s in ViewModel.Steps)
+            {
+                <div style="display:flex; flex-direction:column">
+                    <div>Index: @s.Index</div>
+                    <div>
+                        @nameof(s.Name)
+                        <InputText @bind-Value="@s.Name"/>
+                    </div>
+                    <div>
+                        @nameof(s.Description)
+                        <InputText @bind-Value="@s.Description"/>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <button type="submit">Create</button>
+</EditForm>
