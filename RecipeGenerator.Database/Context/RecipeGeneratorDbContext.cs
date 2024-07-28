@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using RecipeGenerator.Database.Seeding.ApplicableIngredients;
 using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Models.Recipes;
+using RecipeGenerator.Models.Steps;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,11 @@ namespace RecipeGenerator.Database.Context
     {
         public DbSet<Recipe> Recipes { get; set; }
 
-        public DbSet<ApplicableIngredient> Ingredients { get; set; }
+        public DbSet<ApplicableIngredient> ApplicableIngredients { get; set; }
+
+        public DbSet<Step> Steps { get; set; }
+
+        public DbSet<AppliedIngredient> AppliedIngredients { get; set; }
 
         private readonly ApplicableIngredientsSeeder applicableIngredientsSeeder;
         private readonly IConfiguration configuration;

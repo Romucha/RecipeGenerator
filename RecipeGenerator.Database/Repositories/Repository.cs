@@ -57,7 +57,7 @@ namespace RecipeGenerator.Database.Repositories
                 {
                     logger.LogInformation($"Deleting entity of type \"{typeof(T).Name}\"...");
 
-                    var obj = dbContext.Find<T>(id);
+                    var obj = dbContext.Set<T>().Find(id);
                     if (obj != null)
                     {
                         T entity = (obj as T)!;
@@ -123,7 +123,7 @@ namespace RecipeGenerator.Database.Repositories
                 try
                 {
                     logger.LogInformation($"Getting entity of type \"{typeof(T).Name}\"...");
-                    var entity = dbContext.Find<T>(id);
+                    var entity = dbContext.Set<T>().Find(id);
 
                     return entity;
 

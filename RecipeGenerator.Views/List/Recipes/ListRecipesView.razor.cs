@@ -18,7 +18,6 @@ namespace RecipeGenerator.Views.List.Recipes
             if (ViewModel != null)
             {
                 ViewModel.PropertyChanged += (sender, e) => StateHasChanged();
-                await ViewModel.Seed();
                 await ViewModel.GetRecipesAsync();
             }
         }

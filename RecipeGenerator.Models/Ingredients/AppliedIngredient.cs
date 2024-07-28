@@ -44,12 +44,12 @@ namespace RecipeGenerator.Models.Ingredients
         /// <summary>
         /// Identifier of a base ingredient.
         /// </summary>
-        [ForeignKey(nameof(Ingredient))]
+        [ForeignKey(nameof(ApplicableIngredient))]
         public Guid? IngredientId { get; set; }
 
         /// <summary>
         /// Base ingredient.
         /// </summary>
-        public ApplicableIngredient? Ingredient { get; set; } = default!;
+        public ApplicableIngredient? ApplicableIngredient { get; set; } = default!;
     }
 }

@@ -95,24 +95,4 @@ public class ListRecipesViewModel : ObservableObject
             await GetRecipesAsync();
         }
     }
-
-    public async Task Seed(CancellationToken cancellationToken = default)
-    {
-        for (int i = 0; i < 40; ++i)
-        {
-            var response = await unitOfWork.CreateAsync<Recipe, CreateRecipeRequest, CreateRecipeResponse>(new(), cancellationToken);
-            if (response != null)
-            {
-                UpdateRecipeRequest request = new()
-                {
-                    Id = response.Id,
-                    Name = $"Recipe №{i}",
-                    Description = $"Recipe №{i} description"
-                };
-                await unitOfWork.SaveChangesAsync(cancellationToken);
-                await unitOfWork.UpdateAsync<Recipe, UpdateRecipeRequest, UpdateRecipeResponse>(request, cancellationToken);
-                await unitOfWork.SaveChangesAsync(cancellationToken);
-            }
-        }
-    }
 }
