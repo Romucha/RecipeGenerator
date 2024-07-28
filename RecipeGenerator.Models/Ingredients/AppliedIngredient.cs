@@ -34,18 +34,18 @@ namespace RecipeGenerator.Models.Ingredients
         /// Identifier of a parent recipe.
         /// </summary>
         [ForeignKey(nameof(Recipe))]
-        public Guid RecipeId { get; set; }
+        public Guid? RecipeId { get; set; }
 
         /// <summary>
         /// Parent recipe.
         /// </summary>
-        public Recipe Recipe { get; set; } = default!;
+        public Recipe? Recipe { get; set; } = default!;
 
         /// <summary>
         /// Identifier of a base ingredient.
         /// </summary>
         [ForeignKey(nameof(Ingredient))]
-        public Guid IngredientId { get; set; }
+        public Guid? IngredientId { get; set; }
 
         /// <summary>
         /// Base ingredient.

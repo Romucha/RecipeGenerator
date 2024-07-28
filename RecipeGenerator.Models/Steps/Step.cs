@@ -50,11 +50,11 @@ namespace RecipeGenerator.Models.Steps
         /// Id of parent recipe.
         /// </summary>
         [ForeignKey(nameof(Recipe))]
-        public Guid RecipeId { get; set; }
+        public Guid? RecipeId { get; set; }
 
         /// <summary>
         /// Parent recipe.
         /// </summary>
-        public Recipe Recipe { get; set; } = default!;
+        public Recipe? Recipe { get; set; } = default!;
     }
 }

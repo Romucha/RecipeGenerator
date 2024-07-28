@@ -105,6 +105,7 @@ namespace RecipeGenerator.Database.UnitsOfWork
             try
             {
                 await dbContext.SaveChangesAsync(cancellationToken);
+                dbContext.ChangeTracker.Clear();
             }
             catch (Exception ex)
             {
