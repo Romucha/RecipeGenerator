@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using RecipeGenerator.Database.Context;
 using RecipeGenerator.Models;
+using RecipeGenerator.Models.Recipes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -123,7 +124,15 @@ namespace RecipeGenerator.Database.Repositories
                 try
                 {
                     logger.LogInformation($"Getting entity of type \"{typeof(T).Name}\"...");
-                    var entity = dbContext.Set<T>().Find(id);
+                    T? entity;                    
+                    if (typeof(T) == typeof(Recipe))
+                    {
+                        entity = dbContext.Set<Recipe>().Include(c => c.Ingredients).Include(c => c.Steps).FirstOrDefault(c => c.Id == id) as T;
+                    }
+                    else
+                    {
+                        entity = dbContext.Set<T>().Find(id);
+                    }
 
                     return entity;
 
