@@ -27,6 +27,23 @@
             </InputSelect>
         </div>
         <div style="display: flex; flex-direction: column">
+            <div>Ingredients</div>
+            <div class="btn-primary" onclick="@ViewModel.AddAppliedIngredientAsync">Add ingredient</div>
+            <InputSelect @bind-Value="@ViewModel.SelectedIngredientId">
+                @foreach (var ingredient in ViewModel.ApplicableIngredients)
+                {
+                    <option value="@ingredient.Id">@ingredient.Name</option>
+                }
+            </InputSelect>
+        </div>
+        <div>Selected ingredients</div>
+        <div>
+            @foreach (var appliedIngredient in ViewModel.AppliedIngredients)
+            {
+                <div style="margin: 5px; outline: solid 5px;">@appliedIngredient.Name</div>
+            }
+        </div>
+        <div style="display: flex; flex-direction: column">
             <div class="btn-primary" onclick="@ViewModel.AddStepAsync">Add step</div>
             @foreach (var s in ViewModel.Steps)
             {

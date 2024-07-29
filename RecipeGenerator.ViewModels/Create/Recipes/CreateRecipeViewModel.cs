@@ -1,12 +1,15 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.Extensions.Logging;
 using RecipeGenerator.Database.UnitsOfWork;
+using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Requests;
 using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Responses;
 using RecipeGenerator.DTO.Implementations.AppliedIngredients.Requests;
+using RecipeGenerator.DTO.Implementations.AppliedIngredients.Responses;
 using RecipeGenerator.DTO.Implementations.Recipes.Requests;
 using RecipeGenerator.DTO.Implementations.Recipes.Responses;
 using RecipeGenerator.DTO.Implementations.Steps.Requests;
 using RecipeGenerator.DTO.Implementations.Steps.Responses;
+using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Models.Recipes;
 using RecipeGenerator.Models.Steps;
 using System;
@@ -99,6 +102,76 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
             set => SetProperty(ref applicableIngredients, value);
         }
 
+        public Guid SelectedIngredientId { get; set; } = default!;
+
+        public async Task GetApplicableIngredientsAsync()
+        {
+            try
+            {
+                logger.LogInformation("Initializing view model...");
+                GetAllApplicableIngredientsRequest getAllApplicableIngredientsRequest = new GetAllApplicableIngredientsRequest();
+
+                GetAllApplicableIngredientsResponse? getAllApplicableIngredientsResponse = await unitOfWork.GetAllAsync<ApplicableIngredient, GetAllApplicableIngredientsRequest, GetAllApplicableIngredientsResponse, GetAllApplicableIngredientResponse>(getAllApplicableIngredientsRequest);
+                if (getAllApplicableIngredientsResponse != null)
+                {
+                    ApplicableIngredients = new(getAllApplicableIngredientsResponse
+                        .Items
+                        .Select(c => (GetAllApplicableIngredientResponse)c)
+                        .Where(c => !AppliedIngredients.Any(x => x.IngredientId == c.Id))
+                        .OrderBy(c => c.Name));
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(GetApplicableIngredientsAsync));
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
+        }
+
+        public async Task AddAppliedIngredientAsync()
+        {
+            try
+            {
+                logger.LogInformation("Adding an applied ingredient...");
+                CreateAppliedIngredientRequest createAppliedIngredientRequest = new CreateAppliedIngredientRequest();
+                CreateAppliedIndredientResponse? createAppliedIndredientResponse = await unitOfWork.CreateAsync<AppliedIngredient, CreateAppliedIngredientRequest, CreateAppliedIndredientResponse>(createAppliedIngredientRequest);
+                if (createAppliedIndredientResponse != null)
+                {
+                    await SaveAsync();
+                    if (SelectedIngredientId != default)
+                    {
+                        GetApplicableIngredientRequest getApplicableIngredientRequest = new()
+                        {
+                            Id = SelectedIngredientId
+                        };
+                        GetApplicableIngredientResponse? getApplicableIngredientResponse = await unitOfWork.GetAsync<ApplicableIngredient, GetApplicableIngredientRequest, GetApplicableIngredientResponse>(getApplicableIngredientRequest);
+                        if (getApplicableIngredientResponse != null)
+                        {
+                            UpdateAppliedIngredientRequest updateAppliedIngredientRequest = new()
+                            {
+                                IngredientId = getApplicableIngredientResponse.Id,
+                                Name = getApplicableIngredientResponse.Name,
+                                Description = getApplicableIngredientResponse.Description,
+                            };
+                            AppliedIngredients.Add(updateAppliedIngredientRequest);
+                            await GetApplicableIngredientsAsync();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(AddAppliedIngredientAsync));
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
+        }
+
         public async Task<Guid?> CreateAsync()
         {
             try
@@ -109,6 +182,7 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
                 await SaveAsync();
                 logger.LogInformation("Editing recipe...");
                 Steps.ToList().ForEach(c => c.RecipeId = createRecipeResponse!.Id);
+                AppliedIngredients.ToList().ForEach(c => c.RecipeId = createRecipeResponse!.Id);
                 UpdateRecipeRequest updateRecipeRequest = new()
                 {
                     Id = createRecipeResponse!.Id,

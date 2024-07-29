@@ -18,7 +18,9 @@ namespace RecipeGenerator.Views.Create.Recipes
             if (ViewModel != null)
             {
                 ViewModel.PropertyChanged += (sender, e) => StateHasChanged();
+                await ViewModel.GetApplicableIngredientsAsync();
             }
+
             await base.OnInitializedAsync();
         }
     }
