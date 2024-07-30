@@ -67,46 +67,21 @@
         <div>Ingredients:</div>
         @foreach (var ingredient in ViewModel.Ingredients)
         {
-            <div style="display: flex; flex-direction: column">
-                <div style="display: flex; flex-direction: row">
-                    <div>
-                        @(nameof(ingredient.Name)): 
-                    </div>
-                    <div>
-                        @ingredient.Name
-                    </div>
-                </div>
-            </div>
-            <div style="display: flex; flex-direction: column">
-                <div style="display: flex; flex-direction: row">
-                    <div>
-                        @(nameof(ingredient.Description)): 
-                    </div>
-                    <div>
-                        @ingredient.Description
+                <div style="display: flex; flex-direction: column" title="@ingredient.Description">
+                    <div style="display: flex; flex-direction: row">
+                        <div>
+                            @(nameof(ingredient.Name)): 
+                        </div>
+                        <div>
+                            @ingredient.Name
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div style="display: flex; flex-direction: column">
-                <div style="display: flex; flex-direction: row">
-                    <div>
-                        @(nameof(ingredient.CreatedAt)): 
-                    </div>
-                    <div>
-                        @ingredient.CreatedAt
-                    </div>
+                <div>
+                    <a href="@($"/details-ingredient/{ingredient.IngredientId}")">
+                        More...
+                    </a>
                 </div>
-            </div>
-            <div style="display: flex; flex-direction: column">
-                <div style="display: flex; flex-direction: row">
-                    <div>
-                        @(nameof(ingredient.UpdatedAt)): 
-                    </div>
-                    <div>
-                        @ingredient.UpdatedAt
-                    </div>
-                </div>
-            </div>
         }
     </div>
     <div style="display: flex; flex-direction: column">
