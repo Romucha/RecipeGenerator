@@ -95,4 +95,35 @@ public class ListRecipesViewModel : ObservableObject
             await GetRecipesAsync();
         }
     }
+
+    public async Task DeleteRecipeAsync(Guid id)
+    {
+        try
+        {
+            logger.LogInformation($"Deleting recipe {id}...");
+            var item = Recipes.FirstOrDefault(x => x.Id == id);
+            if (item != null)
+            {
+                Recipes.Remove(item);
+
+                DeleteRecipeRequest request = new()
+                {
+                    Id = id
+                };
+                DeleteRecipeResponse? deleteRecipeResponse = await unitOfWork.DeleteAsync<Recipe, DeleteRecipeRequest, DeleteRecipeResponse>(request);
+                if (deleteRecipeResponse != null)
+                {
+                    await unitOfWork.SaveChangesAsync();
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            logger.LogError(ex, nameof(DeleteRecipeAsync));
+        }
+        finally
+        {
+            logger.LogInformation("Done.");
+        }
+    }
 }

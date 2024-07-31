@@ -34,10 +34,11 @@
     <div style="display: flex; flex-direction: column">
         @foreach (var recipe in ViewModel.Recipes)
         {
-           <a href="@($"/details-recipe/{recipe.Id}")">
+            <a href="@($"/details-recipe/{recipe.Id}")">
                 <div style="background-color: lightgray;" title="@recipe.Description">@recipe.Name</div>
                 <div>@recipe.UpdatedAt</div>
-           </a>
+            </a>
+            <div class="btn-primary" onclick="@(async () => { await ViewModel.DeleteRecipeAsync(recipe.Id); })">Delete recipe</div>
         }
     </div>
 </div>
