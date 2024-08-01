@@ -43,7 +43,10 @@
         <div>
             @foreach (var appliedIngredient in ViewModel.AppliedIngredients)
             {
-                <div style="margin: 5px; outline: solid 5px;">@appliedIngredient.Name</div>
+                <div style="margin: 5px; outline: solid 5px;">
+                    <div>@appliedIngredient.Name</div>
+                    <div class="btn-secondary" onclick="@(async () => { await ViewModel.DeleteAppliedIngredientAsync(appliedIngredient.Id); })">Delete ingredient</div>
+                </div>
             }
         </div>
         <div style="display: flex; flex-direction: column">

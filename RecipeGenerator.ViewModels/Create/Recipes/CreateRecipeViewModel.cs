@@ -153,6 +153,7 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
                         {
                             UpdateAppliedIngredientRequest updateAppliedIngredientRequest = new()
                             {
+                                Id = createAppliedIndredientResponse.Id,
                                 IngredientId = getApplicableIngredientResponse.Id,
                                 Name = getApplicableIngredientResponse.Name,
                                 Description = getApplicableIngredientResponse.Description,
@@ -286,6 +287,37 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(AddStepAsync));
+                throw;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
+        }
+        
+        public async Task DeleteAppliedIngredientAsync(Guid id)
+        {
+            try
+            {
+                logger.LogInformation($"Deleting applied ingredient {id}...");
+                var appliedIngredient = AppliedIngredients.FirstOrDefault(s => s.Id == id);
+                if (appliedIngredient != null)
+                {
+                    DeleteAppliedIngredientRequest deleteAppliedIngredientRequest = new()
+                    {
+                        Id = id
+                    };
+                    DeleteAppliedIngredientResponse? deleteAppliedIngredientResponse = await unitOfWork.DeleteAsync<AppliedIngredient, DeleteAppliedIngredientRequest, DeleteAppliedIngredientResponse>(deleteAppliedIngredientRequest);
+                    if (deleteAppliedIngredientResponse != null)
+                    {
+                        await SaveAsync();
+                        AppliedIngredients.Remove(appliedIngredient);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(DeleteAppliedIngredientAsync));
                 throw;
             }
             finally
