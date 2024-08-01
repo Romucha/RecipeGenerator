@@ -18,6 +18,9 @@ namespace RecipeGenerator.Views.Create.Recipes
             if (ViewModel != null)
             {
                 ViewModel.PropertyChanged += (sender, e) => StateHasChanged();
+                ViewModel.Steps.CollectionChanged += (sender, e) => StateHasChanged();
+                ViewModel.ApplicableIngredients.CollectionChanged += (sender, e) => StateHasChanged();
+                ViewModel.AppliedIngredients.CollectionChanged += (sender, e) => StateHasChanged();
                 await ViewModel.GetApplicableIngredientsAsync();
             }
 

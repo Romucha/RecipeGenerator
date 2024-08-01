@@ -124,6 +124,7 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(GetApplicableIngredientsAsync));
+                throw;
             }
             finally
             {
@@ -165,6 +166,7 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(AddAppliedIngredientAsync));
+                throw;
             }
             finally
             {
@@ -172,7 +174,7 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
             }
         }
 
-        public async Task<Guid?> CreateAsync()
+        public async Task CreateAsync()
         {
             try
             {
@@ -199,15 +201,12 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
                 if (updateRecipeResponse != null)
                 {
                     await SaveAsync();
-                    return updateRecipeResponse.Id;
                 }
-
-                return null;
             }
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(CreateAsync));
-                return null;
+                throw;
             }
             finally
             {
@@ -225,6 +224,7 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(SaveAsync));
+                throw;
             }
             finally
             {
@@ -236,7 +236,6 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
         {
             try
             {
-                //TO-DO: the process breaks because of recipeID constraint. Make it nullable?
                 CreateStepRequest createStepRequest = new();
                 CreateStepResponse? createStepResponse = await unitOfWork.CreateAsync<Step, CreateStepRequest, CreateStepResponse>(createStepRequest);
                 if (createStepResponse != null)
@@ -253,6 +252,7 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(AddStepAsync));
+                throw;
             }
             finally
             {
@@ -260,15 +260,33 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
             }
         }
 
-        public async Task DeleteStepAsync(CancellationToken cancellationToken = default)
+        public async Task DeleteStepAsync(Guid id, CancellationToken cancellationToken = default)
         {
             try
             {
-                logger.LogInformation("Deleting step...");
+                logger.LogInformation($"Deleting step {id}...");
+                var step = Steps.FirstOrDefault(s => s.Id == id);
+                if (step != null)
+                {
+                    DeleteStepRequest deleteStepRequest = new()
+                    {
+                        Id = step.Id,
+                    };
+
+                    DeleteStepResponse? deleteStepResponse = await unitOfWork.DeleteAsync<Step, DeleteStepRequest, DeleteStepResponse>(deleteStepRequest);
+                    if (deleteStepResponse != null)
+                    {
+                        await SaveAsync();
+                        Steps.Where(c => c.Index > step.Index).ToList().ForEach(s => --s.Index);
+                        --StepIndex;
+                        Steps.Remove(step);
+                    }
+                }
             }
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(AddStepAsync));
+                throw;
             }
             finally
             {

@@ -30,6 +30,9 @@
             <div>Ingredients</div>
             <div class="btn-primary" onclick="@ViewModel.AddAppliedIngredientAsync">Add ingredient</div>
             <InputSelect @bind-Value="@ViewModel.SelectedIngredientId">
+                <option value="">
+                    Select ingredient...
+                </option>
                 @foreach (var ingredient in ViewModel.ApplicableIngredients)
                 {
                     <option value="@ingredient.Id">@ingredient.Name</option>
@@ -57,6 +60,7 @@
                         @nameof(s.Description)
                         <InputText @bind-Value="@s.Description"/>
                     </div>
+                    <div class="btn-primary" onclick="@(async () => { await ViewModel.DeleteStepAsync(s.Id); })">Delete step</div>
                 </div>
             }
         </div>
