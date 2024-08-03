@@ -26,6 +26,13 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
             this.unitOfWork = unitOfWork;
         }
 
+        private Guid id;
+        public Guid Id
+        {
+            get => id;
+            set => this.SetProperty(ref id, value);
+        }
+
         private DateTime createdAt;
         public DateTime CreatedAt 
         {
@@ -107,6 +114,7 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
                 GetRecipeResponse? response = await unitOfWork.GetAsync<Recipe, GetRecipeRequest, GetRecipeResponse>(getRecipeRequest);
                 if (response != null)
                 {
+                    Id = recipeId;
                     Name = response.Name;
                     Description = response.Description;
                     Image = Convert.ToBase64String(response.Image);

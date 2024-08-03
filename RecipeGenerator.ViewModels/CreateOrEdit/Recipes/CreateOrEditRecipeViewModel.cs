@@ -19,14 +19,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.ViewModels.Create.Ingredients
+namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
 {
-    public class CreateRecipeViewModel : ObservableObject
+    public class CreateOrEditRecipeViewModel : ObservableObject
     {
-        private readonly ILogger<CreateRecipeViewModel> logger;
+        private readonly ILogger<CreateOrEditRecipeViewModel> logger;
         private readonly IUnitOfWork unitOfWork;
 
-        public CreateRecipeViewModel(ILogger<CreateRecipeViewModel> logger, IUnitOfWork unitOfWork)
+        public CreateOrEditRecipeViewModel(ILogger<CreateOrEditRecipeViewModel> logger, IUnitOfWork unitOfWork)
         {
             this.logger = logger;
             this.unitOfWork = unitOfWork;
@@ -104,7 +104,60 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
 
         public Guid SelectedIngredientId { get; set; } = default!;
 
-        public async Task GetApplicableIngredientsAsync()
+        public async Task InitializeAsync(Guid? id)
+        {
+            try
+            {
+                logger.LogInformation($"Initializing view model with recipe {id}...");
+                await GetApplicableIngredientsAsync();
+                if (id != null)
+                {
+                    Guid recipeId = (Guid)id;
+                    GetRecipeRequest request = new GetRecipeRequest()
+                    {
+                        Id = recipeId
+                    };
+
+                    GetRecipeResponse? getRecipeResponse = await unitOfWork.GetAsync<Recipe, GetRecipeRequest, GetRecipeResponse>(request);
+                    if (getRecipeResponse != null)
+                    {
+                        RecipeName = getRecipeResponse.Name;
+                        RecipeDescription = getRecipeResponse.Description;
+                        RecipeCourseType = (Course)getRecipeResponse.CourseType;
+                        RecipeImage = getRecipeResponse.Image;
+                        RecipePortions = getRecipeResponse.Portions;
+                        RecipeEstimatedTime = getRecipeResponse.EstimatedTime.TotalMinutes;
+                        Steps = new ObservableCollection<UpdateStepRequest>(getRecipeResponse.Steps.Select(c => new UpdateStepRequest()
+                        {
+                            Id = c.Id,
+                            Description = c.Description,
+                            Photos = c.Photos,
+                            Index = c.Index,
+                            Name = c.Name,
+                            RecipeId = recipeId,
+                        }));
+                        AppliedIngredients = new ObservableCollection<UpdateAppliedIngredientRequest>(getRecipeResponse.Ingredients.Select(c => new UpdateAppliedIngredientRequest()
+                        {
+                            Id = c.Id,
+                            Name = c.Name,
+                            Description = c.Description,
+                            IngredientId = c.IngredientId,
+                            RecipeId = c.RecipeId,
+                        }));
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(InitializeAsync));
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
+        }
+
+        private async Task GetApplicableIngredientsAsync()
         {
             try
             {
@@ -294,7 +347,7 @@ namespace RecipeGenerator.ViewModels.Create.Ingredients
                 logger.LogInformation("Done.");
             }
         }
-        
+
         public async Task DeleteAppliedIngredientAsync(Guid id)
         {
             try

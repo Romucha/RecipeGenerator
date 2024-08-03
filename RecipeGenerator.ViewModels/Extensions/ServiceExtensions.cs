@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using RecipeGenerator.ViewModels.About;
-using RecipeGenerator.ViewModels.Create.Ingredients;
+using RecipeGenerator.ViewModels.CreateOrEdit.Ingredients;
+using RecipeGenerator.ViewModels.CreateOrEdit.Recipes;
 using RecipeGenerator.ViewModels.Details.Ingredients;
 using RecipeGenerator.ViewModels.Details.Recipes;
 using RecipeGenerator.ViewModels.Home;
@@ -34,9 +35,9 @@ namespace RecipeGenerator.ViewModels.Extensions
 
         private static void create(IServiceCollection services)
         {
-            services.AddTransient<CreateIngredientViewModel>();
+            services.AddTransient<CreateOrEditIngredientViewModel>();
 
-            services.AddTransient<CreateRecipeViewModel>();
+            services.AddTransient<CreateOrEditRecipeViewModel>();
         }
 
         private static void details(IServiceCollection services)

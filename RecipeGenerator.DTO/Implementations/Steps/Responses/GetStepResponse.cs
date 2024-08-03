@@ -38,31 +38,11 @@ namespace RecipeGenerator.DTO.Implementations.Steps.Responses
         /// <summary>
         /// Image.
         /// </summary>
-        public byte[] Image { get; set; } = [];
+        public List<byte[]> Photos { get; set; } = [];
 
         /// <summary>
-        /// Course type.
+        /// Index.
         /// </summary>
-        public int CourseType { get; set; }
-
-        /// <summary>
-        /// Approximate time to cook the dish.
-        /// </summary>
-        public TimeSpan EstimatedTime { get; set; }
-
-        /// <summary>
-        /// Number of portions.
-        /// </summary>
-        public int Portions { get; set; }
-
-        /// <summary>
-        /// List of steps.
-        /// </summary>
-        public List<GetStepResponse> Steps { get; set; } = new();
-
-        /// <summary>
-        /// List of ingredients.
-        /// </summary>
-        public List<GetAppliedIngredientResponse> Ingredients { get; set; } = new();
+        public int Index { get; set; }
     }
 }

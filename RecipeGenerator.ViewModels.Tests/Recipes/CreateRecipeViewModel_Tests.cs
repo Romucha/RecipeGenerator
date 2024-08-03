@@ -17,7 +17,8 @@ using System.Threading.Tasks;
 using Moq;
 using RecipeGenerator.Utility.Mapping;
 using Microsoft.EntityFrameworkCore.Diagnostics;
-using RecipeGenerator.ViewModels.Create.Ingredients;
+using RecipeGenerator.ViewModels.CreateOrEdit.Recipes;
+using RecipeGenerator.Database.Seeding.ApplicableIngredients;
 
 namespace RecipeGenerator.ViewModels.Tests.Recipes
 {
@@ -31,7 +32,7 @@ namespace RecipeGenerator.ViewModels.Tests.Recipes
         protected readonly IRepository<Step> stepRepository;
         protected readonly IRepository<Recipe> recipeRepository;
 
-        protected readonly CreateRecipeViewModel createRecipeViewModel;
+        protected readonly CreateOrEditRecipeViewModel createRecipeViewModel;
 
         public CreateRecipeViewModel_Tests()
         {
@@ -40,7 +41,9 @@ namespace RecipeGenerator.ViewModels.Tests.Recipes
             DbContextOptions<RecipeGeneratorDbContext> dbContextOptions = new DbContextOptionsBuilder<RecipeGeneratorDbContext>()
                 .UseInMemoryDatabase(Guid.NewGuid().ToString())
                 .ConfigureWarnings(b => b.Ignore(InMemoryEventId.TransactionIgnoredWarning)).Options;
-            dbContext = new RecipeGeneratorDbContext(configuration, dbContextOptions);
+            ApplicableIngredientsSeeder seeder = new ApplicableIngredientsSeeder(new NullLogger<ApplicableIngredientsSeeder>());
+
+            dbContext = new RecipeGeneratorDbContext(seeder, configuration, dbContextOptions);
 
             ILogger<Repository<ApplicableIngredient>> raiLogger = new NullLogger<Repository<ApplicableIngredient>>();
             applicableIngredientRepository = new Repository<ApplicableIngredient>(dbContext, raiLogger);
@@ -66,7 +69,7 @@ namespace RecipeGenerator.ViewModels.Tests.Recipes
                 applicableIngredientRepository,
                 mapper);
 
-            createRecipeViewModel = new CreateRecipeViewModel(new NullLogger<CreateRecipeViewModel>(), unitOfWork);
+            createRecipeViewModel = new CreateOrEditRecipeViewModel(new NullLogger<CreateOrEditRecipeViewModel>(), unitOfWork);
         }
 
         [Fact]
@@ -76,21 +79,20 @@ namespace RecipeGenerator.ViewModels.Tests.Recipes
             createRecipeViewModel.RecipeName = "Test";
             createRecipeViewModel.RecipeDescription = "Test";
             createRecipeViewModel.RecipeCourseType = Course.Horsdoeuvres;
-            createRecipeViewModel.RecipeEstimatedTime = TimeSpan.FromHours(10);
-            createRecipeViewModel.RecipeImage = "Test";
+            createRecipeViewModel.RecipeEstimatedTime = 10;
+            createRecipeViewModel.RecipeImage = [];
             createRecipeViewModel.RecipePortions = 10;
             //act
-            var id = await createRecipeViewModel.CreateAsync();
+            await createRecipeViewModel.CreateAsync();
             await createRecipeViewModel.SaveAsync();
             //assert
-            Assert.NotNull(id);
-            var recipe = await dbContext.FindAsync<Recipe>(id);
+            var recipe = await dbContext.Recipes.FirstOrDefaultAsync(c => c.Name == createRecipeViewModel.RecipeName);
             Assert.NotNull(recipe);
             Assert.Equal(createRecipeViewModel.RecipeName, recipe.Name);
             Assert.Equal(createRecipeViewModel.RecipeDescription, recipe.Description);
             Assert.Equal(createRecipeViewModel.RecipeCourseType, recipe.CourseType);
             Assert.Equal(createRecipeViewModel.RecipeImage, recipe.Image);
-            Assert.Equal(createRecipeViewModel.RecipeEstimatedTime, recipe.EstimatedTime);
+            Assert.Equal(createRecipeViewModel.RecipeEstimatedTime, recipe.EstimatedTime.TotalMinutes);
             Assert.Equal(createRecipeViewModel.RecipePortions, recipe.Portions);
         }
     }

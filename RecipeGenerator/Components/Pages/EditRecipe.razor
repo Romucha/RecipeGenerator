@@ -1,0 +1,8 @@
+﻿@page "/edit-recipe/{id:guid}"
+
+<CreateOrEditRecipeView RecipeId="id"/>
+
+@code {
+    [Parameter]
+    public Guid id { get; set; }
+}
