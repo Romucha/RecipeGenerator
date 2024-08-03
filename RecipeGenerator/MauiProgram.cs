@@ -6,6 +6,8 @@ using RecipeGenerator.Utility.Extensions;
 using RecipeGenerator.Database.Extenstions;
 using RecipeGenerator.ViewModels.Extensions;
 using System.Reflection;
+using RecipeGenerator.ViewModels.Services;
+using RecipeGenerator.Services;
 
 namespace RecipeGenerator
 {
@@ -39,7 +41,7 @@ namespace RecipeGenerator
             builder.Services.AddRecipeGeneratorFunctionality();
             builder.Services.AddRecipeGeneratorViewModels();
             builder.Services.AddRecipeGeneratorDatabase();
-
+            builder.Services.AddTransient<IMediaProviderService, MediaProviderService>();
 #if DEBUG
             builder.Services.AddBlazorWebViewDeveloperTools();
             builder.Logging.AddDebug();

@@ -12,6 +12,7 @@ using RecipeGenerator.DTO.Implementations.Steps.Responses;
 using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Models.Recipes;
 using RecipeGenerator.Models.Steps;
+using RecipeGenerator.ViewModels.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -25,11 +26,13 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
     {
         private readonly ILogger<CreateOrEditRecipeViewModel> logger;
         private readonly IUnitOfWork unitOfWork;
+        private readonly IMediaProviderService mediaProviderService;
 
-        public CreateOrEditRecipeViewModel(ILogger<CreateOrEditRecipeViewModel> logger, IUnitOfWork unitOfWork)
+        public CreateOrEditRecipeViewModel(ILogger<CreateOrEditRecipeViewModel> logger, IUnitOfWork unitOfWork, IMediaProviderService mediaProviderService)
         {
             this.logger = logger;
             this.unitOfWork = unitOfWork;
+            this.mediaProviderService = mediaProviderService;
         }
 
         private string recipeName = default!;
@@ -372,6 +375,87 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             {
                 logger.LogError(ex, nameof(DeleteAppliedIngredientAsync));
                 throw;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
+        }
+
+        public async Task TakeRecipePhotoAsync()
+        {
+            try
+            {
+                logger.LogInformation("Taking a photo for the recipe...");
+                RecipeImage = await mediaProviderService.TakePhotoAsync();
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(TakeRecipePhotoAsync));
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
+        }
+
+        public async Task SelectRecipePhotoAsync()
+        {
+            try
+            {
+                logger.LogInformation("Selecting a photo for the recipe from file system...");
+                RecipeImage = await mediaProviderService.SelectPhotoAsync();
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(SelectRecipePhotoAsync));
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
+        }
+
+        public async Task TakeStepPhotoAsync(Guid stepId)
+        {
+            try
+            {
+                logger.LogInformation($"Taking a photo for the step {stepId}...");
+                var step = Steps.FirstOrDefault(s => s.Id == stepId);
+                if (step != null)
+                {
+                    if (step.Photos is null)
+                        step.Photos = new();
+                    step.Photos.Add(await mediaProviderService.TakePhotoAsync());
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(TakeRecipePhotoAsync));
+                throw;
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
+        }
+
+        public async Task SelectStepPhotoAsync(Guid stepId)
+        {
+            try
+            {
+                logger.LogInformation($"Selecting a photo for the step {stepId} from file system...");
+                var step = Steps.FirstOrDefault(s => s.Id == stepId);
+                if (step != null)
+                {
+                    if (step.Photos is null)
+                        step.Photos = new();
+                    step.Photos.Add(await mediaProviderService.SelectPhotoAsync());
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(SelectRecipePhotoAsync));
             }
             finally
             {
