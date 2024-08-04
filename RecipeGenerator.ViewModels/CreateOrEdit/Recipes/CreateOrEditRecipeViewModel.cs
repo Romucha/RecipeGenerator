@@ -28,6 +28,8 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
         private readonly IUnitOfWork unitOfWork;
         private readonly IMediaProviderService mediaProviderService;
 
+        private Guid RecipeId;
+
         public CreateOrEditRecipeViewModel(ILogger<CreateOrEditRecipeViewModel> logger, IUnitOfWork unitOfWork, IMediaProviderService mediaProviderService)
         {
             this.logger = logger;
@@ -115,10 +117,10 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                 await GetApplicableIngredientsAsync();
                 if (id != null)
                 {
-                    Guid recipeId = (Guid)id;
+                    RecipeId = (Guid)id;
                     GetRecipeRequest request = new GetRecipeRequest()
                     {
-                        Id = recipeId
+                        Id = RecipeId
                     };
 
                     GetRecipeResponse? getRecipeResponse = await unitOfWork.GetAsync<Recipe, GetRecipeRequest, GetRecipeResponse>(request);
@@ -137,7 +139,7 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                             Photos = c.Photos,
                             Index = c.Index,
                             Name = c.Name,
-                            RecipeId = recipeId,
+                            RecipeId = RecipeId,
                         }));
                         AppliedIngredients = new ObservableCollection<UpdateAppliedIngredientRequest>(getRecipeResponse.Ingredients.Select(c => new UpdateAppliedIngredientRequest()
                         {
@@ -236,15 +238,28 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             try
             {
                 logger.LogInformation("Creating recipe...");
-                CreateRecipeRequest createRecipeRequest = new();
-                CreateRecipeResponse? createRecipeResponse = await unitOfWork.CreateAsync<Recipe, CreateRecipeRequest, CreateRecipeResponse>(createRecipeRequest);
-                await SaveAsync();
+                GetRecipeRequest? getRecipeRequest = new()
+                {
+                    Id = RecipeId
+                };
+                GetRecipeResponse? getRecipeResponse = await unitOfWork.GetAsync<Recipe, GetRecipeRequest, GetRecipeResponse>(getRecipeRequest);
+                if (getRecipeResponse == null)
+                {
+
+                    CreateRecipeRequest createRecipeRequest = new();
+                    CreateRecipeResponse? createRecipeResponse = await unitOfWork.CreateAsync<Recipe, CreateRecipeRequest, CreateRecipeResponse>(createRecipeRequest);
+                    if (createRecipeResponse != null)
+                    {
+                        RecipeId = createRecipeResponse.Id;
+                    }
+                    await SaveAsync();
+                }
                 logger.LogInformation("Editing recipe...");
-                Steps.ToList().ForEach(c => c.RecipeId = createRecipeResponse!.Id);
-                AppliedIngredients.ToList().ForEach(c => c.RecipeId = createRecipeResponse!.Id);
+                Steps.ToList().ForEach(c => c.RecipeId = RecipeId);
+                AppliedIngredients.ToList().ForEach(c => c.RecipeId = RecipeId);
                 UpdateRecipeRequest updateRecipeRequest = new()
                 {
-                    Id = createRecipeResponse!.Id,
+                    Id = RecipeId,
                     Name = RecipeName,
                     Description = RecipeDescription,
                     CourseType = (int?)RecipeCourseType,
