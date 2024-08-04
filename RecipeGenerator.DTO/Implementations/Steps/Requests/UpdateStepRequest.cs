@@ -9,11 +9,8 @@ using RecipeGenerator.DTO.Interfaces.Requests;
 
 namespace RecipeGenerator.DTO.Implementations.Steps.Requests
 {
-    public record UpdateStepRequest : IUpdateRequest
+    public record UpdateStepRequest
     {
-        /// <inheritdoc/>
-        public Guid Id { get; set; }
-
         /// <summary>
         /// Display name.
         /// </summary>

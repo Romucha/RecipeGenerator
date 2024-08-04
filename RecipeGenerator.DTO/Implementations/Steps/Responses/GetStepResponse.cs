@@ -44,5 +44,10 @@ namespace RecipeGenerator.DTO.Implementations.Steps.Responses
         /// Index.
         /// </summary>
         public int Index { get; set; }
+
+        /// <summary>
+        /// Identifier of a parent recipe.
+        /// </summary>
+        public Guid RecipeId { get; set; }
     }
 }

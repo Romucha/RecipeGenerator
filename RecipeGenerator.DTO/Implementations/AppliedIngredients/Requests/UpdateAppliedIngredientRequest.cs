@@ -9,13 +9,8 @@ using RecipeGenerator.DTO.Interfaces.Requests;
 
 namespace RecipeGenerator.DTO.Implementations.AppliedIngredients.Requests
 {
-    public record UpdateAppliedIngredientRequest : IUpdateRequest
-    {
-        /// <summary>
-        /// Identifier.
-        /// </summary>
-        public Guid Id { get; set; }
-        
+    public record UpdateAppliedIngredientRequest
+    {        
         /// <summary>
         /// Name of the source ingredient.
         /// </summary>

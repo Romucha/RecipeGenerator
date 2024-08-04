@@ -110,17 +110,15 @@ namespace RecipeGenerator.Database.Tests.UnitsOfWork.Recipes
                 throw new NullReferenceException();
             request.Name = nameof(EditRequest);
             request.Description = nameof(EditRequest);
-            request.Image = nameof(EditRequest);
+            request.Image = [];
             request.EstimatedTime = TimeSpan.FromMinutes(10);
             request.Portions = 10;
             request.Ingredients = _appliedIngredients.Select(c => new UpdateAppliedIngredientRequest()
             {
-                Id = c.Id,
                 IngredientId = c.IngredientId,
             }).ToList()!;
             request.Steps = _steps.Select(c => new UpdateStepRequest()
             {
-                Id =c.Id,
                 Name = c.Name,
                 Description = c.Description,
                 Index = c.Index,

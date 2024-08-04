@@ -79,8 +79,8 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             set => SetProperty(ref recipePortions, value);
         }
 
-        private ObservableCollection<UpdateStepRequest> steps = new();
-        public ObservableCollection<UpdateStepRequest> Steps
+        private ObservableCollection<GetStepResponse> steps = new();
+        public ObservableCollection<GetStepResponse> Steps
         {
             get => steps;
             set => SetProperty(ref steps, value);
@@ -93,8 +93,8 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             set => SetProperty(ref stepIndex, value);
         }
 
-        private ObservableCollection<UpdateAppliedIngredientRequest> appliedIngredients = new();
-        public ObservableCollection<UpdateAppliedIngredientRequest> AppliedIngredients
+        private ObservableCollection<GetAppliedIngredientResponse> appliedIngredients = new();
+        public ObservableCollection<GetAppliedIngredientResponse> AppliedIngredients
         {
             get => appliedIngredients;
             set => SetProperty(ref appliedIngredients, value);
@@ -132,7 +132,7 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                         RecipeImage = getRecipeResponse.Image;
                         RecipePortions = getRecipeResponse.Portions;
                         RecipeEstimatedTime = getRecipeResponse.EstimatedTime.TotalMinutes;
-                        Steps = new ObservableCollection<UpdateStepRequest>(getRecipeResponse.Steps.Select(c => new UpdateStepRequest()
+                        Steps = new ObservableCollection<GetStepResponse>(getRecipeResponse.Steps.Select(c => new GetStepResponse()
                         {
                             Id = c.Id,
                             Description = c.Description,
@@ -141,7 +141,7 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                             Name = c.Name,
                             RecipeId = RecipeId,
                         }));
-                        AppliedIngredients = new ObservableCollection<UpdateAppliedIngredientRequest>(getRecipeResponse.Ingredients.Select(c => new UpdateAppliedIngredientRequest()
+                        AppliedIngredients = new ObservableCollection<GetAppliedIngredientResponse>(getRecipeResponse.Ingredients.Select(c => new GetAppliedIngredientResponse()
                         {
                             Id = c.Id,
                             Name = c.Name,
@@ -209,14 +209,13 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                         GetApplicableIngredientResponse? getApplicableIngredientResponse = await unitOfWork.GetAsync<ApplicableIngredient, GetApplicableIngredientRequest, GetApplicableIngredientResponse>(getApplicableIngredientRequest);
                         if (getApplicableIngredientResponse != null)
                         {
-                            UpdateAppliedIngredientRequest updateAppliedIngredientRequest = new()
+                            GetAppliedIngredientResponse getAppliedIngredientResponse = new()
                             {
-                                Id = createAppliedIndredientResponse.Id,
                                 IngredientId = getApplicableIngredientResponse.Id,
                                 Name = getApplicableIngredientResponse.Name,
                                 Description = getApplicableIngredientResponse.Description,
                             };
-                            AppliedIngredients.Add(updateAppliedIngredientRequest);
+                            AppliedIngredients.Add(getAppliedIngredientResponse);
                             await GetApplicableIngredientsAsync();
                         }
                     }
@@ -266,8 +265,23 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                     EstimatedTime = TimeSpan.FromMinutes(RecipeEstimatedTime),
                     Image = RecipeImage,
                     Portions = RecipePortions,
-                    Steps = [.. Steps],
-                    Ingredients = [.. AppliedIngredients]
+                    Steps = Steps.Select(c =>
+                        new UpdateStepRequest
+                        {
+                            Name = c.Name,
+                            Description = c.Description,
+                            Index = c.Index,
+                            Photos = c.Photos,
+                            RecipeId = c.RecipeId,
+                        }).ToList()!,
+                    Ingredients = AppliedIngredients.Select(c => 
+                        new UpdateAppliedIngredientRequest()
+                        {
+                            Name = c.Name,
+                            Description= c.Description,
+                            IngredientId = c.IngredientId,
+                            RecipeId = c.RecipeId,
+                        }).ToList()!
                 };
                 UpdateRecipeResponse? updateRecipeResponse = await unitOfWork.UpdateAsync<Recipe, UpdateRecipeRequest, UpdateRecipeResponse>(updateRecipeRequest);
                 if (updateRecipeResponse != null)
@@ -313,12 +327,12 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                 if (createStepResponse != null)
                 {
                     await SaveAsync();
-                    UpdateStepRequest updateStepRequest = new()
+                    GetStepResponse getStepResponse = new()
                     {
                         Id = createStepResponse.Id,
                         Index = StepIndex++
                     };
-                    Steps.Add(updateStepRequest);
+                    Steps.Add(getStepResponse);
                 }
             }
             catch (Exception ex)
