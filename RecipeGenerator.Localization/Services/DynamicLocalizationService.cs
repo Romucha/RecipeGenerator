@@ -1,36 +1,83 @@
-﻿using Microsoft.Extensions.Logging;
-using RecipeGenerator.Localization.Factories;
-using RecipeGenerator.Resources.Services;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using RecipeGenerator.Resources.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.Localization.Services
+namespace RecipeGenerator.Resources.Services
 {
-    public class DynamicLocalizationServiceProvider
+    /// <summary>
+    /// Provides methods for dynamic change of application culture.
+    /// </summary>
+    public class DynamicLocalizationService : ObservableObject
     {
-        private readonly ILogger<DynamicLocalizationServiceProvider> logger;
-        private readonly DynamicLocalizationServiceFactory factory;
-
-        public DynamicLocalizationServiceProvider(ILogger<DynamicLocalizationServiceProvider> logger, DynamicLocalizationServiceFactory factory)
+        /// <summary>
+        /// Creates a new instance of <see cref="DynamicLocalizationService"/> class.
+        /// <br/> If options are invalid, restores default localization options.
+        /// </summary>
+        /// <param name="logger">Logger service.</param>
+        /// <param name="options">Localization options.</param>
+        public DynamicLocalizationService(ILogger<DynamicLocalizationService> logger, DynamicLocalizationOptions? options)
         {
             this.logger = logger;
-            this.factory = factory;
+            CurrentCulture = options!.CurrentCulture!;
+            Cultures = new ObservableCollection<CultureInfo>(options.Cultures!.Select(c => new CultureInfo(c)));
         }
 
-        private DynamicLocalizationService? dynamicLocalizationService = default!;
+        private string currentCulture = default!;
 
-        public async Task<DynamicLocalizationService?> GetServiceAsync()
+        /// <summary>
+        /// Current culture.
+        /// </summary>
+        public string CurrentCulture
         {
-            if (dynamicLocalizationService is null)
+            get => currentCulture;
+            protected set => SetProperty(ref currentCulture, value);
+        }
+
+        private ObservableCollection<CultureInfo> cultures = default!;
+        private readonly ILogger<DynamicLocalizationService> logger;
+
+        /// <summary>
+        /// Collection of available cultures.
+        /// </summary>
+        public ObservableCollection<CultureInfo> Cultures
+        {
+            get => cultures;
+            protected set => SetProperty(ref cultures, value);
+        }
+
+        /// <summary>
+        /// Set culture.
+        /// </summary>
+        /// <param name="cultureName">A new culture name.</param>
+        public void SetCulture(string cultureName)
+        {
+            try
             {
-                dynamicLocalizationService = await factory.CreateAsync();
+                logger.LogInformation($"Setting up new culture from string: {cultureName}");
+                var culture = Cultures.FirstOrDefault(c => c.Name == cultureName);
+                if (culture is not null)
+                {
+                    CultureInfo.CurrentCulture = culture;
+                    CultureInfo.CurrentUICulture = culture;
+                    CurrentCulture = cultureName;
+                }
             }
-
-            return dynamicLocalizationService;
-
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(SetCulture));
+            }
+            finally
+            {
+                logger.LogInformation("Done.");
+            }
         }
     }
 }
