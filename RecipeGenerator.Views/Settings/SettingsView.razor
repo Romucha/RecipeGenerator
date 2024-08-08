@@ -1,5 +1,16 @@
-﻿<h3>SettingsView</h3>
-
-@code {
-
-}
+﻿<EditForm Model="@ViewModel" OnSubmit="@(async () => { await ViewModel.ChangeCultureAsync(); })">
+    <div style="display: flex; flex-direction: column">
+        <div>Settings</div>
+        <div>
+            <InputSelect @bind-Value="@ViewModel.CurrentCulture">
+                @foreach (var c in ViewModel.Cultures)
+                {
+                    <option value="@c">
+                        @c
+                    </option>
+                }
+            </InputSelect>
+        </div>
+        <button class="btn-primary" type="submit">Save</button>
+    </div>
+</EditForm>

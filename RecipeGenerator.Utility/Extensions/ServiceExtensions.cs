@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
+using RecipeGenerator.Utility.Validation;
 
 namespace RecipeGenerator.Utility.Extensions
 {
@@ -14,6 +15,7 @@ namespace RecipeGenerator.Utility.Extensions
         public static void AddRecipeGeneratorUtility(this IServiceCollection services)
         {
             services.AddAutoMapper(typeof(MapperInitializer));
+            services.AddTransient<RecipeGeneratorValidator>();
         }
     }
 }
