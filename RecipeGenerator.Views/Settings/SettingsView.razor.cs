@@ -22,12 +22,13 @@ namespace RecipeGenerator.Views.Settings
             if (ViewModel != null)
             {
                 ViewModel.PropertyChanged += (sender, e) => StateHasChanged();
+                await ViewModel.InitializeAsync();
                 if (ViewModel.DynamicLocalizationService != null)
                 {
                     ViewModel.DynamicLocalizationService.PropertyChanged += (sender, e) => StateHasChanged();
                 }
-                await ViewModel.InitializeAsync();
             }
+            var strings = StringLocalizer.GetAllStrings();
         }
 
         private string currentCulture = default!;
