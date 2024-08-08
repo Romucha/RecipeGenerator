@@ -27,6 +27,7 @@ namespace RecipeGenerator.Localization.Extensions
                 configuration.Bind(DynamicLocalizationOptions.Localization, options);
             });
             services.AddSingleton<DynamicLocalizationServiceProvider>();
+            services.AddLocalization();
         }
     }
 }

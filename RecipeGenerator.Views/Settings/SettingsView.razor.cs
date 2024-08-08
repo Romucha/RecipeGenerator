@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components;
+using Microsoft.Extensions.Localization;
 using RecipeGenerator.ViewModels.Settings;
 using System;
 using System.Collections.Generic;
@@ -13,13 +14,22 @@ namespace RecipeGenerator.Views.Settings
         [Inject]
         public SettingsViewModel ViewModel { get; set; } = default!;
 
+        [Inject]
+        public IStringLocalizer<SettingsView> StringLocalizer { get; set; } = default!;
+
         protected override async Task OnInitializedAsync()
         {
             if (ViewModel != null)
             {
                 ViewModel.PropertyChanged += (sender, e) => StateHasChanged();
+                if (ViewModel.DynamicLocalizationService != null)
+                {
+                    ViewModel.DynamicLocalizationService.PropertyChanged += (sender, e) => StateHasChanged();
+                }
                 await ViewModel.InitializeAsync();
             }
         }
+
+        private string currentCulture = default!;
     }
 }

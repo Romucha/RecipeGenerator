@@ -1,16 +1,16 @@
-﻿<EditForm Model="@ViewModel" OnSubmit="@(async () => { await ViewModel.ChangeCultureAsync(); })">
+﻿<EditForm Model="@ViewModel" OnSubmit="@(async () => { await ViewModel.ChangeCultureAsync(currentCulture); StateHasChanged(); })">
     <div style="display: flex; flex-direction: column">
         <div>Settings</div>
         <div>
-            <InputSelect @bind-Value="@ViewModel.CurrentCulture">
-                @foreach (var c in ViewModel.Cultures)
+            <InputSelect @bind-Value="@currentCulture">
+                @foreach (var c in ViewModel.DynamicLocalizationService.Cultures)
                 {
-                    <option value="@c">
+                    <option value="@c.Name" checked="@(c.Name == currentCulture)">
                         @c
                     </option>
                 }
             </InputSelect>
         </div>
-        <button class="btn-primary" type="submit">Save</button>
+        <button class="btn-primary" type="submit">@StringLocalizer["Save"]</button>
     </div>
 </EditForm>

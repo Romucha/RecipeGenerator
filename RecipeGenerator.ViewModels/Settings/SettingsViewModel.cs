@@ -15,27 +15,13 @@ namespace RecipeGenerator.ViewModels.Settings
     {
         private readonly ILogger<SettingsViewModel> logger;
         private readonly DynamicLocalizationServiceProvider dynamicLocalizationServiceProvider;
-        private DynamicLocalizationService? dynamicLocalizationService;
+        public DynamicLocalizationService? DynamicLocalizationService;
 
         public SettingsViewModel(ILogger<SettingsViewModel> logger, DynamicLocalizationServiceProvider dynamicLocalizationServiceProvider)
         {
             this.logger = logger;
             this.dynamicLocalizationServiceProvider = dynamicLocalizationServiceProvider;
-            dynamicLocalizationService = default!;
-        }
-
-        private ObservableCollection<string> cultures = new();
-        public ObservableCollection<string> Cultures
-        {
-            get => cultures;
-            set => SetProperty(ref cultures, value);
-        }
-
-        private string currentCulture;
-        public string CurrentCulture
-        {
-            get => currentCulture;
-            set => SetProperty(ref currentCulture, value);
+            DynamicLocalizationService = default!;
         }
 
         public async Task InitializeAsync()
@@ -43,12 +29,7 @@ namespace RecipeGenerator.ViewModels.Settings
             try
             {
                 logger.LogInformation($"Initializing {nameof(SettingsViewModel)}...");
-                dynamicLocalizationService = await dynamicLocalizationServiceProvider.GetServiceAsync();
-                if (dynamicLocalizationService != null)
-                {
-                    Cultures = new(dynamicLocalizationService.Cultures.Select(c => c.Name));
-                    CurrentCulture = dynamicLocalizationService.CurrentCulture;
-                }
+                DynamicLocalizationService = await dynamicLocalizationServiceProvider.GetServiceAsync();
             }
             catch (Exception ex)
             {
@@ -61,14 +42,14 @@ namespace RecipeGenerator.ViewModels.Settings
             }
         }
 
-        public async Task ChangeCultureAsync()
+        public async Task ChangeCultureAsync(string currentCulture)
         {
             try
             {
                 logger.LogInformation("Changing culture...");
-                if (dynamicLocalizationService != null)
+                if (DynamicLocalizationService != null)
                 {
-                    dynamicLocalizationService.SetCulture(CurrentCulture);
+                    DynamicLocalizationService.SetCulture(currentCulture);
                 }
 
                 await Task.CompletedTask;
