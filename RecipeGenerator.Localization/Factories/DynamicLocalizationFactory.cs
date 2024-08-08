@@ -12,34 +12,34 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Localization.Factories
 {
-    public class DynamicLocalizationFactory
+    public class DynamicLocalizationServiceFactory
     {
-        private readonly ILogger<DynamicLocalizationFactory> logger;
+        private readonly ILogger<DynamicLocalizationServiceFactory> logger;
         private readonly ILoggerFactory loggerFactory;
         private readonly IOptions<DynamicLocalizationOptions> options;
         private readonly RecipeGeneratorValidator validator;
 
-        public DynamicLocalizationFactory(ILoggerFactory loggerFactory, IOptions<DynamicLocalizationOptions> options, RecipeGeneratorValidator validator) 
+        public DynamicLocalizationServiceFactory(ILoggerFactory loggerFactory, IOptions<DynamicLocalizationOptions> options, RecipeGeneratorValidator validator) 
         {
             this.loggerFactory = loggerFactory;
-            logger = this.loggerFactory.CreateLogger<DynamicLocalizationFactory>();
+            logger = this.loggerFactory.CreateLogger<DynamicLocalizationServiceFactory>();
             this.options = options;
             this.validator = validator;
         }
 
-        public async Task<DynamicLocalization?> CreateAsync()
+        public async Task<DynamicLocalizationService?> CreateAsync()
         {
             try
             {
                 logger.LogInformation("Cerating dynamic localization service...");
-                var serviceLogger = loggerFactory.CreateLogger<DynamicLocalization>();
+                var serviceLogger = loggerFactory.CreateLogger<DynamicLocalizationService>();
                 var localizationOptions = await validator.ValidateAsync(options.Value);
-                return await Task.FromResult(new DynamicLocalization(serviceLogger, localizationOptions));
+                return await Task.FromResult(new DynamicLocalizationService(serviceLogger, localizationOptions));
             }
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(CreateAsync));
-                return await Task.FromResult<DynamicLocalization>(null);
+                return await Task.FromResult<DynamicLocalizationService>(null);
             }
             finally
             {

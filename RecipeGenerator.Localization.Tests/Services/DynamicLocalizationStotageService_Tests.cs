@@ -17,14 +17,14 @@ namespace RecipeGenerator.Localization.Tests.Services
     public class DynamicLocalizationStotageService_Tests
     {
         private readonly ILoggerFactory loggerFactory;
-        private readonly ILogger<DynamicLocalizationService> logger;
+        private readonly ILogger<DynamicLocalizationServiceProvider> logger;
         private readonly RecipeGeneratorValidator validator;
 
         public DynamicLocalizationStotageService_Tests()
         {
             loggerFactory = new NullLoggerFactory();
             validator = new RecipeGeneratorValidator(loggerFactory.CreateLogger<RecipeGeneratorValidator>());
-            logger = new NullLogger<DynamicLocalizationService>();
+            logger = new NullLogger<DynamicLocalizationServiceProvider>();
         }
 
         [Fact]
@@ -42,8 +42,8 @@ namespace RecipeGenerator.Localization.Tests.Services
                 ]
             };
             var options = Options.Create(localizationOptions);
-            DynamicLocalizationFactory factory = new DynamicLocalizationFactory(loggerFactory, options, validator);
-            DynamicLocalizationService stotageService = new DynamicLocalizationService(logger, factory);
+            DynamicLocalizationServiceFactory factory = new DynamicLocalizationServiceFactory(loggerFactory, options, validator);
+            DynamicLocalizationServiceProvider stotageService = new DynamicLocalizationServiceProvider(logger, factory);
             //act
             var service = await stotageService.GetServiceAsync();
 
@@ -59,8 +59,8 @@ namespace RecipeGenerator.Localization.Tests.Services
             //arrange
             DynamicLocalizationOptions localizationOptions = null;
             var options = Options.Create(localizationOptions);
-            DynamicLocalizationFactory factory = new DynamicLocalizationFactory(loggerFactory, options, validator);
-            DynamicLocalizationService stotageService = new DynamicLocalizationService(logger, factory);
+            DynamicLocalizationServiceFactory factory = new DynamicLocalizationServiceFactory(loggerFactory, options, validator);
+            DynamicLocalizationServiceProvider stotageService = new DynamicLocalizationServiceProvider(logger, factory);
             //act
             var service = await stotageService.GetServiceAsync();
 

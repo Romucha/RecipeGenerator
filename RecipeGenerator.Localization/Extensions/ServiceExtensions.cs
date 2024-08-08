@@ -21,12 +21,12 @@ namespace RecipeGenerator.Localization.Extensions
         /// <param name="configuration">Configuration provider.</param>
         public static void AddRecipeGeneratorResources(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddTransient<DynamicLocalizationFactory>();
+            services.AddTransient<DynamicLocalizationServiceFactory>();
             services.Configure<DynamicLocalizationOptions>(options => 
             { 
                 configuration.Bind(DynamicLocalizationOptions.Localization, options);
             });
-            services.AddSingleton<DynamicLocalizationService>();
+            services.AddSingleton<DynamicLocalizationServiceProvider>();
         }
     }
 }

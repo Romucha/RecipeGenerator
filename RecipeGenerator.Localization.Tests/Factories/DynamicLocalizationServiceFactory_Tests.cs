@@ -40,9 +40,9 @@ namespace RecipeGenerator.Localization.Tests.Factories
                 ]
             };
             var options = Options.Create(localizationOptions);
-            DynamicLocalizationFactory factory = new DynamicLocalizationFactory(loggerFactory, options, validator);
+            DynamicLocalizationServiceFactory factory = new DynamicLocalizationServiceFactory(loggerFactory, options, validator);
             //act
-            DynamicLocalization? service = await factory.CreateAsync()!;
+            DynamicLocalizationService? service = await factory.CreateAsync()!;
             //assert
             Assert.NotNull(service);
             Assert.Equal(localizationOptions.CurrentCulture, service.CurrentCulture);
@@ -65,10 +65,10 @@ namespace RecipeGenerator.Localization.Tests.Factories
             };
             var expectedOptions = DynamicLocalizationOptions.DefaultLocalizationOptions;
             var options = Options.Create(localizationOptions);
-            DynamicLocalizationFactory factory = new DynamicLocalizationFactory(loggerFactory, options, validator);
+            DynamicLocalizationServiceFactory factory = new DynamicLocalizationServiceFactory(loggerFactory, options, validator);
 
             //act
-            DynamicLocalization? service = await factory.CreateAsync()!;
+            DynamicLocalizationService? service = await factory.CreateAsync()!;
 
             //assert
             Assert.Null(service);

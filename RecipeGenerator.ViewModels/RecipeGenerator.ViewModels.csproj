@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RecipeGenerator.Database\RecipeGenerator.Database.csproj" />
+    <ProjectReference Include="..\RecipeGenerator.Localization\RecipeGenerator.Localization.csproj" />
   </ItemGroup>
 
 </Project>

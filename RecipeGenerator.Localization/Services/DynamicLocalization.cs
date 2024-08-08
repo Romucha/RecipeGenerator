@@ -15,15 +15,15 @@ namespace RecipeGenerator.Resources.Services
     /// <summary>
     /// Provides methods for dynamic change of application culture.
     /// </summary>
-    public class DynamicLocalization : ObservableObject
+    public class DynamicLocalizationService : ObservableObject
     {
         /// <summary>
-        /// Creates a new instance of <see cref="DynamicLocalization"/> class.
+        /// Creates a new instance of <see cref="DynamicLocalizationService"/> class.
         /// <br/> If options are invalid, restores default localization options.
         /// </summary>
         /// <param name="logger">Logger service.</param>
         /// <param name="options">Localization options.</param>
-        public DynamicLocalization(ILogger<DynamicLocalization> logger, DynamicLocalizationOptions? options)
+        public DynamicLocalizationService(ILogger<DynamicLocalizationService> logger, DynamicLocalizationOptions? options)
         {
             this.logger = logger;
             CurrentCulture = options!.CurrentCulture!;
@@ -42,7 +42,7 @@ namespace RecipeGenerator.Resources.Services
         }
 
         private ObservableCollection<CultureInfo> cultures = default!;
-        private readonly ILogger<DynamicLocalization> logger;
+        private readonly ILogger<DynamicLocalizationService> logger;
 
         /// <summary>
         /// Collection of available cultures.

@@ -9,20 +9,20 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Localization.Services
 {
-    public class DynamicLocalizationService
+    public class DynamicLocalizationServiceProvider
     {
-        private readonly ILogger<DynamicLocalizationService> logger;
-        private readonly DynamicLocalizationFactory factory;
+        private readonly ILogger<DynamicLocalizationServiceProvider> logger;
+        private readonly DynamicLocalizationServiceFactory factory;
 
-        public DynamicLocalizationService(ILogger<DynamicLocalizationService> logger, DynamicLocalizationFactory factory)
+        public DynamicLocalizationServiceProvider(ILogger<DynamicLocalizationServiceProvider> logger, DynamicLocalizationServiceFactory factory)
         {
             this.logger = logger;
             this.factory = factory;
         }
 
-        private DynamicLocalization? dynamicLocalizationService = default!;
+        private DynamicLocalizationService? dynamicLocalizationService = default!;
 
-        public async Task<DynamicLocalization?> GetServiceAsync()
+        public async Task<DynamicLocalizationService?> GetServiceAsync()
         {
             if (dynamicLocalizationService is null)
             {
