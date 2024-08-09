@@ -2,10 +2,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator", "RecipeGenerator\RecipeGenerator.csproj", "{85F97047-013F-41E2-967F-480CAB874EBC}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Views", "RecipeGenerator.Views\RecipeGenerator.Views.csproj", "{B91096CB-C769-4A6E-9A54-8FC11C678B62}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.ViewModels", "RecipeGenerator.ViewModels\RecipeGenerator.ViewModels.csproj", "{07DABFE2-EA85-4F1E-989B-1DDCFF9F718B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Models", "RecipeGenerator.Models\RecipeGenerator.Models.csproj", "{49001847-EEF2-42DD-AE21-6C5B04F3D78A}"
@@ -38,22 +34,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Database.Te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.ViewModels.Tests", "RecipeGenerator.ViewModels.Tests\RecipeGenerator.ViewModels.Tests.csproj", "{6E69E84D-4887-44F3-B34B-A88854B6158A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator", "RecipeGenerator\RecipeGenerator.csproj", "{5C9BB9AB-0A17-4319-A491-8CB4FA4D34E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.Views", "RecipeGenerator.Views\RecipeGenerator.Views.csproj", "{C7BE868A-1A05-42CD-99B1-F231FD511F65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{85F97047-013F-41E2-967F-480CAB874EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{85F97047-013F-41E2-967F-480CAB874EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{85F97047-013F-41E2-967F-480CAB874EBC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{85F97047-013F-41E2-967F-480CAB874EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{85F97047-013F-41E2-967F-480CAB874EBC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{85F97047-013F-41E2-967F-480CAB874EBC}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{B91096CB-C769-4A6E-9A54-8FC11C678B62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B91096CB-C769-4A6E-9A54-8FC11C678B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B91096CB-C769-4A6E-9A54-8FC11C678B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B91096CB-C769-4A6E-9A54-8FC11C678B62}.Release|Any CPU.Build.0 = Release|Any CPU
 		{07DABFE2-EA85-4F1E-989B-1DDCFF9F718B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{07DABFE2-EA85-4F1E-989B-1DDCFF9F718B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07DABFE2-EA85-4F1E-989B-1DDCFF9F718B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -106,13 +96,19 @@ Global
 		{6E69E84D-4887-44F3-B34B-A88854B6158A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E69E84D-4887-44F3-B34B-A88854B6158A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E69E84D-4887-44F3-B34B-A88854B6158A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C9BB9AB-0A17-4319-A491-8CB4FA4D34E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C9BB9AB-0A17-4319-A491-8CB4FA4D34E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C9BB9AB-0A17-4319-A491-8CB4FA4D34E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C9BB9AB-0A17-4319-A491-8CB4FA4D34E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7BE868A-1A05-42CD-99B1-F231FD511F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7BE868A-1A05-42CD-99B1-F231FD511F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7BE868A-1A05-42CD-99B1-F231FD511F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7BE868A-1A05-42CD-99B1-F231FD511F65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{85F97047-013F-41E2-967F-480CAB874EBC} = {4F925ADA-09FE-4609-918C-9975BA918FA0}
-		{B91096CB-C769-4A6E-9A54-8FC11C678B62} = {4F925ADA-09FE-4609-918C-9975BA918FA0}
 		{07DABFE2-EA85-4F1E-989B-1DDCFF9F718B} = {4F925ADA-09FE-4609-918C-9975BA918FA0}
 		{49001847-EEF2-42DD-AE21-6C5B04F3D78A} = {4FD911E2-367E-4601-9679-2B0719F71556}
 		{C7DFCFA3-F2FB-41C4-A370-B345C566A5E5} = {4FD911E2-367E-4601-9679-2B0719F71556}
@@ -126,6 +122,8 @@ Global
 		{171E408D-D3F7-4023-8C67-A39C32D479CE} = {00C52342-40DC-4B23-99A2-F5E2A32510D7}
 		{2DB1A805-4957-4E00-8A15-42427C01A90F} = {00C52342-40DC-4B23-99A2-F5E2A32510D7}
 		{6E69E84D-4887-44F3-B34B-A88854B6158A} = {4F925ADA-09FE-4609-918C-9975BA918FA0}
+		{5C9BB9AB-0A17-4319-A491-8CB4FA4D34E3} = {4F925ADA-09FE-4609-918C-9975BA918FA0}
+		{C7BE868A-1A05-42CD-99B1-F231FD511F65} = {4F925ADA-09FE-4609-918C-9975BA918FA0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
