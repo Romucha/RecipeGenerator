@@ -12,7 +12,7 @@
             @(nameof(ViewModel.Image)): 
         </div>
         <div>
-            <img src="@($"data:image/gif;base64,{ViewModel.Image}")" alt="@ViewModel.Name" />
+            <img src="@($"data:image/gif;base64,{ViewModel.Image}")" width="50" height="50" alt="@ViewModel.Name" />
         </div>
     </div>
     <div style="display: flex; flex-direction: row">

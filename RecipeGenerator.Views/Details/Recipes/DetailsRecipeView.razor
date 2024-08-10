@@ -1,8 +1,8 @@
 ﻿<div style="display: flex; flex-direction: column">
-    <a class="btn-primary" href="@($"/edit-recipe/{ViewModel.Id}")">Edit recipe</a>
+    <a class="btn-primary" href="@($"/edit-recipe/{ViewModel.Id}")">@StringLocalizer["EditRecipe"]</a>
     <div style="display: flex; flex-direction: row">
         <div>
-            @(nameof(ViewModel.Name)): 
+            @StringLocalizer[nameof(ViewModel.Name)]: 
         </div>
         <div>
             @ViewModel.Name
@@ -10,15 +10,15 @@
     </div>
     <div style="display: flex; flex-direction: row">
         <div>
-            @(nameof(ViewModel.Image)): 
+            @StringLocalizer[nameof(ViewModel.Image)]: 
         </div>
         <div>
-   <img src="@($"data:image/gif;base64,{ViewModel.Image}")" alt="@ViewModel.Name" />
+            <img src="@($"data:image/png;base64,{ViewModel.Image}")" width="150" height="150" alt="@ViewModel.Name" />
         </div>
     </div>
     <div style="display: flex; flex-direction: row">
         <div>
-            @(nameof(ViewModel.Description)): 
+            @StringLocalizer[nameof(ViewModel.Description)]: 
         </div>
         <div>
             @ViewModel.Description
@@ -26,7 +26,7 @@
     </div>
     <div style="display: flex; flex-direction: row">
         <div>
-            @(nameof(ViewModel.Portions)): 
+            @StringLocalizer[nameof(ViewModel.Portions)]: 
         </div>
         <div>
             @ViewModel.Portions
@@ -34,7 +34,7 @@
     </div>
     <div style="display: flex; flex-direction: row">
         <div>
-            @(nameof(ViewModel.EstimatedTime)): 
+            @StringLocalizer[nameof(ViewModel.EstimatedTime)]: 
         </div>
         <div>
             @ViewModel.EstimatedTime
@@ -42,15 +42,7 @@
     </div>
     <div style="display: flex; flex-direction: row">
         <div>
-            @(nameof(ViewModel.Portions)): 
-        </div>
-        <div>
-            @ViewModel.Portions
-        </div>
-    </div>
-    <div style="display: flex; flex-direction: row">
-        <div>
-            @(nameof(ViewModel.CreatedAt)): 
+            @StringLocalizer[nameof(ViewModel.CreatedAt)]: 
         </div>
         <div>
             @ViewModel.CreatedAt
@@ -58,20 +50,20 @@
     </div>
     <div style="display: flex; flex-direction: row">
         <div>
-            @(nameof(ViewModel.UpdatedAt)): 
+            @StringLocalizer[nameof(ViewModel.UpdatedAt)]: 
         </div>
         <div>
             @ViewModel.UpdatedAt
         </div>
     </div>
     <div style="display: flex; flex-direction: column">
-        <div>Ingredients:</div>
+        <div>@StringLocalizer["Ingredients"]</div>
         @foreach (var ingredient in ViewModel.Ingredients)
         {
                 <div style="display: flex; flex-direction: column" title="@ingredient.Description">
                     <div style="display: flex; flex-direction: row">
                         <div>
-                            @(nameof(ingredient.Name)): 
+                            @StringLocalizer[nameof(ingredient.Name)]: 
                         </div>
                         <div>
                             @ingredient.Name
@@ -80,19 +72,19 @@
                 </div>
                 <div>
                     <a href="@($"/details-ingredient/{ingredient.IngredientId}")">
-                        More...
+                        @StringLocalizer["More"]
                     </a>
                 </div>
         }
     </div>
     <div style="display: flex; flex-direction: column">
-        <div>Steps:</div>
+        <div>@StringLocalizer["Steps"]</div>
         @foreach (var step in ViewModel.Steps)
         {
             <div style="display: flex; flex-direction: column">
                 <div style="display: flex; flex-direction: row">
                     <div>
-                        @(nameof(step.Name)): 
+                        @StringLocalizer[nameof(step.Name)]: 
                     </div>
                     <div>
                         @step.Name
@@ -102,7 +94,7 @@
             <div style="display: flex; flex-direction: column">
                 <div style="display: flex; flex-direction: row">
                     <div>
-                        @(nameof(step.Description)): 
+                        @StringLocalizer[nameof(step.Description)]: 
                     </div>
                     <div>
                         @step.Description
@@ -112,7 +104,7 @@
             <div style="display: flex; flex-direction: column">
                 <div style="display: flex; flex-direction: row">
                     <div>
-                        @(nameof(step.CreatedAt)): 
+                        @StringLocalizer[nameof(step.CreatedAt)]: 
                     </div>
                     <div>
                         @step.CreatedAt
@@ -122,7 +114,7 @@
             <div style="display: flex; flex-direction: column">
                 <div style="display: flex; flex-direction: row">
                     <div>
-                        @(nameof(step.UpdatedAt)): 
+                        @StringLocalizer[nameof(step.UpdatedAt)]: 
                     </div>
                     <div>
                         @step.UpdatedAt

@@ -19,4 +19,10 @@
     <ProjectReference Include="..\RecipeGenerator.ViewModels\RecipeGenerator.ViewModels.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Update="Details\Recipes\DetailsRecipeView.razor.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>
