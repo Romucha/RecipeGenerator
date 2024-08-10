@@ -123,4 +123,7 @@
   <data name="Save" xml:space="preserve">
     <value>Save</value>
   </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>Select language...</value>
+  </data>
 </root>

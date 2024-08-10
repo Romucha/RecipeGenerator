@@ -8,7 +8,6 @@ using RecipeGenerator.ViewModels.Extensions;
 using System.Reflection;
 using RecipeGenerator.ViewModels.Services;
 using RecipeGenerator.Services;
-using NLog.Extensions;
 using NLog.Extensions.Logging;
 using NLog;
 
@@ -39,7 +38,7 @@ namespace RecipeGenerator
                 builder.Configuration.AddConfiguration(config);
             }
 
-            builder.Services.AddRecipeGeneratorResources(builder.Configuration);
+            builder.Services.AddRecipeGeneratorLocalization(builder.Configuration);
             builder.Services.AddRecipeGeneratorUtility();
             builder.Services.AddRecipeGeneratorFunctionality();
             builder.Services.AddRecipeGeneratorViewModels();

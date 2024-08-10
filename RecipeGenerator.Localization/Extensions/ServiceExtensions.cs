@@ -1,9 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using RecipeGenerator.Localization.Factories;
+using RecipeGenerator.Localization.Models;
 using RecipeGenerator.Localization.Services;
-using RecipeGenerator.Resources.Models;
-using RecipeGenerator.Resources.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,14 +17,13 @@ namespace RecipeGenerator.Localization.Extensions
         /// </summary>
         /// <param name="services">Service collection.</param>
         /// <param name="configuration">Configuration provider.</param>
-        public static void AddRecipeGeneratorResources(this IServiceCollection services, IConfiguration configuration)
+        public static void AddRecipeGeneratorLocalization(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddTransient<DynamicLocalizationServiceFactory>();
             services.Configure<DynamicLocalizationOptions>(options => 
             { 
                 configuration.Bind(DynamicLocalizationOptions.Localization, options);
             });
-            services.AddSingleton<DynamicLocalizationServiceProvider>();
+            services.AddSingleton<DynamicLocalizationService>();
             services.AddLocalization();
         }
     }

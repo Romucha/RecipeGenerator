@@ -1,7 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.Extensions.Logging;
 using RecipeGenerator.Localization.Services;
-using RecipeGenerator.Resources.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -14,14 +13,10 @@ namespace RecipeGenerator.ViewModels.Settings
     public class SettingsViewModel : ObservableObject
     {
         private readonly ILogger<SettingsViewModel> logger;
-        private readonly DynamicLocalizationServiceProvider dynamicLocalizationServiceProvider;
-        public DynamicLocalizationService? DynamicLocalizationService;
 
-        public SettingsViewModel(ILogger<SettingsViewModel> logger, DynamicLocalizationServiceProvider dynamicLocalizationServiceProvider)
+        public SettingsViewModel(ILogger<SettingsViewModel> logger)
         {
             this.logger = logger;
-            this.dynamicLocalizationServiceProvider = dynamicLocalizationServiceProvider;
-            DynamicLocalizationService = default!;
         }
 
         public async Task InitializeAsync()
@@ -29,34 +24,12 @@ namespace RecipeGenerator.ViewModels.Settings
             try
             {
                 logger.LogInformation($"Initializing {nameof(SettingsViewModel)}...");
-                DynamicLocalizationService = await dynamicLocalizationServiceProvider.GetServiceAsync();
+                await Task.CompletedTask;
             }
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(InitializeAsync));
                 throw;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        public async Task ChangeCultureAsync(string currentCulture)
-        {
-            try
-            {
-                logger.LogInformation("Changing culture...");
-                if (DynamicLocalizationService != null)
-                {
-                    DynamicLocalizationService.SetCulture(currentCulture);
-                }
-
-                await Task.CompletedTask;
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(ChangeCultureAsync));
             }
             finally
             {

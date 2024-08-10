@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.Resources.Models
+namespace RecipeGenerator.Localization.Models
 {
     /// <summary>
     /// Options for configuration of localization.

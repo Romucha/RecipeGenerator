@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Localization;
+using RecipeGenerator.Localization.Services;
 using RecipeGenerator.ViewModels.Settings;
 using System;
 using System.Collections.Generic;
@@ -9,28 +10,28 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Views.Settings
 {
-    public partial class SettingsView
-    {
-        [Inject]
-        public SettingsViewModel ViewModel { get; set; } = default!;
+ public partial class SettingsView
+ {
+  [Inject]
+  public SettingsViewModel ViewModel { get; set; } = default!;
 
-        [Inject]
-        public IStringLocalizer<SettingsView> StringLocalizer { get; set; } = default!;
+  [Inject]
+  public IStringLocalizer<SettingsView> StringLocalizer { get; set; } = default!;
 
-        protected override async Task OnInitializedAsync()
-        {
-            if (ViewModel != null)
-            {
-                ViewModel.PropertyChanged += (sender, e) => StateHasChanged();
-                await ViewModel.InitializeAsync();
-                if (ViewModel.DynamicLocalizationService != null)
-                {
-                    ViewModel.DynamicLocalizationService.PropertyChanged += (sender, e) => StateHasChanged();
-                }
-            }
-            var strings = StringLocalizer.GetAllStrings();
-        }
+  [Inject]
+  public DynamicLocalizationService DynamicLocalizationService { get; set; } = default!;
 
-        private string currentCulture = default!;
-    }
+  protected override async Task OnInitializedAsync()
+  {
+   if (ViewModel != null)
+   {
+    DynamicLocalizationService.PropertyChanged += async (sender, e) => await InvokeAsync(StateHasChanged);
+    ViewModel.PropertyChanged += async (sender, e) => await InvokeAsync(StateHasChanged);
+    await ViewModel.InitializeAsync();
+   }
+   var strings = StringLocalizer.GetAllStrings();
+  }
+
+  private string currentCulture = default!;
+ }
 }

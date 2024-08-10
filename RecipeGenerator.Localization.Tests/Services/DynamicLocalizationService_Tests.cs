@@ -1,8 +1,8 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Options;
-using RecipeGenerator.Resources.Models;
-using RecipeGenerator.Resources.Services;
+using RecipeGenerator.Localization.Models;
+using RecipeGenerator.Localization.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -36,7 +36,7 @@ namespace Resources.Localization.Tests.Services
                     "fr"
                 ],
             };
-            DynamicLocalizationService service = new(logger, options);
+            DynamicLocalizationService service = new(logger, Options.Create(options));
             //act
             service.SetCulture("ru");
 
@@ -61,7 +61,7 @@ namespace Resources.Localization.Tests.Services
                     "fr"
                 ],
             };
-            DynamicLocalizationService service = new(logger, options);
+            DynamicLocalizationService service = new(logger, Options.Create(options));
             //act & assert
             service.SetCulture(currentCulture!);
 

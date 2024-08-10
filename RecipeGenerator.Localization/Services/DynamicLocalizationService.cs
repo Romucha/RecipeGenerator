@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using RecipeGenerator.Resources.Models;
+using RecipeGenerator.Localization.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.Resources.Services
+namespace RecipeGenerator.Localization.Services
 {
     /// <summary>
     /// Provides methods for dynamic change of application culture.
@@ -23,11 +23,15 @@ namespace RecipeGenerator.Resources.Services
         /// </summary>
         /// <param name="logger">Logger service.</param>
         /// <param name="options">Localization options.</param>
-        public DynamicLocalizationService(ILogger<DynamicLocalizationService> logger, DynamicLocalizationOptions? options)
+        public DynamicLocalizationService(ILogger<DynamicLocalizationService> logger, IOptions<DynamicLocalizationOptions> options)
         {
             this.logger = logger;
-            CurrentCulture = options!.CurrentCulture!;
-            Cultures = new ObservableCollection<CultureInfo>(options.Cultures!.Select(c => new CultureInfo(c)));
+            var dynamicOptions = options.Value;
+            if (dynamicOptions != null)
+            {
+                CurrentCulture = dynamicOptions.CurrentCulture!;
+                Cultures = new ObservableCollection<CultureInfo>(dynamicOptions.Cultures!.Select(c => new CultureInfo(c)));
+            }
         }
 
         private string currentCulture = default!;
@@ -38,7 +42,7 @@ namespace RecipeGenerator.Resources.Services
         public string CurrentCulture
         {
             get => currentCulture;
-            protected set => SetProperty(ref currentCulture, value);
+            set => SetProperty(ref currentCulture, value);
         }
 
         private ObservableCollection<CultureInfo> cultures = default!;
@@ -67,6 +71,8 @@ namespace RecipeGenerator.Resources.Services
                 {
                     CultureInfo.CurrentCulture = culture;
                     CultureInfo.CurrentUICulture = culture;
+                    CultureInfo.DefaultThreadCurrentCulture = culture;
+                    CultureInfo.DefaultThreadCurrentUICulture = culture;
                     CurrentCulture = cultureName;
                 }
             }
