@@ -13,10 +13,12 @@ namespace RecipeGenerator.ViewModels.Settings
     public class SettingsViewModel : ObservableObject
     {
         private readonly ILogger<SettingsViewModel> logger;
+        public DynamicLocalizationService DynamicLocalizationService { get; set; }
 
-        public SettingsViewModel(ILogger<SettingsViewModel> logger)
+        public SettingsViewModel(ILogger<SettingsViewModel> logger, DynamicLocalizationService dynamicLocalizationService)
         {
             this.logger = logger;
+            this.DynamicLocalizationService = dynamicLocalizationService;
         }
 
         public async Task InitializeAsync()

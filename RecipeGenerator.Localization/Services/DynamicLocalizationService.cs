@@ -17,6 +17,9 @@ namespace RecipeGenerator.Localization.Services
     /// </summary>
     public class DynamicLocalizationService : ObservableObject
     {
+        private readonly ILogger<DynamicLocalizationService> logger;
+        private readonly IOptions<DynamicLocalizationOptions> options;
+
         /// <summary>
         /// Creates a new instance of <see cref="DynamicLocalizationService"/> class.
         /// <br/> If options are invalid, restores default localization options.
@@ -26,6 +29,7 @@ namespace RecipeGenerator.Localization.Services
         public DynamicLocalizationService(ILogger<DynamicLocalizationService> logger, IOptions<DynamicLocalizationOptions> options)
         {
             this.logger = logger;
+            this.options = options;
             var dynamicOptions = options.Value;
             if (dynamicOptions != null)
             {
@@ -35,26 +39,30 @@ namespace RecipeGenerator.Localization.Services
         }
 
         private string currentCulture = default!;
-
         /// <summary>
         /// Current culture.
         /// </summary>
         public string CurrentCulture
         {
             get => currentCulture;
-            set => SetProperty(ref currentCulture, value);
+            protected set
+            {
+                SetProperty(ref currentCulture, value);
+                options.Value.CurrentCulture = value;
+            }
         }
 
         private ObservableCollection<CultureInfo> cultures = default!;
-        private readonly ILogger<DynamicLocalizationService> logger;
-
         /// <summary>
         /// Collection of available cultures.
         /// </summary>
         public ObservableCollection<CultureInfo> Cultures
         {
             get => cultures;
-            protected set => SetProperty(ref cultures, value);
+            protected set 
+            { 
+                SetProperty(ref cultures, value);
+            }
         }
 
         /// <summary>

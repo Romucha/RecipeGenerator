@@ -18,18 +18,18 @@ namespace RecipeGenerator.Views.Settings
   [Inject]
   public IStringLocalizer<SettingsView> StringLocalizer { get; set; } = default!;
 
-  [Inject]
-  public DynamicLocalizationService DynamicLocalizationService { get; set; } = default!;
-
   protected override async Task OnInitializedAsync()
   {
    if (ViewModel != null)
    {
-    DynamicLocalizationService.PropertyChanged += async (sender, e) => await InvokeAsync(StateHasChanged);
+    if (ViewModel.DynamicLocalizationService != null)
+    {
+     ViewModel.DynamicLocalizationService.PropertyChanged += async (sender, e) => await InvokeAsync(StateHasChanged);
+     currentCulture = ViewModel.DynamicLocalizationService.CurrentCulture;
+    }
     ViewModel.PropertyChanged += async (sender, e) => await InvokeAsync(StateHasChanged);
     await ViewModel.InitializeAsync();
    }
-   var strings = StringLocalizer.GetAllStrings();
   }
 
   private string currentCulture = default!;

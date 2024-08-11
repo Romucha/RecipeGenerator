@@ -1,15 +1,15 @@
 ﻿<EditForm Model="@ViewModel" OnSubmit="@(() => 
     { 
-        DynamicLocalizationService.SetCulture(currentCulture);
+        ViewModel.DynamicLocalizationService.SetCulture(currentCulture);
     })">
     <div style="display: flex; flex-direction: column">
         <div>@StringLocalizer["LanguageSettings"]</div>
         <div>
             <InputSelect @bind-Value="@currentCulture">
-                <option value="" selected>
+                @* <option value="" selected>
                     @StringLocalizer["SelectLanguage"]
-                </option>
-                @foreach (var c in DynamicLocalizationService.Cultures)
+                </option> *@
+                @foreach (var c in ViewModel.DynamicLocalizationService.Cultures)
                 {
                     <option value="@c.Name">
                         @c
