@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
+using Microsoft.Extensions.Localization;
+using RecipeGenerator.Localization.Services;
 using RecipeGenerator.ViewModels.Home;
 using System;
 using System.Collections.Generic;
@@ -12,5 +14,23 @@ namespace RecipeGenerator.Views.Home
  {
   [Inject]
   public HomeViewModel ViewModel { get; set; } = default!;
+
+  [Inject]
+  public IStringLocalizer<HomeView> StringLocalizer { get; set; } = default!;
+
+  [Inject]
+  public DynamicLocalizationService DynamicLocalizationService { get; set; } = default!;
+
+  protected override async Task OnInitializedAsync()
+  {
+   if (ViewModel != null)
+   {
+    ViewModel.PropertyChanged += (sender, e) => StateHasChanged();
+   }
+   if (DynamicLocalizationService != null)
+   {
+    DynamicLocalizationService.PropertyChanged += (sender, e) => StateHasChanged();
+   }
+  }
  }
 }
