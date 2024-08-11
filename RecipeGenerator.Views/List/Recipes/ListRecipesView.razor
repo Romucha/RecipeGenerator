@@ -1,13 +1,13 @@
-﻿<a class="btn-primary" href="/create-recipe">Create a new recipe</a>
+﻿<a class="btn-primary" href="/create-recipe">@StringLocalizer["CreateNewRecipe"]</a>
 <div>
     <div style="display: flex; flex-direction: row">
-        <button class="btn-primary" onclick="@ViewModel.PreviousPage">Previous</button>
+        <button class="btn-primary" onclick="@ViewModel.PreviousPage">@StringLocalizer["Previous"]</button>
         <div>@ViewModel.PageNumber</div>
-        <button class="btn-primary" onclick="@ViewModel.NextPage">Next</button>
+  <button class="btn-primary" onclick="@ViewModel.NextPage">@StringLocalizer["Next"]</button>
     </div>
     <InputSelect @bind-Value="ViewModel.PageSize">
         <option value="">
-            Select page size...
+            @StringLocalizer["SelectPageSize"]
         </option>
         <option checked="@(ViewModel.PageSize == 10)" 
             value="10">
@@ -25,7 +25,7 @@
     <div>
         <div>
             <InputText @bind-Value="ViewModel.FilterString"/>
-            <button onclick="@ViewModel.GetRecipesAsync">Search</button>
+            <button onclick="@ViewModel.GetRecipesAsync">@StringLocalizer["Search"]</button>
         </div>
         <div>
 
@@ -38,7 +38,7 @@
                 <div style="background-color: lightgray;" title="@recipe.Description">@recipe.Name</div>
                 <div>@recipe.UpdatedAt</div>
             </a>
-            <div class="btn-primary" onclick="@(async () => { await ViewModel.DeleteRecipeAsync(recipe.Id); })">Delete recipe</div>
+            <div class="btn-primary" onclick="@(async () => { await ViewModel.DeleteRecipeAsync(recipe.Id); })">@StringLocalizer["DeleteRecipe"]</div>
         }
     </div>
 </div>
