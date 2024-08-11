@@ -1,13 +1,13 @@
-﻿@* <a class="btn-primary" href="/create-ingredient">Create a new ingredient</a> *@
+﻿@* <a class="btn-primary" href="/create-ingredient">@StringLocalizer["CreateNewIngredient"]</a> *@
 <div>
     <div style="display: flex; flex-direction: row">
-        <button class="btn-primary" onclick="@ViewModel.PreviousPage">Previous</button>
+        <button class="btn-primary" onclick="@ViewModel.PreviousPage">@StringLocalizer["Previous"]</button>
         <div>@ViewModel.PageNumber</div>
-        <button class="btn-primary" onclick="@ViewModel.NextPage">Next</button>
+        <button class="btn-primary" onclick="@ViewModel.NextPage">@StringLocalizer["Next"]</button>
     </div>
     <InputSelect @bind-Value="ViewModel.PageSize">
         <option value="">
-            Select page size...
+            @StringLocalizer["SelectPageSize"]
         </option>
         <option checked="@(ViewModel.PageSize == 10)" 
             value="10">
@@ -25,10 +25,7 @@
     <div>
         <div>
             <InputText @bind-Value="ViewModel.FilterString"/>
-            <button onclick="@ViewModel.GetIngredientsAsync">Search</button>
-        </div>
-        <div>
-
+            <button onclick="@ViewModel.GetIngredientsAsync">@StringLocalizer["Search"]</button>
         </div>
     </div>
     <div style="display: flex; flex-direction: column">

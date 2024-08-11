@@ -117,22 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CreateNewRecipe" xml:space="preserve">
-    <value>Create a new recipe</value>
+  <data name="CreateNewIngredient" xml:space="preserve">
+    <value>Créer un nouvel ingrédient</value>
   </data>
   <data name="DeleteRecipe" xml:space="preserve">
-    <value>Delete recipe</value>
+    <value>Supprimer la recette</value>
   </data>
   <data name="Next" xml:space="preserve">
-    <value>Next</value>
+    <value>Suivant</value>
   </data>
   <data name="Previous" xml:space="preserve">
-    <value>Previous</value>
+    <value>Précédent</value>
   </data>
   <data name="Search" xml:space="preserve">
-    <value>Search</value>
+    <value>Rechercher</value>
   </data>
   <data name="SelectPageSize" xml:space="preserve">
-    <value>Select page size...</value>
+    <value>Sélectionner la taille de la page...</value>
   </data>
 </root>

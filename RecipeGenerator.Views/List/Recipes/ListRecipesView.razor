@@ -27,9 +27,6 @@
             <InputText @bind-Value="ViewModel.FilterString"/>
             <button onclick="@ViewModel.GetRecipesAsync">@StringLocalizer["Search"]</button>
         </div>
-        <div>
-
-        </div>
     </div>
     <div style="display: flex; flex-direction: column">
         @foreach (var recipe in ViewModel.Recipes)
