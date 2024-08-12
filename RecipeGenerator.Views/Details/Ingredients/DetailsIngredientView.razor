@@ -1,7 +1,7 @@
 ﻿<div style="display: flex; flex-direction: column">
     <div style="display: flex; flex-direction: row">
         <div>
-            @(nameof(ViewModel.Name)): 
+            @StringLocalizer[nameof(ViewModel.Name)]: 
         </div>
         <div>
             @ViewModel.Name
@@ -9,7 +9,7 @@
     </div>
     <div style="display: flex; flex-direction: row">
         <div>
-            @(nameof(ViewModel.Image)): 
+            @StringLocalizer[nameof(ViewModel.Image)]: 
         </div>
         <div>
             <img src="@($"data:image/gif;base64,{ViewModel.Image}")" width="50" height="50" alt="@ViewModel.Name" />
@@ -17,7 +17,7 @@
     </div>
     <div style="display: flex; flex-direction: row">
         <div>
-            @(nameof(ViewModel.Description)): 
+            @StringLocalizer[nameof(ViewModel.Description)]: 
         </div>
         <div>
             @ViewModel.Description
@@ -25,7 +25,7 @@
     </div>
     <div style="display: flex; flex-direction: row">
         <div>
-            @(nameof(ViewModel.CreatedAt)): 
+            @StringLocalizer[nameof(ViewModel.CreatedAt)]: 
         </div>
         <div>
             @ViewModel.CreatedAt
@@ -33,7 +33,7 @@
     </div>
     <div style="display: flex; flex-direction: row">
         <div>
-            @(nameof(ViewModel.UpdatedAt)): 
+            @StringLocalizer[nameof(ViewModel.UpdatedAt)]: 
         </div>
         <div>
             @ViewModel.UpdatedAt
@@ -41,7 +41,7 @@
     </div>
     <div style="display: flex; flex-direction: row">
         <div>
-            @(nameof(ViewModel.IngredientType)): 
+            @StringLocalizer[nameof(ViewModel.IngredientType)]: 
         </div>
         <div>
             @ViewModel.IngredientType
