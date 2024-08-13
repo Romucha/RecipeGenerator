@@ -14,9 +14,15 @@ namespace RecipeGenerator.Database.Seeding
     public abstract class BaseSeeder<Entity> where Entity : class, IRecipeGeneratorEntity
     {
         /// <summary>
-        /// Get list of entites to seed a database.
+        /// Gets list of entites.
         /// </summary>
         /// <returns></returns>
         public abstract IEnumerable<Entity> GetEntities();
+
+        /// <summary>
+        /// Gets list of entites asynchronously.
+        /// </summary>
+        /// <returns></returns>
+        public abstract Task<IEnumerable<Entity>> GetEntitiesAsync();
     }
 }

@@ -96,7 +96,12 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
             }
         }
 
-        private IEnumerable<DictionaryEntry> getResourceEntries(ResourceManager resourceManager)
+  public override async Task<IEnumerable<ApplicableIngredient>> GetEntitiesAsync()
+  {
+   return await Task.FromResult(GetEntities());
+  }
+
+  private IEnumerable<DictionaryEntry> getResourceEntries(ResourceManager resourceManager)
         {
             ResourceSet? resourceSet = resourceManager.GetResourceSet(CultureInfo.CurrentUICulture, true, true);
             if (resourceSet != null)
