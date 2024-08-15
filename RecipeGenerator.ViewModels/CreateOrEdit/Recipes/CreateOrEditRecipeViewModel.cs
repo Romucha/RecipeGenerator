@@ -13,12 +13,7 @@ using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Models.Recipes;
 using RecipeGenerator.Models.Steps;
 using RecipeGenerator.ViewModels.Services;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
 {
@@ -274,11 +269,11 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                             Photos = c.Photos,
                             RecipeId = c.RecipeId,
                         }).ToList()!,
-                    Ingredients = AppliedIngredients.Select(c => 
+                    Ingredients = AppliedIngredients.Select(c =>
                         new UpdateAppliedIngredientRequest()
                         {
                             Name = c.Name,
-                            Description= c.Description,
+                            Description = c.Description,
                             IngredientId = c.IngredientId,
                             RecipeId = c.RecipeId,
                         }).ToList()!

@@ -1,10 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
 using RecipeGenerator.ViewModels.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RecipeGenerator.Services
 {
@@ -63,7 +58,7 @@ namespace RecipeGenerator.Services
         {
             try
             {
-                logger.LogInformation("Taking a photo..."); 
+                logger.LogInformation("Taking a photo...");
                 if (MediaPicker.Default.IsCaptureSupported)
                 {
                     FileResult? photo = await MediaPicker.Default.CapturePhotoAsync();

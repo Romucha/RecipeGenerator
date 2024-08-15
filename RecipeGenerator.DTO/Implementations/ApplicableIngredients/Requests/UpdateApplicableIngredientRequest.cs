@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RecipeGenerator.DTO.Interfaces.Requests;
+﻿using RecipeGenerator.DTO.Interfaces.Requests;
 
 namespace RecipeGenerator.DTO.Implementations.ApplicableIngredients.Requests
 {

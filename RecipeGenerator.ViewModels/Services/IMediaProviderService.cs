@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RecipeGenerator.ViewModels.Services
+﻿namespace RecipeGenerator.ViewModels.Services
 {
     /// <summary>
     /// Provides methods for taking and selecting images.

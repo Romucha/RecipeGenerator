@@ -8,11 +8,6 @@ using RecipeGenerator.ViewModels.Home;
 using RecipeGenerator.ViewModels.List.Ingredients;
 using RecipeGenerator.ViewModels.List.Recipes;
 using RecipeGenerator.ViewModels.Settings;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RecipeGenerator.ViewModels.Extensions
 {

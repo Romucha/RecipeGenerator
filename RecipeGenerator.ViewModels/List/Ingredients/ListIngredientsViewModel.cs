@@ -3,17 +3,8 @@ using Microsoft.Extensions.Logging;
 using RecipeGenerator.Database.UnitsOfWork;
 using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Requests;
 using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Responses;
-using RecipeGenerator.DTO.Implementations.Recipes.Requests;
-using RecipeGenerator.DTO.Implementations.Recipes.Responses;
 using RecipeGenerator.Models.Ingredients;
-using RecipeGenerator.Models.Recipes;
-using RecipeGenerator.ViewModels.List.Recipes;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RecipeGenerator.ViewModels.List.Ingredients
 {

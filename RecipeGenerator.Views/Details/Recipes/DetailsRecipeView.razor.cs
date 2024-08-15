@@ -2,11 +2,6 @@
 using Microsoft.Extensions.Localization;
 using RecipeGenerator.Localization.Services;
 using RecipeGenerator.ViewModels.Details.Recipes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RecipeGenerator.Views.Details.Recipes
 {
@@ -32,7 +27,7 @@ namespace RecipeGenerator.Views.Details.Recipes
                 await ViewModel.GetRecipeAsync(Id);
             }
 
-            if (DynamicLocalizationService != null) 
+            if (DynamicLocalizationService != null)
             {
                 DynamicLocalizationService.PropertyChanged += (sender, e) => StateHasChanged();
             }

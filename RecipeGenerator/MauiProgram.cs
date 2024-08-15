@@ -1,15 +1,15 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using NLog;
+using NLog.Extensions.Logging;
+using RecipeGenerator.Database.Extenstions;
 using RecipeGenerator.Functionalities.Extensions;
 using RecipeGenerator.Localization.Extensions;
-using RecipeGenerator.Utility.Extensions;
-using RecipeGenerator.Database.Extenstions;
-using RecipeGenerator.ViewModels.Extensions;
-using System.Reflection;
-using RecipeGenerator.ViewModels.Services;
 using RecipeGenerator.Services;
-using NLog.Extensions.Logging;
-using NLog;
+using RecipeGenerator.Utility.Extensions;
+using RecipeGenerator.ViewModels.Extensions;
+using RecipeGenerator.ViewModels.Services;
+using System.Reflection;
 
 namespace RecipeGenerator
 {

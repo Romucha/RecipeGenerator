@@ -1,37 +1,31 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Localization;
-using RecipeGenerator.Localization.Services;
 using RecipeGenerator.ViewModels.Settings;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RecipeGenerator.Views.Settings
 {
- public partial class SettingsView
- {
-  [Inject]
-  public SettingsViewModel ViewModel { get; set; } = default!;
-
-  [Inject]
-  public IStringLocalizer<SettingsView> StringLocalizer { get; set; } = default!;
-
-  protected override async Task OnInitializedAsync()
-  {
-   if (ViewModel != null)
-   {
-    if (ViewModel.DynamicLocalizationService != null)
+    public partial class SettingsView
     {
-     ViewModel.DynamicLocalizationService.PropertyChanged += async (sender, e) => await InvokeAsync(StateHasChanged);
-     currentCulture = ViewModel.DynamicLocalizationService.CurrentCulture;
-    }
-    ViewModel.PropertyChanged += async (sender, e) => await InvokeAsync(StateHasChanged);
-    await ViewModel.InitializeAsync();
-   }
-  }
+        [Inject]
+        public SettingsViewModel ViewModel { get; set; } = default!;
 
-  private string currentCulture = default!;
- }
+        [Inject]
+        public IStringLocalizer<SettingsView> StringLocalizer { get; set; } = default!;
+
+        protected override async Task OnInitializedAsync()
+        {
+            if (ViewModel != null)
+            {
+                if (ViewModel.DynamicLocalizationService != null)
+                {
+                    ViewModel.DynamicLocalizationService.PropertyChanged += async (sender, e) => await InvokeAsync(StateHasChanged);
+                    currentCulture = ViewModel.DynamicLocalizationService.CurrentCulture;
+                }
+                ViewModel.PropertyChanged += async (sender, e) => await InvokeAsync(StateHasChanged);
+                await ViewModel.InitializeAsync();
+            }
+        }
+
+        private string currentCulture = default!;
+    }
 }

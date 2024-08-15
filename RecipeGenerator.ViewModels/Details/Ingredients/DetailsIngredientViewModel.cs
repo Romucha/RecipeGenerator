@@ -1,16 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using RecipeGenerator.Models.Ingredients;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RecipeGenerator.Database.UnitsOfWork;
 using Microsoft.Extensions.Logging;
+using RecipeGenerator.Database.UnitsOfWork;
 using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Requests;
 using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Responses;
+using RecipeGenerator.Models.Ingredients;
 
 namespace RecipeGenerator.ViewModels.Details.Ingredients
 {
@@ -25,50 +18,50 @@ namespace RecipeGenerator.ViewModels.Details.Ingredients
             this.unitOfWork = unitOfWork;
         }
         private DateTime createdAt;
-        public DateTime CreatedAt 
-        { 
-            get => createdAt; 
+        public DateTime CreatedAt
+        {
+            get => createdAt;
             set => SetProperty(ref createdAt, value);
         }
         private DateTime updatedAt;
-        public DateTime UpdatedAt 
-        { 
+        public DateTime UpdatedAt
+        {
             get => updatedAt;
             set => SetProperty(ref updatedAt, value);
         }
 
         private string name = string.Empty;
-        public string Name 
-        { 
-            get => name; 
+        public string Name
+        {
+            get => name;
             set => SetProperty(ref name, value);
         }
 
         private string description = string.Empty;
-        public string Description 
-        { 
-            get => description; 
-            set => SetProperty(ref description, value); 
+        public string Description
+        {
+            get => description;
+            set => SetProperty(ref description, value);
         }
 
         private Uri link = default!;
         public Uri Link
-        { 
-            get => link; 
+        {
+            get => link;
             set => SetProperty(ref link, value);
         }
 
         private IngredientType ingredientType;
-        public IngredientType IngredientType 
-        { 
-            get => ingredientType; 
+        public IngredientType IngredientType
+        {
+            get => ingredientType;
             set => SetProperty(ref ingredientType, value);
         }
 
         private string image = default!;
         public string Image
-        { 
-            get => image; 
+        {
+            get => image;
             set => SetProperty(ref image, value);
         }
 

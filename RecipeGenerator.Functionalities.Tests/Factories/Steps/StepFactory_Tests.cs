@@ -1,11 +1,5 @@
-﻿using Microsoft.Extensions.Logging.Abstractions;
-using Microsoft.Extensions.Logging;
-using RecipeGenerator.Functionalities.Factories.Recipes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions;
 using RecipeGenerator.Functionalities.Factories.Steps;
 
 namespace RecipeGenerator.Functionalities.Tests.Factories.Steps

@@ -1,12 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Models.Recipes;
-using RecipeGenerator.Models.Steps;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RecipeGenerator.Functionalities.Factories.Recipes
 {
@@ -35,7 +28,7 @@ namespace RecipeGenerator.Functionalities.Factories.Recipes
                     UpdatedAt = DateTime.UtcNow,
                 });
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 logger.LogError(ex, nameof(CreateAsync));
                 return null;

@@ -2,11 +2,6 @@
 using Microsoft.Extensions.Localization;
 using RecipeGenerator.Localization.Services;
 using RecipeGenerator.ViewModels.Details.Ingredients;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RecipeGenerator.Views.Details.Ingredients
 {

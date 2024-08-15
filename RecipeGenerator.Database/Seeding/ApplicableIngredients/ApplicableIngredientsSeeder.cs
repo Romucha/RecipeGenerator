@@ -5,14 +5,9 @@ using RecipeGenerator.Resources.Identifiers.Ingredients;
 using RecipeGenerator.Resources.Images.Ingredients;
 using RecipeGenerator.Resources.Links.Ingredients;
 using RecipeGenerator.Resources.Names.Ingredients;
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
 using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
 {
@@ -76,9 +71,9 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
                                 UpdatedAt = DateTime.UtcNow,
                             });
                         }
-                        catch (Exception ex)
+                        catch (Exception)
                         {
-                            
+
                         }
                     }
                 }
@@ -96,12 +91,12 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
             }
         }
 
-  public override async Task<IEnumerable<ApplicableIngredient>> GetEntitiesAsync()
-  {
-   return await Task.FromResult(GetEntities());
-  }
+        public override async Task<IEnumerable<ApplicableIngredient>> GetEntitiesAsync()
+        {
+            return await Task.FromResult(GetEntities());
+        }
 
-  private IEnumerable<DictionaryEntry> getResourceEntries(ResourceManager resourceManager)
+        private IEnumerable<DictionaryEntry> getResourceEntries(ResourceManager resourceManager)
         {
             ResourceSet? resourceSet = resourceManager.GetResourceSet(CultureInfo.CurrentUICulture, true, true);
             if (resourceSet != null)

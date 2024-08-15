@@ -6,12 +6,7 @@ using RecipeGenerator.DTO.Implementations.Recipes.Requests;
 using RecipeGenerator.DTO.Implementations.Recipes.Responses;
 using RecipeGenerator.DTO.Implementations.Steps.Responses;
 using RecipeGenerator.Models.Recipes;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RecipeGenerator.ViewModels.Details.Recipes
 {
@@ -34,23 +29,23 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
         }
 
         private DateTime createdAt;
-        public DateTime CreatedAt 
+        public DateTime CreatedAt
         {
             get => createdAt;
             set => SetProperty(ref createdAt, value);
         }
 
         private DateTime updatedAt;
-        public DateTime UpdatedAt 
-        { 
+        public DateTime UpdatedAt
+        {
             get => updatedAt;
             set => SetProperty(ref updatedAt, value);
         }
 
         private string name = string.Empty;
-        public string Name 
-        { 
-            get => name; 
+        public string Name
+        {
+            get => name;
             set => SetProperty(ref name, value);
         }
 
@@ -69,22 +64,22 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
         }
 
         private Course courseType;
-        public Course CourseType 
-        { 
-            get => courseType; 
+        public Course CourseType
+        {
+            get => courseType;
             set => SetProperty(ref courseType, value);
         }
 
         private TimeSpan estimatedTime;
-        public TimeSpan EstimatedTime 
-        { 
-            get => estimatedTime; 
+        public TimeSpan EstimatedTime
+        {
+            get => estimatedTime;
             set => SetProperty(ref estimatedTime, value);
         }
 
         private int portions;
-        public int Portions 
-        { 
+        public int Portions
+        {
             get => portions;
             set => SetProperty(ref portions, value);
         }
@@ -96,9 +91,9 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
             set => SetProperty(ref steps, value);
         }
         private ObservableCollection<GetAppliedIngredientResponse> ingredients = new();
-        public ObservableCollection<GetAppliedIngredientResponse> Ingredients 
-        { 
-            get => ingredients; 
+        public ObservableCollection<GetAppliedIngredientResponse> Ingredients
+        {
+            get => ingredients;
             set => SetProperty(ref ingredients, value);
         }
 

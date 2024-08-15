@@ -2,27 +2,13 @@
 using Microsoft.Extensions.Logging;
 using RecipeGenerator.Database.Context;
 using RecipeGenerator.Database.Repositories;
-using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Requests;
-using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Responses;
-using RecipeGenerator.DTO.Implementations.AppliedIngredients.Requests;
-using RecipeGenerator.DTO.Implementations.AppliedIngredients.Responses;
-using RecipeGenerator.DTO.Implementations.Recipes.Requests;
-using RecipeGenerator.DTO.Implementations.Recipes.Responses;
-using RecipeGenerator.DTO.Implementations.Steps.Requests;
-using RecipeGenerator.DTO.Implementations.Steps.Responses;
 using RecipeGenerator.DTO.Interfaces.Requests;
 using RecipeGenerator.DTO.Interfaces.Responses;
 using RecipeGenerator.Models;
 using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Models.Recipes;
 using RecipeGenerator.Models.Steps;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace RecipeGenerator.Database.UnitsOfWork
 {
@@ -61,7 +47,7 @@ namespace RecipeGenerator.Database.UnitsOfWork
             repositories.Add(typeof(Step), stepRepostiry);
             repositories.Add(typeof(AppliedIngredient), appliedIngredientRepository);
             repositories.Add(typeof(ApplicableIngredient), applicableIngredientRepository);
-            
+
             this.mapper = mapper;
         }
 
@@ -90,7 +76,7 @@ namespace RecipeGenerator.Database.UnitsOfWork
 
             if (piType.IsEnum)
             {
-                object enumValue = Enum.ToObject(piType, value); 
+                object enumValue = Enum.ToObject(piType, value);
                 pi.SetValue(obj, Convert.ChangeType(enumValue, piType), null);
             }
             else
@@ -117,7 +103,7 @@ namespace RecipeGenerator.Database.UnitsOfWork
 
             }
         }
-        
+
 
         public async Task<Response?> CreateAsync<Entity, Request, Response>(Request request, CancellationToken cancellationToken = default)
             where Entity : IRecipeGeneratorEntity
@@ -180,7 +166,7 @@ namespace RecipeGenerator.Database.UnitsOfWork
                 if (entites != null)
                 {
                     if (Activator.CreateInstance(typeof(Response)) is not Response response)
-                    return default;
+                        return default;
                     response.Items = entites.Select(c => (IGetAllResponseItem)mapper.Map<ResponseItem>(c));
                     return response;
                 }

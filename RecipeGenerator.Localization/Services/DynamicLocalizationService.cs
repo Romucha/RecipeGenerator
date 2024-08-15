@@ -2,13 +2,8 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using RecipeGenerator.Localization.Models;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RecipeGenerator.Localization.Services
 {
@@ -59,8 +54,8 @@ namespace RecipeGenerator.Localization.Services
         public ObservableCollection<CultureInfo> Cultures
         {
             get => cultures;
-            protected set 
-            { 
+            protected set
+            {
                 SetProperty(ref cultures, value);
             }
         }

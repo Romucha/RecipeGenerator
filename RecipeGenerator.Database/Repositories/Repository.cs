@@ -1,14 +1,8 @@
-﻿using AutoMapper;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using RecipeGenerator.Database.Context;
 using RecipeGenerator.Models;
 using RecipeGenerator.Models.Recipes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RecipeGenerator.Database.Repositories
 {
@@ -124,7 +118,7 @@ namespace RecipeGenerator.Database.Repositories
                 try
                 {
                     logger.LogInformation($"Getting entity of type \"{typeof(T).Name}\"...");
-                    T? entity;                    
+                    T? entity;
                     if (typeof(T) == typeof(Recipe))
                     {
                         entity = dbContext.Set<Recipe>().Include(c => c.Ingredients).Include(c => c.Steps).FirstOrDefault(c => c.Id == id) as T;

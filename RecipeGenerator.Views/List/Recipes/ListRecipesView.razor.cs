@@ -2,12 +2,6 @@
 using Microsoft.Extensions.Localization;
 using RecipeGenerator.Localization.Services;
 using RecipeGenerator.ViewModels.List.Recipes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RecipeGenerator.Views.List.Recipes
 {
