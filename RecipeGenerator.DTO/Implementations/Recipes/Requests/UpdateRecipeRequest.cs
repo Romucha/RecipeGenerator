@@ -1,10 +1,9 @@
 ﻿using RecipeGenerator.DTO.Implementations.AppliedIngredients.Requests;
 using RecipeGenerator.DTO.Implementations.Steps.Requests;
-using RecipeGenerator.DTO.Interfaces.Requests;
 
 namespace RecipeGenerator.DTO.Implementations.Recipes.Requests
 {
-    public record UpdateRecipeRequest : IUpdateRequest
+    public record UpdateRecipeRequest
     {
         /// <summary>
         /// Identifier.
@@ -40,15 +39,5 @@ namespace RecipeGenerator.DTO.Implementations.Recipes.Requests
         /// Number of portions.
         /// </summary>
         public int? Portions { get; set; }
-
-        /// <summary>
-        /// List of steps.
-        /// </summary>
-        public List<UpdateStepRequest?>? Steps { get; set; }
-
-        /// <summary>
-        /// List of ingredients.
-        /// </summary>
-        public List<UpdateAppliedIngredientRequest?>? Ingredients { get; set; }
     }
 }

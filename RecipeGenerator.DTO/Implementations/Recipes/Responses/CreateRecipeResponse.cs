@@ -1,10 +1,9 @@
 ﻿using RecipeGenerator.DTO.Implementations.AppliedIngredients.Responses;
 using RecipeGenerator.DTO.Implementations.Steps.Responses;
-using RecipeGenerator.DTO.Interfaces.Responses;
 
 namespace RecipeGenerator.DTO.Implementations.Recipes.Responses
 {
-    public record CreateRecipeResponse : ICreateResponse
+    public record CreateRecipeResponse
     {
         /// <summary>
         /// Identifier.
@@ -40,16 +39,6 @@ namespace RecipeGenerator.DTO.Implementations.Recipes.Responses
         /// Number of portions.
         /// </summary>
         public int Portions { get; set; }
-
-        /// <summary>
-        /// List of steps.
-        /// </summary>
-        public List<CreateStepResponse> Steps { get; set; } = new();
-
-        /// <summary>
-        /// List of ingredients.
-        /// </summary>
-        public List<CreateAppliedIndredientResponse> Ingredients { get; set; } = new();
 
         /// <summary>
         /// Date of creation.

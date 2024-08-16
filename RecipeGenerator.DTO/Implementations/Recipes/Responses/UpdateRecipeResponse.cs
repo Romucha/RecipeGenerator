@@ -1,25 +1,14 @@
 ﻿using RecipeGenerator.DTO.Implementations.AppliedIngredients.Responses;
 using RecipeGenerator.DTO.Implementations.Steps.Responses;
-using RecipeGenerator.DTO.Interfaces.Responses;
 
 namespace RecipeGenerator.DTO.Implementations.Recipes.Responses
 {
-    public record UpdateRecipeResponse : IUpdateResponse
+    public record UpdateRecipeResponse
     {
         /// <summary>
         /// Identifier.
         /// </summary>
         public Guid Id { get; set; }
-
-        /// <summary>
-        /// Date of creation.
-        /// </summary>
-        public DateTime CreatedAt { get; set; }
-
-        /// <summary>
-        /// Date of last update.
-        /// </summary>
-        public DateTime UpdatedAt { get; set; }
 
         /// <summary>
         /// Display name.
@@ -50,15 +39,5 @@ namespace RecipeGenerator.DTO.Implementations.Recipes.Responses
         /// Number of portions.
         /// </summary>
         public int Portions { get; set; }
-
-        /// <summary>
-        /// List of steps.
-        /// </summary>
-        public List<UpdateStepResponse> Steps { get; set; } = new();
-
-        /// <summary>
-        /// List of ingredients.
-        /// </summary>
-        public List<UpdateAppliedIngredientResponse> Ingredients { get; set; } = new();
     }
 }

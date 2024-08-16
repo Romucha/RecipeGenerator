@@ -1,8 +1,6 @@
-﻿using RecipeGenerator.DTO.Interfaces.Responses;
-
-namespace RecipeGenerator.DTO.Implementations.Recipes.Responses
+﻿namespace RecipeGenerator.DTO.Implementations.Recipes.Responses
 {
-    public record DeleteRecipeResponse : IDeleteResponse
+    public record DeleteRecipeRespons
     {
         public Guid Id { get; set; }
 

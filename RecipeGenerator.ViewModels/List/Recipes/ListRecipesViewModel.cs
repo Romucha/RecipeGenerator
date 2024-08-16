@@ -17,8 +17,8 @@ public class ListRecipesViewModel : ObservableObject
         this.unitOfWork = unitOfWork;
     }
 
-    private ObservableCollection<GetAllRecipeResponse> recipes = new();
-    public ObservableCollection<GetAllRecipeResponse> Recipes
+    private ObservableCollection<GetAllRecipesResponseItem> recipes = new();
+    public ObservableCollection<GetAllRecipesResponseItem> Recipes
     {
         get => recipes;
         set => SetProperty(ref recipes, value);
@@ -57,10 +57,10 @@ public class ListRecipesViewModel : ObservableObject
                 PageNumber = PageNumber - 1,
                 PageSize = PageSize
             };
-            GetAllRecipesResponse? response = await unitOfWork.GetAllAsync<Recipe, GetAllRecipesRequest, GetAllRecipesResponse, GetAllRecipeResponse>(request);
+            GetAllRecipesResponse? response = await unitOfWork.GetAllAsync<Recipe, GetAllRecipesRequest, GetAllRecipesResponse, GetAllRecipesResponseItem>(request);
             if (response != null)
             {
-                Recipes = new ObservableCollection<GetAllRecipeResponse>(response.Items.Select(c => (GetAllRecipeResponse)c).OrderByDescending(c => c.UpdatedAt));
+                Recipes = new ObservableCollection<GetAllRecipesResponseItem>(response.Items.Select(c => (GetAllRecipesResponseItem)c).OrderByDescending(c => c.UpdatedAt));
             }
         }
         catch (Exception ex)

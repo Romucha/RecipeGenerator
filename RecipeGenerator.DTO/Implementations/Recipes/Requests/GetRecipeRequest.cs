@@ -1,8 +1,6 @@
-﻿using RecipeGenerator.DTO.Interfaces.Requests;
-
-namespace RecipeGenerator.DTO.Implementations.Recipes.Requests
+﻿namespace RecipeGenerator.DTO.Implementations.Recipes.Requests
 {
-    public record GetRecipeRequest : IGetRequest
+    public record GetRecipeRequest
     {
         public Guid Id { get; set; }
     }

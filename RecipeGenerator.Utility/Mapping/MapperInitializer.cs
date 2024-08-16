@@ -74,7 +74,7 @@ namespace RecipeGenerator.Utility.Mapping
 
             CreateMap<CreateRecipeResponse, Recipe>().ReverseMap();
             CreateMap<DeleteRecipeResponse, Recipe>().ReverseMap();
-            CreateMap<GetAllRecipeResponse, Recipe>().ReverseMap();
+            CreateMap<GetAllRecipesResponseItem, Recipe>().ReverseMap();
             CreateMap<GetRecipeResponse, Recipe>().ReverseMap();
             CreateMap<UpdateRecipeResponse, Recipe>().ReverseMap();
         }

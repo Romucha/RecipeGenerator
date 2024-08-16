@@ -1,9 +1,13 @@
-﻿using RecipeGenerator.DTO.Interfaces.Responses;
-
-namespace RecipeGenerator.DTO.Implementations.Recipes.Responses
+﻿namespace RecipeGenerator.DTO.Implementations.Recipes.Responses
 {
-    public record GetAllRecipesResponse : IGetAllResponse<IGetAllResponseItem>
+    public record GetAllRecipesResponse
     {
-        public IEnumerable<IGetAllResponseItem> Items { get; set; } = default!;
+        public int TotalCount { get; set; }
+
+        public int PageSize { get; set; }
+
+        public int PageNumber { get; set; }
+
+        public IEnumerable<GetAllRecipesResponseItem> Items { get; set; } = Enumerable.Empty<GetAllRecipesResponseItem>();
     }
 }
