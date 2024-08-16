@@ -1,8 +1,6 @@
-﻿using RecipeGenerator.DTO.Interfaces.Responses;
-
-namespace RecipeGenerator.DTO.Implementations.Steps.Responses
+﻿namespace RecipeGenerator.DTO.Implementations.Steps.Responses
 {
-    public record UpdateStepResponse : IUpdateResponse
+    public record UpdateStepResponse
     {
         /// <summary>
         /// Identifier.
@@ -10,38 +8,23 @@ namespace RecipeGenerator.DTO.Implementations.Steps.Responses
         public Guid Id { get; set; }
 
         /// <summary>
-        /// Date of creation.
-        /// </summary>
-        public DateTime CreatedAt { get; set; }
-
-        /// <summary>
-        /// Date of last update.
-        /// </summary>
-        public DateTime UpdatedAt { get; set; }
-
-        /// <summary>
         /// Display name.
         /// </summary>
-        public string Name { get; set; } = default!;
+        public string? Name { get; set; }
 
         /// <summary>
         /// Description.
         /// </summary>
-        public string Description { get; set; } = default!;
+        public string? Description { get; set; }
 
         /// <summary>
         /// Counter.
         /// </summary>
-        public int Index { get; set; }
+        public int? Index { get; set; }
 
         /// <summary>
         /// List of photos.
         /// </summary>
-        public List<byte[]> Photos { get; set; } = new();
-
-        /// <summary>
-        /// Id of parent recipe.
-        /// </summary>
-        public Guid RecipeId { get; set; }
+        public List<byte[]>? Photos { get; set; }
     }
 }

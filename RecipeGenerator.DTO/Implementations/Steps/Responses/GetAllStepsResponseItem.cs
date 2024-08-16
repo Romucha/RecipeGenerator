@@ -1,10 +1,10 @@
-﻿using RecipeGenerator.DTO.Interfaces.Responses;
-
-namespace RecipeGenerator.DTO.Implementations.Steps.Responses
+﻿namespace RecipeGenerator.DTO.Implementations.Steps.Responses
 {
-    public record GetAllStepResponse : IGetAllResponseItem
+    public record GetAllStepsResponseItem
     {
         public Guid Id { get; set; }
+
+        public int Index { get; set; }
 
         public string Name { get; set; } = default!;
 

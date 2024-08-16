@@ -1,8 +1,7 @@
-﻿using RecipeGenerator.DTO.Interfaces.Requests;
-
-namespace RecipeGenerator.DTO.Implementations.Steps.Requests
+﻿namespace RecipeGenerator.DTO.Implementations.Steps.Requests
 {
-    public record CreateStepRequest : ICreateRequest
+    public record CreateStepRequest
     {
+        public Guid RecipeId { get; set; }
     }
 }

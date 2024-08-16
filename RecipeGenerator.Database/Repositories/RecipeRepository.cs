@@ -79,6 +79,9 @@ namespace RecipeGenerator.Database.Repositories
 
                 return await Task.FromResult(new GetAllRecipesResponse()
                 {
+                    TotalCount = recipes.Count(),
+                    PageNumber = pageNumber,
+                    PageSize = pageSize,
                     Items = recipes.Select(mapper.Map<GetAllRecipesResponseItem>).OrderByDescending(c => c.UpdatedAt)
                 });
             }

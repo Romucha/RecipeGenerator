@@ -1,14 +1,23 @@
 ﻿using RecipeGenerator.DTO.Implementations.AppliedIngredients.Responses;
-using RecipeGenerator.DTO.Interfaces.Responses;
 
 namespace RecipeGenerator.DTO.Implementations.Steps.Responses
 {
-    public record CreateStepResponse : ICreateResponse
+    public record CreateStepResponse
     {
         /// <summary>
         /// Identifier.
         /// </summary>
         public Guid Id { get; set; }
+
+        /// <summary>
+        /// Date of creation.
+        /// </summary>
+        public DateTime CreatedAt { get; set; }
+
+        /// <summary>
+        /// Date of the last update.
+        /// </summary>
+        public DateTime UpdatedAt { get; set; }
 
         /// <summary>
         /// Display name.
@@ -21,43 +30,18 @@ namespace RecipeGenerator.DTO.Implementations.Steps.Responses
         public string Description { get; set; } = string.Empty;
 
         /// <summary>
-        /// Image.
+        /// Index.
         /// </summary>
-        public byte[] Image { get; set; } = [];
+        public int Index { get; set; }
 
         /// <summary>
-        /// Course type.
+        /// Photos.
         /// </summary>
-        public int CourseType { get; set; }
+        public List<byte[]> Photos { get; set; } = [];
 
         /// <summary>
-        /// Approximate time to cook the dish.
+        /// Recipe identifier.
         /// </summary>
-        public TimeSpan EstimatedTime { get; set; }
-
-        /// <summary>
-        /// Number of portions.
-        /// </summary>
-        public int Portions { get; set; }
-
-        /// <summary>
-        /// List of steps.
-        /// </summary>
-        public List<CreateStepResponse> Steps { get; set; } = new();
-
-        /// <summary>
-        /// List of ingredients.
-        /// </summary>
-        public List<CreateAppliedIndredientResponse> Ingredients { get; set; } = new();
-
-        /// <summary>
-        /// Date of creation.
-        /// </summary>
-        public DateTime CreatedAt { get; set; }
-
-        /// <summary>
-        /// Date of the last update.
-        /// </summary>
-        public DateTime UpdatedAt { get; set; }
+        public Guid RecipeId { get; set; }
     }
 }

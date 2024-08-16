@@ -3,6 +3,11 @@
     public record UpdateStepRequest
     {
         /// <summary>
+        /// Step identifier.
+        /// </summary>
+        public Guid Id { get; set; }
+
+        /// <summary>
         /// Display name.
         /// </summary>
         public string? Name { get; set; }
@@ -21,10 +26,5 @@
         /// List of photos.
         /// </summary>
         public List<byte[]>? Photos { get; set; }
-
-        /// <summary>
-        /// Id of parent recipe.
-        /// </summary>
-        public Guid? RecipeId { get; set; }
     }
 }

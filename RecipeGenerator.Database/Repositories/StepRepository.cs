@@ -16,11 +16,11 @@ namespace RecipeGenerator.Database.Repositories
 {
     public class StepRepository
     {
-        private readonly ILogger<RecipeRepository> logger;
+        private readonly ILogger<StepRepository> logger;
         private readonly RecipeGeneratorDbContext dbContext;
         private readonly IMapper mapper;
 
-        public StepRepository(ILogger<RecipeRepository> logger, RecipeGeneratorDbContext dbContext, IMapper mapper)
+        public StepRepository(ILogger<StepRepository> logger, RecipeGeneratorDbContext dbContext, IMapper mapper)
         {
             this.logger = logger;
             this.dbContext = dbContext;
@@ -49,8 +49,8 @@ namespace RecipeGenerator.Database.Repositories
         {
             try
             {
-                var recipe = await dbContext.Recipes.FindAsync(id, cancellationToken);
-                GetRecipeResponse response = mapper.Map<GetRecipeResponse>(recipe);
+                var step = await dbContext.Steps.FindAsync(id, cancellationToken);
+                GetStepResponse response = mapper.Map<GetStepResponse>(step);
 
                 return response;
             }
@@ -61,27 +61,30 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<GetAllRecipesResponse> GetAllAsync(int pageSize, int pageNumber, string? filterString, CancellationToken cancellationToken = default)
+        public async Task<GetAllStepsResponse> GetAllAsync(int pageSize, int pageNumber, string? filterString, CancellationToken cancellationToken = default)
         {
             try
             {
-                IEnumerable<Recipe>? recipes = dbContext.Recipes.AsNoTracking();
+                IEnumerable<Step>? steps = dbContext.Steps.AsNoTracking();
                 if (!string.IsNullOrEmpty(filterString))
                 {
-                    recipes = recipes
+                    steps = steps
                         .Where(c => c.Name.IndexOf(filterString, StringComparison.OrdinalIgnoreCase) >= 0);
                 }
 
                 if (pageSize > 0)
                 {
-                    recipes = recipes
+                    steps = steps
                         .Skip(pageSize * pageNumber)
                         .Take(pageSize);
                 }
 
-                return await Task.FromResult(new GetAllRecipesResponse()
+                return await Task.FromResult(new GetAllStepsResponse()
                 {
-                    Items = recipes.Select(mapper.Map<GetAllRecipesResponseItem>).OrderByDescending(c => c.UpdatedAt)
+                    TotalCount = steps.Count(),
+                    PageNumber = pageNumber,
+                    PageSize = pageSize,
+                    Items = steps.Select(mapper.Map<GetAllStepsResponseItem>).OrderByDescending(c => c.Index),
                 });
             }
             catch (Exception ex)
@@ -91,23 +94,23 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<DeleteRecipeResponse> DeleteAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<DeleteStepResponse> DeleteAsync(Guid id, CancellationToken cancellationToken = default)
         {
             try
             {
-                var recipe = await dbContext.Recipes.FindAsync(id, cancellationToken);
-                if (recipe != null)
+                var step = await dbContext.Steps.FindAsync(id, cancellationToken);
+                if (step != null)
                 {
 
-                    DeleteRecipeResponse response = mapper.Map<DeleteRecipeResponse>(recipe);
+                    DeleteStepResponse response = mapper.Map<DeleteStepResponse>(step);
 
-                    dbContext.Recipes.Remove(recipe);
+                    dbContext.Steps.Remove(step);
 
                     return response;
                 }
                 else
                 {
-                    throw new Exception($"Recipe {id} was not found.");
+                    throw new Exception($"Step {id} was not found.");
                 }
             }
             catch (Exception ex)
@@ -117,58 +120,46 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<UpdateRecipeResponse> UpdateAsync(
+        public async Task<UpdateStepResponse> UpdateAsync(
             Guid id,
             string? name,
             string? description,
-            byte[]? image,
-            Course? course,
-            TimeSpan? estimatedTime,
-            int? portions,
+            List<byte[]>? photos,
+            int? index,
             CancellationToken cancellationToken = default)
         {
             try
             {
-                var recipe = await dbContext.Recipes.FindAsync(id, cancellationToken);
-                if (recipe != null)
+                var step = await dbContext.Steps.FindAsync(id, cancellationToken);
+                if (step != null)
                 {
                     if (!string.IsNullOrEmpty(name))
                     {
-                        recipe.Name = name;
+                        step.Name = name;
                     }
 
                     if (!string.IsNullOrEmpty(description))
                     {
-                        recipe.Description = description;
+                        step.Description = description;
                     }
 
-                    if (image != null)
+                    if (photos != null)
                     {
-                        recipe.Image = image;
+                        step.Photos = photos;
                     }
 
-                    if (course != null)
+                    if (index != null)
                     {
-                        recipe.CourseType = (Course)course;
+                        step.Index = (int)index;
                     }
 
-                    if (estimatedTime != null)
-                    {
-                        recipe.EstimatedTime = (TimeSpan)estimatedTime;
-                    }
+                    dbContext.Steps.Entry(step).State = EntityState.Modified;
 
-                    if (portions != null)
-                    {
-                        recipe.Portions = (int)portions;
-                    }
-
-                    dbContext.Recipes.Entry(recipe).State = EntityState.Modified;
-
-                    return mapper.Map<UpdateRecipeResponse>(recipe);
+                    return mapper.Map<UpdateStepResponse>(step);
                 }
                 else
                 {
-                    throw new Exception($"Recipe {id} was not found.");
+                    throw new Exception($"Step {id} was not found.");
                 }
             }
             catch (Exception ex)

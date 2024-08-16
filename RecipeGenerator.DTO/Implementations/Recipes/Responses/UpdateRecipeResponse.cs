@@ -13,31 +13,31 @@ namespace RecipeGenerator.DTO.Implementations.Recipes.Responses
         /// <summary>
         /// Display name.
         /// </summary>
-        public string Name { get; set; } = string.Empty;
+        public string? Name { get; set; }
 
         /// <summary>
         /// Description.
         /// </summary>
-        public string Description { get; set; } = string.Empty;
+        public string? Description { get; set; }
 
         /// <summary>
         /// Image.
         /// </summary>
-        public byte[] Image { get; set; } = [];
+        public byte[]? Image { get; set; } = [];
 
         /// <summary>
         /// Course type.
         /// </summary>
-        public int CourseType { get; set; }
+        public int? CourseType { get; set; }
 
         /// <summary>
         /// Approximate time to cook the dish.
         /// </summary>
-        public TimeSpan EstimatedTime { get; set; }
+        public TimeSpan? EstimatedTime { get; set; }
 
         /// <summary>
         /// Number of portions.
         /// </summary>
-        public int Portions { get; set; }
+        public int? Portions { get; set; }
     }
 }

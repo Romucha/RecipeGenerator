@@ -1,6 +1,6 @@
 ﻿namespace RecipeGenerator.DTO.Implementations.Recipes.Responses
 {
-    public record DeleteRecipeRespons
+    public record DeleteRecipeResponse
     {
         public Guid Id { get; set; }
 
