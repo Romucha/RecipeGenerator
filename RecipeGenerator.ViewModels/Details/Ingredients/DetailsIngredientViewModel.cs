@@ -1,8 +1,8 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.Extensions.Logging;
 using RecipeGenerator.Database.UnitsOfWork;
-using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Requests;
-using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Responses;
+using RecipeGenerator.DTO.ApplicableIngredients.Requests;
+using RecipeGenerator.DTO.ApplicableIngredients.Responses;
 using RecipeGenerator.Models.Ingredients;
 
 namespace RecipeGenerator.ViewModels.Details.Ingredients

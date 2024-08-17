@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using RecipeGenerator.Database.Context;
 using RecipeGenerator.DTO.Implementations.Recipes.Responses;
-using RecipeGenerator.DTO.Implementations.Steps.Responses;
+using RecipeGenerator.DTO.Steps.Responses;
 using RecipeGenerator.Models.Recipes;
 using RecipeGenerator.Models.Steps;
 using System;

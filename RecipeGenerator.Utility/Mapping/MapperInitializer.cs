@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
-using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Requests;
-using RecipeGenerator.DTO.Implementations.ApplicableIngredients.Responses;
-using RecipeGenerator.DTO.Implementations.AppliedIngredients.Requests;
-using RecipeGenerator.DTO.Implementations.AppliedIngredients.Responses;
-using RecipeGenerator.DTO.Implementations.Recipes.Requests;
-using RecipeGenerator.DTO.Implementations.Recipes.Responses;
-using RecipeGenerator.DTO.Implementations.Steps.Requests;
-using RecipeGenerator.DTO.Implementations.Steps.Responses;
+using RecipeGenerator.DTO.ApplicableIngredients.Requests;
+using RecipeGenerator.DTO.ApplicableIngredients.Responses;
+using RecipeGenerator.DTO.AppliedIngredients.Requests;
+using RecipeGenerator.DTO.AppliedIngredients.Responses;
+using RecipeGenerator.DTO.Recipes.Requests;
+using RecipeGenerator.DTO.Recipes.Responses;
+using RecipeGenerator.DTO.Steps.Requests;
+using RecipeGenerator.DTO.Steps.Responses;
 using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Models.Recipes;
 using RecipeGenerator.Models.Steps;
@@ -46,7 +46,7 @@ namespace RecipeGenerator.Utility.Mapping
 
             CreateMap<CreateAppliedIndredientResponse, AppliedIngredient>().ReverseMap();
             CreateMap<DeleteAppliedIngredientResponse, AppliedIngredient>().ReverseMap();
-            CreateMap<GetAllAppliedIngredientResponse, AppliedIngredient>().ReverseMap();
+            CreateMap<GetAllAppliedIngredientsResponseItem, AppliedIngredient>().ReverseMap();
             CreateMap<GetAppliedIngredientResponse, AppliedIngredient>().ReverseMap();
             CreateMap<UpdateAppliedIngredientResponse, AppliedIngredient>().ReverseMap();
         }

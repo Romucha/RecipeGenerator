@@ -1,10 +1,10 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.Extensions.Logging;
 using RecipeGenerator.Database.UnitsOfWork;
-using RecipeGenerator.DTO.Implementations.AppliedIngredients.Responses;
-using RecipeGenerator.DTO.Implementations.Recipes.Requests;
-using RecipeGenerator.DTO.Implementations.Recipes.Responses;
-using RecipeGenerator.DTO.Implementations.Steps.Responses;
+using RecipeGenerator.DTO.AppliedIngredients.Responses;
+using RecipeGenerator.DTO.Recipes.Requests;
+using RecipeGenerator.DTO.Recipes.Responses;
+using RecipeGenerator.DTO.Steps.Responses;
 using RecipeGenerator.Models.Recipes;
 using System.Collections.ObjectModel;
 
