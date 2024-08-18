@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using RecipeGenerator.Database.Context;
-using RecipeGenerator.DTO.Implementations.Recipes.Responses;
 using RecipeGenerator.DTO.Steps.Responses;
 using RecipeGenerator.Models.Recipes;
 using RecipeGenerator.Models.Steps;
@@ -61,29 +60,15 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<GetAllStepsResponse> GetAllAsync(int pageSize, int pageNumber, string? filterString, CancellationToken cancellationToken = default)
+        public async Task<GetAllStepsResponse> GetAllAsync(Guid recipeId, CancellationToken cancellationToken = default)
         {
             try
             {
-                IEnumerable<Step>? steps = dbContext.Steps.AsNoTracking();
-                if (!string.IsNullOrEmpty(filterString))
-                {
-                    steps = steps
-                        .Where(c => c.Name.IndexOf(filterString, StringComparison.OrdinalIgnoreCase) >= 0);
-                }
-
-                if (pageSize > 0)
-                {
-                    steps = steps
-                        .Skip(pageSize * pageNumber)
-                        .Take(pageSize);
-                }
-
+                IEnumerable<Step>? steps = dbContext.Steps.AsNoTracking().Where(c => c.RecipeId == recipeId);
+                
                 return await Task.FromResult(new GetAllStepsResponse()
                 {
                     TotalCount = steps.Count(),
-                    PageNumber = pageNumber,
-                    PageSize = pageSize,
                     Items = steps.Select(mapper.Map<GetAllStepsResponseItem>).OrderByDescending(c => c.Index),
                 });
             }

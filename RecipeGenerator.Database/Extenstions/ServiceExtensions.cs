@@ -22,10 +22,10 @@ namespace RecipeGenerator.Database.Extenstions
             services.AddSqlite<RecipeGeneratorDbContext>($"Data Source=\"{dbPath}/Recipe.db\"");
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
-            services.AddTransient<IRepository<Step>, Repository<Step>>();
-            services.AddTransient<IRepository<Recipe>, Repository<Recipe>>();
-            services.AddTransient<IRepository<AppliedIngredient>, Repository<AppliedIngredient>>();
-            services.AddTransient<IRepository<ApplicableIngredient>, Repository<ApplicableIngredient>>();
+            services.AddTransient<StepRepository>();
+            services.AddTransient<RecipeRepository>();
+            services.AddTransient<AppliedIngredientRepository>();
+            services.AddTransient<ApplicableIngredientRepository>();
 
             services.AddTransient<ApplicableIngredientsSeeder>();
         }

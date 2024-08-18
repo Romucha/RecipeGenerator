@@ -2,7 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using RecipeGenerator.Database.Context;
-using RecipeGenerator.DTO.Implementations.Recipes.Requests;
 using RecipeGenerator.DTO.Recipes.Responses;
 using RecipeGenerator.Models.Recipes;
 using System;

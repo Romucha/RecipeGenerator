@@ -57,7 +57,7 @@ public class ListRecipesViewModel : ObservableObject
                 PageNumber = PageNumber - 1,
                 PageSize = PageSize
             };
-            GetAllRecipesResponse? response = await unitOfWork.GetAllAsync<Recipe, GetAllRecipesRequest, GetAllRecipesResponse, GetAllRecipesResponseItem>(request);
+            GetAllRecipesResponse? response = await unitOfWork.RecipeRepository.GetAllAsync(PageSize, PageNumber - 1, FilterString);
             if (response != null)
             {
                 Recipes = new ObservableCollection<GetAllRecipesResponseItem>(response.Items.Select(c => (GetAllRecipesResponseItem)c).OrderByDescending(c => c.UpdatedAt));
@@ -101,11 +101,7 @@ public class ListRecipesViewModel : ObservableObject
             {
                 Recipes.Remove(item);
 
-                DeleteRecipeRequest request = new()
-                {
-                    Id = id
-                };
-                DeleteRecipeResponse? deleteRecipeResponse = await unitOfWork.DeleteAsync<Recipe, DeleteRecipeRequest, DeleteRecipeResponse>(request);
+                DeleteRecipeResponse? deleteRecipeResponse = await unitOfWork.RecipeRepository.DeleteAsync(id);
                 if (deleteRecipeResponse != null)
                 {
                     await unitOfWork.SaveChangesAsync();

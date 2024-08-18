@@ -42,12 +42,12 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<GetAllApplicableIngredientsResponseItem> GetAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<GetApplicableIngredientResponse> GetAsync(Guid id, CancellationToken cancellationToken = default)
         {
             try
             {
                 var ingredient = await dbContext.ApplicableIngredients.FindAsync(id, cancellationToken);
-                GetAllApplicableIngredientsResponseItem response = mapper.Map<GetAllApplicableIngredientsResponseItem>(ingredient);
+                GetApplicableIngredientResponse response = mapper.Map<GetApplicableIngredientResponse>(ingredient);
 
                 return response;
             }

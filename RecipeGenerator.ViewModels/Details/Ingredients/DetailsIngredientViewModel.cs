@@ -70,11 +70,7 @@ namespace RecipeGenerator.ViewModels.Details.Ingredients
             try
             {
                 logger.LogInformation($"Getting ingredient with id: {id}");
-                GetApplicableIngredientRequest request = new GetApplicableIngredientRequest()
-                {
-                    Id = id,
-                };
-                GetApplicableIngredientResponse? response = await unitOfWork.GetAsync<ApplicableIngredient, GetApplicableIngredientRequest, GetApplicableIngredientResponse>(request);
+                GetApplicableIngredientResponse? response = await unitOfWork.ApplicableIngredientRepository.GetAsync(id);
                 if (response != null)
                 {
                     Name = response.Name;

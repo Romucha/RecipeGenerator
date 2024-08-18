@@ -102,11 +102,7 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
             try
             {
                 logger.LogInformation("Getting recipe...");
-                GetRecipeRequest getRecipeRequest = new GetRecipeRequest()
-                {
-                    Id = recipeId
-                };
-                GetRecipeResponse? response = await unitOfWork.GetAsync<Recipe, GetRecipeRequest, GetRecipeResponse>(getRecipeRequest);
+                GetRecipeResponse? response = await unitOfWork.RecipeRepository.GetAsync(recipeId);
                 if (response != null)
                 {
                     Id = recipeId;
@@ -118,8 +114,6 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
                     CourseType = (Course)response.CourseType;
                     EstimatedTime = response.EstimatedTime;
                     Portions = response.Portions;
-                    Steps = new(response.Steps);
-                    Ingredients = new(response.Ingredients);
                 }
             }
             catch (Exception ex)

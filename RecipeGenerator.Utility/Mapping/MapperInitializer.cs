@@ -60,7 +60,7 @@ namespace RecipeGenerator.Utility.Mapping
 
             CreateMap<CreateStepResponse, Step>().ReverseMap();
             CreateMap<DeleteStepResponse, Step>().ReverseMap();
-            CreateMap<GetAllStepResponseItem, Step>().ReverseMap();
+            CreateMap<GetAllStepsResponseItem, Step>().ReverseMap();
             CreateMap<GetStepResponse, Step>().ReverseMap();
             CreateMap<UpdateStepResponse, Step>().ReverseMap();
         }

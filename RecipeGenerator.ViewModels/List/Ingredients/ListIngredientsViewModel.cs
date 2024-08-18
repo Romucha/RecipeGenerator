@@ -52,13 +52,7 @@ namespace RecipeGenerator.ViewModels.List.Ingredients
             {
                 logger.LogInformation($"Getting ingredients...");
                 logger.LogInformation($"Parameters:\r\npage number: {PageNumber};\r\npage size: {PageSize};\r\nfilter string: {FilterString}");
-                GetAllApplicableIngredientsRequest request = new()
-                {
-                    Filter = FilterString,
-                    PageNumber = PageNumber - 1,
-                    PageSize = PageSize
-                };
-                GetAllApplicableIngredientsResponse? response = await unitOfWork.GetAllAsync<ApplicableIngredient, GetAllApplicableIngredientsRequest, GetAllApplicableIngredientsResponse, GetAllApplicableIngredientsResponseItem>(request);
+                GetAllApplicableIngredientsResponse? response = await unitOfWork.ApplicableIngredientRepository.GetAllAsync(PageSize, PageNumber -1, FilterString);
                 if (response != null)
                 {
                     Ingredients = new ObservableCollection<GetAllApplicableIngredientsResponseItem>(response.Items.Select(c => (GetAllApplicableIngredientsResponseItem)c));

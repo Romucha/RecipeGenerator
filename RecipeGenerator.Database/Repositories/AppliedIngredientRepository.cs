@@ -26,13 +26,23 @@ namespace RecipeGenerator.Database.Repositories
             this.mapper = mapper;
         }
 
-        public async Task<CreateAppliedIndredientResponse> CreateAsync(Guid RecipeId, Guid ApplicableIngredientId, CancellationToken cancellationToken = default)
+        public async Task<CreateAppliedIndredientResponse> CreateAsync(Guid recipeId, Guid applicableIngredientId, CancellationToken cancellationToken = default)
         {
             try
             {
+                var recipe = await dbContext.Recipes.FindAsync(recipeId);
+                if (recipe is null)
+                    throw new Exception($"Recipe {recipeId} was not found");
+
+                var applicableIngredient = await dbContext.ApplicableIngredients.FindAsync(applicableIngredientId);
+                if (applicableIngredient is null)
+                    throw new Exception($"Ingredient {applicableIngredientId} was not found");
+
                 AppliedIngredient ingredient = new();
-                ingredient.RecipeId = RecipeId;
-                ingredient.IngredientId = ApplicableIngredientId;
+                ingredient.RecipeId = recipeId;
+                ingredient.IngredientId = applicableIngredientId;
+                ingredient.Name = applicableIngredient.Name;
+                ingredient.Description = applicableIngredient.Description;
                 await dbContext.AppliedIngredients.AddAsync(ingredient, cancellationToken);
                 CreateAppliedIndredientResponse response = mapper.Map<CreateAppliedIndredientResponse>(ingredient);
 
@@ -61,29 +71,15 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<GetAllAppliedIngredientsResponse> GetAllAsync(int pageSize, int pageNumber, string? filterString, CancellationToken cancellationToken = default)
+        public async Task<GetAllAppliedIngredientsResponse> GetAllAsync(Guid recipeId, CancellationToken cancellationToken = default)
         {
             try
             {
                 IEnumerable<AppliedIngredient>? ingredients = dbContext.AppliedIngredients.AsNoTracking();
-                if (!string.IsNullOrEmpty(filterString))
-                {
-                    ingredients = ingredients
-                        .Where(c => c.Name.IndexOf(filterString, StringComparison.OrdinalIgnoreCase) >= 0);
-                }
-
-                if (pageSize > 0)
-                {
-                    ingredients = ingredients
-                        .Skip(pageSize * pageNumber)
-                        .Take(pageSize);
-                }
-
+                
                 return await Task.FromResult(new GetAllAppliedIngredientsResponse()
                 {
                     TotalCount = ingredients.Count(),
-                    PageNumber = pageNumber,
-                    PageSize = pageSize,
                     Items = ingredients.Select(mapper.Map<GetAllAppliedIngredientsResponseItem>).OrderBy(c => c.Name)
                 });
             }

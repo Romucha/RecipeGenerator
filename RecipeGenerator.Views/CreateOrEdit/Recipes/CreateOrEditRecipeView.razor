@@ -2,24 +2,24 @@
     <DataAnnotationsValidator />
     <div style="display: flex; flex-direction: column">
         <div>
-            @nameof(ViewModel.RecipeName)
-            <InputText @bind-Value="@ViewModel.RecipeName"/>
+            @nameof(ViewModel.Name)
+            <InputText @bind-Value="@ViewModel.Name"/>
         </div>
         <div>
-            @nameof(ViewModel.RecipeDescription)
-            <InputText @bind-Value="@ViewModel.RecipeDescription"/>
+            @nameof(ViewModel.Description)
+            <InputText @bind-Value="@ViewModel.Description"/>
         </div>
         <div>
-            @nameof(ViewModel.RecipePortions)
-            <InputNumber @bind-Value="@ViewModel.RecipePortions"/>
+            @nameof(ViewModel.Portions)
+            <InputNumber @bind-Value="@ViewModel.Portions"/>
         </div>
         <div>
-            @nameof(ViewModel.RecipeEstimatedTime)
-            <InputNumber @bind-Value="@ViewModel.RecipeEstimatedTime"/>
+            @nameof(ViewModel.EstimatedTime)
+            <InputNumber @bind-Value="@ViewModel.EstimatedTime"/>
         </div>
         <div>
-            @nameof(ViewModel.RecipeCourseType)
-            <InputSelect @bind-Value="@ViewModel.RecipeCourseType">
+            @nameof(ViewModel.CourseType)
+            <InputSelect @bind-Value="@ViewModel.CourseType">
                 @foreach (var c in Enum.GetValues(typeof(RecipeGenerator.Models.Recipes.Course)))
                 {
                     <option value="@c">@c</option>
@@ -34,7 +34,7 @@
                 <div class="btn-primary" onclick="@(async () => { await ViewModel.SelectRecipePhotoAsync(); })">Select photo</div>
             </div>
             <div>
-                <img src="@($"data:image/gif;base64,{ViewModel.RecipeImage}")" alt="@ViewModel.RecipeName" />
+                <img src="@($"data:image/gif;base64,{ViewModel.Image}")" alt="@ViewModel.Name" />
             </div>
         </div>
         <div style="display: flex; flex-direction: column">
