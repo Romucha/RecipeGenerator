@@ -1,7 +1,4 @@
-﻿using RecipeGenerator.DTO.Implementations.AppliedIngredients.Requests;
-using RecipeGenerator.DTO.Implementations.Steps.Requests;
-
-namespace RecipeGenerator.DTO.Recipes.Requests
+﻿namespace RecipeGenerator.DTO.Recipes.Requests
 {
     public record UpdateRecipeRequest
     {

@@ -1,9 +1,13 @@
-﻿using RecipeGenerator.DTO.Interfaces.Responses;
-
-namespace RecipeGenerator.DTO.ApplicableIngredients.Responses
+﻿namespace RecipeGenerator.DTO.ApplicableIngredients.Responses
 {
-    public record GetAllApplicableIngredientsResponse : IGetAllResponse<IGetAllResponseItem>
+    public record GetAllApplicableIngredientsResponse
     {
-        public IEnumerable<IGetAllResponseItem> Items { get; set; } = default!;
+        public int TotalCount { get; set; }
+
+        public int PageSize { get; set; }
+
+        public int PageNumber { get; set; }
+
+        public IEnumerable<GetAllApplicableIngredientsResponseItem> Items { get; set; } = Enumerable.Empty<GetAllApplicableIngredientsResponseItem>();
     }
 }

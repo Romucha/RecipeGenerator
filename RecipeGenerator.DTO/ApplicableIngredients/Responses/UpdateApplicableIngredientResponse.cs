@@ -1,8 +1,6 @@
-﻿using RecipeGenerator.DTO.Interfaces.Responses;
-
-namespace RecipeGenerator.DTO.ApplicableIngredients.Responses
+﻿namespace RecipeGenerator.DTO.ApplicableIngredients.Responses
 {
-    public record UpdateApplicableIngredientResponse : IUpdateResponse
+    public record UpdateApplicableIngredientResponse
     {
         /// <summary>
         /// Idetifier.

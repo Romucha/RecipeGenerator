@@ -1,8 +1,6 @@
-﻿using RecipeGenerator.DTO.Interfaces.Requests;
-
-namespace RecipeGenerator.DTO.ApplicableIngredients.Requests
+﻿namespace RecipeGenerator.DTO.ApplicableIngredients.Requests
 {
-    public record UpdateApplicableIngredientRequest : IUpdateRequest
+    public record UpdateApplicableIngredientRequest
     {
         /// <summary>
         /// Idetifier.
@@ -12,17 +10,17 @@ namespace RecipeGenerator.DTO.ApplicableIngredients.Requests
         /// <summary>
         /// Display name.
         /// </summary>
-        public string? Name { get; set; } = default!;
+        public string? Name { get; set; }
 
         /// <summary>
         /// Description.
         /// </summary>
-        public string? Description { get; set; } = default!;
+        public string? Description { get; set; }
 
         /// <summary>
         /// Link to an internet page about the ingredient.
         /// </summary>
-        public Uri? Link { get; set; } = default!;
+        public Uri? Link { get; set; }
 
         /// <summary>
         /// Ingredient type.
@@ -32,6 +30,6 @@ namespace RecipeGenerator.DTO.ApplicableIngredients.Requests
         /// <summary>
         /// Image of the ingredient.
         /// </summary>
-        public byte[]? Image { get; set; } = default!;
+        public byte[]? Image { get; set; }
     }
 }

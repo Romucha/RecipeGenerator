@@ -1,13 +1,21 @@
-﻿using RecipeGenerator.DTO.Interfaces.Responses;
-
-namespace RecipeGenerator.DTO.ApplicableIngredients.Responses
+﻿namespace RecipeGenerator.DTO.ApplicableIngredients.Responses
 {
-    public record CreateApplicableIndredientResponse : ICreateResponse
+    public record CreateApplicableIndredientResponse
     {
         /// <summary>
         /// Idetifier.
         /// </summary>
         public Guid Id { get; set; }
+
+        /// <summary>
+        /// Date of creation.
+        /// </summary>
+        public DateTime CreatedAt { get; set; }
+
+        /// <summary>
+        /// Date of the last update.
+        /// </summary>
+        public DateTime UpdatedAt { get; set; }
 
         /// <summary>
         /// Display name.

@@ -2,8 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using RecipeGenerator.Database.Context;
-using RecipeGenerator.DTO.AppliedIngredients.Responses;
-using RecipeGenerator.DTO.AppliedIngredients.Requests;
+using RecipeGenerator.DTO.ApplicableIngredients.Responses;
 using RecipeGenerator.Models.Ingredients;
 using System;
 using System.Collections.Generic;
@@ -13,28 +12,26 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Database.Repositories
 {
-    public class AppliedIngredientRepository
+    public class ApplicableIngredientRepository
     {
-        private readonly ILogger<AppliedIngredientRepository> logger;
+        private readonly ILogger<ApplicableIngredientRepository> logger;
         private readonly RecipeGeneratorDbContext dbContext;
         private readonly IMapper mapper;
 
-        public AppliedIngredientRepository(ILogger<AppliedIngredientRepository> logger, RecipeGeneratorDbContext dbContext, IMapper mapper)
+        public ApplicableIngredientRepository(ILogger<ApplicableIngredientRepository> logger, RecipeGeneratorDbContext dbContext, IMapper mapper)
         {
             this.logger = logger;
             this.dbContext = dbContext;
             this.mapper = mapper;
         }
 
-        public async Task<CreateAppliedIndredientResponse> CreateAsync(Guid RecipeId, Guid ApplicableIngredientId, CancellationToken cancellationToken = default)
+        public async Task<CreateApplicableIndredientResponse> CreateAsync(CancellationToken cancellationToken = default)
         {
             try
             {
-                AppliedIngredient ingredient = new();
-                ingredient.RecipeId = RecipeId;
-                ingredient.IngredientId = ApplicableIngredientId;
-                await dbContext.AppliedIngredients.AddAsync(ingredient, cancellationToken);
-                CreateAppliedIndredientResponse response = mapper.Map<CreateAppliedIndredientResponse>(ingredient);
+                ApplicableIngredient ingredient = new();
+                await dbContext.ApplicableIngredients.AddAsync(ingredient, cancellationToken);
+                CreateApplicableIndredientResponse response = mapper.Map<CreateApplicableIndredientResponse>(ingredient);
 
                 return response;
             }
@@ -45,12 +42,12 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<GetAppliedIngredientResponse> GetAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<GetAllApplicableIngredientsResponseItem> GetAsync(Guid id, CancellationToken cancellationToken = default)
         {
             try
             {
-                var ingredient = await dbContext.AppliedIngredients.FindAsync(id, cancellationToken);
-                GetAppliedIngredientResponse response = mapper.Map<GetAppliedIngredientResponse>(ingredient);
+                var ingredient = await dbContext.ApplicableIngredients.FindAsync(id, cancellationToken);
+                GetAllApplicableIngredientsResponseItem response = mapper.Map<GetAllApplicableIngredientsResponseItem>(ingredient);
 
                 return response;
             }
@@ -61,11 +58,11 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<GetAllAppliedIngredientsResponse> GetAllAsync(int pageSize, int pageNumber, string? filterString, CancellationToken cancellationToken = default)
+        public async Task<GetAllApplicableIngredientsResponse> GetAllAsync(int pageSize, int pageNumber, string? filterString, CancellationToken cancellationToken = default)
         {
             try
             {
-                IEnumerable<AppliedIngredient>? ingredients = dbContext.AppliedIngredients.AsNoTracking();
+                IEnumerable<ApplicableIngredient>? ingredients = dbContext.ApplicableIngredients.AsNoTracking();
                 if (!string.IsNullOrEmpty(filterString))
                 {
                     ingredients = ingredients
@@ -79,12 +76,12 @@ namespace RecipeGenerator.Database.Repositories
                         .Take(pageSize);
                 }
 
-                return await Task.FromResult(new GetAllAppliedIngredientsResponse()
+                return await Task.FromResult(new GetAllApplicableIngredientsResponse()
                 {
                     TotalCount = ingredients.Count(),
                     PageNumber = pageNumber,
                     PageSize = pageSize,
-                    Items = ingredients.Select(mapper.Map<GetAllAppliedIngredientsResponseItem>).OrderBy(c => c.Name)
+                    Items = ingredients.Select(mapper.Map<GetAllApplicableIngredientsResponseItem>).OrderBy(c => c.Name)
                 });
             }
             catch (Exception ex)
@@ -94,23 +91,23 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<DeleteAppliedIngredientResponse> DeleteAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<DeleteApplicableIngredientResponse> DeleteAsync(Guid id, CancellationToken cancellationToken = default)
         {
             try
             {
-                var ingredient = await dbContext.AppliedIngredients.FindAsync(id, cancellationToken);
+                var ingredient = await dbContext.ApplicableIngredients.FindAsync(id, cancellationToken);
                 if (ingredient != null)
                 {
 
-                    DeleteAppliedIngredientResponse response = mapper.Map<DeleteAppliedIngredientResponse>(ingredient);
+                    DeleteApplicableIngredientResponse response = mapper.Map<DeleteApplicableIngredientResponse>(ingredient);
 
-                    dbContext.AppliedIngredients.Remove(ingredient);
+                    dbContext.ApplicableIngredients.Remove(ingredient);
 
                     return response;
                 }
                 else
                 {
-                    throw new Exception($"Applied ingredient {id} was not found.");
+                    throw new Exception($"Applicable ingredient {id} was not found.");
                 }
             }
             catch (Exception ex)
@@ -120,7 +117,7 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<UpdateAppliedIngredientResponse> UpdateAsync(
+        public async Task<UpdateApplicableIngredientResponse> UpdateAsync(
             Guid id,
             string? name,
             string? description,
@@ -128,7 +125,7 @@ namespace RecipeGenerator.Database.Repositories
         {
             try
             {
-                var ingredient = await dbContext.AppliedIngredients.FindAsync(id, cancellationToken);
+                var ingredient = await dbContext.ApplicableIngredients.FindAsync(id, cancellationToken);
                 if (ingredient != null)
                 {
                     if (!string.IsNullOrEmpty(name))
@@ -142,9 +139,9 @@ namespace RecipeGenerator.Database.Repositories
                     }
 
                     ingredient.UpdatedAt = DateTime.UtcNow;
-                    dbContext.AppliedIngredients.Entry(ingredient).State = EntityState.Modified;
+                    dbContext.ApplicableIngredients.Entry(ingredient).State = EntityState.Modified;
 
-                    return mapper.Map<UpdateAppliedIngredientResponse>(ingredient);
+                    return mapper.Map<UpdateApplicableIngredientResponse>(ingredient);
                 }
                 else
                 {

@@ -18,8 +18,8 @@ namespace RecipeGenerator.ViewModels.List.Ingredients
             this.logger = logger;
             this.unitOfWork = unitOfWork;
         }
-        private ObservableCollection<GetAllApplicableIngredientResponse> ingredients = new();
-        public ObservableCollection<GetAllApplicableIngredientResponse> Ingredients
+        private ObservableCollection<GetAllApplicableIngredientsResponseItem> ingredients = new();
+        public ObservableCollection<GetAllApplicableIngredientsResponseItem> Ingredients
         {
             get => ingredients;
             set => SetProperty(ref ingredients, value);
@@ -58,10 +58,10 @@ namespace RecipeGenerator.ViewModels.List.Ingredients
                     PageNumber = PageNumber - 1,
                     PageSize = PageSize
                 };
-                GetAllApplicableIngredientsResponse? response = await unitOfWork.GetAllAsync<ApplicableIngredient, GetAllApplicableIngredientsRequest, GetAllApplicableIngredientsResponse, GetAllApplicableIngredientResponse>(request);
+                GetAllApplicableIngredientsResponse? response = await unitOfWork.GetAllAsync<ApplicableIngredient, GetAllApplicableIngredientsRequest, GetAllApplicableIngredientsResponse, GetAllApplicableIngredientsResponseItem>(request);
                 if (response != null)
                 {
-                    Ingredients = new ObservableCollection<GetAllApplicableIngredientResponse>(response.Items.Select(c => (GetAllApplicableIngredientResponse)c));
+                    Ingredients = new ObservableCollection<GetAllApplicableIngredientsResponseItem>(response.Items.Select(c => (GetAllApplicableIngredientsResponseItem)c));
                 }
             }
             catch (Exception ex)

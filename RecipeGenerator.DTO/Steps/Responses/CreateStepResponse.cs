@@ -1,6 +1,4 @@
-﻿using RecipeGenerator.DTO.Implementations.AppliedIngredients.Responses;
-
-namespace RecipeGenerator.DTO.Steps.Responses
+﻿namespace RecipeGenerator.DTO.Steps.Responses
 {
     public record CreateStepResponse
     {

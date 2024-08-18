@@ -32,7 +32,7 @@ namespace RecipeGenerator.Utility.Mapping
 
             CreateMap<CreateApplicableIndredientResponse, ApplicableIngredient>().ReverseMap();
             CreateMap<DeleteApplicableIngredientResponse, ApplicableIngredient>().ReverseMap();
-            CreateMap<GetAllApplicableIngredientResponse, ApplicableIngredient>().ReverseMap();
+            CreateMap<GetAllApplicableIngredientsResponseItem, ApplicableIngredient>().ReverseMap();
             CreateMap<GetApplicableIngredientResponse, ApplicableIngredient>().ReverseMap();
             CreateMap<UpdateApplicableIngredientResponse, ApplicableIngredient>().ReverseMap();
         }

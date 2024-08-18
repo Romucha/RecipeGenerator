@@ -1,8 +1,6 @@
-﻿using RecipeGenerator.DTO.Interfaces.Responses;
-
-namespace RecipeGenerator.DTO.ApplicableIngredients.Responses
+﻿namespace RecipeGenerator.DTO.ApplicableIngredients.Responses
 {
-    public record GetAllApplicableIngredientResponse : IGetAllResponseItem
+    public record GetAllApplicableIngredientsResponseItem
     {
         public Guid Id { get; set; }
 

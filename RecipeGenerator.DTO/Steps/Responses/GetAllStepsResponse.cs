@@ -8,6 +8,6 @@
 
         public int PageSize { get; set; }
 
-        public IEnumerable<GetAllStepsResponseItem> Items { get; set; } = Enumerable.Empty<GetAllStepssResponseItem>();
+        public IEnumerable<GetAllStepsResponseItem> Items { get; set; } = Enumerable.Empty<GetAllStepsResponseItem>();
     }
 }

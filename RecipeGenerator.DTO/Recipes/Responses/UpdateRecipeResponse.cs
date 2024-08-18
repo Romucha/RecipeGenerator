@@ -1,7 +1,4 @@
-﻿using RecipeGenerator.DTO.Implementations.AppliedIngredients.Responses;
-using RecipeGenerator.DTO.Implementations.Steps.Responses;
-
-namespace RecipeGenerator.DTO.Recipes.Responses
+﻿namespace RecipeGenerator.DTO.Recipes.Responses
 {
     public record UpdateRecipeResponse
     {

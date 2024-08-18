@@ -97,8 +97,8 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             set => SetProperty(ref appliedIngredients, value);
         }
 
-        private ObservableCollection<GetAllApplicableIngredientResponse> applicableIngredients = new();
-        public ObservableCollection<GetAllApplicableIngredientResponse> ApplicableIngredients
+        private ObservableCollection<GetAllApplicableIngredientsResponseItem> applicableIngredients = new();
+        public ObservableCollection<GetAllApplicableIngredientsResponseItem> ApplicableIngredients
         {
             get => applicableIngredients;
             set => SetProperty(ref applicableIngredients, value);
@@ -166,12 +166,12 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                 logger.LogInformation("Initializing view model...");
                 GetAllApplicableIngredientsRequest getAllApplicableIngredientsRequest = new GetAllApplicableIngredientsRequest();
 
-                GetAllApplicableIngredientsResponse? getAllApplicableIngredientsResponse = await unitOfWork.GetAllAsync<ApplicableIngredient, GetAllApplicableIngredientsRequest, GetAllApplicableIngredientsResponse, GetAllApplicableIngredientResponse>(getAllApplicableIngredientsRequest);
+                GetAllApplicableIngredientsResponse? getAllApplicableIngredientsResponse = await unitOfWork.GetAllAsync<ApplicableIngredient, GetAllApplicableIngredientsRequest, GetAllApplicableIngredientsResponse, GetAllApplicableIngredientsResponseItem>(getAllApplicableIngredientsRequest);
                 if (getAllApplicableIngredientsResponse != null)
                 {
                     ApplicableIngredients = new(getAllApplicableIngredientsResponse
                         .Items
-                        .Select(c => (GetAllApplicableIngredientResponse)c)
+                        .Select(c => (GetAllApplicableIngredientsResponseItem)c)
                         .Where(c => !AppliedIngredients.Any(x => x.IngredientId == c.Id))
                         .OrderBy(c => c.Name));
                 }
