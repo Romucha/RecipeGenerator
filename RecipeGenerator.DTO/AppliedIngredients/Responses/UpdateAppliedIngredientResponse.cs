@@ -16,5 +16,19 @@
         /// Description of ingredient.
         /// </summary>
         public string? Description { get; set; }
+
+        public DateTime CreatedAt { get; set; }
+
+        public DateTime UpdatedAt { get; set; }
+
+        /// <summary>
+        /// Identifier of a parent recipe.
+        /// </summary>
+        public Guid RecipeId { get; set; }
+
+        /// <summary>
+        /// Identifier of a base ingredient.
+        /// </summary>
+        public Guid IngredientId { get; set; }
     }
 }

@@ -153,5 +153,18 @@ namespace RecipeGenerator.Database.Repositories
                 throw;
             }
         }
+
+        public async Task<bool> ExistsAsync(Guid id)
+        {
+            try
+            {
+                return await dbContext.AppliedIngredients.AnyAsync(c => c.Id == id);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex.ToString(), nameof(ExistsAsync));
+                return false;
+            }
+        }
     }
 }

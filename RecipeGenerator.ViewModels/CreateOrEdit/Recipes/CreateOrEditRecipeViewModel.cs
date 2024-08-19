@@ -74,8 +74,8 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             set => SetProperty(ref portions, value);
         }
 
-        private ObservableCollection<GetStepResponse> steps = new();
-        public ObservableCollection<GetStepResponse> Steps
+        private ObservableCollection<UpdateStepRequest> steps = new();
+        public ObservableCollection<UpdateStepRequest> Steps
         {
             get => steps;
             set => SetProperty(ref steps, value);
@@ -88,8 +88,8 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             set => SetProperty(ref stepIndex, value);
         }
 
-        private ObservableCollection<GetAppliedIngredientResponse> appliedIngredients = new();
-        public ObservableCollection<GetAppliedIngredientResponse> AppliedIngredients
+        private ObservableCollection<UpdateAppliedIngredientRequest> appliedIngredients = new();
+        public ObservableCollection<UpdateAppliedIngredientRequest> AppliedIngredients
         {
             get => appliedIngredients;
             set => SetProperty(ref appliedIngredients, value);
@@ -104,11 +104,22 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
 
         public Guid SelectedIngredientId { get; set; } = default!;
 
+        /*
+         * General idea:
+         * 1. Initialize view model. If it receives recipe, it gets it from database and fills view model with data from it.
+         * 2. Otherwise it creates a new recipe in database.
+         * 3. User fills regular parameters of recipe (name, description, etc.).
+         * 4. User fills lists of other entities (steps and applicable ingredients).
+         * 5. User presses button save.
+         * 6. Request to update recipe gets sent to database.
+         * 7. For each step and ingredient we check if it exists. If it does, we update its values. Otherwise we create it (CREATE OR UPDATE).
+         * 8. Changes are saved.
+         */
+
         public async Task InitializeAsync(Guid? id)
         {
             try
             {
-                logger.LogInformation($"Initializing view model with recipe {id}...");
                 await GetApplicableIngredientsAsync();
                 if (id != null)
                 {
@@ -128,24 +139,30 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                         {
                             steps.Add(await unitOfWork.StepRepository.GetAsync(s.Id));
                         }
-                        Steps = new ObservableCollection<GetStepResponse>(steps);
+                        //need a way to map it inside of repository
+                        Steps = new (steps);
 
                         List<GetAppliedIngredientResponse> appliedIngredients = new();
                         foreach (var ai in (await unitOfWork.AppliedIngredientRepository.GetAllAsync(RecipeId)).Items)
                         {
                             appliedIngredients.Add(await unitOfWork.AppliedIngredientRepository.GetAsync(ai.Id));
                         }
-                        AppliedIngredients = new ObservableCollection<GetAppliedIngredientResponse>(appliedIngredients);
+                        //here too
+                        AppliedIngredients = new(appliedIngredients);
+                        return;
                     }
                 }
+
+                CreateRecipeResponse? createRecipeResponse = await unitOfWork.RecipeRepository.CreateAsync();
+                if (createRecipeResponse != null)
+                {
+                    RecipeId = createRecipeResponse.Id;
+                }
+                await unitOfWork.SaveChangesAsync();
             }
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(InitializeAsync));
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
             }
         }
 
@@ -153,7 +170,6 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
         {
             try
             {
-                logger.LogInformation("Initializing view model...");
                 GetAllApplicableIngredientsRequest getAllApplicableIngredientsRequest = new GetAllApplicableIngredientsRequest();
 
                 GetAllApplicableIngredientsResponse? getAllApplicableIngredientsResponse = await unitOfWork.ApplicableIngredientRepository.GetAllAsync(0, 0, "");
@@ -170,46 +186,28 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                 logger.LogError(ex, nameof(GetApplicableIngredientsAsync));
                 throw;
             }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
         }
 
         public async Task AddAppliedIngredientAsync()
         {
             try
             {
-                logger.LogInformation("Adding an applied ingredient...");
                 if (SelectedIngredientId != default)
                 {
-
-                    CreateAppliedIndredientResponse createAppliedIndredientResponse 
-                        = await unitOfWork.AppliedIngredientRepository.CreateAsync(RecipeId, SelectedIngredientId);
-                    
-                    GetApplicableIngredientResponse getApplicableIngredientResponse 
-                        = await unitOfWork.ApplicableIngredientRepository.GetAsync(SelectedIngredientId);
-                    if (getApplicableIngredientResponse != null)
+                    UpdateAppliedIngredientRequest request = new()
                     {
-                        GetAppliedIngredientResponse getAppliedIngredientResponse = new()
-                        {
-                            IngredientId = getApplicableIngredientResponse.Id,
-                            Name = getApplicableIngredientResponse.Name,
-                            Description = getApplicableIngredientResponse.Description,
-                        };
-                        AppliedIngredients.Add(getAppliedIngredientResponse);
-                        await GetApplicableIngredientsAsync();
-                    }
+                        //if the primary id is default, we create the entity
+                        IngredientId = SelectedIngredientId,
+                        RecipeId = RecipeId
+                    };
+                    AppliedIngredients.Add(request);
+                    await GetApplicableIngredientsAsync();
                 }
             }
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(AddAppliedIngredientAsync));
                 throw;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
             }
         }
 
@@ -226,7 +224,6 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                         RecipeId = createRecipeResponse.Id;
                     }
                 }
-                logger.LogInformation("Editing recipe...");
                 Steps.ToList().ForEach(c => c.RecipeId = RecipeId);
                 AppliedIngredients.ToList().ForEach(c => c.RecipeId = RecipeId);
                 await unitOfWork.RecipeRepository.UpdateAsync(RecipeId, Name, Description, Image, CourseType, TimeSpan.FromMinutes(EstimatedTime), Portions);
@@ -248,53 +245,22 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                 logger.LogError(ex, nameof(CreateAsync));
                 throw;
             }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        public async Task SaveAsync()
-        {
-            try
-            {
-                logger.LogInformation("Saving changes...");
-                await unitOfWork.SaveChangesAsync();
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, nameof(SaveAsync));
-                throw;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
         }
 
         public async Task AddStepAsync()
         {
             try
             {
-                CreateStepResponse? createStepResponse = await unitOfWork.StepRepository.CreateAsync(RecipeId);
-                if (createStepResponse != null)
+                UpdateStepRequest request = new()
                 {
-                    GetStepResponse getStepResponse = new()
-                    {
-                        Id = createStepResponse.Id,
-                        Index = StepIndex++
-                    };
-                    Steps.Add(getStepResponse);
-                }
+                    Index = StepIndex++
+                };
+                Steps.Add(request);
             }
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(AddStepAsync));
                 throw;
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
             }
         }
 
@@ -302,7 +268,8 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
         {
             try
             {
-                logger.LogInformation($"Deleting step {id}...");
+                //think about how to delete steps from database
+                //exclude them after new steps are added maybe?
                 var step = Steps.FirstOrDefault(s => s.Id == id);
                 if (step != null)
                 {
@@ -314,7 +281,6 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                     DeleteStepResponse? deleteStepResponse = await unitOfWork.StepRepository.DeleteAsync(step.Id);
                     if (deleteStepResponse != null)
                     {
-                        await SaveAsync();
                         Steps.Where(c => c.Index > step.Index).ToList().ForEach(s => --s.Index);
                         --StepIndex;
                         Steps.Remove(step);
@@ -326,28 +292,19 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                 logger.LogError(ex, nameof(AddStepAsync));
                 throw;
             }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
         }
 
         public async Task DeleteAppliedIngredientAsync(Guid id)
         {
             try
             {
-                logger.LogInformation($"Deleting applied ingredient {id}...");
+                //all ideas about deletion of step can be applied here
                 var appliedIngredient = AppliedIngredients.FirstOrDefault(s => s.Id == id);
                 if (appliedIngredient != null)
                 {
-                    DeleteAppliedIngredientRequest deleteAppliedIngredientRequest = new()
-                    {
-                        Id = id
-                    };
                     DeleteAppliedIngredientResponse? deleteAppliedIngredientResponse = await unitOfWork.AppliedIngredientRepository.DeleteAsync(id);
                     if (deleteAppliedIngredientResponse != null)
                     {
-                        await SaveAsync();
                         AppliedIngredients.Remove(appliedIngredient);
                     }
                 }
@@ -357,26 +314,17 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                 logger.LogError(ex, nameof(DeleteAppliedIngredientAsync));
                 throw;
             }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
         }
 
         public async Task TakeRecipePhotoAsync()
         {
             try
             {
-                logger.LogInformation("Taking a photo for the recipe...");
                 Image = await mediaProviderService.TakePhotoAsync();
             }
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(TakeRecipePhotoAsync));
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
             }
         }
 
@@ -384,16 +332,11 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
         {
             try
             {
-                logger.LogInformation("Selecting a photo for the recipe from file system...");
                 Image = await mediaProviderService.SelectPhotoAsync();
             }
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(SelectRecipePhotoAsync));
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
             }
         }
 
@@ -401,7 +344,6 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
         {
             try
             {
-                logger.LogInformation($"Taking a photo for the step {stepId}...");
                 var step = Steps.FirstOrDefault(s => s.Id == stepId);
                 if (step != null)
                 {
@@ -415,17 +357,12 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                 logger.LogError(ex, nameof(TakeRecipePhotoAsync));
                 throw;
             }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
         }
 
         public async Task SelectStepPhotoAsync(Guid stepId)
         {
             try
             {
-                logger.LogInformation($"Selecting a photo for the step {stepId} from file system...");
                 var step = Steps.FirstOrDefault(s => s.Id == stepId);
                 if (step != null)
                 {
@@ -437,10 +374,6 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(SelectRecipePhotoAsync));
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
             }
         }
     }
