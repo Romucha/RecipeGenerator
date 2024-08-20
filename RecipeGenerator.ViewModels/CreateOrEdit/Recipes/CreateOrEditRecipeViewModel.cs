@@ -134,20 +134,35 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                         Image = getRecipeResponse.Image;
                         Portions = getRecipeResponse.Portions;
                         EstimatedTime = getRecipeResponse.EstimatedTime.TotalMinutes;
-                        List<GetStepResponse> steps = new();
+                        List<UpdateStepRequest> steps = new();
                         foreach (var s in (await unitOfWork.StepRepository.GetAllAsync(RecipeId)).Items)
                         {
-                            steps.Add(await unitOfWork.StepRepository.GetAsync(s.Id));
+                            var step = await unitOfWork.StepRepository.GetAsync(s.Id);
+                            steps.Add(new()
+                            {
+                                Name = s.Name,
+                                Description = s.Description,
+                                Index = s.Index,
+                                Photos = s.Photos,
+                                RecipeId = RecipeId,
+                            });
                         }
                         //need a way to map it inside of repository
                         Steps = new (steps);
 
-                        List<GetAppliedIngredientResponse> appliedIngredients = new();
+                        List<UpdateAppliedIngredientRequest> appliedIngredients = new();
                         foreach (var ai in (await unitOfWork.AppliedIngredientRepository.GetAllAsync(RecipeId)).Items)
                         {
-                            appliedIngredients.Add(await unitOfWork.AppliedIngredientRepository.GetAsync(ai.Id));
+                            var ingredient = await unitOfWork.AppliedIngredientRepository.GetAsync(ai.Id);
+                            appliedIngredients.Add(new()
+                            {
+                                Id = ai.Id,
+                                Name = ai.Name,
+                                Description = ai.Description,
+                                IngredientId = ,
+                                RecipeId = RecipeId
+                            });
                         }
-                        //here too
                         AppliedIngredients = new(appliedIngredients);
                         return;
                     }

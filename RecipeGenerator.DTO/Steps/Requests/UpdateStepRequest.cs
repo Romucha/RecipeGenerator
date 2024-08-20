@@ -26,5 +26,10 @@
         /// List of photos.
         /// </summary>
         public List<byte[]>? Photos { get; set; }
+
+        /// <summary>
+        /// Identifier of the parent recipe.
+        /// </summary>
+        public Guid RecipeId { get; set; }
     }
 }
