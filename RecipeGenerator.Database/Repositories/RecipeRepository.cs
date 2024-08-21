@@ -42,14 +42,21 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<GetRecipeResponse> GetAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<GetRecipeResponse?> GetAsync(Guid id, CancellationToken cancellationToken = default)
         {
             try
             {
                 var recipe = await dbContext.Recipes.FindAsync(id, cancellationToken);
-                GetRecipeResponse response = mapper.Map<GetRecipeResponse>(recipe);
+                if (recipe != null)
+                {
+                    GetRecipeResponse response = mapper.Map<GetRecipeResponse>(recipe);
 
-                return response;
+                    return response;
+                }
+                else
+                {
+                    return null;
+                }
             }
             catch (Exception ex)
             {
@@ -91,7 +98,7 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<DeleteRecipeResponse> DeleteAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<DeleteRecipeResponse?> DeleteAsync(Guid id, CancellationToken cancellationToken = default)
         {
             try
             {
@@ -107,7 +114,7 @@ namespace RecipeGenerator.Database.Repositories
                 }
                 else
                 {
-                    throw new Exception($"Recipe {id} was not found.");
+                    return null;
                 }
             }
             catch (Exception ex)
@@ -117,7 +124,7 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<UpdateRecipeResponse> UpdateAsync(
+        public async Task<UpdateRecipeResponse?> UpdateAsync(
             Guid id, 
             string? name, 
             string? description, 
@@ -169,7 +176,7 @@ namespace RecipeGenerator.Database.Repositories
                 }
                 else
                 {
-                    throw new Exception($"Recipe {id} was not found.");
+                    return null;
                 }
             }
             catch (Exception ex)

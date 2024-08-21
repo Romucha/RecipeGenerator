@@ -81,6 +81,8 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             set => SetProperty(ref steps, value);
         }
 
+        private List<DeleteStepRequest> stepsToDelete = new();
+
         private int stepIndex = 0;
         public int StepIndex
         {
@@ -94,6 +96,8 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             get => appliedIngredients;
             set => SetProperty(ref appliedIngredients, value);
         }
+
+        private List<DeleteAppliedIngredientRequest> appliedIngredientsToDelete = new();
 
         private ObservableCollection<GetAllApplicableIngredientsResponseItem> applicableIngredients = new();
         public ObservableCollection<GetAllApplicableIngredientsResponseItem> ApplicableIngredients
@@ -138,30 +142,36 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                         foreach (var s in (await unitOfWork.StepRepository.GetAllAsync(RecipeId)).Items)
                         {
                             var step = await unitOfWork.StepRepository.GetAsync(s.Id);
-                            steps.Add(new()
+                            if (step != null)
                             {
-                                Name = s.Name,
-                                Description = s.Description,
-                                Index = s.Index,
-                                Photos = s.Photos,
-                                RecipeId = RecipeId,
-                            });
+                                steps.Add(new()
+                                {
+                                    Id = step.Id,
+                                    Name = step.Name,
+                                    Description = step.Description,
+                                    Index = step.Index,
+                                    Photos = step.Photos,
+                                    RecipeId = step.RecipeId,
+                                });
+                            }
                         }
-                        //need a way to map it inside of repository
                         Steps = new (steps);
 
                         List<UpdateAppliedIngredientRequest> appliedIngredients = new();
                         foreach (var ai in (await unitOfWork.AppliedIngredientRepository.GetAllAsync(RecipeId)).Items)
                         {
                             var ingredient = await unitOfWork.AppliedIngredientRepository.GetAsync(ai.Id);
-                            appliedIngredients.Add(new()
+                            if (ingredient != null)
                             {
-                                Id = ai.Id,
-                                Name = ai.Name,
-                                Description = ai.Description,
-                                IngredientId = ,
-                                RecipeId = RecipeId
-                            });
+                                appliedIngredients.Add(new()
+                                {
+                                    Id = ingredient.Id,
+                                    Name = ingredient.Name,
+                                    Description = ingredient.Description,
+                                    IngredientId = ingredient.IngredientId,
+                                    RecipeId = ingredient.RecipeId
+                                });
+                            }
                         }
                         AppliedIngredients = new(appliedIngredients);
                         return;
@@ -209,14 +219,20 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             {
                 if (SelectedIngredientId != default)
                 {
-                    UpdateAppliedIngredientRequest request = new()
+                    var response = await unitOfWork.ApplicableIngredientRepository.GetAsync(SelectedIngredientId);
+                    if (response != null)
                     {
-                        //if the primary id is default, we create the entity
-                        IngredientId = SelectedIngredientId,
-                        RecipeId = RecipeId
-                    };
-                    AppliedIngredients.Add(request);
-                    await GetApplicableIngredientsAsync();
+                        UpdateAppliedIngredientRequest request = new()
+                        {
+                            //if the primary id is default, we create the entity
+                            Name = response.Name,
+                            Description = response.Description,
+                            IngredientId = SelectedIngredientId,
+                            RecipeId = RecipeId
+                        };
+                        AppliedIngredients.Add(request);
+                        await GetApplicableIngredientsAsync();
+                    }
                 }
             }
             catch (Exception ex)
@@ -229,18 +245,7 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
         public async Task CreateAsync()
         {
             try
-            {
-                GetRecipeResponse? getRecipeResponse = await unitOfWork.RecipeRepository.GetAsync(RecipeId);
-                if (getRecipeResponse == null)
-                {
-                    CreateRecipeResponse? createRecipeResponse = await unitOfWork.RecipeRepository.CreateAsync();
-                    if (createRecipeResponse != null)
-                    {
-                        RecipeId = createRecipeResponse.Id;
-                    }
-                }
-                Steps.ToList().ForEach(c => c.RecipeId = RecipeId);
-                AppliedIngredients.ToList().ForEach(c => c.RecipeId = RecipeId);
+            {   
                 await unitOfWork.RecipeRepository.UpdateAsync(RecipeId, Name, Description, Image, CourseType, TimeSpan.FromMinutes(EstimatedTime), Portions);
 
                 foreach (var appliedIngredient in AppliedIngredients)
@@ -248,9 +253,19 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                     await unitOfWork.AppliedIngredientRepository.UpdateAsync(appliedIngredient.Id, appliedIngredient.Name, appliedIngredient.Description);
                 }
 
+                foreach (var appliedIngredientToDelete in appliedIngredientsToDelete)
+                {
+                    await unitOfWork.AppliedIngredientRepository.DeleteAsync(appliedIngredientToDelete.Id);
+                }
+
                 foreach (var step in Steps)
                 {
                     await unitOfWork.StepRepository.UpdateAsync(step.Id, step.Name, step.Description, step.Photos, step.Index);
+                }
+
+                foreach (var stepToDelete in stepsToDelete)
+                {
+                    await unitOfWork.StepRepository.DeleteAsync(stepToDelete.Id);
                 }
                 
                 await unitOfWork.SaveChangesAsync();
@@ -266,10 +281,10 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
         {
             try
             {
-                UpdateStepRequest request = new()
+                UpdateStepRequest request = await Task.FromResult(new UpdateStepRequest
                 {
                     Index = StepIndex++
-                };
+                });
                 Steps.Add(request);
             }
             catch (Exception ex)
@@ -283,23 +298,17 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
         {
             try
             {
-                //think about how to delete steps from database
-                //exclude them after new steps are added maybe?
-                var step = Steps.FirstOrDefault(s => s.Id == id);
+                var step = await Task.FromResult(Steps.FirstOrDefault(s => s.Id == id));
                 if (step != null)
                 {
                     DeleteStepRequest deleteStepRequest = new()
                     {
                         Id = step.Id,
                     };
-
-                    DeleteStepResponse? deleteStepResponse = await unitOfWork.StepRepository.DeleteAsync(step.Id);
-                    if (deleteStepResponse != null)
-                    {
-                        Steps.Where(c => c.Index > step.Index).ToList().ForEach(s => --s.Index);
-                        --StepIndex;
-                        Steps.Remove(step);
-                    }
+                    stepsToDelete.Add(deleteStepRequest);
+                    Steps.Where(c => c.Index > step.Index).ToList().ForEach(s => --s.Index);
+                    --StepIndex;
+                    Steps.Remove(step);
                 }
             }
             catch (Exception ex)
@@ -312,16 +321,17 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
         public async Task DeleteAppliedIngredientAsync(Guid id)
         {
             try
-            {
-                //all ideas about deletion of step can be applied here
+            { 
                 var appliedIngredient = AppliedIngredients.FirstOrDefault(s => s.Id == id);
                 if (appliedIngredient != null)
                 {
-                    DeleteAppliedIngredientResponse? deleteAppliedIngredientResponse = await unitOfWork.AppliedIngredientRepository.DeleteAsync(id);
-                    if (deleteAppliedIngredientResponse != null)
+                    var request = new DeleteAppliedIngredientRequest()
                     {
-                        AppliedIngredients.Remove(appliedIngredient);
-                    }
+                        Id = appliedIngredient.Id,
+                    };
+                    appliedIngredientsToDelete.Add(request);
+                    AppliedIngredients.Remove(appliedIngredient);
+                    await GetApplicableIngredientsAsync();
                 }
             }
             catch (Exception ex)

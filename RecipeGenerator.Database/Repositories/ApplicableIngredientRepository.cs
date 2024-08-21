@@ -42,14 +42,21 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<GetApplicableIngredientResponse> GetAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<GetApplicableIngredientResponse?> GetAsync(Guid id, CancellationToken cancellationToken = default)
         {
             try
             {
                 var ingredient = await dbContext.ApplicableIngredients.FindAsync(id, cancellationToken);
-                GetApplicableIngredientResponse response = mapper.Map<GetApplicableIngredientResponse>(ingredient);
+                if (ingredient != null)
+                {
+                    GetApplicableIngredientResponse response = mapper.Map<GetApplicableIngredientResponse>(ingredient);
 
-                return response;
+                    return response;
+                }
+                else
+                {
+                    return null;
+                }
             }
             catch (Exception ex)
             {
@@ -91,7 +98,7 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<DeleteApplicableIngredientResponse> DeleteAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<DeleteApplicableIngredientResponse?> DeleteAsync(Guid id, CancellationToken cancellationToken = default)
         {
             try
             {
@@ -107,7 +114,7 @@ namespace RecipeGenerator.Database.Repositories
                 }
                 else
                 {
-                    throw new Exception($"Applicable ingredient {id} was not found.");
+                    return null;
                 }
             }
             catch (Exception ex)
@@ -117,7 +124,7 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<UpdateApplicableIngredientResponse> UpdateAsync(
+        public async Task<UpdateApplicableIngredientResponse?> UpdateAsync(
             Guid id,
             string? name,
             string? description,
@@ -145,7 +152,7 @@ namespace RecipeGenerator.Database.Repositories
                 }
                 else
                 {
-                    throw new Exception($"Recipe {id} was not found.");
+                    return null;
                 }
             }
             catch (Exception ex)

@@ -25,7 +25,7 @@
         /// <summary>
         /// List of photos.
         /// </summary>
-        public List<byte[]>? Photos { get; set; }
+        public List<byte[]>? Photos { get; set; } = new List<byte[]>();
 
         /// <summary>
         /// Identifier of the parent recipe.

@@ -44,14 +44,21 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<GetStepResponse> GetAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<GetStepResponse?> GetAsync(Guid id, CancellationToken cancellationToken = default)
         {
             try
             {
                 var step = await dbContext.Steps.FindAsync(id, cancellationToken);
-                GetStepResponse response = mapper.Map<GetStepResponse>(step);
+                if (step != null)
+                {
+                    GetStepResponse response = mapper.Map<GetStepResponse>(step);
 
-                return response;
+                    return response;
+                }
+                else
+                {
+                    return null;
+                }
             }
             catch (Exception ex)
             {
@@ -79,7 +86,7 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<DeleteStepResponse> DeleteAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<DeleteStepResponse?> DeleteAsync(Guid id, CancellationToken cancellationToken = default)
         {
             try
             {
@@ -95,7 +102,7 @@ namespace RecipeGenerator.Database.Repositories
                 }
                 else
                 {
-                    throw new Exception($"Step {id} was not found.");
+                    return null;
                 }
             }
             catch (Exception ex)
@@ -105,7 +112,7 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<UpdateStepResponse> UpdateAsync(
+        public async Task<UpdateStepResponse?> UpdateAsync(
             Guid id,
             string? name,
             string? description,
@@ -144,7 +151,7 @@ namespace RecipeGenerator.Database.Repositories
                 }
                 else
                 {
-                    throw new Exception($"Step {id} was not found.");
+                    return null;
                 }
             }
             catch (Exception ex)
