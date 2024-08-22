@@ -114,6 +114,22 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
                     CourseType = (Course)response.CourseType;
                     EstimatedTime = response.EstimatedTime;
                     Portions = response.Portions;
+
+                    var ingredients = await unitOfWork.AppliedIngredientRepository.GetAllAsync(recipeId);
+                    foreach (var ingredient in ingredients.Items)
+                    {
+                        var appliedIngredient = await unitOfWork.AppliedIngredientRepository.GetAsync(ingredient.Id);
+                        if (appliedIngredient != null)
+                            Ingredients.Add(appliedIngredient);
+                    }
+
+                    var steps = await unitOfWork.StepRepository.GetAllAsync(recipeId);
+                    foreach (var step in steps.Items)
+                    {
+                        var s = await unitOfWork.StepRepository.GetAsync(step.Id);
+                        if (s != null)
+                            Steps.Add(s);
+                    }
                 }
             }
             catch (Exception ex)
