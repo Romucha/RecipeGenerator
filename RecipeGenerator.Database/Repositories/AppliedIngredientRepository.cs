@@ -87,7 +87,7 @@ namespace RecipeGenerator.Database.Repositories
                 return await Task.FromResult(new GetAllAppliedIngredientsResponse()
                 {
                     TotalCount = ingredients.Count(),
-                    Items = ingredients.Select(mapper.Map<GetAllAppliedIngredientsResponseItem>).OrderBy(c => c.Name)
+                    Items = ingredients.Where(c => c.RecipeId == recipeId).Select(mapper.Map<GetAllAppliedIngredientsResponseItem>).OrderBy(c => c.Name)
                 });
             }
             catch (Exception ex)
@@ -127,32 +127,41 @@ namespace RecipeGenerator.Database.Repositories
             Guid id,
             string? name,
             string? description,
+            Guid? recipeId,
+            Guid? ingredientId,
             CancellationToken cancellationToken = default)
         {
             try
             {
                 var ingredient = await dbContext.AppliedIngredients.FindAsync(id, cancellationToken);
-                if (ingredient != null)
+                if (ingredient == null)
                 {
-                    if (!string.IsNullOrEmpty(name))
-                    {
-                        ingredient.Name = name;
-                    }
-
-                    if (!string.IsNullOrEmpty(description))
-                    {
-                        ingredient.Description = description;
-                    }
-
-                    ingredient.UpdatedAt = DateTime.UtcNow;
-                    dbContext.AppliedIngredients.Entry(ingredient).State = EntityState.Modified;
-
-                    return mapper.Map<UpdateAppliedIngredientResponse>(ingredient);
+                    ingredient = new();
+                    await dbContext.AppliedIngredients.AddAsync(ingredient);
                 }
-                else
+                if (!string.IsNullOrEmpty(name))
                 {
-                    return null;
+                    ingredient.Name = name;
                 }
+
+                if (!string.IsNullOrEmpty(description))
+                {
+                    ingredient.Description = description;
+                }
+
+                if (recipeId != null)
+                {
+                    ingredient.RecipeId = recipeId;
+                }
+
+                if (ingredientId != null)
+                {
+                    ingredient.IngredientId = ingredientId;
+                }
+
+                ingredient.UpdatedAt = DateTime.UtcNow;
+
+                return mapper.Map<UpdateAppliedIngredientResponse>(ingredient);
             }
             catch (Exception ex)
             {

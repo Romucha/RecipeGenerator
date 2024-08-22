@@ -202,7 +202,7 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                 {
                     ApplicableIngredients = new(getAllApplicableIngredientsResponse
                         .Items
-                        .Where(c => !AppliedIngredients.Any(x => x.IngredientId == c.Id))
+                        .Where(c => !AppliedIngredients.Any(x => x.IngredientId == c.Id && x.RecipeId == RecipeId))
                         .OrderBy(c => c.Name));
                 }
             }
@@ -250,7 +250,7 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
 
                 foreach (var appliedIngredient in AppliedIngredients)
                 {
-                    await unitOfWork.AppliedIngredientRepository.UpdateAsync(appliedIngredient.Id, appliedIngredient.Name, appliedIngredient.Description);
+                    await unitOfWork.AppliedIngredientRepository.UpdateAsync(appliedIngredient.Id, appliedIngredient.Name, appliedIngredient.Description, appliedIngredient.RecipeId, appliedIngredient.IngredientId);
                 }
 
                 foreach (var appliedIngredientToDelete in appliedIngredientsToDelete)
@@ -260,7 +260,7 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
 
                 foreach (var step in Steps)
                 {
-                    await unitOfWork.StepRepository.UpdateAsync(step.Id, step.Name, step.Description, step.Photos, step.Index);
+                    await unitOfWork.StepRepository.UpdateAsync(step.Id, step.Name, step.Description, step.Photos, step.Index, step.RecipeId);
                 }
 
                 foreach (var stepToDelete in stepsToDelete)
@@ -283,7 +283,8 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             {
                 UpdateStepRequest request = await Task.FromResult(new UpdateStepRequest
                 {
-                    Index = StepIndex++
+                    Index = StepIndex++,
+                    RecipeId = RecipeId,
                 });
                 Steps.Add(request);
             }

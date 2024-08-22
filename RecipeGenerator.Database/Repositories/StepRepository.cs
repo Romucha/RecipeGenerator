@@ -71,12 +71,12 @@ namespace RecipeGenerator.Database.Repositories
         {
             try
             {
-                IEnumerable<Step>? steps = dbContext.Steps.AsNoTracking().Where(c => c.RecipeId == recipeId);
+                IEnumerable<Step>? steps = dbContext.Steps.AsNoTracking();
                 
                 return await Task.FromResult(new GetAllStepsResponse()
                 {
                     TotalCount = steps.Count(),
-                    Items = steps.Select(mapper.Map<GetAllStepsResponseItem>).OrderByDescending(c => c.Index),
+                    Items = steps.Where(c => c.RecipeId == recipeId).Select(mapper.Map<GetAllStepsResponseItem>).OrderBy(c => c.Index),
                 });
             }
             catch (Exception ex)
@@ -118,41 +118,45 @@ namespace RecipeGenerator.Database.Repositories
             string? description,
             List<byte[]>? photos,
             int? index,
+            Guid? recipeId,
             CancellationToken cancellationToken = default)
         {
             try
             {
                 var step = await dbContext.Steps.FindAsync(id, cancellationToken);
-                if (step != null)
+                if (step == null)
                 {
-                    if (!string.IsNullOrEmpty(name))
-                    {
-                        step.Name = name;
-                    }
-
-                    if (!string.IsNullOrEmpty(description))
-                    {
-                        step.Description = description;
-                    }
-
-                    if (photos != null)
-                    {
-                        step.Photos = photos;
-                    }
-
-                    if (index != null)
-                    {
-                        step.Index = (int)index;
-                    }
-
-                    dbContext.Steps.Entry(step).State = EntityState.Modified;
-
-                    return mapper.Map<UpdateStepResponse>(step);
+                    step = new();
+                    await dbContext.Steps.AddAsync(step);
                 }
-                else
+                if (!string.IsNullOrEmpty(name))
                 {
-                    return null;
+                    step.Name = name;
                 }
+
+                if (!string.IsNullOrEmpty(description))
+                {
+                    step.Description = description;
+                }
+
+                if (photos != null)
+                {
+                    step.Photos = photos;
+                }
+
+                if (index != null)
+                {
+                    step.Index = (int)index;
+                }
+
+                if (recipeId != null)
+                {
+                    step.RecipeId = recipeId;
+                }
+
+                step.UpdatedAt = DateTime.UtcNow;
+
+                return mapper.Map<UpdateStepResponse>(step);
             }
             catch (Exception ex)
             {
