@@ -15,7 +15,7 @@ namespace RecipeGenerator.Components.Layout
         public MainViewModel ViewModel { get; set; } = default!;
 
         [Inject]
-        public IStringLocalizer<MainViewModel> StringLocalizer { get; set; } = default!;
+        public IStringLocalizer<MainLayout> StringLocalizer { get; set; } = default!;
 
         protected override async Task OnInitializedAsync()
         {

@@ -82,7 +82,7 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
                     }
                 }
 
-                return applicableIngredients.Select(mapper.Map<GetApplicableIngredientResponse>);
+                return applicableIngredients.Select(mapper.Map<GetApplicableIngredientResponse>).OrderBy(c => c.Name);
             }
             catch (Exception ex)
             {
@@ -97,7 +97,7 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
 
         public override async Task<IEnumerable<GetApplicableIngredientResponse>> GetEntitiesAsync()
         {
-            return await Task.FromResult(GetEntities());
+            return await Task.Run(GetEntities);
         }
 
         private IEnumerable<DictionaryEntry> getResourceEntries(ResourceManager resourceManager)
