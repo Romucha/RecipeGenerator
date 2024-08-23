@@ -7,6 +7,7 @@ using RecipeGenerator.ViewModels.Details.Recipes;
 using RecipeGenerator.ViewModels.Home;
 using RecipeGenerator.ViewModels.List.Ingredients;
 using RecipeGenerator.ViewModels.List.Recipes;
+using RecipeGenerator.ViewModels.Main;
 using RecipeGenerator.ViewModels.Settings;
 
 namespace RecipeGenerator.ViewModels.Extensions
@@ -20,6 +21,7 @@ namespace RecipeGenerator.ViewModels.Extensions
             details(services);
             home(services);
             list(services);
+            main(services);
             settings(services);
         }
 
@@ -50,6 +52,11 @@ namespace RecipeGenerator.ViewModels.Extensions
         {
             services.AddTransient<ListIngredientsViewModel>();
             services.AddTransient<ListRecipesViewModel>();
+        }
+
+        private static void main(IServiceCollection services)
+        {
+            services.AddTransient<MainViewModel>();
         }
 
         private static void settings(IServiceCollection services)

@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using AutoMapper;
+using Microsoft.Extensions.Logging;
+using RecipeGenerator.DTO.ApplicableIngredients.Responses;
 using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Resources.Descriptions.Ingredients;
 using RecipeGenerator.Resources.Identifiers.Ingredients;
@@ -11,16 +13,18 @@ using System.Resources;
 
 namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
 {
-    public class ApplicableIngredientsSeeder : BaseSeeder<ApplicableIngredient>
+    public class ApplicableIngredientsSeeder : BaseSeeder<GetApplicableIngredientResponse>
     {
         private readonly ILogger<ApplicableIngredientsSeeder> logger;
+        private readonly IMapper mapper;
 
-        public ApplicableIngredientsSeeder(ILogger<ApplicableIngredientsSeeder> logger)
+        public ApplicableIngredientsSeeder(ILogger<ApplicableIngredientsSeeder> logger, IMapper mapper)
         {
             this.logger = logger;
+            this.mapper = mapper;
         }
 
-        public override IEnumerable<ApplicableIngredient> GetEntities()
+        public override IEnumerable<GetApplicableIngredientResponse> GetEntities()
         {
             try
             {
@@ -46,7 +50,7 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
                         new(typeof(Images_SugarAndSugarProducts)),
                         new(typeof(Images_Vegetables))
                 ];
-                var images = imageManagers.SelectMany(c => getResourceEntries(c));
+                var images = imageManagers.SelectMany(getResourceEntries);
 
                 List<ApplicableIngredient> applicableIngredients = new();
 
@@ -78,12 +82,12 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
                     }
                 }
 
-                return applicableIngredients;
+                return applicableIngredients.Select(mapper.Map<GetApplicableIngredientResponse>);
             }
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(GetEntities));
-                return Enumerable.Empty<ApplicableIngredient>();
+                return Enumerable.Empty<GetApplicableIngredientResponse>();
             }
             finally
             {
@@ -91,7 +95,7 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
             }
         }
 
-        public override async Task<IEnumerable<ApplicableIngredient>> GetEntitiesAsync()
+        public override async Task<IEnumerable<GetApplicableIngredientResponse>> GetEntitiesAsync()
         {
             return await Task.FromResult(GetEntities());
         }

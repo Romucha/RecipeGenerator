@@ -5,8 +5,7 @@ namespace RecipeGenerator.Database.Seeding
     /// <summary>
     /// Provides functionality of seeding database with entities.
     /// </summary>
-    /// <typeparam name="Entity">Database entity.</typeparam>
-    public abstract class BaseSeeder<Entity> where Entity : class, IRecipeGeneratorEntity
+    public abstract class BaseSeeder<Entity> where Entity : class
     {
         /// <summary>
         /// Gets list of entites.

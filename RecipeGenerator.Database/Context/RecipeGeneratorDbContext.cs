@@ -17,15 +17,12 @@ namespace RecipeGenerator.Database.Context
 
         public DbSet<AppliedIngredient> AppliedIngredients { get; set; }
 
-        private readonly ApplicableIngredientsSeeder applicableIngredientsSeeder;
         private readonly IConfiguration configuration;
 
         public RecipeGeneratorDbContext(
-            ApplicableIngredientsSeeder applicableIngredientsSeeder,
             IConfiguration configuration,
             DbContextOptions dbContextOptions) : base(dbContextOptions)
         {
-            this.applicableIngredientsSeeder = applicableIngredientsSeeder;
             this.configuration = configuration;
             if (Database.IsRelational())
             {
@@ -38,16 +35,6 @@ namespace RecipeGenerator.Database.Context
         {
             optionsBuilder.EnableSensitiveDataLogging();
             base.OnConfiguring(optionsBuilder);
-        }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            //add seeding here
-            //modelBuilder.Entity<Ingredient>().HasData(ingredientGetter.Get().Select(c => mapper.Map<Ingredient>(c)));
-
-            var data = Task.Run(applicableIngredientsSeeder.GetEntities);
-            data.Wait();
-            modelBuilder.Entity<ApplicableIngredient>().HasData(data.Result);
         }
     }
 }

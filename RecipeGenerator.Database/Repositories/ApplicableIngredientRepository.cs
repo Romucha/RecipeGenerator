@@ -128,11 +128,21 @@ namespace RecipeGenerator.Database.Repositories
             Guid id,
             string? name,
             string? description,
+            Uri? link,
+            IngredientType? ingredientType,
+            byte[] image,
             CancellationToken cancellationToken = default)
         {
             try
             {
                 var ingredient = await dbContext.ApplicableIngredients.FindAsync(id, cancellationToken);
+
+                if (ingredient == null)
+                {
+                    ingredient = new();
+                    await dbContext.ApplicableIngredients.AddAsync(ingredient);
+                }
+
                 if (ingredient != null)
                 {
                     if (!string.IsNullOrEmpty(name))
@@ -145,8 +155,22 @@ namespace RecipeGenerator.Database.Repositories
                         ingredient.Description = description;
                     }
 
+                    if (link != null)
+                    {
+                        ingredient.Link = link;
+                    }
+
+                    if (ingredientType != null)
+                    {
+                        ingredient.IngredientType = (IngredientType)ingredientType;
+                    }
+
+                    if (image != null)
+                    {
+                        ingredient.Image = image;
+                    }
+
                     ingredient.UpdatedAt = DateTime.UtcNow;
-                    dbContext.ApplicableIngredients.Entry(ingredient).State = EntityState.Modified;
 
                     return mapper.Map<UpdateApplicableIngredientResponse>(ingredient);
                 }
