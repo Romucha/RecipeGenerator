@@ -13,7 +13,7 @@ using System.Resources;
 
 namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
 {
-    public class ApplicableIngredientsSeeder : BaseSeeder<GetApplicableIngredientResponse>
+    public class ApplicableIngredientsSeeder
     {
         private readonly ILogger<ApplicableIngredientsSeeder> logger;
         private readonly IMapper mapper;
@@ -24,21 +24,21 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
             this.mapper = mapper;
         }
 
-        public override IEnumerable<GetApplicableIngredientResponse> GetEntities()
+        public async Task<IEnumerable<GetApplicableIngredientResponse>> GetEntitiesAsync()
         {
             try
             {
-                logger.LogInformation("Creating list of inredients...");
                 ResourceManager identifiersManager = new(typeof(Identifiers_Ingredients));
                 var identifiers = getResourceEntries(identifiersManager).Select(c => c.Value!.ToString());
 
-                ResourceManager descriptionsManager = new(typeof(Descriptions_Ingredients));
-                ResourceManager linksManager = new(typeof(Links_Ingredients));
-                ResourceManager namesManager = new(typeof(Names_Ingredients));
-                ResourceManager typesManager = new(typeof(Names_IngredientTypes));
+                ResourceManager descriptionsManager = await Task.Run(() => new ResourceManager(typeof(Descriptions_Ingredients)));
+                ResourceManager linksManager = await Task.Run(() => new ResourceManager(typeof(Links_Ingredients)));
+                ResourceManager namesManager = await Task.Run(() => new ResourceManager(typeof(Names_Ingredients)));
+                ResourceManager typesManager = await Task.Run(() => new ResourceManager(typeof(Names_IngredientTypes)));
 
-                ResourceManager[] imageManagers =
-                [
+                ResourceManager[] imageManagers = await Task.Run(() =>
+                new ResourceManager[]
+                {
                     new(typeof(Images_CerealsAndPulses)),
                         new(typeof(Images_DairyProducts)),
                         new(typeof(Images_Fruits)),
@@ -49,8 +49,8 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
                         new(typeof(Images_SpicesAndHerbs)),
                         new(typeof(Images_SugarAndSugarProducts)),
                         new(typeof(Images_Vegetables))
-                ];
-                var images = imageManagers.SelectMany(getResourceEntries);
+                });
+                var images = await Task.Run(() => imageManagers.SelectMany(getResourceEntries));
 
                 List<ApplicableIngredient> applicableIngredients = new();
 
@@ -60,19 +60,22 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
                     {
                         try
                         {
-                            var typeid = id.Split('_').FirstOrDefault();
-                            var ingrtype = Enum.Parse<IngredientType>(typeid!);
-
-                            applicableIngredients.Add(new ApplicableIngredient()
+                            await Task.Run(() =>
                             {
-                                Id = Guid.NewGuid(),
-                                Description = descriptionsManager.GetString(id) ?? id,
-                                Name = namesManager.GetString(id) ?? id,
-                                Image = (images.FirstOrDefault(c => c.Key.ToString() == id).Value as byte[]) ?? [],
-                                Link = new Uri(linksManager.GetString(id) ?? "https://google.com"),
-                                IngredientType = ingrtype,
-                                CreatedAt = DateTime.UtcNow,
-                                UpdatedAt = DateTime.UtcNow,
+                                var typeid = id.Split('_').FirstOrDefault();
+                                var ingrtype = Enum.Parse<IngredientType>(typeid!);
+
+                                applicableIngredients.Add(new ApplicableIngredient()
+                                {
+                                    Id = Guid.NewGuid(),
+                                    Description = descriptionsManager.GetString(id) ?? id,
+                                    Name = namesManager.GetString(id) ?? id,
+                                    Image = (images.FirstOrDefault(c => c.Key.ToString() == id).Value as byte[]) ?? [],
+                                    Link = new Uri(linksManager.GetString(id) ?? "https://google.com"),
+                                    IngredientType = ingrtype,
+                                    CreatedAt = DateTime.UtcNow,
+                                    UpdatedAt = DateTime.UtcNow,
+                                });
                             });
                         }
                         catch (Exception)
@@ -86,18 +89,9 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
             }
             catch (Exception ex)
             {
-                logger.LogError(ex, nameof(GetEntities));
+                logger.LogError(ex, nameof(GetEntitiesAsync));
                 return Enumerable.Empty<GetApplicableIngredientResponse>();
             }
-            finally
-            {
-                logger.LogInformation("Done.");
-            }
-        }
-
-        public override async Task<IEnumerable<GetApplicableIngredientResponse>> GetEntitiesAsync()
-        {
-            return await Task.Run(GetEntities);
         }
 
         private IEnumerable<DictionaryEntry> getResourceEntries(ResourceManager resourceManager)
