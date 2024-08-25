@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using RecipeGenerator.Localization.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace RecipeGenerator.Localization.Services
 {
     public class ConfigurationFileWriterService
     {
-        public static string FilePath = "localization.settings.json";
+        public static string FilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "RecipeGenerator", "settings.json");
 
         private readonly ILogger<ConfigurationFileWriterService> logger;
 
@@ -52,12 +53,16 @@ namespace RecipeGenerator.Localization.Services
                     else
                     {
                         var jsonString = File.ReadAllText(FilePath);
-                        JsonNode? jsonNode = JsonNode.Parse(jsonString);
+                        var jsonNode = JsonObject.Parse(jsonString);
                         if (jsonNode != null)
                         {
-                            jsonNode[parameter] = JsonSerializer.Serialize(value);
+                            var node = jsonNode[$"{DynamicLocalizationOptions.Localization}"];
+                            if (node != null)
+                            {
+                                node[parameter]= JsonSerializer.Serialize(value);
+                                File.WriteAllText(FilePath, JsonSerializer.Serialize(jsonNode));
+                            }
                         }
-                        File.WriteAllText(FilePath, JsonSerializer.Serialize(jsonNode));
                     }
                 }
             }

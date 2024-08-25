@@ -64,13 +64,25 @@ namespace RecipeGenerator.Localization.Services
         {
             if (Cultures == null || Cultures.Count == 0)
             {
-                Cultures = new(DynamicLocalizationOptions.DefaultLocalizationOptions.Cultures!.Select(c => new CultureInfo(c)).OrderBy(c => c.Name));
+                if (options.Value.Cultures == null || !options.Value.Cultures.Any())
+                {
+                    Cultures = new(DynamicLocalizationOptions.DefaultLocalizationOptions.Cultures!.Select(c => new CultureInfo(c)).OrderBy(c => c.Name));
+                }
+                else
+                {
+                    cultures = new(options.Value.Cultures.Select(c => new CultureInfo(c)).OrderBy(c => c.Name));
+                }
             }
 
             if (string.IsNullOrWhiteSpace(CurrentCulture))
             {
                 var currentCulture = CultureInfo.CurrentUICulture.Name;
-                if (!Cultures.Any(c => c.Name == currentCulture))
+                if (!string.IsNullOrEmpty(options.Value.CurrentCulture))
+                {
+                    currentCulture = options.Value.CurrentCulture;
+                }
+
+                if (!cultures.Any(c => c.Name == currentCulture))
                 {
                     currentCulture = DynamicLocalizationOptions.DefaultLocalizationOptions.CurrentCulture;
                 }

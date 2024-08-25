@@ -19,7 +19,6 @@ namespace RecipeGenerator.Localization.Extensions
                 configuration.Bind(DynamicLocalizationOptions.Localization, options);
             });
             services.AddSingleton<DynamicLocalizationService>();
-            ConfigurationFileWriterService.FilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "RecipeGenerator", "settings.json");
             services.AddSingleton<ConfigurationFileWriterService>();
             services.AddLocalization();
         }

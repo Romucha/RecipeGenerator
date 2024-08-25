@@ -32,7 +32,8 @@ namespace RecipeGenerator.Localization.Models
             Cultures =
             [
                 "en",
-                "ru"
+                "ru",
+                "fr"
             ]
         };
     }

@@ -5,11 +5,14 @@ using NLog.Extensions.Logging;
 using RecipeGenerator.Database.Extenstions;
 using RecipeGenerator.Functionalities.Extensions;
 using RecipeGenerator.Localization.Extensions;
+using RecipeGenerator.Localization.Services;
 using RecipeGenerator.Services;
+using RecipeGenerator.Settings;
 using RecipeGenerator.Utility.Extensions;
 using RecipeGenerator.ViewModels.Extensions;
 using RecipeGenerator.ViewModels.Services;
 using System.Reflection;
+using System.Text.Json;
 
 namespace RecipeGenerator
 {
@@ -27,7 +30,7 @@ namespace RecipeGenerator
 
             builder.Services.AddMauiBlazorWebView();
 
-            var configFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "RecipeGenerator", "settings.json");
+            var configFile = ConfigurationFileWriterService.FilePath;
 
             if (!Directory.Exists(Path.GetDirectoryName(configFile)))
             {
@@ -36,7 +39,7 @@ namespace RecipeGenerator
 
             if (!File.Exists(configFile))
             {
-                File.WriteAllText(configFile, "{}");
+                File.WriteAllText(configFile, JsonSerializer.Serialize(DefaultAppSettings.Instance));
             }
 
             var config = new ConfigurationBuilder()
