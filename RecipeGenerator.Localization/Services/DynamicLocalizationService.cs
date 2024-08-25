@@ -14,6 +14,7 @@ namespace RecipeGenerator.Localization.Services
     {
         private readonly ILogger<DynamicLocalizationService> logger;
         private readonly IOptions<DynamicLocalizationOptions> options;
+        private readonly ConfigurationFileWriterService configurationFileWriterService;
 
         /// <summary>
         /// Creates a new instance of <see cref="DynamicLocalizationService"/> class.
@@ -21,16 +22,13 @@ namespace RecipeGenerator.Localization.Services
         /// </summary>
         /// <param name="logger">Logger service.</param>
         /// <param name="options">Localization options.</param>
-        public DynamicLocalizationService(ILogger<DynamicLocalizationService> logger, IOptions<DynamicLocalizationOptions> options)
+        public DynamicLocalizationService(ILogger<DynamicLocalizationService> logger, IOptions<DynamicLocalizationOptions> options, ConfigurationFileWriterService configurationFileWriterService)
         {
             this.logger = logger;
             this.options = options;
+            this.configurationFileWriterService = configurationFileWriterService;
             var dynamicOptions = options.Value;
-            if (dynamicOptions != null)
-            {
-                CurrentCulture = dynamicOptions.CurrentCulture!;
-                Cultures = new ObservableCollection<CultureInfo>(dynamicOptions.Cultures!.Select(c => new CultureInfo(c)));
-            }
+            Initialize();
         }
 
         private string currentCulture = default!;
@@ -44,10 +42,11 @@ namespace RecipeGenerator.Localization.Services
             {
                 SetProperty(ref currentCulture, value);
                 options.Value.CurrentCulture = value;
+                configurationFileWriterService.Write<DynamicLocalizationOptions>(nameof(CurrentCulture), value);
             }
         }
 
-        private ObservableCollection<CultureInfo> cultures = default!;
+        private ObservableCollection<CultureInfo> cultures = new();
         /// <summary>
         /// Collection of available cultures.
         /// </summary>
@@ -57,6 +56,25 @@ namespace RecipeGenerator.Localization.Services
             protected set
             {
                 SetProperty(ref cultures, value);
+                configurationFileWriterService.Write<DynamicLocalizationOptions>(nameof(Cultures), value.Select(c => c.Name));
+            }
+        }
+
+        public void Initialize()
+        {
+            if (Cultures == null || Cultures.Count == 0)
+            {
+                Cultures = new(DynamicLocalizationOptions.DefaultLocalizationOptions.Cultures!.Select(c => new CultureInfo(c)).OrderBy(c => c.Name));
+            }
+
+            if (string.IsNullOrWhiteSpace(CurrentCulture))
+            {
+                var currentCulture = CultureInfo.CurrentUICulture.Name;
+                if (!Cultures.Any(c => c.Name == currentCulture))
+                {
+                    currentCulture = DynamicLocalizationOptions.DefaultLocalizationOptions.CurrentCulture;
+                }
+                SetCulture(currentCulture!);
             }
         }
 
@@ -68,7 +86,6 @@ namespace RecipeGenerator.Localization.Services
         {
             try
             {
-                logger.LogInformation($"Setting up new culture from string: {cultureName}");
                 var culture = Cultures.FirstOrDefault(c => c.Name == cultureName);
                 if (culture is not null)
                 {
@@ -82,10 +99,6 @@ namespace RecipeGenerator.Localization.Services
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(SetCulture));
-            }
-            finally
-            {
-                logger.LogInformation("Done.");
             }
         }
     }

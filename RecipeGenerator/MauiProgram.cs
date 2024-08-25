@@ -26,17 +26,24 @@ namespace RecipeGenerator
              });
 
             builder.Services.AddMauiBlazorWebView();
-            var a = Assembly.GetExecutingAssembly();
-            using var stream = a.GetManifestResourceStream("RecipeGenerator.appsettings.json");
-            if (stream != null)
+
+            var configFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "RecipeGenerator", "settings.json");
+
+            if (!Directory.Exists(Path.GetDirectoryName(configFile)))
             {
-                var config = new ConfigurationBuilder()
-                    .AddJsonStream(stream)
+                Directory.CreateDirectory(Path.GetDirectoryName(configFile)!);
+            }
+
+            if (!File.Exists(configFile))
+            {
+                File.WriteAllText(configFile, "{}");
+            }
+
+            var config = new ConfigurationBuilder()
+                    .AddJsonFile(configFile)
                     .Build();
 
-
-                builder.Configuration.AddConfiguration(config);
-            }
+            builder.Configuration.AddConfiguration(config);
 
             builder.Services.AddRecipeGeneratorLocalization(builder.Configuration);
             builder.Services.AddRecipeGeneratorUtility();

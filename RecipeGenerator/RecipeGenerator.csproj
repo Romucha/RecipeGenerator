@@ -61,10 +61,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Remove="appsettings.json" />
-    </ItemGroup>
-
-    <ItemGroup>
         <PackageReference Include="Microsoft.Maui.Controls" Version="8.0.61" />
         <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.61" />
         <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="8.0.61" />
@@ -79,10 +75,6 @@
       <ProjectReference Include="..\RecipeGenerator.Utility\RecipeGenerator.Utility.csproj" />
       <ProjectReference Include="..\RecipeGenerator.ViewModels\RecipeGenerator.ViewModels.csproj" />
       <ProjectReference Include="..\RecipeGenerator.Views\RecipeGenerator.Views.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <EmbeddedResource Include="appsettings.json" />
     </ItemGroup>
 
 </Project>
