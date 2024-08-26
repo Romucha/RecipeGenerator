@@ -59,8 +59,8 @@ namespace RecipeGenerator.Localization.Services
                             var node = jsonNode[$"{DynamicLocalizationOptions.Localization}"];
                             if (node != null)
                             {
-                                node[parameter]= JsonSerializer.Serialize(value);
-                                File.WriteAllText(FilePath, JsonSerializer.Serialize(jsonNode));
+                                node[parameter]= JsonObject.Parse(JsonSerializer.Serialize(value));
+                                File.WriteAllText(FilePath, JsonSerializer.Serialize(jsonNode, typeof(JsonObject), jsonOptions));
                             }
                         }
                     }
