@@ -1,5 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.Extensions.Logging;
+using RecipeGenerator.Database.Context;
+using RecipeGenerator.Database.Extenstions;
 using RecipeGenerator.Localization.Services;
 
 namespace RecipeGenerator.ViewModels.Settings
@@ -7,19 +9,21 @@ namespace RecipeGenerator.ViewModels.Settings
     public class SettingsViewModel : ObservableObject
     {
         private readonly ILogger<SettingsViewModel> logger;
+        private readonly RecipeGeneratorDbContext dbContext;
+
         public DynamicLocalizationService DynamicLocalizationService { get; set; }
 
-        public SettingsViewModel(ILogger<SettingsViewModel> logger, DynamicLocalizationService dynamicLocalizationService)
+        public SettingsViewModel(ILogger<SettingsViewModel> logger, DynamicLocalizationService dynamicLocalizationService, RecipeGeneratorDbContext dbContext)
         {
             this.logger = logger;
             this.DynamicLocalizationService = dynamicLocalizationService;
+            this.dbContext = dbContext;
         }
 
         public async Task InitializeAsync()
         {
             try
             {
-                logger.LogInformation($"Initializing {nameof(SettingsViewModel)}...");
                 await Task.CompletedTask;
             }
             catch (Exception ex)
@@ -27,9 +31,20 @@ namespace RecipeGenerator.ViewModels.Settings
                 logger.LogError(ex, nameof(InitializeAsync));
                 throw;
             }
-            finally
+        }
+
+        public async Task ChangeCultureAsync(string culture)
+        {
+            try
             {
-                logger.LogInformation("Done.");
+                DynamicLocalizationService.SetCulture(culture);
+                dbContext.ChangeDatabase();
+                await Task.CompletedTask;
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(ChangeCultureAsync));
+                throw;
             }
         }
     }

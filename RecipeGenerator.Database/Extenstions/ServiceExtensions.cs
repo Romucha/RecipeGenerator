@@ -6,6 +6,7 @@ using RecipeGenerator.Database.UnitsOfWork;
 using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Models.Recipes;
 using RecipeGenerator.Models.Steps;
+using System.Globalization;
 
 namespace RecipeGenerator.Database.Extenstions
 {
@@ -19,7 +20,7 @@ namespace RecipeGenerator.Database.Extenstions
             {
                 Directory.CreateDirectory(dbPath);
             }
-            services.AddSqlite<RecipeGeneratorDbContext>($"Data Source=\"{dbPath}/Recipe.db\"");
+            services.AddSqlite<RecipeGeneratorDbContext>($"Data Source=\"{dbPath}/Recipe.{CultureInfo.CurrentUICulture.Name}.db\"");
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<StepRepository>();

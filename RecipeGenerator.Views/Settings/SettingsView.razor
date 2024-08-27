@@ -1,6 +1,6 @@
-﻿<EditForm Model="@ViewModel" OnSubmit="@(() => 
+﻿<EditForm Model="@ViewModel" OnSubmit="@(async () => 
     { 
-        ViewModel.DynamicLocalizationService.SetCulture(currentCulture);
+        await ViewModel.ChangeCultureAsync(currentCulture);
     })">
     <div style="display: flex; flex-direction: column">
         <div>@StringLocalizer["LanguageSettings"]</div>
