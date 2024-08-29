@@ -28,7 +28,6 @@ namespace RecipeGenerator.Localization.Services
             this.options = options;
             this.configurationFileWriterService = configurationFileWriterService;
             var dynamicOptions = options.Value;
-            Initialize();
         }
 
         private string currentCulture = default!;
