@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CerealsAndPulses" xml:space="preserve">
+    <value>Les céréales et les légumineuses sont des types de céréales. Les céréales sont principalement produites dans de nombreux pays. Elles sont très riches en glucides, tandis que les légumineuses sont riches en protéines. Les légumineuses sont cultivées en moins grande quantité que les céréales. Les céréales sont des graminées, tandis que les légumineuses sont des légumineuses. Les céréales appartiennent à la famille des Poacées (monocotylédones), tandis que les légumineuses sont des cultures qui produisent des gousses. Apprenons la différence entre les céréales et les légumineuses.
+
+Les céréales et les légumineuses sont de petites graines sèches et dures. Il existe cinq types de céréales : les céréales, les céréales complètes, les oléagineux, les pseudo-céréales et les légumineuses. Ces céréales sont cultivées et consommées comme aliments par les humains et les animaux. En raison de leur haute valeur nutritive, les céréales et les légumineuses sont cultivées et consommées en grande quantité. De plus, ces céréales sont les aliments de base de nombreux pays.
+
+La valeur nutritionnelle des céréales et des légumineuses est utilisée pour maintenir une alimentation saine. Ainsi, elles sont considérées comme l'un des principaux aliments et produites principalement.</value>
+  </data>
+  <data name="DairyProducts" xml:space="preserve">
+    <value>Les produits laitiers, également appelés lacticinia, sont des produits alimentaires fabriqués à partir de (ou contenant) du lait. Les animaux laitiers les plus courants sont la vache, le buffle d'eau, la chèvre et la brebis. Les produits laitiers comprennent les aliments courants des épiceries du monde occidental tels que le yaourt, le fromage, le lait et le beurre. Une installation qui produit des produits laitiers est appelée une laiterie. Les produits laitiers sont consommés dans le monde entier à des degrés divers (voir les habitudes de consommation dans le monde). Certaines personnes évitent certains ou tous les produits laitiers en raison d'une intolérance au lactose, du véganisme ou d'autres raisons de santé ou croyances.</value>
+  </data>
+  <data name="Fruits" xml:space="preserve">
+    <value>En botanique, un fruit est la structure porteuse de graines des plantes à fleurs qui se forme à partir de l'ovaire après la floraison (voir Anatomie des fruits).
+
+Les fruits sont le moyen par lequel les plantes à fleurs (également appelées angiospermes) disséminent leurs graines. Les fruits comestibles en particulier se sont longtemps propagés grâce aux mouvements des humains et d'autres animaux dans une relation symbiotique qui est le moyen de dispersion des graines pour un groupe et de nutrition pour l'autre ; en fait, les humains et de nombreux autres animaux sont devenus dépendants des fruits comme source de nourriture. Par conséquent, les fruits représentent une fraction substantielle de la production agricole mondiale, et certains (comme la pomme et la grenade) ont acquis de vastes significations culturelles et symboliques.
+
+Dans le langage courant, le fruit désigne normalement les structures charnues associées aux graines (ou produits) de plantes qui sont généralement sucrées ou acides et comestibles à l'état cru, comme les pommes, les bananes, les raisins, les citrons, les oranges et les fraises. Dans le langage botanique, le terme fruit inclut également de nombreuses structures qui ne sont pas communément appelées « fruits » dans le langage courant, telles que les noix, les gousses de haricots, les grains de maïs, les tomates et les grains de blé.
+Отправить отзыв</value>
+  </data>
+  <data name="Meat" xml:space="preserve">
+    <value>La viande est la chair animale consommée comme aliment. Les humains chassent, élèvent et récupèrent d'autres animaux pour leur viande depuis la préhistoire. L'établissement de colonies au cours de la révolution néolithique a permis la domestication d'animaux tels que les poulets, les moutons, les lapins, les porcs et les bovins. Cela a finalement conduit à leur utilisation dans la production de viande à l'échelle industrielle dans les abattoirs.</value>
+  </data>
+  <data name="NutsAndOilseeds" xml:space="preserve">
+    <value>Par « fruits à coque », on entend tous les fruits à coque (comme les noix, les noisettes, les amandes, etc.). Les graines de courge, de sésame, de tournesol, de lin sont des exemples de graines oléagineuses, qui ont des caractéristiques nutritionnelles similaires à celles des fruits à coque, de sorte que les deux types d'aliments sont réunis dans le même groupe.</value>
+  </data>
+  <data name="OtherIngredients" xml:space="preserve">
+    <value>Autres ingrédients.</value>
+  </data>
+  <data name="Seafood" xml:space="preserve">
+    <value>Les fruits de mer désignent toute forme de vie marine considérée comme un aliment par les humains, notamment les poissons et les crustacés. Les crustacés comprennent diverses espèces de mollusques (par exemple, les mollusques bivalves tels que les palourdes, les huîtres et les moules, et les céphalopodes tels que les poulpes et les calmars), les crustacés (par exemple, les crevettes, les crabes et les homards) et les échinodermes (par exemple, les concombres de mer et les oursins). Historiquement, les mammifères marins tels que les cétacés (baleines et dauphins) ainsi que les phoques ont été consommés comme aliments, bien que cela se produise dans une moindre mesure à l'époque moderne. Les plantes marines comestibles telles que certaines algues et microalgues sont largement consommées comme légumes de mer dans le monde entier, en particulier en Asie.</value>
+  </data>
+  <data name="SpicesAndHerbs" xml:space="preserve">
+    <value>Les épices et les herbes sont définies comme des substances dérivées de plantes qui ajoutent de la saveur à n'importe quel plat. Il est difficile de faire la distinction entre les deux. Les épices peuvent provenir des parties de plantes suivantes : racines, rhizomes, tiges, feuilles, écorce, fleurs, fruits et graines. Les herbes sont généralement considérées comme des plantes non ligneuses.</value>
+  </data>
+  <data name="SugarAndSugarProducts" xml:space="preserve">
+    <value>Le sucre est le nom générique des glucides sucrés, à chaîne courte et solubles, dont beaucoup sont utilisés dans les aliments. Ils sont composés de carbone, d'hydrogène et d'oxygène. Il existe différents types de sucre provenant de différentes sources.</value>
+  </data>
+  <data name="Vegetables" xml:space="preserve">
+    <value>Les légumes sont des parties de plantes consommées par les humains ou d'autres animaux comme nourriture. Le sens original est encore couramment utilisé et s'applique aux plantes collectivement pour désigner toute matière végétale comestible, y compris les fleurs, les fruits, les tiges, les feuilles, les racines et les graines. Une définition alternative du terme est appliquée de manière quelque peu arbitraire, souvent par tradition culinaire et culturelle. Elle peut exclure les aliments dérivés de certaines plantes qui sont des fruits, des fleurs, des noix et des céréales, mais inclut les fruits savoureux tels que les tomates et les courgettes, les fleurs telles que le brocoli et les graines telles que les légumineuses.</value>
+  </data>
+</root>

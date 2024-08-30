@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CerealsAndPulses" xml:space="preserve">
+    <value>Зерновые и бобовые — это виды зерновых. Зерновые в основном производятся во многих странах. Они очень богаты углеводами, в то время как бобовые богаты белками. Бобовые выращиваются в меньшем количестве, чем зерновые. Зерновые — это травы, тогда как бобовые — это бобовые. Зерновые относятся к семейству Poaceae (однодольные), а бобовые — это культуры, которые дают стручки. Давайте узнаем разницу между зерновыми и бобовыми.
+
+Зерновые и бобовые — это мелкие, сухие и твердые семена. Существует пять типов зерновых: зерновые, цельные зерна, масличные семена, псевдозерновые и бобовые. Эти зерна выращиваются и потребляются в пищу людьми и животными. Благодаря своей высокой питательной ценности зерновые и бобовые выращиваются и потребляются в больших количествах. Кроме того, эти зерна являются основными продуктами питания во многих странах.
+
+Пищевая ценность зерновых и бобовых используется для поддержания здорового питания. Таким образом, они считаются одним из основных съедобных продуктов и выращиваются преимущественно там.</value>
+  </data>
+  <data name="DairyProducts" xml:space="preserve">
+    <value>Молочные продукты, также известные как лактицинии, являются продуктами питания, изготовленными из (или содержащими) молока. Наиболее распространенными молочными животными являются корова, буйволица, коза и овца. Молочные продукты включают обычные продукты питания из продуктовых магазинов в западном мире, такие как йогурт, сыр, молоко и масло. Предприятие, производящее молочные продукты, известно как молочный завод. Молочные продукты потребляются во всем мире в разной степени (см. модели потребления во всем мире). Некоторые люди избегают некоторых или всех молочных продуктов из-за непереносимости лактозы, веганства или других проблем со здоровьем или убеждений.</value>
+  </data>
+  <data name="Fruits" xml:space="preserve">
+    <value>В ботанике плод — это структура цветковых растений, несущая семена, которая образуется из завязи после цветения (см. Анатомия плода).
+
+Плоды — это средства, с помощью которых цветковые растения (также известные как покрытосеменные) распространяют свои семена. Съедобные плоды, в частности, долгое время размножались с помощью движений людей и других животных в симбиотических отношениях, которые являются средством распространения семян для одной группы и питания для другой; фактически, люди и многие другие животные стали зависимы от фруктов как источника пищи. Следовательно, фрукты составляют значительную часть мирового сельскохозяйственного производства, а некоторые (например, яблоко и гранат) приобрели обширные культурные и символические значения.
+
+В общеупотребительном языке фрукт обычно означает связанные с семенами мясистые структуры (или продукты) растений, которые обычно сладкие или кислые и съедобны в сыром виде, такие как яблоки, бананы, виноград, лимоны, апельсины и клубника. В ботаническом употреблении термин «фрукт» также включает в себя множество структур, которые в повседневном языке обычно не называют «фруктами», например, орехи, стручки фасоли, зерна кукурузы, томаты и зерна пшеницы.</value>
+  </data>
+  <data name="Meat" xml:space="preserve">
+    <value>Мясо — это плоть животных, употребляемая в пищу. Люди охотились, занимались фермерством и собирали мясо с других животных с доисторических времен. Создание поселений в эпоху неолитической революции позволило одомашнить таких животных, как куры, овцы, кролики, свиньи и крупный рогатый скот. В конечном итоге это привело к их использованию в производстве мяса в промышленных масштабах на скотобойнях.</value>
+  </data>
+  <data name="NutsAndOilseeds" xml:space="preserve">
+    <value>Под «орехами» мы подразумеваем все очищенные фрукты (такие как грецкие орехи, фундук, миндаль и т. д.). Примерами масличных семян являются семена тыквы, кунжута, подсолнечника, льна, которые по своим питательным характеристикам схожи с орехами, поэтому эти два типа продуктов объединены в одну группу.</value>
+  </data>
+  <data name="OtherIngredients" xml:space="preserve">
+    <value>Другие ингредиенты.</value>
+  </data>
+  <data name="Seafood" xml:space="preserve">
+    <value>Морепродукты — это любая форма морской жизни, которую люди считают пищей, в том числе рыба и моллюски. Моллюски включают различные виды моллюсков (например, двустворчатые моллюски, такие как мидии, устрицы и мидии, а также головоногие, такие как осьминоги и кальмары), ракообразные (например, креветки, крабы и омары) и иглокожие (например, морские огурцы и морские ежи). Исторически морские млекопитающие, такие как китообразные (киты и дельфины), а также тюлени употреблялись в пищу, хотя в наше время это происходит в меньшей степени. Съедобные морские растения, такие как некоторые морские водоросли и микроводоросли, широко употребляются в пищу в качестве морских овощей по всему миру, особенно в Азии.</value>
+  </data>
+  <data name="SpicesAndHerbs" xml:space="preserve">
+    <value>Специи и травы определяются как вещества растительного происхождения, которые придают вкус любому блюду. Трудно провести различие между ними. Специи могут быть получены из следующих частей растений: корни, корневища, стебли, листья, кора, цветы, плоды и семена. Травы обычно считаются недревесными растениями.</value>
+  </data>
+  <data name="SugarAndSugarProducts" xml:space="preserve">
+    <value>Сахар — это обобщенное название сладких, короткоцепочечных, растворимых углеводов, многие из которых используются в пище. Они состоят из углерода, водорода и кислорода. Существуют различные виды сахара, полученные из разных источников.</value>
+  </data>
+  <data name="Vegetables" xml:space="preserve">
+    <value>Овощи — это части растений, которые употребляются в пищу людьми или другими животными. Первоначальное значение до сих пор широко используется и применяется к растениям в целом для обозначения всех съедобных растительных веществ, включая цветы, плоды, стебли, листья, корни и семена. Альтернативное определение термина применяется несколько произвольно, часто в соответствии с кулинарной и культурной традицией. Оно может исключать продукты, полученные из некоторых растений, которые являются фруктами, цветами, орехами и зерновыми культурами, но включать соленые фрукты, такие как помидоры и цуккини, цветы, такие как брокколи, и семена, такие как бобовые.</value>
+  </data>
+</root>
