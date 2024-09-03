@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AmuseBouche" xml:space="preserve">
+    <value>Amuse-bouche — это одна закуска размером на один укус. Amuse-bouche отличаются от закусок тем, что их не заказывают из меню посетители, а подают бесплатно и только по выбору шеф-повара. Они подаются как для подготовки гостя к еде, так и для того, чтобы дать представление о стиле шеф-повара.
+
+Термин французский и буквально означает «развлекатель рта». Множественное число может быть amuse-bouche или amuse-bouches. Во Франции amuse-gueule традиционно используется в разговоре и литературном произведении, в то время как amuse-bouche даже не упоминается в большинстве словарей, являясь эвфемистической гиперкоррекцией, которая появилась в 1980-х годах в меню ресторанов и использовалась почти только там. (Во французском языке bouche относится к человеческому рту, в то время как gueule означает более широкий рот животного, например, собаки, хотя обычно используется для обозначения рта и уничижительно только в определенных выражениях, например, "ferme ta gueule".)</value>
+  </data>
+  <data name="Appetizer" xml:space="preserve">
+    <value>Закуска — это небольшое блюдо из общей трапезы. Это также может быть напиток или несколько напитков, содержащих алкоголь. Распространенные примеры включают: коктейль из креветок, кальмары, салат, картофельные шкурки, мидии, брускетту или сыр и крекеры. Закуска также может быть очень элегантной в некоторых ресторанах.</value>
+  </data>
+  <data name="CheesePlate" xml:space="preserve">
+    <value>Мясная доска — это закуска, обычно подаваемая на деревянной доске или каменной плите, которую едят прямо с доски или накладывают на столовые приборы. На ней представлен выбор консервированных продуктов, особенно вяленого мяса или паштетов, а также сыров и крекеров или хлеба.</value>
+  </data>
+  <data name="Dessert" xml:space="preserve">
+    <value>Десерт — это блюдо, которое завершает трапезу. Блюдо состоит из сладких блюд, таких как конфеты, и, возможно, напитка, такого как десертное вино и ликер. Некоторые культуры подслащивают пищу, которая обычно является соленой, чтобы создать десерты. В некоторых частях мира нет традиции подачи десерта в завершение трапезы.
+
+Термин «десерт» может применяться ко многим сладостям, таким как печенье, торты, печенье, заварной крем, желатин, мороженое, выпечка, пироги, пудинги, макаруны, сладкие супы, тарты и фруктовый салат (фрукты часто встречаются в десертных блюдах из-за их естественной сладости).</value>
+  </data>
+  <data name="FirstMainDish" xml:space="preserve">
+    <value>В современной сервировке французского стола и в большинстве англоязычных стран основным блюдом является блюдо, подаваемое перед основным блюдом. За пределами Северной Америки оно, как правило, является синонимом терминов hors d'oeuvre, закуска или стартер.</value>
+  </data>
+  <data name="Fish" xml:space="preserve">
+    <value>Рыба.</value>
+  </data>
+  <data name="Horsdoeuvres" xml:space="preserve">
+    <value>Закуска, закуска или стартер — это небольшое блюдо, подаваемое перед едой в европейской кухне. Некоторые закуски подаются холодными, другие — горячими. Закуски могут подаваться за обеденным столом как часть еды или перед посадкой, например, на приеме или коктейльной вечеринке. Раньше закуски также подавались между блюдами. С точки зрения обслуживания существует два типа закусок:
+
+1. Обычные закуски;
+2. Классические закуски.
+
+Обычные закуски включают холодные блюда, такие как салат, холодное мясо и рыба. Классические закуски включают фруктовый сок и безалкогольные напитки, грейпфрут, коктейль из моллюсков и т. д.
+
+Обычно закуска меньше основного блюда и часто предназначена для того, чтобы ее ели руками.</value>
+  </data>
+  <data name="PalateCleanserCourse" xml:space="preserve">
+    <value>Очиститель неба — это порция еды или напитка, которая удаляет остатки пищи с языка, позволяя точнее оценить новый вкус.
+
+Очистители вкуса часто используются между дегустацией вина, сыра или других сильных вкусов. Маринованный имбирь используется в качестве очистителя вкуса между кусочками суши.
+
+Традиционные французские очистители вкуса включают сорбет, хлеб, ломтики яблока, петрушку и мяту.
+
+Бамия — это традиционное анатолийское рагу, которое иногда подают в качестве очистителя вкуса между блюдами на церемониальных пирах.</value>
+  </data>
+  <data name="PostMealDrinksAndPastries" xml:space="preserve">
+    <value>Дижестив (произносится как ди-джес-тиф) — это еще одно название послеобеденного напитка или алкогольного напитка, подаваемого после ужина для улучшения пищеварения. Эти напитки подаются в небольших количествах, обычно в бокале для сока, и предназначены для потягивания.</value>
+  </data>
+  <data name="Salad" xml:space="preserve">
+    <value>Салат — это блюдо, состоящее из смешанных ингредиентов, часто овощей. Обычно их подают охлажденными или комнатной температуры, хотя некоторые можно подавать теплыми. Приправы и заправки для салатов, которые существуют в различных вкусах, часто используются для улучшения салата.</value>
+  </data>
+  <data name="SecondMainDish" xml:space="preserve">
+    <value>Двухразовое питание состоит из супа/салата, за которым следует основное блюдо или основное блюдо, а завершается десертом.</value>
+  </data>
+  <data name="Soup" xml:space="preserve">
+    <value>Суп — это в первую очередь жидкая пища, обычно подаваемая теплой или горячей (но может быть прохладной или холодной), которая готовится путем смешивания ингредиентов мяса или овощей с бульоном, молоком или водой. Горячие супы дополнительно характеризуются кипячением твердых ингредиентов в жидкостях в кастрюле до тех пор, пока не извлекутся ароматы, образуя бульон. Супы похожи на рагу, и в некоторых случаях между ними может не быть четкого различия; однако в супах обычно больше жидкости (бульона), чем в рагу.</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Блюдо, которое еще предстоит определить.</value>
+  </data>
+</root>

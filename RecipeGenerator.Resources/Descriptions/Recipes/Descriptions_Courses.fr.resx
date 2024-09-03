@@ -118,59 +118,59 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AmuseBouche" xml:space="preserve">
-    <value>An amuse-bouche is a single, bite-sized hors d'œuvre. Amuse-bouches are different from appetizers in that they are not ordered from a menu by patrons but are served free and according to the chef's selection alone. These are served both to prepare the guest for the meal and to offer a glimpse of the chef's style.
+    <value>Un amuse-bouche est un hors-d'œuvre de la taille d'une bouchée. Les amuse-bouches sont différents des hors-d'œuvre en ce sens qu'ils ne sont pas commandés à partir d'un menu par les clients mais sont servis gratuitement et selon la sélection du chef uniquement. Ils sont servis à la fois pour préparer le convive au repas et pour offrir un aperçu du style du chef.
 
-The term is French and literally means "mouth amuser". The plural form may be amuse-bouche or amuse-bouches. In France, amuse-gueule is traditionally used in conversation and literary writing, while amuse-bouche is not even listed in most dictionaries, being a euphemistic hypercorrection that appeared in the 1980s on restaurant menus and used almost only there. (In French, bouche refers to the human mouth, while gueule means the wider mouth of an animal, e.g. dog, though commonly used for mouth and derogatory only in certain expressions, e.g. "ferme ta gueule".)</value>
+Le terme est français et signifie littéralement "amuse-bouche". La forme plurielle peut être amuse-bouche ou amuse-bouches. En France, amuse-gueule est traditionnellement utilisé dans la conversation et l'écriture littéraire, tandis qu'amuse-bouche n'est même pas répertorié dans la plupart des dictionnaires, étant une hypercorrection euphémique apparue dans les années 1980 sur les menus des restaurants et utilisée presque uniquement dans ces endroits. (En français, bouche désigne la bouche humaine, tandis que gueule désigne la bouche plus large d'un animal, par exemple un chien, bien que ce terme soit couramment utilisé pour la bouche et de manière péjorative uniquement dans certaines expressions, par exemple « ferme ta gueule ».)</value>
   </data>
   <data name="Appetizer" xml:space="preserve">
-    <value>An appetizer is a small dish of an overall meal. It can also be a drink or multiple drinks containing alcohol. Common examples include: shrimp cocktail, calamari, salad, potato skins, mussels, bruschetta or cheese and crackers. An appetizer may also be very elegant in some restaurants.</value>
+    <value>Un apéritif est un petit plat d'un repas complet. Il peut également s'agir d'une ou de plusieurs boissons contenant de l'alcool. Les exemples courants incluent : un cocktail de crevettes, des calmars, une salade, des pelures de pommes de terre, des moules, une bruschetta ou du fromage et des craquelins. Un apéritif peut également être très élégant dans certains restaurants.</value>
   </data>
   <data name="CheesePlate" xml:space="preserve">
-    <value>A charcuterie board is an appetizer typically served on a wooden board or stone slab, either eaten straight from the board itself or portioned onto flatware. It features a selection of preserved foods, especially cured meats or pâtés, as well as cheeses and crackers or bread.</value>
+    <value>Un plateau de charcuterie est un apéritif généralement servi sur une planche de bois ou une dalle de pierre, soit mangé directement sur la planche elle-même, soit réparti sur des couverts. Il comprend une sélection d'aliments en conserve, notamment de la charcuterie ou des pâtés, ainsi que des fromages et des craquelins ou du pain.</value>
   </data>
   <data name="Dessert" xml:space="preserve">
-    <value>Dessert is a course that concludes a meal. The course consists of sweet foods, such as candy, and possibly a beverage such as dessert wine and liqueur. Some cultures sweeten foods that are more commonly savory to create desserts. In some parts of the world there is no tradition of a dessert course to conclude a meal.
+    <value>Le dessert est un plat qui conclut un repas. Le plat se compose d'aliments sucrés, tels que des bonbons, et éventuellement d'une boisson telle que du vin de dessert et de la liqueur. Certaines cultures sucrent les aliments qui sont plus communément salés pour créer des desserts. Dans certaines parties du monde, il n'existe pas de tradition de dessert pour conclure un repas.
 
-The term dessert can apply to many sweets, such as biscuits, cakes, cookies, custards, gelatins, ice creams, pastries, pies, puddings, macaroons, sweet soups, tarts, and fruit salad (fruit is commonly found in dessert courses because of its naturally occurring sweetness).</value>
+Le terme dessert peut s'appliquer à de nombreuses friandises, telles que les biscuits, les gâteaux, les cookies, les crèmes anglaises, les gélatines, les glaces, les pâtisseries, les tartes, les puddings, les macarons, les soupes sucrées, les tartelettes et la salade de fruits (les fruits sont couramment présents dans les desserts en raison de leur douceur naturelle).</value>
   </data>
   <data name="FirstMainDish" xml:space="preserve">
-    <value>An entrée, in modern French table service and that of much of the English-speaking world, is a dish served before the main course of a meal. Outside North America, it is generally synonymous with the terms hors d'oeuvre, appetizer, or starter.</value>
+    <value>Une entrée, dans le service de table français moderne et dans celui d'une grande partie du monde anglophone, est un plat servi avant le plat principal d'un repas. En dehors de l'Amérique du Nord, il est généralement synonyme des termes hors d'œuvre, apéritif ou entrée.</value>
   </data>
   <data name="Fish" xml:space="preserve">
-    <value>Fish.</value>
+    <value>Poisson.</value>
   </data>
   <data name="Horsdoeuvres" xml:space="preserve">
-    <value>An hors d'oeuvre, appetiser or starter is a small dish served before a meal in European cuisine. Some hors d'oeuvres are served cold, others hot. Hors d'oeuvres may be served at the dinner table as a part of the meal, or they may be served before seating, such as at a reception or cocktail party. Formerly, hors d'oeuvres were also served between courses. There are two types of hors d'oeuvre from service point of view:
+    <value>Un hors d'œuvre, un apéritif ou une entrée est un petit plat servi avant un repas dans la cuisine européenne. Certains hors d'œuvres sont servis froids, d'autres chauds. Les hors d'œuvres peuvent être servis à table dans le cadre du repas, ou ils peuvent être servis avant de s'asseoir, comme lors d'une réception ou d'un cocktail. Autrefois, les hors d'œuvres étaient également servis entre les plats. Il existe deux types de hors-d'œuvre du point de vue du service :
 
-1. General hors d'oeuvre;
-2. Classical hors d'oeuvre.
+1. Hors-d'œuvre général ;
+2. Hors-d'œuvre classique.
 
-General hors d'oeuvres include cold preparations such as salad, cold meat, and fish. Classical hors d'oeuvres include fruit juice and soft drinks, grapefruit, shellfish cocktail, and so on.
+Les hors-d'œuvre généraux comprennent les préparations froides telles que la salade, la viande froide et le poisson. Les hors-d'œuvre classiques comprennent les jus de fruits et les boissons gazeuses, le pamplemousse, le cocktail de crustacés, etc.
 
-Typically smaller than a main dish, an hors d'oeuvre is often designed to be eaten by hand.</value>
+Généralement plus petit qu'un plat principal, un hors-d'œuvre est souvent conçu pour être mangé à la main.</value>
   </data>
   <data name="PalateCleanserCourse" xml:space="preserve">
-    <value>A palate cleanser is a serving of food or drink that removes food residue from the tongue allowing one to more accurately assess a new flavor.
+    <value>Un nettoyant pour le palais est une portion de nourriture ou de boisson qui élimine les résidus alimentaires de la langue, ce qui permet d'évaluer plus précisément une nouvelle saveur.
 
-Palate cleansers are often used between tasting wine or cheese or other strong flavors. Pickled ginger is used as a palate cleanser between sushi pieces.
+Les nettoyants pour le palais sont souvent utilisés entre les dégustations de vin, de fromage ou d'autres saveurs fortes. Le gingembre mariné est utilisé comme nettoyant pour le palais entre les morceaux de sushi.
 
-Traditional French palate cleansers include sorbet, bread, apple slices, parsley and mint.
+Les nettoyants pour le palais traditionnels français comprennent le sorbet, le pain, les tranches de pomme, le persil et la menthe.
 
-Bamia is a traditional Anatolian stew that is sometimes served as a palate cleanser between food courses at ceremonial feasts.</value>
+Le bamia est un ragoût anatolien traditionnel qui est parfois servi comme nettoyant pour le palais entre les plats lors des fêtes cérémonielles.</value>
   </data>
   <data name="PostMealDrinksAndPastries" xml:space="preserve">
-    <value>Digestif (pronounced dee-jes-teef) is another name for an after dinner drink, or an alcoholic beverage served after dinner to help improve digestion. These drinks are served in small amounts, usually in a cordial glass, and are intended to be sipped.</value>
+    <value>Digestif (prononcé dee-jes-teef) est un autre nom pour une boisson après le dîner, ou une boisson alcoolisée servie après le dîner pour aider à améliorer la digestion. Ces boissons sont servies en petites quantités, généralement dans un verre à liqueur, et sont destinées à être sirotées.</value>
   </data>
   <data name="Salad" xml:space="preserve">
-    <value>A salad is a dish consisting of mixed ingredients, frequently vegetables. They are typically served chilled or at room temperature, though some can be served warm. Condiments and salad dressings, which exist in a variety of flavors, are often used to enhance a salad.</value>
+    <value>Une salade est un plat composé d'ingrédients mélangés, souvent des légumes. Ils sont généralement servis frais ou à température ambiante, bien que certains puissent être servis chauds. Les condiments et les vinaigrettes, qui existent dans une variété de saveurs, sont souvent utilisés pour rehausser une salade.</value>
   </data>
   <data name="SecondMainDish" xml:space="preserve">
-    <value>A two-course meal serves either a soup/salad followed by an entrée or a main course and finishes with a dessert item.</value>
+    <value>Un repas à deux plats comprend soit une soupe/salade suivie d'une entrée ou d'un plat principal et se termine par un dessert.</value>
   </data>
   <data name="Soup" xml:space="preserve">
-    <value>Soup is a primarily liquid food, generally served warm or hot (but may be cool or cold), that is made by combining ingredients of meat or vegetables with stock, milk, or water. Hot soups are additionally characterized by boiling solid ingredients in liquids in a pot until the flavors are extracted, forming a broth. Soups are similar to stews, and in some cases there may not be a clear distinction between the two; however, soups generally have more liquid (broth) than stews.</value>
+    <value>La soupe est un aliment principalement liquide, généralement servi tiède ou chaud (mais peut être frais ou froid), qui est préparé en combinant des ingrédients de viande ou de légumes avec du bouillon, du lait ou de l'eau. Les soupes chaudes se caractérisent en outre par l'ébullition d'ingrédients solides dans des liquides dans une casserole jusqu'à ce que les saveurs soient extraites, formant un bouillon. Les soupes sont similaires aux ragoûts, et dans certains cas, il peut ne pas y avoir de distinction claire entre les deux ; Cependant, les soupes contiennent généralement plus de liquide (bouillon) que les ragoûts.</value>
   </data>
   <data name="Unknown" xml:space="preserve">
-    <value>A course yet to be defined.</value>
+    <value>Un plat qui reste à définir.</value>
   </data>
 </root>

@@ -110,7 +110,7 @@ namespace RecipeGenerator.Resources.Descriptions.Recipes {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fish.
+        ///   Looks up a localized string similar to Fish..
         /// </summary>
         public static string Fish {
             get {
