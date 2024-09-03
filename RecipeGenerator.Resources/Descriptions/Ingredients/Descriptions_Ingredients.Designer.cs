@@ -858,7 +858,7 @@ namespace RecipeGenerator.Resources.Descriptions.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copy Orange is a citrus fruit that can be sweet or bitter. Brazil is the worlds largest producer of oranges. It is believed to have originated in Southeast Asia. It is a winter fruit that is available mostly in colder climate but now it can be seen most of the year..
+        ///   Looks up a localized string similar to Orange is a citrus fruit that can be sweet or bitter. Brazil is the worlds largest producer of oranges. It is believed to have originated in Southeast Asia. It is a winter fruit that is available mostly in colder climate but now it can be seen most of the year..
         /// </summary>
         public static string Fruits_Orange {
             get {
@@ -867,7 +867,7 @@ namespace RecipeGenerator.Resources.Descriptions.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copy Orange is a citrus fruit that can be sweet or bitter. Brazil is the worlds largest producer of oranges. It is believed to have originated in Southeast Asia. It is a winter fruit that is available mostly in colder climate but now it can be seen most of the year..
+        ///   Looks up a localized string similar to Orange is a citrus fruit that can be sweet or bitter. Brazil is the worlds largest producer of oranges. It is believed to have originated in Southeast Asia. It is a winter fruit that is available mostly in colder climate but now it can be seen most of the year..
         /// </summary>
         public static string Fruits_Orange_Rind {
             get {
@@ -1803,10 +1803,7 @@ namespace RecipeGenerator.Resources.Descriptions.Ingredients {
         
         /// <summary>
         ///   Looks up a localized string similar to The main ingredients of rice noodles are rice flour, water and salt. They can be thick or very thin and also flavored with ingredients such as tapioca or corn starch to change their quality. They are also known as rice sticks.
-        ///When raw they are very brittle and on cooking they turn translucent and chewy.NDTV FoodNov 21 2014 17:31 IST
-        ///
-        ///Rice Noodles
-        ///The main ingredients of rice noodles are rice flour, water and salt. They can be thick or very thin and also flavored with ingredients such as tapioca or corn [rest of string was truncated]&quot;;.
+        ///When raw they are very brittle and on cooking they turn translucent and chewy..
         /// </summary>
         public static string OtherIngredients_Rice_Noodles {
             get {

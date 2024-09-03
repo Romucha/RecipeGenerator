@@ -150,11 +150,11 @@
   <data name="CerealsAndPulses_Black_Gram" xml:space="preserve">
     <value>Also known as black lentil, it is one of the most widely consumed lentil in India. These are rounded black lentils, slightly elongated with a sticky texture and bland flavor. White lentil is black lentil with the black skin removed. These lentils have a very strong earthy flavor.</value>
   </data>
-  <data name="CerealsAndPulses_Breadcrumbs" xml:space="preserve">
-    <value>Bread that has been dried and ground into a fine powder with or without the crust is called breadcrumbs. It's is made using fresh and stale bread and can include the crust. Grounded, it is a light pink or brown in color. Used mostly to coat foods that are to be deep fried for a crunch, it has a crumbly texture.</value>
-  </data>
   <data name="CerealsAndPulses_Bread" xml:space="preserve">
     <value>It is the most popular food around the world, and one of the oldest. Bread is found in almost all cuisines, flat or leavened. A dough has to be prepared before it can be baked. It's various forms are buns, rolls, loaves, pita, chapatti, naan, sourdough etc.</value>
+  </data>
+  <data name="CerealsAndPulses_Breadcrumbs" xml:space="preserve">
+    <value>Bread that has been dried and ground into a fine powder with or without the crust is called breadcrumbs. It's is made using fresh and stale bread and can include the crust. Grounded, it is a light pink or brown in color. Used mostly to coat foods that are to be deep fried for a crunch, it has a crumbly texture.</value>
   </data>
   <data name="CerealsAndPulses_Brown_Rice" xml:space="preserve">
     <value>Rice is a staple in most Indian households. Brown rice is a variety that is un-milled or partly milled and is considered as a whole grain. This means that it contains all the natural components - the bran, germ and endosperm. The basic difference is that white rice is stripped off the first two layers only to be left with the starchy endosperm.</value>
@@ -241,11 +241,11 @@ Though being a traditional North African dish, couscous has adapted itself to va
   <data name="DairyProducts_Brie_Cheese" xml:space="preserve">
     <value>Brie is a type of French made with cows milk. It is slightly pale in colour with a greyish tinge under the rind. The rind is a white mould and is edible. It derives its name from the region where it originated. It is a popular dessert cheese. It is very soft and melts quickly when warmed. It tastes fruity and creamy.</value>
   </data>
-  <data name="DairyProducts_Buttermilk" xml:space="preserve">
-    <value>It can be sweet or salty and is a very refreshing drink in summer. It is very popular in North India. The tang of buttermilk is due to acid in the milk. Though the name suggests but it actually has no butter. Traditionally, it is the residual liquid which remains after butter is churned, i.</value>
-  </data>
   <data name="DairyProducts_Butter" xml:space="preserve">
     <value>Made from churning cream, butter adds the soppy richness and tender texture to cakes, pastries and biscuits. It is an everlasting delight in any cuisine. It is usually served as a spread or used a condiment while cooking. Frequently made from cows milk, it contains butterfat, milk proteins and water.</value>
+  </data>
+  <data name="DairyProducts_Buttermilk" xml:space="preserve">
+    <value>It can be sweet or salty and is a very refreshing drink in summer. It is very popular in North India. The tang of buttermilk is due to acid in the milk. Though the name suggests but it actually has no butter. Traditionally, it is the residual liquid which remains after butter is churned, i.</value>
   </data>
   <data name="DairyProducts_Cheddar_Cheese" xml:space="preserve">
     <value>Named after the village from it originated, cheddar cheese is hard and natural cheese made from cows milk. Its texture and colour, however, depends on the processing the cheese undergoes. It usually ranges from mild to sharp flavor varying from natural white to pumpkin orange in colour.</value>
@@ -259,11 +259,11 @@ Though being a traditional North African dish, couscous has adapted itself to va
   <data name="DairyProducts_Cottage_Cheese" xml:space="preserve">
     <value>Made from curdling milk and straining the whey. Cottage cheese can be eaten raw or cooked. It has a moist texture. Store it in the cold part of the refrigerator for about 5-7 days. It is rich in calcium.</value>
   </data>
-  <data name="DairyProducts_Cream_Cheese" xml:space="preserve">
-    <value>As the name suggests, this cheese has a soft creamy texture with a high fat content. Cream cheese is essentially made from un-skimmed cow milk and enriched with cream. It is an American favorite and considered by many as an American invention. Cream cheese is regarded as a fresh cheese, but must be consumed shortly after it is opened as it has a short shelf life.</value>
-  </data>
   <data name="DairyProducts_Cream" xml:space="preserve">
     <value>Cream is made out of milk and is a dairy product. Cream is usually yellowish white in color. However cream from goat's or cow's milk is usually white in color. It is nothing but the milk fat that accumulates if milk is allowed to sit undisturbed for a while.</value>
+  </data>
+  <data name="DairyProducts_Cream_Cheese" xml:space="preserve">
+    <value>As the name suggests, this cheese has a soft creamy texture with a high fat content. Cream cheese is essentially made from un-skimmed cow milk and enriched with cream. It is an American favorite and considered by many as an American invention. Cream cheese is regarded as a fresh cheese, but must be consumed shortly after it is opened as it has a short shelf life.</value>
   </data>
   <data name="DairyProducts_Feta_Cheese" xml:space="preserve">
     <value>Feta is a type of Greek cheese. It has a very soft and creamy texture. It is mostly produced in blocks and is crumbly. Feta cheese is generally made from sheep or goats milk. It tastes somewhat tangy. Since 2002, feta has become of protected origin and can be produced only in Greece.</value>
@@ -387,10 +387,10 @@ The ripe fruit is eaten raw or added in pies, teas and wine.</value>
     <value>They are the fruits of the olive tree that have been cultivated for more than 5000 years in the Mediterranean. Its oldest cultivation is found to be in what is now Jordan. Olives are cultivated in autumn and winter for olive oil, fine wood, olive leaf and the fruit.</value>
   </data>
   <data name="Fruits_Orange" xml:space="preserve">
-    <value>Orange is a citrus fruit that can be sweet or bitter. Brazil is the worlds largest producer of oranges. It is believed to have originated in Southeast Asia. It is a winter fruit that is available mostly in colder climate but now it can be seen most of the year.</value>
+    <value>Copy Orange is a citrus fruit that can be sweet or bitter. Brazil is the worlds largest producer of oranges. It is believed to have originated in Southeast Asia. It is a winter fruit that is available mostly in colder climate but now it can be seen most of the year.</value>
   </data>
   <data name="Fruits_Orange_Rind" xml:space="preserve">
-    <value>Orange is a citrus fruit that can be sweet or bitter. Brazil is the worlds largest producer of oranges. It is believed to have originated in Southeast Asia. It is a winter fruit that is available mostly in colder climate but now it can be seen most of the year.</value>
+    <value>Copy Orange is a citrus fruit that can be sweet or bitter. Brazil is the worlds largest producer of oranges. It is believed to have originated in Southeast Asia. It is a winter fruit that is available mostly in colder climate but now it can be seen most of the year.</value>
   </data>
   <data name="Fruits_Papaya" xml:space="preserve">
     <value>It is a tropical fruit that has a sweet taste, soft texture and are pear shaped. It is native to southern Mexico and Central America. The black seeds of papaya are actually edible and have a peppery taste. Young papaya contains papain and hence has been used as a meat tenderizer for centuries now.</value>
@@ -590,11 +590,11 @@ Poppy seeds are small and kidney shaped. They are less than a millimeter in leng
   <data name="OtherIngredients_Brown_Sauce" xml:space="preserve">
     <value>Brown sauce is a condiment used in the British and French cuisine. It is used in various recipes depending on the content used to prepare the sauce. In the British cuisine, brown sauce is made from butter and flour. It is made of browned roux and meat stock in classical French cuisine.</value>
   </data>
-  <data name="OtherIngredients_Chocolate_Chips" xml:space="preserve">
-    <value>Chocolate chips are small bits of chocolate. They are available in different sizes, large to miniature. Circular, conical, square, rectangular, chocolate chips can be manufactured in any shape and size. They contain a smaller amount of cocoa butter than cooking chocolate.</value>
-  </data>
   <data name="OtherIngredients_Chocolate" xml:space="preserve">
     <value>Chocolates are produced from the tropical Theobroma cacao tree (also known as the cocoa tree) which is found in the tropical region of South America.</value>
+  </data>
+  <data name="OtherIngredients_Chocolate_Chips" xml:space="preserve">
+    <value>Chocolate chips are small bits of chocolate. They are available in different sizes, large to miniature. Circular, conical, square, rectangular, chocolate chips can be manufactured in any shape and size. They contain a smaller amount of cocoa butter than cooking chocolate.</value>
   </data>
   <data name="OtherIngredients_Cocoa" xml:space="preserve">
     <value>Cocoa is the powder extracted from the fully fermented bean of Cocoa plant. Apart from Cocoa powder Cocoa butter and Cocoa solids are also extracted from the beans. Cocoa bean is the basis for chocolate. The seeds that are fairly white to pale lavender colour are securely embedded in a pod.</value>
@@ -1064,11 +1064,11 @@ Icing sugar is a handy ingredient used while making cakes and bakery products.</
   <data name="SugarAndSugarProducts_Jaggery" xml:space="preserve">
     <value>Unrefined sugar, found in solid or powdered form, used in desserts as a substitute for sugar. Its color varies from golden brown to dark brown. It is used in both sweet and savory dishes across India. It keeps your body warm and is great to ward off common cold and cough.</value>
   </data>
-  <data name="SugarAndSugarProducts_Sugar_Candy" xml:space="preserve">
-    <value>Crystallised sugar lumps, these confectionary items originated in Persia and are known as rock sugar around the world. Its most common use in India is as a sacred offering to god but these crystals are used in a wide array of dishes too. Mishri-mawa is the most famous confectionery item and is often taken with aniseed at the end of a meal.</value>
-  </data>
   <data name="SugarAndSugarProducts_Sugar" xml:space="preserve">
     <value>A white sweet crystal made primarily from sugar cane or sugar beets. It can also be produced from maple tree or certain palm trees. It is a type of carbohydrate which has replaced the traditional honey as a sweetener. It enhances the taste, structure, texture and appearance of many dishes, especially baked.</value>
+  </data>
+  <data name="SugarAndSugarProducts_Sugar_Candy" xml:space="preserve">
+    <value>Crystallised sugar lumps, these confectionary items originated in Persia and are known as rock sugar around the world. Its most common use in India is as a sacred offering to god but these crystals are used in a wide array of dishes too. Mishri-mawa is the most famous confectionery item and is often taken with aniseed at the end of a meal.</value>
   </data>
   <data name="Vegetables_Artichoke" xml:space="preserve">
     <value>Artichoke is actually a flower of a plant called Cynara and is mostly consumed in the winter. It is not produced in India but is very common in European countries. The edible portions consist primarily of the fleshy lower portions and the base, known as the "heart".</value>
