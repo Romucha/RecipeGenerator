@@ -1,0 +1,1230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CerealsAndPulses_All_Purpose_Flour" xml:space="preserve">
+    <value>Мука общего назначения</value>
+  </data>
+  <data name="CerealsAndPulses_Amaranth" xml:space="preserve">
+    <value>Амарант</value>
+  </data>
+  <data name="CerealsAndPulses_Arborio_Rice" xml:space="preserve">
+    <value>Рис арборио</value>
+  </data>
+  <data name="CerealsAndPulses_Barley" xml:space="preserve">
+    <value>Ячмень</value>
+  </data>
+  <data name="CerealsAndPulses_Barnyard_Millet" xml:space="preserve">
+    <value>Просо скотного двора</value>
+  </data>
+  <data name="CerealsAndPulses_Basmati_Rice" xml:space="preserve">
+    <value>Рис басмати</value>
+  </data>
+  <data name="CerealsAndPulses_Bean_Sprouts" xml:space="preserve">
+    <value>Проростки фасоли</value>
+  </data>
+  <data name="CerealsAndPulses_Bengal_Gram_(Split)" xml:space="preserve">
+    <value>Бенгальский горошек (дробленый)</value>
+  </data>
+  <data name="CerealsAndPulses_Black-eyed_Beans" xml:space="preserve">
+    <value>Черноглазая фасоль</value>
+  </data>
+  <data name="CerealsAndPulses_Black_Beans" xml:space="preserve">
+    <value>Черные бобы</value>
+  </data>
+  <data name="CerealsAndPulses_Black_Gram" xml:space="preserve">
+    <value>Черный горошек</value>
+  </data>
+  <data name="CerealsAndPulses_Bread" xml:space="preserve">
+    <value>Хлеб</value>
+  </data>
+  <data name="CerealsAndPulses_Breadcrumbs" xml:space="preserve">
+    <value>Панировочные сухари</value>
+  </data>
+  <data name="CerealsAndPulses_Brown_Rice" xml:space="preserve">
+    <value>Коричневый рис</value>
+  </data>
+  <data name="CerealsAndPulses_Buckwheat" xml:space="preserve">
+    <value>Гречка</value>
+  </data>
+  <data name="CerealsAndPulses_Chickpeas" xml:space="preserve">
+    <value>Нут</value>
+  </data>
+  <data name="CerealsAndPulses_Cornmeal" xml:space="preserve">
+    <value>Кукурузная мука</value>
+  </data>
+  <data name="CerealsAndPulses_Couscous" xml:space="preserve">
+    <value>Кускус</value>
+  </data>
+  <data name="CerealsAndPulses_Finger_Millet" xml:space="preserve">
+    <value>Пшено пальчатое</value>
+  </data>
+  <data name="CerealsAndPulses_Flour" xml:space="preserve">
+    <value>Мука</value>
+  </data>
+  <data name="CerealsAndPulses_Gram_Flour" xml:space="preserve">
+    <value>Нутовая мука</value>
+  </data>
+  <data name="CerealsAndPulses_Green_Gram" xml:space="preserve">
+    <value>Зеленый горошек</value>
+  </data>
+  <data name="CerealsAndPulses_Husked_Black_Gram" xml:space="preserve">
+    <value>Очищенный черный горошек</value>
+  </data>
+  <data name="CerealsAndPulses_Husked_Green_Gram" xml:space="preserve">
+    <value>Очищенный зеленый горошек</value>
+  </data>
+  <data name="CerealsAndPulses_Jowar" xml:space="preserve">
+    <value>Джовар</value>
+  </data>
+  <data name="CerealsAndPulses_Kidney_Beans" xml:space="preserve">
+    <value>Фасоль</value>
+  </data>
+  <data name="CerealsAndPulses_Muesli" xml:space="preserve">
+    <value>Мюсли</value>
+  </data>
+  <data name="CerealsAndPulses_Oats" xml:space="preserve">
+    <value>Овес</value>
+  </data>
+  <data name="CerealsAndPulses_Pearl_Millet" xml:space="preserve">
+    <value>Перловое просо</value>
+  </data>
+  <data name="CerealsAndPulses_Pigeon_Pea" xml:space="preserve">
+    <value>Голубиный горошек</value>
+  </data>
+  <data name="CerealsAndPulses_Pressed_Rice" xml:space="preserve">
+    <value>Прессованный рис</value>
+  </data>
+  <data name="CerealsAndPulses_Puffed_Rice" xml:space="preserve">
+    <value>Воздушный рис</value>
+  </data>
+  <data name="CerealsAndPulses_Rice" xml:space="preserve">
+    <value>Рис</value>
+  </data>
+  <data name="CerealsAndPulses_Semolina" xml:space="preserve">
+    <value>Манная крупа</value>
+  </data>
+  <data name="CerealsAndPulses_Tapioca" xml:space="preserve">
+    <value>Тапиока</value>
+  </data>
+  <data name="CerealsAndPulses_Water_Chestnut_Flour" xml:space="preserve">
+    <value>Мука из водяного каштана</value>
+  </data>
+  <data name="CerealsAndPulses_Whole_Bengal_Gram" xml:space="preserve">
+    <value>Цельный бенгальский горошек</value>
+  </data>
+  <data name="CerealsAndPulses_Whole_Brown_Lentils" xml:space="preserve">
+    <value>Цельная коричневая чечевица</value>
+  </data>
+  <data name="CerealsAndPulses_Whole_Wheat_Flour" xml:space="preserve">
+    <value>Цельная пшеничная мука</value>
+  </data>
+  <data name="DairyProducts_Blue_Cheese" xml:space="preserve">
+    <value>Голубой сыр</value>
+  </data>
+  <data name="DairyProducts_Brie_Cheese" xml:space="preserve">
+    <value>Сыр бри</value>
+  </data>
+  <data name="DairyProducts_Butter" xml:space="preserve">
+    <value>Масло</value>
+  </data>
+  <data name="DairyProducts_Buttermilk" xml:space="preserve">
+    <value>Пахта</value>
+  </data>
+  <data name="DairyProducts_Cheddar_Cheese" xml:space="preserve">
+    <value>Чеддер Сыр</value>
+  </data>
+  <data name="DairyProducts_Clarified_Butter" xml:space="preserve">
+    <value>Топленое масло</value>
+  </data>
+  <data name="DairyProducts_Condensed_Milk" xml:space="preserve">
+    <value>Сгущенное молоко</value>
+  </data>
+  <data name="DairyProducts_Cottage_Cheese" xml:space="preserve">
+    <value>Творог</value>
+  </data>
+  <data name="DairyProducts_Cream" xml:space="preserve">
+    <value>Сливки</value>
+  </data>
+  <data name="DairyProducts_Cream_Cheese" xml:space="preserve">
+    <value>Сливочный сыр</value>
+  </data>
+  <data name="DairyProducts_Feta_Cheese" xml:space="preserve">
+    <value>Сыр фета</value>
+  </data>
+  <data name="DairyProducts_Gouda_Cheese" xml:space="preserve">
+    <value>Сыр гауда</value>
+  </data>
+  <data name="DairyProducts_Gruyere_Cheese" xml:space="preserve">
+    <value>Сыр грюйер</value>
+  </data>
+  <data name="DairyProducts_Hung_Curd" xml:space="preserve">
+    <value>Сыр хунг</value>
+  </data>
+  <data name="DairyProducts_Khoya" xml:space="preserve">
+    <value>Койя</value>
+  </data>
+  <data name="DairyProducts_Mascarpone_Cheese" xml:space="preserve">
+    <value>Сыр маскарпоне</value>
+  </data>
+  <data name="DairyProducts_Milk" xml:space="preserve">
+    <value>Молоко</value>
+  </data>
+  <data name="DairyProducts_Mozzarella_Cheese" xml:space="preserve">
+    <value>Сыр моцарелла</value>
+  </data>
+  <data name="DairyProducts_Parmesan_Cheese" xml:space="preserve">
+    <value>Сыр пармезан</value>
+  </data>
+  <data name="DairyProducts_Provolone_Cheese" xml:space="preserve">
+    <value>Сыр проволоне</value>
+  </data>
+  <data name="DairyProducts_Ricotta_Cheese" xml:space="preserve">
+    <value>Сыр рикотта</value>
+  </data>
+  <data name="DairyProducts_Yogurt" xml:space="preserve">
+    <value>Йогурт</value>
+  </data>
+  <data name="Fruits_Apples" xml:space="preserve">
+    <value>Яблоки</value>
+  </data>
+  <data name="Fruits_Apricots" xml:space="preserve">
+    <value>Абрикосы</value>
+  </data>
+  <data name="Fruits_Banana" xml:space="preserve">
+    <value>Банан</value>
+  </data>
+  <data name="Fruits_Blueberries" xml:space="preserve">
+    <value>Черника</value>
+  </data>
+  <data name="Fruits_Cape_Gooseberry" xml:space="preserve">
+    <value>Мысовый крыжовник</value>
+  </data>
+  <data name="Fruits_Cherry" xml:space="preserve">
+    <value>Вишня</value>
+  </data>
+  <data name="Fruits_Coconut" xml:space="preserve">
+    <value>Кокос</value>
+  </data>
+  <data name="Fruits_Cooking_Apples" xml:space="preserve">
+    <value>Кулинарные яблоки</value>
+  </data>
+  <data name="Fruits_Cranberry" xml:space="preserve">
+    <value>Клюква</value>
+  </data>
+  <data name="Fruits_Currant" xml:space="preserve">
+    <value>Смородина</value>
+  </data>
+  <data name="Fruits_Custard_Apple" xml:space="preserve">
+    <value>Заварное яблоко</value>
+  </data>
+  <data name="Fruits_Dates" xml:space="preserve">
+    <value>Финики</value>
+  </data>
+  <data name="Fruits_Dried_Fruit" xml:space="preserve">
+    <value>Сухофрукты</value>
+  </data>
+  <data name="Fruits_Figs" xml:space="preserve">
+    <value>Инжир</value>
+  </data>
+  <data name="Fruits_Grapefruit" xml:space="preserve">
+    <value>Грейпфрут</value>
+  </data>
+  <data name="Fruits_Grapes" xml:space="preserve">
+    <value>Виноград</value>
+  </data>
+  <data name="Fruits_Guava" xml:space="preserve">
+    <value>Гуава</value>
+  </data>
+  <data name="Fruits_Indian_Gooseberry" xml:space="preserve">
+    <value>Индийский крыжовник</value>
+  </data>
+  <data name="Fruits_Jamun" xml:space="preserve">
+    <value>Джамун</value>
+  </data>
+  <data name="Fruits_Kiwi" xml:space="preserve">
+    <value>Киви</value>
+  </data>
+  <data name="Fruits_Lemon" xml:space="preserve">
+    <value>Лимон</value>
+  </data>
+  <data name="Fruits_Lemon_Juice" xml:space="preserve">
+    <value>Лимонный сок</value>
+  </data>
+  <data name="Fruits_Lemon_Rind" xml:space="preserve">
+    <value>Лимонная цедра</value>
+  </data>
+  <data name="Fruits_Lychee" xml:space="preserve">
+    <value>Личи</value>
+  </data>
+  <data name="Fruits_Mango" xml:space="preserve">
+    <value>Манго</value>
+  </data>
+  <data name="Fruits_Mulberry" xml:space="preserve">
+    <value>Шелковица</value>
+  </data>
+  <data name="Fruits_Olives" xml:space="preserve">
+    <value>Оливки</value>
+  </data>
+  <data name="Fruits_Orange" xml:space="preserve">
+    <value>Апельсин</value>
+  </data>
+  <data name="Fruits_Orange_Rind" xml:space="preserve">
+    <value>Апельсин Кожура</value>
+  </data>
+  <data name="Fruits_Papaya" xml:space="preserve">
+    <value>Папайя</value>
+  </data>
+  <data name="Fruits_Peach" xml:space="preserve">
+    <value>Персик</value>
+  </data>
+  <data name="Fruits_Pear" xml:space="preserve">
+    <value>Груша</value>
+  </data>
+  <data name="Fruits_Pineapple" xml:space="preserve">
+    <value>Ананас</value>
+  </data>
+  <data name="Fruits_Plum" xml:space="preserve">
+    <value>Слива</value>
+  </data>
+  <data name="Fruits_Pomegranate" xml:space="preserve">
+    <value>Гранат</value>
+  </data>
+  <data name="Fruits_Raisins" xml:space="preserve">
+    <value>Изюм</value>
+  </data>
+  <data name="Fruits_Strawberry" xml:space="preserve">
+    <value>Клубника</value>
+  </data>
+  <data name="Fruits_Sultana" xml:space="preserve">
+    <value>Султана</value>
+  </data>
+  <data name="Fruits_Tamarind" xml:space="preserve">
+    <value>Тамаринд</value>
+  </data>
+  <data name="Fruits_Tomato" xml:space="preserve">
+    <value>Помидор</value>
+  </data>
+  <data name="Fruits_Watermelon" xml:space="preserve">
+    <value>Арбуз</value>
+  </data>
+  <data name="Fruits_Water_Chestnut" xml:space="preserve">
+    <value>Водяной орех</value>
+  </data>
+  <data name="Meat_Bacon" xml:space="preserve">
+    <value>Бекон</value>
+  </data>
+  <data name="Meat_Beef" xml:space="preserve">
+    <value>Говядина</value>
+  </data>
+  <data name="Meat_Chicken" xml:space="preserve">
+    <value>Курица</value>
+  </data>
+  <data name="Meat_Chicken_Liver" xml:space="preserve">
+    <value>Куриная печень</value>
+  </data>
+  <data name="Meat_Chicken_Stock" xml:space="preserve">
+    <value>Куриный бульон</value>
+  </data>
+  <data name="Meat_Chops" xml:space="preserve">
+    <value>Отбивные</value>
+  </data>
+  <data name="Meat_Crab" xml:space="preserve">
+    <value>Краб</value>
+  </data>
+  <data name="Meat_Free_Range_Chicken" xml:space="preserve">
+    <value>Курица свободного выгула</value>
+  </data>
+  <data name="Meat_Grass_Fed_Chicken" xml:space="preserve">
+    <value>Курица травяного откорма</value>
+  </data>
+  <data name="Meat_Ham" xml:space="preserve">
+    <value>Ветчина</value>
+  </data>
+  <data name="Meat_Keema" xml:space="preserve">
+    <value>Кима</value>
+  </data>
+  <data name="Meat_Kidney_Meat" xml:space="preserve">
+    <value>Почки</value>
+  </data>
+  <data name="Meat_Lamb_Meat" xml:space="preserve">
+    <value>Мясо ягненка</value>
+  </data>
+  <data name="Meat_Meat_Stock" xml:space="preserve">
+    <value>Мясной бульон</value>
+  </data>
+  <data name="Meat_Mutton" xml:space="preserve">
+    <value>Баранина</value>
+  </data>
+  <data name="Meat_Mutton_Liver" xml:space="preserve">
+    <value>Баранья печень</value>
+  </data>
+  <data name="Meat_Organic_Chicken" xml:space="preserve">
+    <value>Органическая курица</value>
+  </data>
+  <data name="Meat_Partridge" xml:space="preserve">
+    <value>Куропатка</value>
+  </data>
+  <data name="Meat_Pork" xml:space="preserve">
+    <value>Свинина</value>
+  </data>
+  <data name="Meat_Quail" xml:space="preserve">
+    <value>Перепела</value>
+  </data>
+  <data name="Meat_Skinned_Chicken" xml:space="preserve">
+    <value>Курица без кожи</value>
+  </data>
+  <data name="Meat_Turkey" xml:space="preserve">
+    <value>Индейка</value>
+  </data>
+  <data name="NutsAndOilseeds_Almonds" xml:space="preserve">
+    <value>Миндаль</value>
+  </data>
+  <data name="NutsAndOilseeds_Blanched_Almonds" xml:space="preserve">
+    <value>Бланшированный миндаль</value>
+  </data>
+  <data name="NutsAndOilseeds_Canola_Oil" xml:space="preserve">
+    <value>Масло канолы</value>
+  </data>
+  <data name="NutsAndOilseeds_Cashew_Nuts" xml:space="preserve">
+    <value>Кешью</value>
+  </data>
+  <data name="NutsAndOilseeds_Chia_Seeds" xml:space="preserve">
+    <value>Семена чиа</value>
+  </data>
+  <data name="NutsAndOilseeds_Chironji" xml:space="preserve">
+    <value>Чиронджи</value>
+  </data>
+  <data name="NutsAndOilseeds_Hazelnut" xml:space="preserve">
+    <value>Лесной орех</value>
+  </data>
+  <data name="NutsAndOilseeds_Mustard_Oil" xml:space="preserve">
+    <value>Горчичное масло</value>
+  </data>
+  <data name="NutsAndOilseeds_Mustard_Seeds" xml:space="preserve">
+    <value>Семена горчицы</value>
+  </data>
+  <data name="NutsAndOilseeds_Olive_Oil" xml:space="preserve">
+    <value>Оливковое масло</value>
+  </data>
+  <data name="NutsAndOilseeds_Peanuts" xml:space="preserve">
+    <value>Арахис</value>
+  </data>
+  <data name="NutsAndOilseeds_Pine_Nuts" xml:space="preserve">
+    <value>Кедровые орехи</value>
+  </data>
+  <data name="NutsAndOilseeds_Pistachio" xml:space="preserve">
+    <value>Фисташки</value>
+  </data>
+  <data name="NutsAndOilseeds_Poppy_Seeds" xml:space="preserve">
+    <value>Маковые семена</value>
+  </data>
+  <data name="NutsAndOilseeds_Sesame_Oil" xml:space="preserve">
+    <value>Кунжутное масло</value>
+  </data>
+  <data name="NutsAndOilseeds_Sesame_Seeds" xml:space="preserve">
+    <value>Семена кунжута</value>
+  </data>
+  <data name="NutsAndOilseeds_Sunflower_Seeds" xml:space="preserve">
+    <value>Подсолнечник Семена</value>
+  </data>
+  <data name="NutsAndOilseeds_Walnuts" xml:space="preserve">
+    <value>Грецкие орехи</value>
+  </data>
+  <data name="OtherIngredients_Agar" xml:space="preserve">
+    <value>Агар</value>
+  </data>
+  <data name="OtherIngredients_Ajinomoto" xml:space="preserve">
+    <value>Аджиномото</value>
+  </data>
+  <data name="OtherIngredients_Almond_Milk" xml:space="preserve">
+    <value>Миндальное молоко</value>
+  </data>
+  <data name="OtherIngredients_Alum" xml:space="preserve">
+    <value>Квасцы</value>
+  </data>
+  <data name="OtherIngredients_Arrowroot" xml:space="preserve">
+    <value>Маранта</value>
+  </data>
+  <data name="OtherIngredients_Baking_Powder" xml:space="preserve">
+    <value>Разрыхлитель</value>
+  </data>
+  <data name="OtherIngredients_Baking_Soda" xml:space="preserve">
+    <value>Пищевая сода</value>
+  </data>
+  <data name="OtherIngredients_Balsamic_Vinegar" xml:space="preserve">
+    <value>Бальзамический уксус</value>
+  </data>
+  <data name="OtherIngredients_Barfi" xml:space="preserve">
+    <value>Барфи</value>
+  </data>
+  <data name="OtherIngredients_Beer" xml:space="preserve">
+    <value>Пиво</value>
+  </data>
+  <data name="OtherIngredients_Brown_Sauce" xml:space="preserve">
+    <value>Коричневый соус</value>
+  </data>
+  <data name="OtherIngredients_Chocolate" xml:space="preserve">
+    <value>Шоколад</value>
+  </data>
+  <data name="OtherIngredients_Chocolate_Chips" xml:space="preserve">
+    <value>Шоколадная крошка</value>
+  </data>
+  <data name="OtherIngredients_Cocoa" xml:space="preserve">
+    <value>Какао</value>
+  </data>
+  <data name="OtherIngredients_Coconut_Milk" xml:space="preserve">
+    <value>Кокосовое молоко</value>
+  </data>
+  <data name="OtherIngredients_Coconut_Oil" xml:space="preserve">
+    <value>Кокосовое масло</value>
+  </data>
+  <data name="OtherIngredients_Coconut_Water" xml:space="preserve">
+    <value>Кокосовая вода</value>
+  </data>
+  <data name="OtherIngredients_Coffee" xml:space="preserve">
+    <value>Кофе</value>
+  </data>
+  <data name="OtherIngredients_Cognac" xml:space="preserve">
+    <value>Коньяк</value>
+  </data>
+  <data name="OtherIngredients_Cornflour" xml:space="preserve">
+    <value>Кукурузный крахмал</value>
+  </data>
+  <data name="OtherIngredients_Cranberry_Sauce" xml:space="preserve">
+    <value>Клюквенный соус</value>
+  </data>
+  <data name="OtherIngredients_Desiccated_Coconut" xml:space="preserve">
+    <value>Сушеный кокос</value>
+  </data>
+  <data name="OtherIngredients_Egg" xml:space="preserve">
+    <value>Яйцо</value>
+  </data>
+  <data name="OtherIngredients_Fish_Sauce" xml:space="preserve">
+    <value>Рыбный соус</value>
+  </data>
+  <data name="OtherIngredients_Flat_Noodles" xml:space="preserve">
+    <value>Плоская лапша</value>
+  </data>
+  <data name="OtherIngredients_Gelatin" xml:space="preserve">
+    <value>Желатин</value>
+  </data>
+  <data name="OtherIngredients_Glycerine" xml:space="preserve">
+    <value>Глицерин</value>
+  </data>
+  <data name="OtherIngredients_Gold_Leaves" xml:space="preserve">
+    <value>Золотые листья</value>
+  </data>
+  <data name="OtherIngredients_Guchchi" xml:space="preserve">
+    <value>Гуччи</value>
+  </data>
+  <data name="OtherIngredients_Hoisin_Sauce" xml:space="preserve">
+    <value>Соус хойсин</value>
+  </data>
+  <data name="OtherIngredients_Jelly" xml:space="preserve">
+    <value>Желе</value>
+  </data>
+  <data name="OtherIngredients_Jus" xml:space="preserve">
+    <value>Джус</value>
+  </data>
+  <data name="OtherIngredients_Lotus_Seeds" xml:space="preserve">
+    <value>Семена лотоса</value>
+  </data>
+  <data name="OtherIngredients_Malt_Vinegar" xml:space="preserve">
+    <value>Солодовый уксус</value>
+  </data>
+  <data name="OtherIngredients_Margarine" xml:space="preserve">
+    <value>Маргарин</value>
+  </data>
+  <data name="OtherIngredients_Marzipan" xml:space="preserve">
+    <value>Марципан</value>
+  </data>
+  <data name="OtherIngredients_Mayonnaise" xml:space="preserve">
+    <value>Майонез</value>
+  </data>
+  <data name="OtherIngredients_Melon_Seeds" xml:space="preserve">
+    <value>Семена дыни</value>
+  </data>
+  <data name="OtherIngredients_Meringue" xml:space="preserve">
+    <value>Безе</value>
+  </data>
+  <data name="OtherIngredients_Oyster_Sauce" xml:space="preserve">
+    <value>Устричный соус</value>
+  </data>
+  <data name="OtherIngredients_Paan" xml:space="preserve">
+    <value>Паан</value>
+  </data>
+  <data name="OtherIngredients_Papad" xml:space="preserve">
+    <value>Папад</value>
+  </data>
+  <data name="OtherIngredients_Pasta" xml:space="preserve">
+    <value>Паста</value>
+  </data>
+  <data name="OtherIngredients_Petha" xml:space="preserve">
+    <value>Пета</value>
+  </data>
+  <data name="OtherIngredients_Polenta" xml:space="preserve">
+    <value>Полента</value>
+  </data>
+  <data name="OtherIngredients_Quinoa" xml:space="preserve">
+    <value>Киноа</value>
+  </data>
+  <data name="OtherIngredients_Red_Wine" xml:space="preserve">
+    <value>Красное вино</value>
+  </data>
+  <data name="OtherIngredients_Red_Wine_Vinegar" xml:space="preserve">
+    <value>Красный винный уксус</value>
+  </data>
+  <data name="OtherIngredients_Rice_Flour" xml:space="preserve">
+    <value>Рисовая мука</value>
+  </data>
+  <data name="OtherIngredients_Rice_Noodles" xml:space="preserve">
+    <value>Рисовая лапша</value>
+  </data>
+  <data name="OtherIngredients_Rice_Vinegar" xml:space="preserve">
+    <value>Рисовый уксус</value>
+  </data>
+  <data name="OtherIngredients_Rose_Water" xml:space="preserve">
+    <value>Розовая вода</value>
+  </data>
+  <data name="OtherIngredients_Roux" xml:space="preserve">
+    <value>Ру</value>
+  </data>
+  <data name="OtherIngredients_Rum" xml:space="preserve">
+    <value>Ром</value>
+  </data>
+  <data name="OtherIngredients_Sake" xml:space="preserve">
+    <value>Сакэ</value>
+  </data>
+  <data name="OtherIngredients_Screw_Pine" xml:space="preserve">
+    <value>Винтовая сосна</value>
+  </data>
+  <data name="OtherIngredients_Sea_Salt" xml:space="preserve">
+    <value>Море Соль</value>
+  </data>
+  <data name="OtherIngredients_Sev" xml:space="preserve">
+    <value>Сев</value>
+  </data>
+  <data name="OtherIngredients_Sharbat" xml:space="preserve">
+    <value>Шарбат</value>
+  </data>
+  <data name="OtherIngredients_Soya_Sauce" xml:space="preserve">
+    <value>Соевый соус</value>
+  </data>
+  <data name="OtherIngredients_Soy_Milk" xml:space="preserve">
+    <value>Соевое молоко</value>
+  </data>
+  <data name="OtherIngredients_Tartaric_Acid" xml:space="preserve">
+    <value>Винная кислота</value>
+  </data>
+  <data name="OtherIngredients_Tea" xml:space="preserve">
+    <value>Чай</value>
+  </data>
+  <data name="OtherIngredients_Tofu" xml:space="preserve">
+    <value>Тофу</value>
+  </data>
+  <data name="OtherIngredients_Tomato_Puree" xml:space="preserve">
+    <value>Томатное пюре</value>
+  </data>
+  <data name="OtherIngredients_Tortilla" xml:space="preserve">
+    <value>Тортилья</value>
+  </data>
+  <data name="OtherIngredients_Vanilla_Essence" xml:space="preserve">
+    <value>Ванильная эссенция</value>
+  </data>
+  <data name="OtherIngredients_Vegetable_Oil" xml:space="preserve">
+    <value>Растительное масло</value>
+  </data>
+  <data name="OtherIngredients_Vermicelli" xml:space="preserve">
+    <value>Вермишель</value>
+  </data>
+  <data name="OtherIngredients_Vetiver" xml:space="preserve">
+    <value>Ветивер</value>
+  </data>
+  <data name="OtherIngredients_Vinaigrette" xml:space="preserve">
+    <value>Винегрет</value>
+  </data>
+  <data name="OtherIngredients_Vinegar" xml:space="preserve">
+    <value>Уксус</value>
+  </data>
+  <data name="OtherIngredients_White_Pepper" xml:space="preserve">
+    <value>Белый перец</value>
+  </data>
+  <data name="OtherIngredients_White_Wine" xml:space="preserve">
+    <value>Белое вино</value>
+  </data>
+  <data name="OtherIngredients_Yeast" xml:space="preserve">
+    <value>Дрожжи</value>
+  </data>
+  <data name="Seafood_Anchovies" xml:space="preserve">
+    <value>Анчоусы</value>
+  </data>
+  <data name="Seafood_Cat_Fish" xml:space="preserve">
+    <value>Сом</value>
+  </data>
+  <data name="Seafood_Clams" xml:space="preserve">
+    <value>Моллюски</value>
+  </data>
+  <data name="Seafood_Cod" xml:space="preserve">
+    <value>Треска</value>
+  </data>
+  <data name="Seafood_Cuttle_Fish" xml:space="preserve">
+    <value>Рыба</value>
+  </data>
+  <data name="Seafood_Fish_Fillet" xml:space="preserve">
+    <value>Рыбное филе</value>
+  </data>
+  <data name="Seafood_Fish_Stock" xml:space="preserve">
+    <value>Рыбный бульон</value>
+  </data>
+  <data name="Seafood_Flounder" xml:space="preserve">
+    <value>Камбала</value>
+  </data>
+  <data name="Seafood_Haddock" xml:space="preserve">
+    <value>Пикша</value>
+  </data>
+  <data name="Seafood_Hilsa" xml:space="preserve">
+    <value>Хильса</value>
+  </data>
+  <data name="Seafood_Mackerel" xml:space="preserve">
+    <value>Скумбрия</value>
+  </data>
+  <data name="Seafood_Mullet" xml:space="preserve">
+    <value>Кефаль</value>
+  </data>
+  <data name="Seafood_Mussels" xml:space="preserve">
+    <value>Мидии</value>
+  </data>
+  <data name="Seafood_Pearl_Spot" xml:space="preserve">
+    <value>Жемчужная спота</value>
+  </data>
+  <data name="Seafood_Perch" xml:space="preserve">
+    <value>Окунь</value>
+  </data>
+  <data name="Seafood_Pomfret" xml:space="preserve">
+    <value>Помфрет</value>
+  </data>
+  <data name="Seafood_Prawns" xml:space="preserve">
+    <value>Креветки</value>
+  </data>
+  <data name="Seafood_Salmon" xml:space="preserve">
+    <value>Лосось</value>
+  </data>
+  <data name="Seafood_Sardines" xml:space="preserve">
+    <value>Сардины</value>
+  </data>
+  <data name="Seafood_Shark" xml:space="preserve">
+    <value>Акула</value>
+  </data>
+  <data name="Seafood_Shellfish" xml:space="preserve">
+    <value>Моллюски</value>
+  </data>
+  <data name="Seafood_Shrimp" xml:space="preserve">
+    <value>Креветки</value>
+  </data>
+  <data name="Seafood_Squids" xml:space="preserve">
+    <value>Кальмары</value>
+  </data>
+  <data name="Seafood_Tuna_Fish" xml:space="preserve">
+    <value>Тунец</value>
+  </data>
+  <data name="SpicesAndHerbs_Acacia" xml:space="preserve">
+    <value>Акация</value>
+  </data>
+  <data name="SpicesAndHerbs_Allspice" xml:space="preserve">
+    <value>Душистый перец</value>
+  </data>
+  <data name="SpicesAndHerbs_Aniseed" xml:space="preserve">
+    <value>Анис</value>
+  </data>
+  <data name="SpicesAndHerbs_Asafoetida" xml:space="preserve">
+    <value>Асафетида</value>
+  </data>
+  <data name="SpicesAndHerbs_Basil" xml:space="preserve">
+    <value>Базилик</value>
+  </data>
+  <data name="SpicesAndHerbs_Bay_Leaf" xml:space="preserve">
+    <value>Лавровый лист</value>
+  </data>
+  <data name="SpicesAndHerbs_Black_Cardamom" xml:space="preserve">
+    <value>Черный кардамон</value>
+  </data>
+  <data name="SpicesAndHerbs_Black_Cumin" xml:space="preserve">
+    <value>Черный тмин</value>
+  </data>
+  <data name="SpicesAndHerbs_Black_Pepper" xml:space="preserve">
+    <value>Черный перец</value>
+  </data>
+  <data name="SpicesAndHerbs_Cajun_Spices" xml:space="preserve">
+    <value>Специи каджун</value>
+  </data>
+  <data name="SpicesAndHerbs_Caraway_Seeds" xml:space="preserve">
+    <value>Тмин</value>
+  </data>
+  <data name="SpicesAndHerbs_Carom_Seeds" xml:space="preserve">
+    <value>Карамболь Семена</value>
+  </data>
+  <data name="SpicesAndHerbs_Cayenne" xml:space="preserve">
+    <value>Кайенский перец</value>
+  </data>
+  <data name="SpicesAndHerbs_Chives" xml:space="preserve">
+    <value>Чайный лук</value>
+  </data>
+  <data name="SpicesAndHerbs_Cinnamon" xml:space="preserve">
+    <value>Корица</value>
+  </data>
+  <data name="SpicesAndHerbs_Cloves" xml:space="preserve">
+    <value>Гвоздика</value>
+  </data>
+  <data name="SpicesAndHerbs_Coriander_Leaves" xml:space="preserve">
+    <value>Листья кориандра</value>
+  </data>
+  <data name="SpicesAndHerbs_Coriander_Powder" xml:space="preserve">
+    <value>Порошок кориандра</value>
+  </data>
+  <data name="SpicesAndHerbs_Coriander_Seeds" xml:space="preserve">
+    <value>Семена кориандра</value>
+  </data>
+  <data name="SpicesAndHerbs_Cumin_Seeds" xml:space="preserve">
+    <value>Семена тмина</value>
+  </data>
+  <data name="SpicesAndHerbs_Curry_Leaves" xml:space="preserve">
+    <value>Листья карри</value>
+  </data>
+  <data name="SpicesAndHerbs_Dill" xml:space="preserve">
+    <value>Укроп</value>
+  </data>
+  <data name="SpicesAndHerbs_Dried_Fenugreek_Leaves" xml:space="preserve">
+    <value>Сушеные листья пажитника</value>
+  </data>
+  <data name="SpicesAndHerbs_Dry_Ginger_Powder" xml:space="preserve">
+    <value>Сухой порошок имбиря</value>
+  </data>
+  <data name="SpicesAndHerbs_Fennel" xml:space="preserve">
+    <value>Фенхель</value>
+  </data>
+  <data name="SpicesAndHerbs_Fenugreek_Seeds" xml:space="preserve">
+    <value>Семена пажитника</value>
+  </data>
+  <data name="SpicesAndHerbs_Five_Spice_Powder" xml:space="preserve">
+    <value>Порошок пяти специй</value>
+  </data>
+  <data name="SpicesAndHerbs_Galangal" xml:space="preserve">
+    <value>Галангал</value>
+  </data>
+  <data name="SpicesAndHerbs_Garam_Masala" xml:space="preserve">
+    <value>Гарам масала</value>
+  </data>
+  <data name="SpicesAndHerbs_Green_Cardamom" xml:space="preserve">
+    <value>Зеленый кардамон</value>
+  </data>
+  <data name="SpicesAndHerbs_Herbs" xml:space="preserve">
+    <value>Травы</value>
+  </data>
+  <data name="SpicesAndHerbs_Kashmiri_Mirch" xml:space="preserve">
+    <value>Кашмирский мирч</value>
+  </data>
+  <data name="SpicesAndHerbs_Lemongrass" xml:space="preserve">
+    <value>Лемонграсс</value>
+  </data>
+  <data name="SpicesAndHerbs_Mace" xml:space="preserve">
+    <value>Мускатный цвет</value>
+  </data>
+  <data name="SpicesAndHerbs_Marjoram" xml:space="preserve">
+    <value>Майоран</value>
+  </data>
+  <data name="SpicesAndHerbs_Mint_Leaves" xml:space="preserve">
+    <value>Листья мяты</value>
+  </data>
+  <data name="SpicesAndHerbs_Mustard_Powder" xml:space="preserve">
+    <value>Горчичный порошок</value>
+  </data>
+  <data name="SpicesAndHerbs_Nasturtium" xml:space="preserve">
+    <value>Настурция</value>
+  </data>
+  <data name="SpicesAndHerbs_Nutmeg" xml:space="preserve">
+    <value>Мускатный орех</value>
+  </data>
+  <data name="SpicesAndHerbs_Onion_Seeds" xml:space="preserve">
+    <value>Семена лука</value>
+  </data>
+  <data name="SpicesAndHerbs_Oregano" xml:space="preserve">
+    <value>Орегано</value>
+  </data>
+  <data name="SpicesAndHerbs_Paprika" xml:space="preserve">
+    <value>Паприка</value>
+  </data>
+  <data name="SpicesAndHerbs_Parsley" xml:space="preserve">
+    <value>Петрушка</value>
+  </data>
+  <data name="SpicesAndHerbs_Raw_Mango_Powder" xml:space="preserve">
+    <value>Сырой порошок манго</value>
+  </data>
+  <data name="SpicesAndHerbs_Red_Chilli" xml:space="preserve">
+    <value>Красный перец чили</value>
+  </data>
+  <data name="SpicesAndHerbs_Rock_Salt" xml:space="preserve">
+    <value>Каменная соль</value>
+  </data>
+  <data name="SpicesAndHerbs_Rosemary" xml:space="preserve">
+    <value>Розмарин</value>
+  </data>
+  <data name="SpicesAndHerbs_Saffron" xml:space="preserve">
+    <value>Шафран</value>
+  </data>
+  <data name="SpicesAndHerbs_Sage" xml:space="preserve">
+    <value>Шалфей</value>
+  </data>
+  <data name="SpicesAndHerbs_Salt" xml:space="preserve">
+    <value>Соль</value>
+  </data>
+  <data name="SpicesAndHerbs_Star_Anise" xml:space="preserve">
+    <value>Звездчатый анис</value>
+  </data>
+  <data name="SpicesAndHerbs_Thyme" xml:space="preserve">
+    <value>Тимьян</value>
+  </data>
+  <data name="SpicesAndHerbs_Tulsi" xml:space="preserve">
+    <value>Тулси</value>
+  </data>
+  <data name="SpicesAndHerbs_Turmeric" xml:space="preserve">
+    <value>Куркума</value>
+  </data>
+  <data name="SpicesAndHerbs_Yellow_Chillies" xml:space="preserve">
+    <value>Желтый перец чили</value>
+  </data>
+  <data name="SugarAndSugarProducts_Brown_Sugar" xml:space="preserve">
+    <value>Коричневый сахар</value>
+  </data>
+  <data name="SugarAndSugarProducts_Cane_Sugar" xml:space="preserve">
+    <value>Тростниковый сахар</value>
+  </data>
+  <data name="SugarAndSugarProducts_Caramel" xml:space="preserve">
+    <value>Карамель</value>
+  </data>
+  <data name="SugarAndSugarProducts_Castor_Sugar" xml:space="preserve">
+    <value>Касторка Сахар</value>
+  </data>
+  <data name="SugarAndSugarProducts_Golden_Syrup" xml:space="preserve">
+    <value>Золотистый сироп</value>
+  </data>
+  <data name="SugarAndSugarProducts_Honey" xml:space="preserve">
+    <value>Мед</value>
+  </data>
+  <data name="SugarAndSugarProducts_Icing_Sugar" xml:space="preserve">
+    <value>Сахарная пудра</value>
+  </data>
+  <data name="SugarAndSugarProducts_Jaggery" xml:space="preserve">
+    <value>Неочищенный пальмовый сахар</value>
+  </data>
+  <data name="SugarAndSugarProducts_Sugar" xml:space="preserve">
+    <value>Сахар</value>
+  </data>
+  <data name="SugarAndSugarProducts_Sugar_Candy" xml:space="preserve">
+    <value>Сахарная конфета</value>
+  </data>
+  <data name="Vegetables_Artichoke" xml:space="preserve">
+    <value>Артишок</value>
+  </data>
+  <data name="Vegetables_Ash_Gourd" xml:space="preserve">
+    <value>Тыква пепельного цвета</value>
+  </data>
+  <data name="Vegetables_Asparagus" xml:space="preserve">
+    <value>Спаржа</value>
+  </data>
+  <data name="Vegetables_Avocado" xml:space="preserve">
+    <value>Авокадо</value>
+  </data>
+  <data name="Vegetables_Baby_Corn" xml:space="preserve">
+    <value>Молодая кукуруза</value>
+  </data>
+  <data name="Vegetables_Bamboo_Shoot" xml:space="preserve">
+    <value>Побеги бамбука</value>
+  </data>
+  <data name="Vegetables_Beetroot" xml:space="preserve">
+    <value>Свекла</value>
+  </data>
+  <data name="Vegetables_Bell_Pepper" xml:space="preserve">
+    <value>Болгарский перец</value>
+  </data>
+  <data name="Vegetables_Bitter_Gourd" xml:space="preserve">
+    <value>Горькая тыква</value>
+  </data>
+  <data name="Vegetables_Bok_Choy" xml:space="preserve">
+    <value>Бок-чой</value>
+  </data>
+  <data name="Vegetables_Bottle_Gourd" xml:space="preserve">
+    <value>Тыква-бутылка</value>
+  </data>
+  <data name="Vegetables_Broad_Beans" xml:space="preserve">
+    <value>Бобы</value>
+  </data>
+  <data name="Vegetables_Broccoli" xml:space="preserve">
+    <value>Брокколи</value>
+  </data>
+  <data name="Vegetables_Cabbage" xml:space="preserve">
+    <value>Капуста</value>
+  </data>
+  <data name="Vegetables_Capers" xml:space="preserve">
+    <value>Каперсы</value>
+  </data>
+  <data name="Vegetables_Capsicum" xml:space="preserve">
+    <value>Перец</value>
+  </data>
+  <data name="Vegetables_Carrot" xml:space="preserve">
+    <value>Морковь</value>
+  </data>
+  <data name="Vegetables_Cauliflower" xml:space="preserve">
+    <value>Цветная капуста</value>
+  </data>
+  <data name="Vegetables_Celery" xml:space="preserve">
+    <value>Сельдерей</value>
+  </data>
+  <data name="Vegetables_Cherry_Tomatoes" xml:space="preserve">
+    <value>Помидоры черри</value>
+  </data>
+  <data name="Vegetables_Cluster_Beans" xml:space="preserve">
+    <value>Фасоль гроздьевая</value>
+  </data>
+  <data name="Vegetables_Colocasia" xml:space="preserve">
+    <value>Колоказия</value>
+  </data>
+  <data name="Vegetables_Corn" xml:space="preserve">
+    <value>Кукуруза</value>
+  </data>
+  <data name="Vegetables_Cucumber" xml:space="preserve">
+    <value>Огурец</value>
+  </data>
+  <data name="Vegetables_Drumstick" xml:space="preserve">
+    <value>Голень</value>
+  </data>
+  <data name="Vegetables_Eggplant" xml:space="preserve">
+    <value>Баклажан</value>
+  </data>
+  <data name="Vegetables_Fenugreek" xml:space="preserve">
+    <value>Пажитник</value>
+  </data>
+  <data name="Vegetables_French_Beans" xml:space="preserve">
+    <value>Французская фасоль</value>
+  </data>
+  <data name="Vegetables_Garlic" xml:space="preserve">
+    <value>Чеснок</value>
+  </data>
+  <data name="Vegetables_Gherkins" xml:space="preserve">
+    <value>Корнишоны</value>
+  </data>
+  <data name="Vegetables_Ginger" xml:space="preserve">
+    <value>Имбирь</value>
+  </data>
+  <data name="Vegetables_Green_Chillies" xml:space="preserve">
+    <value>Зеленый перец чили</value>
+  </data>
+  <data name="Vegetables_Green_Peas" xml:space="preserve">
+    <value>Зеленый горошек</value>
+  </data>
+  <data name="Vegetables_Horseradish" xml:space="preserve">
+    <value>Хрен</value>
+  </data>
+  <data name="Vegetables_Jackfruit" xml:space="preserve">
+    <value>Джекфрут</value>
+  </data>
+  <data name="Vegetables_Jalapeno" xml:space="preserve">
+    <value>Халапеньо</value>
+  </data>
+  <data name="Vegetables_Kaffir_Lime" xml:space="preserve">
+    <value>Каффир-лайм</value>
+  </data>
+  <data name="Vegetables_Lady_Finger" xml:space="preserve">
+    <value>Дамский пальчик</value>
+  </data>
+  <data name="Vegetables_Leek" xml:space="preserve">
+    <value>Лук-порей</value>
+  </data>
+  <data name="Vegetables_Lettuce" xml:space="preserve">
+    <value>Салат</value>
+  </data>
+  <data name="Vegetables_Lotus_Stem" xml:space="preserve">
+    <value>Стебель лотоса</value>
+  </data>
+  <data name="Vegetables_Mushroom" xml:space="preserve">
+    <value>Гриб</value>
+  </data>
+  <data name="Vegetables_Mustard_Leaves" xml:space="preserve">
+    <value>Горчица Листья</value>
+  </data>
+  <data name="Vegetables_Onion" xml:space="preserve">
+    <value>Лук</value>
+  </data>
+  <data name="Vegetables_Pigweed" xml:space="preserve">
+    <value>Амарант</value>
+  </data>
+  <data name="Vegetables_Pimiento" xml:space="preserve">
+    <value>Пимиенто</value>
+  </data>
+  <data name="Vegetables_Plantain" xml:space="preserve">
+    <value>Подорожник</value>
+  </data>
+  <data name="Vegetables_Potatoes" xml:space="preserve">
+    <value>Картофель</value>
+  </data>
+  <data name="Vegetables_Pumpkin" xml:space="preserve">
+    <value>Тыква</value>
+  </data>
+  <data name="Vegetables_Radish" xml:space="preserve">
+    <value>Редис</value>
+  </data>
+  <data name="Vegetables_Ridge_Gourd" xml:space="preserve">
+    <value>Тыква обыкновенная</value>
+  </data>
+  <data name="Vegetables_Rocket_Leaves" xml:space="preserve">
+    <value>Листья рукколы</value>
+  </data>
+  <data name="Vegetables_Round_Gourd" xml:space="preserve">
+    <value>Тыква круглая</value>
+  </data>
+  <data name="Vegetables_Shallots" xml:space="preserve">
+    <value>Лук-шалот</value>
+  </data>
+  <data name="Vegetables_Shiitake_Mushroom" xml:space="preserve">
+    <value>Грибы шиитаке</value>
+  </data>
+  <data name="Vegetables_Snake_Beans" xml:space="preserve">
+    <value>Фасоль змеиная</value>
+  </data>
+  <data name="Vegetables_Sorrel_Leaves" xml:space="preserve">
+    <value>Листья щавеля</value>
+  </data>
+  <data name="Vegetables_Spinach" xml:space="preserve">
+    <value>Шпинат</value>
+  </data>
+  <data name="Vegetables_Spring_Onion" xml:space="preserve">
+    <value>Зеленый лук</value>
+  </data>
+  <data name="Vegetables_Sweet_Potatoes" xml:space="preserve">
+    <value>Сладкий картофель</value>
+  </data>
+  <data name="Vegetables_Turnip" xml:space="preserve">
+    <value>Репа</value>
+  </data>
+  <data name="Vegetables_Yam" xml:space="preserve">
+    <value>Ямс</value>
+  </data>
+  <data name="Vegetables_Zucchini" xml:space="preserve">
+    <value>Кабачок</value>
+  </data>
+</root>
