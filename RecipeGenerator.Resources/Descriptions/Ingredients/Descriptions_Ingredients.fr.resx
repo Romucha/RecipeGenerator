@@ -1,101 +1,1233 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<!-- 
-		Microsoft ResX Schema
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
 
-		Version 1.3
-
-		The primary goals of this format is to allow a simple XML format 
-		that is mostly human readable. The generation and parsing of the 
-		various data types are done through the TypeConverter classes 
-		associated with the data types.
-
-		Example:
-
-		... ado.net/XML headers & schema ...
-		<resheader name="resmimetype">text/microsoft-resx</resheader>
-		<resheader name="version">1.3</resheader>
-		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-		<data name="Name1">this is my long string</data>
-		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-			[base64 mime encoded serialized .NET Framework object]
-		</data>
-		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-			[base64 mime encoded string representing a byte array form of the .NET Framework object]
-		</data>
-
-		There are any number of "resheader" rows that contain simple 
-		name/value pairs.
-
-		Each data row contains a name, and value. The row also contains a 
-		type or mimetype. Type corresponds to a .NET class that support 
-		text/value conversion through the TypeConverter architecture. 
-		Classes that don't support this are serialized and stored with the 
-		mimetype set.
-
-		The mimetype is used for serialized objects, and tells the 
-		ResXResourceReader how to depersist the object. This is currently not 
-		extensible. For a given mimetype the value must be set accordingly:
-
-		Note - application/x-microsoft.net.object.binary.base64 is the format 
-		that the ResXResourceWriter will generate, however the reader can 
-		read any of the formats listed below.
-
-		mimetype: application/x-microsoft.net.object.binary.base64
-		value   : The object must be serialized with 
-			: System.Serialization.Formatters.Binary.BinaryFormatter
-			: and then encoded with base64 encoding.
-
-		mimetype: application/x-microsoft.net.object.soap.base64
-		value   : The object must be serialized with 
-			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-			: and then encoded with base64 encoding.
-
-		mimetype: application/x-microsoft.net.object.bytearray.base64
-		value   : The object must be serialized into a byte array 
-			: using a System.ComponentModel.TypeConverter
-			: and then encoded with base64 encoding.
-	-->
-	
-	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-		<xsd:element name="root" msdata:IsDataSet="true">
-			<xsd:complexType>
-				<xsd:choice maxOccurs="unbounded">
-					<xsd:element name="data">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
-							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-						</xsd:complexType>
-					</xsd:element>
-					<xsd:element name="resheader">
-						<xsd:complexType>
-							<xsd:sequence>
-								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-							</xsd:sequence>
-							<xsd:attribute name="name" type="xsd:string" use="required" />
-						</xsd:complexType>
-					</xsd:element>
-				</xsd:choice>
-			</xsd:complexType>
-		</xsd:element>
-	</xsd:schema>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>1.3</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CerealsAndPulses_All_Purpose_Flour" xml:space="preserve">
+    <value>La farine tout usage, également connue sous le nom de farine raffinée ou simplement farine, est fabriquée à partir de grains de blé après avoir retiré la couche brune. Elle est ensuite broyée, nettoyée et blanchie. Il est très courant dans la cuisine indienne, notamment pour divers pains indiens. Il est généralement utilisé pour la cuisson de gâteaux, tartes et autres desserts.</value>
+  </data>
+  <data name="CerealsAndPulses_Amaranth" xml:space="preserve">
+    <value>L'amarante est une riche source de protéines et sa valeur nutritionnelle est similaire à celle des céréales et des légumes à feuilles vertes. De plus, le goût de noisette et croquant de l'amarante en fait une collation étonnante !</value>
+  </data>
+  <data name="CerealsAndPulses_Arborio_Rice" xml:space="preserve">
+    <value>Le riz arborio est un riz italien à grains courts utilisé pour préparer l'un des plats de riz classiques appelés risotto. "Riso" signifie riz en italien. Il était à l’origine cultivé en Italie, mais il est maintenant produit ailleurs. Il porte le nom de la ville d'Arborio en Italie.</value>
+  </data>
+  <data name="CerealsAndPulses_Barley" xml:space="preserve">
+    <value>L'orge, cette céréale étonnante, est un délicieux complément alimentaire qui vous aide à maintenir une silhouette mince. Il s’agit d’une céréale très courante pour le petit-déjeuner. Cependant, il est utilisé sous diverses formes comme les céréales, les soupes, les salades, mais aussi pour la fabrication du whisky et de la bière. L'orge contient des fibres insolubles qui retiennent l'eau. Ce sont de minuscules grains blancs et ronds qui appartiennent à la famille du mil. Il s'agit d'une plante dressée d'une hauteur de 60 à 130 cm. En Inde, les céréales ne sont pas consommées pendant le jeûne. Par conséquent, le samvat est un ingrédient populaire pendant les Navratras. Lors de la préparation d'un plat à base de riz pendant le jeûne, les grains de samvat ou de sama sont utilisés à la place car ils n'appartiennent pas à la famille du riz mais constituent une alternative saine.</value>
+  </data>
+  <data name="CerealsAndPulses_Barnyard_Millet" xml:space="preserve">
+    <value>Ce sont de petits grains blancs et ronds qui appartiennent à la famille du mil. Il s'agit d'une plante dressée d'une hauteur de 60 à 130 cm. En Inde, les céréales ne sont pas consommées pendant le jeûne. Par conséquent, le samvat est un ingrédient populaire pendant les Navratras. Lors de la préparation d'un plat à base de riz pendant le jeûne, les grains de samvat ou de sama sont utilisés à la place car ils n'appartiennent pas à la famille du riz mais constituent une alternative saine.</value>
+  </data>
+  <data name="CerealsAndPulses_Basmati_Rice" xml:space="preserve">
+    <value>Un riz à grains longs au goût délicat cultivé en Inde. Il s'agit d'un riz à grains longs et à grains fins, inhabituellement aromatique, mieux connu simplement sous le nom de basmati. Il a un goût de noisette différent et est considéré comme le riz de la meilleure qualité. La préparation la plus authentique a lieu dans les contreforts de l'Himalaya.</value>
+  </data>
+  <data name="CerealsAndPulses_Bean_Sprouts" xml:space="preserve">
+    <value>Les germes de soja sont un ingrédient courant, en particulier dans la cuisine asiatique, et sont préparés à partir de haricots en les faisant germer. Les haricots mungo sont germés pour produire des pousses comestibles les plus couramment utilisées dans le monde. Ces pousses ont une texture croquante et un goût légèrement sucré et peuvent être consommées crues ou cuites.</value>
+  </data>
+  <data name="CerealsAndPulses_Bengal_Gram_(Split)" xml:space="preserve">
+    <value>Étroitement apparentés à la famille des pois chiches, les pois du Bengale sont des lentilles jaunes rondes d'un côté et plates de l'autre. Les pois du Bengale sont l'une des premières légumineuses cultivées. Il est populairement connu sous le nom de Chana Dal dans la cuisine indienne. Les graines de pois du Bengale sont petites et foncées, avec une coque rugueuse.</value>
+  </data>
+  <data name="CerealsAndPulses_Black-eyed_Beans" xml:space="preserve">
+    <value>Blanc crème avec une marque noire sur le coude, le haricot à yeux noirs est une sous-espèce du niébé. Ces haricots sont largement utilisés car ils sont délicieux sans aucune épices. La variété commerciale la plus courante s'appelle California Blackeye, avec de gros haricots oblongs et une subtile saveur de noisette.</value>
+  </data>
+  <data name="CerealsAndPulses_Black_Beans" xml:space="preserve">
+    <value>Les petits haricots noirs brillants ont une texture soyeuse et une saveur fumée et conservent leur texture dense même après la cuisson. C'est un ingrédient très populaire dans la cuisine latino-américaine, orientale et thaïlandaise. Son goût sucré et riche a été comparé à celui des champignons.</value>
+  </data>
+  <data name="CerealsAndPulses_Black_Gram" xml:space="preserve">
+    <value>Également connues sous le nom de lentilles noires, elles sont l’une des lentilles les plus consommées en Inde. Ce sont des lentilles noires rondes, légèrement allongées, à la texture collante et au goût fade. Les lentilles blanches sont des lentilles noires sans peau noire. Ces lentilles ont une très forte saveur terreuse.</value>
+  </data>
+  <data name="CerealsAndPulses_Bread" xml:space="preserve">
+    <value>C’est l’aliment le plus populaire au monde et l’un des plus anciens. Le pain se retrouve dans presque toutes les cuisines, plat ou au levain. La pâte doit être préparée avant la cuisson. Ses différentes formes sont les petits pains, les petits pains, les pains, le pita, le chapati, le naan, le levain, etc.</value>
+  </data>
+  <data name="CerealsAndPulses_Breadcrumbs" xml:space="preserve">
+    <value>Le pain séché et réduit en poudre fine, avec ou sans croûte, est appelé chapelure. Il est fabriqué à partir de pain frais et rassis et peut comporter une croûte. Une fois broyé, il est de couleur rose clair ou brune. Utilisé principalement pour enrober les aliments qui doivent être frits pour être croquants, il a une texture friable.</value>
+  </data>
+  <data name="CerealsAndPulses_Brown_Rice" xml:space="preserve">
+    <value>Le riz est un aliment de base dans la plupart des ménages indiens. Le riz brun est une variété non moulue ou partiellement moulue et est considérée comme un grain entier. Cela signifie qu'il contient tous les composants naturels : son, germe et endosperme. La principale différence est que seules les deux premières couches de riz blanc sont retirées, de sorte qu’il ne reste que l’albumen amylacé.</value>
+  </data>
+  <data name="CerealsAndPulses_Buckwheat" xml:space="preserve">
+    <value>Le grain de sarrasin est la graine séchée et décortiquée d'une plante. Les graines triangulaires sont produites et transformées pour être utilisées comme céréales. De couleur brune, elle est vendue sous forme de céréales ou de farine. Il a un goût de noisette, ce qui signifie qu'il peut être consommé cru ou simplement grillé.</value>
+  </data>
+  <data name="CerealsAndPulses_Chickpeas" xml:space="preserve">
+    <value>Les pois du Bengale entiers ou kala chana sont un type de pois chiche utilisé dans de nombreuses cuisines à travers le monde. Mais c’est en Inde qu’on l’utilise le plus souvent. Il est petit, de couleur brun foncé et très riche en protéines. Du pois germé jusqu’à maturité, il se consomme à tous les stades de croissance.</value>
+  </data>
+  <data name="CerealsAndPulses_Cornmeal" xml:space="preserve">
+    <value>La semoule de maïs est une farine moulue à partir de maïs séché. Elle est moulue jusqu'à obtenir une consistance moyenne à grossière, mais pas aussi fine que la farine de blé tendre. Dans certains pays, la semoule de maïs finement moulue est appelée semoule de maïs. Il est généralement de couleur jaune car sa couleur provient des grains de maïs.</value>
+  </data>
+  <data name="CerealsAndPulses_Couscous" xml:space="preserve">
+    <value>Fabriqué à partir de blé dur cuit à la vapeur et séché, le couscous est désormais une alternative populaire au riz et aux pâtes. Il contient de minuscules granules de semoule qui ont une texture légèrement moelleuse. Le couscous est cuit à la vapeur plusieurs fois jusqu'à obtenir la texture désirée.</value>
+  </data>
+  <data name="CerealsAndPulses_Finger_Millet" xml:space="preserve">
+    <value>Bien que le couscous soit un plat traditionnel nord-africain, il a été adapté à diverses cuisines.</value>
+  </data>
+  <data name="CerealsAndPulses_Flour" xml:space="preserve">
+    <value>Céréale extrêmement nutritive moulue dans la farine très populaire, le ragi est une petite graine verte qui ressemble à une céréale lorsqu'elle est crue. Il est disponible toute l’année et est principalement consommé en Afrique et en Asie. Il est frit pour faire une collation rapide.</value>
+  </data>
+  <data name="CerealsAndPulses_Gram_flour" xml:space="preserve">
+    <value>La farine, également connue sous le nom de farine tout usage ou farine raffinée, est fabriquée à partir de grains de blé après avoir retiré la coque brune. Elle est ensuite broyée, nettoyée et blanchie. Il est très courant dans la cuisine indienne, notamment pour divers pains indiens. Il est couramment utilisé dans la cuisson de gâteaux, tartes et autres desserts.</value>
+  </data>
+  <data name="CerealsAndPulses_Green_Gram" xml:space="preserve">
+    <value>Les pois verts sont de petits haricots ronds vert olive au goût sucré et à la texture douce. Les haricots mungo ou haricots mungo sont les graines de Vigna radiata et sont originaires du sous-continent indien. Ils sont couramment utilisés dans la cuisine sud-asiatique. Ils sont jaunes après pelage.</value>
+  </data>
+  <data name="CerealsAndPulses_Husked_Black_Gram" xml:space="preserve">
+    <value>Les pois noirs décortiqués sont généralement vendus sur le marché sous forme de lentilles blanches. Il est obtenu en retirant la peau des pois noirs. Ce sont de petites lentilles noires et étroites, de forme quelque peu cylindrique. Puisqu’il est fabriqué à partir de pois noirs, il est cultivé uniquement en Inde et est couramment utilisé dans la cuisine indienne.</value>
+  </data>
+  <data name="CerealsAndPulses_Husked_Green_Gram" xml:space="preserve">
+    <value>Il s’agit d’une forme séchée jaunâtre de pois verts obtenue en enlevant la peau verte. Dans la cuisine indienne, il est principalement utilisé sous forme de légumineuses cuites avec des épices. Les lentilles sont petites, ovoïdes et de couleur verte. Il a un goût doux.</value>
+  </data>
+  <data name="CerealsAndPulses_Jowar" xml:space="preserve">
+    <value>C'est une culture indienne populaire appartenant à la famille des céréales, les Gramineae. Cela ressemble à du maïs en apparence. Elle pousse de 2 à 8 pieds de haut. Il possède de solides racines qui descendent jusqu’à 2,5 m de profondeur sous terre. Après le blé, la plus grande superficie de terres cultivables en Inde est utilisée pour la culture du jowar.</value>
+  </data>
+  <data name="CerealsAndPulses_Kidney_Beans" xml:space="preserve">
+    <value>Ces haricots sont séchés et sont disponibles toute l'année. Ils sont de couleur brun rougeâtre et en forme de rein. Ils ont une saveur très forte et sont utilisés aussi bien dans les plats chauds que froids. Ils sont le plus souvent utilisés dans la cuisine mexicaine et indienne pour réaliser des currys.</value>
+  </data>
+  <data name="CerealsAndPulses_Muesli" xml:space="preserve">
+    <value>Le muesli est un type de céréales froides prêtes à manger pour le petit-déjeuner. Ils sont fabriqués à partir d'un mélange d'avoine, de fruits frais ou secs, de flocons de blé, de noix, de graines, etc. Ils peuvent être mélangés avec du lait, du yaourt sucré, du jus de fruits et consommés. Vous pouvez également ajouter des fruits frais si vous le souhaitez.</value>
+  </data>
+  <data name="CerealsAndPulses_Oats" xml:space="preserve">
+    <value>L'avoine est un type de céréale cultivée pour ses graines. L'avoine est une plante annuelle cultivée principalement dans les contreforts de l'Himalaya, du Pendjab et de l'Uttar Pradesh. Ils sont disponibles toute l’année en packs individuels. Une grande partie de sa saveur provient du processus de torréfaction après la récolte et le nettoyage.</value>
+  </data>
+  <data name="CerealsAndPulses_Pearl_Millet" xml:space="preserve">
+    <value>Cette céréale, souvent utilisée dans les zones rurales de l'Inde, a une teneur élevée en fibres. Le mil le plus répandu est le millet perlé, c'est-à-dire le bajra, qui est une culture importante en Inde. L'Inde est le plus grand producteur de mil. Très célèbre au Rajasthan, c’est le type de mil le plus connu. Les lentilles jaunes, plates d’un côté et de forme oblongue, sont largement utilisées dans la cuisine indienne. Les pois d'Angole sont communément appelés arhar dal ou split tur (tuvar) dal. Il est originaire de la partie orientale de la péninsule indienne. C'est à la fois une culture vivrière et une culture de couverture.</value>
+  </data>
+  <data name="CerealsAndPulses_Pigeon_Pea" xml:space="preserve">
+    <value>Le riz pressé ou aplati est du riz décortiqué pressé en flocons secs qui gonflent lorsqu'ils sont ajoutés au liquide. Ils sont le plus souvent consommés comme collation et sont parfaits pour satisfaire une faim soudaine. Le riz pressé est le plus couramment utilisé au Népal, en Inde et au Bangladesh.</value>
+  </data>
+  <data name="CerealsAndPulses_Pressed_Rice" xml:space="preserve">
+    <value>Le riz pressé ou aplati est du riz décortiqué pressé en flocons secs qui gonflent lorsqu'ils sont ajoutés au liquide. Ils sont le plus souvent consommés comme collation et sont parfaits pour satisfaire soudainement la faim. Le riz pressé est le plus couramment utilisé au Népal, en Inde et au Bangladesh.</value>
+  </data>
+  <data name="CerealsAndPulses_Puffed_Rice" xml:space="preserve">
+    <value>Le Murmura n'est rien d'autre que du riz soufflé obtenu en chauffant les grains de riz qui éclatent comme du maïs. Il est considéré comme l’un des produits céréaliers les plus purs.</value>
+  </data>
+  <data name="CerealsAndPulses_Rice" xml:space="preserve">
+    <value>Le riz est une céréale consommée dans presque tous les pays. Les graines traitées doivent être bouillies ou cuites à la vapeur avant utilisation. Tout d’abord, les graines du plant de riz sont moulues et le riz obtenu est appelé riz brun. De nombreuses personnes préfèrent le riz brun, car l'étape suivante consiste à éliminer le son restant, ce qui donne du riz blanc, dont la teneur en nutriments est censée être plus faible.</value>
+  </data>
+  <data name="CerealsAndPulses_Semolina" xml:space="preserve">
+    <value>Le Suji, également connu sous le nom de semoule ou rava, est fabriqué à partir de blé dur séché. La couleur du rava dépend de la qualité du blé. La semoule est généralement de couleur jaune lorsqu'elle est fabriquée à partir de blé dur. Lorsqu’il est fabriqué à partir de variétés de blé plus tendres, la couleur est blanche.</value>
+  </data>
+  <data name="CerealsAndPulses_Tapioca" xml:space="preserve">
+    <value>Le tapioca est un amidon extrait de la plante de manioc. On l'appelle aussi sagou ou sabudana. Il est fabriqué en broyant des racines de tapioca crues dans une cuve et en stockant le jus obtenu jusqu'à ce qu'il se transforme en pâte. Cette pâte est ensuite transformée en petites boules rondes blanches à l'aide d'une machine.</value>
+  </data>
+  <data name="CerealsAndPulses_Water_Chestnut_flour" xml:space="preserve">
+    <value>C'est un sous-produit des graines de châtaigne d'eau. La farine est moulue à partir de châtaignes d'eau souterraines séchées. Pour faire de la farine, les noix sont décortiquées, bouillies et enfin moulues en farine. C'est en fait une forme d'amidon.</value>
+  </data>
+  <data name="CerealsAndPulses_Whole_Bengal_Gram" xml:space="preserve">
+    <value>Les pois du Bengale entiers ou kala chana sont un type de pois chiche utilisé dans de nombreuses cuisines à travers le monde. Mais c’est en Inde qu’on l’utilise le plus souvent. Il est petit, de couleur brun foncé et très riche en protéines. Du pois germé jusqu’à maturité, il se consomme à tous les stades de croissance.</value>
+  </data>
+  <data name="CerealsAndPulses_Whole_Brown_Lentils" xml:space="preserve">
+    <value>Appartenant à la famille des lentilles, le sabut masoor dal est une lentille ronde et plate de couleur brun foncé avec un intérieur orange. Contrairement à la plupart des graines de lentilles, ces lentilles égyptiennes ne nécessitent pas de long trempage et cuisent en peu de temps. Le masoor dal a de nombreuses utilisations : il peut être consommé avec du riz, du roti et même du pain.</value>
+  </data>
+  <data name="CerealsAndPulses_Whole_Wheat_Flour" xml:space="preserve">
+    <value>Il s'agit d'une farine finement moulue à base de baies de blé entier. Il est obtenu en broyant des grains de blé entier. Elle est riche en fibres et est plus saine et nutritive que la farine blanche. C'est une farine brunâtre avec une texture grossière et une saveur sucrée de noisette. Le mot « entier » est utilisé pour décrire cette farine car elle inclut tous les aspects du grain, du son, du germe et de l'endosperme.</value>
+  </data>
+  <data name="DairyProducts_Blue_Cheese" xml:space="preserve">
+    <value>Le fromage bleu persillé ou fromage bleu est le nom commun du fromage fabriqué à partir de lait de vache, de chèvre ou de brebis et affiné par arbitrage de la moisissure Penicillium. Il est produit par coagulation du lait et vieillissement du fromage.</value>
+  </data>
+  <data name="DairyProducts_Brie_Cheese" xml:space="preserve">
+    <value>Le brie est un type de fromage français à base de lait de vache. Il est de couleur légèrement pâle avec une teinte grisâtre sous la croûte. La croûte est une moisissure blanche et comestible. Il tire son nom de la région dont il est originaire. C'est un fromage de dessert populaire. Il est très doux et fond rapidement lorsqu’il est chauffé. Son goût est fruité et crémeux.</value>
+  </data>
+  <data name="DairyProducts_Butter" xml:space="preserve">
+    <value>Le beurre, fabriqué à partir de crème barattée, ajoute une richesse riche et une texture délicate aux gâteaux, pâtisseries et biscuits. C'est un délice intemporel dans n'importe quelle cuisine. Il est généralement servi en tartinade ou utilisé comme assaisonnement lors de la cuisson. Souvent fabriqué à partir de lait de vache, il contient des matières grasses laitières, des protéines du lait et de l'eau.</value>
+  </data>
+  <data name="DairyProducts_Buttermilk" xml:space="preserve">
+    <value>Il peut être sucré ou salé et constitue une boisson très rafraîchissante en été. Il est très populaire en Inde du Nord. Le goût du babeurre vient de l’acidité du lait. Bien que son nom l’indique, il ne contient en réalité aucune huile. Traditionnellement, c'est le liquide résiduel qui reste après le barattage du beurre, c'est-à-dire</value>
+  </data>
+  <data name="DairyProducts_Cheddar_Cheese" xml:space="preserve">
+    <value>Nommé d'après le village dont il est originaire, le fromage cheddar est un fromage à pâte dure et naturel fabriqué à partir de lait de vache. Cependant, sa texture et sa couleur dépendent du traitement que subit le fromage. Sa saveur varie généralement de douce à piquante, allant du blanc naturel à la couleur orange citrouille.</value>
+  </data>
+  <data name="DairyProducts_Clarified_Butter" xml:space="preserve">
+    <value>Le ghee est obtenu en faisant fondre du beurre et en séparant le lait solide et l'eau de la graisse du beurre. En Inde, on l’appelle ghee et il est largement utilisé comme alternative au beurre. Bien que la préparation du ghee soit légèrement différente selon les pays, on peut dire que le ghee est en fait du ghee.</value>
+  </data>
+  <data name="DairyProducts_Condensed_Milk" xml:space="preserve">
+    <value>C'est un produit laitier obtenu à partir du lait de vache. Il est généralement sucré, collant et de texture épaisse. Le processus de fabrication du lait concentré consiste à retirer l’eau du lait et à ajouter du sucre. On l'appelle aussi lait concentré sucré en raison de son goût sucré.</value>
+  </data>
+  <data name="DairyProducts_Cottage_Cheese" xml:space="preserve">
+    <value>Il est fabriqué en caillant du lait et en filtrant le lactosérum. Le fromage cottage peut être consommé cru ou cuit. Il a une texture humide. Conservez-le dans la partie froide du réfrigérateur pendant environ 5 à 7 jours. Il est riche en calcium.</value>
+  </data>
+  <data name="DairyProducts_Cream" xml:space="preserve">
+    <value>La crème est fabriquée à partir de lait et est un produit laitier. La crème est généralement de couleur blanc jaunâtre. Cependant, la crème à base de lait de chèvre ou de vache est généralement de couleur blanche. Ce n'est rien de plus que de la matière grasse du lait, qui s'accumule lorsque le lait reste pendant un certain temps.</value>
+  </data>
+  <data name="DairyProducts_Cream_Cheese" xml:space="preserve">
+    <value>Comme son nom l'indique, ce fromage a une texture douce et crémeuse avec une teneur élevée en matières grasses. Le fromage à la crème est essentiellement fabriqué à partir de lait de vache non écrémé et enrichi de crème. C'est un favori américain et beaucoup le considèrent comme une invention américaine. Le fromage à la crème est considéré comme du fromage frais, mais doit être consommé peu de temps après ouverture car il a une courte durée de conservation.</value>
+  </data>
+  <data name="DairyProducts_Feta_Cheese" xml:space="preserve">
+    <value>La feta est un type de fromage grec. Il a une texture très douce et crémeuse. Principalement produit en blocs et émietté. Le fromage feta est généralement fabriqué à partir de lait de brebis ou de chèvre. Il a un goût légèrement épicé. Depuis 2002, la feta est devenue un fromage protégé à l'origine protégée et ne peut être produite qu'en Grèce.</value>
+  </data>
+  <data name="DairyProducts_Gouda_Cheese" xml:space="preserve">
+    <value>Il s'agit d'un fromage hollandais jaune à base de lait de vache. Le fromage porte le nom de la ville de Gouda aux Pays-Bas. C'est un fromage à pâte mi-dure apprécié pour sa saveur riche et unique et sa texture onctueuse. Le Gouda est fabriqué à partir de lait de vache pasteurisé, mais certaines variétés sont également fabriquées à partir de lait de brebis ou de chèvre.</value>
+  </data>
+  <data name="DairyProducts_Gruyere_Cheese" xml:space="preserve">
+    <value>C'est un fromage jaune nommé d'après la ville de Gruyères en Suisse. Il a un goût sucré et salé. Il est crémeux et noisette lorsqu'il est jeune, mais devient plus terreux en vieillissant. A pleine maturité, il développe de petites craquelures qui lui confèrent une texture légèrement granuleuse.</value>
+  </data>
+  <data name="DairyProducts_Hung_Curd" xml:space="preserve">
+    <value>Le fromage avec du caillé en suspension n'est rien d'autre qu'un yaourt dont toute l'eau a été égouttée. Il peut être préparé très facilement à la maison. Attachez un peu de caillé dans un torchon et laissez-le pendre pendant au moins 3-4 heures ou jusqu'à ce que toute l'eau se soit écoulée. Passé ce délai, une pression est appliquée sur le caillé pour en extraire toute l'eau et le caillé de présure est prêt.</value>
+  </data>
+  <data name="DairyProducts_Khoya" xml:space="preserve">
+    <value>Le Khoya est du lait qui s'évapore jusqu'à obtenir une consistance solide en l'épaississant. Il est souvent préparé à la maison, mais peut également être acheté au marché. Il est utilisé pour préparer des plats et des desserts aussi bien salés que sucrés. Il a une texture légèrement grasse ou granuleuse et une riche saveur de noisette.</value>
+  </data>
+  <data name="DairyProducts_Mascarpone_Cheese" xml:space="preserve">
+    <value>Le mascarpone est un fromage crémeux obtenu en faisant bouillir du lait et en le caillant en ajoutant de l'acide citrique ou du jus de citron. Il est souvent confondu avec la ricotta ou le fromage blanc car le processus de préparation est similaire. Mais le mascarpone est un fromage à double ou triple crème, et il confère une saveur plus sucrée.</value>
+  </data>
+  <data name="DairyProducts_Milk" xml:space="preserve">
+    <value>Le lait est un produit laitier obtenu à partir de la glande mammaire des mammifères. Le lait est utilisé partout dans le monde pour l’alimentation humaine. Il est également transformé en produits laitiers tels que le fromage, le beurre, le caillé, la crème, etc. Les industries modernes utilisent le lait pour produire de la caséine, du lactose, des protéines de lactosérum, du lait en poudre, du lait concentré et d'autres produits industriels.</value>
+  </data>
+  <data name="DairyProducts_Mozzarella_Cheese" xml:space="preserve">
+    <value>Mozzarella est un nom appliqué à une variété de fromages produits selon la méthode des pâtes filées. Ce fromage est fabriqué par pressage et découpe et était à l'origine fabriqué à partir de lait de bufflonne, puis de lait de vache. Il est généralement servi le lendemain de sa préparation en raison de son goût frais et est souvent ajouté aux plats de pizza et de pâtes.</value>
+  </data>
+  <data name="DairyProducts_Parmesan_Cheese" xml:space="preserve">
+    <value>Le parmesan est fabriqué à partir de lait cru de vache. Il s'agit d'un fromage à pâte dure granulé bouilli mais non pressé. Le parmesan a une saveur fruitée et noisetée. Le fromage est fabriqué uniquement à partir de vaches qui ne mangent que de l'herbe ou du foin. On dit qu'il est originaire d'Italie.</value>
+  </data>
+  <data name="DairyProducts_Provolone_Cheese" xml:space="preserve">
+    <value>Le fromage Provolone est un fromage italien originaire du sud de l'Italie. Il a une saveur fumée et est utilisé pour faire des cannellonis et des raviolis. Il peut être fabriqué à partir de lait de vache ou de bufflonne. Il est de couleur jaune doré.</value>
+  </data>
+  <data name="DairyProducts_Ricotta_Cheese" xml:space="preserve">
+    <value>La ricotta est fabriquée à partir du lactosérum du lait de brebis, de vache ou de chèvre qui reste après la production du fromage. Il est produit par coagulation des protéines qui restent après l'utilisation de la caséine pour fabriquer du fromage. Plus précisément, la ricotta italienne est fabriquée à partir de lactosérum de lait de brebis, de vache, de chèvre ou de bufflonne.</value>
+  </data>
+  <data name="DairyProducts_Yogurt" xml:space="preserve">
+    <value>Le yaourt est également connu sous le nom de dahi en Inde. C'est un produit laitier fermenté connu pour son goût délicat et sa consistance. Le yaourt (caillé) est utilisé à de nombreuses occasions propices en Inde. Il est vendu sucré et aromatisé et peut être servi avec différents types de fruits.</value>
+  </data>
+  <data name="Fruits_Apples" xml:space="preserve">
+    <value>Les pommes sont l'un des arbres fruitiers les plus cultivés. Ils poussent sur de petits arbres à feuilles caduques. Le dicton « Une pomme par jour éloigne le médecin », faisant référence aux bienfaits des fruits pour la santé, est originaire du Pays de Galles au 19e siècle. Selon les chercheurs, les pommes pourraient réduire le risque de cancer du côlon, de la prostate et du poumon.</value>
+  </data>
+  <data name="Fruits_Apricots" xml:space="preserve">
+    <value>L'abricot est un fruit juteux appartenant à la famille des pêches et cultivé principalement dans les climats froids. Le goût des abricots varie, car certains ont des noyaux sucrés et d'autres ont des noyaux amers. Ils sont utilisés dans les desserts et certains sont également ajoutés aux plats de viande.</value>
+  </data>
+  <data name="Fruits_Banana" xml:space="preserve">
+    <value>Les bananes délicieusement sucrées, fermes et à la chair crémeuse sont préemballées dans leur propre coque jaune et peuvent être cueillies tout au long de l'année. Le fruit mûrit du vert foncé au jaune vif, ce qui le rend propre à la consommation. Le fruit couramment cultivé est sans pépins.</value>
+  </data>
+  <data name="Fruits_Blueberries" xml:space="preserve">
+    <value>Souvent considérées comme le super antioxydant de Mère Nature, les myrtilles sont le deuxième fruit le plus populaire au monde après les fraises. Allant du sucré à l'acidulé et au piquant, les myrtilles sont cultivées en grappes et varient en taille d'un pois à une boule. À maturité, le fruit change de couleur du vert pâle au bleu foncé.</value>
+  </data>
+  <data name="Fruits_Cape_Gooseberry" xml:space="preserve">
+    <value>Baies rondes, jaune orangé, recouvertes d'une coque « papier » brunâtre. Aussi communément appelé « baie dorée ». La groseille du Cap est à la fois un fruit et une plante cultivée en Angleterre depuis le XVIIIe siècle. En Inde, on l'appelle ras bhari et on le trouve entre février et mai.</value>
+  </data>
+  <data name="Fruits_Cherry" xml:space="preserve">
+    <value>Un petit fruit rond dont la graine pousse en grappes. Les cerises appartiennent à la même famille que les prunes, les abricots, les pêches, etc. La couleur varie du rouge foncé au rouge vif. Principalement consommé cru, il est également utilisé dans les tartes et les confitures. Contrairement aux autres fruits, les cerises ont une période de fructification très courte.</value>
+  </data>
+  <data name="Fruits_Coconut" xml:space="preserve">
+    <value>Presque toutes les parties du cocotier sont bénéfiques. Le fruit du cocotier peut être consommé ou utilisé pour confectionner des friandises, des chips et des plats salés. L'huile et le lait obtenus à partir de ce fruit sont largement utilisés en cuisine. L’eau emprisonnée à l’intérieur de la coque de noix de coco est considérée comme l’une des meilleures glacières estivales.</value>
+  </data>
+  <data name="Fruits_Cooking_Apples" xml:space="preserve">
+    <value>Contrairement aux pommes, qui se consomment crues, il existe des variétés de pommes qui se cuisent mieux à la poêle ! Plus grosses et plus acidulées, les pommes à cuire ont une chair dense qui ne se désagrège pas à la cuisson. Bien que certaines variétés soient cultivées spécifiquement pour la cuisine, la plupart des pommes ont un double usage.</value>
+  </data>
+  <data name="Fruits_Cranberry" xml:space="preserve">
+    <value>Les canneberges sont un groupe d'arbustes nains à feuilles persistantes. Le fruit est une baie plus grosse que les feuilles de la plante. Les fruits sont initialement blancs mais deviennent rouge foncé à pleine maturité. Ils ont un goût légèrement acidulé qui ajoute à leur douceur.</value>
+  </data>
+  <data name="Fruits_Currant" xml:space="preserve">
+    <value>Membre de la famille des raisins, les groseilles sont des raisins secs, rouge foncé, sans pépins. Souvent considérées avec les groseilles à maquereau, les groseilles sont couramment utilisées pour fabriquer des conservateurs alimentaires, des liqueurs et des sirops. Les groseilles ne sont généralement pas consommées crues en raison de leur goût acidulé.</value>
+  </data>
+  <data name="Fruits_Custard_Apple" xml:space="preserve">
+    <value>Un type de fruit tropical à la texture sucrée et semblable à celle d’une crème anglaise. Il est vert, rond et semblable à un pin, mais avec une enveloppe extérieure molle. Le fruit est en forme de cœur avec un extérieur vert et une chair blanche et crémeuse qui est une curieuse combinaison de saveur sucrée et de texture granuleuse.</value>
+  </data>
+  <data name="Fruits_Dates" xml:space="preserve">
+    <value>Un type de fruit à noyau disponible frais ou séché et largement cultivé dans les zones désertiques. Les dattes sont un aliment de base au Moyen-Orient. Ils sont sucrés et moelleux. Ils sont de forme cylindrique et ont une texture ridée.</value>
+  </data>
+  <data name="Fruits_Dried_Fruit" xml:space="preserve">
+    <value>Les fruits secs sont ceux dont la majeure partie de l’eau a été éliminée. Les raisins secs, les dattes, les pruneaux, les figues, les abricots, les pêches, les pommes et les poires sont des fruits secs courants qui sont séchés au soleil, dans des souffleries chauffées, dans des tambours ou lyophilisés.</value>
+  </data>
+  <data name="Fruits_Figs" xml:space="preserve">
+    <value>Un fruit qui s'utilise frais, en conserve ou séché. Il est souvent utilisé dans les desserts et les pâtisseries. Les figues sont originaires du Moyen-Orient et sont couramment cultivées en Méditerranée, en Espagne et aux États-Unis. Il est disponible toute l'année, même si les mois de mai à novembre sont les meilleurs.</value>
+  </data>
+  <data name="Fruits_Grapefruit" xml:space="preserve">
+    <value>C'est le fruit d'un agrume subtropical. On dit qu’elle est originaire de la Barbade, suite à un croisement entre l’orange douce de Jamaïque et le pomelo indonésien. Il existe de nombreuses histoires liées à son origine, c'est pourquoi les gens l'appellent le « fruit défendu ».</value>
+  </data>
+  <data name="Fruits_Grapes" xml:space="preserve">
+    <value>Le raisin est un type de baie issue d'une vigne ligneuse qui pousse en grappes ; ils peuvent être consommés crus ou utilisés pour faire du vin, de la confiture, des raisins secs, du vinaigre, etc. Les raisins sont très faibles en calories. C'est également une bonne source de vitamines A, C, K et de carotènes. Les raisins contiennent des composés phytochimiques qui ont des propriétés anti-allergiques, anti-inflammatoires, antimicrobiennes et anticancéreuses.</value>
+  </data>
+  <data name="Fruits_Guava" xml:space="preserve">
+    <value>La goyave est un fruit tropical avec une peau extérieure rugueuse et une pulpe de graines sucrée. Il dégage un arôme de citron. La peau extérieure est verte et change de couleur en jaune, bordeaux ou vert à maturité. Types Fraise Goyave Petits fruits, très juteux et pleins de saveur.</value>
+  </data>
+  <data name="Fruits_Indian_Gooseberry" xml:space="preserve">
+    <value>La groseille indienne, également appelée Awla ou Amla en hindi, est une variété de ribes. Il est utilisé à diverses fins. Il a un goût amer et n'est donc pas consommé directement à partir de la plante. Il est soit cuit, soit servi avec du sel, de l'huile ou des épices.</value>
+  </data>
+  <data name="Fruits_Jamun" xml:space="preserve">
+    <value>Connue sous différents noms comme jambul, jambas, etc., cette baie violette a un goût, une couleur et un arôme uniques. En raison de sa similitude, le jamun est toujours interprété à tort comme une mûre. À dominante sucrée, elle possède également un goût aigre, ce qui justifie l’utilisation de sel lors de sa consommation.</value>
+  </data>
+  <data name="Fruits_Kiwi" xml:space="preserve">
+    <value>Le kiwi ou baie de kiwi est une baie comestible à la texture douce et à la chair sucrée. L'extérieur fibreux brun verdâtre protège la chair vert vif. Au centre du fruit se trouvent de minuscules graines noires comestibles. Le kiwi est désormais une culture commerciale dans des pays comme l'Italie, la France, la Grèce et la Nouvelle-Zélande.</value>
+  </data>
+  <data name="Fruits_Lemon" xml:space="preserve">
+    <value>Le citron est un fruit jaune le plus couramment utilisé pour le jus. Généralement de forme ovale, les citrons sont acidulés et aigre-doux. Il contient 5 à 6 % d'acide citrique. Le citron est utilisé pour son jus, son écorce et son zeste dans les plats et boissons sucrés ou salés.</value>
+  </data>
+  <data name="Fruits_Lemon_Juice" xml:space="preserve">
+    <value>Jus obtenu en broyant la pulpe de citron. Le jus de citron est le plus souvent utilisé dans une boisson appelée limonade, composée de jus de citron, d'eau et de sucre. Le jus est le plus largement utilisé à diverses fins culinaires et non culinaires à travers le monde.</value>
+  </data>
+  <data name="Fruits_Lemon_Rind" xml:space="preserve">
+    <value>Le zeste de citron est essentiellement le zeste d’un citron. La partie externe jaune de la peau est souvent utilisée pour aromatiser les gâteaux, les tartes et les salades. Il est généralement râpé pour ajouter de la saveur aux aliments. Si vous râpez le zeste, on l’appelle aussi zeste de citron. Il peut également être utilisé pour désodoriser les poubelles et nettoyer les micro-ondes et les réfrigérateurs.</value>
+  </data>
+  <data name="Fruits_Lychee" xml:space="preserve">
+    <value>Le litchi est un fruit à chair blanchâtre extrêmement juteuse qui se consomme généralement frais. Il a un goût très sucré et acidulé. Le fruit a une forme ovale. Il a un parfum floral très séduisant. Il est recouvert d'une texture rose rugueuse qui doit être retirée avant consommation.</value>
+  </data>
+  <data name="Fruits_Mango" xml:space="preserve">
+    <value>L’un des fruits les plus appréciés, la mangue est surnommée le « roi des fruits » en raison de son goût riche et aromatique. C'est le fruit national de l'Inde ainsi que du Pakistan. En Inde, les feuilles vertes sont utilisées à des fins rituelles comme décorations florales. La coquille externe peut être jaune, orange ou verte selon les espèces.</value>
+  </data>
+  <data name="Fruits_Mulberry" xml:space="preserve">
+    <value>Un fruit appartenant à la famille des baies. Les fruits deviennent roses, violets foncés ou noirs. Longueur environ 2-3 cm, goût sucré et acidulé. Ils tirent leur couleur d’un produit chimique appelé anthocyanes, qui sont d’excellents antioxydants. Les fruits mûrs sont consommés crus ou ajoutés aux tartes, au thé et au vin.</value>
+  </data>
+  <data name="Fruits_Olives" xml:space="preserve">
+    <value>Ce sont les fruits de l’olivier, cultivé depuis plus de 5 000 ans en Méditerranée. Sa culture la plus ancienne a été trouvée dans ce qui est aujourd’hui la Jordanie. Les olives sont cultivées en automne et en hiver pour produire de l'huile d'olive, du bois précieux, des feuilles et des fruits d'olivier.</value>
+  </data>
+  <data name="Fruits_Orange" xml:space="preserve">
+    <value>L'orange est un agrume qui peut être sucré ou amer. Le Brésil est le plus grand producteur mondial d'oranges. On pense qu’il est originaire d’Asie du Sud-Est. C’est un fruit d’hiver disponible principalement dans les climats froids, mais qui peut désormais être vu presque toute l’année.</value>
+  </data>
+  <data name="Fruits_Orange_Rind" xml:space="preserve">
+    <value>L'orange est un agrume qui peut être sucré ou amer. Le Brésil est le plus grand producteur mondial d'oranges. On pense qu’il est originaire d’Asie du Sud-Est. C’est un fruit d’hiver disponible principalement dans les climats froids, mais qui peut désormais être vu presque toute l’année.</value>
+  </data>
+  <data name="Fruits_Papaya" xml:space="preserve">
+    <value>C'est un fruit tropical au goût sucré, à la texture douce et en forme de poire. Il est originaire du sud du Mexique et d’Amérique centrale. Les graines de papaye noire sont en réalité comestibles et ont une saveur poivrée. La jeune papaye contient de la papaïne et est donc utilisée depuis des siècles comme attendrisseur de viande.</value>
+  </data>
+  <data name="Fruits_Peach" xml:space="preserve">
+    <value>La pêche est un type de fruit qui pousse sur le pêcher à feuilles caduques, originaire de Chine et d'Asie du Sud. Les pêches sont très respectées dans la culture chinoise. Dans de nombreuses autres cultures, les pêches ont une signification historique. Les fruits ont la taille d'une petite pomme.</value>
+  </data>
+  <data name="Fruits_Pear" xml:space="preserve">
+    <value>Appartenant à la famille des roses, la poire est un fruit juteux qui peut avoir un goût légèrement acidulé ou sucré. Il a généralement une forme ronde qui se rétrécit vers le cou. Les poires sont disponibles sous différentes formes : fraîches, séchées, en conserve ou en jus.</value>
+  </data>
+  <data name="Fruits_Pineapple" xml:space="preserve">
+    <value>C'est un fruit sucré et juteux originaire d'Amérique du Sud. Ils sont cultivés de mars à juin, mais peuvent être trouvés toute l'année. On le consomme de plusieurs façons, mais l'ananas cru est le plus nutritif car il est riche en magnésium et en vitamine C.</value>
+  </data>
+  <data name="Fruits_Plum" xml:space="preserve">
+    <value>Un fruit rond rouge ou rouge foncé avec une graine sucrée, mais la peau et le noyau environnant sont très acides. Les prunes mûres ont une couche blanche poussiéreuse qui leur donne un aspect bleuâtre ; cependant, il peut être facilement effacé. Les prunes séchées sont parfois appelées pruneaux.</value>
+  </data>
+  <data name="Fruits_Pomegranate" xml:space="preserve">
+    <value>C'est un fruit juteux cultivé de mars à mai dans l'hémisphère sud, même s'il peut être trouvé toute l'année. Il est originaire de Perse mais n’est pas cultivé partout dans le monde. Le fruit et l’écorce sont connus pour avoir été utilisés comme remède contre la diarrhée, la dysenterie et les parasites intestinaux.</value>
+  </data>
+  <data name="Fruits_Raisins" xml:space="preserve">
+    <value>Les raisins secs sont des raisins secs sucrés et juteux. Il est obtenu en éliminant complètement l'eau des raisins et en les séchant. Il existe dans une variété de couleurs, du vert au brun foncé. Les raisins secs ont à peu près la taille de petits cailloux et ont une peau ridée avec un éclat moelleux.</value>
+  </data>
+  <data name="Fruits_Strawberry" xml:space="preserve">
+    <value>Largement appréciées pour son arôme distinctif, sa couleur rouge vif et son goût juteux, les fraises sont le fruit préféré de tous. Il est rouge, juteux et de forme conique. Les fraises appartiennent à la famille des roses et sont cultivées principalement pour leurs fruits. Les fraises se présentent sous différentes formes, tailles et couleurs ; certains sont même de couleur blanc cassé ou jaune.</value>
+  </data>
+  <data name="Fruits_Sultana" xml:space="preserve">
+    <value>Les raisins secs sont originaires de Turquie et sont de grosses baies blanches ou richement dorées. Le sultan est souvent confondu avec les raisins secs et les groseilles, car ce sont tous des formes séchées du raisin. Ce qui distingue Sultan des deux autres variétés, c'est sa délicatesse et sa douceur.</value>
+  </data>
+  <data name="Fruits_Tamarind" xml:space="preserve">
+    <value>C'est un fruit aigre dont la pulpe est retirée, séchée et consommée. Le tamarinier produit chaque saison des gousses brunes de forme irrégulière, largement utilisées dans de nombreuses cuisines. Le goût est doux et épicé ; Le tamarin est l’un des ingrédients les plus recherchés dans la cuisine indienne, du Moyen-Orient et de l’Asie du Sud-Est.</value>
+  </data>
+  <data name="Fruits_Tomato" xml:space="preserve">
+    <value>Bien que botaniquement parlant, la tomate soit un fruit, elle est souvent considérée comme un légume. Ce fruit est originaire du Mexique et appartient à la famille des solanacées. Le nom anglais de la tomate vient du nom espagnol de la tomate. Les tomates sont un fruit polyvalent largement utilisé dans divers plats sous diverses formes.</value>
+  </data>
+  <data name="Fruits_Watermelon" xml:space="preserve">
+    <value>Appartenant à la même famille que le concombre, la citrouille et la courge, la pastèque est en réalité un légume ! Cependant, il est consommé comme fruit en raison de sa pulpe juteuse. La pastèque contient près de 92 % d’eau et est considérée comme un aliment santé idéal. La chair rouge ou rose est protégée par une épaisse croûte verte marbrée ou rayée.</value>
+  </data>
+  <data name="Fruits_Water_Chestnut" xml:space="preserve">
+    <value>Ce n'est pas une noix, mais une plante aquatique flottante qui pousse dans les marécages. Il est couramment utilisé dans la cuisine chinoise. C'est un fruit de saison et n'est disponible qu'après la mousson jusqu'au début de l'hiver. La gousse du diable, la noix de buffle, l'échidné d'eau sont quelques-uns de ses autres noms.</value>
+  </data>
+  <data name="Meat_Bacon" xml:space="preserve">
+    <value>Le bacon est une charcuterie issue du porc. Le séchage est une méthode de conservation de la viande utilisant du sel en saumure ou un emballage à sec. Le séchage contribue également à donner du goût à la viande. Généralement considéré comme de la poitrine de porc, le bacon est très populaire aux États-Unis.</value>
+  </data>
+  <data name="Meat_Beef" xml:space="preserve">
+    <value>Dérivé du mot latin bos, la viande de bétail est connue sous le nom de « bœuf ». La viande musculaire de bœuf peut être découpée en steaks, en rôtis ou en côtes levées.</value>
+  </data>
+  <data name="Meat_Chicken" xml:space="preserve">
+    <value>Le poulet est la volaille la plus consommée au monde, l'Amérique représentant la plus forte consommation de viande par habitant. C'est particulièrement bon qu'il s'agisse de viande blanche maigre. Le poulet est riche en protéines, potassium, calcium et ne contient pas de glucides. Types Poulet fermier : Ce terme est utilisé pour décrire la façon dont les poulets sont élevés.</value>
+  </data>
+  <data name="Meat_Chicken_Liver" xml:space="preserve">
+    <value>Le foie de poulet est la viande la plus populaire. Le plus souvent, il est utilisé dans un mélange de viande hachée et de graisse, broyée en pâte. C'est une source très riche en fer. Grâce à sa teneur élevée en vitamine A, elle est très bénéfique pour les yeux et aide à traiter l’anémie.</value>
+  </data>
+  <data name="Meat_Chicken_Stock" xml:space="preserve">
+    <value>Le bouillon est une base importante pour les soupes et les sauces. C'est un liquide léger, transparent et aromatique. Vous pouvez le préparer à la maison ou acheter des cubes de bouillon ou des cubes de bouillon qui se dissolvent dans l'eau. Pour préparer un bouillon à la maison, laissez mijoter les os de poulet, les légumes, les herbes, etc. dans l'eau pendant environ 3 à 4 heures.</value>
+  </data>
+  <data name="Meat_Chops" xml:space="preserve">
+    <value>Une côtelette est un morceau de viande fin et désossé coupé dans les côtes d’un animal. Un morceau de viande avec une côte s’appelle une escalope. Les types de côtelettes les plus courants sont le porc et l’agneau. Les côtelettes de viande sont préparées de plusieurs manières selon le type d'animal dont provient la viande.</value>
+  </data>
+  <data name="Meat_Crab" xml:space="preserve">
+    <value>Il existe plus de 4 000 espèces de crabes sur cette planète. Le crabe est un délice pour tous les amateurs de viande en raison de sa douceur et de son moelleux. Cependant, il existe certaines différences dans la chair d'un crabe mâle et d'une crabe femelle.</value>
+  </data>
+  <data name="Meat_Free_Range_Chicken" xml:space="preserve">
+    <value>Les poulets élevés en liberté sont ceux qui sont autorisés à se déplacer librement à la recherche de nourriture plutôt que d'être gardés dans des cages. Cela favorise le développement de la masse musculaire maigre.</value>
+  </data>
+  <data name="Meat_Grass_Fed_Chicken" xml:space="preserve">
+    <value>Cela aide à prévenir le cannibalisme, et il a été constaté que les œufs de poules élevées au pâturage contiennent plus d’acides gras oméga-3 et de vitamines A et E.</value>
+  </data>
+  <data name="Meat_Ham" xml:space="preserve">
+    <value>Les poulets nourris au pâturage sont des poulets nourris à l'herbe, à ne pas confondre avec les poulets fermiers. Le terme « nourries à l’herbe » est couramment utilisé pour désigner les vaches car leur alimentation naturelle se compose principalement d’herbe et d’autres mauvaises herbes. De même, les poulets sont également nourris avec de l’herbe ainsi que des légumes, des insectes, des mauvaises herbes, etc.</value>
+  </data>
+  <data name="Meat_Keema" xml:space="preserve">
+    <value>Le jambon est la patte arrière séchée et fumée d'un animal, généralement un porc, bien que du jambon de poulet soit également disponible. Tous les jambons sont pour la plupart entièrement cuits ou en conserve dans du sel et du sucre, mais des jambons frais sont également disponibles. La viande est de couleur rose rosé. Le jambon est conservé avec du sel ou du nitrate. Également appelée viande hachée, il s’agit simplement de viande qui a été passée dans un hachoir à viande pour produire des morceaux de viande plus petits et plus fins. Cette viande est largement utilisée dans une variété de plats tels que les hamburgers, les garnitures pour tartes et les sauces pour pâtes. Le bœuf est le plus souvent haché, bien que le porc, l'agneau et la volaille le soient également.</value>
+  </data>
+  <data name="Meat_Kidney_Meat" xml:space="preserve">
+    <value>Il existe de nombreux plats asiatiques à base de rognons de chèvre, de rognons de bœuf, etc. Les rognons de chaque animal sont préparés différemment selon les cultures et chacun a sa propre saveur. Le plus souvent, les rognons de bœuf et de porc sont consommés avec beaucoup d'intérêt.</value>
+  </data>
+  <data name="Meat_Lamb_Meat" xml:space="preserve">
+    <value>La viande d'agneau est la viande d'un mouton de moins de 12 mois. Les agneaux sont triés en trois types de viande. Le premier est le quart avant, qui comprend le cou, les pattes avant et les côtes jusqu'à l'omoplate. Le quartier arrière comprend les pattes postérieures et les cuisses.</value>
+  </data>
+  <data name="Meat_Meat_Stock" xml:space="preserve">
+    <value>Le bouillon de viande n’est rien d’autre qu’un bouillon de viande, mais il peut ajouter du caractère à de nombreux plats car il regorge de saveurs. Il sert de base à de nombreux plats, généralement des soupes, des sauces et des marinades. Ingrédient très utile, sa polyvalence en fait un ingrédient dans d’innombrables recettes.</value>
+  </data>
+  <data name="Meat_Mutton" xml:space="preserve">
+    <value>Il s'agit de la viande d'un mouton ou d'une chèvre domestique adulte. Un mouton de moins d'un an est abattu pour produire de l'agneau, la viande d'un jeune mouton est appelée porc et un mouton ou une chèvre adulte produit du mouton. Le mouton est plus dur et a une saveur plus forte que l'agneau. La viande de chèvre provenant de jeunes animaux est appelée viande de chèvre.</value>
+  </data>
+  <data name="Meat_Mutton_Liver" xml:space="preserve">
+    <value>Le Kaleji ou foie d’agneau est un abat qui possède une très haute valeur nutritionnelle. Il peut être frit, bouilli, cuit au four ou grillé dans une variété de plats salés. Son utilisation n’est pas très courante aux États-Unis. En fait, la viande d’abats n’a pas été consommée pendant très longtemps dans de nombreuses régions du monde car elle était considérée comme mauvaise en goût et en apparence.</value>
+  </data>
+  <data name="Meat_Organic_Chicken" xml:space="preserve">
+    <value>Un poulet biologique est un poulet nourri uniquement avec des aliments certifiés biologiques. N'administrez aucun médicament ou antibiotique aux poulets. Le poulet élevé biologiquement doit avoir accès au grand air pour développer ses muscles. Ce type de poulet est élevé de manière éthique, humaine et sans produits chimiques.</value>
+  </data>
+  <data name="Meat_Partridge" xml:space="preserve">
+    <value>Les perdrix sont des oiseaux de taille moyenne de la famille des faisans. Leur viande est tendre et tendre. Les perdrix pèsent généralement environ 1 à 3 livres. Ces oiseaux appartiennent à une espèce vivant en Europe, en Amérique du Nord et en Asie. Les perdrix se dégustent avec plaisir en raison de leur poitrine charnue, musclée et rebondie.</value>
+  </data>
+  <data name="Meat_Pork" xml:space="preserve">
+    <value>Le porc est le nom culinaire de la viande obtenue à partir du porc domestique. Il est disponible sous différentes formes comme le surlonge, les côtelettes de surlonge, le bacon, etc. Il se consomme sous les deux formes – fraîchement préparé et en conserve. Il est principalement consommé après séchage car il prolonge la durée de conservation des produits à base de viande de porc.</value>
+  </data>
+  <data name="Meat_Quail" xml:space="preserve">
+    <value>La caille est un gibier à plumes de taille moyenne qui est servi comme plat gastronomique. Ils sont généralement consommés avec les os car ils peuvent être facilement mâchés. Ils mangent à la fois de la viande de caille et des œufs, au goût délicat. Les œufs de caille sont parfois utilisés crus ou cuits comme tamago dans les sushis.</value>
+  </data>
+  <data name="Meat_Skinned_Chicken" xml:space="preserve">
+    <value>La peau du poulet agit comme une enveloppe qui retient les jus et la graisse à l'intérieur du poulet pendant la cuisson pour donner au plat une vraie saveur.</value>
+  </data>
+  <data name="Meat_Turkey" xml:space="preserve">
+    <value>La dinde est un grand oiseau domestique qui aurait été domestiqué par les peuples de Méso-Amérique. Il est vendu haché et râpé ou entier, comme un poulet, sans la tête, les pattes et les plumes. La dinde tranchée est utilisée dans les sandwichs ou servie en charcuterie.</value>
+  </data>
+  <data name="NutsAndOilseeds_Almonds" xml:space="preserve">
+    <value>Connues sous le nom de badaam en hindi, les amandes sont un fruit sec très nutritif. Il est utilisé en pâtisserie et comme arôme dans la cuisine indienne. Les amandes peuvent être utilisées sous de nombreuses formes, comme en tranches (flocons, tranches), en beurre d'amande, en lait d'amande et en beurre d'amande. Ils peuvent être utilisés aussi bien dans des plats sucrés que salés.</value>
+  </data>
+  <data name="NutsAndOilseeds_Blanched_Almonds" xml:space="preserve">
+    <value>Le blanchiment des amandes est une méthode utilisée pour retirer la peau des amandes, utilisée dans de nombreuses recettes. Cela se fait en plongeant les amandes dans l'eau bouillante pendant une minute ou deux avant de les transférer dans l'eau froide. Une fois refroidies, égouttez les amandes et laissez-les sécher.</value>
+  </data>
+  <data name="NutsAndOilseeds_Canola_Oil" xml:space="preserve">
+    <value>L'huile de canola est obtenue à partir de graines de canola. Elle a un goût neutre et est l’une des huiles les plus saines.</value>
+  </data>
+  <data name="NutsAndOilseeds_Cashew_Nuts" xml:space="preserve">
+    <value>L'anacardier est grand et persistant, portant un fruit en forme de poire appelé pomme de cajou. Il a une couleur rouge jaunâtre et un arôme et un goût très sucrés. Ce fruit possède une seule graine blanchâtre appelée noix de cajou ou noix de cajou. La graine est entourée d'une double coque.</value>
+  </data>
+  <data name="NutsAndOilseeds_Chia_Seeds" xml:space="preserve">
+    <value>Le chia est une graine comestible originaire de la Salvia salvia du désert, qui appartient à la famille de la menthe et est largement cultivée au Mexique. « Chia » signifie force, et le folklore raconte que ces cultures utilisaient les minuscules graines noires et blanches comme stimulant énergétique.</value>
+  </data>
+  <data name="NutsAndOilseeds_Chironji" xml:space="preserve">
+    <value>Le Charoli ou Chironji est une plante médicinale indienne utilisée comme épice et ajoutée aux desserts. On l'appelle également graines de melon et son goût est similaire à celui des amandes. Les graines ont la taille d'une lentille et sont légèrement aplaties. Bien qu'elles puissent être consommées crues, les graines comestibles contiennent une légère saveur aigre et sont consommées crues ou grillées.</value>
+  </data>
+  <data name="NutsAndOilseeds_Hazelnut" xml:space="preserve">
+    <value>Les noisettes poussent en grappes sur un noisetier. Également connue sous le nom de noix de kob ou noisette, elle est cultivée principalement en Europe et aux États-Unis. Ce sont de petites noix rondes de la taille d’un raisin avec une base large et sphérique et un sommet pointu. Ils sont recouverts d’une coquille brun foncé et le noyau interne est comestible.</value>
+  </data>
+  <data name="NutsAndOilseeds_Mustard_Oil" xml:space="preserve">
+    <value>Essentiellement, l’huile de moutarde est obtenue en chauffant les graines et a un goût piquant distinctif. Il peut s'agir d'huile végétale, d'huile essentielle distillée ou d'huile de soja. Les graines de moutarde noire, de moutarde blanche et de moutarde brune indienne peuvent être utilisées pour obtenir de l’huile.</value>
+  </data>
+  <data name="NutsAndOilseeds_Mustard_Seeds" xml:space="preserve">
+    <value>Le sel est du chlorure de sodium non raffiné et un ingrédient essentiel dans la cuisine du monde entier. L’ingrédient le plus courant dans n’importe quelle recette est le sel. Quelle que soit la cuisine, le sel est un assaisonnement essentiel. Il est utilisé en quantités relativement constantes dans notre alimentation normale.</value>
+  </data>
+  <data name="NutsAndOilseeds_Olive_Oil" xml:space="preserve">
+    <value>Cette huile est obtenue à partir d'olives. Il peut être utilisé de nombreuses manières, par exemple dans l’alimentation ou dans les cosmétiques, les savons, les produits pharmaceutiques, etc. d. Il est principalement utilisé dans les pays méditerranéens. Il existe différents types d’huile d’olive avec des goûts et des qualités différents. Il a un arôme très subtil.</value>
+  </data>
+  <data name="NutsAndOilseeds_Peanuts" xml:space="preserve">
+    <value>Les cacahuètes, également connues sous le nom d’arachides, sont une légumineuse nutritive que l’on trouve partout dans le monde. On dit qu'il est originaire d'Amérique du Sud. Il peut être utilisé pour la consommation directe, en cuisine, pour extraire de l'huile, pour faire de la farine d'arachide ou pour faire du beurre d'arachide.</value>
+  </data>
+  <data name="NutsAndOilseeds_Pine_Nuts" xml:space="preserve">
+    <value>Graines comestibles provenant de pins. Les graines oblongues proviennent de plusieurs espèces de pins. Les graines sont croquantes, sucrées et très savoureuses. Pour rehausser la saveur, les graines sont souvent torréfiées. Les pignons de pin ont une coque brune et dure.</value>
+  </data>
+  <data name="NutsAndOilseeds_Pistachio" xml:space="preserve">
+    <value>La pistache fait partie de la famille des noix de cajou et est un petit arbre originaire d'Asie centrale et du Moyen-Orient. L'Iran, les États-Unis et la Turquie sont les principaux producteurs de pistaches. Ce sont des noix sèches à coque dure utilisées pour préparer des desserts tels que le baklava, le halva, le chocolat et la crème glacée.</value>
+  </data>
+  <data name="NutsAndOilseeds_Poppy_Seeds" xml:space="preserve">
+    <value>Minuscules graines oléagineuses de la fleur de pavot à opium qui ont une saveur de noisette. Les graines peuvent être utilisées entières, moulues ou pour extraire l’huile de pavot. Les graines de pavot blanc sont appelées potak ou post. Les graines de pavot sont petites et en forme de rein. Ils mesurent moins d’un millimètre de long et sont utilisés comme épice ou pour décorer un plat.</value>
+  </data>
+  <data name="NutsAndOilseeds_Sesame_Oil" xml:space="preserve">
+    <value>L'huile comestible à base de graines de sésame est utilisée comme huile de cuisson et pour rehausser la saveur. La couleur de l'huile varie de l'incolore au doré en passant par le brun foncé, obtenue à partir de graines torréfiées. Le beurre clair a moins de saveur que le beurre brun foncé car il est fabriqué à partir de graines crues.</value>
+  </data>
+  <data name="NutsAndOilseeds_Sesame_Seeds" xml:space="preserve">
+    <value>Ces graines de sésame ont une saveur de noisette. Les graines décortiquées sont appelées sésame blanc, tandis que les graines non décortiquées sont appelées sésame noir. Ils sont largement utilisés dans la cuisine indienne, chinoise, japonaise et coréenne. Avec une texture croquante et une saveur de noisette, ils sont ajoutés à de nombreux plats pour plus de saveur.</value>
+  </data>
+  <data name="NutsAndOilseeds_Sunflower_Seeds" xml:space="preserve">
+    <value>Les graines de tournesol sont les fruits du magnifique tournesol jaune vif. Les graines poussent à partir d’un centre parsemé de graines. Les graines sont vert grisâtre ou noires, enfermées dans des coquilles grises ou noires en forme de larme. Les graines, qui contiennent de grandes quantités d’huile, sont la principale source de production d’huile de tournesol.</value>
+  </data>
+  <data name="NutsAndOilseeds_Walnuts" xml:space="preserve">
+    <value>La noix ou achrome est un fruit sec comestible à écorce dure utilisé dans les plats principaux, les sucreries et les desserts, et un fruit sec à écorce dure utilisé dans les plats principaux, les desserts et les salades. C'est une excellente source de nutriments comme les protéines. Types Les trois principaux types de noix consommées sont la noix anglaise (ou persane), Juglans regia ; noyer noir, Juglans nigra ; et Juglans cinerea blanc (ou muscade).</value>
+  </data>
+  <data name="OtherIngredients_Agar" xml:space="preserve">
+    <value>L'agar est une substance gélatineuse obtenue à partir d'algues. Gélifiant naturel, cet épaississant est à base d'algues rouges. Il est utilisé dans le monde entier et est vendu sous forme de poudre mélangée à de l’eau pour produire un agent gélifiant. Vendue sous forme de bandes ou de poudre, il s’agit d’une substance blanche et translucide communément appelée gélatine végétarienne.</value>
+  </data>
+  <data name="OtherIngredients_Ajinomoto" xml:space="preserve">
+    <value>Contrairement à la croyance populaire, Ajinomoto n'est pas un ingrédient en soi, mais est une société alimentaire et chimique basée au Japon qui utilise son nom comme marque commerciale pour son produit original, le MSG. C’est un sel largement utilisé dans la cuisine chinoise pour rehausser les saveurs, c’est pourquoi il est souvent appelé « exhausteur de goût ».</value>
+  </data>
+  <data name="OtherIngredients_Almond_Milk" xml:space="preserve">
+    <value>Le lait d'amande est une boisson à base d'amandes moulues. Il est souvent utilisé comme substitut du lait de vache pour les personnes intolérantes au lactose ou qui suivent un régime végétalien. Il ne contient aucun produit animal. Il peut également être préparé à la maison en broyant des amandes avec de l'eau dans un mixeur.</value>
+  </data>
+  <data name="OtherIngredients_Alum" xml:space="preserve">
+    <value>L'alun est un composé chimique. La poudre d'alun peut être utilisée en décapage pour garder les fruits et légumes croquants. Il est également utilisé comme composé acide dans certaines levures chimiques. L'alun est un sel double sulfate soluble dans l'eau. Le plus souvent, il est utilisé pour purifier l’eau.</value>
+  </data>
+  <data name="OtherIngredients_Arrowroot" xml:space="preserve">
+    <value>L'arrow-root, également connue sous le nom de plante d'obéissance, est une plante herbacée vivace qui est également le nom de l'amidon obtenu à partir de son rhizome. C'est un amidon végétal obtenu à partir de rhizomes et est couramment utilisé comme agent épaississant. Il se transforme en une poudre blanche légère et est généralement inodore, mais dégage une légère odeur lorsqu'il est mélangé à de l'eau.</value>
+  </data>
+  <data name="OtherIngredients_Baking_Powder" xml:space="preserve">
+    <value>La levure chimique, qui est un mélange de bicarbonate de sodium et d’autres acides, est largement utilisée en pâtisserie. Il augmente le volume et allège la texture des produits de boulangerie. Ingrédient très courant en cuisine, il est utilisé comme agent levant dans les gâteaux, le pain et les biscuits.</value>
+  </data>
+  <data name="OtherIngredients_Baking_Soda" xml:space="preserve">
+    <value>Il s’agit d’un composé chimique cristallin blanc que l’on trouve généralement sous forme de poudre. Cette poudre blanche est couramment utilisée comme agent levant dans les produits de boulangerie. Il est utilisé dans les gâteaux et les pâtisseries. Également connu sous le nom de bicarbonate de soude ou bicarbonate de sodium. Il se combine avec le composant acide pour former de minuscules bulles qui liquéfient la pâte ou la pâte.</value>
+  </data>
+  <data name="OtherIngredients_Balsamic_Vinegar" xml:space="preserve">
+    <value>Fabriqué à partir de jus de raisin ou de moût de raisin, le vinaigre balsamique est utilisé depuis le Moyen Âge. Le vinaigre sirupeux brun foncé a été produit à l'origine dans les régions de Modène et de Reggio en Italie. Il a un goût légèrement aigre-doux, ce qui donne aux plats un arôme particulier lors de la cuisson.</value>
+  </data>
+  <data name="OtherIngredients_Barfi" xml:space="preserve">
+    <value>Dessert indien très populaire, il est généralement coupé en cubes, en triangles ou en losanges pour être servi. La méthode de préparation la plus courante consiste à épaissir le lait avec du sucre et d'autres épices, à le placer dans un plat peu profond et à le couper à la forme et à la taille souhaitées. Ils sont souvent décorés de morceaux de feuilles d’argent, comestibles et aromatisés aux fruits.</value>
+  </data>
+  <data name="OtherIngredients_Beer" xml:space="preserve">
+    <value>La bière est une boisson alcoolisée obtenue en hydrolysant l'amidon et en fermentant le sucre obtenu. Les principaux ingrédients utilisés dans la bière sont l'eau, l'amidon, la levure de bière et les arômes. La teneur en alcool de chaque bière varie selon la manière dont elle est produite (généralement entre 3 % et 14 %).</value>
+  </data>
+  <data name="OtherIngredients_Brown_Sauce" xml:space="preserve">
+    <value>La sauce brune est un condiment utilisé dans la cuisine britannique et française. Il est utilisé dans diverses recettes selon la composition utilisée pour préparer la sauce. Dans la cuisine britannique, la sauce brune est à base de beurre et de farine. Dans la cuisine française classique, il est composé de roux grillé et de bouillon de viande.</value>
+  </data>
+  <data name="OtherIngredients_Chocolate" xml:space="preserve">
+    <value>Le chocolat est fabriqué à partir du cacaoyer tropical Theobroma (également connu sous le nom de cacaoyer), qui pousse dans la région tropicale d’Amérique du Sud.</value>
+  </data>
+  <data name="OtherIngredients_Chocolate_Chips" xml:space="preserve">
+    <value>Les pépites de chocolat sont de petits morceaux de chocolat. Ils sont disponibles en différentes tailles, du grand au petit. Rondes, coniques, carrées, rectangulaires, les pépites de chocolat peuvent être fabriquées dans n'importe quelle forme et taille. Ils contiennent moins de beurre de cacao que le chocolat à cuire.</value>
+  </data>
+  <data name="OtherIngredients_Cocoa" xml:space="preserve">
+    <value>Le cacao est une poudre extraite des fèves entièrement fermentées du cacaoyer. En plus de la poudre de cacao, le beurre de cacao et les solides de cacao sont également extraits des fèves. Les fèves de cacao sont la base du chocolat. Les graines, de couleur assez blanche ou lavande pâle, sont solidement enfermées dans une cosse.</value>
+  </data>
+  <data name="OtherIngredients_Coconut_Milk" xml:space="preserve">
+    <value>Le lait de coco est obtenu à partir du noyau de noix de coco râpé. C'est un ingrédient très populaire dans la cuisine d'Asie du Sud-Est. Le goût riche du lait de coco est dû à sa forte teneur en huile. Il peut être consommé cru ou utilisé comme substitut du lait dans divers plats.</value>
+  </data>
+  <data name="OtherIngredients_Coconut_Oil" xml:space="preserve">
+    <value>L'huile de coco est une huile comestible extraite du noyau de noix de coco mûres. Il est utilisé aussi bien en interne qu’en externe et a diverses applications dans les industries alimentaire et médicale. Il existe de nombreuses variétés d’huile de coco disponibles sur le marché, qui diffèrent principalement par la méthode de préparation.</value>
+  </data>
+  <data name="OtherIngredients_Coconut_Water" xml:space="preserve">
+    <value>Boisson sportive de Mère Nature, l'eau de coco est souvent considérée comme un complément électrolytique naturel pour le corps humain. C'est le liquide contenu dans les jeunes coques de noix de coco. L'eau de coco est très appréciée en raison de ses propriétés nutritionnelles. Elle est devenue une boisson populaire dans la région tropicale, notamment en Inde, sur la côte brésilienne, sur la côte Pacifique, en Afrique et dans les Caraïbes.</value>
+  </data>
+  <data name="OtherIngredients_Coffee" xml:space="preserve">
+    <value>Le café est une boisson très populaire avec un goût et un arôme vifs. Il est préparé en torréfiant les graines du caféier. Le café contient une grande quantité de caféine et a un goût légèrement aigre. Le café a été cultivé pour la première fois dans le sud de la péninsule arabique. Le Brésil est le premier producteur mondial de café.</value>
+  </data>
+  <data name="OtherIngredients_Cognac" xml:space="preserve">
+    <value>Le cognac, un type de brandy, doit son nom à la ville de Cognac en France. Il est issu d'un cépage spécifique que les locaux appellent Saint-Emilion. Les méthodes de production doivent également répondre à certaines exigences légales fixées par le gouvernement.</value>
+  </data>
+  <data name="OtherIngredients_Cornflour" xml:space="preserve">
+    <value>Également connue sous le nom de fécule de maïs ou semoule de maïs dans différents pays, il s'agit d'une poudre d'amidon blanc finement moulue extraite de grains de maïs. La farine est moulue à partir de grains, tandis que l'amidon est obtenu à partir de l'endosperme des grains. La semoule de maïs est de couleur blanc pâle et pratiquement insipide.</value>
+  </data>
+  <data name="OtherIngredients_Cranberry_Sauce" xml:space="preserve">
+    <value>La sauce aux canneberges est préparée en faisant mijoter des canneberges et du sucre dans de l'eau jusqu'à ce qu'elles éclatent et en faisant bouillir le mélange pour épaissir. Il peut être aromatisé à l'aide de divers ingrédients tels que le zeste d'orange, la cannelle, le gingembre, le sirop d'érable, les amandes ou le jus d'orange. La sauce est commercialisée sous forme friable ou gélatineuse non condensée.</value>
+  </data>
+  <data name="OtherIngredients_Desiccated_Coconut" xml:space="preserve">
+    <value>La chair de noix de coco râpée, concassée ou réduite en poudre puis séchée est appelée noix de coco desséchée. Il est préparé en éliminant l’humidité naturelle du fruit de la noix de coco. Il a un aspect blanc comme neige avec une douceur fraîche et une saveur de noisette. La noix de coco desséchée est également disponible sous forme sucrée, grillée ou grillée-sucrée.</value>
+  </data>
+  <data name="OtherIngredients_Egg" xml:space="preserve">
+    <value>L'œuf est très nutritif, il se compose d'une coquille externe, de blanc et de jaune d'œuf. Les jaunes d’œufs et les œufs entiers contiennent des quantités importantes de protéines et de choline. Les œufs de poule sont les œufs les plus courants.</value>
+  </data>
+  <data name="OtherIngredients_Fish_Sauce" xml:space="preserve">
+    <value>Il s'agit d'un assaisonnement à base de poisson fermenté. Le plus souvent utilisé dans la cuisine asiatique. Il est de couleur ambrée et liquide. La sauce de poisson a généralement un goût salé et une forte odeur, mais son goût varie légèrement d'un pays à l'autre. En Chine, on dit qu'il est très salé et convient principalement à la cuisine, mais au Vietnam, vous trouverez une version légèrement sucrée et l'odeur est également moins forte.</value>
+  </data>
+  <data name="OtherIngredients_Flat_Noodles" xml:space="preserve">
+    <value>Les nouilles plates sont un type de nouilles transformées en lanières plates au lieu de longues lanières rondes comme la plupart des nouilles. Les nouilles plates se dégustent avec une sauce ou une soupe. Bien que principalement fabriquées à partir de riz, les nouilles peuvent également être fabriquées à partir de blé, de riz, de sarrasin et autres.</value>
+  </data>
+  <data name="OtherIngredients_Gelatin" xml:space="preserve">
+    <value>La gélatine est un épaississant insipide et incolore fabriqué à partir de collagène obtenu en faisant bouillir les os, la peau et les tendons d'animaux. Il est disponible sous forme de feuilles, de poudre ou de granulés, qui peuvent être aromatisés. Avant utilisation, la gélatine doit être ramollie en la trempant dans l'eau froide pendant plusieurs minutes.</value>
+  </data>
+  <data name="OtherIngredients_Glycerine" xml:space="preserve">
+    <value>La glycérine, une huile naturelle, est un ingrédient liquide épais, incolore et inodore. Il a un goût sucré subtil et est principalement utilisé comme édulcorant dans de nombreuses recettes. C'est un liquide collant, acidulé et très sucré qui se dissout facilement dans l'eau et l'alcool.</value>
+  </data>
+  <data name="OtherIngredients_Gold_Leaves" xml:space="preserve">
+    <value>Depuis des siècles, les feuilles dorées sont utilisées non seulement comme décorations, mais aussi pour garnir les aliments. L’or utilisé en cuisine est pur, très doux et délicat. Bien qu’il ne constitue pas un élément essentiel de l’alimentation humaine, l’or est un minéral qui peut être consommé. Insipide, inodore.</value>
+  </data>
+  <data name="OtherIngredients_Guchchi" xml:space="preserve">
+    <value>Également connu sous le nom de champignon éponge, Gucci fait partie de la famille des champignons Morella. Il a un corps conique rigide avec une calotte spongieuse. Il est généralement cultivé sur des bûches de bois et de feuilles en décomposition, des souches ou de la terre humifère. À basse altitude, il est généralement noir.</value>
+  </data>
+  <data name="OtherIngredients_Hoisin_Sauce" xml:space="preserve">
+    <value>Il s'agit d'une sauce chinoise, prononcée sauce HOI-sing. Hoisin signifie fruits de mer, bien qu’il n’en contienne pas. Il est de couleur foncée et de consistance épaisse. Sa couleur varie du brun rougeâtre au brun foncé. Il est fabriqué à partir d'un mélange de vinaigre, d'ail, de graines de soja fermentées, de sucre, de graines de soja, de graines de sésame, de piments et d'édulcorant.</value>
+  </data>
+  <data name="OtherIngredients_Jelly" xml:space="preserve">
+    <value>Les fruits en conserve préparés à partir de gélatine ou de substituts, généralement destinés à une conservation à long terme, sont appelés gelées. Un mélange sucré de jus de fruit et de sucre, souvent placé dans une forme fantaisie. C'est une pâte assez élastique à base de jus de fruits, de sucre et de gélatine. Il est disponible en différentes saveurs.</value>
+  </data>
+  <data name="OtherIngredients_Jus" xml:space="preserve">
+    <value>Au Jus ou « avec le jus » est une technique française consistant à utiliser le jus lui-même pour préparer une sauce légère à tremper. Les Français l'utilisent pour rehausser le goût des plats. Une préparation simple consiste à porter à ébullition le reste du bouillon, généralement après la friture ou la cuisson, en écumant le gras.</value>
+  </data>
+  <data name="OtherIngredients_Lotus_Seeds" xml:space="preserve">
+    <value>Le Makhana est une plante également connue sous le nom d'Euryale Fox, originaire d'Asie de l'Est. Il produit des graines blanches comestibles. En Inde, en particulier au Pendjab et dans les régions orientales, il est souvent frit et frit. Il est également considéré comme pieux dans de nombreuses cultures.</value>
+  </data>
+  <data name="OtherIngredients_Malt_Vinegar" xml:space="preserve">
+    <value>Le vinaigre est un liquide principalement composé d'acide acétique et d'eau. Il existe différents types de vinaigre, dont le vinaigre de malt. Le malt est le terme utilisé pour désigner les grains d'orge germés et séchés. Une fois que l'orge a été maltée (c'est-à-dire qu'elle a pu germer), le maltose obtenu est bouilli en bière, qui est ensuite fermentée jusqu'à ce qu'elle atteigne une couleur brun clair appelée vinaigre de malt.</value>
+  </data>
+  <data name="OtherIngredients_Margarine" xml:space="preserve">
+    <value>La margarine est une imitation du beurre. Il a été créé à l’origine en 1869 pour remplacer le beurre du suif de bœuf et du lait écrémé. Il est désormais produit principalement à partir d’huiles et de graisses raffinées. Il est créé en utilisant de l’hydrogène pour solidifier les huiles végétales.</value>
+  </data>
+  <data name="OtherIngredients_Marzipan" xml:space="preserve">
+    <value>Le massepain est une pâte épaisse à base d'amandes moulues, d'œufs, de sucre ou de miel. Il est souvent roulé en fines feuilles et utilisé pour glacer un gâteau. Il est utilisé pour créer des formes et est fabriqué à partir de pâte d’amande, mélangée à du sucre et du blanc d’œuf.</value>
+  </data>
+  <data name="OtherIngredients_Mayonnaise" xml:space="preserve">
+    <value>C'est une sauce épaisse et crémeuse préparée en mélangeant du beurre et des œufs. Il est utilisé comme tartinade à sandwich populaire, comme vinaigrette ou comme base de sauce. Il peut être blanc, crème ou jaune. La texture peut varier de légèrement crémeuse à épaisse. Dans les pays à culture française prédominante, la moutarde est également ajoutée.</value>
+  </data>
+  <data name="OtherIngredients_Melon_Seeds" xml:space="preserve">
+    <value>Les graines de cantaloup, généralement séchées, sont utilisées pour parfumer les riches plats et desserts indiens. Coquille blanc crème avec un noyau ovale doux à l’intérieur. Magaz est le nom hindi des graines de cantaloup. Ils peuvent être séchés à la maison (nettoyés soigneusement et séchés au soleil) ou achetés au marché.</value>
+  </data>
+  <data name="OtherIngredients_Meringue" xml:space="preserve">
+    <value>La meringue est un mélange bien battu de blancs d'œufs et de sucre, consommé en dessert, populaire dans la cuisine suisse et française. Il peut être utilisé comme garniture pour les gâteaux, pavlovas, tartes ou consommé cru sous forme de biscuits. Des extraits de vanille ou d'amande et de noix de coco y sont souvent ajoutés.</value>
+  </data>
+  <data name="OtherIngredients_Oyster_Sauce" xml:space="preserve">
+    <value>La sauce aux huîtres est une sauce brune épaisse à base d'huîtres bouillies et d'assaisonnements. Les principaux ingrédients utilisés pour préparer la sauce aux huîtres, ainsi que les huîtres et les assaisonnements, sont le sucre, le sel et l'eau, épaissis avec de la fécule de maïs. C'est un ingrédient très courant dans la cuisine chinoise, thaïlandaise et vietnamienne.</value>
+  </data>
+  <data name="OtherIngredients_Paan" xml:space="preserve">
+    <value>Le mot paan vient du mot sanskrit « parna ». C'est un désodorisant buccal populaire principalement dans le nord de l'Inde et généralement consommé après un repas copieux. Il contient principalement de la noix d'arec, de la noix de coco sucrée, de la confiture de pétales de rose, du camphre, des graines de fenouil grillées, des noix de cajou et bien plus encore selon les préférences de chacun, le tout enveloppé dans une feuille de bétel.</value>
+  </data>
+  <data name="OtherIngredients_Papad" xml:space="preserve">
+    <value>Papad ou papadum est un plat semblable à un pain plat qui peut être frit ou cuit au four. Il se consomme en collation ou en accompagnement de plats indiens. Des légumes, des tomates ou des oignons sont souvent ajoutés pour plus de saveur. Il est généralement préparé avec de la farine d'urad mais peut également être préparé avec de la farine de pois chiches, de lentilles et de riz.</value>
+  </data>
+  <data name="OtherIngredients_Pasta" xml:space="preserve">
+    <value>Les pâtes sont généralement préparées en détachant la pâte de blé. Le blé utilisé pour fabriquer les pâtes est aussi appelé blé dur. Les pâtes sont également considérées comme un aliment préparé essentiel. C'est un plat incontournable de la cuisine italienne. La pâte, qui se présente sous différentes formes et tailles, est utilisée comme condiment essentiel dans toutes les cuisines populaires.</value>
+  </data>
+  <data name="OtherIngredients_Petha" xml:space="preserve">
+    <value>Les Pethas sont des bonbons translucides originaires du nord de l'Inde. Pour les préparer, on confit du potiron cendré ou blanc. Il est généralement de forme rectangulaire ou cylindrique. Disponible dans de nombreuses saveurs comme Kesar, Kewda, etc.</value>
+  </data>
+  <data name="OtherIngredients_Polenta" xml:space="preserve">
+    <value>Il s’agit de farine de maïs, fabriquée à partir de maïs moulu. Polenta est un mot italien qui signifie grains moulus. La polenta est très populaire dans la cuisine italienne et est utilisée comme accompagnement chaud. Il se déguste nature ou cuit au four, grillé ou frit. Il a une riche couleur jaune et un goût légèrement sucré.</value>
+  </data>
+  <data name="OtherIngredients_Quinoa" xml:space="preserve">
+    <value>Le quinoa est souvent considéré comme une céréale, mais il s’agit en réalité d’une graine. Prononcé Kin-wah. C’était un aliment de base pour les habitants des hauteurs des Andes en Amérique du Sud. Bien que ce nom ne soit pas très populaire ces derniers temps, les nutritionnistes affirment qu’il s’agit d’une « super céréale » en raison de sa valeur nutritionnelle irréprochable.</value>
+  </data>
+  <data name="OtherIngredients_Red_Wine" xml:space="preserve">
+    <value>Le vin rouge est élaboré à partir de cépages foncés. Les pigments anthocyaniques, présents dans la peau des raisins, donnent la couleur rouge. Il varie du clair au foncé selon la durée de vieillissement. Le Cabernet Sauvignon, le Pinot Noir, le Shiraz et le Bordeaux sont quelques-uns des types de vins les plus courants.</value>
+  </data>
+  <data name="OtherIngredients_Red_Wine_Vinegar" xml:space="preserve">
+    <value>Le vinaigre est un liquide composé d'acide acétique et d'eau. Il existe de nombreux types de vinaigre, et le vinaigre de vin rouge en fait partie. Le vinaigre de vin rouge est fabriqué à partir de vin rouge et est couramment utilisé dans les pays méditerranéens. Le vin rouge est laissé fermenter jusqu'à ce qu'il devienne aigre.</value>
+  </data>
+  <data name="OtherIngredients_Rice_Flour" xml:space="preserve">
+    <value>Un type de farine à base de riz finement moulu. Il est fabriqué à partir de riz blanc ou brun. C'est un bon substitut à la farine de blé et pour les personnes intolérantes au gluten. Il est également utilisé comme épaississant dans les recettes qui doivent être réfrigérées.</value>
+  </data>
+  <data name="OtherIngredients_Rice_Noodles" xml:space="preserve">
+    <value>Les principaux ingrédients des nouilles de riz sont la farine de riz, l'eau et le sel. Il peut être épais ou très fin et peut être aromatisé avec des ingrédients tels que le tapioca ou la fécule de maïs pour en modifier la qualité. On les appelle aussi bâtonnets de riz. Lorsqu'ils sont crus, ils sont très cassants et une fois cuits, ils deviennent translucides et moelleux.</value>
+  </data>
+  <data name="OtherIngredients_Rice_Vinegar" xml:space="preserve">
+    <value>Il est produit par fermentation du riz. Il est principalement utilisé en Chine et au Japon. Bien que les vinaigres de Chine et du Japon soient beaucoup plus doux et sucrés que la plupart des vinaigres occidentaux, le vinaigre de riz chinois est toujours beaucoup plus fort que les versions japonaises. Les vinaigres chinois vont du clair à diverses nuances de rouge et de brun.</value>
+  </data>
+  <data name="OtherIngredients_Rose_Water" xml:space="preserve">
+    <value>L'essence, extraite de petites roses rouge foncé cultivées pour leur parfum, est mélangée à de l'eau pour créer de l'eau de rose. Le liquide qui reste après la distillation des pétales de rose avec de l’eau pour produire de l’huile de rose devient de l’eau de rose.</value>
+  </data>
+  <data name="OtherIngredients_Roux" xml:space="preserve">
+    <value>Un épaississant pour plats salés, composé principalement d'un mélange de farine, de beurre et de lait. L'épaississant est utilisé dans des sauces telles que la sauce béchamel, la sauce velouté et la sauce espagnole. L'huile végétale, la graisse de bacon et le saindoux peuvent remplacer le beurre.</value>
+  </data>
+  <data name="OtherIngredients_Rum" xml:space="preserve">
+    <value>C'est une liqueur sombre et riche à base de jus de canne à sucre fermenté. La boisson fermentée est vieillie en fûts de chêne. La plupart du rhum est fabriqué à partir de mélasse. Bien qu'il soit principalement consommé comme boisson alcoolisée ou dans des cocktails tels que le Cuban Libre ou la Pina Colada, il est également utilisé dans diverses recettes pour ajouter de la saveur.</value>
+  </data>
+  <data name="OtherIngredients_Sake" xml:space="preserve">
+    <value>Le saké [Sah-Keh], également connu sous le nom de vin de riz, est un alcool traditionnel japonais. Bien qu’on l’appelle vin de riz, il est produit selon un processus similaire au brassage ou à la fermentation de la bière. Il est fabriqué à partir de riz et a un goût sec et piquant, mais il existe également des variétés plus sucrées.</value>
+  </data>
+  <data name="OtherIngredients_Screw_Pine" xml:space="preserve">
+    <value>Le Kjuda est un arbuste le plus couramment utilisé pour son arôme, originaire d'Asie du Sud. Il a une douce odeur de parfum. Elle est le plus souvent utilisée sous sa forme aqueuse appelée eau de Kewda. Les fleurs sont utilisées pour extraire le jus, qui sert à ajouter de la saveur aux plats cuisinés.</value>
+  </data>
+  <data name="OtherIngredients_Sea_Salt" xml:space="preserve">
+    <value>Comme son nom l’indique, le sel marin est obtenu à partir de la mer après évaporation de l’eau. Le sel se présente initialement sous forme cristallisée, qui peut également être broyée. Il a le goût caractéristique de la mer et ses flocons cristallins sont largement utilisés dans une variété de plats salés.</value>
+  </data>
+  <data name="OtherIngredients_Sev" xml:space="preserve">
+    <value>Il s'agit d'une collation frite à base de farine de pois chiches. Les nouilles à la farine de pois chiches/farine de pois chiches sont formées à l'aide d'une machine dotée d'un disque avec des trous fins et la farine y est passée puis frite pour obtenir le Sev. La farine est mélangée avec du sel, du curcuma, du poivre, de l'huile et du jus de citron pour lui donner un goût épicé.</value>
+  </data>
+  <data name="OtherIngredients_Sharbat" xml:space="preserve">
+    <value>Une boisson fraîche, sucrée et aromatique à base de fruits concentrés ou de pétales de fruits. Il est traditionnellement mélangé à de l'eau froide avant de servir, mais peut également être servi concentré pour plus de saveur. Il peut être préparé dans presque toutes les saveurs, et le sorbet le plus courant est celui à la rose.</value>
+  </data>
+  <data name="OtherIngredients_Soya_Sauce" xml:space="preserve">
+    <value>Utilisée comme assaisonnement et ingrédient de base, la sauce soja est fabriquée à partir de graines de soja fermentées, de céréales ou d'orge torréfiées, de sel et d'eau. Il est ajouté au riz, utilisé pour les sautés et comme trempette. La sauce soja est généralement salée et de couleur brun chocolat.</value>
+  </data>
+  <data name="OtherIngredients_Soy_Milk" xml:space="preserve">
+    <value>Le lait de soja est très nutritif et est obtenu en trempant, en broyant puis en faisant bouillir des graines de soja avec de l'eau. Il est naturellement riche en acides gras, protéines, fibres, vitamines et minéraux. Ces nutriments sont connus pour fournir de l’énergie et soutenir les fonctions corporelles.</value>
+  </data>
+  <data name="OtherIngredients_Tartaric_Acid" xml:space="preserve">
+    <value>L'acide tartrique est un additif alimentaire important qui est généralement associé au bicarbonate de soude pour être utilisé comme agent levant dans les recettes. Il peut être utilisé dans tous types de produits sauf ceux non transformés. L'acide tartrique est présent naturellement dans des plantes telles que les raisins, les abricots, les pommes, les bananes, les avocats et les tamarins.</value>
+  </data>
+  <data name="OtherIngredients_Tea" xml:space="preserve">
+    <value>Le thé, fabriqué à partir des feuilles du théier, est une boisson très populaire consommée partout dans le monde, notamment en Inde. On sait que le thé est originaire de Chine. En Inde, on le prépare avec du lait. D'autres types sont le thé noir, le thé vert, le thé oolong, etc. Le thé est la boisson la plus apaisante avec un arôme sucré et est préparé avec de l'eau chaude et/ou du lait.</value>
+  </data>
+  <data name="OtherIngredients_Tofu" xml:space="preserve">
+    <value>Le tofu est un tofu fermenté largement utilisé dans la cuisine chinoise. Il est préparé en faisant coaguler du lait de soja et en pressant le caillé obtenu. Il existe de nombreuses variétés de tofu, notamment le tofu frais et le tofu transformé. Son goût est subtil et peut être utilisé aussi bien dans des plats salés que sucrés.</value>
+  </data>
+  <data name="OtherIngredients_Tomato_Puree" xml:space="preserve">
+    <value>La purée de tomates est utilisée dans de nombreux plats pour ajouter une saveur aigre aux tomates ou comme sauce. Pour faire la purée, lavez et équeutez la tomate et blanchissez-la. Mixez le mélange et ajoutez un peu d'eau s'il est trop épais pour faire une purée de tomates.</value>
+  </data>
+  <data name="OtherIngredients_Tortilla" xml:space="preserve">
+    <value>Pain fin à base de farine de blé finement moulue, dérivée à l'origine d'une tortilla de maïs, la tortilla est un aliment de base en Espagne. Littéralement, cela signifie un petit pain plat et est généralement préparé avec de la viande pour préparer divers plats. En apparence, il ressemble beaucoup aux chapatis indiens.</value>
+  </data>
+  <data name="OtherIngredients_Vanilla_Essence" xml:space="preserve">
+    <value>L'essence de vanille est extraite des gousses de vanille et est utilisée pour parfumer plusieurs desserts et plats. Il s’agit d’un extrait à base de gousses de vanille imbibées d’alcool. Il est largement utilisé comme arôme, et la glace à la vanille est l'arôme le plus courant.</value>
+  </data>
+  <data name="OtherIngredients_Vegetable_Oil" xml:space="preserve">
+    <value>Fabriquées à partir d’extraits de plantes purifiantes, les huiles végétales restent sous forme liquide à température ambiante. De nombreuses plantes produisent de l’huile, mais celle-ci est généralement extraite des graines. L’huile végétale peut être préparée à partir d’un seul ingrédient ou d’un mélange de plusieurs. Les huiles raffinées sont recommandées pour la friture à feu vif, tandis que les huiles non raffinées ont meilleur goût lorsqu'elles sont utilisées dans les salades ou autres plats froids.</value>
+  </data>
+  <data name="OtherIngredients_Vermicelli" xml:space="preserve">
+    <value>Les vermicelles sont fabriqués à partir de farine raffinée ou de riz. Les vermicelles ont une apparence similaire aux nouilles, mais beaucoup plus fines. C'est un type de nouilles de riz. On les appelle souvent nouilles de riz ou bâtonnets de riz. Les vermicelles n'ont pas de goût particulier, mais absorbent facilement les saveurs des ingrédients avec lesquels ils sont cuits.</value>
+  </data>
+  <data name="OtherIngredients_Vetiver" xml:space="preserve">
+    <value>C'est une plante herbacée vivace communément appelée khus dans l'ouest et le nord de l'Inde. Il tire son nom du mot tamoul vettiver. Le vétiver peut atteindre 1,5 mètre de hauteur. Il a des feuilles fines et longues et des fleurs violet brunâtre. Contrairement à la plupart des autres plantes, les racines du vétiver poussent verticalement vers le bas ; ils peuvent atteindre des profondeurs allant jusqu'à 4 mètres.</value>
+  </data>
+  <data name="OtherIngredients_Vinaigrette" xml:space="preserve">
+    <value>Lorsque le vinaigre est émulsionné avec n’importe quelle forme d’huile, on parle de vinaigrette. L'huile peut aller du soja à l'olive, et la vinaigrette peut être aromatisée avec des épices, des herbes et d'autres ingrédients. L'utilisation la plus courante de cette émulsion est comme vinaigrette.</value>
+  </data>
+  <data name="OtherIngredients_Vinegar" xml:space="preserve">
+    <value>Ingrédient originaire de la cuisine française, son nom signifie vin aigre. Un bon vinaigre se caractérise par un goût léger, délicat et légèrement piquant et un liquide clair et brillant. Le vinaigre blanc est obtenu en distillant de l'alcool ou peut être une combinaison d'acide acétique et de sel dissous dans l'eau.</value>
+  </data>
+  <data name="OtherIngredients_White_Pepper" xml:space="preserve">
+    <value>Le poivre blanc est produit en enlevant la couche externe de poivre noir, obtenue à partir du poivrier. Le poivrier est originaire d’Inde et d’Indonésie. Lorsque les grains de poivre noir sont presque mûrs et séchés au soleil, la couche externe est retirée, ne laissant que la graine interne blanche.</value>
+  </data>
+  <data name="OtherIngredients_White_Wine" xml:space="preserve">
+    <value>Le vin blanc est produit par fermentation de la pulpe de raisins noirs ou blancs. Le vin blanc peut être vert jaunâtre, jaune paille ou jaune doré. Types Il existe de nombreux types de vins blancs. En voici quelques-uns : vin blanc sec, vin blanc pétillant, vin fortifié, vin blanc doux.</value>
+  </data>
+  <data name="OtherIngredients_Yeast" xml:space="preserve">
+    <value>Un champignon vivant microscopique qui est un ingrédient important dans la pâtisserie et le brassage.</value>
+  </data>
+  <data name="Seafood_Anchovies" xml:space="preserve">
+    <value>Ce sont de minuscules poissons fourragers d’eau salée communs qui ont une saveur très forte. Les anchois sont riches en protéines saines, en vitamines essentielles (vitamines E et D) et en minéraux (calcium). Ils confèrent une saveur salée plutôt que de poisson lorsqu'ils sont ajoutés aux vinaigrettes.</value>
+  </data>
+  <data name="Seafood_Cat_fish" xml:space="preserve">
+    <value>Le poisson-chat est un poisson qui n'a pas d'écailles. Il fait partie de la cuisine africaine depuis des centaines d'années. En Europe centrale, il est considéré comme un mets délicat. Il peut être consommé de nombreuses façons, par exemple en Indonésie, il est souvent grillé et en Inde, il est consommé comme mets préféré pendant la saison de la mousson.</value>
+  </data>
+  <data name="Seafood_Clams" xml:space="preserve">
+    <value>Les palourdes sont des bivalves appartenant à la même famille que les pétoncles et les huîtres. On les trouve généralement dans les eaux côtières et les lacs d’eau douce peu profonds. La plupart des variétés de coquillages sont comestibles. Le corps mou est situé entre deux coques dures. Bien qu'il existe plus de 2 000 espèces, les myes sont généralement divisées en deux types : les myes dures, qui vivent dans les eaux profondes, tandis que les myes vivent dans les marées.</value>
+  </data>
+  <data name="Seafood_Cod" xml:space="preserve">
+    <value>Poussant dans les eaux profondes et froides, la morue appartient à la famille des Gadidea, comme l'aiglefin et la goberge. C'est un poisson d'eau salée qui survit généralement près du fond pour grandir, survivre et se reproduire. Il est très apprécié en raison de sa viande blanche et au goût doux. Une fois cuite, la viande devient moelleuse et feuilletée.</value>
+  </data>
+  <data name="Seafood_Cuttle_fish" xml:space="preserve">
+    <value>La seiche, également connue sous le nom de poisson-encre, est un mollusque des grands fonds. Sa viande a le goût de calmar et de poulpe. Il a un corps long et allongé avec des tentacules entourant sa bouche. La seiche porte plusieurs noms régionaux tels que nargate, sépia et supion.</value>
+  </data>
+  <data name="Seafood_Fish" xml:space="preserve">
+    <value>Vertébré apode, à sang froid, doté de branchies et de nageoires, qui vit entièrement dans l'eau, c'est un fruit de mer très populaire et consommé avec un grand intérêt dans le monde entier. Le poisson doit être conservé dans la partie la plus froide du réfrigérateur. Idéalement, il devrait être consommé le jour même, mais peut être conservé au congélateur pendant 2 à 3 jours maximum.</value>
+  </data>
+  <data name="Seafood_Fish_Fillet" xml:space="preserve">
+    <value>Un morceau de viande ou de poisson plat et désossé. Il s'agit d'un type de morceau ou de tranche de viande. Contrairement au steak, il est coupé parallèlement à la colonne vertébrale et est constitué de muscles squelettiques et de graisse. Ils ne contiennent pas la colonne vertébrale du poisson, ce qui le rend plus facile à manger. Un couteau à lame flexible est utilisé pour couper le poisson.</value>
+  </data>
+  <data name="Seafood_Fish_Stock" xml:space="preserve">
+    <value>Un liquide aromatisé et filtré à base de morceaux de poisson frais, d'eau et d'assaisonnements est souvent appelé bouillon de poisson. Le type de viande animale utilisé détermine le type de bouillon. Les principaux ingrédients utilisés dans la préparation du bouillon sont la viande, les os, les assaisonnements, les herbes et les épices.</value>
+  </data>
+  <data name="Seafood_Flounder" xml:space="preserve">
+    <value>Également connu sous le nom de douve, c'est un flet qui se trouve principalement dans les eaux peu profondes et qui passe d'un poisson ordinaire à un flet à l'âge adulte. On le trouve couramment dans les zones côtières du sud du golfe du Maine jusqu'en Floride. Il existe de nombreux types de plie, comme la sole ou le flétan, qui ont leurs propres saveurs distinctives.</value>
+  </data>
+  <data name="Seafood_Haddock" xml:space="preserve">
+    <value>Le poisson marin, qui est un aliment populaire et largement pêché commercialement en raison de sa demande sur le marché. Il appartient à la famille des morues. Il est très apprécié en raison de sa texture fibreuse et nette. Il est vendu frais, fumé, congelé, séché ou en conserve. Dans de nombreuses cuisines populaires, l’aiglefin remplace la morue franche.</value>
+  </data>
+  <data name="Seafood_Hilsa" xml:space="preserve">
+    <value>Un type de poisson gras courant dans les cuisines bengali et oriya. Poisson très apprécié en Asie du Sud-Est, c'est le poisson national du Bangladesh. Il pond ses œufs dans les grandes rivières, bien qu'il soit un poisson de mer, et ses alevins sont capturés lorsqu'ils retournent à la mer, car ce sont les plus savoureux.</value>
+  </data>
+  <data name="Seafood_Mackerel" xml:space="preserve">
+    <value>Un type de poisson d'eau salée qui est souvent grillé, cuit au four ou grillé. Il est également connu sous le nom de bhangra. Comme tout autre poisson, le maquereau est riche en huiles oméga-3. On le déguste avec plaisir en raison de sa chair dense. Ce poisson peut être trouvé dans différentes espèces comme le maquereau bleu, le maquereau espagnol, le maquereau royal et le maquereau du Pacifique.</value>
+  </data>
+  <data name="Seafood_Mullet" xml:space="preserve">
+    <value>Le mulet est un poisson à nageoires rayonnées que l'on trouve partout dans le monde, dans les zones tropicales et côtières. Il existe plus de 80 espèces de mulets. Il existe le mulet gris, le mulet aux yeux jaunes et le rouget. La majorité des espèces de mulets capturées commercialement sont des mulets rayés et blancs.</value>
+  </data>
+  <data name="Seafood_Mussels" xml:space="preserve">
+    <value>Les moules sont des mollusques bivalves marins. Moules est un nom commun utilisé pour désigner une variété de crustacés qui se distinguent par leur coquille allongée. Ces magnifiques créatures marines sont bleu foncé à l’extérieur et argentées à l’intérieur. La plupart des moules ne restent comestibles qu'un jour ou deux, alors assurez-vous de vérifier.</value>
+  </data>
+  <data name="Seafood_Pearl_spot" xml:space="preserve">
+    <value>Le poisson perlé, également connu sous le nom de karimin ou chromide, est considéré comme un mets délicat. Le poisson a un corps elliptique avec de minuscules taches de diamant brillant sur tout son corps. Cette variété de poisson est l'un des plats authentiques du Kerala. Karimeen, comme on l'appelle, se trouve couramment dans les backwaters du Kerala.</value>
+  </data>
+  <data name="Seafood_Perch" xml:space="preserve">
+    <value>La perche est le nom d'un poisson du genre Perca. Les perches sont généralement longues et rondes avec des écailles rugueuses. Ces poissons sont carnivores et se nourrissent généralement de poissons plus petits. C'est un poisson d'eau douce.</value>
+  </data>
+  <data name="Seafood_Pomfret" xml:space="preserve">
+    <value>Pomfret vient du mot portugais « pampo ». Poisson de mer avec un seul os. Trouvé dans les océans Atlantique, Indien et Pacifique. Les Pomfrets ont un corps plat et une queue profondément fourchue. Il en existe trois types : les pomfrets argentés, gris et noirs. Habituellement, ils sont préparés entiers, après avoir retiré les organes internes du poisson.</value>
+  </data>
+  <data name="Seafood_Prawns" xml:space="preserve">
+    <value>La crevette est un fruit de mer ressemblant à une crevette et mesurant 3 à 5 cm de long. Pour ceux qui aiment manger des fruits de mer, la crevette est un véritable délice. Il en existe deux types : petites et grandes, appelées crevettes tigrées ou crevettes géantes. Bien que les crevettes et les crevettes appartiennent à la même classe de crustacés, les crevettes sont des créatures plus petites.</value>
+  </data>
+  <data name="Seafood_Salmon" xml:space="preserve">
+    <value>Le saumon est un poisson d'eau douce de la même famille que la truite. Sa chair est rose-orange. Il est disponible entier, sous forme de steak ou de filet. Il peut être congelé, en conserve, séché ou fumé. Il est riche en oméga-3, en vitamine D et en protéines. Alors que le saumon d'élevage est disponible toute l'année, le saumon sauvage n'est disponible que de mars à septembre.</value>
+  </data>
+  <data name="Seafood_Sardines" xml:space="preserve">
+    <value>Les sardines sont de petits poissons marins argentés et gras aux os mous. Ils se situent au bas de la chaîne alimentaire aquatique et survivent principalement grâce au plancton. Ils sont vendus frais et, en raison de leur caractère hautement périssable, ils sont également souvent vendus sous forme de conserve.</value>
+  </data>
+  <data name="Seafood_Shark" xml:space="preserve">
+    <value>Requin Les énormes poissons aquatiques sont appréciés pour leurs nageoires. Le requin est un fruit de mer courant dans de nombreux pays, dont le Japon et l'Australie. Le requin est consommé dans du fish and chips dans certaines régions de Nouvelle-Zélande et d'Australie. Dans de nombreux pays, la viande de requin est vendue sous le nom générique de poisson.</value>
+  </data>
+  <data name="Seafood_Shellfish" xml:space="preserve">
+    <value>Les mollusques sont des animaux aquatiques invertébrés qui ont une coquille et sont utilisés comme nourriture. Il s'agit notamment de divers mollusques, crustacés et échinodermes que l'on trouve dans l'eau douce et salée.</value>
+  </data>
+  <data name="Seafood_Shrimp" xml:space="preserve">
+    <value>Les crevettes appartiennent à certains types de crustacés décapodes. Le terme est largement utilisé et couvre de nombreuses espèces. Les crevettes se caractérisent principalement par un corps translucide aplati latéralement et un abdomen flexible. Ils ont une queue en forme d'éventail.</value>
+  </data>
+  <data name="Seafood_Squids" xml:space="preserve">
+    <value>Les calmars appartiennent à une classe de mollusques appelés céphalopodes. Ils constituent un aliment très populaire dans de nombreuses cuisines différentes telles que la cuisine chinoise, anglaise, japonaise, américaine, italienne et espagnole. La viande est ferme et moelleuse et a un goût sucré. Les calamars sont largement vendus comme calamars dans de nombreux pays anglophones.</value>
+  </data>
+  <data name="Seafood_Tuna_Fish" xml:space="preserve">
+    <value>Le thon est un poisson marin qui appartient à la famille des maquereaux. Le thon est largement vendu sous forme de conserve, bien que du thon frais soit également disponible. Le thon peut être conservé dans des huiles comestibles, de la saumure, de l'eau et diverses sauces. Unique par sa chair rose ou rouge foncé, le thon est une espèce de poisson carnivore.</value>
+  </data>
+  <data name="SpicesAndHerbs_Acacia" xml:space="preserve">
+    <value>Ce sont des arbustes qui portent des gousses dont le jus et les feuilles contiennent généralement des niveaux élevés de tanins (utilisés pour la fabrication du cuir). Également connues sous le nom d’épines sifflantes, les graines et les pousses plumeuses d’acacia sont utilisées dans les soupes et les currys. Aux États-Unis et en Europe, ils sont utilisés dans les boissons gazeuses, les chewing-gums et les menthes.</value>
+  </data>
+  <data name="SpicesAndHerbs_Allspice" xml:space="preserve">
+    <value>Le piment de la Jamaïque est originaire des Grandes Antilles, du sud du Mexique et d’Amérique centrale et est généralement cultivé dans les régions chaudes. Le piment de la Jamaïque est une petite baie qui a le goût d'un mélange de cannelle, de clou de girofle et de muscade. Il est également connu sous le nom de poivre de Jamaïque ou poivre de Nouvelle-Zélande.</value>
+  </data>
+  <data name="SpicesAndHerbs_Aniseed" xml:space="preserve">
+    <value>L'anis, également appelé anis, anis ou graine d'anis, est une herbe souvent utilisée dans les recettes du Moyen-Orient. Il appartient aux plantes à fleurs de la famille des Apiacées. Son goût s'apparente à celui des épices comme l'anis étoilé, le fenouil et la réglisse. Ils sont de couleur brun pâle avec un arôme très doux et aromatique.</value>
+  </data>
+  <data name="SpicesAndHerbs_Asafoetida" xml:space="preserve">
+    <value>L'Asafoetida, dont on dit qu'elle est originaire de Rome, est devenue une épice incontournable de la cuisine végétarienne indienne. C'est un latex séché extrait du rhizome vivant souterrain de Ferula. Il est très souvent utilisé sous forme de granulés ou de poudre.</value>
+  </data>
+  <data name="SpicesAndHerbs_Basil" xml:space="preserve">
+    <value>Ce roi des herbes méditerranéennes appartient à la famille de la menthe et est originaire d’Inde. Bien que la couleur commune du basilic soit verte, certaines variétés sont violettes ou rouges. L'odeur du basilic a un arôme parfumé, un goût fort et doux, comme celui de la menthe poivrée.</value>
+  </data>
+  <data name="SpicesAndHerbs_Bay_Leaf" xml:space="preserve">
+    <value>Feuilles de laurier ou de bois aromatique, elles sont généralement séchées. La feuille aromatique est un incontournable de la cuisine indienne. Très courant dans les currys indiens et les plats de riz, ainsi que dans les crèmes anglaises et les ragoûts de la cuisine occidentale. C'est une feuille lisse et elliptique avec un goût légèrement amer et les feuilles séchées ont un arôme semblable à celui du thym et de l'origan.</value>
+  </data>
+  <data name="SpicesAndHerbs_Black_Cardamom" xml:space="preserve">
+    <value>Épice réchauffante, la cardamome noire est plus souvent utilisée dans les plats salés. Il a une saveur fumée qui provient de la méthode de séchage au feu, ce qui lui donne également une saveur distincte. Ce fruit séché est vendu sous forme de gousses et de graines, les gousses ayant une saveur plus forte.</value>
+  </data>
+  <data name="SpicesAndHerbs_Black_Cumin" xml:space="preserve">
+    <value>Le cumin noir appartient à la famille des plantes à fleurs des Apiacées. Les graines sont plus petites, plus foncées et plus fines que celles des autres membres de la famille. Il est populaire pour sa saveur prononcée et est utilisé comme épice dans la cuisine indienne. Les graines de cumin noir font référence aux graines de deux plantes différentes.</value>
+  </data>
+  <data name="SpicesAndHerbs_Black_Pepper" xml:space="preserve">
+    <value>Le poivre noir est un fruit séché pour être utilisé comme épice. Les poivrons non mûrs cuits et séchés ont un piquant qui se marie très bien avec le sel. Ce sont de petites graines noires à la peau ridée. Largement utilisés dans les cuisines du monde entier, les moulins à poivre sont un outil couramment utilisé pour moudre les poivrons fraîchement moulus, qui ont une saveur prononcée.</value>
+  </data>
+  <data name="SpicesAndHerbs_Cajun_Spices" xml:space="preserve">
+    <value>L'épice cajun est un assaisonnement utilisé dans la cuisine cajun populaire parmi les immigrants acadiens du Canada en Louisiane. Il s'agit plutôt d'une cuisine de campagne, avec une prédominance d'ingrédients locaux. C'est la combinaison parfaite de saveurs épicées, piquantes, terreuses et herbacées.</value>
+  </data>
+  <data name="SpicesAndHerbs_Caraway_Seeds" xml:space="preserve">
+    <value>La plante cumin est originaire d’Asie occidentale, d’Europe et d’Afrique du Nord. Ses fruits sont en forme de croissant et mesurent environ 2 mm de longueur. Les fruits ont un goût piquant et sont souvent utilisés comme épice. Ils sont utilisés dans de nombreux desserts, currys et autres plats. Les fruits sont en forme de croissant avec cinq côtes horizontales.</value>
+  </data>
+  <data name="SpicesAndHerbs_Carom_Seeds" xml:space="preserve">
+    <value>Les graines d'Ajwain ou graines de carbone appartiennent à la famille du carvi, les Apiacées. Cette plante se trouve principalement dans les régions de l’Inde et du Pakistan et est utilisée comme épice. Les graines de carbone sont de forme ovoïde et de couleur kaki. Bien que semblables en apparence au thym, les graines de carbona sont plus aromatiques, amères et piquantes.</value>
+  </data>
+  <data name="SpicesAndHerbs_Cayenne" xml:space="preserve">
+    <value>Une épice épicée et piquante à base de piment - de couleur orange. Il est utilisé pour ajouter de la chaleur aux plats, notamment dans les cuisines coréenne et sichuanaise. Le poivre de Cayenne est un fruit de couleur rouge à maturité. Il est également connu sous le nom de poivre d’oiseau ou épice de Guinée.</value>
+  </data>
+  <data name="SpicesAndHerbs_Chives" xml:space="preserve">
+    <value>Appartenant à la famille des oignons, les oignons verts sont leur plus petit membre. Les minuscules bulbes ont des feuilles vertes longues, fines et creuses. La ciboulette a le goût et l'arôme des oignons, mais en petite quantité. Il est souvent cultivé en grappes. La ciboulette est cultivée pour ses feuilles, qui sont ajoutées comme arôme.</value>
+  </data>
+  <data name="SpicesAndHerbs_Cinnamon" xml:space="preserve">
+    <value>La cannelle a une longue histoire dans les domaines culinaires et médicinaux en raison de ses usages et usages variés. Il est de couleur brune et provient de l’écorce du cannelier. Il est disponible sous forme de structures tubulaires séchées appelées plumes et poudre broyée. Connue pour sa saveur aromatique et chaleureuse, la cannelle est un choix populaire parmi toutes les épices.</value>
+  </data>
+  <data name="SpicesAndHerbs_Cloves" xml:space="preserve">
+    <value>Les clous de girofle sont un type d’épice utilisé dans les cuisines du monde entier. Il s’agit d’un bouton floral séché parfumé qui serait originaire d’Indonésie. Il a un goût et une odeur forts et est donc principalement utilisé comme arôme dans les currys, les viandes ou les plats sucrés comme les tartes aux fruits.</value>
+  </data>
+  <data name="SpicesAndHerbs_Coriander_Leaves" xml:space="preserve">
+    <value>Feuilles vertes aromatiques principalement utilisées pour parfumer et garnir les plats. Appartenant à la même famille que la coriandre, les feuilles, les graines séchées et la poudre sont largement utilisées dans la cuisine indienne. Il y a toujours eu un débat pour savoir si la coriandre est plutôt une herbe ou une épice.</value>
+  </data>
+  <data name="SpicesAndHerbs_Coriander_Powder" xml:space="preserve">
+    <value>Moulue à partir de graines de coriandre, la poudre de coriandre est une épice incontournable de la cuisine indienne. Très peu de plats peuvent être préparés sans ajouter de poudre de coriandre. Il a un arôme et un goût agréables. La coriandre, à partir de laquelle est fabriquée la poudre, est l'une des épices les plus anciennes au monde.</value>
+  </data>
+  <data name="SpicesAndHerbs_Coriander_Seeds" xml:space="preserve">
+    <value>Les fruits secs obtenus à partir de la coriandre sont considérés comme des graines de coriandre. Dans la cuisine indienne, les graines sont appelées dhaniya et constituent une herbe essentielle parmi les épices. Avec une saveur aromatique et citronnée, les graines sont disponibles sous forme séchée et moulue.</value>
+  </data>
+  <data name="SpicesAndHerbs_Cumin_Seeds" xml:space="preserve">
+    <value>Graines allongées et brun foncé avec une saveur très distincte, les graines de cumin sont une épice très populaire utilisée pour leur arôme fort et leur goût amer et chaleureux. La méthode de consommation la plus courante est après la friture ou le rôtissage. La poudre de graines de cumin grillées est également largement utilisée.</value>
+  </data>
+  <data name="SpicesAndHerbs_Curry_Leaves" xml:space="preserve">
+    <value>Les feuilles aromatiques appartenant à la famille du neem sont aussi appelées « Meetha neem » car elles ne sont pas amères comme le neem. Ils sont très largement utilisés dans la cuisine indienne, notamment dans le sud et l’ouest. L'arbre à curry est originaire d'Inde. Les feuilles de curry sont des feuilles vertes avec un arôme fort et une saveur différente très caractéristique de l'Asie du Sud-Est.</value>
+  </data>
+  <data name="SpicesAndHerbs_Dill" xml:space="preserve">
+    <value>Également connue sous le nom de coriandre du Laos, c’est un ingrédient aromatique au goût subtilement sucré. Il a des feuilles ressemblant à des fougères, plumeuses et de couleur vert foncé. Ses graines sont un ingrédient ovale brun clair. Les feuilles, les graines et les fleurs jaunes de l’aneth sont comestibles.</value>
+  </data>
+  <data name="SpicesAndHerbs_Dried_Fenugreek_Leaves" xml:space="preserve">
+    <value>Les feuilles de fenugrec, communément appelées Kasuri Methi dans le sous-continent indien, sont une épice ancienne utilisée pour aromatiser divers plats. Les feuilles ont un goût amer, mais ajoutées à une recette, elles stimulent les papilles. Outre les feuilles séchées, les feuilles vertes et les graines sont également largement utilisées en cuisine.</value>
+  </data>
+  <data name="SpicesAndHerbs_Dry_Ginger_Powder" xml:space="preserve">
+    <value>Comme son nom l’indique, la poudre de gingembre sec est la forme broyée de racines de gingembre séchées. Il est principalement utilisé comme assaisonnement. Cependant, la forme en poudre n’a pas la forte saveur piquante des racines. Par conséquent, il est utilisé pour ajouter un goût doux aux plats.</value>
+  </data>
+  <data name="SpicesAndHerbs_Fennel" xml:space="preserve">
+    <value>La plante de fenouil est originaire des pays méditerranéens. En Inde, il est cultivé au Pendjab, au Maharashtra, au Gujarat et en Assam. Les fleurs de cette plante sont de couleur jaune et sont visibles au plus fort de l’été. Les graines de fenouil ont un goût sucré et un arôme de réglisse.</value>
+  </data>
+  <data name="SpicesAndHerbs_Fenugreek_Seeds" xml:space="preserve">
+    <value>Petites graines brunes au goût amer agréable et au fort arôme rappelant la poudre de curry. Les graines de fenugrec sont principalement utilisées sous forme torréfiée, ce qui rehausse leur goût piquant. En raison de leur goût prononcé, ils sont utilisés en petites quantités.</value>
+  </data>
+  <data name="SpicesAndHerbs_Five_Spice_Powder" xml:space="preserve">
+    <value>Appelée « poudre miracle » dans la cuisine chinoise, la poudre aux cinq épices est utilisée comme assaisonnement pour la viande et la volaille. La théorie derrière la composition de la poudre de cinq épices est le mélange de cinq goûts : salé, sucré, aigre, amer et épicé. On pense également que l’ajout de poudre aux cinq épices équilibre le piquant du plat sans créer d’inconfort après avoir mangé.</value>
+  </data>
+  <data name="SpicesAndHerbs_Galangal" xml:space="preserve">
+    <value>Le galanga est une herbe semblable au gingembre qui appartient à la famille des rhizomes. Également connu sous le nom de gingembre thaï ou bleu, il possède de nombreuses propriétés médicinales et culinaires. Il a une saveur plus forte que son parent le gingembre, avec un arôme d'agrumes et de terre. Le galanga est disponible sous forme de racine entière, coupée ou en poudre et s'utilise comme le gingembre.</value>
+  </data>
+  <data name="SpicesAndHerbs_Garam_Masala" xml:space="preserve">
+    <value>L'un des mélanges d'épices les plus utilisés dans la cuisine du nord de l'Inde, le garam masala se traduit littéralement par épice piquante et contient environ 5 à 6 types d'épices. Tous les ingrédients sont bien torréfiés et broyés sous forme de poudre et ajoutés à diverses spécialités pour leur donner un goût légèrement épicé et piquant.</value>
+  </data>
+  <data name="SpicesAndHerbs_Green_Cardamom" xml:space="preserve">
+    <value>La cardamome verte est une épice aromatique aux usages très larges. La plante a des tiges souterraines avec des racines feuillues, de grandes feuilles blanches ou vert pâle, des fruits vert pâle et des graines noires. L'épice a un arôme très chaleureux et un goût piquant qu'elle peut conserver très longtemps.</value>
+  </data>
+  <data name="SpicesAndHerbs_Herbs" xml:space="preserve">
+    <value>Feuilles de plantes telles que le laurier, l'origan, le basilic, le thym et la sauge. Ils peuvent être utilisés frais ou séchés. Ils sont différents des légumes car ils sont utilisés en petites quantités juste pour le goût. Ils sont utilisés pour assaisonner les plats principaux et les salades.</value>
+  </data>
+  <data name="SpicesAndHerbs_Kashmiri_Mirch" xml:space="preserve">
+    <value>Une couleur rouge vin riche, un aspect ridé et moins piquant est la définition du piment du Cachemire. Les piments du Cachemire sont plus petits, plus ronds et moins épicés mais confèrent une couleur rouge très vibrante aux aliments. Ils sont élevés pour leur grande capacité de rétention de la couleur, car ils teignent tout ce qui peut absorber la couleur rouge.</value>
+  </data>
+  <data name="SpicesAndHerbs_Lemongrass" xml:space="preserve">
+    <value>Également connue sous le nom de cymbopogon, la citronnelle est une grande plante herbacée vivace. Il pousse en Inde et en Asie tropicale. Il a une saveur citronnée et est utilisé dans les thés, les soupes et les currys. Il a un petit goût de gingembre avec une touche d'agrumes. Il est également utilisé dans les médecines ayurvédiques.</value>
+  </data>
+  <data name="SpicesAndHerbs_Mace" xml:space="preserve">
+    <value>Dérivée de la muscade, la noix de muscade est l'enveloppe extérieure séchée de la graine. Il a une belle teinte rouge jaunâtre et est très parfumé. Le goût est similaire à celui de la muscade, mais plus poivré. Il est disponible sous forme moulue et entière. La muscade entière séchée est préférable à la muscade moulue pour préserver la saveur.</value>
+  </data>
+  <data name="SpicesAndHerbs_Marjoram" xml:space="preserve">
+    <value>Herbe issue d'une plante semblable à la sauge, la marjolaine est couramment utilisée comme épice culinaire. Il est utilisé frais et séché dans les soupes, les omelettes, les ragoûts et les sauces. La marjolaine est souvent confondue avec son cousin l'origan car elles appartiennent à la même famille. Cependant, les deux plantes ont leur propre goût.</value>
+  </data>
+  <data name="SpicesAndHerbs_Mint_Leaves" xml:space="preserve">
+    <value>La menthe est un type d’herbe au goût rafraîchissant. Il peut être utilisé séché ou frais. Il a un goût sucré avec un arrière-goût frais. Il a une odeur forte et âcre. En Inde, on l’utilise pour faire du chutney à la menthe et du thé à la menthe. Les feuilles de menthe sont l’herbe la plus ancienne et la plus populaire cultivée dans le monde.</value>
+  </data>
+  <data name="SpicesAndHerbs_Mustard_Powder" xml:space="preserve">
+    <value>La poudre de moutarde est fabriquée à partir de graines de moutarde finement moulues. La poudre est un mélange de graines brunes et blanches additionnées de safran ou de curcuma pour la saveur et/ou la couleur. C'est un ingrédient populaire car sa saveur ne s'accumule pas et ne persiste pas avec l'utilisation. Mélangé à de l'eau ou du lait, il forme une pâte utilisée dans les sandwichs, wraps, burgers, etc. au goût acidulé.</value>
+  </data>
+  <data name="SpicesAndHerbs_Nasturtium" xml:space="preserve">
+    <value>La capucine est une plante dont les feuilles et les fleurs sont comestibles. On le cultive principalement au printemps, à la fin et au début de l'été. En hindi, on l'appelle « jalkumbhi ». On sait qu’il est originaire d’Amérique du Sud, où il était utilisé pour ses effets antibiotiques. Les feuilles et les fleurs fraîches et colorées de la capucine ont une saveur poivrée et conviennent parfaitement aux salades.</value>
+  </data>
+  <data name="SpicesAndHerbs_Nutmeg" xml:space="preserve">
+    <value>La noix de muscade est une graine ovoïde de l'arbre, mesurant environ 20 à 30 mm de long et pesant environ 5 à 10 g. Elle est une source de diverses épices et contribue à la production d'huiles essentielles et d'huile de muscade. Il est également utilisé à des fins médicinales et dans l’industrie du parfum.</value>
+  </data>
+  <data name="SpicesAndHerbs_Onion_Seeds" xml:space="preserve">
+    <value>Contrairement à leur nom, les graines d’oignons ne font pas partie de la famille des oignons. Les graines d'oignon, qui appartiennent à la même famille que le cumin noir, sont également appelées kalonji, graines d'oignon noir, cumin noir, etc. Les graines d'oignon contiennent 38 % d'huile, responsable de leur arôme.</value>
+  </data>
+  <data name="SpicesAndHerbs_Oregano" xml:space="preserve">
+    <value>L'origan est une herbe aromatique originaire du nord de l'Europe. Les feuilles et les graines sont largement utilisées dans les cuisines mexicaine et méditerranéenne. Elle est connue depuis l’Antiquité pour ses propriétés aromatiques et médicinales. Il est disponible sous forme fraîche et séchée.</value>
+  </data>
+  <data name="SpicesAndHerbs_Paprika" xml:space="preserve">
+    <value>Le poivron rouge séché, grossièrement moulu, peut être doux ou piquant. Le poivron utilisé pour le paprika est exceptionnellement riche en vitamine C. Il est principalement utilisé pour ajouter de la couleur aux plats car il a une saveur très douce. Il s'agit d'une poudre grossière rouge foncé. Il agit comme un colorant naturel.</value>
+  </data>
+  <data name="SpicesAndHerbs_Parsley" xml:space="preserve">
+    <value>Le persil est une herbe couramment utilisée pour la garniture, notamment dans la cuisine italienne. Il est originaire de la région centrale de la Méditerranée, où il est largement cultivé comme herbe, épice et légume. Dans de nombreux pays, les plats sont servis avec une petite quantité de persil frais haché saupoudré sur le dessus.</value>
+  </data>
+  <data name="SpicesAndHerbs_Raw_Mango_Powder" xml:space="preserve">
+    <value>Poudre à base de mangues vertes sèches et non mûres. Une fois récoltées, les mangues vertes sont pelées, tranchées finement et séchées au soleil. Ils peuvent être achetés entiers et moulus à la maison ou sous forme de poudre au marché. La poudre savoureuse, qui ajoute de l'acidité aux plats, est très appréciée dans les chaats.</value>
+  </data>
+  <data name="SpicesAndHerbs_Red_Chilli" xml:space="preserve">
+    <value>Le poivron rouge séché peut être utilisé entier ou en poudre. L'Inde est le plus grand producteur de piment rouge. Comme son nom l’indique, il est de couleur rouge et peut être consommé sous sa forme pure ou peut être broyé et transformé en poudre. C'est vraiment épicé et la chaleur intense est concentrée dans les graines.</value>
+  </data>
+  <data name="SpicesAndHerbs_Rock_Salt" xml:space="preserve">
+    <value>Le sel noir, également connu sous le nom de Kala Namak, est un type particulier de sel minéral indien. Contrairement à son nom, la couleur du sel n’est pas noire. Il a plutôt une teinte gris rosé. Cela est dû à la présence d’oligo-éléments et de fer. Son goût distinctif est dû à sa teneur en soufre, c'est pourquoi il n'est pas considéré comme une alternative au sel ordinaire, malgré sa teneur en sodium.</value>
+  </data>
+  <data name="SpicesAndHerbs_Rosemary" xml:space="preserve">
+    <value>Le romarin est une plante utilisée dans les aliments pour ajouter de la saveur ou de l'arôme. Originaire de la Méditerranée, le romarin possède des feuilles en forme d'aiguilles très parfumées. Les feuilles de romarin en forme d'aiguilles sont très aromatiques et ont un goût à la fois de citron et de pin.</value>
+  </data>
+  <data name="SpicesAndHerbs_Saffron" xml:space="preserve">
+    <value>Une épice aromatique unique fabriquée à partir des étamines séchées de la fleur de crocus. On le trouve sous forme de fils ou moulu et est connu pour ses propriétés médicinales. Les brindilles et les stigmates séchés de la fleur sont utilisés comme assaisonnement et colorant dans de nombreuses cuisines.</value>
+  </data>
+  <data name="SpicesAndHerbs_Sage" xml:space="preserve">
+    <value>C'est une herbe qui pousse en Méditerranée. Il a des feuilles gris-vert avec une odeur âcre et un goût mentholé. Il est principalement utilisé comme assaisonnement. Elle peut être consommée fraîche, séchée, entière ou en poudre, mais la sauge fraîche est considérée comme moins amère et donc plus désirable.</value>
+  </data>
+  <data name="SpicesAndHerbs_Salt" xml:space="preserve">
+    <value>Le sel est du chlorure de sodium non raffiné et un ingrédient essentiel dans la cuisine du monde entier. L’ingrédient le plus courant dans n’importe quelle recette est le sel. Quelle que soit la cuisine, le sel est un assaisonnement essentiel. Il est utilisé en quantités relativement constantes dans notre alimentation normale.</value>
+  </data>
+  <data name="SpicesAndHerbs_Star_Anise" xml:space="preserve">
+    <value>Comme son nom l’indique, l’anis étoilé est un fruit en forme d’étoile originaire du sud de la Chine. Il est de couleur brune et possède un arôme semblable à celui des graines de fenouil. Il a une forte saveur de réglisse, plus intense que l'anis ordinaire. Les fruits sont récoltés juste avant la récolte.</value>
+  </data>
+  <data name="SpicesAndHerbs_Thyme" xml:space="preserve">
+    <value>Herbe très populaire, elle possède des feuilles frisées blanc verdâtre avec un goût de menthe piquant et un arôme citronné. Il peut être acheté frais ou séché. Les feuilles sont gris-vert. La durée de conservation est de près d'une semaine et il est généralement disponible toute l'année. Le thym frais est généralement vendu en bottes de brins.</value>
+  </data>
+  <data name="SpicesAndHerbs_Tulsi" xml:space="preserve">
+    <value>Le tulsi ou basilic sacré est principalement utilisé comme remède à base de plantes pour de nombreuses affections courantes grâce à ses huiles essentielles. Le Tulsi est une herbe à feuilles vertes dotée d'excellentes propriétés aromatiques. En Asie du Sud, il est couramment utilisé en Ayurveda. En Inde, il est considéré comme sacré et est donc rarement ajouté aux plats.</value>
+  </data>
+  <data name="SpicesAndHerbs_Turmeric" xml:space="preserve">
+    <value>En Inde et dans de nombreuses autres cultures populaires, le curcuma est considéré comme un aliment pour la peau. C'est une poudre jaune vif à base de rhizomes de curcuma. Il est disponible sous forme de racine entière ou sous forme de poudre. L'Inde et le Pakistan sont les principaux producteurs de curcuma.</value>
+  </data>
+  <data name="SpicesAndHerbs_Yellow_Chillies" xml:space="preserve">
+    <value>Ce sont des poivrons jaunes séchés largement utilisés dans les foyers indiens pour la cuisine. Les poivrons jaunes sont utilisés comme épices pour rehausser la couleur et la saveur des plats. La variété de piment jaune est principalement cultivée dans les régions du Pendjab et du Sud-Cachemire.</value>
+  </data>
+  <data name="SugarAndSugarProducts_Brown_Sugar" xml:space="preserve">
+    <value>La cassonade est un produit du saccharose. Il est de couleur brune en raison de la présence de mélasse. Souvent, de la mélasse est ajoutée au sucre entièrement blanc pour le faire brunir. Ceci est fait pour réduire le coût de production du sucre. La première cristallisation de la canne à sucre produit du sucre roux naturel.</value>
+  </data>
+  <data name="SugarAndSugarProducts_Cane_Sugar" xml:space="preserve">
+    <value>Le sucre de canne est le sucre extrait de la canne à sucre, une plante tropicale à forte teneur en sucre. La canne, après avoir subi de nombreux processus et filtrations, est finalement utilisée comme édulcorant dans les boissons et les desserts. La canne représente 80 % du sucre produit.</value>
+  </data>
+  <data name="SugarAndSugarProducts_Caramel" xml:space="preserve">
+    <value>Une confiserie brun foncé produite à partir de n'importe quel type de sucre. C'est un liquide épais et sucré utilisé comme arôme, garniture et garniture pour une variété de recettes. Le mélange de sucre et d'eau doit être chauffé lentement à haute température jusqu'à ce qu'il se désintègre et acquière sa couleur et son goût caractéristiques.</value>
+  </data>
+  <data name="SugarAndSugarProducts_Castor_Sugar" xml:space="preserve">
+    <value>Le sucre en poudre ou en poudre est un sucre blanc à grains fins. On le trouve le plus souvent en Amérique du Nord et en Grande-Bretagne. Ce type de sucre est utilisé pour le glaçage, principalement en raison de sa capacité à se dissoudre rapidement. Il est produit en dissolvant et en purifiant le sucre brut contenu dans divers produits chimiques.</value>
+  </data>
+  <data name="SugarAndSugarProducts_Golden_Syrup" xml:space="preserve">
+    <value>Édulcorant liquide épais, de couleur dorée et semblable au miel avec une saveur riche, le sirop doré est très populaire dans les desserts européens. Il est produit en nettoyant la canne à sucre et est utilisé comme alternative au miel. Comme il a un goût très sucré, il doit être utilisé en plus petites quantités.</value>
+  </data>
+  <data name="SugarAndSugarProducts_Honey" xml:space="preserve">
+    <value>Le miel est un liquide épais, collant et sucré que les abeilles produisent en récoltant le nectar des fleurs. On l'utilise dans les desserts, les confitures, les boissons, etc. C'est une boisson énergisante naturelle et un booster immunitaire. Depuis 2010, la Chine est le plus grand producteur de miel au monde.</value>
+  </data>
+  <data name="SugarAndSugarProducts_Icing_Sugar" xml:space="preserve">
+    <value>Également connu sous le nom de sucre glace, il est obtenu en broyant du sucre blanc en une poudre très fine. Il est parfois mélangé à de la semoule de maïs pour une texture plus fine.</value>
+  </data>
+  <data name="SugarAndSugarProducts_Jaggery" xml:space="preserve">
+    <value>Le sucre en poudre est un ingrédient pratique utilisé dans la fabrication de gâteaux et de pâtisseries.</value>
+  </data>
+  <data name="SugarAndSugarProducts_Sugar" xml:space="preserve">
+    <value>Le sucre non raffiné, sous forme solide ou en poudre, est utilisé dans les desserts comme substitut du sucre. Sa couleur varie du brun doré au brun foncé. Il est utilisé dans les plats sucrés et salés partout en Inde. Il retient la chaleur et est idéal pour prévenir le rhume et la toux.</value>
+  </data>
+  <data name="SugarAndSugarProducts_Sugar_Candy" xml:space="preserve">
+    <value>Cristal sucré blanc, principalement issu de la canne à sucre ou de la betterave sucrière. Il peut également être fabriqué à partir de bois d’érable ou de palmiers. C'est un type de glucide qui a remplacé le miel traditionnel comme édulcorant. Il améliore le goût, la structure, la texture et l’apparence de nombreux aliments, notamment ceux cuits au four. Morceaux de sucre cristallisés, ces confiseries sont originaires de Perse et sont connues dans le monde entier sous le nom de sucre candi. En Inde, il est le plus souvent utilisé comme offrande sacrée à un dieu, mais ces cristaux sont également utilisés dans une grande variété de plats. Le Mishri mawa est la confiserie la plus connue et se déguste souvent avec de l'anis en fin de repas.</value>
+  </data>
+  <data name="Vegetables_Artichoke" xml:space="preserve">
+    <value>L’artichaut est en fait la fleur d’une plante appelée Cynara, principalement consommée en hiver. Il n'est pas cultivé en Inde mais est très répandu dans les pays européens. Les parties comestibles sont principalement constituées des parties inférieures charnues et d'une base appelée « cœur ».</value>
+  </data>
+  <data name="Vegetables_Ash_Gourd" xml:space="preserve">
+    <value>La courge citrouille, également connue sous le nom de melon d'hiver ou courge blanche, est un très gros fruit qui se consomme comme légume à maturité. Elle a une chair blanche et un goût sucré, mais à maturité, elle développe une surface cireuse, c'est pourquoi elle est également appelée courge cireuse.</value>
+  </data>
+  <data name="Vegetables_Asparagus" xml:space="preserve">
+    <value>C'est la jeune pousse d'une plante verte et blanche, couramment utilisée dans la cuisine européenne. C'est un légume de printemps. Seules les jeunes pousses d'asperges sont comestibles. Il est très faible en calories et pauvre en sodium. L'évasion se prépare de plusieurs manières, généralement à l'apéritif.</value>
+  </data>
+  <data name="Vegetables_Avocado" xml:space="preserve">
+    <value>L'avocat est une grosse baie qui ne contient qu'une seule graine. L'avocatier est originaire du centre du Mexique. C'est un fruit en forme de poire, d'environ 7 cm de large et 20 cm de long. Il est couramment utilisé dans la cuisine mexicaine. Une sauce mexicaine appelée guacamole est préparée à partir d'avocats.</value>
+  </data>
+  <data name="Vegetables_Baby_Corn" xml:space="preserve">
+    <value>Une version miniature du plant de maïs, très populaire dans la cuisine thaïlandaise et chinoise. Le maïs miniature est extrait du maïs lorsqu'il est très petit et immature. Il s’agit en fait d’un grain de maïs qui est récolté tôt, avant qu’il ne mûrisse. Il se consomme aussi bien cru que cuit.</value>
+  </data>
+  <data name="Vegetables_Bamboo_Shoot" xml:space="preserve">
+    <value>Le bambou est une plante à feuilles persistantes. L’intérieur comestible du bambou est appelé pousses de bambou. Les pousses ont une structure conique, de couleur jaune-crème, très tendre et légèrement sucrée. Ils peuvent avoir un goût légèrement amer, mais sont agréables à manger une fois cuits.</value>
+  </data>
+  <data name="Vegetables_Beetroot" xml:space="preserve">
+    <value>La betterave, également connue sous le nom de betterave de table ou betterave potagère, fait référence à l'une des variétés de betteraves cultivées. Comme son nom l’indique, il s’agit d’un légume-racine à la peau et à la chair violet foncé. Les betteraves sont utilisées dans une variété de plats sucrés et salés. Les betteraves se consomment différemment selon les régions.</value>
+  </data>
+  <data name="Vegetables_Bell_Pepper" xml:space="preserve">
+    <value>Disponibles dans de nombreuses couleurs vives, dont le rouge, le jaune, le vert, le brun chocolat, la vanille/blanc et le violet, ils sont également appelés poivrons ou simplement poivrons. C'est un gros poivre au goût doux et doux, pas du tout épicé. Cet ingrédient vient du Mexique.</value>
+  </data>
+  <data name="Vegetables_Bitter_Gourd" xml:space="preserve">
+    <value>Ce fruit comestible est l'un des légumes les plus amers. Le fruit allongé a un extérieur rugueux et une chair croustillante et aqueuse qui est amère. Lorsque le fruit est vert, la peau est comestible et le noyau est retiré avant la cuisson. La peau devient sucrée et rouge à maturité et est utilisée crue dans diverses salades.</value>
+  </data>
+  <data name="Vegetables_Bok_Choy" xml:space="preserve">
+    <value>Le bok choy a été cultivé pour la première fois en Chine. Le bok choy est utilisé dans de nombreux plats en raison de sa texture croquante, de son goût sucré et de sa valeur nutritionnelle. On l'appelle également chou. Les Chinois appellent généralement bok choy pak choy, ce qui signifie légume blanc. Le bok choy a des limbes de feuilles avec des tiges blanches succulentes et translucides.</value>
+  </data>
+  <data name="Vegetables_Bottle_Gourd" xml:space="preserve">
+    <value>Également connue sous le nom de citrouille blanche, courge, calebasse ou melon long, la gourde est un fruit à la peau vert clair et à la chair blanche contenant des graines. Ils se présentent sous différentes formes : épais et ronds, petits et en forme de bouteille, ou longs et fins. Les jeunes fruits sont consommés comme légume, tandis que les fruits mûrs peuvent être utilisés comme bouteille, pipe ou couvert.</value>
+  </data>
+  <data name="Vegetables_Broad_Beans" xml:space="preserve">
+    <value>Les fèves, ou fèves, sont des gousses dures et croquantes qui ont une forte saveur de haricot. Les fèves sont consommées lorsqu’elles sont encore jeunes et tendres. Ce sont des gousses plates et vertes. C'est une culture largement cultivée et également utilisée à des fins ornementales. Les fèves sont préparées en retirant la peau et en les blanchissant pendant une minute ou deux.</value>
+  </data>
+  <data name="Vegetables_Broccoli" xml:space="preserve">
+    <value>Le brocoli, également appelé « chou-fleur vert », fait partie de la famille des choux. Le mot « brocoli » vient du mot italien broccolo, qui signifie « la sommité fleurie du chou ». Il a de grands capitules semblables au chou-fleur; généralement vert.</value>
+  </data>
+  <data name="Vegetables_Cabbage" xml:space="preserve">
+    <value>Un légume rond, étagé et feuillu qui se consomme cru ou cuit. Il est de forme circulaire et comporte des couches de feuilles qui se chevauchent. Il est associé à des cultures comme le brocoli, le chou-fleur et le chou de Bruxelles et peut être vert, blanc ou violet. On sait que sa première culture a eu lieu en Europe.</value>
+  </data>
+  <data name="Vegetables_Capers" xml:space="preserve">
+    <value>Les petits boutons floraux verts comestibles de la plante capparis, les câpres, sont originaires de la région méditerranéenne. Ils sont chers car ils nécessitent beaucoup de main d’œuvre. Ils ont un goût aigre-salé et sont ajoutés à de nombreux plats salés pour ajouter une saveur particulière. Pour conserver les câpres, utilisez du sel, du vinaigre de vin, de la saumure ou de l'huile d'olive, les salés étant plus polyvalents.</value>
+  </data>
+  <data name="Vegetables_Capsicum" xml:space="preserve">
+    <value>C'est un type de poivron vert. C'est un légume gros et au goût faible. Il peut être consommé cru ou cuit. Ce poivron relativement doux est rond et brillant et est le plus communément appelé poivron en Inde et poivron ailleurs. Avant la cuisson, il est débarrassé des graines.</value>
+  </data>
+  <data name="Vegetables_Carrot" xml:space="preserve">
+    <value>Les carottes sont un type de racine pivotante qui pousse sous terre. C'est un légume racine, généralement de couleur orange. Cependant, il existe des variétés de carottes violettes, rouges, blanches et jaunes. La racine est la partie de la plante couramment consommée, crue ou cuite.</value>
+  </data>
+  <data name="Vegetables_Cauliflower" xml:space="preserve">
+    <value>Légume en forme de fleur, de couleur blanche avec des feuilles vertes. Toutes les inflorescences sont comestibles. Les feuilles vertes à la base sont également comestibles et ont une saveur plus forte. Le chou-fleur est disponible toute l'année.</value>
+  </data>
+  <data name="Vegetables_Celery" xml:space="preserve">
+    <value>Le céleri est un légume vert croquant qui est principalement utilisé pour ajouter de la saveur aux plats, notamment aux salades. Il existe en deux types : blanc et rouge. Le blanc a meilleur goût. Les tiges sont vendues fraîches sur le marché, sans racines et avec très peu de feuilles vertes. Seules les tiges, et non les feuilles, sont utilisées pour la cuisine.</value>
+  </data>
+  <data name="Vegetables_Cherry_Tomatoes" xml:space="preserve">
+    <value>Les tomates cerises sont une plus petite variété de tomates de jardin qui sont comparativement plus sucrées que les fruits plus gros. Leur taille varie du bout du pouce à une balle de golf. Ces variétés de tomates sont encore plus juteuses et contiennent de nombreux nutriments précieux.</value>
+  </data>
+  <data name="Vegetables_Cluster_Beans" xml:space="preserve">
+    <value>Le haricot d'Espagne est une légumineuse annuelle. Ces haricots sont des parents plus petits et plus plats des haricots verts ordinaires. Les haricots pommés sont très courants en Inde, notamment dans les régions de l'Andhra Pradesh et du Maharashtra. Les haricots verts restent frais pendant au moins quatre jours lorsqu'ils sont réfrigérés.</value>
+  </data>
+  <data name="Vegetables_Colocasia" xml:space="preserve">
+    <value>L'arbi ou taro est considérée comme la plante cultivée la plus ancienne au monde, cultivée en Asie depuis plus de dix mille ans. Ce sont des plantes herbacées vivaces. Elles ressemblent beaucoup aux pommes de terre. Il existe différentes variétés de colocasia comme l'eddo, le dasheen, l'oreille d'éléphant, etc.</value>
+  </data>
+  <data name="Vegetables_Corn" xml:space="preserve">
+    <value>Le maïs est un autre nom pour le maïs. Le maïs est utilisé partout dans le monde sous différentes formes, cuit ou cru. C'est du grain.</value>
+  </data>
+  <data name="Vegetables_Cucumber" xml:space="preserve">
+    <value>Un légume vert long et cylindrique largement utilisé dans les salades. En Inde, on le mélange avec du yaourt pour faire de la raita. Le concombre est originaire d'Inde, mais il est désormais cultivé dans d'autres pays. C'est le quatrième légume le plus répandu au monde.</value>
+  </data>
+  <data name="Vegetables_Drumstick" xml:space="preserve">
+    <value>Le pilon ou raifort est une plante haute et élancée cultivée pour sa verdure, ses fleurs et ses gousses nutritives. C'est un légume très répandu dans les foyers indiens. Les feuilles sont la partie la plus nutritive de la plante. Ils sont cuits et utilisés comme les épinards.</value>
+  </data>
+  <data name="Vegetables_Eggplant" xml:space="preserve">
+    <value>Également connu sous le nom de brinjal ou brinjal. Botaniquement, c'est un fruit largement utilisé dans la cuisine indienne. En fait, il est originaire du sous-continent indien. Il est de couleur violette avec une chair blanchâtre et ferme. Il est disponible en différentes tailles et se consomme cuit.</value>
+  </data>
+  <data name="Vegetables_Fenugreek" xml:space="preserve">
+    <value>Les feuilles fraîches ou séchées, au goût légèrement amer, sont largement utilisées dans les plats indiens. « Kasuri Methi » est sa forme séchée qui est également utilisée en cuisine. La plante a de petites feuilles rondes qui sont cuites et consommées comme plat principal.</value>
+  </data>
+  <data name="Vegetables_French_Beans" xml:space="preserve">
+    <value>Les haricots sont des gousses fines et longues contenant de minuscules graines. Légèrement plus petits que les haricots verts, les haricots sont tendres, sucrés et très croquants. Les haricots sont plus bénéfiques lorsqu’ils sont tendres, car ils deviennent détrempés à mesure qu’ils mûrissent. Les haricots nains et les haricots grimpants sont deux types de haricots.</value>
+  </data>
+  <data name="Vegetables_Garlic" xml:space="preserve">
+    <value>Un légume au goût très fort et piquant. L'oignon entier est divisé en plusieurs gousses qui sont pelées et la pulpe est utilisée entière, écrasée ou sous forme de pâte. Les gousses d'ail, extraites de la tête, sont la partie de l'ail la plus couramment consommée.</value>
+  </data>
+  <data name="Vegetables_Gherkins" xml:space="preserve">
+    <value>Les cornichons appartiennent à la même famille que les concombres, avec une saveur savoureuse et marinée. Ils ressemblent à des concombres miniatures. Ils sont généralement consommés après avoir été marinés avec du vinaigre et des herbes. Ils sont de couleur vert vif et mesurent de 4 à 8 cm de longueur. On sait qu'ils sont originaires des Antilles.</value>
+  </data>
+  <data name="Vegetables_Ginger" xml:space="preserve">
+    <value>Le gingembre est la racine d'une plante d'Asie du Sud-Est connue pour sa saveur piquante et son arôme épicé. La plante de gingembre produit également des fleurs jaunes qui ont une grande valeur esthétique. En tant qu'ingrédient, il a un goût piquant et est très couramment utilisé dans la cuisine indienne. Le gingembre est connu pour stimuler la production de salive, ce qui facilite la déglutition.</value>
+  </data>
+  <data name="Vegetables_Green_Chillies" xml:space="preserve">
+    <value>Épice sans laquelle la cuisine indienne serait incomplète, la variété de piment la plus couramment utilisée, outre le rouge, est le vert. Il s'utilise avec ou sans tiges, entières ou hachées, avec ou sans graines. Il s'utilise frais, séché, en poudre, mariné ou en sauces.</value>
+  </data>
+  <data name="Vegetables_Green_Peas" xml:space="preserve">
+    <value>Petites gousses vertes cultivées pendant les mois d'hiver, les pois verts sont un fruit sucré qui contient plusieurs pois dans chaque gousse. Bien que botaniquement il s’agisse d’un fruit, il est couramment consommé comme légume. Faire bouillir ou cuire à la vapeur le rend plus sucré.</value>
+  </data>
+  <data name="Vegetables_Horseradish" xml:space="preserve">
+    <value>Racine longue et grossière avec une structure en forme d'anneau et de minuscules racines suspendues à la racine principale. Son arôme est inconnu jusqu'à ce qu'il soit coupé, il a un fort arôme piquant. Il a un goût fort, piquant et piquant. Le raifort cuit fait référence au raifort râpé mélangé à du vinaigre, qui est une couleur crémeuse qui fonce avec le temps en perdant sa saveur.</value>
+  </data>
+  <data name="Vegetables_Jackfruit" xml:space="preserve">
+    <value>Le jacquier est un arbre originaire d'Asie du Sud-Est. Le fruit a une coquille verte épineuse avec une chair blanche à l'intérieur. Il est considéré comme le plus gros fruit poussant sur les arbres. Les graines de Furita sont extraites du fruit mûr puis séchées pour être utilisées dans les currys ou dans les collations frites.</value>
+  </data>
+  <data name="Vegetables_Jalapeno" xml:space="preserve">
+    <value>Il s’agit d’un piment vert foncé de taille moyenne, très piquant. Il provoque une sensation de brûlure dans la bouche lorsqu'il est consommé. Ils peuvent être marinés ou consommés crus. Les graines de jalapeño contiennent de la chaleur. En raison de leur combinaison unique de saveurs acides et piquantes, ces piments sont largement utilisés en cuisine.</value>
+  </data>
+  <data name="Vegetables_Kaffir_Lime" xml:space="preserve">
+    <value>Le combava est un agrume vert rugueux et bosselé originaire d’Asie du Sud-Est. Les feuilles sont également présentes dans de nombreuses recettes pour leurs propriétés aromatiques. Ils ont une curieuse forme en huit.</value>
+  </data>
+  <data name="Vegetables_Lady_Finger" xml:space="preserve">
+    <value>Un légume vert, oblong, effilé en pointe, avec de minuscules graines à l'intérieur. On l'appelle aussi gombo ou gumbo. Il est souvent utilisé comme ingrédient dans la cuisine indienne et pakistanaise. La plante entière est comestible et ses feuilles sont généralement consommées crues en salade.</value>
+  </data>
+  <data name="Vegetables_Leek" xml:space="preserve">
+    <value>Le poireau est un légume bulbeux au goût d’oignon doux et croquant. Il mûrit à l’automne et devient fin comme un doigt. Le plus souvent, il est utilisé pour ajouter de la saveur au bouillon. Il a un goût très doux et sucré. Il peut également être utilisé dans les sauces, les ragoûts ou les soupes.</value>
+  </data>
+  <data name="Vegetables_Lettuce" xml:space="preserve">
+    <value>La laitue est le plus souvent cultivée comme légume-feuille utilisé dans les salades et les sandwichs. Cette plante mesure environ 6 à 12 pouces de hauteur et ses feuilles sont principalement de couleur verdâtre. Sa durée de vie est de 65 à 130 jours de la plantation à la récolte. Ils atteignent leur apogée en été, tandis que leur croissance ralentit légèrement en hiver.</value>
+  </data>
+  <data name="Vegetables_Lotus_Stem" xml:space="preserve">
+    <value>Également connue sous le nom de racine de lotus, c'est un légume-racine originaire d'Inde et de Chine et largement utilisé dans la cuisine indienne, chinoise et japonaise. Ce sont les parties comestibles de la fleur de lotus, que l’on trouve sous l’eau. Il est généralement croquant, assez sucré et a une saveur semblable à celle de la châtaigne d'eau.</value>
+  </data>
+  <data name="Vegetables_Mushroom" xml:space="preserve">
+    <value>Les champignons sont des champignons charnus et comestibles qui constituent un aliment faible en calories et une bonne source de vitamine B. Les shiitake, les cèpes et les girolles sont certains types de champignons. La comestibilité des champignons dépend de l'absence d'effets toxiques pour l'homme et du goût et de l'arôme souhaités.</value>
+  </data>
+  <data name="Vegetables_Mustard_Leaves" xml:space="preserve">
+    <value>Les feuilles de moutarde ou feuilles de moutarde se trouvent dans les cuisines italienne, chinoise, japonaise, coréenne, africaine, pakistanaise et indienne. Le plus célèbre de la péninsule indienne est le sarsoon da saag, préparé à partir de feuilles de moutarde. Les feuilles de moutarde sont un légume d’hiver populaire.</value>
+  </data>
+  <data name="Vegetables_Onion" xml:space="preserve">
+    <value>Les oignons sont utilisés comme légume et sont cultivés partout dans le monde. Il a une odeur âcre et dans certaines communautés, les oignons sont considérés comme un aphrodisiaque. Les oignons hachés libèrent certains composés qui irritent les glandes des yeux, entraînant la production de larmes.</value>
+  </data>
+  <data name="Vegetables_Pigweed" xml:space="preserve">
+    <value>Également connu sous le nom de quartier de mouton ou chill bhaji, c'est un légume à feuilles de saison pendant les mois d'hiver. Les épinards sont un proche parent et les deux sont cuits de la même manière. Cette plante est plus cireuse et a une saveur plus terreuse. Bathua saag, raita et paranthas font partie de ses préparations.</value>
+  </data>
+  <data name="Vegetables_Pimiento" xml:space="preserve">
+    <value>Ils ressemblent à des versions plus petites de poivrons rouges ou de poivrons. On les appelle aussi poivrons cerises. On les utilise pour farcir les olives vertes. Ce sont essentiellement de petits poivrons rouges doux. Pimiento est le mot espagnol pour poivre. Il mesure généralement 7 à 10 cm de long et a une chair et un arôme sucrés.</value>
+  </data>
+  <data name="Vegetables_Plantain" xml:space="preserve">
+    <value>Ils appartiennent à la famille des bananes, mais sont plus durs et ne se consomment pas crus. Les bananes vertes ou non mûres sont utilisées en cuisine et constituent un aliment de base dans de nombreuses régions tropicales. Elles se consomment cuites à la vapeur ou frites et sont appelées pommes de terre des Caraïbes en raison de leur similitude de goût.</value>
+  </data>
+  <data name="Vegetables_Potatoes" xml:space="preserve">
+    <value>La pomme de terre, une culture féculente, est considérée comme le légume racine préféré au monde. C'est la partie renflée de la tige souterraine. C'est un légume polyvalent dans le monde entier, avec environ 5 000 variétés. Sa culture la plus ancienne se trouve au Pérou. La peau externe est généralement brune ou jaune et la chair est blanche ou jaune.</value>
+  </data>
+  <data name="Vegetables_Pumpkin" xml:space="preserve">
+    <value>Fruits ronds dont la couleur varie du jaune à l'orange. On dit que les citrouilles sont originaires d’Amérique du Nord. Une citrouille moyenne pèse environ 4 à 5 kg. Saviez-vous que la plus grosse citrouille jamais cultivée pesait 1 140 livres ? Les citrouilles sont cultivées dans la plupart des pays du monde, y compris aux États-Unis.</value>
+  </data>
+  <data name="Vegetables_Radish" xml:space="preserve">
+    <value>Le radis est un légume racine originaire d’Europe. Il est de couleur blanche et est principalement utilisé dans les salades, mais peut également être cuit à la vapeur. Il est principalement cultivé pendant la saison fraîche et a une saveur poivrée. Certains types de radis sont cultivés pour leurs graines et d’autres pour leur huile.</value>
+  </data>
+  <data name="Vegetables_Ridge_Gourd" xml:space="preserve">
+    <value>Un long légume à la peau striée vert foncé et à la chair blanche spongieuse avec des graines molles. Il est préparé en retirant la peau du légume puis en le cuisant. La courge côtelée est très populaire dans la cuisine indienne. Dans la cuisine chinoise, on l'appelle courge éponge.</value>
+  </data>
+  <data name="Vegetables_Rocket_Leaves" xml:space="preserve">
+    <value>Les feuilles de roquette, ou plus communément roquette ou roquette à salade, sont un légume à feuilles vertes nutritif. Les feuilles jeunes et tendres ont une saveur amère et poivrée, ce qui en fait principalement un légume à salade.</value>
+  </data>
+  <data name="Vegetables_Round_Gourd" xml:space="preserve">
+    <value>La petite citrouille ronde, également appelée bébé citrouille, est un légume cultivé pour ses fruits non mûrs. De couleur verte et de la taille d'une pomme, c'est un fruit légèrement acidulé qui peut se consommer cuit, confit ou mariné. Les citrouilles farcies cuites avec des épices sont également une recette préférée.</value>
+  </data>
+  <data name="Vegetables_Shallots" xml:space="preserve">
+    <value>Les petits oignons sont ainsi appelés car ils sont souvent utilisés dans la cuisine du sud de l'Inde. La pulpe est plus épaisse et a un goût légèrement sucré.</value>
+  </data>
+  <data name="Vegetables_Shiitake_Mushroom" xml:space="preserve">
+    <value>Les oignons de Madras, mieux connus dans le monde sous le nom d'échalotes, ressemblent aux petits oignons rouges mais ont une saveur plus sucrée et plus douce que les oignons.</value>
+  </data>
+  <data name="Vegetables_Snake_Beans" xml:space="preserve">
+    <value>Le champignon Shiitake est un champignon comestible originaire d’Asie de l’Est. Il s’agit d’un type de champignon chinois largement consommé en Chine. Non seulement ils sont consommés comme un mets délicat, mais ils sont également considérés comme un champignon médicinal dans certaines formes de médecine traditionnelle.</value>
+  </data>
+  <data name="Vegetables_Sorrel_Leaves" xml:space="preserve">
+    <value>Les haricots serpent sont de longues et fines gousses vertes au goût sucré et à la texture croquante. Les haricots serpent ont une texture similaire à celle des haricots verts, mais sont de couleur vert légèrement plus clair. Ils sont également appelés haricots longs, haricots bora, haricots longs de vache, haricots verts, haricots pois ou haricots longs chinois.</value>
+  </data>
+  <data name="Vegetables_Spinach" xml:space="preserve">
+    <value>L'oseille est un légume vert à feuilles originaire d'Europe. Il a un goût citronné piquant. C'est une plante herbacée vivace, également connue sous le nom d'oseille des jardins ou quai commun. Leur gamme de couleurs va du vert pâle au vert foncé. Elles ont une forme en forme de flèche, un peu comme des feuilles d’épinards.</value>
+  </data>
+  <data name="Vegetables_Spring_Onion" xml:space="preserve">
+    <value>C'est un légume à feuilles vertes brillantes et vibrantes originaire d'Asie centrale et du Sud-Ouest. On dit qu'il est originaire de Perse. Il est vendu en vrac, en bottes, en conserve ou surgelé. Les épinards frais sont préférés aux épinards en conserve en raison de la perte de nutriments.</value>
+  </data>
+  <data name="Vegetables_Sweet_Potatoes" xml:space="preserve">
+    <value>En Amérique, on l'appelle aussi oignon vert. Les oignons verts sont un type de légume-racine. Il a un bulbe racinaire blanc et charnu avec des feuilles vert clair. Le petit bulbe blanc et charnu possède une longue et fine pointe verte qui est également comestible. Les oignons verts ont une saveur légèrement plus douce que les oignons ordinaires, ce qui plaît aux papilles. Le Shakarkandi ou patate douce est un légume racine féculent au goût sucré. Ses feuilles et ses pousses sont comestibles, bien que les racines tubéreuses féculentes soient le plus souvent consommées. Vous pouvez le préparer à la maison comme collation ou comme dessert. Ils sont principalement consommés en les faisant bouillir et en ajoutant de la vinaigrette Dom.</value>
+  </data>
+  <data name="Vegetables_Turnip" xml:space="preserve">
+    <value>C'est un légume à racine pivotante bulbeuse blanche. Large à la base, il se rétrécit comme une queue au sommet. Les feuilles et les racines ont un goût piquant et amer, semblable à celui du chou cru et des radis. Les navets sont disponibles toute l'année, mais sont meilleurs à l'automne et au printemps lorsqu'ils sont petits et sucrés.</value>
+  </data>
+  <data name="Vegetables_Yam" xml:space="preserve">
+    <value>L’igname est une forme de tubercule féculent et comestible. C'est un légume polyvalent. Il a une peau brune et dure avec une chair féculente à l'intérieur. Les ignames sont cultivées pour leurs tubercules féculents dans des pays comme l’Afrique, l’Asie, l’Amérique latine, les Caraïbes et l’Océanie. La chair de l'igname est généralement de couleur blanche, ivoire, jaune ou violette et sa peau est blanc-rose ou brun-noir.</value>
+  </data>
+  <data name="Vegetables_Zucchini" xml:space="preserve">
+    <value>La courgette est une courge d'été populaire. Il est généralement de couleur vert foncé ou vert clair. Connus sous le nom de courgettes en français et courgettes en italien, ce sont des légumes sans levain. Il ressemble un peu à un concombre, mais il est généralement servi cuit. Il a un goût très doux et se mange avec la peau.</value>
+  </data>
 </root>
