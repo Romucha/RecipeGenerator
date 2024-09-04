@@ -52,7 +52,7 @@ namespace RecipeGenerator
             builder.Services.AddRecipeGeneratorUtility();
             builder.Services.AddRecipeGeneratorFunctionality();
             builder.Services.AddRecipeGeneratorViewModels();
-            builder.Services.AddRecipeGeneratorDatabase();
+            builder.Services.AddRecipeGeneratorDatabase(builder.Configuration);
             builder.Services.AddTransient<IMediaProviderService, MediaProviderService>();
 #if DEBUG
             builder.Services.AddBlazorWebViewDeveloperTools();

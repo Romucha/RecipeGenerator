@@ -13,7 +13,7 @@ namespace RecipeGenerator.Database.Extenstions
     public static class DatabaseExtensions
     {
         public static void ChangeDatabase(
-            this DbContext source)
+            this DbContext source, string culture)
         {
             try
             {
@@ -22,7 +22,7 @@ namespace RecipeGenerator.Database.Extenstions
                 {
                     Directory.CreateDirectory(dbPath);
                 }
-                source.Database.SetConnectionString($"Data Source=\"{dbPath}/Recipe.{CultureInfo.CurrentUICulture.Name}.db\"");
+                source.Database.SetConnectionString($"Data Source=\"{dbPath}/Recipe.{culture}.db\"");
             }
             catch
             {

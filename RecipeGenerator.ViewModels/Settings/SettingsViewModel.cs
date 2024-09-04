@@ -38,7 +38,7 @@ namespace RecipeGenerator.ViewModels.Settings
             try
             {
                 DynamicLocalizationService.SetCulture(culture);
-                dbContext.ChangeDatabase();
+                dbContext.ChangeDatabase(culture);
                 await Task.CompletedTask;
             }
             catch (Exception ex)
