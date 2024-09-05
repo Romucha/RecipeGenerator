@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using RecipeGenerator.Database.Context;
 using RecipeGenerator.Database.Extenstions;
+using RecipeGenerator.Database.Seeding.ApplicableIngredients;
 using RecipeGenerator.Localization.Services;
 
 namespace RecipeGenerator.ViewModels.Settings
@@ -10,14 +11,16 @@ namespace RecipeGenerator.ViewModels.Settings
     {
         private readonly ILogger<SettingsViewModel> logger;
         private readonly RecipeGeneratorDbContext dbContext;
+        private readonly ApplicableIngredientsSeeder applicableIngredientsSeeder;
 
         public DynamicLocalizationService DynamicLocalizationService { get; set; }
 
-        public SettingsViewModel(ILogger<SettingsViewModel> logger, DynamicLocalizationService dynamicLocalizationService, RecipeGeneratorDbContext dbContext)
+        public SettingsViewModel(ILogger<SettingsViewModel> logger, DynamicLocalizationService dynamicLocalizationService, RecipeGeneratorDbContext dbContext, ApplicableIngredientsSeeder applicableIngredientsSeeder)
         {
             this.logger = logger;
             this.DynamicLocalizationService = dynamicLocalizationService;
             this.dbContext = dbContext;
+            this.applicableIngredientsSeeder = applicableIngredientsSeeder;
         }
 
         public async Task InitializeAsync()
@@ -39,7 +42,7 @@ namespace RecipeGenerator.ViewModels.Settings
             {
                 DynamicLocalizationService.SetCulture(culture);
                 dbContext.ChangeDatabase(culture);
-                await Task.CompletedTask;
+                await applicableIngredientsSeeder.SeedDatabaseAsync();
             }
             catch (Exception ex)
             {

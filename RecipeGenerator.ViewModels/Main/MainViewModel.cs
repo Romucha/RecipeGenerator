@@ -37,25 +37,7 @@ namespace RecipeGenerator.ViewModels.Main
             try
             {
                 InProgress = true;
-                GetAllApplicableIngredientsResponse? getAllApplicableIngredientsResponse = await unitOfWork.ApplicableIngredientRepository.GetAllAsync(0, 0, null);
-                if (getAllApplicableIngredientsResponse != null)
-                {
-                    if (getAllApplicableIngredientsResponse.TotalCount == 0)
-                    {
-                        var ingredients = await applicableIngredientsSeeder.GetEntitiesAsync();
-                        ingredients.ToList().ForEach(async ent =>
-                        {
-                            await unitOfWork.ApplicableIngredientRepository.UpdateAsync(
-                                ent.Id, 
-                                ent.Name, 
-                                ent.Description, 
-                                ent.Link, 
-                                (IngredientType)ent.IngredientType, 
-                                ent.Image);
-                        });
-                        await unitOfWork.SaveChangesAsync();
-                    }
-                }
+                await applicableIngredientsSeeder.SeedDatabaseAsync();
             }
             catch (Exception ex)
             {

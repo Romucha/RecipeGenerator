@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.Logging;
+using RecipeGenerator.Database.Context;
 using RecipeGenerator.DTO.ApplicableIngredients.Responses;
 using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Resources.Descriptions.Ingredients;
@@ -17,14 +18,33 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
     {
         private readonly ILogger<ApplicableIngredientsSeeder> logger;
         private readonly IMapper mapper;
+        private readonly RecipeGeneratorDbContext dbContext;
 
-        public ApplicableIngredientsSeeder(ILogger<ApplicableIngredientsSeeder> logger, IMapper mapper)
+        public ApplicableIngredientsSeeder(ILogger<ApplicableIngredientsSeeder> logger, IMapper mapper, RecipeGeneratorDbContext dbContext)
         {
             this.logger = logger;
             this.mapper = mapper;
+            this.dbContext = dbContext;
         }
 
-        public async Task<IEnumerable<GetApplicableIngredientResponse>> GetEntitiesAsync()
+        public async Task SeedDatabaseAsync()
+        {
+            try
+            {
+                if (!dbContext.ApplicableIngredients.Any())
+                {
+                    var ingredients = await getEntitiesAsync();
+                    await dbContext.ApplicableIngredients.AddRangeAsync(ingredients);
+                    await dbContext.SaveChangesAsync();
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(SeedDatabaseAsync));
+            }
+        }
+
+        private async Task<IEnumerable<ApplicableIngredient>> getEntitiesAsync()
         {
             try
             {
@@ -85,12 +105,12 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
                     }
                 }
 
-                return applicableIngredients.Select(mapper.Map<GetApplicableIngredientResponse>).OrderBy(c => c.Name);
+                return applicableIngredients.OrderBy(c => c.Name);
             }
             catch (Exception ex)
             {
-                logger.LogError(ex, nameof(GetEntitiesAsync));
-                return Enumerable.Empty<GetApplicableIngredientResponse>();
+                logger.LogError(ex, nameof(getEntitiesAsync));
+                return Enumerable.Empty<ApplicableIngredient>();
             }
         }
 

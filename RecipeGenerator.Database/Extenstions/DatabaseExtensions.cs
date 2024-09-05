@@ -23,6 +23,7 @@ namespace RecipeGenerator.Database.Extenstions
                     Directory.CreateDirectory(dbPath);
                 }
                 source.Database.SetConnectionString($"Data Source=\"{dbPath}/Recipe.{culture}.db\"");
+                source.Database.EnsureCreated();
             }
             catch
             {
