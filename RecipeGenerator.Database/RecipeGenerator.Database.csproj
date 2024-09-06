@@ -12,6 +12,7 @@
     <ProjectReference Include="..\RecipeGenerator.Localization\RecipeGenerator.Localization.csproj" />
     <ProjectReference Include="..\RecipeGenerator.Models\RecipeGenerator.Models.csproj" />
     <ProjectReference Include="..\RecipeGenerator.Resources\RecipeGenerator.Resources.csproj" />
+    <ProjectReference Include="..\RecipeGenerator.Settings\RecipeGenerator.Settings.csproj" />
   </ItemGroup>
 
   <ItemGroup>
