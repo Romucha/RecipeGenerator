@@ -1,7 +1,7 @@
 ﻿using RecipeGenerator.Localization.Attributes;
 using System.ComponentModel.DataAnnotations;
 
-namespace RecipeGenerator.Localization.Models
+namespace RecipeGenerator.Localization.Models.Models
 {
     /// <summary>
     /// Options for configuration of localization.

@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using RecipeGenerator.Localization.Models;
+using RecipeGenerator.Localization.Models.Models;
 using System.Collections.ObjectModel;
 using System.Globalization;
 

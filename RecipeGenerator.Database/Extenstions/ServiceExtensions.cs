@@ -5,6 +5,7 @@ using RecipeGenerator.Database.Repositories;
 using RecipeGenerator.Database.Seeding.ApplicableIngredients;
 using RecipeGenerator.Database.UnitsOfWork;
 using RecipeGenerator.Localization.Models;
+using RecipeGenerator.Localization.Models.Models;
 using RecipeGenerator.Localization.Services;
 using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Models.Recipes;

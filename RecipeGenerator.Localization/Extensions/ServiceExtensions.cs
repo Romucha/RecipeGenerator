@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RecipeGenerator.Localization.Models;
+using RecipeGenerator.Localization.Models.Models;
 using RecipeGenerator.Localization.Services;
 
 namespace RecipeGenerator.Localization.Extensions

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Options;
 using RecipeGenerator.Localization.Models;
+using RecipeGenerator.Localization.Models.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
