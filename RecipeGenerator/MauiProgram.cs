@@ -39,7 +39,7 @@ namespace RecipeGenerator
 
             if (!File.Exists(configFile))
             {
-                File.WriteAllText(configFile, JsonSerializer.Serialize(DefaultAppSettings.Instance));
+                File.WriteAllText(configFile, JsonSerializer.Serialize(AppSettings.Default));
             }
 
             var config = new ConfigurationBuilder()

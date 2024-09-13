@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RecipeGenerator.Localization.Models\RecipeGenerator.Localization.Models.csproj" />
+  </ItemGroup>
+
 </Project>
