@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using RecipeGenerator.Settings;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.Core.EntityClient;
@@ -17,12 +18,7 @@ namespace RecipeGenerator.Database.Extenstions
         {
             try
             {
-                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "RecipeGenerator");
-                if (!Directory.Exists(dbPath))
-                {
-                    Directory.CreateDirectory(dbPath);
-                }
-                source.Database.SetConnectionString($"Data Source=\"{dbPath}/Recipe.{culture}.db\"");
+                source.Database.SetConnectionString($"Data Source=\"{Path.Combine(AppPaths.DataFolder, $"Recipe.{culture}.db")}\"");
                 source.Database.EnsureCreated();
             }
             catch

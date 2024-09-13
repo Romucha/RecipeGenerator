@@ -10,6 +10,7 @@ using RecipeGenerator.Localization.Services;
 using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Models.Recipes;
 using RecipeGenerator.Models.Steps;
+using RecipeGenerator.Settings;
 using System.Globalization;
 using System.Linq;
 
@@ -19,13 +20,8 @@ namespace RecipeGenerator.Database.Extenstions
     {
         public static void AddRecipeGeneratorDatabase(this IServiceCollection services, IConfigurationManager configurationManager)
         {
-            //TO-DO: move generation of db file into a separate method somewhere
-            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "RecipeGenerator");
-            if (!Directory.Exists(dbPath))
-            {
-                Directory.CreateDirectory(dbPath);
-            }
-            services.AddSqlite<RecipeGeneratorDbContext>($"Data Source=\"{dbPath}/Recipe.{configurationManager.GetSection(DynamicLocalizationOptions.Localization).GetValue<string>("CurrentCulture")}.db\"");
+            
+            services.AddSqlite<RecipeGeneratorDbContext>($"Data Source=\"{Path.Combine(AppPaths.DataFolder, $"Recipe.{configurationManager.GetSection(DynamicLocalizationOptions.Localization).GetValue<string>("CurrentCulture")}.db")}\"");
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<StepRepository>();

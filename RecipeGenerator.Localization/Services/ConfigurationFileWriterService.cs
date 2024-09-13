@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using RecipeGenerator.Localization.Models;
 using RecipeGenerator.Localization.Models.Models;
+using RecipeGenerator.Settings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace RecipeGenerator.Localization.Services
 {
     public class ConfigurationFileWriterService
     {
-        public static string FilePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "RecipeGenerator", "settings.json");
+        public static string FilePath = Path.Combine(AppPaths.DataFolder, "settings.json");
 
         private readonly ILogger<ConfigurationFileWriterService> logger;
 
