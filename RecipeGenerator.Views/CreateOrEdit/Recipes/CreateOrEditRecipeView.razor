@@ -39,7 +39,7 @@
         </div>
         <div style="display: flex; flex-direction: column">
             <div>Ingredients</div>
-            <div class="btn-primary" onclick="@ViewModel.AddAppliedIngredientAsync">Add ingredient</div>
+            <div class="btn-primary" onclick="@(async () => await ViewModel.AddAppliedIngredientAsync())">Add ingredient</div>
             <InputSelect @bind-Value="@ViewModel.SelectedIngredientId">
                 <option value="">
                     Select ingredient...
@@ -61,7 +61,7 @@
             }
         </div>
         <div style="display: flex; flex-direction: column">
-            <div class="btn-primary" onclick="@ViewModel.AddStepAsync">Add step</div>
+            <div class="btn-primary" onclick="@(async () => ViewModel.AddStepAsync())">Add step</div>
             @foreach (var s in ViewModel.Steps)
             {
                 <div style="display:flex; flex-direction:column">
@@ -83,7 +83,7 @@
                     <div>
                         <div class="btn-primary" onclick="@(async () => { await ViewModel.SelectStepPhotoAsync(s.Id); })">Select photo</div>
                     </div>
-                    @foreach (var photo in s.Photos)
+                    @foreach (var photo in s.Photos!)
                     {
                         <div>
                             <img src="@($"data:image/gif;base64,{photo}")" alt="@s.Name" />
