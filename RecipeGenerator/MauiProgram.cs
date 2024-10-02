@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using CommunityToolkit.Maui;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using NLog;
 using NLog.Extensions.Logging;
@@ -23,10 +24,12 @@ namespace RecipeGenerator
             var builder = MauiApp.CreateBuilder();
             builder
              .UseMauiApp<App>()
+             .UseMauiCommunityToolkit()
              .ConfigureFonts(fonts =>
              {
                  fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-             });
+                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+             }); ;
 
             builder.Services.AddMauiBlazorWebView();
 
