@@ -6,7 +6,9 @@ using RecipeGenerator.DTO.Recipes.Requests;
 using RecipeGenerator.DTO.Recipes.Responses;
 using RecipeGenerator.DTO.Steps.Responses;
 using RecipeGenerator.Models.Recipes;
+using RecipeGenerator.ViewModels.Services;
 using System.Collections.ObjectModel;
+using System.Text;
 
 namespace RecipeGenerator.ViewModels.Details.Recipes
 {
@@ -14,11 +16,13 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
     {
         private readonly ILogger<DetailsRecipeViewModel> logger;
         private readonly IUnitOfWork unitOfWork;
+        private readonly IFileSaverService fileSaverService;
 
-        public DetailsRecipeViewModel(ILogger<DetailsRecipeViewModel> logger, IUnitOfWork unitOfWork)
+        public DetailsRecipeViewModel(ILogger<DetailsRecipeViewModel> logger, IUnitOfWork unitOfWork, IFileSaverService fileSaverService)
         {
             this.logger = logger;
             this.unitOfWork = unitOfWork;
+            this.fileSaverService = fileSaverService;
         }
 
         private Guid id;
@@ -136,9 +140,23 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
             {
                 logger.LogError(ex, nameof(GetRecipeAsync));
             }
-            finally
+        }
+
+        public async Task SaveRecipeAsync()
+        {
+            try
             {
-                logger.LogInformation("Done.");
+                GetRecipeResponse? response = await unitOfWork.RecipeRepository.GetAsync(Id);
+                if (response != null)
+                {
+                    var jsonResponse = System.Text.Json.JsonSerializer.Serialize(response);
+                    var jsonBytes = Encoding.UTF8.GetBytes(jsonResponse);
+                    await fileSaverService.SaveFileAsync(jsonBytes);
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(SaveRecipeAsync));
             }
         }
     }

@@ -144,6 +144,9 @@
   <data name="Portions" xml:space="preserve">
     <value>Portions</value>
   </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
   <data name="Steps" xml:space="preserve">
     <value>Steps</value>
   </data>

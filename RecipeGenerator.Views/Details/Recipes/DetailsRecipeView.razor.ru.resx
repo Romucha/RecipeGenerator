@@ -144,6 +144,9 @@
   <data name="Portions" xml:space="preserve">
     <value>Порции</value>
   </data>
+  <data name="Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
   <data name="Steps" xml:space="preserve">
     <value>Шаги</value>
   </data>

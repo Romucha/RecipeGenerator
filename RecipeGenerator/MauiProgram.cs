@@ -57,6 +57,7 @@ namespace RecipeGenerator
             builder.Services.AddRecipeGeneratorViewModels();
             builder.Services.AddRecipeGeneratorDatabase(builder.Configuration);
             builder.Services.AddTransient<IMediaProviderService, MediaProviderService>();
+            builder.Services.AddTransient<IFileSaverService, FileSaverService>();
 #if DEBUG
             builder.Services.AddBlazorWebViewDeveloperTools();
             builder.Logging.AddDebug();
