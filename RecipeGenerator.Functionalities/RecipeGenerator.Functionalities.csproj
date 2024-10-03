@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\RecipeGenerator.DTO\RecipeGenerator.DTO.csproj" />
     <ProjectReference Include="..\RecipeGenerator.Models\RecipeGenerator.Models.csproj" />
+    <ProjectReference Include="..\RecipeGenerator.Settings\RecipeGenerator.Settings.csproj" />
     <ProjectReference Include="..\RecipeGenerator.Utility\RecipeGenerator.Utility.csproj" />
   </ItemGroup>
 

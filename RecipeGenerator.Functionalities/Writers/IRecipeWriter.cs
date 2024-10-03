@@ -1,4 +1,5 @@
-﻿using RecipeGenerator.Models.Recipes;
+﻿using RecipeGenerator.DTO.Recipes.Responses;
+using RecipeGenerator.Models.Recipes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace RecipeGenerator.Functionalities.Writers
 {
     public interface IRecipeWriter
     {
-        public void Write(Recipe recipe);
+        public void Write(GetRecipeResponse recipe);
     }
 }

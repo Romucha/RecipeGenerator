@@ -5,6 +5,7 @@ using RecipeGenerator.DTO.AppliedIngredients.Responses;
 using RecipeGenerator.DTO.Recipes.Requests;
 using RecipeGenerator.DTO.Recipes.Responses;
 using RecipeGenerator.DTO.Steps.Responses;
+using RecipeGenerator.Functionalities.Writers;
 using RecipeGenerator.Models.Recipes;
 using RecipeGenerator.ViewModels.Services;
 using System.Collections.ObjectModel;
@@ -17,12 +18,14 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
         private readonly ILogger<DetailsRecipeViewModel> logger;
         private readonly IUnitOfWork unitOfWork;
         private readonly IFileSaverService fileSaverService;
+        private readonly IRecipeWriter recipeWriter;
 
-        public DetailsRecipeViewModel(ILogger<DetailsRecipeViewModel> logger, IUnitOfWork unitOfWork, IFileSaverService fileSaverService)
+        public DetailsRecipeViewModel(ILogger<DetailsRecipeViewModel> logger, IUnitOfWork unitOfWork, IFileSaverService fileSaverService, IRecipeWriter recipeWriter)
         {
             this.logger = logger;
             this.unitOfWork = unitOfWork;
             this.fileSaverService = fileSaverService;
+            this.recipeWriter = recipeWriter;
         }
 
         private Guid id;
@@ -149,9 +152,10 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
                 GetRecipeResponse? response = await unitOfWork.RecipeRepository.GetAsync(Id);
                 if (response != null)
                 {
-                    var jsonResponse = System.Text.Json.JsonSerializer.Serialize(response);
-                    var jsonBytes = Encoding.UTF8.GetBytes(jsonResponse);
-                    await fileSaverService.SaveFileAsync(jsonBytes);
+                    //var jsonResponse = System.Text.Json.JsonSerializer.Serialize(response);
+                    //var jsonBytes = Encoding.UTF8.GetBytes(jsonResponse);
+                    //await fileSaverService.SaveFileAsync(jsonBytes);
+                    recipeWriter.Write(response);
                 }
             }
             catch (Exception ex)
