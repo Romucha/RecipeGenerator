@@ -149,18 +149,37 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
         {
             try
             {
-                GetRecipeResponse? response = await unitOfWork.RecipeRepository.GetAsync(Id);
-                if (response != null)
+                GetRecipeResponse? recipe = await unitOfWork.RecipeRepository.GetAsync(Id);
+                if (recipe != null)
                 {
-                    //var jsonResponse = System.Text.Json.JsonSerializer.Serialize(response);
-                    //var jsonBytes = Encoding.UTF8.GetBytes(jsonResponse);
-                    //await fileSaverService.SaveFileAsync(jsonBytes);
-                    recipeWriter.Write(response);
+                    var ingredientItems = (await unitOfWork.AppliedIngredientRepository.GetAllAsync(recipe.Id)).Items;
+                    var stepItems = (await unitOfWork.StepRepository.GetAllAsync(recipe.Id)).Items;
+
+                    var ingredients = GetAppliedIngredientsAsync(ingredientItems).ToBlockingEnumerable();
+                    var steps = GetStepsAsync(stepItems).ToBlockingEnumerable();
+                    
+                    recipeWriter.Write(recipe, ingredients, steps);
                 }
             }
             catch (Exception ex)
             {
                 logger.LogError(ex, nameof(SaveRecipeAsync));
+            }
+        }
+
+        private async IAsyncEnumerable<GetAppliedIngredientResponse?> GetAppliedIngredientsAsync(IEnumerable<GetAllAppliedIngredientsResponseItem> items)
+        {
+            foreach (var item in items)
+            {
+                yield return await unitOfWork.AppliedIngredientRepository.GetAsync(item.Id);
+            }
+        }
+
+        private async IAsyncEnumerable<GetStepResponse?> GetStepsAsync(IEnumerable<GetAllStepsResponseItem> items)
+        {
+            foreach (var item in items)
+            {
+                yield return await unitOfWork.StepRepository.GetAsync(item.Id);
             }
         }
     }
