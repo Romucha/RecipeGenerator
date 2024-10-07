@@ -29,20 +29,15 @@ namespace RecipeGenerator.Functionalities.Writers
 
             XGraphics gfx = XGraphics.FromPdfPage(page);
 
-            AddTitle(gfx, recipe.Name);
-            AddEstimatedTime(gfx, recipe.EstimatedTime);
-            AddPortions(gfx, recipe.Portions);
+            AddTitle(gfx, recipe.Name, page.Width, page.Height);
+            AddEstimatedTime(gfx, recipe.EstimatedTime, page.Width, page.Height);
+            AddPortions(gfx, recipe.Portions, page.Width, page.Height);
             AddImage(gfx, recipe.Image);
-            AddDescription(gfx, recipe.Description);
+            AddDescription(gfx, recipe.Description, page.Width, page.Height);
             AddIngredients(gfx, ingredients);
             AddSteps(gfx, steps);
 
-            XFont font = new XFont("Verdana", 20, XFontStyleEx.Italic);
-
-            gfx.DrawString(recipe.Description, font, XBrushes.Black, new XRect(new XPoint(0,0), new XPoint(page.Width, page.Height)), XStringFormats.TopLeft);
             
-            using MemoryStream memoryStream = new MemoryStream(recipe.Image, 0, recipe.Image.Length, false, true);
-            gfx.DrawImage(XImage.FromStream(memoryStream), new XPoint(0, 0));
 
             var saveDir = Path.Combine(AppPaths.DataFolder, "Saved recipes");
             if (!Directory.Exists(saveDir))
@@ -51,27 +46,39 @@ namespace RecipeGenerator.Functionalities.Writers
             document.Save(saveFile);
         }
 
-        private void AddTitle(XGraphics xGraphics, string title)
+        private void AddTitle(XGraphics xGraphics, string title, double width, double height)
         {
+            XFont font = new XFont("Verdana", 20, XFontStyleEx.Regular);
 
+            xGraphics.DrawString(title, font, XBrushes.Black, new XRect(new XPoint(0, 0), new XPoint(width, height)), XStringFormats.TopLeft);
         }
 
-        private void AddEstimatedTime(XGraphics xGraphics, TimeSpan estimatedTime)
+        private void AddEstimatedTime(XGraphics xGraphics, TimeSpan estimatedTime, double width, double height)
         {
+            XFont font = new XFont("Verdana", 14, XFontStyleEx.Italic);
 
+            xGraphics.DrawString(estimatedTime.TotalMinutes.ToString(), font, XBrushes.Black, new XRect(new XPoint(0, 0), new XPoint(width, height)), XStringFormats.TopLeft);
         }
 
-        private void AddPortions(XGraphics xGraphics, int portions)
+        private void AddPortions(XGraphics xGraphics, int portions, double width, double height)
         {
+            XFont font = new XFont("Verdana", 14, XFontStyleEx.Italic);
 
+            xGraphics.DrawString(portions.ToString(), font, XBrushes.Black, new XRect(new XPoint(0, 0), new XPoint(width, height)), XStringFormats.TopLeft);
         }
 
         private void AddImage(XGraphics xGraphics, byte[] image) 
         {
+            using MemoryStream memoryStream = new MemoryStream(image, 0, image.Length, false, true);
+            var loadedImage = XImage.FromStream(memoryStream);
+            xGraphics.DrawImage(loadedImage, 0, 0, loadedImage.PointHeight / 2, loadedImage.PointHeight / 2);
         }
 
-        private void AddDescription(XGraphics xGraphics, string description)
+        private void AddDescription(XGraphics xGraphics, string description, double width, double height)
         {
+            XFont font = new XFont("Verdana", 14, XFontStyleEx.Regular);
+
+            xGraphics.DrawString(description, font, XBrushes.Black, new XRect(new XPoint(0, 0), new XPoint(width, height)), XStringFormats.TopLeft);
         }
 
         private void AddIngredients(XGraphics xGraphics, IEnumerable<GetAppliedIngredientResponse?> ingredients)
