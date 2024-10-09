@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using NLog;
 using NLog.Extensions.Logging;
+using QuestPDF.Infrastructure;
 using RecipeGenerator.Database.Extenstions;
 using RecipeGenerator.Functionalities.Extensions;
 using RecipeGenerator.Localization.Extensions;
@@ -21,6 +22,7 @@ namespace RecipeGenerator
     {
         public static MauiApp CreateMauiApp()
         {
+            QuestPDF.Settings.License = LicenseType.Community;
             var builder = MauiApp.CreateBuilder();
             builder
              .UseMauiApp<App>()
