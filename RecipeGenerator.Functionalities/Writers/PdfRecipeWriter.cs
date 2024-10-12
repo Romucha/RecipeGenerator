@@ -1,4 +1,5 @@
-﻿using QuestPDF.Fluent;
+﻿using QuestPDF.Elements;
+using QuestPDF.Fluent;
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
 using RecipeGenerator.DTO.AppliedIngredients.Responses;
@@ -30,29 +31,22 @@ namespace RecipeGenerator.Functionalities.Writers
                 {
                     page.Size(PageSizes.A4);
                     page.Margin(2, Unit.Centimetre);
-                    page.PageColor(Colors.White);
-                    page.DefaultTextStyle(x => x.FontSize(20));
-
-                    page.Header()
-                        .Text(recipe.Name)
-                        .SemiBold().FontSize(36).FontColor(Colors.Blue.Medium);
+                    page.PageColor(Colors.Transparent);
+                    page.DefaultTextStyle(x => x.FontSize(14).FontFamily("Arial"));
 
                     page.Content()
                         .PaddingVertical(1, Unit.Centimetre)
                         .Column(x =>
                         {
-                            x.Spacing(20);
+                            x.Spacing(10);
+                            x.Item().Text(recipe.Name).FontSize(16).Bold();
+
+                            x.Item().Text($"Estimated time: {recipe.EstimatedTime} min").FontSize(12).Italic();
+                            x.Item().Text($"Portions: {recipe.Portions}").FontSize(12).Italic();
 
                             x.Item().Text(recipe.Description);
-                            x.Item().Image(recipe.Image);
-                        });
 
-                    page.Footer()
-                        .AlignCenter()
-                        .Text(x =>
-                        {
-                            x.Span("Page ");
-                            x.CurrentPageNumber();
+                            x.Item().Width(PageSizes.A8.Width).Image(recipe.Image).FitWidth();
                         });
                 });
             })
