@@ -155,7 +155,7 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                                 });
                             }
                         }
-                        Steps = new (steps);
+                        Steps = new(steps);
 
                         List<UpdateAppliedIngredientRequest> appliedIngredients = new();
                         foreach (var ai in (await unitOfWork.AppliedIngredientRepository.GetAllAsync(RecipeId)).Items)
@@ -177,13 +177,6 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                         return;
                     }
                 }
-
-                CreateRecipeResponse? createRecipeResponse = await unitOfWork.RecipeRepository.CreateAsync();
-                if (createRecipeResponse != null)
-                {
-                    RecipeId = createRecipeResponse.Id;
-                }
-                await unitOfWork.SaveChangesAsync();
             }
             catch (Exception ex)
             {
@@ -246,6 +239,15 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
         {
             try
             {   
+                if (RecipeId == default)
+                {
+                    CreateRecipeResponse? createRecipeResponse = await unitOfWork.RecipeRepository.CreateAsync();
+                    if (createRecipeResponse != null)
+                    {
+                        RecipeId = createRecipeResponse.Id;
+                    }
+                }
+
                 await unitOfWork.RecipeRepository.UpdateAsync(RecipeId, Name, Description, Image, CourseType, TimeSpan.FromMinutes(EstimatedTime), Portions);
 
                 foreach (var appliedIngredient in AppliedIngredients)
