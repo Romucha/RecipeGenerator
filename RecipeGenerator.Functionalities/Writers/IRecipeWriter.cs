@@ -12,6 +12,6 @@ namespace RecipeGenerator.Functionalities.Writers
 {
     public interface IRecipeWriter
     {
-        public void Write(GetRecipeResponse recipe, IEnumerable<GetAppliedIngredientResponse?> ingredients, IEnumerable<GetStepResponse?> steps);
+        public string Write(GetRecipeResponse recipe, IEnumerable<GetAppliedIngredientResponse?> ingredients, IEnumerable<GetStepResponse?> steps);
     }
 }

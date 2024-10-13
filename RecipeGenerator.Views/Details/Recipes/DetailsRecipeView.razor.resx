@@ -147,6 +147,9 @@
   <data name="Save" xml:space="preserve">
     <value>Save</value>
   </data>
+  <data name="Share" xml:space="preserve">
+    <value>Share</value>
+  </data>
   <data name="Steps" xml:space="preserve">
     <value>Steps</value>
   </data>

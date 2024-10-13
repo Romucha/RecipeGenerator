@@ -7,8 +7,10 @@ using RecipeGenerator.DTO.Recipes.Responses;
 using RecipeGenerator.DTO.Steps.Responses;
 using RecipeGenerator.Functionalities.Writers;
 using RecipeGenerator.Models.Recipes;
+using RecipeGenerator.Settings;
 using RecipeGenerator.ViewModels.Services;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Text;
 
 namespace RecipeGenerator.ViewModels.Details.Recipes
@@ -159,6 +161,34 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
                     var steps = GetStepsAsync(stepItems).ToBlockingEnumerable();
                     
                     recipeWriter.Write(recipe, ingredients, steps);
+                }
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, nameof(SaveRecipeAsync));
+            }
+        }
+
+        public async Task ShareRecipeAsync()
+        {
+            try
+            {
+                GetRecipeResponse? recipe = await unitOfWork.RecipeRepository.GetAsync(Id);
+                if (recipe != null)
+                {
+                    var ingredientItems = (await unitOfWork.AppliedIngredientRepository.GetAllAsync(recipe.Id)).Items;
+                    var stepItems = (await unitOfWork.StepRepository.GetAllAsync(recipe.Id)).Items;
+
+                    var ingredients = GetAppliedIngredientsAsync(ingredientItems).ToBlockingEnumerable();
+                    var steps = GetStepsAsync(stepItems).ToBlockingEnumerable();
+
+                    string path = recipeWriter.Write(recipe, ingredients, steps);
+
+                    Process.Start( new ProcessStartInfo()
+                    {
+                        UseShellExecute = true,
+                        FileName = $"https://t.me/share/url?file={Path.GetFileName(path)}"
+                    });
                 }
             }
             catch (Exception ex)

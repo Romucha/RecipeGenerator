@@ -1,6 +1,7 @@
 ﻿<div style="display: flex; flex-direction: column">
     <a class="btn-primary" href="@($"/edit-recipe/{ViewModel.Id}")">@StringLocalizer["EditRecipe"]</a>
     <button class="btn-primary" @onclick="@(async() => await ViewModel.SaveRecipeAsync())">@StringLocalizer["Save"]</button>
+    @* <button class="btn-primary" @onclick="@(async() => await ViewModel.ShareRecipeAsync())">@StringLocalizer["Share"]</button> *@
     <div style="display: flex; flex-direction: row">
         <div>
             @StringLocalizer[nameof(ViewModel.Name)]: 

@@ -30,5 +30,20 @@
                 return logFolder;
             }
         }
+
+        private static string savedRecipesFolder = Path.Combine(DataFolder, "Saved Recipes");
+
+        public static string SavedRecipesFolder
+        {
+            get
+            {
+                if (!Directory.Exists(savedRecipesFolder))
+                {
+                    Directory.CreateDirectory(savedRecipesFolder);
+                }
+
+                return savedRecipesFolder;
+            }
+        }
     }
 }
