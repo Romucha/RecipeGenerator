@@ -47,6 +47,21 @@ namespace RecipeGenerator.Functionalities.Writers
                             x.Item().Text(recipe.Description);
 
                             x.Item().Width(PageSizes.A8.Width).Image(recipe.Image).FitWidth();
+
+                            x.Item().Text("Ingredients").Bold();
+                            for (int i = 0; i < ingredients.Count(); ++i)
+                            {
+                                var ingr = ingredients.ElementAt(i);
+                                if (ingr != null)
+                                {
+                                    x.Item().Row(x =>
+                                    {
+                                        x.Spacing(5);
+                                        x.AutoItem().Text($"{i + 1}.");
+                                        x.RelativeItem().Text(ingr.Name);
+                                    });
+                                }
+                            }
                         });
                 });
             })
