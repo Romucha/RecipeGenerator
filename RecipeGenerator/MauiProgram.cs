@@ -1,4 +1,4 @@
-﻿using CommunityToolkit.Maui;
+﻿//using CommunityToolkit.Maui;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using NLog;
@@ -26,7 +26,7 @@ namespace RecipeGenerator
             var builder = MauiApp.CreateBuilder();
             builder
              .UseMauiApp<App>()
-             .UseMauiCommunityToolkit()
+             //.UseMauiCommunityToolkit()
              .ConfigureFonts(fonts =>
              {
                  fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

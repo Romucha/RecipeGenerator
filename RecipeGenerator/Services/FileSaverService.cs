@@ -1,5 +1,5 @@
-﻿using CommunityToolkit.Maui.Alerts;
-using CommunityToolkit.Maui.Storage;
+﻿//using CommunityToolkit.Maui.Alerts;
+//using CommunityToolkit.Maui.Storage;
 using Microsoft.Extensions.Logging;
 using RecipeGenerator.ViewModels.Services;
 using System;
@@ -22,18 +22,19 @@ namespace RecipeGenerator.Services
         {
             try
             {
-                using var stream = new MemoryStream(file);
-                var fileSaverResult = await FileSaver.Default.SaveAsync($"recipe-{DateTime.UtcNow:yyyy-MM-dd_hh-mm-ss}.pdf", stream, cancellationToken);
-                if (fileSaverResult.IsSuccessful)
-                {
-                    await Toast.Make($"The file was saved successfully to location: {fileSaverResult.FilePath}").Show(cancellationToken);
-                    return fileSaverResult.FilePath;
-                }
-                else
-                {
-                    await Toast.Make($"The file was not saved successfully with error: {fileSaverResult.Exception.Message}").Show(cancellationToken);
-                    return string.Empty;
-                }
+                //using var stream = new MemoryStream(file);
+                //var fileSaverResult = await FileSaver.Default.SaveAsync($"recipe-{DateTime.UtcNow:yyyy-MM-dd_hh-mm-ss}.pdf", stream, cancellationToken);
+                //if (fileSaverResult.IsSuccessful)
+                //{
+                //    await Toast.Make($"The file was saved successfully to location: {fileSaverResult.FilePath}").Show(cancellationToken);
+                //    return fileSaverResult.FilePath;
+                //}
+                //else
+                //{
+                //    await Toast.Make($"The file was not saved successfully with error: {fileSaverResult.Exception.Message}").Show(cancellationToken);
+                //    return string.Empty;
+                //}
+                return string.Empty;
             }
             catch (Exception ex)
             {
