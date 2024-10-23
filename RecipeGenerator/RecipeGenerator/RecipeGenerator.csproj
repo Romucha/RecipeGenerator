@@ -5,6 +5,7 @@
     <LangVersion>latest</LangVersion>
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
       <UseMaui>true</UseMaui>
+      <SkipValidateMauiImplicitPackageReferences>true</SkipValidateMauiImplicitPackageReferences>
   </PropertyGroup>
   
   <ItemGroup>
@@ -36,6 +37,22 @@
   </ItemGroup>
 
   <ItemGroup>
+    <AvaloniaResource Update="Assets\Localization\Resource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </AvaloniaResource>
+    <AvaloniaResource Update="Assets\Localization\Resource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </AvaloniaResource>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Update="Microsoft.Maui.Controls" Version="8.0.92" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.Maui.Controls.Compatibility" Version="8.0.92" />
   </ItemGroup>
 </Project>
