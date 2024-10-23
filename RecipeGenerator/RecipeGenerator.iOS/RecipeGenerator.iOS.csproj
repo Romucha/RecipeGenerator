@@ -4,10 +4,14 @@
     <TargetFramework>net8.0-ios</TargetFramework>
     <SupportedOSPlatformVersion>13.0</SupportedOSPlatformVersion>
     <Nullable>enable</Nullable>
+      <UseMaui>true</UseMaui>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Avalonia.iOS" Version="11.1.4" />
+    <PackageReference Include="Avalonia.Maui" Version="11.1.0" />
+    <PackageReference Include="Microsoft.Maui.Controls" Version="8.0.82" />
+    <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.82" />
   </ItemGroup>
 
   <ItemGroup>

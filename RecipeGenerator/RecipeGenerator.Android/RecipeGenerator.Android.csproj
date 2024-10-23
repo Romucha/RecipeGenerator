@@ -9,6 +9,7 @@
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
     <AndroidPackageFormat>apk</AndroidPackageFormat>
     <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+      <UseMaui>true</UseMaui>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,6 +20,9 @@
 
   <ItemGroup>
     <PackageReference Include="Avalonia.Android" Version="11.1.4" />
+    <PackageReference Include="Avalonia.Maui" Version="11.1.0" />
+    <PackageReference Include="Microsoft.Maui.Controls" Version="8.0.82" />
+    <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.82" />
     <PackageReference Include="Xamarin.AndroidX.Core.SplashScreen" Version="1.0.1.12" />
   </ItemGroup>
 

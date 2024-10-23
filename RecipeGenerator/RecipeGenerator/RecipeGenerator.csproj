@@ -4,6 +4,7 @@
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+      <UseMaui>true</UseMaui>
   </PropertyGroup>
   
   <ItemGroup>
@@ -12,10 +13,29 @@
 
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="11.1.4" />
+    <PackageReference Include="Avalonia.Maui" Version="11.1.0" />
     <PackageReference Include="Avalonia.Themes.Fluent" Version="11.1.4" />
     <PackageReference Include="Avalonia.Fonts.Inter" Version="11.1.4" />    
     <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
     <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.1.4" />
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\RecipeGenerator.Database\RecipeGenerator.Database.csproj" />
+    <ProjectReference Include="..\..\RecipeGenerator.DTO\RecipeGenerator.DTO.csproj" />
+    <ProjectReference Include="..\..\RecipeGenerator.Functionalities\RecipeGenerator.Functionalities.csproj" />
+    <ProjectReference Include="..\..\RecipeGenerator.Localization\RecipeGenerator.Localization.csproj" />
+    <ProjectReference Include="..\..\RecipeGenerator.Models\RecipeGenerator.Models.csproj" />
+    <ProjectReference Include="..\..\RecipeGenerator.Resources\RecipeGenerator.Resources.csproj" />
+    <ProjectReference Include="..\..\RecipeGenerator.Settings\RecipeGenerator.Settings.csproj" />
+    <ProjectReference Include="..\..\RecipeGenerator.Utility\RecipeGenerator.Utility.csproj" />
+    <ProjectReference Include="..\..\RecipeGenerator.ViewModels\RecipeGenerator.ViewModels.csproj" />
+    <ProjectReference Include="..\..\RecipeGenerator.Views\RecipeGenerator.Views.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.Maui.Controls" Version="8.0.92" />
   </ItemGroup>
 </Project>
