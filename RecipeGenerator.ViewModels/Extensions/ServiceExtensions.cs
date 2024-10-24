@@ -57,6 +57,7 @@ namespace RecipeGenerator.ViewModels.Extensions
         private static void main(IServiceCollection services)
         {
             services.AddTransient<MainViewModel>();
+            services.AddSingleton<ProgressViewModel>();
         }
 
         private static void settings(IServiceCollection services)

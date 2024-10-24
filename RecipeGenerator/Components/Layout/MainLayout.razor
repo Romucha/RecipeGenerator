@@ -1,7 +1,7 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="page">
-    @if (ViewModel.InProgress)
+    @if (ProgressViewModel.InProgress)
     {
         <div class="accordion-header">@StringLocalizer["InitializingIngredients"]</div>
     }

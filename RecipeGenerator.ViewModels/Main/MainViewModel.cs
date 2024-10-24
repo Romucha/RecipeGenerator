@@ -17,26 +17,21 @@ namespace RecipeGenerator.ViewModels.Main
         private readonly ApplicableIngredientsSeeder applicableIngredientsSeeder;
         private readonly IUnitOfWork unitOfWork;
         private readonly ILogger<MainViewModel> logger;
+        private readonly ProgressViewModel progressViewModel;
 
-        private bool inProgress = false;
-        public bool InProgress
-        {
-            get => inProgress; 
-            set => SetProperty(ref inProgress, value);
-        }
-
-        public MainViewModel(ApplicableIngredientsSeeder applicableIngredientsSeeder, IUnitOfWork unitOfWork, ILogger<MainViewModel> logger)
+        public MainViewModel(ApplicableIngredientsSeeder applicableIngredientsSeeder, IUnitOfWork unitOfWork, ILogger<MainViewModel> logger, ProgressViewModel progressViewModel)
         {
             this.applicableIngredientsSeeder = applicableIngredientsSeeder;
             this.unitOfWork = unitOfWork;
             this.logger = logger;
+            this.progressViewModel = progressViewModel;
         }
 
         public async Task InitializeAsync()
         {
             try
             {
-                InProgress = true;
+                progressViewModel.InProgress = true;
                 await applicableIngredientsSeeder.SeedDatabaseAsync();
             }
             catch (Exception ex)
@@ -46,7 +41,7 @@ namespace RecipeGenerator.ViewModels.Main
             }
             finally
             {
-                InProgress = false;
+                progressViewModel.InProgress = false;
             }
         }
     }

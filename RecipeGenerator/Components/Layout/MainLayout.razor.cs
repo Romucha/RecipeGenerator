@@ -16,6 +16,9 @@ namespace RecipeGenerator.Components.Layout
         public MainViewModel ViewModel { get; set; } = default!;
 
         [Inject]
+        public ProgressViewModel ProgressViewModel { get; set; } = default!;
+
+        [Inject]
         public IStringLocalizer<MainLayout> StringLocalizer { get; set; } = default!;
 
         [Inject]
@@ -27,6 +30,7 @@ namespace RecipeGenerator.Components.Layout
             DynamicLocalizationService.Initialize();
 
             ViewModel.PropertyChanged += (sender, e) => StateHasChanged();
+            ProgressViewModel.PropertyChanged += (sender, e) => StateHasChanged();
             await ViewModel.InitializeAsync();
         }
     }
