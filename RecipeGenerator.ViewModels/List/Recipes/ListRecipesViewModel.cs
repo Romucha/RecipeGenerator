@@ -106,6 +106,8 @@ public class ListRecipesViewModel : ObservableObject
                 {
                     await unitOfWork.SaveChangesAsync();
                 }
+
+                await GetRecipesAsync();
             }
         }
         catch (Exception ex)
