@@ -245,6 +245,15 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                     if (createRecipeResponse != null)
                     {
                         RecipeId = createRecipeResponse.Id;
+                        await unitOfWork.SaveChangesAsync();
+                        foreach (var ingredient in this.AppliedIngredients)
+                        {
+                            ingredient.RecipeId = RecipeId;
+                        }
+                        foreach (var step in this.Steps)
+                        {
+                            step.RecipeId = RecipeId;
+                        }
                     }
                 }
 
