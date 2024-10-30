@@ -2,7 +2,6 @@
 using RecipeGenerator.Functionalities.Factories.Ingredients;
 using RecipeGenerator.Functionalities.Factories.Recipes;
 using RecipeGenerator.Functionalities.Factories.Steps;
-using RecipeGenerator.Functionalities.Writers;
 
 namespace RecipeGenerator.Functionalities.Extensions
 {
@@ -13,7 +12,6 @@ namespace RecipeGenerator.Functionalities.Extensions
             services.AddTransient<ApplicableIngredientFactory>();
             services.AddTransient<RecipeFactory>();
             services.AddTransient<StepFactory>();
-            services.AddTransient<IRecipeWriter, PdfRecipeWriter>();
         }
     }
 }

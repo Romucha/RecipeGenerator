@@ -5,7 +5,6 @@ using RecipeGenerator.DTO.AppliedIngredients.Responses;
 using RecipeGenerator.DTO.Recipes.Requests;
 using RecipeGenerator.DTO.Recipes.Responses;
 using RecipeGenerator.DTO.Steps.Responses;
-using RecipeGenerator.Functionalities.Writers;
 using RecipeGenerator.Models.Recipes;
 using RecipeGenerator.Settings;
 using RecipeGenerator.ViewModels.Services;
@@ -21,14 +20,12 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
         private readonly ILogger<DetailsRecipeViewModel> logger;
         private readonly IUnitOfWork unitOfWork;
         private readonly IFileSaverService fileSaverService;
-        private readonly IRecipeWriter recipeWriter;
 
-        public DetailsRecipeViewModel(ILogger<DetailsRecipeViewModel> logger, IUnitOfWork unitOfWork, IFileSaverService fileSaverService, IRecipeWriter recipeWriter)
+        public DetailsRecipeViewModel(ILogger<DetailsRecipeViewModel> logger, IUnitOfWork unitOfWork, IFileSaverService fileSaverService)
         {
             this.logger = logger;
             this.unitOfWork = unitOfWork;
             this.fileSaverService = fileSaverService;
-            this.recipeWriter = recipeWriter;
         }
 
         private Guid id;
@@ -186,17 +183,6 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
 
         private async Task<string> WriteRecipeAsync()
         {
-            GetRecipeResponse? recipe = await unitOfWork.RecipeRepository.GetAsync(Id);
-            if (recipe != null)
-            {
-                var ingredientItems = (await unitOfWork.AppliedIngredientRepository.GetAllAsync(recipe.Id)).Items;
-                var stepItems = (await unitOfWork.StepRepository.GetAllAsync(recipe.Id)).Items;
-
-                var ingredients = GetAppliedIngredientsAsync(ingredientItems).ToBlockingEnumerable();
-                var steps = GetStepsAsync(stepItems).ToBlockingEnumerable();
-
-                return recipeWriter.Write(recipe, ingredients, steps);
-            }
             return string.Empty;
         }
     }
