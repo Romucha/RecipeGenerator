@@ -2,23 +2,23 @@
     <DataAnnotationsValidator />
     <div style="display: flex; flex-direction: column">
         <div>
-            @nameof(ViewModel.Name)
+            @StringLocalizer[nameof(ViewModel.Name)]
             <InputText @bind-Value="@ViewModel.Name"/>
         </div>
         <div>
-            @nameof(ViewModel.Description)
+            @StringLocalizer[nameof(ViewModel.Description)]
             <InputText @bind-Value="@ViewModel.Description"/>
         </div>
         <div>
-            @nameof(ViewModel.Portions)
+            @StringLocalizer[nameof(ViewModel.Portions)]
             <InputNumber @bind-Value="@ViewModel.Portions"/>
         </div>
         <div>
-            @nameof(ViewModel.EstimatedTime)
+            @StringLocalizer[nameof(ViewModel.EstimatedTime)]
             <InputNumber @bind-Value="@ViewModel.EstimatedTime"/>
         </div>
         <div>
-            @nameof(ViewModel.CourseType)
+            @StringLocalizer[nameof(ViewModel.CourseType)]
             <InputSelect @bind-Value="@ViewModel.CourseType">
                 @foreach (var c in Enum.GetValues(typeof(RecipeGenerator.Models.Recipes.Course)))
                 {
@@ -28,21 +28,21 @@
         </div>
         <div style="display: flex; flex-direction: column">
             <div>
-                <div class="btn-primary" onclick="@(async () => { await ViewModel.TakeRecipePhotoAsync(); })">Take photo</div>
+                <div class="btn-primary" onclick="@(async () => { await ViewModel.TakeRecipePhotoAsync(); })">@StringLocalizer["TakePhoto"]</div>
             </div>
             <div>
-                <div class="btn-primary" onclick="@(async () => { await ViewModel.SelectRecipePhotoAsync(); })">Select photo</div>
+                <div class="btn-primary" onclick="@(async () => { await ViewModel.SelectRecipePhotoAsync(); })">@StringLocalizer["SelectPhoto"]</div>
             </div>
             <div>
                 <img src="@($"data:image/gif;base64,{ViewModel.Image}")" alt="@ViewModel.Name" />
             </div>
         </div>
         <div style="display: flex; flex-direction: column">
-            <div>Ingredients</div>
-            <div class="btn-primary" onclick="@(async () => await ViewModel.AddAppliedIngredientAsync())">Add ingredient</div>
+            <div>@StringLocalizer["Ingredients"]</div>
+            <div class="btn-primary" onclick="@(async () => await ViewModel.AddAppliedIngredientAsync())">@StringLocalizer["AddIngredient"]</div>
             <InputSelect @bind-Value="@ViewModel.SelectedIngredientId">
                 <option value="">
-                    Select ingredient...
+                    @StringLocalizer["SelectIngredient"]
                 </option>
                 @foreach (var ingredient in ViewModel.ApplicableIngredients)
                 {
@@ -50,38 +50,38 @@
                 }
             </InputSelect>
         </div>
-        <div>Selected ingredients</div>
+        <div>@StringLocalizer["SelectedIngredients"]</div>
         <div>
             @foreach (var appliedIngredient in ViewModel.AppliedIngredients)
             {
                 <div style="margin: 5px; outline: solid 5px;">
                     <div>@appliedIngredient.Name</div>
-                    <div class="btn-secondary" onclick="@(async () => { await ViewModel.DeleteAppliedIngredientAsync(appliedIngredient.Id); })">Delete ingredient</div>
+                    <div class="btn-secondary" onclick="@(async () => { await ViewModel.DeleteAppliedIngredientAsync(appliedIngredient.Id); })">@StringLocalizer["DeleteIngredient"]</div>
                 </div>
             }
         </div>
         <div style="display: flex; flex-direction: column">
-            <div class="btn-primary" onclick="@(async () => ViewModel.AddStepAsync())">Add step</div>
+            <div class="btn-primary" onclick="@(async () => ViewModel.AddStepAsync())">@StringLocalizer["AddStep"]</div>
             @foreach (var s in ViewModel.Steps)
             {
                 <div style="display:flex; flex-direction:column">
-                    <div>Index: @s.Index</div>
+                    <div>@StringLocalizer["Index"]: @s.Index</div>
                     <div>
-                        @nameof(s.Name)
+                        @StringLocalizer[nameof(s.Name)]
                         <InputText @bind-Value="@s.Name"/>
                     </div>
                     <div>
-                        @nameof(s.Description)
+                        @StringLocalizer[nameof(s.Description)]
                         <InputText @bind-Value="@s.Description"/>
                     </div>
-                    <div class="btn-primary" onclick="@(async () => { await ViewModel.DeleteStepAsync(s.Id); })">Delete step</div>
+                    <div class="btn-primary" onclick="@(async () => { await ViewModel.DeleteStepAsync(s.Id); })">@StringLocalizer["DeleteStep"]</div>
                 </div>
                 <div style="display: flex; flex-direction: column">
                     <div>
-                        <div class="btn-primary" onclick="@(async () => { await ViewModel.TakeStepPhotoAsync(s.Id); })">Take photo</div>
+                        <div class="btn-primary" onclick="@(async () => { await ViewModel.TakeStepPhotoAsync(s.Id); })">@StringLocalizer["TakePhoto"]</div>
                     </div>
                     <div>
-                        <div class="btn-primary" onclick="@(async () => { await ViewModel.SelectStepPhotoAsync(s.Id); })">Select photo</div>
+                        <div class="btn-primary" onclick="@(async () => { await ViewModel.SelectStepPhotoAsync(s.Id); })">@StringLocalizer["SelectPhoto"]</div>
                     </div>
                     @foreach (var photo in s.Photos!)
                     {
@@ -93,6 +93,6 @@
             }
         </div>
     </div>
-    <button type="submit">Save</button>
-    <button type="reset">Cancel</button>
+    <button type="submit">@StringLocalizer["Save"]</button>
+    <button type="reset">@StringLocalizer["Cancel"]</button>
 </EditForm>

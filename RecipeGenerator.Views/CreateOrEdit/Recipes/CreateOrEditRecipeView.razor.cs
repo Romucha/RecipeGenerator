@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components;
+using Microsoft.Extensions.Localization;
 using RecipeGenerator.ViewModels.CreateOrEdit.Recipes;
 
 namespace RecipeGenerator.Views.CreateOrEdit.Recipes
@@ -10,6 +11,9 @@ namespace RecipeGenerator.Views.CreateOrEdit.Recipes
 
         [Parameter]
         public Guid? RecipeId { get; set; }
+
+        [Inject]
+        public IStringLocalizer<CreateOrEditRecipeView> StringLocalizer { get; set; } = default!;
 
         protected override async Task OnInitializedAsync()
         {
