@@ -12,7 +12,7 @@
                 @foreach (var c in ViewModel.DynamicLocalizationService.Cultures)
                 {
                     <option value="@c.Name">
-                        @c
+                        @System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(c.NativeName)
                     </option>
                 }
             </InputSelect>
