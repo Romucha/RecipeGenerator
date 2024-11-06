@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 using RecipeGenerator.Database.UnitsOfWork;
 using RecipeGenerator.DTO.ApplicableIngredients.Requests;
@@ -22,14 +23,16 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
         private readonly ILogger<CreateOrEditRecipeViewModel> logger;
         private readonly IUnitOfWork unitOfWork;
         private readonly IMediaProviderService mediaProviderService;
+        private readonly IStringLocalizer<Course> stringLocalizer;
 
         private Guid RecipeId;
 
-        public CreateOrEditRecipeViewModel(ILogger<CreateOrEditRecipeViewModel> logger, IUnitOfWork unitOfWork, IMediaProviderService mediaProviderService)
+        public CreateOrEditRecipeViewModel(ILogger<CreateOrEditRecipeViewModel> logger, IUnitOfWork unitOfWork, IMediaProviderService mediaProviderService, IStringLocalizer<Course> stringLocalizer)
         {
             this.logger = logger;
             this.unitOfWork = unitOfWork;
             this.mediaProviderService = mediaProviderService;
+            this.stringLocalizer = stringLocalizer;
         }
 
         private string name = default!;
@@ -106,6 +109,13 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             set => SetProperty(ref applicableIngredients, value);
         }
 
+        private List<CourseTypeViewModel> courseTypes = new();
+        public List<CourseTypeViewModel> CourseTypes
+        {
+            get => courseTypes;
+            set => SetProperty(ref courseTypes, value);
+        }
+
         public Guid SelectedIngredientId { get; set; } = default!;
 
         /*
@@ -124,6 +134,7 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
         {
             try
             {
+                GetCourseTypes();
                 await GetApplicableIngredientsAsync();
                 if (id != null)
                 {
@@ -182,6 +193,11 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             {
                 logger.LogError(ex, nameof(InitializeAsync));
             }
+        }
+
+        private void GetCourseTypes()
+        {
+            CourseTypes = Enum.GetValues<Course>().Select(c => new CourseTypeViewModel(stringLocalizer, c)).OrderBy(c => c.Name).ToList();
         }
 
         private async Task GetApplicableIngredientsAsync()

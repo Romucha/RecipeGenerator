@@ -20,9 +20,9 @@
         <div>
             @StringLocalizer[nameof(ViewModel.CourseType)]
             <InputSelect @bind-Value="@ViewModel.CourseType">
-                @foreach (var c in Enum.GetValues(typeof(RecipeGenerator.Models.Recipes.Course)))
+                @foreach (var c in ViewModel.CourseTypes)
                 {
-                    <option value="@c">@c</option>
+                    <option value="@c.Course">@c.Name</option>
                 }
             </InputSelect>
         </div>
