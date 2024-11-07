@@ -1,4 +1,4 @@
-﻿<EditForm Model="@ViewModel" OnSubmit="ViewModel.CreateAsync">
+﻿<EditForm Model="@ViewModel" OnSubmit="SaveAsync" onreset="@(async () => await CancelAsync())">
     <DataAnnotationsValidator />
     <div style="display: flex; flex-direction: column">
         <div>

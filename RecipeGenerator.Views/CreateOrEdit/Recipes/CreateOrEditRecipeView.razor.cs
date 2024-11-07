@@ -7,6 +7,9 @@ namespace RecipeGenerator.Views.CreateOrEdit.Recipes
     public partial class CreateOrEditRecipeView
     {
         [Inject]
+        public NavigationManager NavigationManager { get; set; } = default!;
+
+        [Inject]
         public CreateOrEditRecipeViewModel ViewModel { get; set; } = default!;
 
         [Parameter]
@@ -27,6 +30,18 @@ namespace RecipeGenerator.Views.CreateOrEdit.Recipes
             }
 
             await base.OnInitializedAsync();
+        }
+
+        private async Task SaveAsync()
+        {
+            await ViewModel.CreateAsync();
+            NavigationManager.NavigateTo("/list-recipes");
+        }
+
+        private async Task CancelAsync()
+        {
+            NavigationManager.NavigateTo("/list-recipes");
+            await Task.CompletedTask;
         }
     }
 }
