@@ -10,6 +10,7 @@ namespace RecipeGenerator.Functionalities.Extensions
         public static void AddRecipeGeneratorFunctionality(this IServiceCollection services)
         {
             services.AddTransient<ApplicableIngredientFactory>();
+            services.AddTransient<AppliedIngredientFactory>();
             services.AddTransient<RecipeFactory>();
             services.AddTransient<StepFactory>();
         }

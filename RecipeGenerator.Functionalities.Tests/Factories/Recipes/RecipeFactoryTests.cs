@@ -1,14 +1,15 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 using RecipeGenerator.Functionalities.Factories.Recipes;
+using RecipeGenerator.Models.Recipes;
 
 namespace RecipeGenerator.Functionalities.Tests.Factories.Recipes
 {
-    public class RecipeFactory_Tests
+    public class RecipeFactoryTests
     {
         private readonly ILogger<RecipeFactory> logger;
 
-        public RecipeFactory_Tests()
+        public RecipeFactoryTests()
         {
             logger = new NullLogger<RecipeFactory>();
         }
