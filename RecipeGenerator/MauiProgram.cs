@@ -4,7 +4,6 @@ using Microsoft.Extensions.Logging;
 using NLog;
 using NLog.Extensions.Logging;
 using RecipeGenerator.Database.Extenstions;
-using RecipeGenerator.Functionalities.Extensions;
 using RecipeGenerator.Localization.Extensions;
 using RecipeGenerator.Localization.Services;
 using RecipeGenerator.Services;
@@ -53,7 +52,6 @@ namespace RecipeGenerator
 
             builder.Services.AddRecipeGeneratorLocalization(builder.Configuration);
             builder.Services.AddRecipeGeneratorUtility();
-            builder.Services.AddRecipeGeneratorFunctionality();
             builder.Services.AddRecipeGeneratorViewModels();
             builder.Services.AddRecipeGeneratorDatabase(builder.Configuration);
             builder.Services.AddTransient<IMediaProviderService, MediaProviderService>();
