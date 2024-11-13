@@ -1,12 +1,17 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace RecipeGenerator.Models.Ingredients
+namespace RecipeGenerator.Models.Measurements
 {
     /// <summary>
-    /// Ingredient ready to be applied to a recipe.
+    /// Measurement of an applicable ingredient.
     /// </summary>
-    public class ApplicableIngredient : IRecipeGeneratorEntity
+    public class Measurement : IRecipeGeneratorEntity
     {
         /// <inheritdoc/>
         [DatabaseGenerated(DatabaseGeneratedOption.Identity), Key()]
@@ -27,18 +32,23 @@ namespace RecipeGenerator.Models.Ingredients
         public string Description { get; set; } = string.Empty;
 
         /// <summary>
-        /// Link to an internet page about the ingredient.
+        /// Type of the measurement.
         /// </summary>
-        public Uri? Link { get; set; } = default!;
+        public MeasurementType Type { get; set; }
 
         /// <summary>
-        /// Ingredient type.
+        /// Value of the measurement.
         /// </summary>
-        public IngredientType IngredientType { get; set; }
+        public double Value { get; set; }
 
         /// <summary>
-        /// Image of the ingredient.
+        /// Determines if the measurement is base.
         /// </summary>
-        public byte[] Image { get; set; } = [];
+        public bool IsBase { get; set; }
+
+        /// <summary>
+        /// Coefficient of conversion.
+        /// </summary>
+        public double ConversionCoefficient { get; set; }
     }
 }

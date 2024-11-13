@@ -20,15 +20,11 @@ namespace RecipeGenerator.Models.Recipes
         /// <inheritdoc/>
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
-        /// <summary>
-        /// Display name.
-        /// </summary>
+        /// <inheritdoc/>
         [Required(AllowEmptyStrings = true)]
         public string Name { get; set; } = string.Empty;
 
-        /// <summary>
-        /// Description.
-        /// </summary>
+        /// <inheritdoc/>
         [Required(AllowEmptyStrings = true)]
         public string Description { get; set; } = string.Empty;
 
