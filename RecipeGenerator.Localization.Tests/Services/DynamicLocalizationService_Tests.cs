@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Options;
 using RecipeGenerator.Localization.Models;
+using RecipeGenerator.Localization.Models.Models;
 using RecipeGenerator.Localization.Services;
 
 namespace Resources.Localization.Tests.Services
@@ -29,7 +30,7 @@ namespace Resources.Localization.Tests.Services
                     "fr"
                 ],
             };
-            DynamicLocalizationService service = new(logger, Options.Create(options));
+            DynamicLocalizationService service = new(logger, Options.Create(options), new ConfigurationFileWriterService(new NullLogger<ConfigurationFileWriterService>()));
             //act
             service.SetCulture("ru");
 
@@ -54,7 +55,7 @@ namespace Resources.Localization.Tests.Services
                     "fr"
                 ],
             };
-            DynamicLocalizationService service = new(logger, Options.Create(options));
+            DynamicLocalizationService service = new(logger, Options.Create(options), new ConfigurationFileWriterService(new NullLogger<ConfigurationFileWriterService>()));
             //act & assert
             service.SetCulture(currentCulture!);
 
