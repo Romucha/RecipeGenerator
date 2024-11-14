@@ -65,5 +65,11 @@ namespace RecipeGenerator.Models.Ingredients
         /// Measurement.
         /// </summary>
         public Measurement? Measurement { get; set; } = default!;
+
+        /// <summary>
+        /// Value of the measurement.
+        /// </summary>
+        public double Value { get; set; }
+
     }
 }

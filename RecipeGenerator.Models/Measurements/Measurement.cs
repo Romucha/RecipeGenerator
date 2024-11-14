@@ -37,11 +37,6 @@ namespace RecipeGenerator.Models.Measurements
         public MeasurementType Type { get; set; }
 
         /// <summary>
-        /// Value of the measurement.
-        /// </summary>
-        public double Value { get; set; }
-
-        /// <summary>
         /// Determines if the measurement is base.
         /// </summary>
         public bool IsBase { get; set; }
