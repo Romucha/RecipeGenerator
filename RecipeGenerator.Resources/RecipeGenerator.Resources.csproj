@@ -1502,6 +1502,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Descriptions_Ingredients.resx</DependentUpon>
     </Compile>
+    <Compile Update="Descriptions\Measurements\Descriptions_Measurements.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Descriptions_Measurements.resx</DependentUpon>
+    </Compile>
     <Compile Update="Descriptions\Recipes\Descriptions_Courses.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -1511,6 +1516,11 @@
       <DependentUpon>Identifiers_Ingredients.resx</DependentUpon>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Identifiers\Measurements\Identifiers_Measurements.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Identifiers_Measurements.resx</DependentUpon>
     </Compile>
     <Compile Update="Images\Ingredients\Images_Fruits.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -1577,6 +1587,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Names_IngredientTypes.resx</DependentUpon>
     </Compile>
+    <Compile Update="Names\Measurements\Names_Measurements.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Names_Measurements.resx</DependentUpon>
+    </Compile>
     <Compile Update="Names\Recipes\Names_Courses.Designer.cs">
       <DependentUpon>Names_Courses.resx</DependentUpon>
       <DesignTime>True</DesignTime>
@@ -1589,6 +1604,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Descriptions_Ingredients.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Update="Descriptions\Measurements\Descriptions_Measurements.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Descriptions_Measurements.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Descriptions\Recipes\Descriptions_Courses.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Descriptions_Courses.Designer.cs</LastGenOutput>
@@ -1596,6 +1615,10 @@
     <EmbeddedResource Update="Identifiers\Ingredients\Identifiers_Ingredients.resx">
       <LastGenOutput>Identifiers_Ingredients.Designer.cs</LastGenOutput>
       <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Identifiers\Measurements\Identifiers_Measurements.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Identifiers_Measurements.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Images\Ingredients\Images_Fruits.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -1649,6 +1672,10 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Names_Ingredients.Designer.cs</LastGenOutput>
       <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Names\Measurements\Names_Measurements.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Names_Measurements.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Names\Recipes\Names_Courses.resx">
       <LastGenOutput>Names_Courses.Designer.cs</LastGenOutput>
