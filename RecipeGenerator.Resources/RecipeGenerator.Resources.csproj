@@ -1512,6 +1512,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Descriptions_Courses.resx</DependentUpon>
     </Compile>
+    <Compile Update="Extra\Ingredients\MeasurementTypes_Ingredients.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MeasurementTypes_Ingredients.resx</DependentUpon>
+    </Compile>
     <Compile Update="Identifiers\Ingredients\Identifiers_Ingredients.Designer.cs">
       <DependentUpon>Identifiers_Ingredients.resx</DependentUpon>
       <DesignTime>True</DesignTime>
@@ -1611,6 +1616,10 @@
     <EmbeddedResource Update="Descriptions\Recipes\Descriptions_Courses.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Descriptions_Courses.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Extra\Ingredients\MeasurementTypes_Ingredients.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MeasurementTypes_Ingredients.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Identifiers\Ingredients\Identifiers_Ingredients.resx">
       <LastGenOutput>Identifiers_Ingredients.Designer.cs</LastGenOutput>

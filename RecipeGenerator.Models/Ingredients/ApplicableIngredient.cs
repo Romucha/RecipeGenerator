@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using RecipeGenerator.Models.Measurements;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RecipeGenerator.Models.Ingredients
@@ -40,5 +41,10 @@ namespace RecipeGenerator.Models.Ingredients
         /// Image of the ingredient.
         /// </summary>
         public byte[] Image { get; set; } = [];
+
+        /// <summary>
+        /// Measurement type.
+        /// </summary>
+        public MeasurementType MeasurementType { get; set; }
     }
 }

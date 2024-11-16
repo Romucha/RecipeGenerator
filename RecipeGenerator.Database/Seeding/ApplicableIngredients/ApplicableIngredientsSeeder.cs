@@ -3,7 +3,9 @@ using Microsoft.Extensions.Logging;
 using RecipeGenerator.Database.Context;
 using RecipeGenerator.DTO.ApplicableIngredients.Responses;
 using RecipeGenerator.Models.Ingredients;
+using RecipeGenerator.Models.Measurements;
 using RecipeGenerator.Resources.Descriptions.Ingredients;
+using RecipeGenerator.Resources.Extra.Ingredients;
 using RecipeGenerator.Resources.Identifiers.Ingredients;
 using RecipeGenerator.Resources.Images.Ingredients;
 using RecipeGenerator.Resources.Links.Ingredients;
@@ -55,6 +57,7 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
                 ResourceManager linksManager = await Task.Run(() => new ResourceManager(typeof(Links_Ingredients)));
                 ResourceManager namesManager = await Task.Run(() => new ResourceManager(typeof(Names_Ingredients)));
                 ResourceManager typesManager = await Task.Run(() => new ResourceManager(typeof(Names_IngredientTypes)));
+                ResourceManager measurementManager = await Task.Run(() => new ResourceManager(typeof(MeasurementTypes_Ingredients)));
 
                 ResourceManager[] imageManagers = await Task.Run(() =>
                 new ResourceManager[]
@@ -93,6 +96,7 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
                                     Image = (images.FirstOrDefault(c => c.Key.ToString() == id).Value as byte[]) ?? [],
                                     Link = new Uri(linksManager.GetString(id) ?? "https://google.com"),
                                     IngredientType = ingrtype,
+                                    MeasurementType = Enum.Parse<MeasurementType>(measurementManager.GetString(id) ?? MeasurementType.None.ToString()),
                                     CreatedAt = DateTime.UtcNow,
                                     UpdatedAt = DateTime.UtcNow,
                                 });
