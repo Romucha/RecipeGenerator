@@ -9,6 +9,7 @@ namespace RecipeGenerator.Models.Measurements
     /// <summary>
     /// Type of a measurement.
     /// </summary>
+    [Flags]
     public enum MeasurementType
     {
         /// <summary>
@@ -18,14 +19,14 @@ namespace RecipeGenerator.Models.Measurements
         /// <summary>
         /// For liquids (water, milk etc.).
         /// </summary>
-        Liquid,
+        Liquid = 4,
         /// <summary>
         /// For powder like substances (sugar, salt).
         /// </summary>
-        Powder,
+        Powder = 16,
         /// <summary>
         /// For pieces of ingredients (whole carrots, cabbages etc.).
         /// </summary>
-        Solid,
+        Solid = 64,
     }
 }
