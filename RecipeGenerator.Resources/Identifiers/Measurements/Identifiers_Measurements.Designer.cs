@@ -59,5 +59,77 @@ namespace RecipeGenerator.Resources.Identifiers.Measurements {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Amount_Amount.
+        /// </summary>
+        public static string Amount_Amount_Id {
+            get {
+                return ResourceManager.GetString("Amount_Amount_Id", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Spoon_TableSpoon.
+        /// </summary>
+        public static string Spoon_TableSpoon {
+            get {
+                return ResourceManager.GetString("Spoon_TableSpoon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Spoon_TeaSpoon.
+        /// </summary>
+        public static string Spoon_TeaSpoon_Id {
+            get {
+                return ResourceManager.GetString("Spoon_TeaSpoon_Id", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Volume_Liter.
+        /// </summary>
+        public static string Volume_Liter_Id {
+            get {
+                return ResourceManager.GetString("Volume_Liter_Id", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Volume_Milliliter.
+        /// </summary>
+        public static string Volume_Milliliter_Id {
+            get {
+                return ResourceManager.GetString("Volume_Milliliter_Id", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weight_Gram.
+        /// </summary>
+        public static string Weight_Gram_Id {
+            get {
+                return ResourceManager.GetString("Weight_Gram_Id", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weight_Kilogram.
+        /// </summary>
+        public static string Weight_Kilogram_Id {
+            get {
+                return ResourceManager.GetString("Weight_Kilogram_Id", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weight_Milligram.
+        /// </summary>
+        public static string Weight_Milligram_Id {
+            get {
+                return ResourceManager.GetString("Weight_Milligram_Id", resourceCulture);
+            }
+        }
     }
 }
