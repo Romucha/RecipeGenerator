@@ -9,10 +9,13 @@ namespace RecipeGenerator.Models.Measurements
     /// <summary>
     /// Type of a measurement.
     /// </summary>
+    [Flags]
     public enum MeasurementType
     {
         None = 0,
-        Weight = 1,
-        Volume = 2
+        Weight = 2,
+        Volume = 4,
+        Amount = 8,
+        Spoon = 16,
     }
 }

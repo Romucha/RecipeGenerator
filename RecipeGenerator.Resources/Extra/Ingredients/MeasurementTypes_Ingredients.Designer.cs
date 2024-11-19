@@ -61,7 +61,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_All_Purpose_Flour {
             get {
@@ -70,7 +70,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Amaranth {
             get {
@@ -79,7 +79,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Arborio_Rice {
             get {
@@ -88,7 +88,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Barley {
             get {
@@ -97,7 +97,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Barnyard_Millet {
             get {
@@ -106,7 +106,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Basmati_Rice {
             get {
@@ -115,7 +115,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Bean_Sprouts {
             get {
@@ -124,7 +124,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Bengal_Gram__Split_ {
             get {
@@ -133,7 +133,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Black_Beans {
             get {
@@ -142,7 +142,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Black_eyed_Beans {
             get {
@@ -151,7 +151,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Black_Gram {
             get {
@@ -160,7 +160,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Bread {
             get {
@@ -169,7 +169,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Breadcrumbs {
             get {
@@ -178,7 +178,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Brown_Rice {
             get {
@@ -187,7 +187,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Buckwheat {
             get {
@@ -196,7 +196,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Chickpeas {
             get {
@@ -205,7 +205,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Cornmeal {
             get {
@@ -214,7 +214,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Couscous {
             get {
@@ -223,7 +223,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Finger_Millet {
             get {
@@ -232,7 +232,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Flour {
             get {
@@ -241,7 +241,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Gram_Flour {
             get {
@@ -250,7 +250,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Green_Gram {
             get {
@@ -259,7 +259,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Husked_Black_Gram {
             get {
@@ -268,7 +268,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Husked_Green_Gram {
             get {
@@ -277,7 +277,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Jowar {
             get {
@@ -286,7 +286,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Kidney_Beans {
             get {
@@ -295,7 +295,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Muesli {
             get {
@@ -304,7 +304,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Oats {
             get {
@@ -313,7 +313,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Pearl_Millet {
             get {
@@ -322,7 +322,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Pigeon_Pea {
             get {
@@ -331,7 +331,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Pressed_Rice {
             get {
@@ -340,7 +340,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Puffed_Rice {
             get {
@@ -349,7 +349,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Rice {
             get {
@@ -358,7 +358,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Semolina {
             get {
@@ -367,7 +367,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Tapioca {
             get {
@@ -376,7 +376,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Water_Chestnut_Flour {
             get {
@@ -385,7 +385,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Whole_Bengal_Gram {
             get {
@@ -394,7 +394,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Whole_Brown_Lentils {
             get {
@@ -403,7 +403,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string CerealsAndPulses_Whole_Wheat_Flour {
             get {
@@ -412,7 +412,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string DairyProducts_Blue_Cheese {
             get {
@@ -421,7 +421,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string DairyProducts_Brie_Cheese {
             get {
@@ -430,7 +430,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string DairyProducts_Butter {
             get {
@@ -439,7 +439,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string DairyProducts_Buttermilk {
             get {
@@ -448,7 +448,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string DairyProducts_Cheddar_Cheese {
             get {
@@ -457,7 +457,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string DairyProducts_Clarified_Butter {
             get {
@@ -466,7 +466,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string DairyProducts_Condensed_Milk {
             get {
@@ -475,7 +475,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string DairyProducts_Cottage_Cheese {
             get {
@@ -484,7 +484,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string DairyProducts_Cream {
             get {
@@ -493,7 +493,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string DairyProducts_Cream_Cheese {
             get {
@@ -502,7 +502,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string DairyProducts_Feta_Cheese {
             get {
@@ -511,7 +511,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string DairyProducts_Gouda_Cheese {
             get {
@@ -520,7 +520,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string DairyProducts_Gruyere_Cheese {
             get {
@@ -529,7 +529,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string DairyProducts_Hung_Curd {
             get {
@@ -538,7 +538,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string DairyProducts_Khoya {
             get {
@@ -547,7 +547,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string DairyProducts_Mascarpone_Cheese {
             get {
@@ -556,7 +556,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string DairyProducts_Milk {
             get {
@@ -565,7 +565,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string DairyProducts_Mozzarella_Cheese {
             get {
@@ -574,7 +574,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string DairyProducts_Parmesan_Cheese {
             get {
@@ -583,7 +583,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string DairyProducts_Provolone_Cheese {
             get {
@@ -592,7 +592,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string DairyProducts_Ricotta_Cheese {
             get {
@@ -601,7 +601,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string DairyProducts_Yogurt {
             get {
@@ -610,7 +610,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Apples {
             get {
@@ -619,7 +619,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Apricots {
             get {
@@ -628,7 +628,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Banana {
             get {
@@ -637,7 +637,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Blueberries {
             get {
@@ -646,7 +646,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Cape_Gooseberry {
             get {
@@ -655,7 +655,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Cherry {
             get {
@@ -664,7 +664,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Coconut {
             get {
@@ -673,7 +673,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Cooking_Apples {
             get {
@@ -682,7 +682,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Cranberry {
             get {
@@ -691,7 +691,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Currant {
             get {
@@ -700,7 +700,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Custard_Apple {
             get {
@@ -709,7 +709,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Dates {
             get {
@@ -718,7 +718,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Dried_Fruit {
             get {
@@ -727,7 +727,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Figs {
             get {
@@ -736,7 +736,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Grapefruit {
             get {
@@ -745,7 +745,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Grapes {
             get {
@@ -754,7 +754,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Guava {
             get {
@@ -763,7 +763,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Indian_Gooseberry {
             get {
@@ -772,7 +772,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Jamun {
             get {
@@ -781,7 +781,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Kiwi {
             get {
@@ -790,7 +790,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Lemon {
             get {
@@ -799,7 +799,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string Fruits_Lemon_Juice {
             get {
@@ -808,7 +808,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Fruits_Lemon_Rind {
             get {
@@ -817,7 +817,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Lychee {
             get {
@@ -826,7 +826,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Mango {
             get {
@@ -835,7 +835,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Mulberry {
             get {
@@ -844,7 +844,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Olives {
             get {
@@ -853,7 +853,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Orange {
             get {
@@ -862,7 +862,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Orange_Rind {
             get {
@@ -871,7 +871,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Papaya {
             get {
@@ -880,7 +880,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Peach {
             get {
@@ -889,7 +889,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Pear {
             get {
@@ -898,7 +898,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Pineapple {
             get {
@@ -907,7 +907,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Plum {
             get {
@@ -916,7 +916,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Pomegranate {
             get {
@@ -925,7 +925,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Raisins {
             get {
@@ -934,7 +934,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Strawberry {
             get {
@@ -943,7 +943,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Sultana {
             get {
@@ -952,7 +952,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Tamarind {
             get {
@@ -961,7 +961,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Tomato {
             get {
@@ -970,7 +970,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Water_Chestnut {
             get {
@@ -979,7 +979,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Fruits_Watermelon {
             get {
@@ -988,7 +988,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Bacon {
             get {
@@ -997,7 +997,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Beef {
             get {
@@ -1006,7 +1006,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Chicken {
             get {
@@ -1015,7 +1015,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Chicken_Liver {
             get {
@@ -1024,7 +1024,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string Meat_Chicken_Stock {
             get {
@@ -1033,7 +1033,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Chops {
             get {
@@ -1042,7 +1042,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Crab {
             get {
@@ -1051,7 +1051,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Free_Range_Chicken {
             get {
@@ -1060,7 +1060,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Grass_Fed_Chicken {
             get {
@@ -1069,7 +1069,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Ham {
             get {
@@ -1078,7 +1078,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Keema {
             get {
@@ -1087,7 +1087,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Kidney_Meat {
             get {
@@ -1096,7 +1096,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Lamb_Meat {
             get {
@@ -1105,7 +1105,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string Meat_Meat_Stock {
             get {
@@ -1114,7 +1114,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Mutton {
             get {
@@ -1123,7 +1123,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Mutton_Liver {
             get {
@@ -1132,7 +1132,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Organic_Chicken {
             get {
@@ -1141,7 +1141,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Partridge {
             get {
@@ -1150,7 +1150,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Pork {
             get {
@@ -1159,7 +1159,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Quail {
             get {
@@ -1168,7 +1168,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Skinned_Chicken {
             get {
@@ -1177,7 +1177,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Meat_Turkey {
             get {
@@ -1186,7 +1186,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string NutsAndOilseeds_Almonds {
             get {
@@ -1195,7 +1195,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string NutsAndOilseeds_Blanched_Almonds {
             get {
@@ -1204,7 +1204,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string NutsAndOilseeds_Canola_Oil {
             get {
@@ -1213,7 +1213,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string NutsAndOilseeds_Cashew_Nuts {
             get {
@@ -1222,7 +1222,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string NutsAndOilseeds_Chia_Seeds {
             get {
@@ -1231,7 +1231,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string NutsAndOilseeds_Chironji {
             get {
@@ -1240,7 +1240,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string NutsAndOilseeds_Hazelnut {
             get {
@@ -1249,7 +1249,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string NutsAndOilseeds_Mustard_Oil {
             get {
@@ -1258,7 +1258,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string NutsAndOilseeds_Mustard_Seeds {
             get {
@@ -1267,7 +1267,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string NutsAndOilseeds_Olive_Oil {
             get {
@@ -1276,7 +1276,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string NutsAndOilseeds_Peanuts {
             get {
@@ -1285,7 +1285,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string NutsAndOilseeds_Pine_Nuts {
             get {
@@ -1294,7 +1294,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string NutsAndOilseeds_Pistachio {
             get {
@@ -1303,7 +1303,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string NutsAndOilseeds_Poppy_Seeds {
             get {
@@ -1312,7 +1312,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string NutsAndOilseeds_Sesame_Oil {
             get {
@@ -1321,7 +1321,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string NutsAndOilseeds_Sesame_Seeds {
             get {
@@ -1330,7 +1330,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string NutsAndOilseeds_Sunflower_Seeds {
             get {
@@ -1339,7 +1339,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string NutsAndOilseeds_Walnuts {
             get {
@@ -1348,7 +1348,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Agar {
             get {
@@ -1357,7 +1357,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Ajinomoto {
             get {
@@ -1366,7 +1366,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Almond_Milk {
             get {
@@ -1375,7 +1375,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Alum {
             get {
@@ -1384,7 +1384,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Arrowroot {
             get {
@@ -1393,7 +1393,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Baking_Powder {
             get {
@@ -1402,7 +1402,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Baking_Soda {
             get {
@@ -1411,7 +1411,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Balsamic_Vinegar {
             get {
@@ -1420,7 +1420,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Barfi {
             get {
@@ -1429,7 +1429,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Beer {
             get {
@@ -1438,7 +1438,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Brown_Sauce {
             get {
@@ -1447,7 +1447,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Chocolate {
             get {
@@ -1456,7 +1456,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Chocolate_Chips {
             get {
@@ -1465,7 +1465,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string OtherIngredients_Cocoa {
             get {
@@ -1474,7 +1474,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Coconut_Milk {
             get {
@@ -1483,7 +1483,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Coconut_Oil {
             get {
@@ -1492,7 +1492,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Coconut_Water {
             get {
@@ -1501,7 +1501,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Coffee {
             get {
@@ -1510,7 +1510,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Cognac {
             get {
@@ -1519,7 +1519,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Cornflour {
             get {
@@ -1528,7 +1528,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Cranberry_Sauce {
             get {
@@ -1537,7 +1537,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Desiccated_Coconut {
             get {
@@ -1546,7 +1546,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 8.
         /// </summary>
         public static string OtherIngredients_Egg {
             get {
@@ -1555,7 +1555,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Fish_Sauce {
             get {
@@ -1564,7 +1564,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Flat_Noodles {
             get {
@@ -1573,7 +1573,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Gelatin {
             get {
@@ -1582,7 +1582,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Glycerine {
             get {
@@ -1591,7 +1591,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Gold_Leaves {
             get {
@@ -1600,7 +1600,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Guchchi {
             get {
@@ -1609,7 +1609,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Hoisin_Sauce {
             get {
@@ -1618,7 +1618,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Jelly {
             get {
@@ -1627,7 +1627,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Jus {
             get {
@@ -1636,7 +1636,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Lotus_Seeds {
             get {
@@ -1645,7 +1645,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Malt_Vinegar {
             get {
@@ -1654,7 +1654,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Margarine {
             get {
@@ -1663,7 +1663,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Marzipan {
             get {
@@ -1672,7 +1672,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Mayonnaise {
             get {
@@ -1681,7 +1681,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Melon_Seeds {
             get {
@@ -1690,7 +1690,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Meringue {
             get {
@@ -1699,7 +1699,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Oyster_Sauce {
             get {
@@ -1708,7 +1708,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Paan {
             get {
@@ -1717,7 +1717,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Papad {
             get {
@@ -1726,7 +1726,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Pasta {
             get {
@@ -1735,7 +1735,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Petha {
             get {
@@ -1744,7 +1744,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Polenta {
             get {
@@ -1753,7 +1753,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Quinoa {
             get {
@@ -1762,7 +1762,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Red_Wine {
             get {
@@ -1771,7 +1771,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Red_Wine_Vinegar {
             get {
@@ -1780,7 +1780,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Rice_Flour {
             get {
@@ -1789,7 +1789,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Rice_Noodles {
             get {
@@ -1798,7 +1798,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Rice_Vinegar {
             get {
@@ -1807,7 +1807,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Rose_Water {
             get {
@@ -1816,7 +1816,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Roux {
             get {
@@ -1825,7 +1825,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Rum {
             get {
@@ -1834,7 +1834,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Sake {
             get {
@@ -1843,7 +1843,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Screw_Pine {
             get {
@@ -1852,7 +1852,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string OtherIngredients_Sea_Salt {
             get {
@@ -1861,7 +1861,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Sev {
             get {
@@ -1870,7 +1870,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Sharbat {
             get {
@@ -1879,7 +1879,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Soy_Milk {
             get {
@@ -1888,7 +1888,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Soya_Sauce {
             get {
@@ -1897,7 +1897,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Tartaric_Acid {
             get {
@@ -1906,7 +1906,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Tea {
             get {
@@ -1915,7 +1915,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Tofu {
             get {
@@ -1924,7 +1924,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Tomato_Puree {
             get {
@@ -1933,7 +1933,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Tortilla {
             get {
@@ -1942,7 +1942,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Vanilla_Essence {
             get {
@@ -1951,7 +1951,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Vegetable_Oil {
             get {
@@ -1960,7 +1960,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Vermicelli {
             get {
@@ -1969,7 +1969,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Vetiver {
             get {
@@ -1978,7 +1978,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Vinaigrette {
             get {
@@ -1987,7 +1987,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_Vinegar {
             get {
@@ -1996,7 +1996,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_White_Pepper {
             get {
@@ -2005,7 +2005,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string OtherIngredients_White_Wine {
             get {
@@ -2014,7 +2014,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string OtherIngredients_Yeast {
             get {
@@ -2023,7 +2023,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Anchovies {
             get {
@@ -2032,7 +2032,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Cat_fish {
             get {
@@ -2041,7 +2041,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Clams {
             get {
@@ -2050,7 +2050,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Cod {
             get {
@@ -2059,7 +2059,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Cuttle_fish {
             get {
@@ -2068,7 +2068,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string Seafood_Fish {
             get {
@@ -2077,7 +2077,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Fish_Fillet {
             get {
@@ -2086,7 +2086,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string Seafood_Fish_Stock {
             get {
@@ -2095,7 +2095,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Flounder {
             get {
@@ -2104,7 +2104,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Haddock {
             get {
@@ -2113,7 +2113,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Hilsa {
             get {
@@ -2122,7 +2122,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Mackerel {
             get {
@@ -2131,7 +2131,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Mullet {
             get {
@@ -2140,7 +2140,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Mussels {
             get {
@@ -2149,7 +2149,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Pearl_spot {
             get {
@@ -2158,7 +2158,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Perch {
             get {
@@ -2167,7 +2167,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Pomfret {
             get {
@@ -2176,7 +2176,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Prawns {
             get {
@@ -2185,7 +2185,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Salmon {
             get {
@@ -2194,7 +2194,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Sardines {
             get {
@@ -2203,7 +2203,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Shark {
             get {
@@ -2212,7 +2212,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Shellfish {
             get {
@@ -2221,7 +2221,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Shrimp {
             get {
@@ -2230,7 +2230,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Squids {
             get {
@@ -2239,7 +2239,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string Seafood_Tuna_Fish {
             get {
@@ -2248,7 +2248,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Acacia {
             get {
@@ -2257,7 +2257,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Allspice {
             get {
@@ -2266,7 +2266,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Aniseed {
             get {
@@ -2275,7 +2275,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Asafoetida {
             get {
@@ -2284,7 +2284,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Basil {
             get {
@@ -2293,7 +2293,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Bay_Leaf {
             get {
@@ -2302,7 +2302,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Black_Cardamom {
             get {
@@ -2311,7 +2311,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Black_Cumin {
             get {
@@ -2320,7 +2320,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Black_Pepper {
             get {
@@ -2329,7 +2329,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Cajun_Spices {
             get {
@@ -2338,7 +2338,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Caraway_Seeds {
             get {
@@ -2347,7 +2347,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Carom_Seeds {
             get {
@@ -2356,7 +2356,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Cayenne {
             get {
@@ -2365,7 +2365,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Chives {
             get {
@@ -2374,7 +2374,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Cinnamon {
             get {
@@ -2383,7 +2383,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Cloves {
             get {
@@ -2392,7 +2392,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Coriander_Leaves {
             get {
@@ -2401,7 +2401,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Coriander_Powder {
             get {
@@ -2410,7 +2410,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Coriander_Seeds {
             get {
@@ -2419,7 +2419,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Cumin_Seeds {
             get {
@@ -2428,7 +2428,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Curry_Leaves {
             get {
@@ -2437,7 +2437,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Dill {
             get {
@@ -2446,7 +2446,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Dried_Fenugreek_Leaves {
             get {
@@ -2455,7 +2455,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Dry_Ginger_Powder {
             get {
@@ -2464,7 +2464,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Fennel {
             get {
@@ -2473,7 +2473,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Fenugreek_Seeds {
             get {
@@ -2482,7 +2482,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Five_Spice_Powder {
             get {
@@ -2491,7 +2491,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Galangal {
             get {
@@ -2500,7 +2500,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Garam_Masala {
             get {
@@ -2509,7 +2509,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Green_Cardamom {
             get {
@@ -2518,7 +2518,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Herbs {
             get {
@@ -2527,7 +2527,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Kashmiri_Mirch {
             get {
@@ -2536,7 +2536,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Lemongrass {
             get {
@@ -2545,7 +2545,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Mace {
             get {
@@ -2554,7 +2554,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Marjoram {
             get {
@@ -2563,7 +2563,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Mint_Leaves {
             get {
@@ -2572,7 +2572,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Mustard_Powder {
             get {
@@ -2581,7 +2581,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Nasturtium {
             get {
@@ -2590,7 +2590,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Nutmeg {
             get {
@@ -2599,7 +2599,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Onion_Seeds {
             get {
@@ -2608,7 +2608,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Oregano {
             get {
@@ -2617,7 +2617,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Paprika {
             get {
@@ -2626,7 +2626,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Parsley {
             get {
@@ -2635,7 +2635,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Raw_Mango_Powder {
             get {
@@ -2644,7 +2644,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Red_Chilli {
             get {
@@ -2653,7 +2653,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Rock_Salt {
             get {
@@ -2662,7 +2662,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Rosemary {
             get {
@@ -2671,7 +2671,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Saffron {
             get {
@@ -2680,7 +2680,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Sage {
             get {
@@ -2689,7 +2689,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Salt {
             get {
@@ -2698,7 +2698,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Star_Anise {
             get {
@@ -2707,7 +2707,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Thyme {
             get {
@@ -2716,7 +2716,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Tulsi {
             get {
@@ -2725,7 +2725,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Turmeric {
             get {
@@ -2734,7 +2734,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SpicesAndHerbs_Yellow_Chillies {
             get {
@@ -2743,7 +2743,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SugarAndSugarProducts_Brown_Sugar {
             get {
@@ -2752,7 +2752,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SugarAndSugarProducts_Cane_Sugar {
             get {
@@ -2761,7 +2761,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string SugarAndSugarProducts_Caramel {
             get {
@@ -2770,7 +2770,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SugarAndSugarProducts_Castor_Sugar {
             get {
@@ -2779,7 +2779,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Volume.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string SugarAndSugarProducts_Golden_Syrup {
             get {
@@ -2788,7 +2788,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 20.
         /// </summary>
         public static string SugarAndSugarProducts_Honey {
             get {
@@ -2797,7 +2797,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SugarAndSugarProducts_Icing_Sugar {
             get {
@@ -2806,7 +2806,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SugarAndSugarProducts_Jaggery {
             get {
@@ -2815,7 +2815,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 18.
         /// </summary>
         public static string SugarAndSugarProducts_Sugar {
             get {
@@ -2824,7 +2824,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 2.
         /// </summary>
         public static string SugarAndSugarProducts_Sugar_Candy {
             get {
@@ -2833,7 +2833,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Artichoke {
             get {
@@ -2842,7 +2842,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Ash_Gourd {
             get {
@@ -2851,7 +2851,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Asparagus {
             get {
@@ -2860,7 +2860,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Avocado {
             get {
@@ -2869,7 +2869,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Baby_Corn {
             get {
@@ -2878,7 +2878,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Bamboo_Shoot {
             get {
@@ -2887,7 +2887,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Beetroot {
             get {
@@ -2896,7 +2896,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Bell_Pepper {
             get {
@@ -2905,7 +2905,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Bitter_Gourd {
             get {
@@ -2914,7 +2914,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Bok_Choy {
             get {
@@ -2923,7 +2923,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Bottle_Gourd {
             get {
@@ -2932,7 +2932,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Broad_Beans {
             get {
@@ -2941,7 +2941,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Broccoli {
             get {
@@ -2950,7 +2950,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Cabbage {
             get {
@@ -2959,7 +2959,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Capers {
             get {
@@ -2968,7 +2968,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Capsicum {
             get {
@@ -2977,7 +2977,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Carrot {
             get {
@@ -2986,7 +2986,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Cauliflower {
             get {
@@ -2995,7 +2995,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Celery {
             get {
@@ -3004,7 +3004,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Cherry_Tomatoes {
             get {
@@ -3013,7 +3013,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Cluster_Beans {
             get {
@@ -3022,7 +3022,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Colocasia {
             get {
@@ -3031,7 +3031,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Corn {
             get {
@@ -3040,7 +3040,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Cucumber {
             get {
@@ -3049,7 +3049,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Drumstick {
             get {
@@ -3058,7 +3058,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Eggplant {
             get {
@@ -3067,7 +3067,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Fenugreek {
             get {
@@ -3076,7 +3076,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_French_Beans {
             get {
@@ -3085,7 +3085,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Garlic {
             get {
@@ -3094,7 +3094,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Gherkins {
             get {
@@ -3103,7 +3103,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Ginger {
             get {
@@ -3112,7 +3112,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Green_Chillies {
             get {
@@ -3121,7 +3121,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Green_Peas {
             get {
@@ -3130,7 +3130,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Horseradish {
             get {
@@ -3139,7 +3139,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Jackfruit {
             get {
@@ -3148,7 +3148,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Jalapeno {
             get {
@@ -3157,7 +3157,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Kaffir_Lime {
             get {
@@ -3166,7 +3166,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Lady_Finger {
             get {
@@ -3175,7 +3175,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Leek {
             get {
@@ -3184,7 +3184,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Lettuce {
             get {
@@ -3193,7 +3193,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Lotus_Stem {
             get {
@@ -3202,7 +3202,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Mushroom {
             get {
@@ -3211,7 +3211,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Mustard_Leaves {
             get {
@@ -3220,7 +3220,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Onion {
             get {
@@ -3229,7 +3229,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Pigweed {
             get {
@@ -3238,7 +3238,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Pimiento {
             get {
@@ -3247,7 +3247,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Plantain {
             get {
@@ -3256,7 +3256,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Potatoes {
             get {
@@ -3265,7 +3265,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Pumpkin {
             get {
@@ -3274,7 +3274,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Radish {
             get {
@@ -3283,7 +3283,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Ridge_Gourd {
             get {
@@ -3292,7 +3292,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Rocket_Leaves {
             get {
@@ -3301,7 +3301,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Round_Gourd {
             get {
@@ -3310,7 +3310,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Shallots {
             get {
@@ -3319,7 +3319,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Shiitake_Mushroom {
             get {
@@ -3328,7 +3328,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Snake_Beans {
             get {
@@ -3337,7 +3337,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Sorrel_Leaves {
             get {
@@ -3346,7 +3346,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Spinach {
             get {
@@ -3355,7 +3355,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Spring_Onion {
             get {
@@ -3364,7 +3364,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Sweet_Potatoes {
             get {
@@ -3373,7 +3373,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Turnip {
             get {
@@ -3382,7 +3382,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Yam {
             get {
@@ -3391,7 +3391,7 @@ namespace RecipeGenerator.Resources.Extra.Ingredients {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Weight.
+        ///   Looks up a localized string similar to 10.
         /// </summary>
         public static string Vegetables_Zucchini {
             get {

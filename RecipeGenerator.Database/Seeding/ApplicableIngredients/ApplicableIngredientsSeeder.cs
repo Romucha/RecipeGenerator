@@ -87,6 +87,7 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
                             {
                                 var typeid = id.Split('_').FirstOrDefault();
                                 var ingrtype = Enum.Parse<IngredientType>(typeid!);
+                                var msrtype = (MeasurementType)int.Parse(measurementManager.GetString(id) ?? measurementManager.GetString(id) ?? MeasurementType.None.ToString());
 
                                 applicableIngredients.Add(new ApplicableIngredient()
                                 {
@@ -96,7 +97,7 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
                                     Image = (images.FirstOrDefault(c => c.Key.ToString() == id).Value as byte[]) ?? [],
                                     Link = new Uri(linksManager.GetString(id) ?? "https://google.com"),
                                     IngredientType = ingrtype,
-                                    MeasurementType = Enum.Parse<MeasurementType>(measurementManager.GetString(id) ?? MeasurementType.None.ToString()),
+                                    MeasurementType = msrtype,
                                     CreatedAt = DateTime.UtcNow,
                                     UpdatedAt = DateTime.UtcNow,
                                 });
