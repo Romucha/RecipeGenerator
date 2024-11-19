@@ -72,9 +72,9 @@ namespace RecipeGenerator.Resources.Identifiers.Measurements {
         /// <summary>
         ///   Looks up a localized string similar to Spoon_TableSpoon.
         /// </summary>
-        public static string Spoon_TableSpoon {
+        public static string Spoon_TableSpoon_Id {
             get {
-                return ResourceManager.GetString("Spoon_TableSpoon", resourceCulture);
+                return ResourceManager.GetString("Spoon_TableSpoon_Id", resourceCulture);
             }
         }
         

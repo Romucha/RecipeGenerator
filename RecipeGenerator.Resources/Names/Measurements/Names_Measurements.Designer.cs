@@ -59,5 +59,77 @@ namespace RecipeGenerator.Resources.Names.Measurements {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pcs.
+        /// </summary>
+        public static string Amount_Amount {
+            get {
+                return ResourceManager.GetString("Amount_Amount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Table spoon.
+        /// </summary>
+        public static string Spoon_TableSpoon {
+            get {
+                return ResourceManager.GetString("Spoon_TableSpoon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tea spoon.
+        /// </summary>
+        public static string Spoon_TeaSpoon {
+            get {
+                return ResourceManager.GetString("Spoon_TeaSpoon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Liter.
+        /// </summary>
+        public static string Volume_Liter {
+            get {
+                return ResourceManager.GetString("Volume_Liter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Milliliter.
+        /// </summary>
+        public static string Volume_Milliliter {
+            get {
+                return ResourceManager.GetString("Volume_Milliliter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gram.
+        /// </summary>
+        public static string Weight_Gram {
+            get {
+                return ResourceManager.GetString("Weight_Gram", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kilogram.
+        /// </summary>
+        public static string Weight_Kilogram {
+            get {
+                return ResourceManager.GetString("Weight_Kilogram", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Milligram.
+        /// </summary>
+        public static string Weight_Milligram {
+            get {
+                return ResourceManager.GetString("Weight_Milligram", resourceCulture);
+            }
+        }
     }
 }
