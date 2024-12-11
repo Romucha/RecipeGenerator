@@ -53,6 +53,7 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
                 ResourceManager identifiersManager = new(typeof(Identifiers_Ingredients));
                 var identifiers = getResourceEntries(identifiersManager).Select(c => c.Value!.ToString());
 
+                ResourceManager idsManager = new(typeof(Ids_Ingerdients));
                 ResourceManager descriptionsManager = await Task.Run(() => new ResourceManager(typeof(Descriptions_Ingredients)));
                 ResourceManager linksManager = await Task.Run(() => new ResourceManager(typeof(Links_Ingredients)));
                 ResourceManager namesManager = await Task.Run(() => new ResourceManager(typeof(Names_Ingredients)));
@@ -76,7 +77,7 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
                 var images = await Task.Run(() => imageManagers.SelectMany(getResourceEntries));
 
                 List<ApplicableIngredient> applicableIngredients = new();
-                int i = 0;
+
                 foreach (var id in identifiers)
                 {
                     if (id != null)
@@ -91,7 +92,7 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
 
                                 applicableIngredients.Add(new ApplicableIngredient()
                                 {
-                                    Id = ++i,
+                                    Id = Convert.ToInt32(idsManager.GetString(id)),
                                     Description = descriptionsManager.GetString(id) ?? id,
                                     Name = namesManager.GetString(id) ?? id,
                                     Image = (images.FirstOrDefault(c => c.Key.ToString() == id).Value as byte[]) ?? [],
@@ -103,9 +104,9 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
                                 });
                             });
                         }
-                        catch (Exception)
+                        catch (Exception ex)
                         {
-
+                            logger.LogError(ex, nameof(ApplicableIngredientsSeeder));
                         }
                     }
                 }

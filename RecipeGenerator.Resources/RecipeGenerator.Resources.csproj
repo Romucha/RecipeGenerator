@@ -1522,10 +1522,20 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
+    <Compile Update="Identifiers\Ingredients\Ids_Ingerdients.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Ids_Ingerdients.resx</DependentUpon>
+    </Compile>
     <Compile Update="Identifiers\Measurements\Identifiers_Measurements.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Identifiers_Measurements.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Identifiers\Measurements\Ids_Measurements.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Ids_Measurements.resx</DependentUpon>
     </Compile>
     <Compile Update="Images\Ingredients\Images_Fruits.Designer.cs">
       <DesignTime>True</DesignTime>
@@ -1625,9 +1635,17 @@
       <LastGenOutput>Identifiers_Ingredients.Designer.cs</LastGenOutput>
       <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Identifiers\Ingredients\Ids_Ingerdients.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Ids_Ingerdients.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Identifiers\Measurements\Identifiers_Measurements.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Identifiers_Measurements.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Identifiers\Measurements\Ids_Measurements.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Ids_Measurements.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Images\Ingredients\Images_Fruits.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
