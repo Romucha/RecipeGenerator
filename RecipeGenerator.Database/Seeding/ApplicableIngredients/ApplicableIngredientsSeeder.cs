@@ -76,7 +76,7 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
                 var images = await Task.Run(() => imageManagers.SelectMany(getResourceEntries));
 
                 List<ApplicableIngredient> applicableIngredients = new();
-
+                int i = 0;
                 foreach (var id in identifiers)
                 {
                     if (id != null)
@@ -91,7 +91,7 @@ namespace RecipeGenerator.Database.Seeding.ApplicableIngredients
 
                                 applicableIngredients.Add(new ApplicableIngredient()
                                 {
-                                    Id = Guid.NewGuid(),
+                                    Id = ++i,
                                     Description = descriptionsManager.GetString(id) ?? id,
                                     Name = namesManager.GetString(id) ?? id,
                                     Image = (images.FirstOrDefault(c => c.Key.ToString() == id).Value as byte[]) ?? [],

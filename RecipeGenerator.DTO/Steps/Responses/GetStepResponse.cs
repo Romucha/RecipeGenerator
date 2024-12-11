@@ -5,7 +5,7 @@
         /// <summary>
         /// Identifier.
         /// </summary>
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Date of creation.
@@ -40,6 +40,6 @@
         /// <summary>
         /// Identifier of a parent recipe.
         /// </summary>
-        public Guid RecipeId { get; set; }
+        public int RecipeId { get; set; }
     }
 }

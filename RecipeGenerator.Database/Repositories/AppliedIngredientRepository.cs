@@ -26,7 +26,7 @@ namespace RecipeGenerator.Database.Repositories
             this.mapper = mapper;
         }
 
-        public async Task<CreateAppliedIndredientResponse> CreateAsync(Guid recipeId, Guid applicableIngredientId, CancellationToken cancellationToken = default)
+        public async Task<CreateAppliedIndredientResponse> CreateAsync(int recipeId, int applicableIngredientId, CancellationToken cancellationToken = default)
         {
             try
             {
@@ -55,7 +55,7 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<GetAppliedIngredientResponse?> GetAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<GetAppliedIngredientResponse?> GetAsync(int id, CancellationToken cancellationToken = default)
         {
             try
             {
@@ -78,7 +78,7 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<GetAllAppliedIngredientsResponse> GetAllAsync(Guid recipeId, CancellationToken cancellationToken = default)
+        public async Task<GetAllAppliedIngredientsResponse> GetAllAsync(int recipeId, CancellationToken cancellationToken = default)
         {
             try
             {
@@ -97,7 +97,7 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<DeleteAppliedIngredientResponse?> DeleteAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<DeleteAppliedIngredientResponse?> DeleteAsync(int id, CancellationToken cancellationToken = default)
         {
             try
             {
@@ -124,11 +124,11 @@ namespace RecipeGenerator.Database.Repositories
         }
 
         public async Task<UpdateAppliedIngredientResponse?> UpdateAsync(
-            Guid id,
+            int id,
             string? name,
             string? description,
-            Guid? recipeId,
-            Guid? ingredientId,
+            int? recipeId,
+            int? ingredientId,
             CancellationToken cancellationToken = default)
         {
             try
@@ -170,7 +170,7 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<bool> ExistsAsync(Guid id)
+        public async Task<bool> ExistsAsync(int id)
         {
             try
             {

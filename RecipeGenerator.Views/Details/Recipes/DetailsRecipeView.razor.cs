@@ -11,7 +11,7 @@ namespace RecipeGenerator.Views.Details.Recipes
         public DetailsRecipeViewModel ViewModel { get; set; } = default!;
 
         [Parameter]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         [Inject]
         public IStringLocalizer<DetailsRecipeView> StringLocalizer { get; set; } = default!;

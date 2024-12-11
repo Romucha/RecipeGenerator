@@ -28,8 +28,8 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
             this.fileSaverService = fileSaverService;
         }
 
-        private Guid id;
-        public Guid Id
+        private int id;
+        public int Id
         {
             get => id;
             set => this.SetProperty(ref id, value);
@@ -104,7 +104,7 @@ namespace RecipeGenerator.ViewModels.Details.Recipes
             set => SetProperty(ref ingredients, value);
         }
 
-        public async Task GetRecipeAsync(Guid recipeId)
+        public async Task GetRecipeAsync(int recipeId)
         {
             try
             {

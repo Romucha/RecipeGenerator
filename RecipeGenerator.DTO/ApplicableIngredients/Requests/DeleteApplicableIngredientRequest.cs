@@ -2,6 +2,6 @@
 {
     public record DeleteApplicableIngredientRequest
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
     }
 }

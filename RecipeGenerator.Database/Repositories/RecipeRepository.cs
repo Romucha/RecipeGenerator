@@ -42,7 +42,7 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<GetRecipeResponse?> GetAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<GetRecipeResponse?> GetAsync(int id, CancellationToken cancellationToken = default)
         {
             try
             {
@@ -98,7 +98,7 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<DeleteRecipeResponse?> DeleteAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<DeleteRecipeResponse?> DeleteAsync(int id, CancellationToken cancellationToken = default)
         {
             try
             {
@@ -125,7 +125,7 @@ namespace RecipeGenerator.Database.Repositories
         }
 
         public async Task<UpdateRecipeResponse?> UpdateAsync(
-            Guid id, 
+            int id, 
             string? name, 
             string? description, 
             byte[]? image, 

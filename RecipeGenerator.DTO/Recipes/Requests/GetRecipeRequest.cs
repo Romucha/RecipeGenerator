@@ -2,6 +2,6 @@
 {
     public record GetRecipeRequest
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
     }
 }

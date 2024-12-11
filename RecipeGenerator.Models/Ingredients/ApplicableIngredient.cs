@@ -11,7 +11,7 @@ namespace RecipeGenerator.Models.Ingredients
     {
         /// <inheritdoc/>
         [DatabaseGenerated(DatabaseGeneratedOption.Identity), Key()]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         /// <inheritdoc/>
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;

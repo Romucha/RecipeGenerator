@@ -5,7 +5,7 @@
         /// <summary>
         /// Identifier.
         /// </summary>
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Display name.

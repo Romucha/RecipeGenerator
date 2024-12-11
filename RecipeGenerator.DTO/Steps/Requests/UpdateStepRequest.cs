@@ -5,7 +5,7 @@
         /// <summary>
         /// Step identifier.
         /// </summary>
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Display name.
@@ -30,6 +30,6 @@
         /// <summary>
         /// Identifier of the parent recipe.
         /// </summary>
-        public Guid RecipeId { get; set; }
+        public int RecipeId { get; set; }
     }
 }

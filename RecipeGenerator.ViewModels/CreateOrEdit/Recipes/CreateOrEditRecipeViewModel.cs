@@ -25,7 +25,7 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
         private readonly IMediaProviderService mediaProviderService;
         private readonly IStringLocalizer<Course> stringLocalizer;
 
-        private Guid RecipeId;
+        private int RecipeId;
 
         public CreateOrEditRecipeViewModel(ILogger<CreateOrEditRecipeViewModel> logger, IUnitOfWork unitOfWork, IMediaProviderService mediaProviderService, IStringLocalizer<Course> stringLocalizer)
         {
@@ -116,7 +116,7 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             set => SetProperty(ref courseTypes, value);
         }
 
-        public Guid SelectedIngredientId { get; set; } = default!;
+        public int SelectedIngredientId { get; set; } = default!;
 
         /*
          * General idea:
@@ -130,7 +130,7 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
          * 8. Changes are saved.
          */
 
-        public async Task InitializeAsync(Guid? id)
+        public async Task InitializeAsync(int? id)
         {
             try
             {
@@ -138,7 +138,7 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
                 await GetApplicableIngredientsAsync();
                 if (id != null)
                 {
-                    RecipeId = (Guid)id;
+                    RecipeId = (int)id;
 
                     GetRecipeResponse? getRecipeResponse = await unitOfWork.RecipeRepository.GetAsync(RecipeId);
                     if (getRecipeResponse != null)
@@ -322,7 +322,7 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             }
         }
 
-        public async Task DeleteStepAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task DeleteStepAsync(int id, CancellationToken cancellationToken = default)
         {
             try
             {
@@ -346,7 +346,7 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             }
         }
 
-        public async Task DeleteAppliedIngredientAsync(Guid id)
+        public async Task DeleteAppliedIngredientAsync(int id)
         {
             try
             { 
@@ -393,7 +393,7 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             }
         }
 
-        public async Task TakeStepPhotoAsync(Guid stepId)
+        public async Task TakeStepPhotoAsync(int stepId)
         {
             try
             {
@@ -412,7 +412,7 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             }
         }
 
-        public async Task SelectStepPhotoAsync(Guid stepId)
+        public async Task SelectStepPhotoAsync(int stepId)
         {
             try
             {

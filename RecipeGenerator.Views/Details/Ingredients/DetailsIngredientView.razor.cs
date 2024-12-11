@@ -17,7 +17,7 @@ namespace RecipeGenerator.Views.Details.Ingredients
         public DynamicLocalizationService DynamicLocalizationService { get; set; } = default!;
 
         [Parameter]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         protected override async Task OnInitializedAsync()
         {

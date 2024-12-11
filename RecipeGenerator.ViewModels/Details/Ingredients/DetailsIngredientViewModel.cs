@@ -65,7 +65,7 @@ namespace RecipeGenerator.ViewModels.Details.Ingredients
             set => SetProperty(ref image, value);
         }
 
-        public async Task GetIngredientAsync(Guid id)
+        public async Task GetIngredientAsync(int id)
         {
             try
             {

@@ -12,7 +12,7 @@ namespace RecipeGenerator.Models.Ingredients
     {
         /// <inheritdoc/>
         [DatabaseGenerated(DatabaseGeneratedOption.Identity), Key()]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         /// <inheritdoc/>
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
@@ -32,7 +32,7 @@ namespace RecipeGenerator.Models.Ingredients
         /// Identifier of a parent recipe.
         /// </summary>
         [ForeignKey(nameof(Recipe))]
-        public Guid? RecipeId { get; set; }
+        public int? RecipeId { get; set; }
 
         /// <summary>
         /// Parent recipe.
@@ -43,7 +43,7 @@ namespace RecipeGenerator.Models.Ingredients
         /// Identifier of a base ingredient.
         /// </summary>
         [ForeignKey(nameof(ApplicableIngredient))]
-        public Guid? IngredientId { get; set; }
+        public int? IngredientId { get; set; }
 
         /// <summary>
         /// Base ingredient.
@@ -59,7 +59,7 @@ namespace RecipeGenerator.Models.Ingredients
         /// Identifier of a measurement.
         /// </summary>
         [ForeignKey(nameof(Measurement))]
-        public Guid? MeasurementId { get; set; }
+        public int? MeasurementId { get; set; }
 
         /// <summary>
         /// Measurement.

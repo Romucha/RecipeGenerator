@@ -2,7 +2,7 @@
 {
     public record GetAllStepsResponseItem
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         public int Index { get; set; }
 

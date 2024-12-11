@@ -11,7 +11,7 @@ namespace RecipeGenerator.Models.Steps
     {
         /// <inheritdoc/>
         [DatabaseGenerated(DatabaseGeneratedOption.Identity), Key()]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         /// <inheritdoc/>
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
@@ -45,7 +45,7 @@ namespace RecipeGenerator.Models.Steps
         /// Id of parent recipe.
         /// </summary>
         [ForeignKey(nameof(Recipe))]
-        public Guid? RecipeId { get; set; }
+        public int? RecipeId { get; set; }
 
         /// <summary>
         /// Parent recipe.

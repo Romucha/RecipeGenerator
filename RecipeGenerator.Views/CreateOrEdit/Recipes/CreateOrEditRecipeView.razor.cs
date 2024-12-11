@@ -13,7 +13,7 @@ namespace RecipeGenerator.Views.CreateOrEdit.Recipes
         public CreateOrEditRecipeViewModel ViewModel { get; set; } = default!;
 
         [Parameter]
-        public Guid? RecipeId { get; set; }
+        public int? RecipeId { get; set; }
 
         [Inject]
         public IStringLocalizer<CreateOrEditRecipeView> StringLocalizer { get; set; } = default!;

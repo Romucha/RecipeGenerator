@@ -2,6 +2,6 @@
 {
     public record GetApplicableIngredientRequest
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
     }
 }

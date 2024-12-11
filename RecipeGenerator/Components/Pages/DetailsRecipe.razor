@@ -1,8 +1,8 @@
-﻿@page "/details-recipe/{id:guid}"
+﻿@page "/details-recipe/{id:int}"
 
 <DetailsRecipeView Id="@id"/>
 
 @code {
     [Parameter]
-    public Guid id { get; set; }
+    public int id { get; set; }
 }

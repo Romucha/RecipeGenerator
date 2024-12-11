@@ -42,7 +42,7 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<GetApplicableIngredientResponse?> GetAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<GetApplicableIngredientResponse?> GetAsync(int id, CancellationToken cancellationToken = default)
         {
             try
             {
@@ -98,7 +98,7 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<DeleteApplicableIngredientResponse?> DeleteAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<DeleteApplicableIngredientResponse?> DeleteAsync(int id, CancellationToken cancellationToken = default)
         {
             try
             {
@@ -125,7 +125,7 @@ namespace RecipeGenerator.Database.Repositories
         }
 
         public async Task<UpdateApplicableIngredientResponse?> UpdateAsync(
-            Guid id,
+            int id,
             string? name,
             string? description,
             Uri? link,

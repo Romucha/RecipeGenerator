@@ -9,7 +9,7 @@ namespace RecipeGenerator.Models
         /// Identifier.
         /// </summary>
         [DatabaseGenerated(DatabaseGeneratedOption.Identity), Key()]
-        Guid Id { get; set; }
+        int Id { get; set; }
 
         /// <summary>
         /// Date of creation.

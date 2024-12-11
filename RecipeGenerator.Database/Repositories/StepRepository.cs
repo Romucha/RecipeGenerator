@@ -26,7 +26,7 @@ namespace RecipeGenerator.Database.Repositories
             this.mapper = mapper;
         }
 
-        public async Task<CreateStepResponse> CreateAsync(Guid recipeId, CancellationToken cancellationToken = default)
+        public async Task<CreateStepResponse> CreateAsync(int recipeId, CancellationToken cancellationToken = default)
         {
             try
             {
@@ -44,7 +44,7 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<GetStepResponse?> GetAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<GetStepResponse?> GetAsync(int id, CancellationToken cancellationToken = default)
         {
             try
             {
@@ -67,7 +67,7 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<GetAllStepsResponse> GetAllAsync(Guid recipeId, CancellationToken cancellationToken = default)
+        public async Task<GetAllStepsResponse> GetAllAsync(int recipeId, CancellationToken cancellationToken = default)
         {
             try
             {
@@ -86,7 +86,7 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<DeleteStepResponse?> DeleteAsync(Guid id, CancellationToken cancellationToken = default)
+        public async Task<DeleteStepResponse?> DeleteAsync(int id, CancellationToken cancellationToken = default)
         {
             try
             {
@@ -113,12 +113,12 @@ namespace RecipeGenerator.Database.Repositories
         }
 
         public async Task<UpdateStepResponse?> UpdateAsync(
-            Guid id,
+            int id,
             string? name,
             string? description,
             List<byte[]>? photos,
             int? index,
-            Guid? recipeId,
+            int? recipeId,
             CancellationToken cancellationToken = default)
         {
             try

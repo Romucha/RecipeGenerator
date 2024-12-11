@@ -91,7 +91,7 @@ public class ListRecipesViewModel : ObservableObject
         }
     }
 
-    public async Task DeleteRecipeAsync(Guid id)
+    public async Task DeleteRecipeAsync(int id)
     {
         try
         {
