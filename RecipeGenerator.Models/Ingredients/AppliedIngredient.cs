@@ -11,14 +11,13 @@ namespace RecipeGenerator.Models.Ingredients
     public class AppliedIngredient : IRecipeGeneratorEntity
     {
         /// <inheritdoc/>
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity), Key()]
         public int Id { get; set; }
 
         /// <inheritdoc/>
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime CreatedAt { get; set; }
 
         /// <inheritdoc/>
-        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; }
 
         /// <inheritdoc/>
         [Required(AllowEmptyStrings = true)]
@@ -31,7 +30,6 @@ namespace RecipeGenerator.Models.Ingredients
         /// <summary>
         /// Identifier of a parent recipe.
         /// </summary>
-        [ForeignKey(nameof(Recipe))]
         public int? RecipeId { get; set; }
 
         /// <summary>
@@ -42,7 +40,6 @@ namespace RecipeGenerator.Models.Ingredients
         /// <summary>
         /// Identifier of a base ingredient.
         /// </summary>
-        [ForeignKey(nameof(ApplicableIngredient))]
         public int? IngredientId { get; set; }
 
         /// <summary>
@@ -58,7 +55,6 @@ namespace RecipeGenerator.Models.Ingredients
         /// <summary>
         /// Identifier of a measurement.
         /// </summary>
-        [ForeignKey(nameof(Measurement))]
         public int? MeasurementId { get; set; }
 
         /// <summary>

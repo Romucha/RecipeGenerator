@@ -35,9 +35,11 @@ namespace RecipeGenerator.Database.Context
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Step>().HasOne(c => c.Recipe).WithMany(c => c.Steps).OnDelete(DeleteBehavior.Cascade);
-            modelBuilder.Entity<AppliedIngredient>().HasOne(c => c.Recipe).WithMany(c => c.Ingredients).OnDelete(DeleteBehavior.Cascade);
-            modelBuilder.Entity<AppliedIngredient>().HasOne(c => c.Measurement);
+            ConfigureApplicableIngredients(modelBuilder);
+            ConfigureAppliedIngredients(modelBuilder);
+            ConfigureRecipes(modelBuilder);
+            ConfigureSteps(modelBuilder);
+            ConfigureMeasurements(modelBuilder);
 
             base.OnModelCreating(modelBuilder);
         }
@@ -46,6 +48,148 @@ namespace RecipeGenerator.Database.Context
         {
             optionsBuilder.EnableSensitiveDataLogging();
             base.OnConfiguring(optionsBuilder);
+        }
+
+        private void ConfigureRecipes(ModelBuilder modelBuilder)
+        {
+            modelBuilder
+                .Entity<Recipe>()
+                .HasKey(c => c.Id);
+            modelBuilder
+                .Entity<Recipe>()
+                .Property(c => c.Id)
+                .ValueGeneratedOnAdd();
+
+            modelBuilder
+                .Entity<Recipe>()
+                .HasMany(c => c.Ingredients)
+                .WithOne(c => c.Recipe)
+                .HasForeignKey(c => c.RecipeId);
+
+            modelBuilder
+                .Entity<Recipe>()
+                .HasMany(c => c.Steps)
+                .WithOne(c => c.Recipe)
+                .HasForeignKey(c => c.RecipeId);
+
+            modelBuilder
+                .Entity<Recipe>()
+                .Property(c => c.CreatedAt)
+                .ValueGeneratedOnAdd()
+                .HasDefaultValue(DateTime.UtcNow);
+            modelBuilder
+                .Entity<Recipe>()
+                .Property(c => c.UpdatedAt)
+                .ValueGeneratedOnAddOrUpdate()
+                .HasDefaultValue(DateTime.UtcNow);
+        }
+
+        private void ConfigureSteps(ModelBuilder modelBuilder)
+        {
+            modelBuilder
+                .Entity<Step>()
+                .HasKey(c => c.Id);
+            modelBuilder
+                .Entity<Step>()
+                .Property(c => c.Id)
+                .ValueGeneratedOnAdd();
+
+            modelBuilder
+                .Entity<Step>()
+                .Property(c => c.CreatedAt)
+                .ValueGeneratedOnAdd()
+                .HasDefaultValue(DateTime.UtcNow);
+            modelBuilder
+                .Entity<Step>()
+                .Property(c => c.UpdatedAt)
+                .ValueGeneratedOnAddOrUpdate()
+                .HasDefaultValue(DateTime.UtcNow);
+
+            modelBuilder
+                .Entity<Step>()
+                .HasOne(c => c.Recipe)
+                .WithMany(c => c.Steps)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasForeignKey(c => c.RecipeId);
+        }
+
+        private void ConfigureAppliedIngredients(ModelBuilder modelBuilder)
+        {
+            modelBuilder
+                .Entity<AppliedIngredient>()
+                .HasKey(c => c.Id);
+            modelBuilder
+                .Entity<AppliedIngredient>()
+                .Property(c => c.Id)
+                .ValueGeneratedOnAdd();
+
+            modelBuilder
+                .Entity<AppliedIngredient>()
+                .Property(c => c.CreatedAt)
+                .ValueGeneratedOnAdd()
+                .HasDefaultValue(DateTime.UtcNow);
+            modelBuilder
+                .Entity<AppliedIngredient>()
+                .Property(c => c.UpdatedAt)
+                .ValueGeneratedOnAddOrUpdate()
+                .HasDefaultValue(DateTime.UtcNow);
+
+            modelBuilder.Entity<AppliedIngredient>()
+                .HasOne(c => c.Recipe)
+                .WithMany(c => c.Ingredients)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasForeignKey(c => c.RecipeId)
+                .HasForeignKey(c => c.IngredientId);
+
+            modelBuilder
+                .Entity<AppliedIngredient>()
+                .HasOne(c => c.Measurement)
+                .WithMany(c => c.Ingredients)
+                .HasForeignKey(c => c.MeasurementId);
+        }
+
+        private void ConfigureApplicableIngredients(ModelBuilder modelBuilder)
+        {
+            modelBuilder
+                .Entity<ApplicableIngredient>()
+                .HasKey(c => c.Id);
+            modelBuilder
+                .Entity<ApplicableIngredient>()
+                .Property(c => c.Id)
+                .ValueGeneratedOnAdd();
+
+            modelBuilder
+                .Entity<ApplicableIngredient>()
+                .Property(c => c.CreatedAt)
+                .ValueGeneratedOnAdd()
+                .HasDefaultValue(DateTime.UtcNow);
+            modelBuilder
+                .Entity<ApplicableIngredient>()
+                .Property(c => c.UpdatedAt)
+                .ValueGeneratedOnAddOrUpdate()
+                .HasDefaultValue(DateTime.UtcNow);
+        }
+
+        private void ConfigureMeasurements(ModelBuilder modelBuilder)
+        {
+            modelBuilder
+                .Entity<Measurement>()
+                .HasKey(c => c.Id);
+            modelBuilder
+                .Entity<Measurement>()
+                .Property(c => c.Id)
+                .ValueGeneratedOnAdd();
+
+            modelBuilder
+                .Entity<Measurement>()
+                .Property(c => c.CreatedAt)
+                .ValueGeneratedOnAdd()
+                .HasDefaultValue(DateTime.UtcNow);
+            modelBuilder
+                .Entity<Measurement>()
+                .Property(c => c.UpdatedAt)
+                .ValueGeneratedOnAddOrUpdate()
+                .HasDefaultValue(DateTime.UtcNow);
         }
     }
 }

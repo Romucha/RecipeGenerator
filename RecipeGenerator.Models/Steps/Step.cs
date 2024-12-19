@@ -10,14 +10,13 @@ namespace RecipeGenerator.Models.Steps
     public class Step : IRecipeGeneratorEntity
     {
         /// <inheritdoc/>
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity), Key()]
         public int Id { get; set; }
 
         /// <inheritdoc/>
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime CreatedAt { get; set; }
 
         /// <inheritdoc/>
-        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; }
 
         /// <summary>
         /// Display name.
@@ -44,7 +43,6 @@ namespace RecipeGenerator.Models.Steps
         /// <summary>
         /// Id of parent recipe.
         /// </summary>
-        [ForeignKey(nameof(Recipe))]
         public int? RecipeId { get; set; }
 
         /// <summary>

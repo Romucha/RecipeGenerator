@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RecipeGenerator.Models.Ingredients;
 
 namespace RecipeGenerator.Models.Measurements
 {
@@ -14,14 +15,13 @@ namespace RecipeGenerator.Models.Measurements
     public class Measurement : IRecipeGeneratorEntity
     {
         /// <inheritdoc/>
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity), Key()]
         public int Id { get; set; }
 
         /// <inheritdoc/>
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime CreatedAt { get; set; }
 
         /// <inheritdoc/>
-        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; }
 
         /// <inheritdoc/>
         [Required(AllowEmptyStrings = true)]
@@ -45,5 +45,10 @@ namespace RecipeGenerator.Models.Measurements
         /// Coefficient of conversion.
         /// </summary>
         public double ConversionCoefficient { get; set; }
+
+        /// <summary>
+        /// List of ingredients.
+        /// </summary>
+        public List<AppliedIngredient> Ingredients { get; set; } = new();
     }
 }
