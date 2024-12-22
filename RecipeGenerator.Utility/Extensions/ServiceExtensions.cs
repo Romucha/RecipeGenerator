@@ -1,4 +1,9 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using FluentValidation;
+using Microsoft.Extensions.DependencyInjection;
+using RecipeGenerator.Models.Ingredients;
+using RecipeGenerator.Models.Measurements;
+using RecipeGenerator.Models.Recipes;
+using RecipeGenerator.Models.Steps;
 using RecipeGenerator.Utility.Mapping;
 using RecipeGenerator.Utility.Validation;
 
@@ -10,6 +15,16 @@ namespace RecipeGenerator.Utility.Extensions
         {
             services.AddAutoMapper(typeof(MapperInitializer));
             services.AddTransient<RecipeGeneratorValidator>();
+            services.AddValidation();
+        }
+
+        private static void AddValidation(this IServiceCollection services)
+        {
+            services.AddTransient<IValidator<Recipe>, RecipeValidator>();
+            services.AddTransient<IValidator<Step>, StepValidator>();
+            services.AddTransient<IValidator<ApplicableIngredient>, ApplicableIngredientValidator>();
+            services.AddTransient<IValidator<AppliedIngredient>, AppliedIngredientValidator>();
+            services.AddTransient<IValidator<Measurement>, MeasurementValidator>();
         }
     }
 }
