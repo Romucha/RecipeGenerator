@@ -13,9 +13,13 @@ namespace RecipeGenerator.Utility.Extensions
     {
         public static void AddRecipeGeneratorUtility(this IServiceCollection services)
         {
-            services.AddAutoMapper(typeof(MapperInitializer));
-            services.AddTransient<RecipeGeneratorValidator>();
+            services.AddMapping();
             services.AddValidation();
+        }
+
+        private static void AddMapping(this IServiceCollection services)
+        {
+            services.AddAutoMapper(typeof(MapperInitializer));
         }
 
         private static void AddValidation(this IServiceCollection services)

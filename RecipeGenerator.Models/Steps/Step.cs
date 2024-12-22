@@ -18,16 +18,10 @@ namespace RecipeGenerator.Models.Steps
         /// <inheritdoc/>
         public DateTime UpdatedAt { get; set; }
 
-        /// <summary>
-        /// Display name.
-        /// </summary>
-        [Required(AllowEmptyStrings = true)]
+        /// <inheritdoc/>
         public string Name { get; set; } = string.Empty;
 
-        /// <summary>
-        /// Description.
-        /// </summary>
-        [Required(AllowEmptyStrings = true)]
+        /// <inheritdoc/>
         public string Description { get; set; } = string.Empty;
 
         /// <summary>

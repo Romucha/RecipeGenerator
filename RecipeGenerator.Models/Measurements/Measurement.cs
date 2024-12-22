@@ -24,11 +24,9 @@ namespace RecipeGenerator.Models.Measurements
         public DateTime UpdatedAt { get; set; }
 
         /// <inheritdoc/>
-        [Required(AllowEmptyStrings = true)]
         public string Name { get; set; } = string.Empty;
 
         /// <inheritdoc/>
-        [Required(AllowEmptyStrings = true)]
         public string Description { get; set; } = string.Empty;
 
         /// <summary>

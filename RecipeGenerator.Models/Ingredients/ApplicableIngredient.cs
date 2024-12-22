@@ -19,11 +19,9 @@ namespace RecipeGenerator.Models.Ingredients
         public DateTime UpdatedAt { get; set; }
 
         /// <inheritdoc/>
-        [Required(AllowEmptyStrings = true)]
         public string Name { get; set; } = string.Empty;
 
         /// <inheritdoc/>
-        [Required(AllowEmptyStrings = true)]
         public string Description { get; set; } = string.Empty;
 
         /// <summary>
