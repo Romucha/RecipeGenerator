@@ -63,9 +63,19 @@ namespace RecipeGenerator.Utility.Tests.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        public static byte[] Normal {
+        public static byte[] RecipeNormal {
             get {
-                object obj = ResourceManager.GetObject("Normal", resourceCulture);
+                object obj = ResourceManager.GetObject("RecipeNormal", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] StepNormal {
+            get {
+                object obj = ResourceManager.GetObject("StepNormal", resourceCulture);
                 return ((byte[])(obj));
             }
         }
