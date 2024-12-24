@@ -1,12 +1,11 @@
 ﻿using RecipeGenerator.Models.Steps;
-using RecipeGenerator.Utility.Tests.Validation.Recipes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.Utility.Tests.Validation.Steps
+namespace RecipeGenerator.Utility.Tests.Validation.Data
 {
     internal static class StepData
     {

@@ -1,5 +1,5 @@
 ﻿using FluentValidation;
-using RecipeGenerator.Utility.Tests.Validation.Recipes;
+using RecipeGenerator.Utility.Tests.Validation.Data;
 using RecipeGenerator.Utility.Validation;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.Utility.Tests.Validation.Steps
+namespace RecipeGenerator.Utility.Tests.Validation.Tests
 {
     public class StepTests
     {

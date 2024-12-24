@@ -1,12 +1,11 @@
 ﻿using RecipeGenerator.Models.Recipes;
-using RecipeGenerator.Utility.Tests.Validation.Steps;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.Utility.Tests.Validation.Recipes
+namespace RecipeGenerator.Utility.Tests.Validation.Data
 {
     internal static class RecipeData
     {
@@ -37,7 +36,7 @@ namespace RecipeGenerator.Utility.Tests.Validation.Recipes
             Description = null!,
             CreatedAt = default,
             UpdatedAt = default,
-            EstimatedTime= TimeSpan.FromMinutes(0),
+            EstimatedTime = TimeSpan.FromMinutes(0),
             Image = null!,
             Portions = 0,
             Steps = null!,

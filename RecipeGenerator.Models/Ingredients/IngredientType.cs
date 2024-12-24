@@ -2,7 +2,8 @@
 {
     public enum IngredientType
     {
-        CerealsAndPulses = 0,
+        None = 0,
+        CerealsAndPulses,
         DairyProducts,
         Fruits,
         Meat,
