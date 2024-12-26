@@ -32,6 +32,7 @@ namespace Resources.Localization.Tests.Services
             };
             DynamicLocalizationService service = new(logger, Options.Create(options), new ConfigurationFileWriterService(new NullLogger<ConfigurationFileWriterService>()));
             //act
+            service.Initialize();
             service.SetCulture("ru");
 
             //assert
@@ -55,8 +56,12 @@ namespace Resources.Localization.Tests.Services
                     "fr"
                 ],
             };
-            DynamicLocalizationService service = new(logger, Options.Create(options), new ConfigurationFileWriterService(new NullLogger<ConfigurationFileWriterService>()));
+            DynamicLocalizationService service = new(
+                logger, 
+                Options.Create(options), 
+                new ConfigurationFileWriterService(new NullLogger<ConfigurationFileWriterService>()));
             //act & assert
+            service.Initialize();
             service.SetCulture(currentCulture!);
 
             Assert.Equal(options.CurrentCulture, service.CurrentCulture);
