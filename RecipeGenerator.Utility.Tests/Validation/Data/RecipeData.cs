@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Utility.Tests.Validation.Data
 {
-    internal static class RecipeData
+    internal class RecipeData : IValidationTestData<Recipe>
     {
-        public static Recipe Default => new Recipe();
+        public Recipe Default => new Recipe();
 
-        public static Recipe? Null => null;
+        public Recipe? Null => null;
 
-        public static Recipe Normal => new Recipe()
+        public Recipe Normal => new Recipe()
         {
             Id = 1,
             CourseType = Course.Horsdoeuvres,
@@ -24,11 +24,11 @@ namespace RecipeGenerator.Utility.Tests.Validation.Data
             EstimatedTime = TimeSpan.FromDays(1),
             Image = Properties.Resources.RecipeNormal,
             Portions = 10,
-            Steps = new() { StepData.Normal },
-            Ingredients = new() { AppliedIngredientData.Normal },
+            Steps = new(),
+            Ingredients = new(),
         };
 
-        public static Recipe Invalid => new Recipe()
+        public Recipe Invalid => new Recipe()
         {
             Id = 0,
             CourseType = Course.Unknown,

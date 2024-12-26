@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Utility.Tests.Validation.Data
 {
-    internal static class AppliedIngredientData
+    internal class AppliedIngredientData : IValidationTestData<AppliedIngredient>
     {
-        public static AppliedIngredient Default => new AppliedIngredient();
+        public AppliedIngredient Default => new AppliedIngredient();
 
-        public static AppliedIngredient? Null => null;
+        public AppliedIngredient? Null => null;
 
-        public static AppliedIngredient Normal => new AppliedIngredient()
+        public AppliedIngredient Normal => new AppliedIngredient()
         {
             Id = 1,
             IngredientId = 1,
@@ -27,7 +27,7 @@ namespace RecipeGenerator.Utility.Tests.Validation.Data
             MeasurementValue = 1,
         };
 
-        public static AppliedIngredient Invalid => new AppliedIngredient()
+        public AppliedIngredient Invalid => new AppliedIngredient()
         {
             Id = 0,
             IngredientId = 0,

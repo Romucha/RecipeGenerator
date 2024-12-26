@@ -1,4 +1,5 @@
 ﻿using FluentValidation;
+using RecipeGenerator.Models.Ingredients;
 using RecipeGenerator.Utility.Tests.Validation.Data;
 using RecipeGenerator.Utility.Validation;
 using System;
@@ -9,51 +10,16 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Utility.Tests.Validation.Tests
 {
-    public class AppliedIngredientTests
+    public class AppliedIngredientTests : AbstractValidationTest<AppliedIngredient>
     {
-        [Fact]
-        public async Task ValidateNormal()
+        protected override IValidationTestData<AppliedIngredient> ValidationTestData { get; set; }
+        protected override AbstractValidator<AppliedIngredient> Validator { get; set; }
+
+        public AppliedIngredientTests()
         {
-            var recipe = AppliedIngredientData.Normal;
-            var validator = new AppliedIngredientValidator();
+            ValidationTestData = new AppliedIngredientData();
 
-            var result = await validator.ValidateAsync(recipe);
-
-            Assert.NotNull(result);
-            Assert.True(result.IsValid);
-        }
-
-        [Fact]
-        public async Task ValidateDefault()
-        {
-            var recipe = AppliedIngredientData.Default;
-            var validator = new AppliedIngredientValidator();
-
-            var result = await validator.ValidateAsync(recipe);
-
-            Assert.NotNull(result);
-            Assert.False(result.IsValid);
-        }
-
-        [Fact]
-        public async Task ValidateNull()
-        {
-            var recipe = AppliedIngredientData.Null;
-            var validator = new AppliedIngredientValidator();
-
-            await Assert.ThrowsAsync<ArgumentNullException>(() => validator!.ValidateAndThrowAsync(recipe));
-        }
-
-        [Fact]
-        public async Task ValidateInvalid()
-        {
-            var recipe = AppliedIngredientData.Invalid;
-            var validator = new AppliedIngredientValidator();
-
-            var result = await validator!.ValidateAsync(recipe);
-
-            Assert.NotNull(result);
-            Assert.False(result.IsValid);
+            Validator = new AppliedIngredientValidator();
         }
     }
 }

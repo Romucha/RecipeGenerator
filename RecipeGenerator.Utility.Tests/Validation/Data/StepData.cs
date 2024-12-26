@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Utility.Tests.Validation.Data
 {
-    internal static class StepData
+    internal class StepData : IValidationTestData<Step>
     {
-        public static Step Default => new();
+        public Step Default => new();
 
-        public static Step? Null => null;
+        public Step? Null => null;
 
-        public static Step Normal => new()
+        public Step Normal => new()
         {
             Id = 1,
             Name = nameof(Normal),
@@ -25,7 +25,7 @@ namespace RecipeGenerator.Utility.Tests.Validation.Data
             RecipeId = 1,
         };
 
-        public static Step Invalid => new()
+        public Step Invalid => new()
         {
             Id = 0,
             Name = null!,
