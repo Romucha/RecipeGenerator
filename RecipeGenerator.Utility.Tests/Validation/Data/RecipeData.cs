@@ -25,7 +25,7 @@ namespace RecipeGenerator.Utility.Tests.Validation.Data
             Image = Properties.Resources.RecipeNormal,
             Portions = 10,
             Steps = new() { StepData.Normal },
-            Ingredients = new(),
+            Ingredients = new() { AppliedIngredientData.Normal },
         };
 
         public static Recipe Invalid => new Recipe()

@@ -63,7 +63,7 @@ namespace RecipeGenerator.Models.Ingredients
         /// <summary>
         /// Value of the measurement.
         /// </summary>
-        public double Value { get; set; }
+        public double MeasurementValue { get; set; }
 
     }
 }
