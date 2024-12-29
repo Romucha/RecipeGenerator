@@ -10,15 +10,15 @@ namespace RecipeGenerator.Database.Context
 {
     public class RecipeGeneratorDbContext : DbContext
     {
-        public required DbSet<Recipe> Recipes { get; set; }
+        public DbSet<Recipe> Recipes { get; set; }
 
-        public required DbSet<ApplicableIngredient> ApplicableIngredients { get; set; }
+        public DbSet<ApplicableIngredient> ApplicableIngredients { get; set; }
 
-        public required DbSet<Step> Steps { get; set; }
+        public DbSet<Step> Steps { get; set; }
 
-        public required DbSet<AppliedIngredient> AppliedIngredients { get; set; }
+        public DbSet<AppliedIngredient> AppliedIngredients { get; set; }
 
-        public required DbSet<Measurement> Measurements { get; set; }
+        public DbSet<Measurement> Measurements { get; set; }
 
         private readonly IConfiguration configuration;
 

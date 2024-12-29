@@ -21,11 +21,16 @@
   <ItemGroup>
     <ProjectReference Include="..\RecipeGenerator.Database\RecipeGenerator.Database.csproj" />
     <ProjectReference Include="..\RecipeGenerator.Models\RecipeGenerator.Models.csproj" />
+    <ProjectReference Include="..\RecipeGenerator.Tests.Data\RecipeGenerator.Tests.Data.csproj" />
     <ProjectReference Include="..\RecipeGenerator.Utility\RecipeGenerator.Utility.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UnitsOfWork\" />
   </ItemGroup>
 
 </Project>
