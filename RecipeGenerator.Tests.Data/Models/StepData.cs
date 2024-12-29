@@ -5,15 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.Utility.Tests.Validation.Data
+namespace RecipeGenerator.Tests.Data.Models
 {
-    internal class StepData : IValidationTestData<Step>
+    public static class StepData
     {
-        public Step Default => new();
+        public static Step Default => new();
 
-        public Step? Null => null;
+        public static Step? Null => null;
 
-        public Step Normal => new()
+        public static Step Normal => new()
         {
             Id = 1,
             Name = nameof(Normal),
@@ -25,7 +25,7 @@ namespace RecipeGenerator.Utility.Tests.Validation.Data
             RecipeId = 1,
         };
 
-        public Step Invalid => new()
+        public static Step Invalid => new()
         {
             Id = 0,
             Name = null!,

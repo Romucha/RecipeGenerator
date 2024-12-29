@@ -5,15 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.Utility.Tests.Validation.Data
+namespace RecipeGenerator.Tests.Data.Models
 {
-    internal class MeasurementData : IValidationTestData<Measurement>
+    public static class MeasurementData
     {
-        public Measurement Default => new();
+        public static Measurement Default => new();
 
-        public Measurement? Null => null;
+        public static Measurement? Null => null;
 
-        public Measurement Normal => new()
+        public static Measurement Normal => new()
         {
             Id = 1,
             Name = nameof(Measurement),
@@ -26,7 +26,7 @@ namespace RecipeGenerator.Utility.Tests.Validation.Data
             Type = MeasurementType.Weight,
         };
 
-        public Measurement Invalid => new()
+        public static Measurement Invalid => new()
         {
             Id = 0,
             Name = null,

@@ -5,15 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.Utility.Tests.Validation.Data
+namespace RecipeGenerator.Tests.Data.Models
 {
-    internal class ApplicableIngredientData : IValidationTestData<ApplicableIngredient>
+    public static class ApplicableIngredientData
     {
-        public ApplicableIngredient Default => new();
+        public static ApplicableIngredient Default => new();
 
-        public ApplicableIngredient? Null => null;
+        public static ApplicableIngredient? Null => null;
 
-        public ApplicableIngredient Normal => new()
+        public static ApplicableIngredient Normal => new()
         {
             Id = 1,
             Name = nameof(Normal),
@@ -23,10 +23,10 @@ namespace RecipeGenerator.Utility.Tests.Validation.Data
             IngredientType = IngredientType.Meat,
             Image = Properties.Resources.ApplicableIngredientNormal,
             Link = new Uri("https://google.com"),
-            MeasurementType = Models.Measurements.MeasurementType.Weight,
+            MeasurementType = RecipeGenerator.Models.Measurements.MeasurementType.Weight,
         };
 
-        public ApplicableIngredient Invalid => new()
+        public static ApplicableIngredient Invalid => new()
         {
             Id = 0,
             Name = null!,
@@ -36,7 +36,7 @@ namespace RecipeGenerator.Utility.Tests.Validation.Data
             IngredientType = IngredientType.None,
             Image = null!,
             Link = null,
-            MeasurementType = Models.Measurements.MeasurementType.None,
+            MeasurementType = RecipeGenerator.Models.Measurements.MeasurementType.None,
         };
     }
 }

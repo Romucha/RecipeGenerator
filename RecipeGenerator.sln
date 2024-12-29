@@ -14,13 +14,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Localizatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Resources", "RecipeGenerator.Resources\RecipeGenerator.Resources.csproj", "{336A91D3-7E7C-452F-88B2-07BA2739978C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Localization.Tests", "RecipeGenerator.Localization.Tests\RecipeGenerator.Localization.Tests.csproj", "{E832EE75-7853-4C1A-8654-94A94E140EF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Tests.Localization", "RecipeGenerator.Tests.Localization\RecipeGenerator.Tests.Localization.csproj", "{E832EE75-7853-4C1A-8654-94A94E140EF9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Utility", "RecipeGenerator.Utility\RecipeGenerator.Utility.csproj", "{01DC66BC-E201-45B1-9557-7BA0F828A7AA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.DTO", "RecipeGenerator.DTO\RecipeGenerator.DTO.csproj", "{F9EFA4ED-94F9-4189-B415-071B8D4FD519}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Utility.Tests", "RecipeGenerator.Utility.Tests\RecipeGenerator.Utility.Tests.csproj", "{6E6E411B-C2B4-4C5A-80AD-80328B025FBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Tests.Utility", "RecipeGenerator.Tests.Utility\RecipeGenerator.Tests.Utility.csproj", "{6E6E411B-C2B4-4C5A-80AD-80328B025FBB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{4FD911E2-367E-4601-9679-2B0719F71556}"
 EndProject
@@ -30,9 +30,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{00
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Database", "RecipeGenerator.Database\RecipeGenerator.Database.csproj", "{171E408D-D3F7-4023-8C67-A39C32D479CE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Database.Tests", "RecipeGenerator.Database.Tests\RecipeGenerator.Database.Tests.csproj", "{2DB1A805-4957-4E00-8A15-42427C01A90F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Tests.Database", "RecipeGenerator.Tests.Database\RecipeGenerator.Tests.Database.csproj", "{2DB1A805-4957-4E00-8A15-42427C01A90F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.ViewModels.Tests", "RecipeGenerator.ViewModels.Tests\RecipeGenerator.ViewModels.Tests.csproj", "{6E69E84D-4887-44F3-B34B-A88854B6158A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Tests.ViewModels", "RecipeGenerator.Tests.ViewModels\RecipeGenerator.Tests.ViewModels.csproj", "{6E69E84D-4887-44F3-B34B-A88854B6158A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{77D6DFCF-48F8-46B9-A80B-BA2C60C177CE}"
 	ProjectSection(SolutionItems) = preProject
@@ -42,6 +42,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Settings", "RecipeGenerator.Settings\RecipeGenerator.Settings.csproj", "{AF2E75D8-A592-44BF-B858-9CA901F1C010}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecipeGenerator.Localization.Models", "RecipeGenerator.Localization.Models\RecipeGenerator.Localization.Models.csproj", "{8C6C4547-E7F2-425B-9E24-08E2F972B7E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5DCA839E-AFF1-42F8-8BFE-8A2C414E2805}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeGenerator.Tests.Data", "RecipeGenerator.Tests.Data\RecipeGenerator.Tests.Data.csproj", "{369B2F49-38E8-49B1-8DA5-B3452B71ED9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +115,10 @@ Global
 		{8C6C4547-E7F2-425B-9E24-08E2F972B7E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C6C4547-E7F2-425B-9E24-08E2F972B7E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C6C4547-E7F2-425B-9E24-08E2F972B7E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{369B2F49-38E8-49B1-8DA5-B3452B71ED9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{369B2F49-38E8-49B1-8DA5-B3452B71ED9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{369B2F49-38E8-49B1-8DA5-B3452B71ED9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{369B2F49-38E8-49B1-8DA5-B3452B71ED9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -122,15 +130,16 @@ Global
 		{49001847-EEF2-42DD-AE21-6C5B04F3D78A} = {4FD911E2-367E-4601-9679-2B0719F71556}
 		{C7DFCFA3-F2FB-41C4-A370-B345C566A5E5} = {4FD911E2-367E-4601-9679-2B0719F71556}
 		{336A91D3-7E7C-452F-88B2-07BA2739978C} = {4FD911E2-367E-4601-9679-2B0719F71556}
-		{E832EE75-7853-4C1A-8654-94A94E140EF9} = {4FD911E2-367E-4601-9679-2B0719F71556}
+		{E832EE75-7853-4C1A-8654-94A94E140EF9} = {5DCA839E-AFF1-42F8-8BFE-8A2C414E2805}
 		{01DC66BC-E201-45B1-9557-7BA0F828A7AA} = {4FD911E2-367E-4601-9679-2B0719F71556}
 		{F9EFA4ED-94F9-4189-B415-071B8D4FD519} = {4FD911E2-367E-4601-9679-2B0719F71556}
-		{6E6E411B-C2B4-4C5A-80AD-80328B025FBB} = {4FD911E2-367E-4601-9679-2B0719F71556}
+		{6E6E411B-C2B4-4C5A-80AD-80328B025FBB} = {5DCA839E-AFF1-42F8-8BFE-8A2C414E2805}
 		{171E408D-D3F7-4023-8C67-A39C32D479CE} = {00C52342-40DC-4B23-99A2-F5E2A32510D7}
-		{2DB1A805-4957-4E00-8A15-42427C01A90F} = {00C52342-40DC-4B23-99A2-F5E2A32510D7}
-		{6E69E84D-4887-44F3-B34B-A88854B6158A} = {4F925ADA-09FE-4609-918C-9975BA918FA0}
+		{2DB1A805-4957-4E00-8A15-42427C01A90F} = {5DCA839E-AFF1-42F8-8BFE-8A2C414E2805}
+		{6E69E84D-4887-44F3-B34B-A88854B6158A} = {5DCA839E-AFF1-42F8-8BFE-8A2C414E2805}
 		{AF2E75D8-A592-44BF-B858-9CA901F1C010} = {4F925ADA-09FE-4609-918C-9975BA918FA0}
 		{8C6C4547-E7F2-425B-9E24-08E2F972B7E7} = {4FD911E2-367E-4601-9679-2B0719F71556}
+		{369B2F49-38E8-49B1-8DA5-B3452B71ED9B} = {5DCA839E-AFF1-42F8-8BFE-8A2C414E2805}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}

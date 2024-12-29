@@ -5,15 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.Utility.Tests.Validation.Data
+namespace RecipeGenerator.Tests.Data.Models
 {
-    internal class AppliedIngredientData : IValidationTestData<AppliedIngredient>
+    public static class AppliedIngredientData
     {
-        public AppliedIngredient Default => new AppliedIngredient();
+        public static AppliedIngredient Default => new AppliedIngredient();
 
-        public AppliedIngredient? Null => null;
+        public static AppliedIngredient? Null => null;
 
-        public AppliedIngredient Normal => new AppliedIngredient()
+        public static AppliedIngredient Normal => new AppliedIngredient()
         {
             Id = 1,
             IngredientId = 1,
@@ -22,12 +22,12 @@ namespace RecipeGenerator.Utility.Tests.Validation.Data
             CreatedAt = DateTime.UtcNow,
             UpdatedAt = DateTime.UtcNow,
             MeasurementId = 1,
-            MeasurementType =Models.Measurements.MeasurementType.Amount,
+            MeasurementType = RecipeGenerator.Models.Measurements.MeasurementType.Amount,
             RecipeId = 1,
             MeasurementValue = 1,
         };
 
-        public AppliedIngredient Invalid => new AppliedIngredient()
+        public static AppliedIngredient Invalid => new AppliedIngredient()
         {
             Id = 0,
             IngredientId = 0,
@@ -36,7 +36,7 @@ namespace RecipeGenerator.Utility.Tests.Validation.Data
             CreatedAt = default,
             UpdatedAt = default,
             MeasurementId = 0,
-            MeasurementType = Models.Measurements.MeasurementType.None,
+            MeasurementType = RecipeGenerator.Models.Measurements.MeasurementType.None,
             MeasurementValue = 0,
         };
     }

@@ -1,25 +1,30 @@
 ﻿using FluentValidation;
-using RecipeGenerator.Models;
-using RecipeGenerator.Utility.Tests.Validation.Data;
+using RecipeGenerator.Models.Measurements;
+using RecipeGenerator.Models.Recipes;
+using RecipeGenerator.Tests.Data.Models;
 using RecipeGenerator.Utility.Validation;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.Utility.Tests.Validation.Tests
+namespace RecipeGenerator.Tests.Utility.Validation
 {
-    public abstract class AbstractValidationTest<T> where T: IRecipeGeneratorEntity
+    public class MeasurementTests
     {
-        protected abstract IValidationTestData<T> ValidationTestData { get; set; }
+        protected AbstractValidator<Measurement> Validator { get; set; }
 
-        protected abstract AbstractValidator<T> Validator { get; set; }
+        public MeasurementTests()
+        {
+            Validator = new MeasurementValidator();
+        }
 
         [Fact]
         public async Task ValidateNormal()
         {
-            var recipe = ValidationTestData.Normal;
+            var recipe = MeasurementData.Normal;
 
             var result = await Validator.ValidateAsync(recipe);
 
@@ -30,7 +35,7 @@ namespace RecipeGenerator.Utility.Tests.Validation.Tests
         [Fact]
         public async Task ValidateDefault()
         {
-            var recipe = ValidationTestData.Default;
+            var recipe = MeasurementData.Default;
 
             var result = await Validator.ValidateAsync(recipe);
 
@@ -41,7 +46,7 @@ namespace RecipeGenerator.Utility.Tests.Validation.Tests
         [Fact]
         public async Task ValidateNull()
         {
-            var recipe = ValidationTestData.Null;
+            var recipe = MeasurementData.Null;
 
             await Assert.ThrowsAsync<ArgumentNullException>(() => Validator!.ValidateAndThrowAsync(recipe));
         }
@@ -49,7 +54,7 @@ namespace RecipeGenerator.Utility.Tests.Validation.Tests
         [Fact]
         public async Task ValidateInvalid()
         {
-            var recipe = ValidationTestData.Invalid;
+            var recipe = MeasurementData.Invalid;
 
             var result = await Validator.ValidateAsync(recipe);
 

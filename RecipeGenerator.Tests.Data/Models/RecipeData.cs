@@ -5,15 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.Utility.Tests.Validation.Data
+namespace RecipeGenerator.Tests.Data.Models
 {
-    internal class RecipeData : IValidationTestData<Recipe>
+    public static class RecipeData
     {
-        public Recipe Default => new Recipe();
+        public static Recipe Default => new Recipe();
 
-        public Recipe? Null => null;
+        public static Recipe? Null => null;
 
-        public Recipe Normal => new Recipe()
+        public static Recipe Normal => new Recipe()
         {
             Id = 1,
             CourseType = Course.Horsdoeuvres,
@@ -28,7 +28,7 @@ namespace RecipeGenerator.Utility.Tests.Validation.Data
             Ingredients = new(),
         };
 
-        public Recipe Invalid => new Recipe()
+        public static Recipe Invalid => new Recipe()
         {
             Id = 0,
             CourseType = Course.Unknown,

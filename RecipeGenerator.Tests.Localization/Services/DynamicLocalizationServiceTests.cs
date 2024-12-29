@@ -5,13 +5,13 @@ using RecipeGenerator.Localization.Models;
 using RecipeGenerator.Localization.Models.Models;
 using RecipeGenerator.Localization.Services;
 
-namespace Resources.Localization.Tests.Services
+namespace RecipeGenerator.Tests.Localization.Services
 {
-    public class DynamicLocalizationService_Tests
+    public class DynamicLocalizationServiceTests
     {
         private readonly ILogger<DynamicLocalizationService> logger;
 
-        public DynamicLocalizationService_Tests()
+        public DynamicLocalizationServiceTests()
         {
             logger = new NullLogger<DynamicLocalizationService>();
         }
