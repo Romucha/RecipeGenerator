@@ -41,5 +41,10 @@
         /// Image of the ingredient.
         /// </summary>
         public byte[] Image { get; set; } = default!;
+
+        /// <summary>
+        /// Measurement type.
+        /// </summary>
+        public int MeasurementType { get; set; }
     }
 }

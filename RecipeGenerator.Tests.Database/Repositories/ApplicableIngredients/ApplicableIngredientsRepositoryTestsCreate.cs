@@ -18,14 +18,14 @@ namespace RecipeGenerator.Tests.Database.Repositories.ApplicableIngredients
             {
                 var repository = GetRepository(context);
 
-                var resposne = await repository.CreateAsync();
+                var response = await repository.CreateAsync();
                 await context.SaveChangesAsync();
 
-                Assert.NotNull(resposne);
-                Assert.NotEqual(0, resposne.Id);
-                Assert.NotEqual(ApplicableIngredientData.Normal.Id, resposne.Id);
-                Assert.Equal(string.Empty, resposne.Name);
-                Assert.True(context.ApplicableIngredients.Any(c => c.Id == resposne.Id));
+                Assert.NotNull(response);
+                Assert.NotEqual(0, response.Id);
+                Assert.NotEqual(ApplicableIngredientData.Normal.Id, response.Id);
+                Assert.Equal(string.Empty, response.Name);
+                Assert.True(context.ApplicableIngredients.Any(c => c.Id == response.Id));
             }
         }
     }

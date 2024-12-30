@@ -1,4 +1,6 @@
-﻿using RecipeGenerator.Tests.Data.Database;
+﻿using RecipeGenerator.Models.Ingredients;
+using RecipeGenerator.Models.Measurements;
+using RecipeGenerator.Tests.Data.Database;
 using RecipeGenerator.Tests.Data.Models;
 using System;
 using System.Collections.Generic;
@@ -12,33 +14,38 @@ namespace RecipeGenerator.Tests.Database.Repositories.ApplicableIngredients
     public partial class ApplicableIngredientsRepositoryTests
     {
         [Fact]
-        public async Task Delete_Normal()
+        public async Task Get_Normal()
         {
             using (var context = await DatabaseData.ProvideDbContext().WithSeeding())
             {
                 var repository = GetRepository(context);
-                var expectedId = ApplicableIngredientData.Normal.Id;
-                var expectedName = ApplicableIngredientData.Normal.Name;
+                var id = ApplicableIngredientData.Normal.Id;
 
-                var response = await repository.DeleteAsync(expectedId);
+                var response = await repository.GetAsync(id);
                 await context.SaveChangesAsync();
 
                 Assert.NotNull(response);
                 Assert.Equal(ApplicableIngredientData.Normal.Id, response.Id);
                 Assert.Equal(ApplicableIngredientData.Normal.Name, response.Name);
-                Assert.False(context.ApplicableIngredients.Any(c => c.Id == response.Id));
+                Assert.Equal(ApplicableIngredientData.Normal.Description, response.Description);
+                Assert.Equal(ApplicableIngredientData.Normal.MeasurementType, (MeasurementType)response.MeasurementType);
+                Assert.Equal(ApplicableIngredientData.Normal.CreatedAt.Date, response.CreatedAt.Date);
+                Assert.Equal(ApplicableIngredientData.Normal.UpdatedAt.Date, response.UpdatedAt.Date);
+                Assert.Equal(ApplicableIngredientData.Normal.IngredientType, (IngredientType)response.IngredientType);
+                Assert.Equal(ApplicableIngredientData.Normal.Image, response.Image);
+                Assert.Equal(ApplicableIngredientData.Normal.Link, response.Link);
             }
         }
 
         [Fact]
-        public async Task Delete_Default()
+        public async Task Get_Default()
         {
             using (var context = await DatabaseData.ProvideDbContext().WithSeeding())
             {
                 var repository = GetRepository(context);
                 var id = 0;
 
-                var response = await repository.DeleteAsync(id);
+                var response = await repository.GetAsync(id);
                 await context.SaveChangesAsync();
 
                 Assert.Null(response);
@@ -46,14 +53,14 @@ namespace RecipeGenerator.Tests.Database.Repositories.ApplicableIngredients
         }
 
         [Fact]
-        public async Task Delete_NonExistent()
+        public async Task Get_NonExistent()
         {
             using (var context = await DatabaseData.ProvideDbContext().WithSeeding())
             {
                 var repository = GetRepository(context);
                 var id = int.MaxValue;
 
-                var response = await repository.DeleteAsync(id);
+                var response = await repository.GetAsync(id);
                 await context.SaveChangesAsync();
 
                 Assert.Null(response);
@@ -61,14 +68,14 @@ namespace RecipeGenerator.Tests.Database.Repositories.ApplicableIngredients
         }
 
         [Fact]
-        public async Task Delete_Negative()
+        public async Task Get_Negative()
         {
             using (var context = await DatabaseData.ProvideDbContext().WithSeeding())
             {
                 var repository = GetRepository(context);
                 var id = -1;
 
-                var response = await repository.DeleteAsync(id);
+                var response = await repository.GetAsync(id);
                 await context.SaveChangesAsync();
 
                 Assert.Null(response);
