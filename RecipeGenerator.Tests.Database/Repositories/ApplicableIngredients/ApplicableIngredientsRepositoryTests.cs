@@ -16,28 +16,17 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Tests.Database.Repositories.ApplicableIngredients
 {
-    public partial class ApplicableIngredientsRepositoryTests : IDisposable
+    public partial class ApplicableIngredientsRepositoryTests
     {
-        private readonly RecipeGeneratorDbContext recipeGeneratorDbContext;
-
-        private readonly ApplicableIngredientRepository repository;
+        private readonly IMapper mapper;
         public ApplicableIngredientsRepositoryTests()
         {
-            var configuration = new Mock<Microsoft.Extensions.Configuration.IConfiguration>().Object;
-            var mapper = new MapperConfiguration(cfg => cfg.AddProfile<MapperInitializer>()).CreateMapper();
-
-            DbContextOptions options = new DbContextOptionsBuilder<RecipeGeneratorDbContext>().UseInMemoryDatabase(Guid.NewGuid().ToString()).Options;
-            recipeGeneratorDbContext = new RecipeGeneratorDbContext(configuration, options);
-
-            repository = new ApplicableIngredientRepository(
-                new NullLogger<ApplicableIngredientRepository>(),
-                recipeGeneratorDbContext,
-                mapper);
+            mapper = new MapperConfiguration(cfg => cfg.AddProfile<MapperInitializer>()).CreateMapper();
         }
 
-        public void Dispose()
+        private ApplicableIngredientRepository GetRepository(RecipeGeneratorDbContext context)
         {
-            recipeGeneratorDbContext.Dispose();
+            return new ApplicableIngredientRepository(new NullLogger<ApplicableIngredientRepository>(), context, mapper);
         }
     }
 }

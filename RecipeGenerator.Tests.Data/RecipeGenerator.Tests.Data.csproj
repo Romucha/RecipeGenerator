@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RecipeGenerator.Database\RecipeGenerator.Database.csproj" />
     <ProjectReference Include="..\RecipeGenerator.Models\RecipeGenerator.Models.csproj" />
   </ItemGroup>
 
