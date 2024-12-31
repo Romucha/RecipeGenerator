@@ -22,7 +22,6 @@ namespace RecipeGenerator.Tests.Data.Models
             CreatedAt = DateTime.UtcNow,
             UpdatedAt = DateTime.UtcNow,
             MeasurementId = 1,
-            MeasurementType = RecipeGenerator.Models.Measurements.MeasurementType.Amount,
             RecipeId = 1,
             MeasurementValue = 1,
         };
@@ -36,7 +35,6 @@ namespace RecipeGenerator.Tests.Data.Models
             CreatedAt = default,
             UpdatedAt = default,
             MeasurementId = 0,
-            MeasurementType = RecipeGenerator.Models.Measurements.MeasurementType.None,
             MeasurementValue = 0,
         };
     }

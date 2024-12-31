@@ -24,13 +24,22 @@ namespace RecipeGenerator.Tests.Data.Database
             return new RecipeGeneratorDbContext(configuration, options);
         }
 
-        public static async Task<RecipeGeneratorDbContext> WithSeeding(this RecipeGeneratorDbContext context)
+        public static async Task<RecipeGeneratorDbContext> WithSingularItems(this RecipeGeneratorDbContext context)
         {
             await context.Recipes.AddAsync(RecipeData.Normal);
             await context.Steps.AddAsync(StepData.Normal);
             await context.ApplicableIngredients.AddAsync(ApplicableIngredientData.Normal);
             await context.AppliedIngredients.AddAsync(AppliedIngredientData.Normal);
             await context.Measurements.AddAsync(MeasurementData.Normal);
+            await context.SaveChangesAsync();
+
+            return context;
+        }
+
+        public static async Task<RecipeGeneratorDbContext> WithCollections(this RecipeGeneratorDbContext context)
+        {
+            await context.ApplicableIngredients.AddRangeAsync(ApplicableIngredientDataCollections.Normal);
+            await context.AppliedIngredients.AddRangeAsync(AppliedIngredientDataCollections.Normal);
             await context.SaveChangesAsync();
 
             return context;

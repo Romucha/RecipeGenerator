@@ -14,7 +14,7 @@ namespace RecipeGenerator.Tests.Database.Repositories.ApplicableIngredients
         [Fact]
         public async Task Create_Normal()
         {
-            using (var context = await DatabaseData.ProvideDbContext().WithSeeding())
+            using (var context = await DatabaseData.ProvideDbContext().WithSingularItems())
             {
                 var repository = GetRepository(context);
 

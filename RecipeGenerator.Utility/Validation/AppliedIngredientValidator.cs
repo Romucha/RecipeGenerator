@@ -22,7 +22,6 @@ namespace RecipeGenerator.Utility.Validation
             RuleFor(x => x.ApplicableIngredient);
             RuleFor(x => x.MeasurementId).NotEmpty();
             RuleFor(x => x.Measurement);
-            RuleFor(x => x.MeasurementType).NotNull();
             RuleFor(x => x.RecipeId).NotEmpty();
             RuleFor(x => x.Recipe);
         }

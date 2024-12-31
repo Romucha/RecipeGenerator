@@ -70,6 +70,7 @@ namespace RecipeGenerator.Database.Repositories
             try
             {
                 IEnumerable<ApplicableIngredient>? ingredients = dbContext.ApplicableIngredients.AsNoTracking();
+                var totalCount = ingredients.Count();
                 if (!string.IsNullOrEmpty(filterString))
                 {
                     ingredients = ingredients
@@ -85,7 +86,7 @@ namespace RecipeGenerator.Database.Repositories
 
                 return await Task.FromResult(new GetAllApplicableIngredientsResponse()
                 {
-                    TotalCount = ingredients.Count(),
+                    TotalCount = totalCount,
                     PageNumber = pageNumber,
                     PageSize = pageSize,
                     Items = ingredients.Select(mapper.Map<GetAllApplicableIngredientsResponseItem>).OrderBy(c => c.Name)

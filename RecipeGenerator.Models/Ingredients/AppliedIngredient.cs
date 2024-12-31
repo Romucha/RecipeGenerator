@@ -46,11 +46,6 @@ namespace RecipeGenerator.Models.Ingredients
         public ApplicableIngredient? ApplicableIngredient { get; set; } = default!;
 
         /// <summary>
-        /// Type of a measurement that can be applied to the ingredient.
-        /// </summary>
-        public MeasurementType MeasurementType { get; set; }
-
-        /// <summary>
         /// Identifier of a measurement.
         /// </summary>
         public int? MeasurementId { get; set; }

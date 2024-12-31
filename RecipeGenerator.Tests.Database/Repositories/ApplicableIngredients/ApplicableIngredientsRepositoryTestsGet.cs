@@ -16,7 +16,7 @@ namespace RecipeGenerator.Tests.Database.Repositories.ApplicableIngredients
         [Fact]
         public async Task Get_Normal()
         {
-            using (var context = await DatabaseData.ProvideDbContext().WithSeeding())
+            using (var context = await DatabaseData.ProvideDbContext().WithSingularItems())
             {
                 var repository = GetRepository(context);
                 var id = ApplicableIngredientData.Normal.Id;
@@ -40,7 +40,7 @@ namespace RecipeGenerator.Tests.Database.Repositories.ApplicableIngredients
         [Fact]
         public async Task Get_Default()
         {
-            using (var context = await DatabaseData.ProvideDbContext().WithSeeding())
+            using (var context = await DatabaseData.ProvideDbContext().WithSingularItems())
             {
                 var repository = GetRepository(context);
                 var id = 0;
@@ -55,7 +55,7 @@ namespace RecipeGenerator.Tests.Database.Repositories.ApplicableIngredients
         [Fact]
         public async Task Get_NonExistent()
         {
-            using (var context = await DatabaseData.ProvideDbContext().WithSeeding())
+            using (var context = await DatabaseData.ProvideDbContext().WithSingularItems())
             {
                 var repository = GetRepository(context);
                 var id = int.MaxValue;
@@ -70,7 +70,7 @@ namespace RecipeGenerator.Tests.Database.Repositories.ApplicableIngredients
         [Fact]
         public async Task Get_Negative()
         {
-            using (var context = await DatabaseData.ProvideDbContext().WithSeeding())
+            using (var context = await DatabaseData.ProvideDbContext().WithSingularItems())
             {
                 var repository = GetRepository(context);
                 var id = -1;
