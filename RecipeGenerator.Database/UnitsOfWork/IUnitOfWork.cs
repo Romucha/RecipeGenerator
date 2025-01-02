@@ -8,9 +8,9 @@ namespace RecipeGenerator.Database.UnitsOfWork
     /// </summary>
     public interface IUnitOfWork
     {
-        ApplicableIngredientRepository ApplicableIngredientRepository { get; }
+        ApplicableIngredientsRepository ApplicableIngredientRepository { get; }
 
-        AppliedIngredientRepository AppliedIngredientRepository { get; }
+        AppliedIngredientsRepository AppliedIngredientRepository { get; }
 
         RecipeRepository RecipeRepository { get; }
 

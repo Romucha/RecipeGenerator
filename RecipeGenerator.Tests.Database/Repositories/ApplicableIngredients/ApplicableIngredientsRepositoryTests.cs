@@ -24,9 +24,9 @@ namespace RecipeGenerator.Tests.Database.Repositories.ApplicableIngredients
             mapper = new MapperConfiguration(cfg => cfg.AddProfile<MapperInitializer>()).CreateMapper();
         }
 
-        private ApplicableIngredientRepository GetRepository(RecipeGeneratorDbContext context)
+        private ApplicableIngredientsRepository GetRepository(RecipeGeneratorDbContext context)
         {
-            return new ApplicableIngredientRepository(new NullLogger<ApplicableIngredientRepository>(), context, mapper);
+            return new ApplicableIngredientsRepository(new NullLogger<ApplicableIngredientsRepository>(), context, mapper);
         }
     }
 }

@@ -26,8 +26,8 @@ namespace RecipeGenerator.Database.Extenstions
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<StepRepository>();
             services.AddTransient<RecipeRepository>();
-            services.AddTransient<AppliedIngredientRepository>();
-            services.AddTransient<ApplicableIngredientRepository>();
+            services.AddTransient<AppliedIngredientsRepository>();
+            services.AddTransient<ApplicableIngredientsRepository>();
 
             services.AddTransient<ApplicableIngredientsSeeder>();
         }

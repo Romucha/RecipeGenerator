@@ -14,8 +14,8 @@ namespace RecipeGenerator.Database.UnitsOfWork
         private readonly RecipeGeneratorDbContext dbContext;
         private readonly RecipeRepository recipeRepository;
         private readonly StepRepository stepRepostiry;
-        private readonly AppliedIngredientRepository appliedIngredientRepository;
-        private readonly ApplicableIngredientRepository applicableIngredientRepository;
+        private readonly AppliedIngredientsRepository appliedIngredientRepository;
+        private readonly ApplicableIngredientsRepository applicableIngredientRepository;
         private readonly IMapper mapper;
 
         /// <summary>
@@ -33,8 +33,8 @@ namespace RecipeGenerator.Database.UnitsOfWork
             RecipeGeneratorDbContext dbContext,
             RecipeRepository recipeRepository,
             StepRepository stepRepostiry,
-            AppliedIngredientRepository appliedIngredientRepository,
-            ApplicableIngredientRepository applicableIngredientRepository, 
+            AppliedIngredientsRepository appliedIngredientRepository,
+            ApplicableIngredientsRepository applicableIngredientRepository, 
             IMapper mapper)
         {
             this.logger = logger;
@@ -63,9 +63,9 @@ namespace RecipeGenerator.Database.UnitsOfWork
 
         private bool disposed = false;
 
-        public ApplicableIngredientRepository ApplicableIngredientRepository => applicableIngredientRepository;
+        public ApplicableIngredientsRepository ApplicableIngredientRepository => applicableIngredientRepository;
 
-        public AppliedIngredientRepository AppliedIngredientRepository => appliedIngredientRepository;
+        public AppliedIngredientsRepository AppliedIngredientRepository => appliedIngredientRepository;
 
         public RecipeRepository RecipeRepository => recipeRepository;
 
