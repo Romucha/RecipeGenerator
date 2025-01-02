@@ -28,8 +28,34 @@ namespace RecipeGenerator.Tests.Database.Repositories.AppliedIngredients
                 Assert.Equal(ApplicableIngredientData.Normal.Name, response.Name);
                 Assert.Equal(ApplicableIngredientData.Normal.Description, response.Description);
                 Assert.Equal(RecipeData.Normal.Id, response.RecipeId);
-                Assert.Equal(ApplicableIngredientData.Normal.Id, response.IngredientId);
+                Assert.Equal(AppliedIngredientData.Normal.Id, response.IngredientId);
                 Assert.True(context.AppliedIngredients.Any(c => c.Id == response.Id));
+            }
+        }
+
+        [Fact]
+        public async Task Create_Invalid_RecipeId()
+        {
+            using (var context = await DatabaseData.ProvideDbContext().WithSingularItems())
+            {
+                var repository = GetRepository(context);
+                var recipeId = 0;
+                var applicableIngredientId = ApplicableIngredientData.Normal.Id;
+
+                await Assert.ThrowsAnyAsync<Exception>(() => repository.CreateAsync(recipeId, applicableIngredientId));
+            }
+        }
+
+        [Fact]
+        public async Task Create_Invalid_ApplicableIngredientId()
+        {
+            using (var context = await DatabaseData.ProvideDbContext().WithSingularItems())
+            {
+                var repository = GetRepository(context);
+                var recipeId = RecipeData.Normal.Id;
+                var applicableIngredientId = 0;
+
+                await Assert.ThrowsAnyAsync<Exception>(() => repository.CreateAsync(recipeId, applicableIngredientId));
             }
         }
     }
