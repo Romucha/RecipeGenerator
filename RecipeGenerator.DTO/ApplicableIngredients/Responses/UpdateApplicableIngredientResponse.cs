@@ -38,6 +38,11 @@
         public int IngredientType { get; set; }
 
         /// <summary>
+        /// Measurement type.
+        /// </summary>
+        public int MeasurementType { get; set; }
+
+        /// <summary>
         /// Image of the ingredient.
         /// </summary>
         public byte[] Image { get; set; } = default!;

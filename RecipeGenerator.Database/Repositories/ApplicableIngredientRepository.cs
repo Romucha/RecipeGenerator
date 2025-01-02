@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using RecipeGenerator.Database.Context;
 using RecipeGenerator.DTO.ApplicableIngredients.Responses;
 using RecipeGenerator.Models.Ingredients;
+using RecipeGenerator.Models.Measurements;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -131,7 +132,8 @@ namespace RecipeGenerator.Database.Repositories
             string? description,
             Uri? link,
             IngredientType? ingredientType,
-            byte[] image,
+            MeasurementType? measurementType,
+            byte[]? image,
             CancellationToken cancellationToken = default)
         {
             try
@@ -164,6 +166,11 @@ namespace RecipeGenerator.Database.Repositories
                     if (ingredientType != null)
                     {
                         ingredient.IngredientType = (IngredientType)ingredientType;
+                    }
+
+                    if (measurementType != null)
+                    {
+                        ingredient.MeasurementType = (MeasurementType)measurementType;
                     }
 
                     if (image != null)
