@@ -1,7 +1,9 @@
-﻿namespace RecipeGenerator.DTO.ApplicableIngredients.Requests
+﻿using RecipeGenerator.DTO.Base.Requests;
+
+namespace RecipeGenerator.DTO.ApplicableIngredients.Requests
 {
-    public record GetApplicableIngredientRequest
+    public record GetApplicableIngredientRequest : BaseGetRequest
     {
-        public int Id { get; set; }
+
     }
 }

@@ -1,22 +1,10 @@
-﻿namespace RecipeGenerator.DTO.AppliedIngredients.Responses
+﻿using RecipeGenerator.DTO.Base.Responses;
+using System.Diagnostics.Metrics;
+
+namespace RecipeGenerator.DTO.AppliedIngredients.Responses
 {
-    public record CreateAppliedIndredientResponse
+    public record CreateAppliedIndredientResponse : BaseCreateResponse
     {
-        /// <summary>
-        /// Identifier.
-        /// </summary>
-        public int Id { get; set; }
-
-        /// <summary>
-        /// Name of the source ingredient.
-        /// </summary>
-        public string Name { get; set; } = default!;
-
-        /// <summary>
-        /// Description of the source ingredient.
-        /// </summary>
-        public string Description { get; set; } = default!;
-
         /// <summary>
         /// Identifier of a parent recipe.
         /// </summary>
@@ -26,5 +14,15 @@
         /// Identifier of a base ingredient.
         /// </summary>
         public int IngredientId { get; set; }
+
+        /// <summary>
+        /// Identifier of a measurement.
+        /// </summary>
+        public int MeasurementId { get; set; }
+
+        /// <summary>
+        /// Value of the measurement.
+        /// </summary>
+        public double MeasurementValue { get; set; }
     }
 }

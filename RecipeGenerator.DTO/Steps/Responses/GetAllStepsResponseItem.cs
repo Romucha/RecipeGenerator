@@ -1,17 +1,9 @@
-﻿namespace RecipeGenerator.DTO.Steps.Responses
+﻿using RecipeGenerator.DTO.Base.Responses;
+
+namespace RecipeGenerator.DTO.Steps.Responses
 {
-    public record GetAllStepsResponseItem
+    public record GetAllStepsResponseItem : BaseGetAllResponseItem
     {
-        public int Id { get; set; }
-
         public int Index { get; set; }
-
-        public string Name { get; set; } = default!;
-
-        public string Description { get; set; } = default!;
-
-        public DateTime CreatedAt { get; set; }
-
-        public DateTime UpdatedAt { get; set; }
     }
 }

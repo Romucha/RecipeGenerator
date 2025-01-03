@@ -1,9 +1,9 @@
-﻿namespace RecipeGenerator.DTO.ApplicableIngredients.Responses
-{
-    public record DeleteApplicableIngredientResponse
-    {
-        public int Id { get; set; }
+﻿using RecipeGenerator.DTO.Base.Responses;
 
-        public string Name { get; set; } = default!;
+namespace RecipeGenerator.DTO.ApplicableIngredients.Responses
+{
+    public record DeleteApplicableIngredientResponse : BaseDeleteResponse
+    {
+
     }
 }

@@ -1,22 +1,9 @@
-﻿namespace RecipeGenerator.DTO.ApplicableIngredients.Requests
+﻿using RecipeGenerator.DTO.Base.Requests;
+
+namespace RecipeGenerator.DTO.ApplicableIngredients.Requests
 {
-    public record UpdateApplicableIngredientRequest
+    public record UpdateApplicableIngredientRequest : BaseUpdateRequest
     {
-        /// <summary>
-        /// Idetifier.
-        /// </summary>
-        public int Id { get; set; }
-
-        /// <summary>
-        /// Display name.
-        /// </summary>
-        public string? Name { get; set; }
-
-        /// <summary>
-        /// Description.
-        /// </summary>
-        public string? Description { get; set; }
-
         /// <summary>
         /// Link to an internet page about the ingredient.
         /// </summary>

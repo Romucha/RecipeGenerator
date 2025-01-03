@@ -1,13 +1,9 @@
-﻿namespace RecipeGenerator.DTO.AppliedIngredients.Responses
+﻿using RecipeGenerator.DTO.Base.Responses;
+
+namespace RecipeGenerator.DTO.AppliedIngredients.Responses
 {
-    public record GetAllAppliedIngredientsResponse
+    public record GetAllAppliedIngredientsResponse : BaseGetAllResponse
     {
-        public int TotalCount { get; set; }
-
-        public int PageNumber { get; set; }
-
-        public int PageSize { get; set; }
-
         public IEnumerable<GetAllAppliedIngredientsResponseItem> Items { get; set; } = Enumerable.Empty<GetAllAppliedIngredientsResponseItem>();
     }
 }

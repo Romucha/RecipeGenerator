@@ -1,7 +1,9 @@
-﻿namespace RecipeGenerator.DTO.Steps.Requests
+﻿using RecipeGenerator.DTO.Base.Requests;
+
+namespace RecipeGenerator.DTO.Steps.Requests
 {
-    public record GetStepRequest
+    public record GetStepRequest : BaseGetRequest
     {
-        public int Id { get; set; }
+
     }
 }

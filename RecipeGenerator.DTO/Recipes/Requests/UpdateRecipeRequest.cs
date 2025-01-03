@@ -1,22 +1,9 @@
-﻿namespace RecipeGenerator.DTO.Recipes.Requests
+﻿using RecipeGenerator.DTO.Base.Requests;
+
+namespace RecipeGenerator.DTO.Recipes.Requests
 {
-    public record UpdateRecipeRequest
+    public record UpdateRecipeRequest : BaseUpdateRequest
     {
-        /// <summary>
-        /// Identifier.
-        /// </summary>
-        public int Id { get; set; }
-
-        /// <summary>
-        /// Display name.
-        /// </summary>
-        public string? Name { get; set; }
-
-        /// <summary>
-        /// Description.
-        /// </summary>
-        public string? Description { get; set; }
-
         /// <summary>
         /// Image.
         /// </summary>

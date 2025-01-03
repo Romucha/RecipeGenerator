@@ -1,7 +1,9 @@
-﻿namespace RecipeGenerator.DTO.ApplicableIngredients.Requests
+﻿using RecipeGenerator.DTO.Base.Requests;
+
+namespace RecipeGenerator.DTO.ApplicableIngredients.Requests
 {
-    public record DeleteApplicableIngredientRequest
+    public record DeleteApplicableIngredientRequest : BaseDeleteRequest
     {
-        public int Id { get; set; }
+
     }
 }

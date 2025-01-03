@@ -1,11 +1,9 @@
-﻿namespace RecipeGenerator.DTO.ApplicableIngredients.Requests
+﻿using RecipeGenerator.DTO.Base.Requests;
+
+namespace RecipeGenerator.DTO.ApplicableIngredients.Requests
 {
-    public record GetAllApplicableIngredientsRequest
+    public record GetAllApplicableIngredientsRequest : BaseGetAllRequest
     {
-        public int PageNumber { get; set; }
 
-        public int PageSize { get; set; }
-
-        public string? Filter { get; set; }
     }
 }

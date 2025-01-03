@@ -1,32 +1,9 @@
-﻿namespace RecipeGenerator.DTO.ApplicableIngredients.Responses
+﻿using RecipeGenerator.DTO.Base.Responses;
+
+namespace RecipeGenerator.DTO.ApplicableIngredients.Responses
 {
-    public record UpdateApplicableIngredientResponse
+    public record UpdateApplicableIngredientResponse : BaseUpdateResponse
     {
-        /// <summary>
-        /// Idetifier.
-        /// </summary>
-        public int Id { get; set; }
-
-        /// <summary>
-        /// Date of creation.
-        /// </summary>
-        public DateTime CreatedAt { get; set; }
-
-        /// <summary>
-        /// Date of last update.
-        /// </summary>
-        public DateTime UpdatedAt { get; set; }
-
-        /// <summary>
-        /// Display name.
-        /// </summary>
-        public string Name { get; set; } = default!;
-
-        /// <summary>
-        /// Description.
-        /// </summary>
-        public string Description { get; set; } = default!;
-
         /// <summary>
         /// Link to an internet page about the ingredient.
         /// </summary>

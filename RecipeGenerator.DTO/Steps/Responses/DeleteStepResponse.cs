@@ -1,9 +1,9 @@
-﻿namespace RecipeGenerator.DTO.Steps.Responses
-{
-    public record DeleteStepResponse
-    {
-        public int Id { get; set; }
+﻿using RecipeGenerator.DTO.Base.Responses;
 
-        public string Name { get; set; } = default!;
+namespace RecipeGenerator.DTO.Steps.Responses
+{
+    public record DeleteStepResponse : BaseDeleteResponse
+    {
+
     }
 }

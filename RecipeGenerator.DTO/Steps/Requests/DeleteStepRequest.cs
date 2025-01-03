@@ -1,7 +1,9 @@
-﻿namespace RecipeGenerator.DTO.Steps.Requests
+﻿using RecipeGenerator.DTO.Base.Requests;
+
+namespace RecipeGenerator.DTO.Steps.Requests
 {
-    public record DeleteStepRequest
+    public record DeleteStepRequest : BaseDeleteRequest
     {
-        public int Id { get; set; }
+
     }
 }

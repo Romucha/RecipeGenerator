@@ -1,9 +1,11 @@
-﻿namespace RecipeGenerator.DTO.AppliedIngredients.Requests
-{
-    public record CreateAppliedIngredientRequest
-    {
-        public Guid RecipeId { get; set; }
+﻿using RecipeGenerator.DTO.Base.Requests;
 
-        public Guid IngredientId { get; set; }
+namespace RecipeGenerator.DTO.AppliedIngredients.Requests
+{
+    public record CreateAppliedIngredientRequest : BaseCreateRequest
+    {
+        public int RecipeId { get; set; }
+
+        public int IngredientId { get; set; }
     }
 }

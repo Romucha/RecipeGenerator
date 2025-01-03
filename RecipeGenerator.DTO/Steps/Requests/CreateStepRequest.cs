@@ -1,7 +1,9 @@
-﻿namespace RecipeGenerator.DTO.Steps.Requests
+﻿using RecipeGenerator.DTO.Base.Requests;
+
+namespace RecipeGenerator.DTO.Steps.Requests
 {
-    public record CreateStepRequest
+    public record CreateStepRequest : BaseCreateRequest
     {
-        public Guid RecipeId { get; set; }
+        public int RecipeId { get; set; }
     }
 }

@@ -1,34 +1,27 @@
-﻿namespace RecipeGenerator.DTO.AppliedIngredients.Responses
+﻿using RecipeGenerator.DTO.Base.Responses;
+
+namespace RecipeGenerator.DTO.AppliedIngredients.Responses
 {
-    public record UpdateAppliedIngredientResponse
+    public record UpdateAppliedIngredientResponse : BaseUpdateResponse
     {
-        /// <summary>
-        /// Identifier.
-        /// </summary>
-        public int Id { get; set; }
-
-        /// <summary>
-        /// Name of ingredient.
-        /// </summary>
-        public string? Name { get; set; }
-
-        /// <summary>
-        /// Description of ingredient.
-        /// </summary>
-        public string? Description { get; set; }
-
-        public DateTime CreatedAt { get; set; }
-
-        public DateTime UpdatedAt { get; set; }
-
         /// <summary>
         /// Identifier of a parent recipe.
         /// </summary>
-        public Guid RecipeId { get; set; }
+        public int RecipeId { get; set; }
 
         /// <summary>
         /// Identifier of a base ingredient.
         /// </summary>
-        public Guid IngredientId { get; set; }
+        public int IngredientId { get; set; }
+
+        /// <summary>
+        /// Identifier of a measurement.
+        /// </summary>
+        public int MeasurementId { get; set; }
+
+        /// <summary>
+        /// Value of the measurement.
+        /// </summary>
+        public double MeasurementValue { get; set; }
     }
 }
