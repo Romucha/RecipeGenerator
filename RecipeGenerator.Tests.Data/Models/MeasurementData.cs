@@ -23,7 +23,7 @@ namespace RecipeGenerator.Tests.Data.Models
             ConversionCoefficient = 1,
             Ingredients = new(),
             IsBase = true,
-            Type = MeasurementType.Weight,
+            MeasurementType = MeasurementType.Weight,
         };
 
         public static Measurement Invalid => new()
@@ -36,7 +36,7 @@ namespace RecipeGenerator.Tests.Data.Models
             ConversionCoefficient = 0,
             Ingredients = null,
             IsBase = true,
-            Type = MeasurementType.None,
+            MeasurementType = MeasurementType.None,
         };
     }
 }

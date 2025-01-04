@@ -32,7 +32,7 @@ namespace RecipeGenerator.Models.Measurements
         /// <summary>
         /// Type of the measurement.
         /// </summary>
-        public MeasurementType Type { get; set; }
+        public MeasurementType MeasurementType { get; set; }
 
         /// <summary>
         /// Determines if the measurement is base.

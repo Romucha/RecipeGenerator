@@ -3,11 +3,14 @@ using RecipeGenerator.DTO.ApplicableIngredients.Requests;
 using RecipeGenerator.DTO.ApplicableIngredients.Responses;
 using RecipeGenerator.DTO.AppliedIngredients.Requests;
 using RecipeGenerator.DTO.AppliedIngredients.Responses;
+using RecipeGenerator.DTO.Measurements.Requests;
+using RecipeGenerator.DTO.Measurements.Responses;
 using RecipeGenerator.DTO.Recipes.Requests;
 using RecipeGenerator.DTO.Recipes.Responses;
 using RecipeGenerator.DTO.Steps.Requests;
 using RecipeGenerator.DTO.Steps.Responses;
 using RecipeGenerator.Models.Ingredients;
+using RecipeGenerator.Models.Measurements;
 using RecipeGenerator.Models.Recipes;
 using RecipeGenerator.Models.Steps;
 
@@ -21,6 +24,7 @@ namespace RecipeGenerator.Utility.Mapping
             mapAppliedIngredients();
             mapSteps();
             mapRecipes();
+            mapMeasurements();
         }
 
         private void mapApplicableIngredients()
@@ -77,6 +81,20 @@ namespace RecipeGenerator.Utility.Mapping
             CreateMap<GetAllRecipesResponseItem, Recipe>().ReverseMap();
             CreateMap<GetRecipeResponse, Recipe>().ReverseMap();
             CreateMap<UpdateRecipeResponse, Recipe>().ReverseMap();
+        }
+
+        private void mapMeasurements()
+        {
+            CreateMap<CreateMeasurmentRequest, Measurement>().ReverseMap();
+            CreateMap<DeleteMeasurementRequest, Measurement>().ReverseMap();
+            CreateMap<GetMeasurementRequest, Measurement>().ReverseMap();
+            CreateMap<UpdateMeasurementRequest, Measurement>().ReverseMap();
+
+            CreateMap<CreateMeasurementResponse, Measurement>().ReverseMap();
+            CreateMap<DeleteMeasurementResponse, Measurement>().ReverseMap();
+            CreateMap<GetAllMeasurementsResponseItem, Measurement>().ReverseMap();
+            CreateMap<GetMeasurementResponse, Measurement>().ReverseMap();
+            CreateMap<UpdateMeasurementResponse, Measurement>().ReverseMap();
         }
     }
 }

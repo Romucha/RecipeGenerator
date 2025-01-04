@@ -19,7 +19,7 @@ namespace RecipeGenerator.Utility.Validation
             RuleFor(x => x.UpdatedAt).NotEmpty();
             RuleFor(x => x.ConversionCoefficient).NotEmpty();
             RuleFor(x => x.IsBase).NotNull();
-            RuleFor(x => x.Type).NotNull();
+            RuleFor(x => x.MeasurementType).NotEmpty();
             RuleFor(x => x.Ingredients).NotNull();
             RuleForEach(x => x.Ingredients).NotEmpty();
         }
