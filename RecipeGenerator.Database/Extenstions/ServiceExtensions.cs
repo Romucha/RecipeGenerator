@@ -24,10 +24,11 @@ namespace RecipeGenerator.Database.Extenstions
             services.AddSqlite<RecipeGeneratorDbContext>($"Data Source=\"{Path.Combine(AppPaths.DataFolder, $"Recipe.{configurationManager.GetSection(DynamicLocalizationOptions.Localization).GetValue<string>("CurrentCulture")}.db")}\"");
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
-            services.AddTransient<StepRepository>();
-            services.AddTransient<RecipeRepository>();
+            services.AddTransient<StepsRepository>();
+            services.AddTransient<RecipesRepository>();
             services.AddTransient<AppliedIngredientsRepository>();
             services.AddTransient<ApplicableIngredientsRepository>();
+            services.AddTransient<MeasurementsRepository>();
 
             services.AddTransient<ApplicableIngredientsSeeder>();
         }

@@ -13,13 +13,13 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Database.Repositories
 {
-    public class StepRepository
+    public class StepsRepository
     {
-        private readonly ILogger<StepRepository> logger;
+        private readonly ILogger<StepsRepository> logger;
         private readonly RecipeGeneratorDbContext dbContext;
         private readonly IMapper mapper;
 
-        public StepRepository(ILogger<StepRepository> logger, RecipeGeneratorDbContext dbContext, IMapper mapper)
+        public StepsRepository(ILogger<StepsRepository> logger, RecipeGeneratorDbContext dbContext, IMapper mapper)
         {
             this.logger = logger;
             this.dbContext = dbContext;

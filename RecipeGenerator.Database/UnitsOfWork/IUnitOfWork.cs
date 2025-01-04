@@ -12,9 +12,11 @@ namespace RecipeGenerator.Database.UnitsOfWork
 
         AppliedIngredientsRepository AppliedIngredientRepository { get; }
 
-        RecipeRepository RecipeRepository { get; }
+        RecipesRepository RecipeRepository { get; }
 
-        StepRepository StepRepository { get; }
+        StepsRepository StepRepository { get; }
+
+        MeasurementsRepository MeasurementsRepository { get; }
 
         /// <summary>
         /// Save changes in database.

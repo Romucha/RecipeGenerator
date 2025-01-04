@@ -12,13 +12,13 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Database.Repositories
 {
-    public class RecipeRepository
+    public class RecipesRepository
     {
-        private readonly ILogger<RecipeRepository> logger;
+        private readonly ILogger<RecipesRepository> logger;
         private readonly RecipeGeneratorDbContext dbContext;
         private readonly IMapper mapper;
 
-        public RecipeRepository(ILogger<RecipeRepository> logger, RecipeGeneratorDbContext dbContext, IMapper mapper)
+        public RecipesRepository(ILogger<RecipesRepository> logger, RecipeGeneratorDbContext dbContext, IMapper mapper)
         {
             this.logger = logger;
             this.dbContext = dbContext;

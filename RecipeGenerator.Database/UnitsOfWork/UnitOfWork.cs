@@ -12,10 +12,11 @@ namespace RecipeGenerator.Database.UnitsOfWork
     {
         private readonly ILogger<UnitOfWork> logger;
         private readonly RecipeGeneratorDbContext dbContext;
-        private readonly RecipeRepository recipeRepository;
-        private readonly StepRepository stepRepostiry;
+        private readonly RecipesRepository recipeRepository;
+        private readonly StepsRepository stepRepostiry;
         private readonly AppliedIngredientsRepository appliedIngredientRepository;
         private readonly ApplicableIngredientsRepository applicableIngredientRepository;
+        private readonly MeasurementsRepository measurementsRepository;
         private readonly IMapper mapper;
 
         /// <summary>
@@ -31,10 +32,11 @@ namespace RecipeGenerator.Database.UnitsOfWork
         public UnitOfWork(
             ILogger<UnitOfWork> logger,
             RecipeGeneratorDbContext dbContext,
-            RecipeRepository recipeRepository,
-            StepRepository stepRepostiry,
+            RecipesRepository recipeRepository,
+            StepsRepository stepRepostiry,
             AppliedIngredientsRepository appliedIngredientRepository,
             ApplicableIngredientsRepository applicableIngredientRepository, 
+            MeasurementsRepository measurementsRepository,
             IMapper mapper)
         {
             this.logger = logger;
@@ -43,6 +45,7 @@ namespace RecipeGenerator.Database.UnitsOfWork
             this.stepRepostiry = stepRepostiry;
             this.appliedIngredientRepository = appliedIngredientRepository;
             this.applicableIngredientRepository = applicableIngredientRepository;
+            this.measurementsRepository = measurementsRepository;
             this.mapper = mapper;
         }
 
@@ -67,9 +70,11 @@ namespace RecipeGenerator.Database.UnitsOfWork
 
         public AppliedIngredientsRepository AppliedIngredientRepository => appliedIngredientRepository;
 
-        public RecipeRepository RecipeRepository => recipeRepository;
+        public RecipesRepository RecipeRepository => recipeRepository;
 
-        public StepRepository StepRepository => stepRepostiry;
+        public StepsRepository StepRepository => stepRepostiry;
+
+        public MeasurementsRepository MeasurementsRepository => measurementsRepository;
 
         protected virtual void Dispose(bool disposing)
         {
