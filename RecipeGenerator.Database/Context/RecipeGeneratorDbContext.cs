@@ -30,7 +30,6 @@ namespace RecipeGenerator.Database.Context
             if (Database.IsRelational())
             {
                 Database.EnsureCreated();
-                Database.Migrate();
             }
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
