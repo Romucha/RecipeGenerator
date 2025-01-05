@@ -129,6 +129,8 @@ namespace RecipeGenerator.Database.Repositories
             string? description,
             int? recipeId,
             int? ingredientId,
+            int? measurementId,
+            double? measurementValue,
             CancellationToken cancellationToken = default)
         {
             try
@@ -157,6 +159,16 @@ namespace RecipeGenerator.Database.Repositories
                 if (ingredientId != null)
                 {
                     ingredient.IngredientId = ingredientId;
+                }
+
+                if (measurementId != null)
+                {
+                    ingredient.MeasurementId = measurementId;
+                }
+
+                if (measurementValue != null)
+                {
+                    ingredient.MeasurementValue = (double)measurementValue;
                 }
 
                 ingredient.UpdatedAt = DateTime.UtcNow;

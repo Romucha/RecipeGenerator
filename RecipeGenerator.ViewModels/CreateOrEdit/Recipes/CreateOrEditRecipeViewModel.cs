@@ -277,7 +277,7 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
 
                 foreach (var appliedIngredient in AppliedIngredients)
                 {
-                    await unitOfWork.AppliedIngredientRepository.UpdateAsync(appliedIngredient.Id, appliedIngredient.Name, appliedIngredient.Description, appliedIngredient.RecipeId, appliedIngredient.IngredientId);
+                    await unitOfWork.AppliedIngredientRepository.UpdateAsync(appliedIngredient.Id, appliedIngredient.Name, appliedIngredient.Description, appliedIngredient.RecipeId, appliedIngredient.IngredientId, null, null);
                 }
 
                 foreach (var appliedIngredientToDelete in appliedIngredientsToDelete)
