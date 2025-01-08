@@ -16,11 +16,11 @@ namespace RecipeGenerator.Database.Repositories
 {
     public class MeasurementsRepository
     {
-        private readonly ILogger<AppliedIngredientsRepository> logger;
+        private readonly ILogger<MeasurementsRepository> logger;
         private readonly RecipeGeneratorDbContext dbContext;
         private readonly IMapper mapper;
 
-        public MeasurementsRepository(ILogger<AppliedIngredientsRepository> logger, RecipeGeneratorDbContext dbContext, IMapper mapper)
+        public MeasurementsRepository(ILogger<MeasurementsRepository> logger, RecipeGeneratorDbContext dbContext, IMapper mapper)
         {
             this.logger = logger;
             this.dbContext = dbContext;
