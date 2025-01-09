@@ -72,6 +72,7 @@ namespace RecipeGenerator.Database.Repositories
             try
             {
                 IEnumerable<Measurement>? measurements = dbContext.Measurements.AsNoTracking();
+                var totalCount = measurements.Count();
                 if (!string.IsNullOrEmpty(filterString))
                 {
                     measurements = measurements
@@ -87,7 +88,7 @@ namespace RecipeGenerator.Database.Repositories
 
                 return await Task.FromResult(new GetAllMeasurementsResponse()
                 {
-                    TotalCount = measurements.Count(),
+                    TotalCount = totalCount,
                     PageNumber = pageNumber,
                     PageSize = pageSize,
                     Items = measurements.Select(mapper.Map<GetAllMeasurementsResponseItem>).OrderByDescending(c => c.UpdatedAt)
