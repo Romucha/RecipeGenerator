@@ -127,7 +127,7 @@ namespace RecipeGenerator.Database.Repositories
             }
         }
 
-        public async Task<UpdateRecipeResponse?> UpdateAsync(
+        public async Task<UpdateMeasurementResponse?> UpdateAsync(
             int id,
             string? name,
             string? description,
@@ -169,7 +169,7 @@ namespace RecipeGenerator.Database.Repositories
                     measurement.UpdatedAt = DateTime.UtcNow;
                     dbContext.Measurements.Entry(measurement).State = EntityState.Modified;
 
-                    return mapper.Map<UpdateRecipeResponse>(measurement);
+                    return mapper.Map<UpdateMeasurementResponse>(measurement);
                 }
                 else
                 {
