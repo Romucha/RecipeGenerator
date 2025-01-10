@@ -17,6 +17,6 @@ namespace RecipeGenerator.DTO.Steps.Responses
         /// <summary>
         /// Recipe identifier.
         /// </summary>
-        public Guid RecipeId { get; set; }
+        public int RecipeId { get; set; }
     }
 }
