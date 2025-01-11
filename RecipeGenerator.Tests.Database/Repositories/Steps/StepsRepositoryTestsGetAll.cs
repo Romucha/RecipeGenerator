@@ -1,16 +1,20 @@
-﻿using RecipeGenerator.Models.Ingredients;
+﻿using AutoMapper;
+using Microsoft.Extensions.Logging.Abstractions;
+using RecipeGenerator.Database.Context;
+using RecipeGenerator.Database.Repositories;
 using RecipeGenerator.Models.Measurements;
 using RecipeGenerator.Tests.Data.Database;
 using RecipeGenerator.Tests.Data.Models;
+using RecipeGenerator.Utility.Mapping;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RecipeGenerator.Tests.Database.Repositories.AppliedIngredients
+namespace RecipeGenerator.Tests.Database.Repositories.Steps
 {
-    public partial class AppliedIngredientsRepositoryTests
+    public partial class StepsRepositoryTests
     {
         [Fact]
         public async Task GetAll_Normal()
@@ -24,7 +28,7 @@ namespace RecipeGenerator.Tests.Database.Repositories.AppliedIngredients
                 await context.SaveChangesAsync();
 
                 Assert.NotNull(response);
-                Assert.Equal(AppliedIngredientDataCollections.Normal.Count, response.TotalCount);
+                Assert.Equal(StepDataCollections.Normal.Count / 3, response.TotalCount);
             }
         }
 

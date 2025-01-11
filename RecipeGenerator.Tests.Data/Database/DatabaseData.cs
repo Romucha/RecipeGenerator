@@ -41,6 +41,8 @@ namespace RecipeGenerator.Tests.Data.Database
             await context.ApplicableIngredients.AddRangeAsync(ApplicableIngredientDataCollections.Normal);
             await context.AppliedIngredients.AddRangeAsync(AppliedIngredientDataCollections.Normal);
             await context.Measurements.AddRangeAsync(MeasurementDataCollections.Normal);
+            await context.Steps.AddRangeAsync(StepDataCollections.Normal);
+            await context.Recipes.AddRangeAsync(RecipeDataCollections.Normal);
             await context.SaveChangesAsync();
 
             return context;

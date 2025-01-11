@@ -74,12 +74,22 @@ namespace RecipeGenerator.Database.Repositories
         {
             try
             {
-                IEnumerable<Step>? steps = dbContext.Steps.AsNoTracking();
-                
+                var recipe = await dbContext.Recipes.FindAsync(recipeId, cancellationToken);
+                if (recipe is null)
+                    return new()
+                    {
+                        TotalCount = 0,
+                        Items = Enumerable.Empty<GetAllStepsResponseItem>(),
+                        PageNumber = 1,
+                        PageSize = 0
+                    };
+                var steps = recipe.Steps;
                 return await Task.FromResult(new GetAllStepsResponse()
                 {
-                    TotalCount = steps.Count(),
-                    Items = steps.Where(c => c.RecipeId == recipeId).Select(mapper.Map<GetAllStepsResponseItem>).OrderBy(c => c.Index),
+                    TotalCount = steps.Count,
+                    Items = steps.Select(mapper.Map<GetAllStepsResponseItem>).OrderBy(c => c.Index),
+                    PageNumber = 1,
+                    PageSize = steps.Count
                 });
             }
             catch (Exception ex)

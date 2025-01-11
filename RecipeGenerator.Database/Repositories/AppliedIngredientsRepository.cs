@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RecipeGenerator.DTO.Steps.Responses;
 
 namespace RecipeGenerator.Database.Repositories
 {
@@ -82,12 +83,22 @@ namespace RecipeGenerator.Database.Repositories
         {
             try
             {
-                IEnumerable<AppliedIngredient>? ingredients = dbContext.AppliedIngredients.AsNoTracking();
-                
+                var recipe = await dbContext.Recipes.FindAsync(recipeId, cancellationToken);
+                if (recipe is null)
+                    return new()
+                    {
+                        TotalCount = 0,
+                        Items = Enumerable.Empty<GetAllAppliedIngredientsResponseItem>(),
+                        PageNumber = 1,
+                        PageSize = 0
+                    };
+                var ingredients = recipe.Ingredients;
                 return await Task.FromResult(new GetAllAppliedIngredientsResponse()
                 {
-                    TotalCount = ingredients.Count(),
-                    Items = ingredients.Where(c => c.RecipeId == recipeId).Select(mapper.Map<GetAllAppliedIngredientsResponseItem>).OrderBy(c => c.Name)
+                    TotalCount = ingredients.Count,
+                    Items = ingredients.Select(mapper.Map<GetAllAppliedIngredientsResponseItem>).OrderBy(c => c.Name),
+                    PageNumber = 1,
+                    PageSize = ingredients.Count
                 });
             }
             catch (Exception ex)

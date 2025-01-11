@@ -1,4 +1,4 @@
-﻿using RecipeGenerator.Models.Ingredients;
+﻿using RecipeGenerator.Models.Recipes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace RecipeGenerator.Tests.Data.Models
 {
-    public static class AppliedIngredientDataCollections
+    public static class RecipeDataCollections
     {
-        public static List<AppliedIngredient> Normal => new()
+        public static List<Recipe> Normal => new()
         {
             new()
             {
@@ -18,10 +18,10 @@ namespace RecipeGenerator.Tests.Data.Models
                 Description = $"{nameof(Normal)}_1",
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow,
-                RecipeId = 1,
-                MeasurementValue = 0.5,
-                IngredientId = 1,
-                MeasurementId = 1,
+                CourseType = Course.Horsdoeuvres,
+                EstimatedTime = TimeSpan.FromDays(1),
+                Portions = 10,
+                Image = Properties.Resources.RecipeNormal,
             },
             new()
             {
@@ -30,10 +30,10 @@ namespace RecipeGenerator.Tests.Data.Models
                 Description = $"{nameof(Normal)}_2",
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow,
-                RecipeId = 1,
-                MeasurementValue = 3,
-                IngredientId = 2,
-                MeasurementId = 2,
+                CourseType = Course.Soup,
+                EstimatedTime = TimeSpan.FromHours(2),
+                Portions = 15,
+                Image = Properties.Resources.RecipeNormal,
             },
             new()
             {
@@ -42,10 +42,10 @@ namespace RecipeGenerator.Tests.Data.Models
                 Description = $"{nameof(Normal)}_3",
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow,
-                RecipeId = 1,
-                MeasurementValue = 7.7,
-                IngredientId = 3,
-                MeasurementId = 3,
+                CourseType = Course.FirstMainDish,
+                EstimatedTime = TimeSpan.FromHours(3),
+                Portions = 7,
+                Image = Properties.Resources.RecipeNormal,
             },
         };
     }
