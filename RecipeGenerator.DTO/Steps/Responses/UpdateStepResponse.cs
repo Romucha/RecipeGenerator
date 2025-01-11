@@ -13,5 +13,10 @@ namespace RecipeGenerator.DTO.Steps.Responses
         /// List of photos.
         /// </summary>
         public List<byte[]> Photos { get; set; } = new();
+
+        /// <summary>
+        /// Identifier of the recipe.
+        /// </summary>
+        public int RecipeId { get; set; }
     }
 }
