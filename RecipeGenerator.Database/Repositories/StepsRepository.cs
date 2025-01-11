@@ -26,10 +26,13 @@ namespace RecipeGenerator.Database.Repositories
             this.mapper = mapper;
         }
 
-        public async Task<CreateStepResponse> CreateAsync(int recipeId, CancellationToken cancellationToken = default)
+        public async Task<CreateStepResponse?> CreateAsync(int recipeId, CancellationToken cancellationToken = default)
         {
             try
             {
+                var recipe = await dbContext.Recipes.FindAsync(recipeId, cancellationToken);
+                if (recipe is null)
+                    return null;
                 Step step = new();
                 step.RecipeId = recipeId;
                 await dbContext.Steps.AddAsync(step, cancellationToken);

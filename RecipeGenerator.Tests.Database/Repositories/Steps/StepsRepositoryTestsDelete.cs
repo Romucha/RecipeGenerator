@@ -17,36 +17,33 @@ namespace RecipeGenerator.Tests.Database.Repositories.Steps
     public partial class StepsRepositoryTests
     {
         [Fact]
-        public async Task Create_Normal()
+        public async Task Delete_Normal()
         {
             using (var context = await DatabaseData.ProvideDbContext().WithSingularItems())
             {
                 var repository = GetRepository(context);
-                var recipeId = RecipeData.Normal.Id;
+                var id = StepData.Normal.Id;
 
-                var response = await repository.CreateAsync(recipeId);
+                var response = await repository.DeleteAsync(id);
                 await context.SaveChangesAsync();
 
                 Assert.NotNull(response);
                 Assert.NotEqual(0, response.Id);
-                Assert.NotEqual(StepData.Normal.Id, response.Id);
-                Assert.Equal(string.Empty, response.Name);
-                Assert.Equal(string.Empty, response.Description);
-                Assert.Equal(recipeId, response.RecipeId);
-                Assert.Equal(0, response.Index);
-                Assert.Equal(new List<byte[]>(), response.Photos);
+                Assert.Equal(StepData.Normal.Id, response.Id);
+                Assert.Equal(StepData.Normal.Name, response.Name);
+                Assert.False(context.Steps.Any(c => c.Id == response.Id));
             }
         }
 
         [Fact]
-        public async Task Create_Invalid_RecipeId()
+        public async Task Delete_Invalid()
         {
             using (var context = await DatabaseData.ProvideDbContext().WithSingularItems())
             {
                 var repository = GetRepository(context);
-                var recipeId = 0;
+                var id = 0;
 
-                var response = await repository.CreateAsync(recipeId);
+                var response = await repository.DeleteAsync(id);
                 await context.SaveChangesAsync();
 
                 Assert.Null(response);
