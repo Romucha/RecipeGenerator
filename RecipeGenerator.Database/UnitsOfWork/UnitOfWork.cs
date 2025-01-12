@@ -8,7 +8,7 @@ namespace RecipeGenerator.Database.UnitsOfWork
     /// <summary>
     /// Provides methods for work with database in a single context.
     /// </summary>
-    public class UnitOfWork : IUnitOfWork, IDisposable
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly ILogger<UnitOfWork> logger;
         private readonly RecipeGeneratorDbContext dbContext;

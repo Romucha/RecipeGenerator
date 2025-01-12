@@ -6,7 +6,7 @@ namespace RecipeGenerator.Database.UnitsOfWork
     /// <summary>
     /// Provides singatures of methods for work for with database in a single context.
     /// </summary>
-    public interface IUnitOfWork
+    public interface IUnitOfWork : IDisposable
     {
         ApplicableIngredientsRepository ApplicableIngredientRepository { get; }
 
