@@ -70,6 +70,7 @@ namespace RecipeGenerator.Database.Repositories
             try
             {
                 IEnumerable<Recipe>? recipes = dbContext.Recipes.AsNoTracking();
+                var totalCount = recipes.Count();
                 if (!string.IsNullOrEmpty(filterString))
                 {
                     recipes = recipes
@@ -85,7 +86,7 @@ namespace RecipeGenerator.Database.Repositories
 
                 return await Task.FromResult(new GetAllRecipesResponse()
                 {
-                    TotalCount = recipes.Count(),
+                    TotalCount = totalCount,
                     PageNumber = pageNumber,
                     PageSize = pageSize,
                     Items = recipes.Select(mapper.Map<GetAllRecipesResponseItem>).OrderByDescending(c => c.UpdatedAt)
