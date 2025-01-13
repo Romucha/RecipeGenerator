@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RecipeGenerator.Database\RecipeGenerator.Database.csproj" />
+    <ProjectReference Include="..\RecipeGenerator.Tests.Data\RecipeGenerator.Tests.Data.csproj" />
     <ProjectReference Include="..\RecipeGenerator.ViewModels\RecipeGenerator.ViewModels.csproj" />
   </ItemGroup>
 
