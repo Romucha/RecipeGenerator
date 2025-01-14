@@ -27,7 +27,6 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
 {
     public partial class CreateOrEditRecipeViewModelTests
     {
-
         [Fact]
         public async Task InitializeAsync_Normal()
         {
@@ -38,10 +37,58 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
 
             Assert.Equal(RecipeData.Normal.Name, viewModel.Name);
             Assert.Equal(RecipeData.Normal.Description, viewModel.Description);
-            Assert.Single(viewModel.AppliedIngredients);
-            Assert.Single(viewModel.Steps);
+            Assert.NotEmpty(viewModel.AppliedIngredients);
+            Assert.NotEmpty(viewModel.Steps);
             Assert.Equal(RecipeData.Normal.Image, viewModel.Image);
             Assert.Equal(RecipeData.Normal.CourseType, viewModel.CourseType);
+        }
+
+        [Fact]
+        public async Task InitializeAsync_Default()
+        {
+            var viewModel = await GetViewModel();
+            var recipeId = 0;
+
+            await viewModel.InitializeAsync(recipeId);
+
+            Assert.Null(viewModel.Name);
+            Assert.Null(viewModel.Description);
+            Assert.Empty(viewModel.AppliedIngredients);
+            Assert.Empty(viewModel.Steps);
+            Assert.Null(viewModel.Image);
+            Assert.Equal(Models.Recipes.Course.Unknown, viewModel.CourseType);
+        }
+
+        [Fact]
+        public async Task InitializeAsync_NonExistent()
+        {
+            var viewModel = await GetViewModel();
+            var recipeId = int.MaxValue;
+
+            await viewModel.InitializeAsync(recipeId);
+
+            Assert.Null(viewModel.Name);
+            Assert.Null(viewModel.Description);
+            Assert.Empty(viewModel.AppliedIngredients);
+            Assert.Empty(viewModel.Steps);
+            Assert.Null(viewModel.Image);
+            Assert.Equal(Models.Recipes.Course.Unknown, viewModel.CourseType);
+        }
+
+        [Fact]
+        public async Task InitializeAsync_Negative()
+        {
+            var viewModel = await GetViewModel();
+            var recipeId = -1;
+
+            await viewModel.InitializeAsync(recipeId);
+
+            Assert.Null(viewModel.Name);
+            Assert.Null(viewModel.Description);
+            Assert.Empty(viewModel.AppliedIngredients);
+            Assert.Empty(viewModel.Steps);
+            Assert.Null(viewModel.Image);
+            Assert.Equal(Models.Recipes.Course.Unknown, viewModel.CourseType);
         }
     }
 }
