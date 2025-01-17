@@ -31,16 +31,16 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
         public async Task InitializeAsync_Normal()
         {
             var viewModel = await GetViewModel();
-            var recipeId = RecipeData.Normal.Id;
+            var recipeId = RecipeDataCollections.Normal[0].Id;
 
             await viewModel.InitializeAsync(recipeId);
 
-            Assert.Equal(RecipeData.Normal.Name, viewModel.Name);
-            Assert.Equal(RecipeData.Normal.Description, viewModel.Description);
+            Assert.Equal(RecipeDataCollections.Normal[0].Name, viewModel.Name);
+            Assert.Equal(RecipeDataCollections.Normal[0].Description, viewModel.Description);
             Assert.NotEmpty(viewModel.AppliedIngredients);
             Assert.NotEmpty(viewModel.Steps);
-            Assert.Equal(RecipeData.Normal.Image, viewModel.Image);
-            Assert.Equal(RecipeData.Normal.CourseType, viewModel.CourseType);
+            Assert.Equal(RecipeDataCollections.Normal[0].Image, viewModel.Image);
+            Assert.Equal(RecipeDataCollections.Normal[0].CourseType, viewModel.CourseType);
         }
 
         [Fact]
@@ -82,7 +82,6 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
             var recipeId = -1;
 
             await viewModel.InitializeAsync(recipeId);
-
             Assert.Null(viewModel.Name);
             Assert.Null(viewModel.Description);
             Assert.Empty(viewModel.AppliedIngredients);

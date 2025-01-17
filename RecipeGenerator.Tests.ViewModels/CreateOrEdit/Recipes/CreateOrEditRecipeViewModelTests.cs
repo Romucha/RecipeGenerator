@@ -30,7 +30,7 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
         {
             IServiceCollection services = new ServiceCollection();
             services.AddAutoMapper(cfg => cfg.AddProfile<MapperInitializer>());
-            var context = await DatabaseData.ProvideDbContext().WithSingularItems();
+            var context = await DatabaseData.ProvideDbContext().WithCollections();
             services.AddSingleton<RecipeGeneratorDbContext, RecipeGeneratorDbContext>(c =>
             {
                 return context;
