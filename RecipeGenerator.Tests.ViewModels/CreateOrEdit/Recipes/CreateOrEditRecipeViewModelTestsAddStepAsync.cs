@@ -28,37 +28,44 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
     public partial class CreateOrEditRecipeViewModelTests
     {
         [Fact]
-        public async Task AddAppliedIngredientAsync_Normal()
+        public async Task AddStepAsync_Normal()
         {
             var viewModel = await GetViewModel();
             var recipeId = RecipeDataCollections.Normal[0].Id;
 
             await viewModel.InitializeAsync(recipeId);
-            var selectedIngredientId = viewModel.ApplicableIngredients.Last().Id;
-            viewModel.SelectedIngredientId = selectedIngredientId;
-            await viewModel.AddAppliedIngredientAsync();
+            var index = viewModel.StepIndex;
+            await viewModel.AddStepAsync();
 
-            Assert.Contains(viewModel.AppliedIngredients, c => c.IngredientId == selectedIngredientId);
+            var lastStep = viewModel.Steps.LastOrDefault();
+            Assert.NotNull(lastStep);
+            Assert.Equal(recipeId, lastStep.RecipeId);
+            Assert.Equal(viewModel.StepIndex, lastStep.Index + 1);
+            Assert.NotEqual(index, viewModel.StepIndex + 1);
+
         }
 
         [Fact]
-        public async Task AddAppliedIngredientAsync_Normal_WhenNotInitialized()
+        public async Task AddStepAsync_Normal_WhenNotInitialized()
         {
             var viewModel = await GetViewModel();
             var recipeId = RecipeDataCollections.Normal[0].Id;
 
-            var selectedIngredientId = ApplicableIngredientDataCollections.Normal.Last().Id;
-            viewModel.SelectedIngredientId = selectedIngredientId;
-            await viewModel.AddAppliedIngredientAsync();
+            var index = viewModel.StepIndex;
+            await viewModel.AddStepAsync();
 
-            Assert.Contains(viewModel.AppliedIngredients, c => c.IngredientId == selectedIngredientId);
+            var lastStep = viewModel.Steps.LastOrDefault();
+            Assert.NotNull(lastStep);
+            Assert.NotEqual(recipeId, lastStep.RecipeId);
+            Assert.Equal(viewModel.StepIndex, lastStep.Index + 1);
+            Assert.NotEqual(index, viewModel.StepIndex + 1);
         }
 
         [Theory]
         [InlineData(0)]
         [InlineData(-1)]
         [InlineData(int.MaxValue)]
-        public async Task AddAppliedIngredientAsync_DoesNothing_WhenIngredientIdIsInvalid(int ingredientId)
+        public async Task AddStepAsync_DoesNothing_WhenIngredientIdIsInvalid(int ingredientId)
         {
             var viewModel = await GetViewModel();
             var recipeId = RecipeDataCollections.Normal[0].Id;
