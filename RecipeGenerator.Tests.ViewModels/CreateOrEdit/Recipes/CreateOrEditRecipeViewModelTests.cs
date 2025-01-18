@@ -26,11 +26,13 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
 {
     public partial class CreateOrEditRecipeViewModelTests
     {
-        private async Task<CreateOrEditRecipeViewModel> GetViewModel()
+        private readonly IServiceProvider provider;
+
+        public CreateOrEditRecipeViewModelTests()
         {
             IServiceCollection services = new ServiceCollection();
             services.AddAutoMapper(cfg => cfg.AddProfile<MapperInitializer>());
-            var context = await DatabaseData.ProvideDbContext().WithCollections();
+            var context = DatabaseData.ProvideDbContext().WithCollections().Result;
             services.AddSingleton<RecipeGeneratorDbContext, RecipeGeneratorDbContext>(c =>
             {
                 return context;
@@ -48,12 +50,21 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
             services.AddLocalization();
 
             services.AddTransient<IMediaProviderService, DummyRecipeMediaProviderService>();
-            
+
             services.AddTransient<CreateOrEditRecipeViewModel>();
 
-            var provider = services.BuildServiceProvider();
+            provider = services.BuildServiceProvider();
 
+        }
+
+        private CreateOrEditRecipeViewModel GetViewModel()
+        {
             return provider.GetRequiredService<CreateOrEditRecipeViewModel>();
+        }
+
+        private RecipeGeneratorDbContext GetDbContext()
+        {
+            return provider.GetRequiredService<RecipeGeneratorDbContext>();
         }
     }
 }

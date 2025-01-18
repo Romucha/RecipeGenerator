@@ -30,7 +30,7 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
         [Fact]
         public async Task AddAppliedIngredientAsync_Normal()
         {
-            var viewModel = await GetViewModel();
+            var viewModel = GetViewModel();
             var recipeId = RecipeDataCollections.Normal[0].Id;
 
             await viewModel.InitializeAsync(recipeId);
@@ -44,7 +44,7 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
         [Fact]
         public async Task AddAppliedIngredientAsync_Normal_WhenNotInitialized()
         {
-            var viewModel = await GetViewModel();
+            var viewModel = GetViewModel();
             var recipeId = RecipeDataCollections.Normal[0].Id;
 
             var selectedIngredientId = ApplicableIngredientDataCollections.Normal.Last().Id;
@@ -60,7 +60,7 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
         [InlineData(int.MaxValue)]
         public async Task AddAppliedIngredientAsync_DoesNothing_WhenIngredientIdIsInvalid(int ingredientId)
         {
-            var viewModel = await GetViewModel();
+            var viewModel = GetViewModel();
             var recipeId = RecipeDataCollections.Normal[0].Id;
 
             await viewModel.InitializeAsync(recipeId);

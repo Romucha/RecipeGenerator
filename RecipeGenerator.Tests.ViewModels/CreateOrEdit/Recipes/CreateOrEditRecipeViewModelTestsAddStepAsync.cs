@@ -30,7 +30,7 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
         [Fact]
         public async Task AddStepAsync_Normal()
         {
-            var viewModel = await GetViewModel();
+            var viewModel = GetViewModel();
             var recipeId = RecipeDataCollections.Normal[0].Id;
 
             await viewModel.InitializeAsync(recipeId);
@@ -48,7 +48,7 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
         [Fact]
         public async Task AddStepAsync_Normal_WhenNotInitialized()
         {
-            var viewModel = await GetViewModel();
+            var viewModel = GetViewModel();
             var recipeId = RecipeDataCollections.Normal[0].Id;
 
             var index = viewModel.StepIndex;
@@ -67,7 +67,7 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
         [InlineData(int.MaxValue)]
         public async Task AddStepAsync_DoesNothing_WhenIngredientIdIsInvalid(int ingredientId)
         {
-            var viewModel = await GetViewModel();
+            var viewModel = GetViewModel();
             var recipeId = RecipeDataCollections.Normal[0].Id;
 
             await viewModel.InitializeAsync(recipeId);

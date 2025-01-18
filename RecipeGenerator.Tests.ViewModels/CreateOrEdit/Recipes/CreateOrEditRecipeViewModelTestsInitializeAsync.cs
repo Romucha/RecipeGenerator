@@ -30,7 +30,7 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
         [Fact]
         public async Task InitializeAsync_Normal()
         {
-            var viewModel = await GetViewModel();
+            var viewModel = GetViewModel();
             var recipeId = RecipeDataCollections.Normal[0].Id;
 
             await viewModel.InitializeAsync(recipeId);
@@ -46,7 +46,7 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
         [Fact]
         public async Task InitializeAsync_Default()
         {
-            var viewModel = await GetViewModel();
+            var viewModel = GetViewModel();
             var recipeId = 0;
 
             await viewModel.InitializeAsync(recipeId);
@@ -62,7 +62,7 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
         [Fact]
         public async Task InitializeAsync_NonExistent()
         {
-            var viewModel = await GetViewModel();
+            var viewModel = GetViewModel();
             var recipeId = int.MaxValue;
 
             await viewModel.InitializeAsync(recipeId);
@@ -78,7 +78,7 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
         [Fact]
         public async Task InitializeAsync_Negative()
         {
-            var viewModel = await GetViewModel();
+            var viewModel = GetViewModel();
             var recipeId = -1;
 
             await viewModel.InitializeAsync(recipeId);

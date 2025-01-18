@@ -25,14 +25,19 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
         private readonly IMediaProviderService mediaProviderService;
         private readonly IStringLocalizer<Course> stringLocalizer;
 
-        private int RecipeId;
-
         public CreateOrEditRecipeViewModel(ILogger<CreateOrEditRecipeViewModel> logger, IUnitOfWork unitOfWork, IMediaProviderService mediaProviderService, IStringLocalizer<Course> stringLocalizer)
         {
             this.logger = logger;
             this.unitOfWork = unitOfWork;
             this.mediaProviderService = mediaProviderService;
             this.stringLocalizer = stringLocalizer;
+        }
+
+        private int recipeId;
+        public int RecipeId
+        {
+            get => recipeId;
+            private set => SetProperty(ref recipeId, value);
         }
 
         private string name = default!;
