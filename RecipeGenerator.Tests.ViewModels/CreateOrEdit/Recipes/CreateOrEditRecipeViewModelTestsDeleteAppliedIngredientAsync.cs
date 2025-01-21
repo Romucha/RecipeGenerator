@@ -90,5 +90,21 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
             Assert.NotEmpty(viewModel.AppliedIngredients);
             Assert.Equal(ingredientsCount, viewModel.AppliedIngredients.Count);
         }
+
+        [Fact]
+        public async Task DeleteAppliedIngredientAsync_DoesNothing_WhenRecipeIdIsNull()
+        {
+            var viewModel = GetViewModel();
+            int? recipeId = null;
+            var ingredientId = AppliedIngredientDataCollections.Normal.First().Id;
+
+            await viewModel.InitializeAsync(recipeId);
+            var ingredientsCount = viewModel.AppliedIngredients.Count;
+
+            await viewModel.DeleteAppliedIngredientAsync(ingredientId);
+
+            Assert.Empty(viewModel.AppliedIngredients);
+            Assert.Equal(ingredientsCount, viewModel.AppliedIngredients.Count);
+        }
     }
 }
