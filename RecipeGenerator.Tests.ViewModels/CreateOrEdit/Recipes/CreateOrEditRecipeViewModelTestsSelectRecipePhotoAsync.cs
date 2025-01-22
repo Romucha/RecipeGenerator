@@ -28,12 +28,12 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
     public partial class CreateOrEditRecipeViewModelTests
     {
         [Fact]
-        public async Task TakeRecipePhotoAsync_Normal()
+        public async Task SelectRecipePhotoAsync_Normal()
         {
             var viewModel = GetViewModel();
             await viewModel.InitializeAsync(null);
 
-            await viewModel.TakeRecipePhotoAsync();
+            await viewModel.SelectRecipePhotoAsync();
 
             Assert.NotEmpty(viewModel.Image);
             Assert.Equal(Tests.Data.Properties.Resources.RecipeNormal, viewModel.Image);

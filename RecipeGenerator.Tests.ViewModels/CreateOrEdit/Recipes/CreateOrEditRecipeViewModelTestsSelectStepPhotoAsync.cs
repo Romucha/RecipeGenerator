@@ -28,15 +28,36 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
     public partial class CreateOrEditRecipeViewModelTests
     {
         [Fact]
-        public async Task TakeRecipePhotoAsync_Normal()
+        public async Task SelectStepPhotoAsync_Normal()
         {
             var viewModel = GetViewModel();
             await viewModel.InitializeAsync(null);
+            await viewModel.AddStepAsync(); 
+            var step = viewModel.Steps.First();
+            int index = (int)step.Index!;
 
-            await viewModel.TakeRecipePhotoAsync();
+            await viewModel.SelectStepPhotoAsync(index);
 
-            Assert.NotEmpty(viewModel.Image);
-            Assert.Equal(Tests.Data.Properties.Resources.RecipeNormal, viewModel.Image);
+            Assert.NotNull(step);
+            Assert.NotNull(step.Photos);
+            Assert.NotEmpty(step.Photos);
+            Assert.Contains(step.Photos, x => x.SequenceEqual(Data.Properties.Resources.StepNormal));
+        }
+
+        [Theory]
+        [InlineData(int.MinValue)]
+        [InlineData(int.MaxValue)]
+        public async Task SelectStepPhotoAsync_DoesNothing_WhenStepIdIsInvalid(int index)
+        {
+            var viewModel = GetViewModel();
+            await viewModel.InitializeAsync(null);
+            await viewModel.AddStepAsync();
+            var step = viewModel.Steps.First();
+
+            await viewModel.SelectStepPhotoAsync(index);
+
+            Assert.NotNull(step);
+            Assert.Null(step.Photos);
         }
     }
 }

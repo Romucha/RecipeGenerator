@@ -398,11 +398,11 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             }
         }
 
-        public async Task TakeStepPhotoAsync(int stepId)
+        public async Task TakeStepPhotoAsync(int index)
         {
             try
             {
-                var step = Steps.FirstOrDefault(s => s.Id == stepId);
+                var step = Steps.FirstOrDefault(s => s.Index == index);
                 if (step != null)
                 {
                     if (step.Photos is null)
@@ -417,11 +417,11 @@ namespace RecipeGenerator.ViewModels.CreateOrEdit.Recipes
             }
         }
 
-        public async Task SelectStepPhotoAsync(int stepId)
+        public async Task SelectStepPhotoAsync(int index)
         {
             try
             {
-                var step = Steps.FirstOrDefault(s => s.Id == stepId);
+                var step = Steps.FirstOrDefault(s => s.Index == index);
                 if (step != null)
                 {
                     if (step.Photos is null)
