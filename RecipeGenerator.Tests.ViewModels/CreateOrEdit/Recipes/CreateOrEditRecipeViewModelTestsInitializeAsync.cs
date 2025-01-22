@@ -10,6 +10,7 @@ using RecipeGenerator.Database.Repositories;
 using RecipeGenerator.Database.Seeding.ApplicableIngredients;
 using RecipeGenerator.Database.UnitsOfWork;
 using RecipeGenerator.Localization.Models.Models;
+using RecipeGenerator.Models.Recipes;
 using RecipeGenerator.Settings;
 using RecipeGenerator.Tests.Data.Database;
 using RecipeGenerator.Tests.Data.Models;
@@ -44,10 +45,10 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
         }
 
         [Fact]
-        public async Task InitializeAsync_Default()
+        public async Task InitializeAsync_Normal_WhenRecipeIdIsNull()
         {
             var viewModel = GetViewModel();
-            var recipeId = 0;
+            int? recipeId = null;
 
             await viewModel.InitializeAsync(recipeId);
 
@@ -56,32 +57,19 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
             Assert.Empty(viewModel.AppliedIngredients);
             Assert.Empty(viewModel.Steps);
             Assert.Null(viewModel.Image);
-            Assert.Equal(Models.Recipes.Course.Unknown, viewModel.CourseType);
+            Assert.Equal(Course.Unknown, viewModel.CourseType);
         }
 
-        [Fact]
-        public async Task InitializeAsync_NonExistent()
+        [Theory]
+        [InlineData(int.MinValue)]
+        [InlineData(0)]
+        [InlineData(int.MaxValue)]
+        public async Task InitializeAsync_DoesNothing_WhenRecipeIdIsInvalid(int recipeId)
         {
             var viewModel = GetViewModel();
-            var recipeId = int.MaxValue;
 
             await viewModel.InitializeAsync(recipeId);
 
-            Assert.Null(viewModel.Name);
-            Assert.Null(viewModel.Description);
-            Assert.Empty(viewModel.AppliedIngredients);
-            Assert.Empty(viewModel.Steps);
-            Assert.Null(viewModel.Image);
-            Assert.Equal(Models.Recipes.Course.Unknown, viewModel.CourseType);
-        }
-
-        [Fact]
-        public async Task InitializeAsync_Negative()
-        {
-            var viewModel = GetViewModel();
-            var recipeId = -1;
-
-            await viewModel.InitializeAsync(recipeId);
             Assert.Null(viewModel.Name);
             Assert.Null(viewModel.Description);
             Assert.Empty(viewModel.AppliedIngredients);

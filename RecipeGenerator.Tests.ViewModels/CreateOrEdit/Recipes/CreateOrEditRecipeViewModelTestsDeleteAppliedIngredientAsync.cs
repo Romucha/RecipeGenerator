@@ -43,44 +43,14 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
             Assert.NotEqual(ingredientsCount, viewModel.AppliedIngredients.Count);
         }
 
-        [Fact]
-        public async Task DeleteAppliedIngredientAsync_DoesNothing_WhenIngredientIdIsDefault()
+        [Theory]
+        [InlineData(int.MinValue)]
+        [InlineData(0)]
+        [InlineData(int.MaxValue)]
+        public async Task DeleteAppliedIngredientAsync_DoesNothing_WhenIngredientIdIsInvalid(int ingredientId)
         {
             var viewModel = GetViewModel();
             var recipeId = RecipeDataCollections.Normal[0].Id;
-            var ingredientId = 0;
-
-            await viewModel.InitializeAsync(recipeId);
-            var ingredientsCount = viewModel.AppliedIngredients.Count;
-
-            await viewModel.DeleteAppliedIngredientAsync(ingredientId);
-
-            Assert.NotEmpty(viewModel.AppliedIngredients);
-            Assert.Equal(ingredientsCount, viewModel.AppliedIngredients.Count);
-        }
-
-        [Fact]
-        public async Task DeleteAppliedIngredientAsync_DoesNothing_WhenIngredientIdIsNegative()
-        {
-            var viewModel = GetViewModel();
-            var recipeId = RecipeDataCollections.Normal[0].Id;
-            var ingredientId = -1;
-
-            await viewModel.InitializeAsync(recipeId);
-            var ingredientsCount = viewModel.AppliedIngredients.Count;
-
-            await viewModel.DeleteAppliedIngredientAsync(ingredientId);
-
-            Assert.NotEmpty(viewModel.AppliedIngredients);
-            Assert.Equal(ingredientsCount, viewModel.AppliedIngredients.Count);
-        }
-
-        [Fact]
-        public async Task DeleteAppliedIngredientAsync_DoesNothing_WhenIngredientIdIsNonExistent()
-        {
-            var viewModel = GetViewModel();
-            var recipeId = RecipeDataCollections.Normal[0].Id;
-            var ingredientId = int.MaxValue;
 
             await viewModel.InitializeAsync(recipeId);
             var ingredientsCount = viewModel.AppliedIngredients.Count;

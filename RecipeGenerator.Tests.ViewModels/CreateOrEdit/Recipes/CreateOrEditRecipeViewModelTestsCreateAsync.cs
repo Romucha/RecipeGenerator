@@ -86,27 +86,12 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
             }
         }
 
-        [Fact]
-        public async Task CreateAsync_Normal_WhenRecipeIdIsNegative()
+        [Theory]
+        [InlineData(int.MinValue)]
+        [InlineData(int.MaxValue)]
+        public async Task CreateAsync_Normal_WhenRecipeIdIsInvalid(int recipeId)
         {
             var viewModel = GetViewModel();
-            var recipeId = -1;
-
-            await viewModel.InitializeAsync(recipeId);
-            await viewModel.CreateAsync();
-
-            using (var context = GetDbContext())
-            {
-                var recipe = await context.Recipes.FindAsync(viewModel.RecipeId);
-                Assert.Null(recipe);
-            }
-        }
-
-        [Fact]
-        public async Task CreateAsync_Normal_WhenRecipeIdIsNonExistent()
-        {
-            var viewModel = GetViewModel();
-            var recipeId = int.MaxValue;
 
             await viewModel.InitializeAsync(recipeId);
             await viewModel.CreateAsync();

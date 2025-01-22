@@ -45,46 +45,14 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
             Assert.NotEqual(index, viewModel.StepIndex);
         }
 
-        [Fact]
-        public async Task DeleteStepAsync_DoesNothing_WhenStepIdIsDefault()
+        [Theory]
+        [InlineData(int.MinValue)]
+        [InlineData(0)]
+        [InlineData(int.MaxValue)]
+        public async Task DeleteStepAsync_DoesNothing_WhenStepIdIsInvalid(int stepId)
         {
             var viewModel = GetViewModel();
             var recipeId = RecipeDataCollections.Normal[0].Id;
-            var stepId = 0;
-
-            await viewModel.InitializeAsync(recipeId);
-            var stepsCount = viewModel.Steps.Count;
-            var index = viewModel.StepIndex;
-
-            await viewModel.DeleteStepAsync(stepId);
-
-            Assert.Equal(stepsCount, viewModel.Steps.Count);
-            Assert.Equal(index, viewModel.StepIndex);
-        }
-
-        [Fact]
-        public async Task DeleteStepAsync_DoesNothing_WhenStepIdIsNegative()
-        {
-            var viewModel = GetViewModel();
-            var recipeId = RecipeDataCollections.Normal[0].Id;
-            var stepId = -1;
-
-            await viewModel.InitializeAsync(recipeId);
-            var stepsCount = viewModel.Steps.Count;
-            var index = viewModel.StepIndex;
-
-            await viewModel.DeleteStepAsync(stepId);
-
-            Assert.Equal(stepsCount, viewModel.Steps.Count);
-            Assert.Equal(index, viewModel.StepIndex);
-        }
-
-        [Fact]
-        public async Task DeleteStepAsync_DoesNothing_WhenStepIdIsNonExistent()
-        {
-            var viewModel = GetViewModel();
-            var recipeId = RecipeDataCollections.Normal[0].Id;
-            var stepId = int.MaxValue;
 
             await viewModel.InitializeAsync(recipeId);
             var stepsCount = viewModel.Steps.Count;

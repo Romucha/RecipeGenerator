@@ -55,8 +55,8 @@ namespace RecipeGenerator.Tests.ViewModels.CreateOrEdit.Recipes
         }
 
         [Theory]
+        [InlineData(int.MinValue)]
         [InlineData(0)]
-        [InlineData(-1)]
         [InlineData(int.MaxValue)]
         public async Task AddAppliedIngredientAsync_DoesNothing_WhenIngredientIdIsInvalid(int ingredientId)
         {
