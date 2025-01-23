@@ -4,6 +4,7 @@ using RecipeGenerator.Database.UnitsOfWork;
 using RecipeGenerator.DTO.ApplicableIngredients.Requests;
 using RecipeGenerator.DTO.ApplicableIngredients.Responses;
 using RecipeGenerator.Models.Ingredients;
+using RecipeGenerator.Models.Measurements;
 
 namespace RecipeGenerator.ViewModels.Details.Ingredients
 {
@@ -58,7 +59,14 @@ namespace RecipeGenerator.ViewModels.Details.Ingredients
             set => SetProperty(ref ingredientType, value);
         }
 
-        private string image = default!;
+        private MeasurementType measurementType;
+        public MeasurementType MeasurementType
+        {
+            get => measurementType;
+            set => SetProperty(ref measurementType, value);
+        }
+
+        private string image = string.Empty;
         public string Image
         {
             get => image;
@@ -80,6 +88,7 @@ namespace RecipeGenerator.ViewModels.Details.Ingredients
                     Link = response.Link;
                     Image = Convert.ToBase64String(response.Image);
                     IngredientType = (IngredientType)response.IngredientType;
+                    MeasurementType = (MeasurementType)response.MeasurementType;
                 }
             }
             catch (Exception ex)
